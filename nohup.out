@@ -1,0 +1,41 @@
+warning: The `tool.uv.dev-dependencies` field (used in `packages/openpi-client/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+Exception ignored in: <function _xla_gc_callback at 0x7a046ea06480>
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/jax/_src/lib/__init__.py", line 96, in _xla_gc_callback
+    def _xla_gc_callback(*args):
+    
+KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/serve_policy.py", line 8, in <module>
+    from mme_vla_suite.policies import policy as _policy
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/policies/policy.py", line 10, in <module>
+    from openpi import transforms as _transforms
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/transforms.py", line 11, in <module>
+    from openpi.models import tokenizer as _tokenizer
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/models/tokenizer.py", line 8, in <module>
+    from transformers import AutoProcessor
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .args_doc import (
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/transformers/utils/args_doc.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/transformers/utils/generic.py", line 46, in <module>
+    import torch  # noqa: F401
+    ^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/torch/__init__.py", line 2126, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/torch/functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/torch/nn/__init__.py", line 9, in <module>
+    from torch.nn import (
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1032, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1130, in get_data
+KeyboardInterrupt

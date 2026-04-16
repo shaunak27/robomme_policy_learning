@@ -164,7 +164,7 @@ CUDA_VISIBLE_DEVICES=0 uv run scripts/serve_policy.py --seed=7  --port=8013 poli
 
 # terminal 1 
 micromamba activate robomme
-CUDA_VISIBLE_DEVICES=1 python examples/robomme/eval.py --args.model_seed=7 --args.port=8013 --args.policy_name=perceptual-framesamp-modul --args.model_ckpt_id=79999
+CUDA_VISIBLE_DEVICES=1 /coc/testnvme/shalbe3/micromamba/envs/robomme/bin/python examples/robomme/eval.py --args.model_seed=7 --args.port=8013 --args.policy_name=perceptual-framesamp-modul --args.model_ckpt_id=79999
 ```
 
 ### FrameSamp + Expert

@@ -176,9 +176,19 @@ class EpisodeEvaluator:
                 is_video_demo=env_runner.env_id in TASK_WITH_VIDEO_DEMO and i < len(pre_traj["images"]) - 1,
                 subgoal=None if self.args.subgoal_type is None else "[initializing...]",
             )
-
+        
         epstate.exec_start_idx = len(epstate.image_buffer) - 1
         print(f"exec_start_idx: {epstate.exec_start_idx}")
+
+        # Track video demo frames for video-based tasks
+        if env_runner.env_id in TASK_WITH_VIDEO_DEMO:
+            num_pretraj_images = len(pre_traj["images"]) - 1
+            num_pretraj_wrist = len(pre_traj["wrist_images"]) - 1
+            num_pretraj_states = len(pre_traj["states"]) - 1
+            pretraj_log_path = self.save_dir / "pretraj_frame_counts.txt"
+            with open(pretraj_log_path, "a") as f:
+                f.write(f"{env_runner.env_id}_ep{env_runner.episode_id}: images={num_pretraj_images}, wrist={num_pretraj_wrist}, states={num_pretraj_states}\n")
+
         return task_goal, recorder
 
     def get_action_chunk(
