@@ -306,9 +306,13 @@ class DatasetProcessor:
         with open(os.path.join(episode_feature_dir, "kept_indices.json"), "w") as f:
             json.dump(kept_indices, f)
 
+        # Save keyframe indices for oracle keyframe sampling
+        cleaned_keyframe_idxs = self._remove_redundant_keyframes(keyframe_idxs, exec_start_idx)
+        with open(os.path.join(episode_feature_dir, "keyframe_idxs.json"), "w") as f:
+            json.dump(cleaned_keyframe_idxs, f)
+
         if self.visualize:
-            keyframe_idxs = self._remove_redundant_keyframes(keyframe_idxs, exec_start_idx)
-            visualize_frame_sampling(record_videos, episode_feature_dir, exec_start_idx, task_goal, keyframe_idxs)
+            visualize_frame_sampling(record_videos, episode_feature_dir, exec_start_idx, task_goal, cleaned_keyframe_idxs)
             visualize_token_dropping(kept_indices, visualization_videos, episode_feature_dir, exec_start_idx, task_goal)
 
         mem_buffer.clear()

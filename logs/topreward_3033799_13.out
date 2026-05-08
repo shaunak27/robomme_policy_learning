@@ -1,0 +1,82 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033813
+SLURM_ARRAY_TASK_ID: 13
+TASK:                VideoRepick
+HOSTNAME:            spd-13.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoRepick, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoRepick.h5
+  Sampled episodes: [3, 14, 81]
+  Found 22 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 22 segments
+============================================================
+
+--- Segment 1/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f214-355
+  Subtask: pick up the correct cube for the first time
+  Frames: 214 - 355
+============================================================
+  Loaded 142 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.1, 0.0, 0.41, 0.64, 0.79, 0.85, 1.0, 0.95]
+  Failed regions: []
+  Successful interval: 25-122
+  Keyframes: [14, 25, 87, 122]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 2/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f356-438
+  Subtask: put it down
+  Frames: 356 - 438
+============================================================
+  Loaded 83 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.47, 0.53, 0.67, 0.87, 0.8, 1.0, 0.73]
+  Failed regions: []
+  Successful interval: 56-71
+  Keyframes: [8, 57, 71]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 3/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f439-536
+  Subtask: pick up the correct cube for the second time
+  Frames: 439 - 536
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.12, 0.32, 0.36, 0.24, 0.44, 0.84, 1.0]
+  Failed regions: [[46, 71]]
+  Successful interval: 55-97
+  Keyframes: [9, 55, 79, 97]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 4/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f537-621
+  Subtask: put it down
+  Frames: 537 - 621
+============================================================
+  Loaded 85 frames

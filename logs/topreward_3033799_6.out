@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033806
+SLURM_ARRAY_TASK_ID: 6
+TASK:                PickHighlight
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:51 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickHighlight, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickHighlight.h5
+  Sampled episodes: [3, 14, 81]
+  Found 15 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 15 segments
+============================================================
+
+--- Segment 1/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f0-124
+  Subtask: press the button
+  Frames: 0 - 124
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.83, 0.0, 0.61, 0.61, 0.74, 0.78, 0.65, 1.0]
+  Failed regions: [[12, 44], [92, 124]]
+  Successful interval: 102-124
+  Keyframes: [12, 106, 124]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f125-320
+  Subtask: pick up the first highlighted cube, which is blue
+  Frames: 125 - 320
+============================================================
+  Loaded 196 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.31, 0.16, 0.72, 0.62, 0.5, 0.75, 1.0]
+  Failed regions: [[44, 94], [94, 169]]
+  Successful interval: 135-195
+  Keyframes: [19, 135, 183, 195]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 3/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f321-391
+  Subtask: place the cube onto the table
+  Frames: 321 - 391
+============================================================
+  Loaded 71 frames

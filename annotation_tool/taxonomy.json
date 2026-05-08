@@ -1,0 +1,5332 @@
+{
+  "BinFill": {
+    "task_name": "BinFill",
+    "task_goal": "put two red cubes into the bin, then press the button to stop",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "pick up the first blue cube": {
+          "frequency": 0.45,
+          "episode_count": 45,
+          "avg_coverage": 0.1845,
+          "std_coverage": 0.0831,
+          "median_position": 0.0,
+          "avg_position": 0.1467
+        },
+        "pick up the first green cube": {
+          "frequency": 0.45,
+          "episode_count": 45,
+          "avg_coverage": 0.1884,
+          "std_coverage": 0.0916,
+          "median_position": 0.0,
+          "avg_position": 0.1425
+        },
+        "pick up the first red cube": {
+          "frequency": 0.51,
+          "episode_count": 51,
+          "avg_coverage": 0.2303,
+          "std_coverage": 0.1121,
+          "median_position": 0.0,
+          "avg_position": 0.0813
+        },
+        "pick up the fourth blue cube": {
+          "frequency": 0.02,
+          "episode_count": 2,
+          "avg_coverage": 0.1115,
+          "std_coverage": 0.0153,
+          "median_position": 0.697,
+          "avg_position": 0.697
+        },
+        "pick up the fourth green cube": {
+          "frequency": 0.01,
+          "episode_count": 1,
+          "avg_coverage": 0.1662,
+          "std_coverage": 0.0,
+          "median_position": 0.6667,
+          "avg_position": 0.6667
+        },
+        "pick up the fourth red cube": {
+          "frequency": 0.01,
+          "episode_count": 1,
+          "avg_coverage": 0.1436,
+          "std_coverage": 0.0,
+          "median_position": 0.6667,
+          "avg_position": 0.6667
+        },
+        "pick up the second blue cube": {
+          "frequency": 0.33,
+          "episode_count": 33,
+          "avg_coverage": 0.1532,
+          "std_coverage": 0.0469,
+          "median_position": 0.4,
+          "avg_position": 0.3821
+        },
+        "pick up the second green cube": {
+          "frequency": 0.27,
+          "episode_count": 27,
+          "avg_coverage": 0.1517,
+          "std_coverage": 0.0443,
+          "median_position": 0.2857,
+          "avg_position": 0.3559
+        },
+        "pick up the second red cube": {
+          "frequency": 0.3,
+          "episode_count": 30,
+          "avg_coverage": 0.1626,
+          "std_coverage": 0.0528,
+          "median_position": 0.2857,
+          "avg_position": 0.3848
+        },
+        "pick up the third blue cube": {
+          "frequency": 0.18,
+          "episode_count": 18,
+          "avg_coverage": 0.1394,
+          "std_coverage": 0.035,
+          "median_position": 0.5714,
+          "avg_position": 0.5735
+        },
+        "pick up the third green cube": {
+          "frequency": 0.13,
+          "episode_count": 13,
+          "avg_coverage": 0.1435,
+          "std_coverage": 0.0441,
+          "median_position": 0.5714,
+          "avg_position": 0.5368
+        },
+        "pick up the third red cube": {
+          "frequency": 0.12,
+          "episode_count": 12,
+          "avg_coverage": 0.1487,
+          "std_coverage": 0.0228,
+          "median_position": 0.5714,
+          "avg_position": 0.5582
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.125,
+          "std_coverage": 0.0544,
+          "median_position": 0.8571,
+          "avg_position": 0.818
+        },
+        "put it into the bin": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1108,
+          "std_coverage": 0.0461,
+          "median_position": 0.4286,
+          "avg_position": 0.4264
+        }
+      },
+      "transitions": [
+        {
+          "from": "put it into the bin",
+          "to": "press the button",
+          "count": 100
+        },
+        {
+          "from": "pick up the first red cube",
+          "to": "put it into the bin",
+          "count": 51
+        },
+        {
+          "from": "pick up the first green cube",
+          "to": "put it into the bin",
+          "count": 45
+        },
+        {
+          "from": "pick up the first blue cube",
+          "to": "put it into the bin",
+          "count": 45
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the second blue cube",
+          "count": 33
+        },
+        {
+          "from": "pick up the second blue cube",
+          "to": "put it into the bin",
+          "count": 33
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the second red cube",
+          "count": 30
+        },
+        {
+          "from": "pick up the second red cube",
+          "to": "put it into the bin",
+          "count": 30
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the second green cube",
+          "count": 27
+        },
+        {
+          "from": "pick up the second green cube",
+          "to": "put it into the bin",
+          "count": 27
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the first blue cube",
+          "count": 19
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the third blue cube",
+          "count": 18
+        },
+        {
+          "from": "pick up the third blue cube",
+          "to": "put it into the bin",
+          "count": 18
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the third green cube",
+          "count": 13
+        },
+        {
+          "from": "pick up the third green cube",
+          "to": "put it into the bin",
+          "count": 13
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the first green cube",
+          "count": 13
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the third red cube",
+          "count": 12
+        },
+        {
+          "from": "pick up the third red cube",
+          "to": "put it into the bin",
+          "count": 12
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the first red cube",
+          "count": 9
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the fourth blue cube",
+          "count": 2
+        },
+        {
+          "from": "pick up the fourth blue cube",
+          "to": "put it into the bin",
+          "count": 2
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the fourth green cube",
+          "count": 1
+        },
+        {
+          "from": "pick up the fourth green cube",
+          "to": "put it into the bin",
+          "count": 1
+        },
+        {
+          "from": "put it into the bin",
+          "to": "pick up the fourth red cube",
+          "count": 1
+        },
+        {
+          "from": "pick up the fourth red cube",
+          "to": "put it into the bin",
+          "count": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the first blue cube",
+          "after": "pick up the second blue cube",
+          "strength": 1.0,
+          "co_occurrences": 33
+        },
+        {
+          "before": "pick up the first blue cube",
+          "after": "pick up the third blue cube",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "pick up the first blue cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 45
+        },
+        {
+          "before": "pick up the first green cube",
+          "after": "pick up the second green cube",
+          "strength": 1.0,
+          "co_occurrences": 27
+        },
+        {
+          "before": "pick up the first green cube",
+          "after": "pick up the third green cube",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the first green cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 45
+        },
+        {
+          "before": "pick up the first red cube",
+          "after": "pick up the second red cube",
+          "strength": 1.0,
+          "co_occurrences": 30
+        },
+        {
+          "before": "pick up the first red cube",
+          "after": "pick up the third red cube",
+          "strength": 1.0,
+          "co_occurrences": 12
+        },
+        {
+          "before": "pick up the first red cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 51
+        },
+        {
+          "before": "pick up the second blue cube",
+          "after": "pick up the third blue cube",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "pick up the second blue cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 33
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the second blue cube",
+          "strength": 1.0,
+          "co_occurrences": 33
+        },
+        {
+          "before": "pick up the second green cube",
+          "after": "pick up the third green cube",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the second green cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 27
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the second green cube",
+          "strength": 1.0,
+          "co_occurrences": 27
+        },
+        {
+          "before": "pick up the second red cube",
+          "after": "pick up the third red cube",
+          "strength": 1.0,
+          "co_occurrences": 12
+        },
+        {
+          "before": "pick up the second red cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 30
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the second red cube",
+          "strength": 1.0,
+          "co_occurrences": 30
+        },
+        {
+          "before": "pick up the third blue cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the third blue cube",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "pick up the third green cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the third green cube",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the third red cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 12
+        },
+        {
+          "before": "put it into the bin",
+          "after": "pick up the third red cube",
+          "strength": 1.0,
+          "co_occurrences": 12
+        },
+        {
+          "before": "put it into the bin",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the first red cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 11
+        },
+        {
+          "sequence": [
+            "pick up the first red cube",
+            "put it into the bin",
+            "pick up the second red cube",
+            "put it into the bin",
+            "pick up the third red cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 9
+        },
+        {
+          "sequence": [
+            "pick up the first red cube",
+            "put it into the bin",
+            "pick up the second red cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "pick up the first blue cube",
+            "put it into the bin",
+            "pick up the second blue cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "pick up the first blue cube",
+            "put it into the bin",
+            "pick up the second blue cube",
+            "put it into the bin",
+            "pick up the third blue cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "pick up the first green cube",
+            "put it into the bin",
+            "pick up the second green cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 6
+        },
+        {
+          "sequence": [
+            "pick up the first green cube",
+            "put it into the bin",
+            "pick up the second green cube",
+            "put it into the bin",
+            "pick up the third green cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "pick up the first green cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "pick up the first blue cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "pick up the first green cube",
+            "put it into the bin",
+            "pick up the first blue cube",
+            "put it into the bin",
+            "pick up the second blue cube",
+            "put it into the bin",
+            "pick up the third blue cube",
+            "put it into the bin",
+            "press the button"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    "demo": null
+  },
+  "ButtonUnmask": {
+    "task_name": "ButtonUnmask",
+    "task_goal": "first press the button, then pick up the container hiding the red cube",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "pick up the container that hides the blue cube": {
+          "frequency": 0.41,
+          "episode_count": 41,
+          "avg_coverage": 0.3641,
+          "std_coverage": 0.1023,
+          "median_position": 0.5,
+          "avg_position": 0.5061
+        },
+        "pick up the container that hides the green cube": {
+          "frequency": 0.36,
+          "episode_count": 36,
+          "avg_coverage": 0.4029,
+          "std_coverage": 0.0869,
+          "median_position": 0.5,
+          "avg_position": 0.4514
+        },
+        "pick up the container that hides the red cube": {
+          "frequency": 0.48,
+          "episode_count": 48,
+          "avg_coverage": 0.3764,
+          "std_coverage": 0.0974,
+          "median_position": 0.5,
+          "avg_position": 0.5312
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.4609,
+          "std_coverage": 0.0935,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "put down the container": {
+          "frequency": 0.25,
+          "episode_count": 25,
+          "avg_coverage": 0.126,
+          "std_coverage": 0.0136,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [
+        {
+          "from": "press the button",
+          "to": "pick up the container that hides the red cube",
+          "count": 35
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the container that hides the green cube",
+          "count": 34
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the container that hides the blue cube",
+          "count": 31
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the red cube",
+          "count": 13
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the blue cube",
+          "count": 10
+        },
+        {
+          "from": "pick up the container that hides the blue cube",
+          "to": "put down the container",
+          "count": 9
+        },
+        {
+          "from": "pick up the container that hides the green cube",
+          "to": "put down the container",
+          "count": 9
+        },
+        {
+          "from": "pick up the container that hides the red cube",
+          "to": "put down the container",
+          "count": 7
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the green cube",
+          "count": 2
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "press the button",
+          "after": "pick up the container that hides the blue cube",
+          "strength": 1.0,
+          "co_occurrences": 41
+        },
+        {
+          "before": "pick up the container that hides the green cube",
+          "after": "pick up the container that hides the red cube",
+          "strength": 1.0,
+          "co_occurrences": 6
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the container that hides the green cube",
+          "strength": 1.0,
+          "co_occurrences": 36
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the container that hides the red cube",
+          "strength": 1.0,
+          "co_occurrences": 48
+        },
+        {
+          "before": "press the button",
+          "after": "put down the container",
+          "strength": 1.0,
+          "co_occurrences": 25
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 28
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 25
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 22
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 6
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    "demo": null
+  },
+  "ButtonUnmaskSwap": {
+    "task_name": "ButtonUnmaskSwap",
+    "task_goal": "first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "pick up the container that hides the blue cube": {
+          "frequency": 0.44,
+          "episode_count": 44,
+          "avg_coverage": 0.2385,
+          "std_coverage": 0.058,
+          "median_position": 0.7333,
+          "avg_position": 0.6727
+        },
+        "pick up the container that hides the green cube": {
+          "frequency": 0.5,
+          "episode_count": 50,
+          "avg_coverage": 0.2423,
+          "std_coverage": 0.0594,
+          "median_position": 0.6667,
+          "avg_position": 0.592
+        },
+        "pick up the container that hides the red cube": {
+          "frequency": 0.62,
+          "episode_count": 62,
+          "avg_coverage": 0.2515,
+          "std_coverage": 0.0545,
+          "median_position": 0.6667,
+          "avg_position": 0.6022
+        },
+        "press the first button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2954,
+          "std_coverage": 0.0571,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "press the second button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2451,
+          "std_coverage": 0.048,
+          "median_position": 0.2,
+          "avg_position": 0.2587
+        },
+        "put down the container": {
+          "frequency": 0.56,
+          "episode_count": 56,
+          "avg_coverage": 0.1009,
+          "std_coverage": 0.0091,
+          "median_position": 0.6,
+          "avg_position": 0.6
+        }
+      },
+      "transitions": [
+        {
+          "from": "press the first button",
+          "to": "press the second button",
+          "count": 100
+        },
+        {
+          "from": "press the second button",
+          "to": "pick up the container that hides the red cube",
+          "count": 44
+        },
+        {
+          "from": "press the second button",
+          "to": "pick up the container that hides the green cube",
+          "count": 34
+        },
+        {
+          "from": "pick up the container that hides the red cube",
+          "to": "put down the container",
+          "count": 24
+        },
+        {
+          "from": "press the second button",
+          "to": "pick up the container that hides the blue cube",
+          "count": 22
+        },
+        {
+          "from": "pick up the container that hides the green cube",
+          "to": "put down the container",
+          "count": 22
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the blue cube",
+          "count": 22
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the red cube",
+          "count": 18
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the green cube",
+          "count": 16
+        },
+        {
+          "from": "pick up the container that hides the blue cube",
+          "to": "put down the container",
+          "count": 10
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "press the first button",
+          "after": "pick up the container that hides the blue cube",
+          "strength": 1.0,
+          "co_occurrences": 44
+        },
+        {
+          "before": "press the second button",
+          "after": "pick up the container that hides the blue cube",
+          "strength": 1.0,
+          "co_occurrences": 44
+        },
+        {
+          "before": "press the first button",
+          "after": "pick up the container that hides the green cube",
+          "strength": 1.0,
+          "co_occurrences": 50
+        },
+        {
+          "before": "press the second button",
+          "after": "pick up the container that hides the green cube",
+          "strength": 1.0,
+          "co_occurrences": 50
+        },
+        {
+          "before": "press the first button",
+          "after": "pick up the container that hides the red cube",
+          "strength": 1.0,
+          "co_occurrences": 62
+        },
+        {
+          "before": "press the second button",
+          "after": "pick up the container that hides the red cube",
+          "strength": 1.0,
+          "co_occurrences": 62
+        },
+        {
+          "before": "press the first button",
+          "after": "press the second button",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "press the first button",
+          "after": "put down the container",
+          "strength": 1.0,
+          "co_occurrences": 56
+        },
+        {
+          "before": "press the second button",
+          "after": "put down the container",
+          "strength": 1.0,
+          "co_occurrences": 56
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 20
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 10
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 6
+        },
+        {
+          "sequence": [
+            "press the first button",
+            "press the second button",
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    "demo": null
+  },
+  "InsertPeg": {
+    "task_name": "InsertPeg",
+    "task_goal": "watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "insert the peg from the left side": {
+          "frequency": 0.47,
+          "episode_count": 47,
+          "avg_coverage": 0.4466,
+          "std_coverage": 0.0347,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "insert the peg from the right side": {
+          "frequency": 0.53,
+          "episode_count": 53,
+          "avg_coverage": 0.4487,
+          "std_coverage": 0.0657,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the peg by grasping the far end": {
+          "frequency": 0.54,
+          "episode_count": 54,
+          "avg_coverage": 0.5119,
+          "std_coverage": 0.0286,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the peg by grasping the near end": {
+          "frequency": 0.46,
+          "episode_count": 46,
+          "avg_coverage": 0.4908,
+          "std_coverage": 0.0401,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the peg by grasping the far end",
+          "to": "insert the peg from the right side",
+          "count": 31
+        },
+        {
+          "from": "pick up the peg by grasping the near end",
+          "to": "insert the peg from the left side",
+          "count": 24
+        },
+        {
+          "from": "pick up the peg by grasping the far end",
+          "to": "insert the peg from the left side",
+          "count": 23
+        },
+        {
+          "from": "pick up the peg by grasping the near end",
+          "to": "insert the peg from the right side",
+          "count": 22
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the peg by grasping the far end",
+          "after": "insert the peg from the left side",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the peg by grasping the near end",
+          "after": "insert the peg from the left side",
+          "strength": 1.0,
+          "co_occurrences": 24
+        },
+        {
+          "before": "pick up the peg by grasping the far end",
+          "after": "insert the peg from the right side",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the peg by grasping the near end",
+          "after": "insert the peg from the right side",
+          "strength": 1.0,
+          "co_occurrences": 22
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the peg by grasping the far end",
+            "insert the peg from the right side"
+          ],
+          "count": 31
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the near end",
+            "insert the peg from the left side"
+          ],
+          "count": 24
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the far end",
+            "insert the peg from the left side"
+          ],
+          "count": 23
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the near end",
+            "insert the peg from the right side"
+          ],
+          "count": 22
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "insert the peg from the left side of the box": {
+          "frequency": 0.47,
+          "episode_count": 47,
+          "avg_coverage": 0.4889,
+          "std_coverage": 0.032,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        },
+        "insert the peg from the right side of the box": {
+          "frequency": 0.53,
+          "episode_count": 53,
+          "avg_coverage": 0.5046,
+          "std_coverage": 0.0383,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        },
+        "pick up the peg by grasping the far end": {
+          "frequency": 0.54,
+          "episode_count": 54,
+          "avg_coverage": 0.5124,
+          "std_coverage": 0.0295,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the peg by grasping the near end": {
+          "frequency": 0.46,
+          "episode_count": 46,
+          "avg_coverage": 0.4915,
+          "std_coverage": 0.0402,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the peg by grasping the far end",
+          "to": "insert the peg from the right side of the box",
+          "count": 31
+        },
+        {
+          "from": "pick up the peg by grasping the near end",
+          "to": "insert the peg from the left side of the box",
+          "count": 24
+        },
+        {
+          "from": "pick up the peg by grasping the far end",
+          "to": "insert the peg from the left side of the box",
+          "count": 23
+        },
+        {
+          "from": "pick up the peg by grasping the near end",
+          "to": "insert the peg from the right side of the box",
+          "count": 22
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the peg by grasping the far end",
+            "insert the peg from the right side of the box"
+          ],
+          "count": 31
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the near end",
+            "insert the peg from the left side of the box"
+          ],
+          "count": 24
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the far end",
+            "insert the peg from the left side of the box"
+          ],
+          "count": 23
+        },
+        {
+          "sequence": [
+            "pick up the peg by grasping the near end",
+            "insert the peg from the right side of the box"
+          ],
+          "count": 22
+        }
+      ]
+    }
+  },
+  "MoveCube": {
+    "task_name": "MoveCube",
+    "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "close the gripper and push the cube to the target": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.9514,
+          "std_coverage": 0.0039,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "hook the cube to the target with the peg": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.4359,
+          "std_coverage": 0.0616,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the cube": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.5751,
+          "std_coverage": 0.0224,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the peg": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.5371,
+          "std_coverage": 0.0591,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "place the cube onto the target": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.3487,
+          "std_coverage": 0.0176,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the peg",
+          "to": "hook the cube to the target with the peg",
+          "count": 35
+        },
+        {
+          "from": "pick up the cube",
+          "to": "place the cube onto the target",
+          "count": 31
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the peg",
+          "after": "hook the cube to the target with the peg",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the cube",
+          "after": "place the cube onto the target",
+          "strength": 1.0,
+          "co_occurrences": 31
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the peg",
+            "hook the cube to the target with the peg"
+          ],
+          "count": 35
+        },
+        {
+          "sequence": [
+            "close the gripper and push the cube to the target"
+          ],
+          "count": 34
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "place the cube onto the target"
+          ],
+          "count": 31
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "close the gripper and push the cube to the target": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.6319,
+          "std_coverage": 0.0135,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "hook the cube to the target with the peg": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.393,
+          "std_coverage": 0.0411,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the cube": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.4352,
+          "std_coverage": 0.0144,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the peg": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.4851,
+          "std_coverage": 0.033,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "place the cube onto the target": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.3272,
+          "std_coverage": 0.0183,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "static": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2415,
+          "std_coverage": 0.1029,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the peg",
+          "to": "hook the cube to the target with the peg",
+          "count": 35
+        },
+        {
+          "from": "hook the cube to the target with the peg",
+          "to": "static",
+          "count": 35
+        },
+        {
+          "from": "close the gripper and push the cube to the target",
+          "to": "static",
+          "count": 34
+        },
+        {
+          "from": "pick up the cube",
+          "to": "place the cube onto the target",
+          "count": 31
+        },
+        {
+          "from": "place the cube onto the target",
+          "to": "static",
+          "count": 31
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the peg",
+            "hook the cube to the target with the peg",
+            "static"
+          ],
+          "count": 35
+        },
+        {
+          "sequence": [
+            "close the gripper and push the cube to the target",
+            "static"
+          ],
+          "count": 34
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "place the cube onto the target",
+            "static"
+          ],
+          "count": 31
+        }
+      ]
+    }
+  },
+  "PatternLock": {
+    "task_name": "PatternLock",
+    "task_goal": "Watch the video carefully, then use the stick attached to the robot to retrace the same pattern",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "move backward": {
+          "frequency": 0.4,
+          "episode_count": 40,
+          "avg_coverage": 0.3709,
+          "std_coverage": 0.178,
+          "median_position": 0.0,
+          "avg_position": 0.2373
+        },
+        "move backward-left": {
+          "frequency": 0.33,
+          "episode_count": 33,
+          "avg_coverage": 0.3117,
+          "std_coverage": 0.1426,
+          "median_position": 0.3333,
+          "avg_position": 0.3236
+        },
+        "move backward-right": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.3448,
+          "std_coverage": 0.1856,
+          "median_position": 0.5,
+          "avg_position": 0.4571
+        },
+        "move forward": {
+          "frequency": 0.3,
+          "episode_count": 30,
+          "avg_coverage": 0.3215,
+          "std_coverage": 0.1457,
+          "median_position": 0.2917,
+          "avg_position": 0.2894
+        },
+        "move forward-left": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.2953,
+          "std_coverage": 0.1351,
+          "median_position": 0.3333,
+          "avg_position": 0.3198
+        },
+        "move forward-right": {
+          "frequency": 0.25,
+          "episode_count": 25,
+          "avg_coverage": 0.2402,
+          "std_coverage": 0.0918,
+          "median_position": 0.4286,
+          "avg_position": 0.3779
+        },
+        "move left": {
+          "frequency": 0.33,
+          "episode_count": 33,
+          "avg_coverage": 0.2961,
+          "std_coverage": 0.1842,
+          "median_position": 0.3095,
+          "avg_position": 0.2909
+        },
+        "move right": {
+          "frequency": 0.41,
+          "episode_count": 41,
+          "avg_coverage": 0.2751,
+          "std_coverage": 0.1715,
+          "median_position": 0.3095,
+          "avg_position": 0.3261
+        }
+      },
+      "transitions": [
+        {
+          "from": "move backward",
+          "to": "move right",
+          "count": 9
+        },
+        {
+          "from": "move forward-left",
+          "to": "move right",
+          "count": 9
+        },
+        {
+          "from": "move right",
+          "to": "move backward-left",
+          "count": 8
+        },
+        {
+          "from": "move backward",
+          "to": "move backward-right",
+          "count": 8
+        },
+        {
+          "from": "move forward",
+          "to": "move backward-right",
+          "count": 7
+        },
+        {
+          "from": "move right",
+          "to": "move forward-right",
+          "count": 7
+        },
+        {
+          "from": "move forward",
+          "to": "move backward-left",
+          "count": 6
+        },
+        {
+          "from": "move backward-left",
+          "to": "move forward",
+          "count": 6
+        },
+        {
+          "from": "move backward-left",
+          "to": "move backward-right",
+          "count": 5
+        },
+        {
+          "from": "move backward-left",
+          "to": "move right",
+          "count": 5
+        },
+        {
+          "from": "move left",
+          "to": "move backward-left",
+          "count": 5
+        },
+        {
+          "from": "move left",
+          "to": "move backward-right",
+          "count": 4
+        },
+        {
+          "from": "move forward",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-right",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move forward-left",
+          "to": "move backward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move backward",
+          "count": 4
+        },
+        {
+          "from": "move backward",
+          "to": "move backward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move backward",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move forward",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move backward-right",
+          "to": "move forward",
+          "count": 4
+        },
+        {
+          "from": "move forward-right",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move backward",
+          "count": 4
+        },
+        {
+          "from": "move left",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move backward",
+          "to": "move left",
+          "count": 3
+        },
+        {
+          "from": "move forward-left",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-left",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move backward",
+          "to": "move forward-right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move backward-right",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move forward",
+          "to": "move right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move forward-right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move right",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move backward-right",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move forward-left",
+          "count": 2
+        },
+        {
+          "from": "move right",
+          "to": "move backward-right",
+          "count": 2
+        },
+        {
+          "from": "move backward-right",
+          "to": "move right",
+          "count": 2
+        },
+        {
+          "from": "move forward-left",
+          "to": "move forward-right",
+          "count": 2
+        },
+        {
+          "from": "move backward-right",
+          "to": "move forward-right",
+          "count": 2
+        },
+        {
+          "from": "move forward-right",
+          "to": "move backward",
+          "count": 1
+        },
+        {
+          "from": "move forward-left",
+          "to": "move left",
+          "count": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "move forward-left",
+          "after": "move backward-right",
+          "strength": 1.0,
+          "co_occurrences": 5
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "move left"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move backward",
+            "move forward-left"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move right"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move backward",
+            "move right"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move backward-right"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move backward"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move left",
+            "move backward-right"
+          ],
+          "count": 2
+        },
+        {
+          "sequence": [
+            "move backward",
+            "move left"
+          ],
+          "count": 2
+        },
+        {
+          "sequence": [
+            "move forward",
+            "move backward-right"
+          ],
+          "count": 2
+        },
+        {
+          "sequence": [
+            "move left",
+            "move backward-left"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "move backward": {
+          "frequency": 0.4,
+          "episode_count": 40,
+          "avg_coverage": 0.4037,
+          "std_coverage": 0.2185,
+          "median_position": 0.3333,
+          "avg_position": 0.3691
+        },
+        "move backward-left": {
+          "frequency": 0.33,
+          "episode_count": 33,
+          "avg_coverage": 0.3307,
+          "std_coverage": 0.1658,
+          "median_position": 0.5,
+          "avg_position": 0.4705
+        },
+        "move backward-right": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.4029,
+          "std_coverage": 0.2286,
+          "median_position": 0.875,
+          "avg_position": 0.7134
+        },
+        "move forward": {
+          "frequency": 0.3,
+          "episode_count": 30,
+          "avg_coverage": 0.3503,
+          "std_coverage": 0.1677,
+          "median_position": 0.4,
+          "avg_position": 0.4417
+        },
+        "move forward-left": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.3331,
+          "std_coverage": 0.1707,
+          "median_position": 0.5,
+          "avg_position": 0.4985
+        },
+        "move forward-right": {
+          "frequency": 0.25,
+          "episode_count": 25,
+          "avg_coverage": 0.271,
+          "std_coverage": 0.1132,
+          "median_position": 0.5,
+          "avg_position": 0.5235
+        },
+        "move left": {
+          "frequency": 0.33,
+          "episode_count": 33,
+          "avg_coverage": 0.3561,
+          "std_coverage": 0.2553,
+          "median_position": 0.5,
+          "avg_position": 0.4852
+        },
+        "move right": {
+          "frequency": 0.41,
+          "episode_count": 41,
+          "avg_coverage": 0.3266,
+          "std_coverage": 0.2231,
+          "median_position": 0.5,
+          "avg_position": 0.5116
+        }
+      },
+      "transitions": [
+        {
+          "from": "move backward",
+          "to": "move right",
+          "count": 9
+        },
+        {
+          "from": "move forward-left",
+          "to": "move right",
+          "count": 9
+        },
+        {
+          "from": "move right",
+          "to": "move backward-left",
+          "count": 8
+        },
+        {
+          "from": "move backward",
+          "to": "move backward-right",
+          "count": 8
+        },
+        {
+          "from": "move forward",
+          "to": "move backward-right",
+          "count": 7
+        },
+        {
+          "from": "move right",
+          "to": "move forward-right",
+          "count": 7
+        },
+        {
+          "from": "move forward",
+          "to": "move backward-left",
+          "count": 6
+        },
+        {
+          "from": "move backward-left",
+          "to": "move forward",
+          "count": 6
+        },
+        {
+          "from": "move backward-left",
+          "to": "move backward-right",
+          "count": 5
+        },
+        {
+          "from": "move backward-left",
+          "to": "move right",
+          "count": 5
+        },
+        {
+          "from": "move left",
+          "to": "move backward-left",
+          "count": 5
+        },
+        {
+          "from": "move left",
+          "to": "move backward-right",
+          "count": 4
+        },
+        {
+          "from": "move forward",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-right",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move forward-left",
+          "to": "move backward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move backward",
+          "count": 4
+        },
+        {
+          "from": "move backward",
+          "to": "move backward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move backward",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move backward-left",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move forward",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move backward-right",
+          "to": "move forward",
+          "count": 4
+        },
+        {
+          "from": "move forward-right",
+          "to": "move left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move backward",
+          "count": 4
+        },
+        {
+          "from": "move left",
+          "to": "move forward-left",
+          "count": 4
+        },
+        {
+          "from": "move right",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move backward",
+          "to": "move left",
+          "count": 3
+        },
+        {
+          "from": "move forward-left",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-left",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move backward",
+          "to": "move forward-right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move backward-right",
+          "to": "move backward",
+          "count": 3
+        },
+        {
+          "from": "move forward",
+          "to": "move right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move forward-right",
+          "count": 3
+        },
+        {
+          "from": "move left",
+          "to": "move forward",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move right",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move backward-right",
+          "count": 3
+        },
+        {
+          "from": "move forward-right",
+          "to": "move forward-left",
+          "count": 2
+        },
+        {
+          "from": "move right",
+          "to": "move backward-right",
+          "count": 2
+        },
+        {
+          "from": "move backward-right",
+          "to": "move right",
+          "count": 2
+        },
+        {
+          "from": "move forward-left",
+          "to": "move forward-right",
+          "count": 2
+        },
+        {
+          "from": "move backward-right",
+          "to": "move forward-right",
+          "count": 2
+        },
+        {
+          "from": "move forward-right",
+          "to": "move backward",
+          "count": 1
+        },
+        {
+          "from": "move forward-left",
+          "to": "move left",
+          "count": 1
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "move left"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move backward",
+            "move forward-left"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move right"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move backward",
+            "move right"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move backward-right"
+          ],
+          "count": 3
+        }
+      ]
+    }
+  },
+  "PickHighlight": {
+    "task_name": "PickHighlight",
+    "task_goal": "first press the button, then pick up all cubes that have been highlighteted with white areas on the table",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "pick up the first highlighted cube, which is blue": {
+          "frequency": 0.19,
+          "episode_count": 19,
+          "avg_coverage": 0.244,
+          "std_coverage": 0.0449,
+          "median_position": 0.1667,
+          "avg_position": 0.2061
+        },
+        "pick up the first highlighted cube, which is green": {
+          "frequency": 0.16,
+          "episode_count": 16,
+          "avg_coverage": 0.2312,
+          "std_coverage": 0.0439,
+          "median_position": 0.1667,
+          "avg_position": 0.2031
+        },
+        "pick up the first highlighted cube, which is red": {
+          "frequency": 0.15,
+          "episode_count": 15,
+          "avg_coverage": 0.2382,
+          "std_coverage": 0.0428,
+          "median_position": 0.25,
+          "avg_position": 0.2167
+        },
+        "pick up the highlighted cube, which is blue": {
+          "frequency": 0.16,
+          "episode_count": 16,
+          "avg_coverage": 0.4098,
+          "std_coverage": 0.0214,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the highlighted cube, which is green": {
+          "frequency": 0.2,
+          "episode_count": 20,
+          "avg_coverage": 0.4105,
+          "std_coverage": 0.0422,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the highlighted cube, which is red": {
+          "frequency": 0.14,
+          "episode_count": 14,
+          "avg_coverage": 0.4417,
+          "std_coverage": 0.0649,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "pick up the second highlighted cube, which is blue": {
+          "frequency": 0.18,
+          "episode_count": 18,
+          "avg_coverage": 0.2043,
+          "std_coverage": 0.0275,
+          "median_position": 0.625,
+          "avg_position": 0.625
+        },
+        "pick up the second highlighted cube, which is green": {
+          "frequency": 0.14,
+          "episode_count": 14,
+          "avg_coverage": 0.2121,
+          "std_coverage": 0.0542,
+          "median_position": 0.5,
+          "avg_position": 0.6071
+        },
+        "pick up the second highlighted cube, which is red": {
+          "frequency": 0.18,
+          "episode_count": 18,
+          "avg_coverage": 0.21,
+          "std_coverage": 0.0255,
+          "median_position": 0.75,
+          "avg_position": 0.6389
+        },
+        "pick up the third highlighted cube, which is blue": {
+          "frequency": 0.08,
+          "episode_count": 8,
+          "avg_coverage": 0.1572,
+          "std_coverage": 0.0138,
+          "median_position": 0.8333,
+          "avg_position": 0.8333
+        },
+        "pick up the third highlighted cube, which is green": {
+          "frequency": 0.09,
+          "episode_count": 9,
+          "avg_coverage": 0.1654,
+          "std_coverage": 0.0166,
+          "median_position": 0.8333,
+          "avg_position": 0.8333
+        },
+        "pick up the third highlighted cube, which is red": {
+          "frequency": 0.08,
+          "episode_count": 8,
+          "avg_coverage": 0.1661,
+          "std_coverage": 0.0175,
+          "median_position": 0.8333,
+          "avg_position": 0.8333
+        },
+        "place the cube onto the table": {
+          "frequency": 0.5,
+          "episode_count": 50,
+          "avg_coverage": 0.119,
+          "std_coverage": 0.0267,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.3869,
+          "std_coverage": 0.1356,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "press the button",
+          "to": "pick up the highlighted cube, which is green",
+          "count": 20
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the first highlighted cube, which is blue",
+          "count": 19
+        },
+        {
+          "from": "pick up the first highlighted cube, which is blue",
+          "to": "place the cube onto the table",
+          "count": 19
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the second highlighted cube, which is red",
+          "count": 18
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the second highlighted cube, which is blue",
+          "count": 18
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the first highlighted cube, which is green",
+          "count": 16
+        },
+        {
+          "from": "pick up the first highlighted cube, which is green",
+          "to": "place the cube onto the table",
+          "count": 16
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the highlighted cube, which is blue",
+          "count": 16
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the first highlighted cube, which is red",
+          "count": 15
+        },
+        {
+          "from": "pick up the first highlighted cube, which is red",
+          "to": "place the cube onto the table",
+          "count": 15
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the highlighted cube, which is red",
+          "count": 14
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the second highlighted cube, which is green",
+          "count": 14
+        },
+        {
+          "from": "pick up the second highlighted cube, which is blue",
+          "to": "place the cube onto the table",
+          "count": 9
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the third highlighted cube, which is green",
+          "count": 9
+        },
+        {
+          "from": "pick up the second highlighted cube, which is green",
+          "to": "place the cube onto the table",
+          "count": 8
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the third highlighted cube, which is blue",
+          "count": 8
+        },
+        {
+          "from": "place the cube onto the table",
+          "to": "pick up the third highlighted cube, which is red",
+          "count": 8
+        },
+        {
+          "from": "pick up the second highlighted cube, which is red",
+          "to": "place the cube onto the table",
+          "count": 8
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the first highlighted cube, which is blue",
+          "after": "pick up the second highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 7
+        },
+        {
+          "before": "pick up the first highlighted cube, which is blue",
+          "after": "pick up the second highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the first highlighted cube, which is blue",
+          "after": "pick up the second highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 7
+        },
+        {
+          "before": "pick up the first highlighted cube, which is blue",
+          "after": "place the cube onto the table",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the first highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "pick up the first highlighted cube, which is green",
+          "after": "pick up the second highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 7
+        },
+        {
+          "before": "pick up the first highlighted cube, which is green",
+          "after": "pick up the second highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the first highlighted cube, which is green",
+          "after": "place the cube onto the table",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the first highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "pick up the first highlighted cube, which is red",
+          "after": "pick up the second highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the first highlighted cube, which is red",
+          "after": "pick up the second highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 6
+        },
+        {
+          "before": "pick up the first highlighted cube, which is red",
+          "after": "place the cube onto the table",
+          "strength": 1.0,
+          "co_occurrences": 15
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the first highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 15
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 20
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "pick up the second highlighted cube, which is blue",
+          "after": "pick up the third highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the second highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the second highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the second highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the second highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the second highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the second highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 18
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the third highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the third highlighted cube, which is blue",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the third highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the third highlighted cube, which is green",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "place the cube onto the table",
+          "after": "pick up the third highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "press the button",
+          "after": "pick up the third highlighted cube, which is red",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "press the button",
+          "after": "place the cube onto the table",
+          "strength": 1.0,
+          "co_occurrences": 50
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "press the button",
+            "pick up the highlighted cube, which is green"
+          ],
+          "count": 20
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the highlighted cube, which is blue"
+          ],
+          "count": 16
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the highlighted cube, which is red"
+          ],
+          "count": 14
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is blue",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is red"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is red",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is green"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is blue",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is blue"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is green",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is blue"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is blue",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is blue",
+            "place the cube onto the table",
+            "pick up the third highlighted cube, which is green"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is red",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is red"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "press the button",
+            "pick up the first highlighted cube, which is red",
+            "place the cube onto the table",
+            "pick up the second highlighted cube, which is blue"
+          ],
+          "count": 3
+        }
+      ]
+    },
+    "demo": null
+  },
+  "PickXtimes": {
+    "task_name": "PickXtimes",
+    "task_goal": "pick up the red cube and place it on the target, repeating this action two times, then press the button to stop",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "pick up the blue cube for the fifth time": {
+          "frequency": 0.04,
+          "episode_count": 4,
+          "avg_coverage": 0.0864,
+          "std_coverage": 0.0065,
+          "median_position": 0.7273,
+          "avg_position": 0.7273
+        },
+        "pick up the blue cube for the first time": {
+          "frequency": 0.4,
+          "episode_count": 40,
+          "avg_coverage": 0.2391,
+          "std_coverage": 0.0826,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the blue cube for the fourth time": {
+          "frequency": 0.09,
+          "episode_count": 9,
+          "avg_coverage": 0.0971,
+          "std_coverage": 0.0105,
+          "median_position": 0.6667,
+          "avg_position": 0.6128
+        },
+        "pick up the blue cube for the second time": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.1295,
+          "std_coverage": 0.0307,
+          "median_position": 0.2857,
+          "avg_position": 0.2916
+        },
+        "pick up the blue cube for the third time": {
+          "frequency": 0.23,
+          "episode_count": 23,
+          "avg_coverage": 0.1205,
+          "std_coverage": 0.0356,
+          "median_position": 0.5714,
+          "avg_position": 0.5077
+        },
+        "pick up the green cube for the fifth time": {
+          "frequency": 0.05,
+          "episode_count": 5,
+          "avg_coverage": 0.089,
+          "std_coverage": 0.0034,
+          "median_position": 0.7273,
+          "avg_position": 0.7273
+        },
+        "pick up the green cube for the first time": {
+          "frequency": 0.28,
+          "episode_count": 28,
+          "avg_coverage": 0.2454,
+          "std_coverage": 0.0992,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the green cube for the fourth time": {
+          "frequency": 0.08,
+          "episode_count": 8,
+          "avg_coverage": 0.0932,
+          "std_coverage": 0.0112,
+          "median_position": 0.5455,
+          "avg_position": 0.5909
+        },
+        "pick up the green cube for the second time": {
+          "frequency": 0.2,
+          "episode_count": 20,
+          "avg_coverage": 0.128,
+          "std_coverage": 0.0326,
+          "median_position": 0.2857,
+          "avg_position": 0.2731
+        },
+        "pick up the green cube for the third time": {
+          "frequency": 0.16,
+          "episode_count": 16,
+          "avg_coverage": 0.1124,
+          "std_coverage": 0.0208,
+          "median_position": 0.5079,
+          "avg_position": 0.4827
+        },
+        "pick up the red cube for the fifth time": {
+          "frequency": 0.04,
+          "episode_count": 4,
+          "avg_coverage": 0.0906,
+          "std_coverage": 0.0037,
+          "median_position": 0.7273,
+          "avg_position": 0.7273
+        },
+        "pick up the red cube for the first time": {
+          "frequency": 0.32,
+          "episode_count": 32,
+          "avg_coverage": 0.2499,
+          "std_coverage": 0.0892,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the red cube for the fourth time": {
+          "frequency": 0.08,
+          "episode_count": 8,
+          "avg_coverage": 0.0959,
+          "std_coverage": 0.0066,
+          "median_position": 0.6061,
+          "avg_position": 0.6061
+        },
+        "pick up the red cube for the second time": {
+          "frequency": 0.26,
+          "episode_count": 26,
+          "avg_coverage": 0.1484,
+          "std_coverage": 0.0537,
+          "median_position": 0.3429,
+          "avg_position": 0.3171
+        },
+        "pick up the red cube for the third time": {
+          "frequency": 0.13,
+          "episode_count": 13,
+          "avg_coverage": 0.1081,
+          "std_coverage": 0.017,
+          "median_position": 0.4444,
+          "avg_position": 0.4684
+        },
+        "place the blue cube onto the target": {
+          "frequency": 0.4,
+          "episode_count": 40,
+          "avg_coverage": 0.1305,
+          "std_coverage": 0.0626,
+          "median_position": 0.4286,
+          "avg_position": 0.4241
+        },
+        "place the green cube onto the target": {
+          "frequency": 0.28,
+          "episode_count": 28,
+          "avg_coverage": 0.125,
+          "std_coverage": 0.0635,
+          "median_position": 0.4286,
+          "avg_position": 0.4266
+        },
+        "place the red cube onto the target": {
+          "frequency": 0.32,
+          "episode_count": 32,
+          "avg_coverage": 0.1313,
+          "std_coverage": 0.0601,
+          "median_position": 0.4286,
+          "avg_position": 0.4221
+        },
+        "press the button to stop": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1319,
+          "std_coverage": 0.0479,
+          "median_position": 0.8571,
+          "avg_position": 0.8096
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the blue cube for the first time",
+          "to": "place the blue cube onto the target",
+          "count": 40
+        },
+        {
+          "from": "place the blue cube onto the target",
+          "to": "press the button to stop",
+          "count": 40
+        },
+        {
+          "from": "pick up the red cube for the first time",
+          "to": "place the red cube onto the target",
+          "count": 32
+        },
+        {
+          "from": "place the red cube onto the target",
+          "to": "press the button to stop",
+          "count": 32
+        },
+        {
+          "from": "place the blue cube onto the target",
+          "to": "pick up the blue cube for the second time",
+          "count": 31
+        },
+        {
+          "from": "pick up the blue cube for the second time",
+          "to": "place the blue cube onto the target",
+          "count": 31
+        },
+        {
+          "from": "pick up the green cube for the first time",
+          "to": "place the green cube onto the target",
+          "count": 28
+        },
+        {
+          "from": "place the green cube onto the target",
+          "to": "press the button to stop",
+          "count": 28
+        },
+        {
+          "from": "place the red cube onto the target",
+          "to": "pick up the red cube for the second time",
+          "count": 26
+        },
+        {
+          "from": "pick up the red cube for the second time",
+          "to": "place the red cube onto the target",
+          "count": 26
+        },
+        {
+          "from": "place the blue cube onto the target",
+          "to": "pick up the blue cube for the third time",
+          "count": 23
+        },
+        {
+          "from": "pick up the blue cube for the third time",
+          "to": "place the blue cube onto the target",
+          "count": 23
+        },
+        {
+          "from": "place the green cube onto the target",
+          "to": "pick up the green cube for the second time",
+          "count": 20
+        },
+        {
+          "from": "pick up the green cube for the second time",
+          "to": "place the green cube onto the target",
+          "count": 20
+        },
+        {
+          "from": "place the green cube onto the target",
+          "to": "pick up the green cube for the third time",
+          "count": 16
+        },
+        {
+          "from": "pick up the green cube for the third time",
+          "to": "place the green cube onto the target",
+          "count": 16
+        },
+        {
+          "from": "place the red cube onto the target",
+          "to": "pick up the red cube for the third time",
+          "count": 13
+        },
+        {
+          "from": "pick up the red cube for the third time",
+          "to": "place the red cube onto the target",
+          "count": 13
+        },
+        {
+          "from": "place the blue cube onto the target",
+          "to": "pick up the blue cube for the fourth time",
+          "count": 9
+        },
+        {
+          "from": "pick up the blue cube for the fourth time",
+          "to": "place the blue cube onto the target",
+          "count": 9
+        },
+        {
+          "from": "place the green cube onto the target",
+          "to": "pick up the green cube for the fourth time",
+          "count": 8
+        },
+        {
+          "from": "pick up the green cube for the fourth time",
+          "to": "place the green cube onto the target",
+          "count": 8
+        },
+        {
+          "from": "place the red cube onto the target",
+          "to": "pick up the red cube for the fourth time",
+          "count": 8
+        },
+        {
+          "from": "pick up the red cube for the fourth time",
+          "to": "place the red cube onto the target",
+          "count": 8
+        },
+        {
+          "from": "place the green cube onto the target",
+          "to": "pick up the green cube for the fifth time",
+          "count": 5
+        },
+        {
+          "from": "pick up the green cube for the fifth time",
+          "to": "place the green cube onto the target",
+          "count": 5
+        },
+        {
+          "from": "place the red cube onto the target",
+          "to": "pick up the red cube for the fifth time",
+          "count": 4
+        },
+        {
+          "from": "pick up the red cube for the fifth time",
+          "to": "place the red cube onto the target",
+          "count": 4
+        },
+        {
+          "from": "place the blue cube onto the target",
+          "to": "pick up the blue cube for the fifth time",
+          "count": 4
+        },
+        {
+          "from": "pick up the blue cube for the fifth time",
+          "to": "place the blue cube onto the target",
+          "count": 4
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the blue cube for the first time",
+          "after": "pick up the blue cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "pick up the blue cube for the first time",
+          "after": "pick up the blue cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the blue cube for the first time",
+          "after": "pick up the blue cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the blue cube for the first time",
+          "after": "place the blue cube onto the target",
+          "strength": 1.0,
+          "co_occurrences": 40
+        },
+        {
+          "before": "pick up the blue cube for the first time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 40
+        },
+        {
+          "before": "pick up the blue cube for the second time",
+          "after": "pick up the blue cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "pick up the blue cube for the third time",
+          "after": "pick up the blue cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "place the blue cube onto the target",
+          "after": "pick up the blue cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "pick up the blue cube for the fourth time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 9
+        },
+        {
+          "before": "pick up the blue cube for the second time",
+          "after": "pick up the blue cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "place the blue cube onto the target",
+          "after": "pick up the blue cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the blue cube for the second time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "place the blue cube onto the target",
+          "after": "pick up the blue cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the blue cube for the third time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "pick up the green cube for the fifth time",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the green cube for the fourth time",
+          "after": "pick up the green cube for the fifth time",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the green cube for the second time",
+          "after": "pick up the green cube for the fifth time",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the green cube for the third time",
+          "after": "pick up the green cube for the fifth time",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "place the green cube onto the target",
+          "after": "pick up the green cube for the fifth time",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the green cube for the fifth time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 5
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "pick up the green cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "pick up the green cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 20
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "pick up the green cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "place the green cube onto the target",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "pick up the green cube for the first time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "pick up the green cube for the second time",
+          "after": "pick up the green cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the green cube for the third time",
+          "after": "pick up the green cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "place the green cube onto the target",
+          "after": "pick up the green cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the green cube for the fourth time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the green cube for the second time",
+          "after": "pick up the green cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "place the green cube onto the target",
+          "after": "pick up the green cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 20
+        },
+        {
+          "before": "pick up the green cube for the second time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 20
+        },
+        {
+          "before": "place the green cube onto the target",
+          "after": "pick up the green cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "pick up the green cube for the third time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 16
+        },
+        {
+          "before": "pick up the red cube for the first time",
+          "after": "pick up the red cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the red cube for the first time",
+          "after": "pick up the red cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "pick up the red cube for the first time",
+          "after": "pick up the red cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the red cube for the first time",
+          "after": "place the red cube onto the target",
+          "strength": 1.0,
+          "co_occurrences": 32
+        },
+        {
+          "before": "pick up the red cube for the first time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 32
+        },
+        {
+          "before": "pick up the red cube for the second time",
+          "after": "pick up the red cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the red cube for the third time",
+          "after": "pick up the red cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "place the red cube onto the target",
+          "after": "pick up the red cube for the fourth time",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the red cube for the fourth time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 8
+        },
+        {
+          "before": "pick up the red cube for the second time",
+          "after": "pick up the red cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "place the red cube onto the target",
+          "after": "pick up the red cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "pick up the red cube for the second time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "place the red cube onto the target",
+          "after": "pick up the red cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the red cube for the third time",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "place the blue cube onto the target",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 40
+        },
+        {
+          "before": "place the green cube onto the target",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "place the red cube onto the target",
+          "after": "press the button to stop",
+          "strength": 1.0,
+          "co_occurrences": 32
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the blue cube for the first time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the second time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the third time",
+            "place the blue cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 14
+        },
+        {
+          "sequence": [
+            "pick up the red cube for the first time",
+            "place the red cube onto the target",
+            "pick up the red cube for the second time",
+            "place the red cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 13
+        },
+        {
+          "sequence": [
+            "pick up the blue cube for the first time",
+            "place the blue cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 9
+        },
+        {
+          "sequence": [
+            "pick up the green cube for the first time",
+            "place the green cube onto the target",
+            "pick up the green cube for the second time",
+            "place the green cube onto the target",
+            "pick up the green cube for the third time",
+            "place the green cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the green cube for the first time",
+            "place the green cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the blue cube for the first time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the second time",
+            "place the blue cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the red cube for the first time",
+            "place the red cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 6
+        },
+        {
+          "sequence": [
+            "pick up the green cube for the first time",
+            "place the green cube onto the target",
+            "pick up the green cube for the second time",
+            "place the green cube onto the target",
+            "pick up the green cube for the third time",
+            "place the green cube onto the target",
+            "pick up the green cube for the fourth time",
+            "place the green cube onto the target",
+            "pick up the green cube for the fifth time",
+            "place the green cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "pick up the blue cube for the first time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the second time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the third time",
+            "place the blue cube onto the target",
+            "pick up the blue cube for the fourth time",
+            "place the blue cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "pick up the red cube for the first time",
+            "place the red cube onto the target",
+            "pick up the red cube for the second time",
+            "place the red cube onto the target",
+            "pick up the red cube for the third time",
+            "place the red cube onto the target",
+            "press the button to stop"
+          ],
+          "count": 5
+        }
+      ]
+    },
+    "demo": null
+  },
+  "RouteStick": {
+    "task_name": "RouteStick",
+    "task_goal": "Watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "move to the nearest left target by circling around the stick clockwise": {
+          "frequency": 0.62,
+          "episode_count": 62,
+          "avg_coverage": 0.3154,
+          "std_coverage": 0.2043,
+          "median_position": 0.4,
+          "avg_position": 0.329
+        },
+        "move to the nearest left target by circling around the stick counterclockwise": {
+          "frequency": 0.55,
+          "episode_count": 55,
+          "avg_coverage": 0.3633,
+          "std_coverage": 0.2421,
+          "median_position": 0.2857,
+          "avg_position": 0.3235
+        },
+        "move to the nearest right target by circling around the stick clockwise": {
+          "frequency": 0.61,
+          "episode_count": 61,
+          "avg_coverage": 0.3204,
+          "std_coverage": 0.1977,
+          "median_position": 0.3333,
+          "avg_position": 0.3563
+        },
+        "move to the nearest right target by circling around the stick counterclockwise": {
+          "frequency": 0.61,
+          "episode_count": 61,
+          "avg_coverage": 0.3283,
+          "std_coverage": 0.2025,
+          "median_position": 0.3333,
+          "avg_position": 0.299
+        }
+      },
+      "transitions": [
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 25
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 23
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 21
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 21
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 18
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 16
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 15
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 13
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 12
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 10
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 8
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 7
+        }
+      ],
+      "dependencies": [],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick counterclockwise"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick counterclockwise",
+            "move to the nearest right target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick clockwise"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick counterclockwise"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick clockwise",
+            "move to the nearest left target by circling around the stick counterclockwise"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick clockwise",
+            "move to the nearest right target by circling around the stick clockwise"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick clockwise",
+            "move to the nearest right target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 2
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "move to the nearest left target by circling around the stick clockwise": {
+          "frequency": 0.62,
+          "episode_count": 62,
+          "avg_coverage": 0.3298,
+          "std_coverage": 0.2171,
+          "median_position": 0.5,
+          "avg_position": 0.5045
+        },
+        "move to the nearest left target by circling around the stick counterclockwise": {
+          "frequency": 0.55,
+          "episode_count": 55,
+          "avg_coverage": 0.3802,
+          "std_coverage": 0.2568,
+          "median_position": 0.5,
+          "avg_position": 0.5026
+        },
+        "move to the nearest right target by circling around the stick clockwise": {
+          "frequency": 0.61,
+          "episode_count": 61,
+          "avg_coverage": 0.339,
+          "std_coverage": 0.2125,
+          "median_position": 0.5,
+          "avg_position": 0.5484
+        },
+        "move to the nearest right target by circling around the stick counterclockwise": {
+          "frequency": 0.61,
+          "episode_count": 61,
+          "avg_coverage": 0.3403,
+          "std_coverage": 0.2153,
+          "median_position": 0.5,
+          "avg_position": 0.4449
+        }
+      },
+      "transitions": [
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 25
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 23
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 21
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 21
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 18
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 16
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 15
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick counterclockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 13
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick counterclockwise",
+          "count": 12
+        },
+        {
+          "from": "move to the nearest right target by circling around the stick clockwise",
+          "to": "move to the nearest left target by circling around the stick clockwise",
+          "count": 10
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick counterclockwise",
+          "count": 8
+        },
+        {
+          "from": "move to the nearest left target by circling around the stick counterclockwise",
+          "to": "move to the nearest right target by circling around the stick clockwise",
+          "count": 7
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick counterclockwise"
+          ],
+          "count": 7
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick counterclockwise",
+            "move to the nearest right target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick counterclockwise",
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest left target by circling around the stick clockwise"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "move to the nearest right target by circling around the stick clockwise"
+          ],
+          "count": 4
+        }
+      ]
+    }
+  },
+  "StopCube": {
+    "task_name": "StopCube",
+    "task_goal": "press the button to stop the cube just as it reaches the target for the fourth time",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "move to the top of the button to prepare": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2143,
+          "std_coverage": 0.1003,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "press the button to stop the cube on the target": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1077,
+          "std_coverage": 0.0511,
+          "median_position": 0.6667,
+          "avg_position": 0.6633
+        },
+        "remain static": {
+          "frequency": 0.98,
+          "episode_count": 98,
+          "avg_coverage": 0.5481,
+          "std_coverage": 0.2063,
+          "median_position": 0.3333,
+          "avg_position": 0.3333
+        }
+      },
+      "transitions": [
+        {
+          "from": "move to the top of the button to prepare",
+          "to": "remain static",
+          "count": 98
+        },
+        {
+          "from": "remain static",
+          "to": "press the button to stop the cube on the target",
+          "count": 98
+        },
+        {
+          "from": "move to the top of the button to prepare",
+          "to": "press the button to stop the cube on the target",
+          "count": 2
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "move to the top of the button to prepare",
+          "after": "press the button to stop the cube on the target",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "move to the top of the button to prepare",
+          "after": "remain static",
+          "strength": 1.0,
+          "co_occurrences": 98
+        },
+        {
+          "before": "remain static",
+          "after": "press the button to stop the cube on the target",
+          "strength": 1.0,
+          "co_occurrences": 98
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "move to the top of the button to prepare",
+            "remain static",
+            "press the button to stop the cube on the target"
+          ],
+          "count": 98
+        },
+        {
+          "sequence": [
+            "move to the top of the button to prepare",
+            "press the button to stop the cube on the target"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    "demo": null
+  },
+  "SwingXtimes": {
+    "task_name": "SwingXtimes",
+    "task_goal": "pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back and forth motion two times, finally press the button to stop",
+    "num_episodes": 100,
+    "has_video_demo": false,
+    "exec": {
+      "subtasks": {
+        "move to the top of the left-side target for the first time": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.0954,
+          "std_coverage": 0.0169,
+          "median_position": 0.2857,
+          "avg_position": 0.2828
+        },
+        "move to the top of the left-side target for the second time": {
+          "frequency": 0.77,
+          "episode_count": 77,
+          "avg_coverage": 0.0878,
+          "std_coverage": 0.0091,
+          "median_position": 0.4444,
+          "avg_position": 0.4956
+        },
+        "move to the top of the left-side target for the third time": {
+          "frequency": 0.46,
+          "episode_count": 46,
+          "avg_coverage": 0.0824,
+          "std_coverage": 0.0055,
+          "median_position": 0.6667,
+          "avg_position": 0.6667
+        },
+        "move to the top of the right-side target for the first time": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.079,
+          "std_coverage": 0.0235,
+          "median_position": 0.1429,
+          "avg_position": 0.1414
+        },
+        "move to the top of the right-side target for the second time": {
+          "frequency": 0.77,
+          "episode_count": 77,
+          "avg_coverage": 0.0878,
+          "std_coverage": 0.0092,
+          "median_position": 0.3333,
+          "avg_position": 0.3717
+        },
+        "move to the top of the right-side target for the third time": {
+          "frequency": 0.46,
+          "episode_count": 46,
+          "avg_coverage": 0.0823,
+          "std_coverage": 0.0054,
+          "median_position": 0.5556,
+          "avg_position": 0.5556
+        },
+        "pick up the blue cube": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.2753,
+          "std_coverage": 0.0544,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the green cube": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.3009,
+          "std_coverage": 0.0613,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the red cube": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.2858,
+          "std_coverage": 0.0492,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1504,
+          "std_coverage": 0.0336,
+          "median_position": 0.8571,
+          "avg_position": 0.8586
+        },
+        "put the blue cube on the table": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.0852,
+          "std_coverage": 0.016,
+          "median_position": 0.7778,
+          "avg_position": 0.7259
+        },
+        "put the green cube on the table": {
+          "frequency": 0.31,
+          "episode_count": 31,
+          "avg_coverage": 0.0847,
+          "std_coverage": 0.014,
+          "median_position": 0.7143,
+          "avg_position": 0.7114
+        },
+        "put the red cube on the table": {
+          "frequency": 0.34,
+          "episode_count": 34,
+          "avg_coverage": 0.0872,
+          "std_coverage": 0.0152,
+          "median_position": 0.7143,
+          "avg_position": 0.7135
+        }
+      },
+      "transitions": [
+        {
+          "from": "move to the top of the right-side target for the first time",
+          "to": "move to the top of the left-side target for the first time",
+          "count": 100
+        },
+        {
+          "from": "move to the top of the left-side target for the first time",
+          "to": "move to the top of the right-side target for the second time",
+          "count": 77
+        },
+        {
+          "from": "move to the top of the right-side target for the second time",
+          "to": "move to the top of the left-side target for the second time",
+          "count": 77
+        },
+        {
+          "from": "move to the top of the left-side target for the second time",
+          "to": "move to the top of the right-side target for the third time",
+          "count": 46
+        },
+        {
+          "from": "move to the top of the right-side target for the third time",
+          "to": "move to the top of the left-side target for the third time",
+          "count": 46
+        },
+        {
+          "from": "pick up the blue cube",
+          "to": "move to the top of the right-side target for the first time",
+          "count": 35
+        },
+        {
+          "from": "put the blue cube on the table",
+          "to": "press the button",
+          "count": 35
+        },
+        {
+          "from": "pick up the red cube",
+          "to": "move to the top of the right-side target for the first time",
+          "count": 34
+        },
+        {
+          "from": "put the red cube on the table",
+          "to": "press the button",
+          "count": 34
+        },
+        {
+          "from": "pick up the green cube",
+          "to": "move to the top of the right-side target for the first time",
+          "count": 31
+        },
+        {
+          "from": "put the green cube on the table",
+          "to": "press the button",
+          "count": 31
+        },
+        {
+          "from": "move to the top of the left-side target for the third time",
+          "to": "put the blue cube on the table",
+          "count": 19
+        },
+        {
+          "from": "move to the top of the left-side target for the third time",
+          "to": "put the red cube on the table",
+          "count": 14
+        },
+        {
+          "from": "move to the top of the left-side target for the third time",
+          "to": "put the green cube on the table",
+          "count": 13
+        },
+        {
+          "from": "move to the top of the left-side target for the second time",
+          "to": "put the red cube on the table",
+          "count": 12
+        },
+        {
+          "from": "move to the top of the left-side target for the second time",
+          "to": "put the green cube on the table",
+          "count": 10
+        },
+        {
+          "from": "move to the top of the left-side target for the second time",
+          "to": "put the blue cube on the table",
+          "count": 9
+        },
+        {
+          "from": "move to the top of the left-side target for the first time",
+          "to": "put the green cube on the table",
+          "count": 8
+        },
+        {
+          "from": "move to the top of the left-side target for the first time",
+          "to": "put the red cube on the table",
+          "count": 8
+        },
+        {
+          "from": "move to the top of the left-side target for the first time",
+          "to": "put the blue cube on the table",
+          "count": 7
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "move to the top of the left-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "move to the top of the right-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the left-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the left-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the left-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "move to the top of the left-side target for the first time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the left-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "move to the top of the left-side target for the second time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the right-side target for the third time",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the left-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "move to the top of the left-side target for the third time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the left-side target for the third time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "move to the top of the left-side target for the third time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "move to the top of the left-side target for the third time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "move to the top of the right-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the right-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the right-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the right-side target for the first time",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "move to the top of the right-side target for the first time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the right-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the right-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the right-side target for the second time",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 77
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 28
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 23
+        },
+        {
+          "before": "move to the top of the right-side target for the second time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 26
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "move to the top of the right-side target for the third time",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "move to the top of the right-side target for the third time",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 46
+        },
+        {
+          "before": "move to the top of the right-side target for the third time",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 19
+        },
+        {
+          "before": "move to the top of the right-side target for the third time",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 13
+        },
+        {
+          "before": "move to the top of the right-side target for the third time",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 14
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the blue cube",
+          "after": "put the blue cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the green cube",
+          "after": "put the green cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "pick up the red cube",
+          "after": "put the red cube on the table",
+          "strength": 1.0,
+          "co_occurrences": 34
+        },
+        {
+          "before": "put the blue cube on the table",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "put the green cube on the table",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 31
+        },
+        {
+          "before": "put the red cube on the table",
+          "after": "press the button",
+          "strength": 1.0,
+          "co_occurrences": 34
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the blue cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "move to the top of the right-side target for the third time",
+            "move to the top of the left-side target for the third time",
+            "put the blue cube on the table",
+            "press the button"
+          ],
+          "count": 19
+        },
+        {
+          "sequence": [
+            "pick up the red cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "move to the top of the right-side target for the third time",
+            "move to the top of the left-side target for the third time",
+            "put the red cube on the table",
+            "press the button"
+          ],
+          "count": 14
+        },
+        {
+          "sequence": [
+            "pick up the green cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "move to the top of the right-side target for the third time",
+            "move to the top of the left-side target for the third time",
+            "put the green cube on the table",
+            "press the button"
+          ],
+          "count": 13
+        },
+        {
+          "sequence": [
+            "pick up the red cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "put the red cube on the table",
+            "press the button"
+          ],
+          "count": 12
+        },
+        {
+          "sequence": [
+            "pick up the green cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "put the green cube on the table",
+            "press the button"
+          ],
+          "count": 10
+        },
+        {
+          "sequence": [
+            "pick up the blue cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "move to the top of the right-side target for the second time",
+            "move to the top of the left-side target for the second time",
+            "put the blue cube on the table",
+            "press the button"
+          ],
+          "count": 9
+        },
+        {
+          "sequence": [
+            "pick up the green cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "put the green cube on the table",
+            "press the button"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the red cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "put the red cube on the table",
+            "press the button"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the blue cube",
+            "move to the top of the right-side target for the first time",
+            "move to the top of the left-side target for the first time",
+            "put the blue cube on the table",
+            "press the button"
+          ],
+          "count": 7
+        }
+      ]
+    },
+    "demo": null
+  },
+  "VideoPlaceButton": {
+    "task_name": "VideoPlaceButton",
+    "task_goal": "watch the video carefully, then place the red cube on the target right after the button was pressed",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "pick up the cube": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.5793,
+          "std_coverage": 0.0342,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "place the cube onto the correct target": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.3462,
+          "std_coverage": 0.0311,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the cube",
+          "to": "place the cube onto the correct target",
+          "count": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the cube",
+          "after": "place the cube onto the correct target",
+          "strength": 1.0,
+          "co_occurrences": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the cube",
+            "place the cube onto the correct target"
+          ],
+          "count": 100
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "drop the cube onto table": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1174,
+          "std_coverage": 0.0131,
+          "median_position": 0.8571,
+          "avg_position": 0.8571
+        },
+        "drop the cube onto target": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1182,
+          "std_coverage": 0.0112,
+          "median_position": 0.3571,
+          "avg_position": 0.3571
+        },
+        "pick up the cube": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1248,
+          "std_coverage": 0.0235,
+          "median_position": 0.4286,
+          "avg_position": 0.381
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1165,
+          "std_coverage": 0.0083,
+          "median_position": 0.2857,
+          "avg_position": 0.2857
+        },
+        "static": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1554,
+          "std_coverage": 0.0062,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the cube",
+          "to": "drop the cube onto target",
+          "count": 200
+        },
+        {
+          "from": "drop the cube onto target",
+          "to": "press the button",
+          "count": 100
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the cube",
+          "count": 100
+        },
+        {
+          "from": "drop the cube onto target",
+          "to": "pick up the cube",
+          "count": 100
+        },
+        {
+          "from": "pick up the cube",
+          "to": "drop the cube onto table",
+          "count": 100
+        },
+        {
+          "from": "drop the cube onto table",
+          "to": "static",
+          "count": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 100
+        }
+      ]
+    }
+  },
+  "VideoPlaceOrder": {
+    "task_name": "VideoPlaceOrder",
+    "task_goal": "watch the video carefully, then place the blue cube on the first target it was previously placed on",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "pick up the cube": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.5728,
+          "std_coverage": 0.0358,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "place the cube onto the correct target": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.3545,
+          "std_coverage": 0.0333,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the cube",
+          "to": "place the cube onto the correct target",
+          "count": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the cube",
+          "after": "place the cube onto the correct target",
+          "strength": 1.0,
+          "co_occurrences": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the cube",
+            "place the cube onto the correct target"
+          ],
+          "count": 100
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "drop the cube onto table": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.103,
+          "std_coverage": 0.0184,
+          "median_position": 0.8889,
+          "avg_position": 0.8834
+        },
+        "drop the cube onto target": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.0972,
+          "std_coverage": 0.0179,
+          "median_position": 0.3636,
+          "avg_position": 0.3693
+        },
+        "pick up the cube": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.097,
+          "std_coverage": 0.0266,
+          "median_position": 0.4286,
+          "avg_position": 0.3877
+        },
+        "press the button": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.0997,
+          "std_coverage": 0.0166,
+          "median_position": 0.4444,
+          "avg_position": 0.4435
+        },
+        "static": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1296,
+          "std_coverage": 0.02,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the cube",
+          "to": "drop the cube onto target",
+          "count": 294
+        },
+        {
+          "from": "drop the cube onto target",
+          "to": "pick up the cube",
+          "count": 194
+        },
+        {
+          "from": "drop the cube onto target",
+          "to": "press the button",
+          "count": 100
+        },
+        {
+          "from": "press the button",
+          "to": "pick up the cube",
+          "count": 100
+        },
+        {
+          "from": "pick up the cube",
+          "to": "drop the cube onto table",
+          "count": 100
+        },
+        {
+          "from": "drop the cube onto table",
+          "to": "static",
+          "count": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 24
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 15
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 13
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 10
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "pick up the cube",
+            "drop the cube onto target",
+            "press the button",
+            "pick up the cube",
+            "drop the cube onto table",
+            "static"
+          ],
+          "count": 9
+        }
+      ]
+    }
+  },
+  "VideoRepick": {
+    "task_name": "VideoRepick",
+    "task_goal": "watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "pick up the correct cube for the first time": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2938,
+          "std_coverage": 0.0865,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "pick up the correct cube for the second time": {
+          "frequency": 0.72,
+          "episode_count": 72,
+          "avg_coverage": 0.1642,
+          "std_coverage": 0.029,
+          "median_position": 0.4,
+          "avg_position": 0.3444
+        },
+        "pick up the correct cube for the third time": {
+          "frequency": 0.35,
+          "episode_count": 35,
+          "avg_coverage": 0.1427,
+          "std_coverage": 0.0223,
+          "median_position": 0.5714,
+          "avg_position": 0.5714
+        },
+        "press the button to finish": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1702,
+          "std_coverage": 0.0526,
+          "median_position": 0.8,
+          "avg_position": 0.7827
+        },
+        "put it down": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.1284,
+          "std_coverage": 0.0329,
+          "median_position": 0.4286,
+          "avg_position": 0.4055
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the correct cube for the first time",
+          "to": "put it down",
+          "count": 100
+        },
+        {
+          "from": "put it down",
+          "to": "press the button to finish",
+          "count": 100
+        },
+        {
+          "from": "put it down",
+          "to": "pick up the correct cube for the second time",
+          "count": 72
+        },
+        {
+          "from": "pick up the correct cube for the second time",
+          "to": "put it down",
+          "count": 72
+        },
+        {
+          "from": "put it down",
+          "to": "pick up the correct cube for the third time",
+          "count": 35
+        },
+        {
+          "from": "pick up the correct cube for the third time",
+          "to": "put it down",
+          "count": 35
+        }
+      ],
+      "dependencies": [
+        {
+          "before": "pick up the correct cube for the first time",
+          "after": "pick up the correct cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 72
+        },
+        {
+          "before": "pick up the correct cube for the first time",
+          "after": "pick up the correct cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the correct cube for the first time",
+          "after": "press the button to finish",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "pick up the correct cube for the first time",
+          "after": "put it down",
+          "strength": 1.0,
+          "co_occurrences": 100
+        },
+        {
+          "before": "pick up the correct cube for the second time",
+          "after": "pick up the correct cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "pick up the correct cube for the second time",
+          "after": "press the button to finish",
+          "strength": 1.0,
+          "co_occurrences": 72
+        },
+        {
+          "before": "put it down",
+          "after": "pick up the correct cube for the second time",
+          "strength": 1.0,
+          "co_occurrences": 72
+        },
+        {
+          "before": "pick up the correct cube for the third time",
+          "after": "press the button to finish",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "put it down",
+          "after": "pick up the correct cube for the third time",
+          "strength": 1.0,
+          "co_occurrences": 35
+        },
+        {
+          "before": "put it down",
+          "after": "press the button to finish",
+          "strength": 1.0,
+          "co_occurrences": 100
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the correct cube for the first time",
+            "put it down",
+            "pick up the correct cube for the second time",
+            "put it down",
+            "press the button to finish"
+          ],
+          "count": 37
+        },
+        {
+          "sequence": [
+            "pick up the correct cube for the first time",
+            "put it down",
+            "pick up the correct cube for the second time",
+            "put it down",
+            "pick up the correct cube for the third time",
+            "put it down",
+            "press the button to finish"
+          ],
+          "count": 35
+        },
+        {
+          "sequence": [
+            "pick up the correct cube for the first time",
+            "put it down",
+            "press the button to finish"
+          ],
+          "count": 28
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "drop the cube on the table": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.2021,
+          "std_coverage": 0.0736,
+          "median_position": 0.5,
+          "avg_position": 0.625
+        },
+        "pick up the cube": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 0.4312,
+          "std_coverage": 0.1451,
+          "median_position": 0.0,
+          "avg_position": 0.0
+        },
+        "static": {
+          "frequency": 0.75,
+          "episode_count": 75,
+          "avg_coverage": 0.489,
+          "std_coverage": 0.0533,
+          "median_position": 1.0,
+          "avg_position": 1.0
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the cube",
+          "to": "drop the cube on the table",
+          "count": 100
+        },
+        {
+          "from": "drop the cube on the table",
+          "to": "static",
+          "count": 75
+        }
+      ],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube on the table",
+            "static"
+          ],
+          "count": 75
+        },
+        {
+          "sequence": [
+            "pick up the cube",
+            "drop the cube on the table"
+          ],
+          "count": 25
+        }
+      ]
+    }
+  },
+  "VideoUnmask": {
+    "task_name": "VideoUnmask",
+    "task_goal": "watch the video carefully, then pick up the container hiding the blue cube",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "pick up the container that hides the blue cube": {
+          "frequency": 0.3,
+          "episode_count": 30,
+          "avg_coverage": 0.6717,
+          "std_coverage": 0.2724,
+          "median_position": 0.0,
+          "avg_position": 0.2
+        },
+        "pick up the container that hides the green cube": {
+          "frequency": 0.44,
+          "episode_count": 44,
+          "avg_coverage": 0.6916,
+          "std_coverage": 0.2595,
+          "median_position": 0.0,
+          "avg_position": 0.1667
+        },
+        "pick up the container that hides the red cube": {
+          "frequency": 0.51,
+          "episode_count": 51,
+          "avg_coverage": 0.7405,
+          "std_coverage": 0.2497,
+          "median_position": 0.0,
+          "avg_position": 0.0654
+        },
+        "put down the container": {
+          "frequency": 0.25,
+          "episode_count": 25,
+          "avg_coverage": 0.187,
+          "std_coverage": 0.0135,
+          "median_position": 0.3333,
+          "avg_position": 0.3333
+        }
+      },
+      "transitions": [
+        {
+          "from": "pick up the container that hides the red cube",
+          "to": "put down the container",
+          "count": 12
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the green cube",
+          "count": 11
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the blue cube",
+          "count": 9
+        },
+        {
+          "from": "pick up the container that hides the green cube",
+          "to": "put down the container",
+          "count": 8
+        },
+        {
+          "from": "pick up the container that hides the blue cube",
+          "to": "put down the container",
+          "count": 5
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the red cube",
+          "count": 5
+        }
+      ],
+      "dependencies": [],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the container that hides the red cube"
+          ],
+          "count": 34
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the green cube"
+          ],
+          "count": 25
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 16
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 5
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 4
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 3
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "static": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 1.0,
+          "std_coverage": 0.0,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "static"
+          ],
+          "count": 100
+        }
+      ]
+    }
+  },
+  "VideoUnmaskSwap": {
+    "task_name": "VideoUnmaskSwap",
+    "task_goal": "watch the video carefully, then pick up the container hiding the green cube",
+    "num_episodes": 100,
+    "has_video_demo": true,
+    "exec": {
+      "subtasks": {
+        "pick up the container that hides the blue cube": {
+          "frequency": 0.5,
+          "episode_count": 50,
+          "avg_coverage": 0.5302,
+          "std_coverage": 0.2434,
+          "median_position": 0.0,
+          "avg_position": 0.2267
+        },
+        "pick up the container that hides the green cube": {
+          "frequency": 0.55,
+          "episode_count": 55,
+          "avg_coverage": 0.569,
+          "std_coverage": 0.2502,
+          "median_position": 0.0,
+          "avg_position": 0.2061
+        },
+        "pick up the container that hides the red cube": {
+          "frequency": 0.49,
+          "episode_count": 49,
+          "avg_coverage": 0.5449,
+          "std_coverage": 0.2405,
+          "median_position": 0.0,
+          "avg_position": 0.2721
+        },
+        "put down the container": {
+          "frequency": 0.54,
+          "episode_count": 54,
+          "avg_coverage": 0.1869,
+          "std_coverage": 0.0149,
+          "median_position": 0.3333,
+          "avg_position": 0.3333
+        }
+      },
+      "transitions": [
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the red cube",
+          "count": 20
+        },
+        {
+          "from": "pick up the container that hides the green cube",
+          "to": "put down the container",
+          "count": 20
+        },
+        {
+          "from": "pick up the container that hides the blue cube",
+          "to": "put down the container",
+          "count": 19
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the green cube",
+          "count": 17
+        },
+        {
+          "from": "put down the container",
+          "to": "pick up the container that hides the blue cube",
+          "count": 17
+        },
+        {
+          "from": "pick up the container that hides the red cube",
+          "to": "put down the container",
+          "count": 15
+        }
+      ],
+      "dependencies": [],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "pick up the container that hides the green cube"
+          ],
+          "count": 18
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 14
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the red cube"
+          ],
+          "count": 14
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 11
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 11
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the green cube",
+            "put down the container",
+            "pick up the container that hides the red cube"
+          ],
+          "count": 9
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 9
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the blue cube",
+            "put down the container",
+            "pick up the container that hides the green cube"
+          ],
+          "count": 8
+        },
+        {
+          "sequence": [
+            "pick up the container that hides the red cube",
+            "put down the container",
+            "pick up the container that hides the blue cube"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    "demo": {
+      "subtasks": {
+        "static": {
+          "frequency": 1.0,
+          "episode_count": 100,
+          "avg_coverage": 1.0,
+          "std_coverage": 0.0,
+          "median_position": 0.5,
+          "avg_position": 0.5
+        }
+      },
+      "transitions": [],
+      "canonical_sequences": [
+        {
+          "sequence": [
+            "static"
+          ],
+          "count": 100
+        }
+      ]
+    }
+  }
+}

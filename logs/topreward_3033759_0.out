@@ -1,0 +1,251 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033762
+SLURM_ARRAY_TASK_ID: 0
+TASK:                BinFill
+HOSTNAME:            consu.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:42:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: BinFill, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_BinFill.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: BinFill_ep3_f0-107
+  Subtask: pick up the first green cube
+  Frames: 0 - 107
+  First subtask: True
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 37.6s
+  Rewards (raw): [0.03, 0.0, 0.36, 0.59, 0.51, 0.61, 0.95, 1.0]
+  Rewards (mono): [0.03, 0.03, 0.36, 0.59, 0.59, 0.61, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 0-107
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 31, 'role': 'early_transition'}, {'frame': 37, 'role': 'peak_transition'}, {'frame': 67, 'role': 'late_transition'}, {'frame': 93, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: BinFill_ep3_f108-174
+  Subtask: put it into the bin
+  Frames: 108 - 174
+  First subtask: False
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 36.7s
+  Rewards (raw): [0.21, 0.0, 0.07, 0.57, 0.5, 0.57, 1.0, 0.64]
+  Rewards (mono): [0.21, 0.21, 0.21, 0.57, 0.57, 0.57, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 37-66
+  Keyframes: [{'frame': 38, 'role': 'early_transition'}, {'frame': 50, 'role': 'peak_transition'}, {'frame': 53, 'role': 'late_transition'}, {'frame': 57, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: BinFill_ep3_f175-278
+  Subtask: pick up the second green cube
+  Frames: 175 - 278
+  First subtask: False
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 37.3s
+  Rewards (raw): [0.0, 0.4, 0.36, 0.51, 0.6, 0.51, 1.0, 0.84]
+  Rewards (mono): [0.0, 0.4, 0.4, 0.51, 0.6, 0.6, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 44-103
+  Keyframes: [{'frame': 44, 'role': 'start'}, {'frame': 58, 'role': 'early_transition'}, {'frame': 89, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: BinFill_ep3_f279-353
+  Subtask: put it into the bin
+  Frames: 279 - 353
+  First subtask: False
+============================================================
+  Loaded 75 frames
+  Prefix scoring: 36.6s
+  Rewards (raw): [0.74, 0.89, 0.05, 0.0, 0.37, 1.0, 0.37, 0.05]
+  Rewards (mono): [0.74, 0.89, 0.89, 0.89, 0.89, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 4-74
+  Keyframes: [{'frame': 4, 'role': 'start'}, {'frame': 8, 'role': 'early_transition'}, {'frame': 12, 'role': 'peak_transition'}, {'frame': 16, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: BinFill_ep3_f354-581
+  Subtask: pick up the third green cube
+  Frames: 354 - 581
+  First subtask: False
+============================================================
+  Loaded 228 frames
+  Prefix scoring: 37.7s
+  Rewards (raw): [0.24, 0.0, 0.33, 0.21, 0.4, 0.45, 0.64, 1.0]
+  Rewards (mono): [0.24, 0.24, 0.33, 0.33, 0.4, 0.45, 0.64, 1.0]
+  Failed regions: [[51, 80, 109]]
+  Successful interval: 128-227
+  Keyframes: [{'frame': 128, 'role': 'start'}, {'frame': 171, 'role': 'peak_transition'}, {'frame': 209, 'role': 'late_transition'}, {'frame': 227, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 6/26 ---
+
+============================================================
+Segment: BinFill_ep3_f582-668
+  Subtask: put it into the bin
+  Frames: 582 - 668
+  First subtask: False
+============================================================
+  Loaded 87 frames
+  Prefix scoring: 36.6s
+  Rewards (raw): [0.0, 0.26, 0.65, 0.48, 0.84, 0.58, 0.71, 1.0]
+  Rewards (mono): [0.0, 0.26, 0.65, 0.65, 0.84, 0.84, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 59-86
+  Keyframes: [{'frame': 59, 'role': 'start'}, {'frame': 68, 'role': 'early_transition'}, {'frame': 73, 'role': 'peak_transition'}, {'frame': 77, 'role': 'late_transition'}, {'frame': 86, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 7/26 ---
+
+============================================================
+Segment: BinFill_ep3_f669-769
+  Subtask: pick up the first blue cube
+  Frames: 669 - 769
+  First subtask: False
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 36.6s
+  Rewards (raw): [0.0, 0.26, 0.43, 0.49, 1.0, 0.66, 0.77, 1.0]
+  Rewards (mono): [0.0, 0.26, 0.43, 0.49, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 17-100
+  Keyframes: [{'frame': 17, 'role': 'start'}, {'frame': 25, 'role': 'early_transition'}, {'frame': 31, 'role': 'peak_transition'}, {'frame': 61, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 8/26 ---
+
+============================================================
+Segment: BinFill_ep3_f770-835
+  Subtask: put it into the bin
+  Frames: 770 - 835
+  First subtask: False
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 36.9s
+  Rewards (raw): [0.0, 0.0, 0.23, 0.62, 1.0, 0.69, 0.92, 0.31]
+  Rewards (mono): [0.0, 0.0, 0.23, 0.62, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-65
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 17, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 32, 'role': 'late_transition'}, {'frame': 39, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 9/26 ---
+
+============================================================
+Segment: BinFill_ep3_f836-904
+  Subtask: press the button
+  Frames: 836 - 904
+  First subtask: False
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 38.0s
+  Rewards (raw): [0.0, 0.07, 0.25, 0.43, 0.5, 0.75, 1.0, 0.75]
+  Rewards (mono): [0.0, 0.07, 0.25, 0.43, 0.5, 0.75, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 29-68
+  Keyframes: [{'frame': 30, 'role': 'early_transition'}, {'frame': 43, 'role': 'peak_transition'}, {'frame': 59, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 10/26 ---
+
+============================================================
+Segment: BinFill_ep3_f836-939
+  Subtask: press the button
+  Frames: 836 - 939
+  First subtask: False
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 38.9s
+  Rewards (raw): [0.0, 0.22, 0.59, 0.59, 0.81, 0.81, 1.0, 0.66]
+  Rewards (mono): [0.0, 0.22, 0.59, 0.59, 0.81, 0.81, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 44-103
+  Keyframes: [{'frame': 44, 'role': 'start'}, {'frame': 59, 'role': 'early_transition'}, {'frame': 64, 'role': 'peak_transition'}, {'frame': 89, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 11/26 ---
+
+============================================================
+Segment: BinFill_ep14_f0-110
+  Subtask: pick up the first red cube
+  Frames: 0 - 110
+  First subtask: True
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 36.9s
+  Rewards (raw): [0.12, 0.0, 0.47, 1.0, 0.72, 0.79, 0.88, 0.98]
+  Rewards (mono): [0.12, 0.12, 0.47, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-110
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 17, 'role': 'early_transition'}, {'frame': 39, 'role': 'late_transition'}, {'frame': 53, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 12/26 ---
+
+============================================================
+Segment: BinFill_ep14_f111-178
+  Subtask: put it into the bin
+  Frames: 111 - 178
+  First subtask: False
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 36.8s
+  Rewards (raw): [0.0, 0.25, 0.25, 0.83, 1.0, 0.42, 0.71, 0.17]
+  Rewards (mono): [0.0, 0.25, 0.25, 0.83, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-67
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 17, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 31, 'role': 'late_transition'}, {'frame': 40, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 13/26 ---
+
+============================================================
+Segment: BinFill_ep14_f179-286
+  Subtask: pick up the second red cube
+  Frames: 179 - 286
+  First subtask: False
+============================================================
+  Loaded 108 frames

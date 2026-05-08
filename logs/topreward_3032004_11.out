@@ -1,0 +1,182 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3032018
+SLURM_ARRAY_TASK_ID: 11
+TASK:                VideoPlaceButton
+HOSTNAME:            trublu.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Wed Apr 29 06:54:47 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoPlaceButton, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoPlaceButton.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f759-952
+  Subtask: pick up the cube
+  Frames: 759 - 952
+============================================================
+  Loaded 194 frames → 16 prefixes
+  Prefix scoring: 68.3s
+  Rewards: [0.0, 0.15, 0.02, 0.29, 0.54, 0.24, 0.32, 0.39, 0.51, 0.54, 0.61, 0.66, 0.59, 0.9, 0.51, 1.0]
+  Failed regions: [[30, 65], [65, 146], [169, 193]]
+  Successful interval: 172-193
+  Keyframes: [172, 185, 193]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1022
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1022
+============================================================
+  Loaded 70 frames → 16 prefixes
+  Prefix scoring: 65.7s
+  Rewards: [0.62, 0.69, 0.46, 0.46, 0.15, 0.23, 0.62, 0.0, 1.0, 0.46, 0.85, 0.92, 0.23, 0.38, 0.77, 0.77]
+  Failed regions: [[11, 19], [19, 31], [31, 40]]
+  Successful interval: 32-40
+  Keyframes: [32, 38, 43]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1040
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1040
+============================================================
+  Loaded 88 frames → 16 prefixes
+  Prefix scoring: 66.1s
+  Rewards: [0.57, 0.36, 0.43, 0.0, 0.86, 0.93, 0.57, 0.29, 0.71, 0.5, 0.21, 1.0, 0.5, 0.64, 0.57, 0.43]
+  Failed regions: [[8, 18], [18, 34], [34, 50], [50, 65]]
+  Successful interval: 56-65
+  Keyframes: [56, 68, 69]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 4/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep14_f747-865
+  Subtask: pick up the cube
+  Frames: 747 - 865
+============================================================
+  Loaded 119 frames → 16 prefixes
+  Prefix scoring: 67.0s
+  Rewards: [0.0, 0.05, 0.05, 0.23, 0.54, 0.54, 0.46, 0.62, 0.51, 0.41, 0.44, 0.46, 0.56, 0.79, 1.0, 0.69]
+  Failed regions: [[60, 82]]
+  Successful interval: 70-110
+  Keyframes: [70, 105, 115]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 5/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep14_f866-932
+  Subtask: place the cube onto the correct target
+  Frames: 866 - 932
+============================================================
+  Loaded 67 frames → 16 prefixes
+  Prefix scoring: 65.9s
+  Rewards: [0.17, 0.17, 0.22, 0.13, 0.39, 0.3, 1.0, 0.61, 0.91, 0.7, 0.65, 0.22, 0.61, 0.0, 0.83, 0.78]
+  Failed regions: [[14, 22], [22, 30]]
+  Successful interval: 23-30
+  Keyframes: [23, 32, 33]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 6/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep14_f866-950
+  Subtask: place the cube onto the correct target
+  Frames: 866 - 950
+============================================================
+  Loaded 85 frames → 16 prefixes
+  Prefix scoring: 66.3s
+  Rewards: [0.57, 0.3, 0.13, 0.61, 0.87, 0.96, 0.91, 0.83, 0.3, 0.48, 0.0, 0.78, 0.52, 0.91, 1.0, 0.57]
+  Failed regions: [[8, 33], [33, 53], [53, 63], [63, 73]]
+  Successful interval: 64-78
+  Keyframes: [64, 70, 82]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 7/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep81_f769-888
+  Subtask: pick up the cube
+  Frames: 769 - 888
+============================================================
+  Loaded 120 frames → 16 prefixes
+  Prefix scoring: 66.8s
+  Rewards: [0.05, 0.0, 0.0, 0.18, 0.39, 0.71, 0.61, 0.55, 0.74, 0.71, 0.66, 0.63, 0.92, 0.84, 0.87, 1.0]
+  Failed regions: [[47, 69], [69, 97]]
+  Successful interval: 98-119
+  Keyframes: [98, 111, 119]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 8/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep81_f889-958
+  Subtask: place the cube onto the correct target
+  Frames: 889 - 958
+============================================================
+  Loaded 70 frames → 16 prefixes
+  Prefix scoring: 65.8s
+  Rewards: [0.0, 0.15, 0.77, 0.62, 0.23, 0.46, 1.0, 0.54, 0.85, 0.46, 0.77, 0.54, 0.77, 0.85, 0.23, 0.54]
+  Failed regions: [[15, 27]]
+  Successful interval: 20-31
+  Keyframes: [20, 21, 34]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 9/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep81_f889-970
+  Subtask: place the cube onto the correct target
+  Frames: 889 - 970
+============================================================
+  Loaded 82 frames → 16 prefixes
+  Prefix scoring: 65.8s
+  Rewards: [0.0, 0.25, 0.5, 0.5, 0.25, 0.42, 0.33, 0.08, 0.58, 0.42, 0.58, 0.17, 0.67, 0.58, 0.33, 1.0]
+  Failed regions: [[22, 32], [32, 46], [46, 56], [56, 66], [66, 81]]
+  Successful interval: 72-81
+  Keyframes: [72, 73, 81]
+  Success detected: True
+  Confidence: 0.78
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 9 segments
+  Skipped: 0 segments
+  Environments: {'VideoPlaceButton': 9}
+  Mean confidence: 0.748
+  Success detected: 9/9
+  Total failed regions detected: 25
+
+All outputs saved to: data/topreward_labels
+Done.

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboMME Subtask Taxonomy</title>
+  <link rel="stylesheet" href="/static/taxonomy_viewer.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div id="topbar">
+    <h2>RoboMME Subtask Taxonomy</h2>
+    <div class="topbar-group">
+      <span class="stat-badge" id="stat-tasks">-- tasks</span>
+      <span class="stat-badge" id="stat-episodes">-- episodes</span>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="content">
+    <!-- Task sidebar -->
+    <div id="task-sidebar">
+      <h3>Tasks</h3>
+      <div id="task-list"></div>
+    </div>
+
+    <!-- Detail panel -->
+    <div id="detail-panel">
+      <div class="no-data" id="placeholder">Select a task from the sidebar to view its subtask taxonomy.</div>
+    </div>
+  </div>
+
+  <script src="/static/taxonomy_viewer.js"></script>
+</body>
+</html>

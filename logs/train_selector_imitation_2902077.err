@@ -1,0 +1,37 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260421_003934-aue9o7rt
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rl_selector_v1
+wandb: ⭐️ View project at https://wandb.ai/shalbe/rl-frame-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/rl-frame-selector/runs/aue9o7rt
+  0%|          | 0/3024 [00:00<?, ?it/s]  0%|          | 0/3024 [00:41<?, ?it/s]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector.py", line 605, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector.py", line 475, in main
+    gather_results = list(pool.map(_gather_one, range(B)))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector.py", line 473, in _gather_one
+    return dataset.gather_and_pack_selected(epis_idx, sel_indices_np[b])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConcatDataset' object has no attribute 'gather_and_pack_selected'
+srun: error: starrysky: task 0: Exited with exit code 1
+srun: Terminating StepId=2902077.0

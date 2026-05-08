@@ -1,0 +1,166 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033909
+SLURM_ARRAY_TASK_ID: 14
+TASK:                VideoUnmask
+HOSTNAME:            starrysky.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 01:44:52 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoUnmask, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoUnmask.h5
+  Sampled episodes: [3, 14, 81]
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f66-244
+  Subtask: pick up the container that hides the green cube
+  Frames: 66 - 244
+============================================================
+  Loaded 179 frames
+  Prefix scoring: 38.3s
+  Rewards: [0.07, 0.18, 0.11, 0.0, 0.11, 0.12, 0.42, 1.0]
+  Failed regions: []
+  Successful interval: 78-178
+  Keyframes: [0, 78, 169, 178]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f245-291
+  Subtask: put down the container
+  Frames: 245 - 291
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 37.1s
+  Rewards: [0.55, 1.0, 0.3, 0.2, 0.4, 0.15, 0.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-10
+  Keyframes: [1, 2, 10, 11, 26]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f292-388
+  Subtask: pick up the container that hides the blue cube
+  Frames: 292 - 388
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 37.1s
+  Rewards: [0.0, 0.04, 0.11, 0.2, 0.25, 0.14, 0.32, 1.0]
+  Failed regions: [[58, 83]]
+  Successful interval: 67-96
+  Keyframes: [5, 67, 94, 96]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f292-398
+  Subtask: pick up the container that hides the blue cube
+  Frames: 292 - 398
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 37.2s
+  Rewards: [0.0, 0.11, 0.06, 0.17, 0.16, 0.09, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 73-92
+  Keyframes: [5, 73, 92, 93, 106]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: VideoUnmask_ep14_f66-164
+  Subtask: pick up the container that hides the red cube
+  Frames: 66 - 164
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 37.2s
+  Rewards: [0.0, 0.0, 0.16, 0.32, 0.24, 0.24, 0.18, 1.0]
+  Failed regions: []
+  Successful interval: 81-98
+  Keyframes: [0, 81, 96, 98]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: VideoUnmask_ep14_f66-176
+  Subtask: pick up the container that hides the red cube
+  Frames: 66 - 176
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 37.2s
+  Rewards: [0.0, 0.02, 0.18, 0.23, 0.2, 0.11, 0.82, 1.0]
+  Failed regions: []
+  Successful interval: 76-110
+  Keyframes: [0, 76, 96, 110]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: VideoUnmask_ep81_f66-160
+  Subtask: pick up the container that hides the green cube
+  Frames: 66 - 160
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 37.2s
+  Rewards: [0.0, 0.0, 0.02, 0.17, 0.21, 0.05, 0.02, 1.0]
+  Failed regions: []
+  Successful interval: 77-94
+  Keyframes: [0, 77, 93, 94]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: VideoUnmask_ep81_f66-167
+  Subtask: pick up the container that hides the green cube
+  Frames: 66 - 167
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 37.3s
+  Rewards: [0.0, 0.05, 0.16, 0.16, 0.03, 0.03, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 70-101
+  Keyframes: [0, 70, 93, 101]
+  Success detected: True
+  Confidence: 0.93
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'VideoUnmask': 8}
+  Mean confidence: 0.885
+  Success detected: 8/8
+  Total failed regions detected: 1
+
+All outputs saved to: data/topreward_labels
+Done.

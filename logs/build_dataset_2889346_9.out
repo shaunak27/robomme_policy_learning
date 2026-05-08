@@ -1,0 +1,5 @@
+Job 9: processing StopCube
+  h5_file:    data/robomme_data_h5/record_dataset_StopCube.h5
+  output_dir: data/robomme_preprocessed_data/per_task/StopCube
+  hostname:   optimistprime.cc.gatech.edu
+  started:    Fri Apr 17 05:04:53 PM EDT 2026

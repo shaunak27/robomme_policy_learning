@@ -1,0 +1,89 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033756
+SLURM_ARRAY_TASK_ID: 14
+TASK:                VideoUnmask
+HOSTNAME:            shakey.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoUnmask, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoUnmask.h5
+  Sampled episodes: [3, 14, 81]
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f66-244
+  Subtask: pick up the container that hides the green cube
+  Frames: 66 - 244
+  First subtask: True
+============================================================
+  Loaded 179 frames
+  Prefix scoring: 57.0s
+  Rewards (raw): [0.07, 0.18, 0.11, 0.0, 0.11, 0.12, 0.42, 1.0]
+  Rewards (mono): [0.07, 0.18, 0.18, 0.18, 0.18, 0.18, 0.42, 1.0]
+  Failed regions: []
+  Successful interval: 0-178
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 59, 'role': 'early_transition'}, {'frame': 93, 'role': 'peak_transition'}, {'frame': 169, 'role': 'late_transition'}, {'frame': 178, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f245-291
+  Subtask: put down the container
+  Frames: 245 - 291
+  First subtask: False
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 55.8s
+  Rewards (raw): [0.55, 1.0, 0.3, 0.2, 0.4, 0.15, 0.0, 1.0]
+  Rewards (mono): [0.55, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-46
+  Keyframes: [{'frame': 2, 'role': 'start'}, {'frame': 4, 'role': 'early_transition'}, {'frame': 7, 'role': 'peak_transition'}, {'frame': 10, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f292-388
+  Subtask: pick up the container that hides the blue cube
+  Frames: 292 - 388
+  First subtask: False
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 54.6s
+  Rewards (raw): [0.0, 0.04, 0.11, 0.2, 0.25, 0.14, 0.32, 1.0]
+  Rewards (mono): [0.0, 0.04, 0.11, 0.2, 0.25, 0.25, 0.32, 1.0]
+  Failed regions: []
+  Successful interval: 67-96
+  Keyframes: [{'frame': 67, 'role': 'start'}, {'frame': 75, 'role': 'early_transition'}, {'frame': 86, 'role': 'peak_transition'}, {'frame': 94, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: VideoUnmask_ep3_f292-398
+  Subtask: pick up the container that hides the blue cube
+  Frames: 292 - 398
+  First subtask: False
+============================================================
+  Loaded 107 frames

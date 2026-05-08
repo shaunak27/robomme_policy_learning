@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trajectory Viewer</title>
+  <link rel="stylesheet" href="/static/topreward_viewer.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header id="topbar">
+    <div class="topbar-group">
+      <span class="topbar-title">Trajectory Viewer</span>
+    </div>
+    <div class="topbar-group">
+      <label>Filter:</label>
+      <select id="env-filter">
+        <option value="">All Tasks</option>
+      </select>
+    </div>
+    <div class="topbar-group">
+      <button id="btn-prev">&lsaquo; Prev</button>
+      <span id="seg-counter" style="font-size:13px; color:#aaa;">-</span>
+      <button id="btn-next">Next &rsaquo;</button>
+    </div>
+    <div class="topbar-group">
+      <label>Speed:</label>
+      <input type="range" id="speed-slider" min="0.1" max="2" step="0.1" value="0.4">
+      <span id="speed-label" style="font-size:12px;">0.4x</span>
+    </div>
+    <div class="topbar-group" style="margin-left:auto;">
+      <span id="confidence-badge" class="conf-badge">-</span>
+    </div>
+  </header>
+
+  <!-- Main area -->
+  <div id="main-area">
+
+    <!-- Left: segment list -->
+    <div id="segment-list-panel">
+      <div id="segment-list-header">
+        Segments
+        <input id="segment-filter" type="text" placeholder="Search subtask...">
+      </div>
+      <div id="segment-list-scroll"></div>
+    </div>
+
+    <!-- Center: video + frame view -->
+    <div id="center-panel">
+      <div id="video-border">
+        <video id="video-player" muted></video>
+      </div>
+      <div id="video-info">
+        <span id="frame-counter">Frame 0 / 0</span>
+        <button id="btn-play-pause">Play</button>
+        <button id="btn-reset">Reset</button>
+      </div>
+      <!-- Keyframe thumbnails -->
+      <div id="keyframe-strip"></div>
+      <div id="keyframe-strip-label">Selected Keyframes</div>
+    </div>
+
+    <!-- Right: info + chart -->
+    <div id="right-panel">
+      <div id="info-panel">
+        <div id="subtask-display">-</div>
+        <div id="task-goal-display">-</div>
+        <div id="interval-info"></div>
+        <div id="failed-info"></div>
+      </div>
+      <!-- Interactive progress curve -->
+      <div id="chart-panel">
+        <div id="chart-title">Progress Curve (TOPReward)</div>
+        <div id="chart-legend"></div>
+        <canvas id="score-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <section id="timeline-section">
+    <div id="timeline-header">
+      <span>Timeline — click to seek &middot; <span style="color:#2ecc71;">green</span>=success interval &middot; <span style="color:#e74c3c;">red</span>=failed regions</span>
+    </div>
+    <div id="timeline-scroll">
+      <canvas id="timeline-canvas"></canvas>
+    </div>
+  </section>
+
+  <script src="/static/topreward_viewer.js"></script>
+</body>
+</html>

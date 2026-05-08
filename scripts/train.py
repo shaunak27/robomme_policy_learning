@@ -82,7 +82,7 @@ def init_wandb(
             name=config.exp_name,
             config=dataclasses.asdict(config),
             project=config.project_name,
-            entity="daiyp_umich",
+            entity="shalbe",
         )
         (ckpt_dir / "wandb_id.txt").write_text(wandb.run.id)
 
@@ -238,6 +238,12 @@ def train_step(
     (loss, stats), grads = nnx.value_and_grad(
         loss_fn, argnums=diff_state, has_aux=True
     )(model, train_rng, observation, actions)
+
+    # Guard against inf/nan gradients (e.g. from inf loss at initialization).
+    # Without this, clip_by_global_norm produces NaN (inf * 0) and poisons all params.
+    grads = jax.tree.map(
+        lambda g: jnp.where(jnp.isfinite(g), g, jnp.zeros_like(g)), grads
+    )
 
     params = state.params.filter(config.trainable_filter)
     updates, new_opt_state = state.tx.update(grads, state.opt_state, params)
@@ -454,6 +460,11 @@ def main(config: _config.TrainConfig, tentative_run: bool = False):
 
 
 if __name__ == "__main__":
-    main(_config.cli(), tentative_run=True)
-    time.sleep(20)
-    main(_config.cli())
+    import sys
+    if "--skip-tentative" in sys.argv:
+        sys.argv.remove("--skip-tentative")
+        main(_config.cli(), tentative_run=False)
+    else:
+        main(_config.cli(), tentative_run=True)
+        time.sleep(20)
+        main(_config.cli())

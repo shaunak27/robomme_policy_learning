@@ -1,0 +1,11 @@
+]11;?[cmax_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using rl_selector type
+
+max_token_len: 64
+Step 0: mean_reward=-0.0014, mean_fm_selector=0.1141, mean_fm_uniform=0.1142, mean_entropy=5.3785, policy_loss=0.6977, value_loss=0.6255, approx_kl=-0.0000, grad_norm=28.1575
+Step 10: mean_reward=0.0976, mean_fm_selector=0.1099, mean_fm_uniform=0.2172, mean_entropy=0.0000, policy_loss=nan, value_loss=nan, approx_kl=nan, grad_norm=nan
+Step 20: mean_reward=nan, mean_fm_selector=nan, mean_fm_uniform=0.1041, mean_entropy=0.0000, policy_loss=nan, value_loss=nan, approx_kl=nan, grad_norm=nan
+Step 30: mean_reward=-0.0343, mean_fm_selector=0.1315, mean_fm_uniform=0.1069, mean_entropy=0.0000, policy_loss=nan, value_loss=nan, approx_kl=nan, grad_norm=nan
+Step 40: mean_reward=0.1008, mean_fm_selector=0.1029, mean_fm_uniform=0.2134, mean_entropy=0.0000, policy_loss=nan, value_loss=nan, approx_kl=nan, grad_norm=nan
+Step 50: mean_reward=nan, mean_fm_selector=nan, mean_fm_uniform=0.1072, mean_entropy=0.0000, policy_loss=nan, value_loss=nan, approx_kl=nan, grad_norm=nan

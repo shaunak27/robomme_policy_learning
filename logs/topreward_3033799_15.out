@@ -1,0 +1,82 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033799
+SLURM_ARRAY_TASK_ID: 15
+TASK:                VideoUnmaskSwap
+HOSTNAME:            cyborg.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoUnmaskSwap, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoUnmaskSwap.h5
+  Sampled episodes: [3, 14, 81]
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: VideoUnmaskSwap_ep3_f216-332
+  Subtask: pick up the container that hides the blue cube
+  Frames: 216 - 332
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.05, 0.09, 0.23, 0.44, 0.23, 1.0, 0.86]
+  Failed regions: [[71, 101]]
+  Successful interval: 81-101
+  Keyframes: [11, 81, 101]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: VideoUnmaskSwap_ep3_f333-384
+  Subtask: put down the container
+  Frames: 333 - 384
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.21, 0.0, 0.25, 0.25, 0.17, 0.04, 1.0, 0.75]
+  Failed regions: [[24, 44]]
+  Successful interval: 35-44
+  Keyframes: [5, 35, 44]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: VideoUnmaskSwap_ep3_f385-579
+  Subtask: pick up the container that hides the red cube
+  Frames: 385 - 579
+============================================================
+  Loaded 195 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.31, 0.62, 0.21, 0.31, 0.9, 1.0, 0.93]
+  Failed regions: [[69, 119]]
+  Successful interval: 85-169
+  Keyframes: [19, 85, 164, 194]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: VideoUnmaskSwap_ep3_f385-585
+  Subtask: pick up the container that hides the red cube
+  Frames: 385 - 585
+============================================================
+  Loaded 201 frames

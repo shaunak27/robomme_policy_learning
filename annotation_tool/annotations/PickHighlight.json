@@ -1,0 +1,30 @@
+{
+  "task": "PickHighlight",
+  "updated": "2026-05-04T01:17:36.934251+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 308,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up all cubes that have been highlighteted with white areas on the table",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:17:32.862400+00:00"
+    },
+    "1": {
+      "total_timesteps": 276,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up all cubes that have been highlighteted with white areas on the table",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:17:34.514106+00:00"
+    },
+    "2": {
+      "total_timesteps": 435,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up all cubes that have been highlighteted with white areas on the table",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:17:36.934214+00:00"
+    }
+  }
+}

@@ -1,0 +1,227 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            u3wmpv64cu4jwgu56l3w8rg2doyclpwl:
+                args:
+                    - --vla_checkpoint_path
+                    - runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params
+                    - --dataset_path
+                    - data/robomme_preprocessed_data
+                    - --exp_name
+                    - rl_selector_v1
+                    - --batch_size
+                    - "32"
+                    - --wandb_enabled
+                    - --tasks
+                    - PatternLock
+                    - RouteStick
+                codePath: scripts/train_selector.py
+                codePathLocal: scripts/train_selector.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "28578521088"
+                email: shaunak.halbe@gmail.com
+                executable: /coc/testnvme/shalbe3/miniconda/envs/robomme/bin/python
+                git:
+                    commit: c457ea2f13c8994a308be0c4401c1e7489e3887e
+                    remote: https://github.com/RoboMME/robomme_policy_learning.git
+                gpu: NVIDIA A40
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-bb6982d1-42eb-ba36-c37b-69835b1aa3ec
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-07030103-3e35-1370-83f9-4d6fa72171b3
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-ecb85bf8-1769-846f-0f8c-a4abb985b04d
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-740cf226-f184-6c1e-6eea-cd16a77632ed
+                host: starrysky.cc.gatech.edu
+                memory:
+                    total: "540828524544"
+                os: Linux-6.8.0-110-generic-x86_64-with-glibc2.39
+                program: /nethome/shalbe3/robomme_policy_learning/scripts/train_selector.py
+                python: CPython 3.11.15
+                root: /nethome/shalbe3/robomme_policy_learning
+                slurm:
+                    cluster_name: skynet
+                    conf: /opt/slurm/configs/slurm.conf
+                    cpu_bind: quiet,mask_cpu:0x0000000000FFFFFF0000000000FFFFFF
+                    cpu_bind_list: 0x0000000000FFFFFF0000000000FFFFFF
+                    cpu_bind_type: 'mask_cpu:'
+                    cpu_bind_verbose: quiet
+                    cpus_on_node: "48"
+                    cpus_per_gpu: "12"
+                    distribution: cyclic
+                    gpus_on_node: "4"
+                    gpus_per_node: a40:4
+                    gtids: "0"
+                    job_account: kira-lab
+                    job_cpus_per_node: "48"
+                    job_end_time: "1777351469"
+                    job_gid: "2626"
+                    job_gpus: 0,1,2,3
+                    job_id: "2902153"
+                    job_name: train_rl_selector
+                    job_nodelist: starrysky
+                    job_num_nodes: "1"
+                    job_partition: kira-lab
+                    job_qos: long
+                    job_start_time: "1776746669"
+                    job_uid: "3173960"
+                    job_user: shalbe3
+                    jobid: "2902153"
+                    launch_node_ipaddr: 127.0.0.1
+                    localid: "0"
+                    mem_per_node: "262144"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: starrysky
+                    nprocs: "1"
+                    ntasks: "1"
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    script_context: prolog_task
+                    srun_comm_host: 127.0.0.1
+                    srun_comm_port: "7049"
+                    step_gpus: 0,1,2,3
+                    step_id: "0"
+                    step_launcher_port: "7049"
+                    step_nodelist: starrysky
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /nethome/shalbe3/robomme_policy_learning
+                    submit_host: sky2.cc.gatech.edu
+                    task_pid: "951293"
+                    tasks_per_node: "1"
+                    topology_addr: starrysky
+                    topology_addr_pattern: node
+                    umask: "0022"
+                startedAt: "2026-04-21T04:44:50.680323Z"
+                writerId: u3wmpv64cu4jwgu56l3w8rg2doyclpwl
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "2":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "3":
+                - 13
+                - 16
+                - 61
+            "4": 3.11.15
+            "5": 0.25.1
+            "6": 4.57.3
+            "8":
+                - 2
+            "12": 0.25.1
+            "13": linux-x86_64
+batch_size:
+    value: 32
+candidate_emb_dim:
+    value: 2048
+clip_epsilon:
+    value: 0.2
+dataset_path:
+    value: data/robomme_preprocessed_data
+entropy_coef:
+    value: 0.01
+eval_interval:
+    value: 2000
+exp_name:
+    value: rl_selector_v1
+front_view_emb_dim:
+    value: 2048
+gamma:
+    value: 0
+history_config:
+    value: perceptual-rlselector-modul.yaml
+instruction_emb_dim:
+    value: 256
+log_interval:
+    value: 10
+lr:
+    value: 0.0003
+max_candidates:
+    value: 512
+max_grad_norm:
+    value: 1
+neighbor_suppression_radius:
+    value: 0
+num_frames_to_select:
+    value: 32
+num_train_steps:
+    value: 3024
+num_views:
+    value: 1
+ppo_epochs:
+    value: 4
+ppo_minibatch_size:
+    value: 16
+proprio_dim:
+    value: 8
+query_dim:
+    value: 256
+redundancy_penalty_coef:
+    value: 0.01
+redundancy_time_threshold:
+    value: 2
+save_interval:
+    value: 5000
+scorer_hidden_dim:
+    value: 256
+selector_checkpoint_dir:
+    value: runs/ckpts/rl_selector
+stage2_unfreeze_action_expert_lora:
+    value: false
+stage2_unfreeze_modulation:
+    value: false
+token_budget:
+    value: 512
+token_per_image:
+    value: 16
+use_episode_progress:
+    value: true
+value_loss_coef:
+    value: 0.5
+vla_checkpoint_path:
+    value: runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params
+wandb_enabled:
+    value: true
+wandb_project:
+    value: rl-frame-selector

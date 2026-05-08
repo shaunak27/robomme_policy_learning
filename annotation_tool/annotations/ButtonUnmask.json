@@ -1,0 +1,70 @@
+{
+  "task": "ButtonUnmask",
+  "updated": "2026-04-30T20:52:25.712253+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 291,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the red cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:11.596384+00:00"
+    },
+    "1": {
+      "total_timesteps": 294,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the green cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:13.869615+00:00"
+    },
+    "2": {
+      "total_timesteps": 267,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the red cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:15.225864+00:00"
+    },
+    "3": {
+      "total_timesteps": 452,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:16.809182+00:00"
+    },
+    "4": {
+      "total_timesteps": 323,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the green cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:18.076018+00:00"
+    },
+    "5": {
+      "total_timesteps": 299,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the blue cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:19.815240+00:00"
+    },
+    "6": {
+      "total_timesteps": 220,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the red cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:21.290553+00:00"
+    },
+    "7": {
+      "total_timesteps": 377,
+      "exec_start_idx": 0,
+      "task_goal": "first press the button, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:25.712231+00:00"
+    }
+  }
+}

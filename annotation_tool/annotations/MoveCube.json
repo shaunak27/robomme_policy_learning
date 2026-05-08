@@ -1,0 +1,46 @@
+{
+  "task": "MoveCube",
+  "updated": "2026-05-03T22:27:18.523812+00:00",
+  "episodes": {
+    "8": {
+      "total_timesteps": 279,
+      "exec_start_idx": 160,
+      "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:53.618491+00:00"
+    },
+    "9": {
+      "total_timesteps": 279,
+      "exec_start_idx": 173,
+      "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:58.799176+00:00"
+    },
+    "0": {
+      "total_timesteps": 425,
+      "exec_start_idx": 234,
+      "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-03T22:23:59.839652+00:00"
+    },
+    "1": {
+      "total_timesteps": 441,
+      "exec_start_idx": 258,
+      "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-03T22:27:14.392371+00:00"
+    },
+    "2": {
+      "total_timesteps": 478,
+      "exec_start_idx": 243,
+      "task_goal": "watch the video carefully, then move the cube to the target in the same manner as before",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-03T22:27:18.523789+00:00"
+    }
+  }
+}

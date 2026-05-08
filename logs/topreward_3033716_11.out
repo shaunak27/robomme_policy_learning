@@ -1,0 +1,97 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033753
+SLURM_ARRAY_TASK_ID: 11
+TASK:                VideoPlaceButton
+HOSTNAME:            megazord.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoPlaceButton, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoPlaceButton.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f759-952
+  Subtask: pick up the cube
+  Frames: 759 - 952
+  First subtask: True
+============================================================
+  Loaded 194 frames
+  Prefix scoring: 58.5s
+  Rewards (raw): [0.0, 0.32, 0.54, 0.32, 0.49, 0.78, 0.76, 1.0]
+  Rewards (mono): [0.0, 0.32, 0.54, 0.54, 0.54, 0.78, 0.78, 1.0]
+  Failed regions: []
+  Successful interval: 0-193
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 70, 'role': 'peak_transition'}, {'frame': 154, 'role': 'late_transition'}, {'frame': 193, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1022
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1022
+  First subtask: False
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 57.0s
+  Rewards (raw): [0.5, 0.44, 0.0, 0.88, 0.56, 1.0, 0.12, 0.38]
+  Rewards (mono): [0.5, 0.5, 0.5, 0.88, 0.88, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 21-69
+  Keyframes: [{'frame': 22, 'role': 'early_transition'}, {'frame': 29, 'role': 'peak_transition'}, {'frame': 33, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1040
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1040
+  First subtask: False
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 57.0s
+  Rewards (raw): [0.45, 0.18, 0.0, 1.0, 0.55, 0.18, 0.55, 0.36]
+  Rewards (mono): [0.45, 0.45, 0.45, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 26-87
+  Keyframes: [{'frame': 26, 'role': 'start'}, {'frame': 31, 'role': 'early_transition'}, {'frame': 38, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 4/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep14_f747-865
+  Subtask: pick up the cube
+  Frames: 747 - 865
+  First subtask: True
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 57.0s
+  Rewards (raw): [0.0, 0.08, 0.56, 0.84, 0.88, 0.8, 1.0, 1.0]
+  Rewards (mono): [0.0, 0.08, 0.56, 0.84, 0.88, 0.88, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-118
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 24, 'role': 'early_transition'}, {'frame': 41, 'role': 'peak_transition'}, {'frame': 72, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.72

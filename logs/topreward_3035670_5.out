@@ -1,0 +1,6214 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3035676
+SLURM_ARRAY_TASK_ID: 5
+TASK:                PatternLock
+HOSTNAME:            kitt.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 02:01:37 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PatternLock, sampling 100 episodes
+  H5: data/robomme_data_h5/record_dataset_PatternLock.h5
+  Sampled episodes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+  Found 386 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 386 segments
+============================================================
+
+--- Segment 1/386 ---
+
+============================================================
+Segment: PatternLock_ep0_f48-88
+  Subtask: move right
+  Frames: 48 - 88
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.88, 0.56, 0.69, 0.5, 0.5, 1.0, 0.81]
+  Failed regions: [[9, 19], [19, 29], [19, 34]]
+  Successful interval: 27-34
+  Keyframes: [2, 27, 34, 35, 40]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 2/386 ---
+
+============================================================
+Segment: PatternLock_ep0_f48-95
+  Subtask: move right
+  Frames: 48 - 95
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 1.0, 1.0, 0.38, 0.25, 1.0, 0.81, 0.38]
+  Failed regions: [[16, 34]]
+  Successful interval: 26-34
+  Keyframes: [2, 26, 34, 35, 47]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 3/386 ---
+
+============================================================
+Segment: PatternLock_ep1_f63-87
+  Subtask: move left
+  Frames: 63 - 87
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.03, 0.27, 0.43, 0.43, 1.0, 0.9, 0.77]
+  Failed regions: []
+  Successful interval: 13-18
+  Keyframes: [0, 13, 14, 18, 24]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 4/386 ---
+
+============================================================
+Segment: PatternLock_ep1_f88-115
+  Subtask: move backward-right
+  Frames: 88 - 115
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 58.7s
+  Rewards: [0.0, 0.11, 0.15, 0.3, 0.15, 0.48, 0.81, 1.0]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-27
+  Keyframes: [0, 15, 22, 27]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 5/386 ---
+
+============================================================
+Segment: PatternLock_ep1_f88-125
+  Subtask: move backward-right
+  Frames: 88 - 125
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.11, 0.3, 0.37, 0.48, 1.0, 0.85, 0.78]
+  Failed regions: []
+  Successful interval: 2-27
+  Keyframes: [0, 2, 22, 27, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 6/386 ---
+
+============================================================
+Segment: PatternLock_ep2_f130-158
+  Subtask: move backward
+  Frames: 130 - 158
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.58, 1.0, 0.83, 0.54, 0.38, 0.33, 0.21, 0.0]
+  Failed regions: []
+  Successful interval: 2-7
+  Keyframes: [0, 2, 7, 8, 28]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 7/386 ---
+
+============================================================
+Segment: PatternLock_ep2_f159-187
+  Subtask: move right
+  Frames: 159 - 187
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.41, 0.64, 0.23, 0.68, 0.86, 0.86, 1.0]
+  Failed regions: [[10, 21]]
+  Successful interval: 22-28
+  Keyframes: [1, 22, 23, 28]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 8/386 ---
+
+============================================================
+Segment: PatternLock_ep2_f188-222
+  Subtask: move forward
+  Frames: 188 - 222
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.15, 0.25, 0.0, 0.8, 0.75, 0.85, 1.0, 0.4]
+  Failed regions: [[8, 16]]
+  Successful interval: 19-29
+  Keyframes: [2, 19, 20, 29, 34]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 9/386 ---
+
+============================================================
+Segment: PatternLock_ep2_f223-248
+  Subtask: move backward-right
+  Frames: 223 - 248
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.14, 0.18, 0.32, 0.0, 0.32, 0.91, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-25
+  Keyframes: [2, 14, 15, 25]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 10/386 ---
+
+============================================================
+Segment: PatternLock_ep2_f223-259
+  Subtask: move backward-right
+  Frames: 223 - 259
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.22, 0.22, 0.12, 0.62, 1.0, 0.66, 0.53]
+  Failed regions: []
+  Successful interval: 15-26
+  Keyframes: [0, 15, 16, 26, 35]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 11/386 ---
+
+============================================================
+Segment: PatternLock_ep3_f153-193
+  Subtask: move forward-left
+  Frames: 153 - 193
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.21, 0.71, 1.0, 0.88, 0.88, 0.79, 0.88]
+  Failed regions: [[19, 29], [29, 40]]
+  Successful interval: 32-40
+  Keyframes: [1, 32, 33, 40]
+  Success detected: True
+  Confidence: 0.42
+
+--- Segment 12/386 ---
+
+============================================================
+Segment: PatternLock_ep3_f194-220
+  Subtask: move right
+  Frames: 194 - 220
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.0, 0.11, 0.82, 1.0, 0.82, 0.82, 0.75]
+  Failed regions: []
+  Successful interval: 5-16
+  Keyframes: [1, 5, 11, 16, 24]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 13/386 ---
+
+============================================================
+Segment: PatternLock_ep3_f221-265
+  Subtask: move backward-left
+  Frames: 221 - 265
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.24, 0.36, 0.76, 1.0, 0.8, 0.88, 0.52]
+  Failed regions: [[26, 38]]
+  Successful interval: 30-38
+  Keyframes: [0, 30, 32, 38, 44]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 14/386 ---
+
+============================================================
+Segment: PatternLock_ep3_f266-292
+  Subtask: move backward-right
+  Frames: 266 - 292
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.44, 0.41, 0.52, 0.93, 0.89, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 20-26
+  Keyframes: [0, 20, 22, 26]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 15/386 ---
+
+============================================================
+Segment: PatternLock_ep3_f266-305
+  Subtask: move backward-right
+  Frames: 266 - 305
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 58.2s
+  Rewards: [0.0, 0.5, 0.6, 0.8, 0.9, 0.93, 0.77, 1.0]
+  Failed regions: [[29, 39]]
+  Successful interval: 32-39
+  Keyframes: [0, 32, 39]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 16/386 ---
+
+============================================================
+Segment: PatternLock_ep4_f33-52
+  Subtask: move right
+  Frames: 33 - 52
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.2, 0.3, 0.7, 0.5, 0.2, 0.0, 0.6, 1.0]
+  Failed regions: [[8, 16]]
+  Successful interval: 12-19
+  Keyframes: [2, 12, 17, 19]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 17/386 ---
+
+============================================================
+Segment: PatternLock_ep4_f33-65
+  Subtask: move right
+  Frames: 33 - 65
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.33, 0.0, 0.27, 0.4, 0.87, 1.0, 0.8]
+  Failed regions: [[8, 16]]
+  Successful interval: 10-28
+  Keyframes: [2, 10, 17, 28, 32]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 18/386 ---
+
+============================================================
+Segment: PatternLock_ep5_f56-87
+  Subtask: move backward
+  Frames: 56 - 87
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.24, 0.6, 1.0, 0.76, 0.6, 0.92, 0.64]
+  Failed regions: [[15, 27]]
+  Successful interval: 21-27
+  Keyframes: [1, 21, 22, 27, 31]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 19/386 ---
+
+============================================================
+Segment: PatternLock_ep5_f88-104
+  Subtask: move left
+  Frames: 88 - 104
+============================================================
+  Loaded 17 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.09, 0.45, 0.0, 0.73, 0.55, 0.55, 1.0, 0.73]
+  Failed regions: [[5, 9], [9, 12], [9, 14]]
+  Successful interval: 10-14
+  Keyframes: [1, 10, 12, 14, 16]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 20/386 ---
+
+============================================================
+Segment: PatternLock_ep5_f88-111
+  Subtask: move left
+  Frames: 88 - 111
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.43, 0.5, 0.36, 0.71, 0.71, 1.0, 0.43]
+  Failed regions: [[9, 14]]
+  Successful interval: 15-20
+  Keyframes: [1, 15, 16, 20, 23]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 21/386 ---
+
+============================================================
+Segment: PatternLock_ep6_f82-120
+  Subtask: move forward-left
+  Frames: 82 - 120
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.17, 0.27, 0.63, 0.83, 1.0, 0.97, 0.67]
+  Failed regions: []
+  Successful interval: 2-28
+  Keyframes: [1, 2, 19, 28, 38]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 22/386 ---
+
+============================================================
+Segment: PatternLock_ep6_f121-150
+  Subtask: move forward
+  Frames: 121 - 150
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.21, 0.38, 0.29, 0.46, 0.71, 0.88, 1.0]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-29
+  Keyframes: [2, 12, 28, 29]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 23/386 ---
+
+============================================================
+Segment: PatternLock_ep6_f121-163
+  Subtask: move forward
+  Frames: 121 - 163
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.36, 0.32, 0.64, 0.95, 1.0, 0.68, 0.55]
+  Failed regions: []
+  Successful interval: 12-31
+  Keyframes: [2, 12, 28, 31, 42]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 24/386 ---
+
+============================================================
+Segment: PatternLock_ep7_f179-208
+  Subtask: move right
+  Frames: 179 - 208
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.21, 0.26, 0.21, 0.68, 0.74, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 23-29
+  Keyframes: [2, 23, 28, 29]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 25/386 ---
+
+============================================================
+Segment: PatternLock_ep7_f209-239
+  Subtask: move forward-right
+  Frames: 209 - 239
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.06, 0.41, 0.53, 0.59, 1.0, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 2-22
+  Keyframes: [1, 2, 17, 22, 29]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 26/386 ---
+
+============================================================
+Segment: PatternLock_ep7_f240-317
+  Subtask: move forward
+  Frames: 240 - 317
+============================================================
+  Loaded 78 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.12, 0.76, 0.76, 0.94, 1.0, 1.0, 0.53]
+  Failed regions: []
+  Successful interval: 34-57
+  Keyframes: [1, 34, 54, 57, 77]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 27/386 ---
+
+============================================================
+Segment: PatternLock_ep7_f318-350
+  Subtask: move backward-left
+  Frames: 318 - 350
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.08, 0.24, 0.28, 0.48, 1.0, 0.48, 0.84]
+  Failed regions: [[24, 32]]
+  Successful interval: 26-32
+  Keyframes: [1, 26, 28, 32]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 28/386 ---
+
+============================================================
+Segment: PatternLock_ep7_f318-357
+  Subtask: move backward-left
+  Frames: 318 - 357
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.04, 0.0, 0.19, 0.5, 1.0, 0.85, 0.62, 0.62]
+  Failed regions: []
+  Successful interval: 7-24
+  Keyframes: [0, 7, 12, 24, 39]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 29/386 ---
+
+============================================================
+Segment: PatternLock_ep8_f74-109
+  Subtask: move forward
+  Frames: 74 - 109
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.43, 0.86, 0.57, 0.93, 1.0, 0.71, 0.36]
+  Failed regions: [[12, 21]]
+  Successful interval: 15-26
+  Keyframes: [0, 15, 24, 26, 35]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 30/386 ---
+
+============================================================
+Segment: PatternLock_ep8_f110-140
+  Subtask: move backward-right
+  Frames: 110 - 140
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.03, 0.0, 0.33, 0.47, 0.63, 0.8, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 5-30
+  Keyframes: [1, 5, 10, 30]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 31/386 ---
+
+============================================================
+Segment: PatternLock_ep8_f110-147
+  Subtask: move backward-right
+  Frames: 110 - 147
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.03, 0.39, 0.58, 0.74, 1.0, 0.71, 0.84]
+  Failed regions: [[27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 32/386 ---
+
+============================================================
+Segment: PatternLock_ep9_f24-40
+  Subtask: move left
+  Frames: 24 - 40
+============================================================
+  Loaded 17 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.33, 0.46, 0.88, 0.75, 0.67, 0.54, 1.0]
+  Failed regions: [[9, 16]]
+  Successful interval: 12-16
+  Keyframes: [0, 12, 13, 16]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 33/386 ---
+
+============================================================
+Segment: PatternLock_ep9_f24-47
+  Subtask: move left
+  Frames: 24 - 47
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.33, 0.88, 0.67, 0.54, 1.0, 0.79, 0.83]
+  Failed regions: [[9, 17], [17, 23]]
+  Successful interval: 18-23
+  Keyframes: [0, 18, 19, 23]
+  Success detected: True
+  Confidence: 0.39
+
+--- Segment 34/386 ---
+
+============================================================
+Segment: PatternLock_ep10_f108-141
+  Subtask: move forward
+  Frames: 108 - 141
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.12, 0.24, 0.47, 0.65, 0.82, 0.88, 1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-28
+  Keyframes: [1, 2, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 35/386 ---
+
+============================================================
+Segment: PatternLock_ep10_f142-205
+  Subtask: move backward-right
+  Frames: 142 - 205
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.08, 1.0, 1.0, 0.72, 0.8, 0.84, 1.0]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-63
+  Keyframes: [4, 35, 48, 63]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 36/386 ---
+
+============================================================
+Segment: PatternLock_ep10_f142-215
+  Subtask: move backward-right
+  Frames: 142 - 215
+============================================================
+  Loaded 74 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.14, 0.95, 0.82, 0.91, 0.82, 1.0, 0.77]
+  Failed regions: [[25, 44], [44, 63]]
+  Successful interval: 51-63
+  Keyframes: [4, 51, 53, 63, 73]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 37/386 ---
+
+============================================================
+Segment: PatternLock_ep11_f137-166
+  Subtask: move right
+  Frames: 137 - 166
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.0, 0.29, 0.33, 0.62, 0.83, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 5-25
+  Keyframes: [0, 5, 19, 25, 29]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 38/386 ---
+
+============================================================
+Segment: PatternLock_ep11_f167-198
+  Subtask: move forward
+  Frames: 167 - 198
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.06, 0.06, 0.0, 0.24, 0.18, 0.71, 0.59, 1.0]
+  Failed regions: [[23, 31]]
+  Successful interval: 25-31
+  Keyframes: [0, 25, 31]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 39/386 ---
+
+============================================================
+Segment: PatternLock_ep11_f199-237
+  Subtask: move forward-left
+  Frames: 199 - 237
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.24, 0.33, 0.76, 0.9, 0.83, 0.86, 1.0]
+  Failed regions: []
+  Successful interval: 26-38
+  Keyframes: [1, 26, 27, 38]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 40/386 ---
+
+============================================================
+Segment: PatternLock_ep11_f238-264
+  Subtask: move forward
+  Frames: 238 - 264
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.21, 0.32, 0.42, 0.32, 0.37, 1.0, 0.63]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-22
+  Keyframes: [2, 14, 22, 23, 26]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 41/386 ---
+
+============================================================
+Segment: PatternLock_ep11_f238-273
+  Subtask: move forward
+  Frames: 238 - 273
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.25, 0.58, 0.25, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: [[12, 21]]
+  Successful interval: 15-21
+  Keyframes: [2, 15, 21, 22, 35]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 42/386 ---
+
+============================================================
+Segment: PatternLock_ep12_f96-120
+  Subtask: move right
+  Frames: 96 - 120
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.15, 0.0, 0.22, 0.33, 0.63, 0.78, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 4-24
+  Keyframes: [0, 4, 13, 24]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 43/386 ---
+
+============================================================
+Segment: PatternLock_ep12_f121-158
+  Subtask: move backward-left
+  Frames: 121 - 158
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.53, 0.29, 1.0, 0.59, 0.59, 0.59, 0.41]
+  Failed regions: [[8, 18]]
+  Successful interval: 11-18
+  Keyframes: [0, 11, 15, 18, 30]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 44/386 ---
+
+============================================================
+Segment: PatternLock_ep12_f159-177
+  Subtask: move right
+  Frames: 159 - 177
+============================================================
+  Loaded 19 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.0, 0.07, 0.93, 1.0, 0.5, 0.71, 0.79]
+  Failed regions: []
+  Successful interval: 4-12
+  Keyframes: [1, 4, 9, 12, 18]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 45/386 ---
+
+============================================================
+Segment: PatternLock_ep12_f159-191
+  Subtask: move right
+  Frames: 159 - 191
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.04, 0.56, 0.4, 0.64, 0.84, 1.0, 1.0]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-28
+  Keyframes: [1, 14, 20, 28, 32]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 46/386 ---
+
+============================================================
+Segment: PatternLock_ep13_f70-106
+  Subtask: move backward-right
+  Frames: 70 - 106
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.18, 0.27, 0.0, 0.68, 0.77, 1.0, 0.55]
+  Failed regions: [[13, 22]]
+  Successful interval: 15-31
+  Keyframes: [2, 15, 20, 31, 36]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 47/386 ---
+
+============================================================
+Segment: PatternLock_ep13_f107-125
+  Subtask: move left
+  Frames: 107 - 125
+============================================================
+  Loaded 19 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.43, 0.14, 0.43, 0.71, 0.0, 0.71, 1.0]
+  Failed regions: [[6, 12], [12, 16]]
+  Successful interval: 12-18
+  Keyframes: [2, 12, 14, 18]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 48/386 ---
+
+============================================================
+Segment: PatternLock_ep13_f107-139
+  Subtask: move left
+  Frames: 107 - 139
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.06, 0.31, 0.31, 0.44, 0.69, 1.0, 0.94]
+  Failed regions: []
+  Successful interval: 14-28
+  Keyframes: [1, 14, 20, 28, 32]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 49/386 ---
+
+============================================================
+Segment: PatternLock_ep14_f147-180
+  Subtask: move forward
+  Frames: 147 - 180
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.1, 0.19, 0.38, 0.52, 1.0, 0.38]
+  Failed regions: []
+  Successful interval: 6-28
+  Keyframes: [3, 6, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 50/386 ---
+
+============================================================
+Segment: PatternLock_ep14_f181-219
+  Subtask: move forward-left
+  Frames: 181 - 219
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.04, 0.0, 0.22, 0.59, 0.85, 0.81, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 26-38
+  Keyframes: [0, 26, 27, 38]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 51/386 ---
+
+============================================================
+Segment: PatternLock_ep14_f220-259
+  Subtask: move backward-left
+  Frames: 220 - 259
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.37, 0.41, 0.59, 0.63, 0.74, 0.81, 1.0]
+  Failed regions: []
+  Successful interval: 2-39
+  Keyframes: [0, 2, 23, 39]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 52/386 ---
+
+============================================================
+Segment: PatternLock_ep14_f260-284
+  Subtask: move backward
+  Frames: 260 - 284
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.22, 0.33, 0.56, 0.61, 0.78, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 2-24
+  Keyframes: [1, 2, 10, 24]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 53/386 ---
+
+============================================================
+Segment: PatternLock_ep14_f260-293
+  Subtask: move backward
+  Frames: 260 - 293
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.11, 0.37, 0.37, 0.63, 0.67, 0.78, 1.0]
+  Failed regions: []
+  Successful interval: 14-33
+  Keyframes: [1, 14, 15, 33]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 54/386 ---
+
+============================================================
+Segment: PatternLock_ep15_f167-197
+  Subtask: move forward-right
+  Frames: 167 - 197
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.12, 0.0, 0.59, 0.76, 0.71, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 20-30
+  Keyframes: [3, 20, 21, 30]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 55/386 ---
+
+============================================================
+Segment: PatternLock_ep15_f198-242
+  Subtask: move forward-left
+  Frames: 198 - 242
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.07, 0.43, 0.71, 1.0, 0.64, 0.36, 0.36]
+  Failed regions: []
+  Successful interval: 2-26
+  Keyframes: [0, 2, 26, 27, 37]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 56/386 ---
+
+============================================================
+Segment: PatternLock_ep15_f243-263
+  Subtask: move right
+  Frames: 243 - 263
+============================================================
+  Loaded 21 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.38, 0.46, 0.0, 1.0, 1.0, 0.77, 0.31, 0.46]
+  Failed regions: [[6, 10]]
+  Successful interval: 6-10
+  Keyframes: [0, 6, 10, 11, 20]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 57/386 ---
+
+============================================================
+Segment: PatternLock_ep15_f264-326
+  Subtask: move backward-right
+  Frames: 264 - 326
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.21, 0.61, 1.0, 0.79, 0.93, 0.86, 0.68]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-46
+  Keyframes: [0, 35, 46, 47, 62]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 58/386 ---
+
+============================================================
+Segment: PatternLock_ep15_f264-333
+  Subtask: move backward-right
+  Frames: 264 - 333
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.16, 0.76, 0.88, 1.0, 0.96, 1.0, 0.92]
+  Failed regions: []
+  Successful interval: 48-60
+  Keyframes: [0, 48, 49, 60, 69]
+  Success detected: True
+  Confidence: 0.47
+
+--- Segment 59/386 ---
+
+============================================================
+Segment: PatternLock_ep16_f100-136
+  Subtask: move forward-left
+  Frames: 100 - 136
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.14, 0.75, 0.61, 0.75, 0.68, 1.0, 0.61]
+  Failed regions: [[13, 22]]
+  Successful interval: 24-31
+  Keyframes: [0, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 60/386 ---
+
+============================================================
+Segment: PatternLock_ep16_f137-161
+  Subtask: move right
+  Frames: 137 - 161
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.23, 0.32, 0.55, 0.77, 1.0, 0.73, 0.36]
+  Failed regions: []
+  Successful interval: 2-18
+  Keyframes: [0, 2, 10, 18, 24]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 61/386 ---
+
+============================================================
+Segment: PatternLock_ep16_f162-190
+  Subtask: move forward-right
+  Frames: 162 - 190
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.19, 0.38, 0.35, 0.42, 0.85, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 12-24
+  Keyframes: [0, 12, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 62/386 ---
+
+============================================================
+Segment: PatternLock_ep16_f162-199
+  Subtask: move forward-right
+  Frames: 162 - 199
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.22, 0.41, 0.44, 0.67, 1.0, 0.85, 0.85]
+  Failed regions: []
+  Successful interval: 2-27
+  Keyframes: [0, 2, 22, 27, 37]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 63/386 ---
+
+============================================================
+Segment: PatternLock_ep17_f102-133
+  Subtask: move backward
+  Frames: 102 - 133
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.24, 0.6, 1.0, 0.76, 0.6, 0.92, 0.64]
+  Failed regions: [[15, 27]]
+  Successful interval: 21-27
+  Keyframes: [1, 21, 22, 27, 31]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 64/386 ---
+
+============================================================
+Segment: PatternLock_ep17_f134-170
+  Subtask: move backward-left
+  Frames: 134 - 170
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.5, 0.86, 0.71, 0.43, 0.93, 1.0, 0.36]
+  Failed regions: [[13, 26]]
+  Successful interval: 20-31
+  Keyframes: [0, 20, 21, 31, 36]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 65/386 ---
+
+============================================================
+Segment: PatternLock_ep17_f171-190
+  Subtask: move left
+  Frames: 171 - 190
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.13, 0.13, 0.33, 0.0, 1.0, 0.53, 0.4, 0.47]
+  Failed regions: [[8, 12]]
+  Successful interval: 8-12
+  Keyframes: [3, 8, 11, 12, 19]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 66/386 ---
+
+============================================================
+Segment: PatternLock_ep17_f171-203
+  Subtask: move left
+  Frames: 171 - 203
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.14, 0.62, 0.19, 0.38, 0.95, 1.0, 0.86]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-28
+  Keyframes: [1, 14, 17, 28, 32]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 67/386 ---
+
+============================================================
+Segment: PatternLock_ep18_f91-121
+  Subtask: move backward-left
+  Frames: 91 - 121
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.39, 0.52, 0.3, 0.65, 0.78, 1.0, 0.87]
+  Failed regions: [[11, 18]]
+  Successful interval: 13-26
+  Keyframes: [3, 13, 17, 26, 30]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 68/386 ---
+
+============================================================
+Segment: PatternLock_ep18_f122-151
+  Subtask: move backward
+  Frames: 122 - 151
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.5, 0.5, 0.0, 0.2, 0.2, 1.0, 1.0, 0.6]
+  Failed regions: [[7, 14]]
+  Successful interval: 16-21
+  Keyframes: [1, 16, 17, 21, 29]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 69/386 ---
+
+============================================================
+Segment: PatternLock_ep18_f152-172
+  Subtask: move right
+  Frames: 152 - 172
+============================================================
+  Loaded 21 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.04, 0.48, 0.76, 0.52, 0.88, 1.0, 0.96]
+  Failed regions: [[10, 15]]
+  Successful interval: 11-17
+  Keyframes: [0, 11, 15, 17, 20]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 70/386 ---
+
+============================================================
+Segment: PatternLock_ep18_f152-181
+  Subtask: move right
+  Frames: 152 - 181
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.0, 0.23, 0.5, 0.38, 0.96, 0.92, 1.0, 0.92]
+  Failed regions: [[11, 18]]
+  Successful interval: 19-25
+  Keyframes: [1, 19, 20, 25, 29]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 71/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f242-310
+  Subtask: move backward
+  Frames: 242 - 310
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.22, 1.0, 0.17, 0.44, 0.67, 0.94, 0.39, 0.0]
+  Failed regions: [[14, 32]]
+  Successful interval: 20-50
+  Keyframes: [1, 20, 22, 50, 67]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 72/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f311-348
+  Subtask: move backward-left
+  Frames: 311 - 348
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.17, 0.0, 0.39, 0.39, 0.78, 0.72, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 25-32
+  Keyframes: [1, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 73/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f349-378
+  Subtask: move forward
+  Frames: 349 - 378
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.07, 0.21, 0.36, 0.14, 0.21, 0.64, 1.0]
+  Failed regions: [[14, 21]]
+  Successful interval: 16-29
+  Keyframes: [0, 16, 18, 29]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 74/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f379-409
+  Subtask: move forward-left
+  Frames: 379 - 409
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.13, 0.04, 0.22, 0.39, 0.74, 0.7, 1.0]
+  Failed regions: []
+  Successful interval: 24-30
+  Keyframes: [3, 24, 25, 30]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 75/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f410-445
+  Subtask: move backward
+  Frames: 410 - 445
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.0, 0.42, 0.67, 0.42, 1.0, 0.92, 0.83]
+  Failed regions: [[17, 26]]
+  Successful interval: 19-26
+  Keyframes: [1, 19, 21, 26, 35]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 76/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f446-472
+  Subtask: move forward-right
+  Frames: 446 - 472
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.17, 0.17, 0.28, 0.56, 0.44, 0.94, 1.0]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-26
+  Keyframes: [1, 17, 24, 26]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 77/386 ---
+
+============================================================
+Segment: PatternLock_ep19_f446-483
+  Subtask: move forward-right
+  Frames: 446 - 483
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.08, 0.0, 0.27, 0.62, 0.73, 0.81, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 6-37
+  Keyframes: [1, 6, 24, 37]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 78/386 ---
+
+============================================================
+Segment: PatternLock_ep20_f70-106
+  Subtask: move backward
+  Frames: 70 - 106
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.13, 0.13, 0.13, 1.0, 0.53, 0.2, 0.0, 0.4]
+  Failed regions: []
+  Successful interval: 11-17
+  Keyframes: [3, 11, 13, 17, 35]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 79/386 ---
+
+============================================================
+Segment: PatternLock_ep20_f107-126
+  Subtask: move right
+  Frames: 107 - 126
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.06, 0.11, 0.0, 0.83, 0.5, 0.67, 1.0, 0.83]
+  Failed regions: [[10, 14]]
+  Successful interval: 10-16
+  Keyframes: [2, 10, 12, 16, 19]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 80/386 ---
+
+============================================================
+Segment: PatternLock_ep20_f107-139
+  Subtask: move right
+  Frames: 107 - 139
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.05, 0.0, 0.41, 0.82, 0.82, 0.91, 1.0, 0.77]
+  Failed regions: []
+  Successful interval: 18-28
+  Keyframes: [2, 18, 19, 28, 32]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 81/386 ---
+
+============================================================
+Segment: PatternLock_ep21_f105-172
+  Subtask: move backward
+  Frames: 105 - 172
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.28, 0.56, 0.68, 0.88, 0.76, 1.0, 0.64, 0.0]
+  Failed regions: [[32, 49]]
+  Successful interval: 37-49
+  Keyframes: [0, 37, 48, 49, 67]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 82/386 ---
+
+============================================================
+Segment: PatternLock_ep21_f173-199
+  Subtask: move forward-left
+  Frames: 173 - 199
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 58.1s
+  Rewards: [0.0, 0.15, 0.03, 0.36, 0.48, 0.55, 0.76, 1.0]
+  Failed regions: []
+  Successful interval: 8-26
+  Keyframes: [0, 8, 23, 26]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 83/386 ---
+
+============================================================
+Segment: PatternLock_ep21_f173-209
+  Subtask: move forward-left
+  Frames: 173 - 209
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 57.9s
+  Rewards: [0.0, 0.06, 0.36, 0.55, 0.76, 1.0, 0.97, 0.79]
+  Failed regions: []
+  Successful interval: 2-26
+  Keyframes: [0, 2, 23, 26, 35]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 84/386 ---
+
+============================================================
+Segment: PatternLock_ep22_f105-131
+  Subtask: move left
+  Frames: 105 - 131
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.24, 0.53, 0.47, 0.76, 0.59, 1.0, 0.0, 0.41]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-19
+  Keyframes: [0, 14, 15, 19, 26]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 85/386 ---
+
+============================================================
+Segment: PatternLock_ep22_f132-171
+  Subtask: move backward-left
+  Frames: 132 - 171
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.37, 0.33, 0.22, 0.74, 0.67, 0.81, 1.0]
+  Failed regions: [[9, 24]]
+  Successful interval: 27-39
+  Keyframes: [2, 27, 28, 39]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 86/386 ---
+
+============================================================
+Segment: PatternLock_ep22_f172-202
+  Subtask: move backward-right
+  Frames: 172 - 202
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.22, 0.48, 0.59, 0.78, 0.85, 0.7, 1.0]
+  Failed regions: [[22, 30]]
+  Successful interval: 24-30
+  Keyframes: [1, 24, 25, 30]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 87/386 ---
+
+============================================================
+Segment: PatternLock_ep22_f172-209
+  Subtask: move backward-right
+  Frames: 172 - 209
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.07, 0.37, 0.7, 0.77, 0.8, 0.87, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [1, 2, 10, 37]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 88/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f249-294
+  Subtask: move backward
+  Frames: 249 - 294
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.42, 0.53, 0.79, 0.63, 0.63, 1.0, 0.84, 0.0]
+  Failed regions: [[15, 27], [15, 33]]
+  Successful interval: 25-33
+  Keyframes: [4, 25, 28, 33, 45]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 89/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f295-340
+  Subtask: move backward-left
+  Frames: 295 - 340
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.11, 0.21, 0.95, 0.95, 0.84, 1.0, 1.0]
+  Failed regions: [[27, 39]]
+  Successful interval: 31-39
+  Keyframes: [3, 31, 32, 39, 45]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 90/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f341-365
+  Subtask: move right
+  Frames: 341 - 365
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.17, 0.0, 0.58, 0.67, 1.0, 0.67, 0.0]
+  Failed regions: []
+  Successful interval: 7-18
+  Keyframes: [0, 7, 9, 18, 24]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 91/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f366-396
+  Subtask: move forward-left
+  Frames: 366 - 396
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.13, 0.35, 0.48, 0.55, 0.68, 1.0, 0.74]
+  Failed regions: []
+  Successful interval: 2-26
+  Keyframes: [0, 2, 18, 26, 30]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 92/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f397-434
+  Subtask: move backward-left
+  Frames: 397 - 434
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.29, 0.29, 0.54, 0.83, 0.83, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 25-37
+  Keyframes: [0, 25, 26, 37]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 93/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f435-473
+  Subtask: move forward-left
+  Frames: 435 - 473
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.24, 0.24, 0.62, 0.9, 0.76, 1.0, 0.97]
+  Failed regions: [[23, 33]]
+  Successful interval: 26-33
+  Keyframes: [0, 26, 27, 33, 38]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 94/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f474-489
+  Subtask: move right
+  Frames: 474 - 489
+============================================================
+  Loaded 16 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.15, 0.15, 0.38, 0.46, 0.69, 0.77, 1.0]
+  Failed regions: []
+  Successful interval: 5-15
+  Keyframes: [1, 5, 11, 15]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 95/386 ---
+
+============================================================
+Segment: PatternLock_ep23_f474-497
+  Subtask: move right
+  Frames: 474 - 497
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.0, 0.39, 0.67, 0.44, 0.61, 1.0, 0.22]
+  Failed regions: [[12, 17]]
+  Successful interval: 12-20
+  Keyframes: [1, 12, 13, 20, 23]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 96/386 ---
+
+============================================================
+Segment: PatternLock_ep24_f101-131
+  Subtask: move backward-left
+  Frames: 101 - 131
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.08, 0.58, 0.54, 0.5, 0.71, 0.5, 1.0]
+  Failed regions: [[11, 22], [22, 30]]
+  Successful interval: 24-30
+  Keyframes: [3, 24, 25, 30]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 97/386 ---
+
+============================================================
+Segment: PatternLock_ep24_f132-164
+  Subtask: move right
+  Frames: 132 - 164
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.0, 0.35, 0.62, 0.69, 0.96, 0.77, 1.0]
+  Failed regions: [[24, 32]]
+  Successful interval: 26-32
+  Keyframes: [1, 26, 31, 32]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 98/386 ---
+
+============================================================
+Segment: PatternLock_ep24_f165-191
+  Subtask: move forward-left
+  Frames: 165 - 191
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.04, 0.0, 0.04, 0.17, 0.65, 0.87, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 20-26
+  Keyframes: [0, 20, 22, 26]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 99/386 ---
+
+============================================================
+Segment: PatternLock_ep24_f165-201
+  Subtask: move forward-left
+  Frames: 165 - 201
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.0, 0.12, 0.31, 0.69, 0.85, 1.0, 0.31]
+  Failed regions: []
+  Successful interval: 6-31
+  Keyframes: [0, 6, 22, 31, 36]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 100/386 ---
+
+============================================================
+Segment: PatternLock_ep25_f63-87
+  Subtask: move left
+  Frames: 63 - 87
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.22, 0.35, 0.43, 0.74, 0.78, 1.0, 0.09]
+  Failed regions: []
+  Successful interval: 2-21
+  Keyframes: [0, 2, 12, 21, 24]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 101/386 ---
+
+============================================================
+Segment: PatternLock_ep25_f88-118
+  Subtask: move backward-right
+  Frames: 88 - 118
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.15, 0.33, 0.26, 0.59, 0.44, 0.56, 1.0]
+  Failed regions: [[18, 26]]
+  Successful interval: 20-30
+  Keyframes: [0, 20, 22, 30]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 102/386 ---
+
+============================================================
+Segment: PatternLock_ep25_f88-125
+  Subtask: move backward-right
+  Frames: 88 - 125
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.18, 0.24, 0.94, 0.71, 1.0, 0.76, 0.82]
+  Failed regions: [[18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.40
+
+--- Segment 103/386 ---
+
+============================================================
+Segment: PatternLock_ep26_f67-93
+  Subtask: move left
+  Frames: 67 - 93
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.35, 0.59, 0.47, 0.71, 0.59, 1.0, 0.0, 0.41]
+  Failed regions: [[7, 13], [13, 19]]
+  Successful interval: 14-19
+  Keyframes: [0, 14, 15, 19, 26]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 104/386 ---
+
+============================================================
+Segment: PatternLock_ep26_f94-120
+  Subtask: move backward-left
+  Frames: 94 - 120
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.21, 0.37, 0.37, 0.47, 0.32, 1.0, 0.79]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-22
+  Keyframes: [2, 17, 20, 22, 26]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 105/386 ---
+
+============================================================
+Segment: PatternLock_ep26_f94-133
+  Subtask: move backward-left
+  Frames: 94 - 133
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.37, 0.33, 0.22, 0.74, 0.67, 0.93, 1.0]
+  Failed regions: [[9, 24]]
+  Successful interval: 27-39
+  Keyframes: [2, 27, 28, 39]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 106/386 ---
+
+============================================================
+Segment: PatternLock_ep27_f158-188
+  Subtask: move forward-right
+  Frames: 158 - 188
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.12, 0.0, 0.59, 0.76, 0.71, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 20-30
+  Keyframes: [3, 20, 21, 30]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 107/386 ---
+
+============================================================
+Segment: PatternLock_ep27_f189-224
+  Subtask: move backward
+  Frames: 189 - 224
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.38, 0.69, 0.94, 0.31, 0.75, 0.94, 1.0]
+  Failed regions: [[17, 26]]
+  Successful interval: 19-35
+  Keyframes: [1, 19, 21, 35]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 108/386 ---
+
+============================================================
+Segment: PatternLock_ep27_f225-259
+  Subtask: move backward-right
+  Frames: 225 - 259
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.1, 0.0, 0.1, 0.52, 0.62, 1.0, 0.57, 0.76]
+  Failed regions: []
+  Successful interval: 6-25
+  Keyframes: [0, 6, 12, 25, 33]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 109/386 ---
+
+============================================================
+Segment: PatternLock_ep27_f260-307
+  Subtask: move left
+  Frames: 260 - 307
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.17, 0.71, 0.88, 0.54, 0.71, 0.58, 1.0]
+  Failed regions: [[22, 34], [34, 47]]
+  Successful interval: 38-47
+  Keyframes: [2, 38, 47]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 110/386 ---
+
+============================================================
+Segment: PatternLock_ep27_f260-315
+  Subtask: move left
+  Frames: 260 - 315
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.59, 0.76, 0.66, 0.59, 0.59, 0.93, 1.0]
+  Failed regions: [[19, 40], [19, 47]]
+  Successful interval: 38-55
+  Keyframes: [2, 38, 47, 55]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 111/386 ---
+
+============================================================
+Segment: PatternLock_ep28_f70-131
+  Subtask: move forward
+  Frames: 70 - 131
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.0, 0.54, 0.69, 1.0, 0.69, 0.69, 0.77]
+  Failed regions: []
+  Successful interval: 10-37
+  Keyframes: [1, 10, 20, 37, 61]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 112/386 ---
+
+============================================================
+Segment: PatternLock_ep28_f70-139
+  Subtask: move forward
+  Frames: 70 - 139
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.12, 0.0, 0.69, 0.75, 1.0, 0.75, 0.94, 0.31]
+  Failed regions: [[42, 60]]
+  Successful interval: 48-60
+  Keyframes: [1, 48, 59, 60, 69]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 113/386 ---
+
+============================================================
+Segment: PatternLock_ep29_f96-130
+  Subtask: move forward
+  Frames: 96 - 130
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.0, 0.0, 0.25, 0.56, 1.0, 0.56, 0.44]
+  Failed regions: []
+  Successful interval: 10-25
+  Keyframes: [0, 10, 22, 25, 34]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 114/386 ---
+
+============================================================
+Segment: PatternLock_ep29_f131-155
+  Subtask: move left
+  Frames: 131 - 155
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.27, 0.42, 0.58, 0.65, 0.92, 1.0, 0.92]
+  Failed regions: []
+  Successful interval: 2-21
+  Keyframes: [0, 2, 13, 21, 24]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 115/386 ---
+
+============================================================
+Segment: PatternLock_ep29_f156-179
+  Subtask: move backward
+  Frames: 156 - 179
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.0, 0.17, 0.25, 0.58, 0.58, 0.75, 1.0, 0.5]
+  Failed regions: []
+  Successful interval: 12-20
+  Keyframes: [2, 12, 16, 20, 23]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 116/386 ---
+
+============================================================
+Segment: PatternLock_ep29_f156-191
+  Subtask: move backward
+  Frames: 156 - 191
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.18, 0.0, 0.82, 1.0, 1.0, 0.55, 0.27, 0.55]
+  Failed regions: []
+  Successful interval: 6-17
+  Keyframes: [0, 6, 10, 17, 33]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 117/386 ---
+
+============================================================
+Segment: PatternLock_ep30_f102-135
+  Subtask: move forward
+  Frames: 102 - 135
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.06, 0.0, 0.41, 0.12, 0.35, 0.88, 1.0, 0.71]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-28
+  Keyframes: [0, 14, 18, 28, 33]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 118/386 ---
+
+============================================================
+Segment: PatternLock_ep30_f136-174
+  Subtask: move backward-left
+  Frames: 136 - 174
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.29, 0.25, 0.42, 0.5, 1.0, 0.83, 0.79]
+  Failed regions: []
+  Successful interval: 11-28
+  Keyframes: [4, 11, 13, 28, 38]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 119/386 ---
+
+============================================================
+Segment: PatternLock_ep30_f175-197
+  Subtask: move backward-right
+  Frames: 175 - 197
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.16, 0.0, 0.53, 0.53, 0.79, 0.89, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [0, 17, 18, 22]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 120/386 ---
+
+============================================================
+Segment: PatternLock_ep30_f175-203
+  Subtask: move backward-right
+  Frames: 175 - 203
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.27, 0.0, 0.73, 0.82, 0.77, 1.0, 0.82, 1.0]
+  Failed regions: [[4, 14], [21, 28]]
+  Successful interval: 22-28
+  Keyframes: [0, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 121/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f207-245
+  Subtask: move backward-right
+  Frames: 207 - 245
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.37, 0.32, 0.74, 1.0, 0.42, 0.21, 0.0]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [0, 11, 13, 23, 38]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 122/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f246-295
+  Subtask: move forward
+  Frames: 246 - 295
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.4, 0.27, 0.47, 0.87, 0.8, 1.0, 1.0]
+  Failed regions: [[11, 30]]
+  Successful interval: 34-42
+  Keyframes: [0, 34, 36, 42, 49]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 123/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f296-347
+  Subtask: move backward-left
+  Frames: 296 - 347
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.14, 0.59, 1.0, 0.64, 0.27, 0.45, 0.55]
+  Failed regions: []
+  Successful interval: 3-24
+  Keyframes: [2, 3, 24, 25, 48]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 124/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f348-377
+  Subtask: move backward-right
+  Frames: 348 - 377
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.19, 0.0, 0.38, 0.62, 0.81, 1.0, 0.81, 0.62]
+  Failed regions: []
+  Successful interval: 5-21
+  Keyframes: [0, 5, 12, 21, 29]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 125/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f378-401
+  Subtask: move backward
+  Frames: 378 - 401
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.06, 0.18, 0.0, 0.0, 0.06, 0.41, 0.35, 1.0]
+  Failed regions: []
+  Successful interval: 18-23
+  Keyframes: [1, 18, 20, 23]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 126/386 ---
+
+============================================================
+Segment: PatternLock_ep31_f378-413
+  Subtask: move backward
+  Frames: 378 - 413
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.04, 0.12, 0.0, 0.29, 0.46, 0.5, 0.62, 1.0]
+  Failed regions: []
+  Successful interval: 10-35
+  Keyframes: [1, 10, 17, 35]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 127/386 ---
+
+============================================================
+Segment: PatternLock_ep32_f68-104
+  Subtask: move backward
+  Frames: 68 - 104
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.13, 0.47, 0.4, 0.73, 1.0, 0.0, 0.33, 0.47]
+  Failed regions: []
+  Successful interval: 11-22
+  Keyframes: [1, 11, 14, 22, 31]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 128/386 ---
+
+============================================================
+Segment: PatternLock_ep32_f105-127
+  Subtask: move forward-left
+  Frames: 105 - 127
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.18, 0.18, 0.36, 0.45, 0.91, 0.73, 1.0]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-22
+  Keyframes: [1, 17, 19, 22]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 129/386 ---
+
+============================================================
+Segment: PatternLock_ep32_f105-135
+  Subtask: move forward-left
+  Frames: 105 - 135
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.12, 0.24, 0.53, 0.18, 0.65, 0.94, 1.0]
+  Failed regions: [[15, 22]]
+  Successful interval: 16-30
+  Keyframes: [3, 16, 19, 30]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 130/386 ---
+
+============================================================
+Segment: PatternLock_ep33_f104-135
+  Subtask: move backward
+  Frames: 104 - 135
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.19, 0.29, 1.0, 0.24, 0.38, 0.29, 0.19]
+  Failed regions: []
+  Successful interval: 2-15
+  Keyframes: [1, 2, 14, 15, 29]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 131/386 ---
+
+============================================================
+Segment: PatternLock_ep33_f136-172
+  Subtask: move backward-right
+  Frames: 136 - 172
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.32, 0.0, 0.63, 0.42, 0.42, 0.47, 1.0, 0.79]
+  Failed regions: [[4, 13], [13, 22], [13, 26]]
+  Successful interval: 20-31
+  Keyframes: [0, 20, 22, 31, 36]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 132/386 ---
+
+============================================================
+Segment: PatternLock_ep33_f173-196
+  Subtask: move forward
+  Frames: 173 - 196
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.06, 0.11, 0.5, 0.72, 0.56, 0.78, 1.0]
+  Failed regions: [[14, 20]]
+  Successful interval: 15-23
+  Keyframes: [1, 15, 23]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 133/386 ---
+
+============================================================
+Segment: PatternLock_ep33_f173-207
+  Subtask: move forward
+  Frames: 173 - 207
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.41, 0.5, 0.45, 1.0, 0.86, 0.86]
+  Failed regions: []
+  Successful interval: 19-25
+  Keyframes: [1, 19, 25, 26, 33]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 134/386 ---
+
+============================================================
+Segment: PatternLock_ep34_f156-198
+  Subtask: move forward
+  Frames: 156 - 198
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.09, 0.45, 0.55, 0.64, 0.18, 1.0, 0.91]
+  Failed regions: [[25, 36]]
+  Successful interval: 29-36
+  Keyframes: [4, 29, 31, 36, 42]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 135/386 ---
+
+============================================================
+Segment: PatternLock_ep34_f199-241
+  Subtask: move backward-right
+  Frames: 199 - 241
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.17, 0.13, 0.35, 0.74, 0.87, 1.0, 0.91]
+  Failed regions: []
+  Successful interval: 12-36
+  Keyframes: [0, 12, 14, 36, 42]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 136/386 ---
+
+============================================================
+Segment: PatternLock_ep34_f242-265
+  Subtask: move right
+  Frames: 242 - 265
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.23, 0.27, 0.46, 0.46, 0.85, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 18-23
+  Keyframes: [0, 18, 19, 23]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 137/386 ---
+
+============================================================
+Segment: PatternLock_ep34_f266-299
+  Subtask: move forward-right
+  Frames: 266 - 299
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 57.9s
+  Rewards: [0.0, 0.54, 0.83, 0.88, 1.0, 0.83, 0.88, 0.92]
+  Failed regions: [[20, 28]]
+  Successful interval: 22-33
+  Keyframes: [0, 22, 23, 33]
+  Success detected: True
+  Confidence: 0.44
+
+--- Segment 138/386 ---
+
+============================================================
+Segment: PatternLock_ep34_f266-311
+  Subtask: move forward-right
+  Frames: 266 - 311
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.43, 0.57, 0.9, 0.57, 0.73, 0.73, 1.0]
+  Failed regions: [[21, 33]]
+  Successful interval: 37-45
+  Keyframes: [0, 37, 45]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 139/386 ---
+
+============================================================
+Segment: PatternLock_ep35_f97-131
+  Subtask: move forward
+  Frames: 97 - 131
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.35, 0.0, 0.29, 0.35, 0.71, 0.59, 1.0, 0.47]
+  Failed regions: [[4, 21], [21, 29]]
+  Successful interval: 23-29
+  Keyframes: [0, 23, 24, 29, 34]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 140/386 ---
+
+============================================================
+Segment: PatternLock_ep35_f132-155
+  Subtask: move right
+  Frames: 132 - 155
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.06, 0.5, 0.39, 0.44, 0.61, 1.0, 1.0]
+  Failed regions: [[9, 14]]
+  Successful interval: 10-20
+  Keyframes: [1, 10, 13, 20, 23]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 141/386 ---
+
+============================================================
+Segment: PatternLock_ep35_f156-184
+  Subtask: move forward-right
+  Frames: 156 - 184
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.0, 0.17, 0.35, 0.39, 1.0, 0.83, 0.96]
+  Failed regions: [[21, 28]]
+  Successful interval: 22-28
+  Keyframes: [1, 22, 26, 28]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 142/386 ---
+
+============================================================
+Segment: PatternLock_ep35_f156-193
+  Subtask: move forward-right
+  Frames: 156 - 193
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.03, 0.17, 0.0, 0.37, 0.73, 0.87, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 11-32
+  Keyframes: [1, 11, 22, 32, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 143/386 ---
+
+============================================================
+Segment: PatternLock_ep36_f96-120
+  Subtask: move left
+  Frames: 96 - 120
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.26, 0.47, 0.58, 0.89, 0.89, 1.0, 0.11]
+  Failed regions: []
+  Successful interval: 16-21
+  Keyframes: [0, 16, 17, 21, 24]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 144/386 ---
+
+============================================================
+Segment: PatternLock_ep36_f121-153
+  Subtask: move backward
+  Frames: 121 - 153
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.29, 0.79, 0.5, 0.79, 0.86, 1.0, 0.57]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-28
+  Keyframes: [0, 14, 22, 28, 32]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 145/386 ---
+
+============================================================
+Segment: PatternLock_ep36_f154-181
+  Subtask: move backward-right
+  Frames: 154 - 181
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.07, 0.27, 0.4, 0.73, 0.2, 0.0, 0.53, 1.0]
+  Failed regions: [[13, 23]]
+  Successful interval: 18-27
+  Keyframes: [0, 18, 22, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 146/386 ---
+
+============================================================
+Segment: PatternLock_ep36_f154-191
+  Subtask: move backward-right
+  Frames: 154 - 191
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.18, 0.59, 0.71, 0.18, 0.82, 0.88, 1.0]
+  Failed regions: [[18, 27]]
+  Successful interval: 20-37
+  Keyframes: [0, 20, 22, 37]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 147/386 ---
+
+============================================================
+Segment: PatternLock_ep37_f70-106
+  Subtask: move backward
+  Frames: 70 - 106
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.11, 0.0, 0.37, 0.47, 0.95, 0.63, 1.0, 0.42]
+  Failed regions: [[22, 31]]
+  Successful interval: 24-31
+  Keyframes: [2, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 148/386 ---
+
+============================================================
+Segment: PatternLock_ep37_f107-126
+  Subtask: move left
+  Frames: 107 - 126
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.0, 0.06, 0.12, 0.53, 0.47, 0.47, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 12-16
+  Keyframes: [1, 12, 14, 16, 19]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 149/386 ---
+
+============================================================
+Segment: PatternLock_ep37_f107-139
+  Subtask: move left
+  Frames: 107 - 139
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 59.1s
+  Rewards: [0.0, 0.12, 0.47, 1.0, 0.82, 1.0, 0.82, 0.41]
+  Failed regions: [[16, 24]]
+  Successful interval: 18-24
+  Keyframes: [1, 18, 19, 24, 32]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 150/386 ---
+
+============================================================
+Segment: PatternLock_ep38_f60-94
+  Subtask: move backward
+  Frames: 60 - 94
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 59.3s
+  Rewards: [0.0, 0.38, 0.23, 0.23, 0.62, 0.69, 0.38, 1.0]
+  Failed regions: [[8, 25], [8, 25], [25, 34]]
+  Successful interval: 27-34
+  Keyframes: [1, 27, 28, 34]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 151/386 ---
+
+============================================================
+Segment: PatternLock_ep38_f95-112
+  Subtask: move right
+  Frames: 95 - 112
+============================================================
+  Loaded 18 frames
+  Prefix scoring: 58.3s
+  Rewards: [0.67, 0.0, 0.44, 0.33, 0.11, 0.22, 1.0, 1.0]
+  Failed regions: [[4, 7], [7, 13]]
+  Successful interval: 9-15
+  Keyframes: [2, 9, 13, 15, 17]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 152/386 ---
+
+============================================================
+Segment: PatternLock_ep38_f95-119
+  Subtask: move right
+  Frames: 95 - 119
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 58.3s
+  Rewards: [0.31, 0.0, 0.12, 0.06, 0.5, 0.69, 0.69, 1.0]
+  Failed regions: [[4, 9]]
+  Successful interval: 19-24
+  Keyframes: [1, 19, 20, 24]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 153/386 ---
+
+============================================================
+Segment: PatternLock_ep39_f128-157
+  Subtask: move left
+  Frames: 128 - 157
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 59.3s
+  Rewards: [0.11, 0.06, 0.0, 0.11, 0.56, 0.67, 1.0, 0.89]
+  Failed regions: []
+  Successful interval: 9-25
+  Keyframes: [1, 9, 19, 25, 29]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 154/386 ---
+
+============================================================
+Segment: PatternLock_ep39_f158-195
+  Subtask: move forward-right
+  Frames: 158 - 195
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.11, 0.44, 0.0, 0.22, 0.78, 0.61, 0.89, 1.0]
+  Failed regions: [[8, 22], [22, 32]]
+  Successful interval: 25-37
+  Keyframes: [0, 25, 27, 37]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 155/386 ---
+
+============================================================
+Segment: PatternLock_ep39_f196-243
+  Subtask: move left
+  Frames: 196 - 243
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.05, 0.95, 0.58, 0.79, 0.47, 0.53, 1.0]
+  Failed regions: [[16, 28], [28, 40]]
+  Successful interval: 32-47
+  Keyframes: [0, 32, 47]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 156/386 ---
+
+============================================================
+Segment: PatternLock_ep39_f196-255
+  Subtask: move left
+  Frames: 196 - 255
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.0, 0.14, 0.67, 0.62, 0.33, 0.57, 0.43, 1.0]
+  Failed regions: [[21, 43], [43, 59]]
+  Successful interval: 48-59
+  Keyframes: [0, 48, 49, 59]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 157/386 ---
+
+============================================================
+Segment: PatternLock_ep40_f34-59
+  Subtask: move forward-left
+  Frames: 34 - 59
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.25, 0.45, 0.6, 0.9, 1.0, 0.8, 0.4]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [0, 2, 19, 20, 25]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 158/386 ---
+
+============================================================
+Segment: PatternLock_ep40_f34-67
+  Subtask: move forward-left
+  Frames: 34 - 67
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.29, 0.48, 0.86, 1.0, 0.57, 0.33, 0.1]
+  Failed regions: []
+  Successful interval: 2-20
+  Keyframes: [0, 2, 19, 20, 31]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 159/386 ---
+
+============================================================
+Segment: PatternLock_ep41_f82-130
+  Subtask: move right
+  Frames: 82 - 130
+============================================================
+  Loaded 49 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.32, 1.0, 0.21, 0.68, 0.89, 0.89, 0.74]
+  Failed regions: [[16, 29]]
+  Successful interval: 20-35
+  Keyframes: [1, 20, 35, 36, 48]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 160/386 ---
+
+============================================================
+Segment: PatternLock_ep41_f131-157
+  Subtask: move backward
+  Frames: 131 - 157
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.06, 0.0, 0.28, 0.56, 0.5, 0.78, 1.0, 0.78]
+  Failed regions: []
+  Successful interval: 14-22
+  Keyframes: [3, 14, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 161/386 ---
+
+============================================================
+Segment: PatternLock_ep41_f131-163
+  Subtask: move backward
+  Frames: 131 - 163
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.18, 0.55, 0.36, 0.45, 0.77, 0.82, 1.0]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-32
+  Keyframes: [3, 14, 21, 32]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 162/386 ---
+
+============================================================
+Segment: PatternLock_ep42_f122-150
+  Subtask: move forward-left
+  Frames: 122 - 150
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.0, 0.23, 0.73, 0.86, 0.86, 0.86, 1.0]
+  Failed regions: []
+  Successful interval: 22-28
+  Keyframes: [3, 22, 23, 28]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 163/386 ---
+
+============================================================
+Segment: PatternLock_ep42_f151-177
+  Subtask: move right
+  Frames: 151 - 177
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.61, 0.5, 0.56, 0.44, 0.61, 1.0, 0.78]
+  Failed regions: [[7, 13], [13, 19]]
+  Successful interval: 14-22
+  Keyframes: [1, 14, 15, 22, 26]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 164/386 ---
+
+============================================================
+Segment: PatternLock_ep42_f178-213
+  Subtask: move backward-left
+  Frames: 178 - 213
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.33, 0.33, 0.6, 0.6, 0.47, 0.53, 1.0]
+  Failed regions: [[21, 30]]
+  Successful interval: 24-35
+  Keyframes: [2, 24, 25, 35]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 165/386 ---
+
+============================================================
+Segment: PatternLock_ep42_f214-233
+  Subtask: move left
+  Frames: 214 - 233
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.29, 0.29, 0.0, 0.24, 0.35, 0.71, 0.82, 1.0]
+  Failed regions: [[6, 10]]
+  Successful interval: 6-19
+  Keyframes: [2, 6, 11, 19]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 166/386 ---
+
+============================================================
+Segment: PatternLock_ep42_f214-243
+  Subtask: move left
+  Frames: 214 - 243
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.15, 0.0, 0.54, 0.42, 0.65, 0.77, 1.0, 0.92]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-25
+  Keyframes: [5, 12, 16, 25, 29]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 167/386 ---
+
+============================================================
+Segment: PatternLock_ep43_f162-219
+  Subtask: move right
+  Frames: 162 - 219
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.28, 0.76, 0.79, 0.66, 1.0, 0.9, 0.83]
+  Failed regions: [[27, 42]]
+  Successful interval: 32-42
+  Keyframes: [0, 32, 41, 42, 57]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 168/386 ---
+
+============================================================
+Segment: PatternLock_ep43_f220-254
+  Subtask: move forward-right
+  Frames: 220 - 254
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.08, 0.38, 0.31, 0.46, 0.54, 1.0, 0.38]
+  Failed regions: []
+  Successful interval: 14-29
+  Keyframes: [0, 14, 20, 29, 34]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 169/386 ---
+
+============================================================
+Segment: PatternLock_ep43_f255-286
+  Subtask: move left
+  Frames: 255 - 286
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.25, 0.0, 0.5, 0.58, 0.92, 0.83, 0.67, 1.0]
+  Failed regions: [[4, 19], [19, 31]]
+  Successful interval: 25-31
+  Keyframes: [0, 25, 30, 31]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 170/386 ---
+
+============================================================
+Segment: PatternLock_ep43_f287-313
+  Subtask: move forward-left
+  Frames: 287 - 313
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.22, 0.44, 0.78, 0.44, 0.89, 1.0, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-22
+  Keyframes: [0, 14, 16, 22, 26]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 171/386 ---
+
+============================================================
+Segment: PatternLock_ep43_f287-323
+  Subtask: move forward-left
+  Frames: 287 - 323
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.08, 0.56, 0.32, 0.72, 0.72, 1.0, 0.8]
+  Failed regions: [[13, 22]]
+  Successful interval: 24-31
+  Keyframes: [1, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 172/386 ---
+
+============================================================
+Segment: PatternLock_ep44_f38-68
+  Subtask: move backward-right
+  Frames: 38 - 68
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.0, 0.36, 0.5, 0.73, 0.18, 0.77, 1.0]
+  Failed regions: [[18, 26]]
+  Successful interval: 20-30
+  Keyframes: [1, 20, 24, 30]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 173/386 ---
+
+============================================================
+Segment: PatternLock_ep44_f38-75
+  Subtask: move backward-right
+  Frames: 38 - 75
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.24, 0.24, 0.94, 0.24, 1.0, 0.88, 0.88]
+  Failed regions: [[18, 27]]
+  Successful interval: 20-27
+  Keyframes: [1, 20, 24, 27, 37]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 174/386 ---
+
+============================================================
+Segment: PatternLock_ep45_f56-86
+  Subtask: move forward-left
+  Frames: 56 - 86
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.15, 0.54, 0.54, 0.62, 1.0, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 24-30
+  Keyframes: [3, 24, 25, 30]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 175/386 ---
+
+============================================================
+Segment: PatternLock_ep45_f87-104
+  Subtask: move right
+  Frames: 87 - 104
+============================================================
+  Loaded 18 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.21, 0.46, 0.42, 0.5, 0.42, 0.54, 1.0]
+  Failed regions: [[11, 15]]
+  Successful interval: 11-17
+  Keyframes: [1, 11, 14, 17]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 176/386 ---
+
+============================================================
+Segment: PatternLock_ep45_f87-111
+  Subtask: move right
+  Frames: 87 - 111
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.05, 0.48, 0.14, 0.62, 1.0, 0.9, 0.9]
+  Failed regions: [[9, 15]]
+  Successful interval: 10-18
+  Keyframes: [1, 10, 14, 18, 24]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 177/386 ---
+
+============================================================
+Segment: PatternLock_ep46_f59-107
+  Subtask: move left
+  Frames: 59 - 107
+============================================================
+  Loaded 49 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.17, 0.3, 0.67, 0.67, 0.77, 0.87, 1.0]
+  Failed regions: []
+  Successful interval: 27-48
+  Keyframes: [0, 27, 47, 48]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 178/386 ---
+
+============================================================
+Segment: PatternLock_ep46_f59-117
+  Subtask: move left
+  Frames: 59 - 117
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.17, 0.54, 0.88, 0.79, 0.92, 0.92, 1.0]
+  Failed regions: [[27, 42]]
+  Successful interval: 48-58
+  Keyframes: [0, 48, 50, 58]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 179/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f221-248
+  Subtask: move left
+  Frames: 221 - 248
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.19, 0.25, 0.0, 0.44, 0.81, 1.0, 0.88, 1.0]
+  Failed regions: [[7, 20], [20, 27]]
+  Successful interval: 21-27
+  Keyframes: [2, 21, 22, 27]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 180/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f249-281
+  Subtask: move forward
+  Frames: 249 - 281
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.28, 0.11, 0.17, 0.0, 0.44, 0.78, 1.0, 0.56]
+  Failed regions: [[4, 12]]
+  Successful interval: 14-28
+  Keyframes: [1, 14, 19, 28, 32]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 181/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f282-311
+  Subtask: move left
+  Frames: 282 - 311
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.11, 0.5, 0.5, 1.0, 0.82, 0.61, 0.71]
+  Failed regions: []
+  Successful interval: 12-18
+  Keyframes: [1, 12, 15, 18, 26]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 182/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f312-342
+  Subtask: move forward-right
+  Frames: 312 - 342
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.1, 0.24, 0.33, 0.57, 0.9, 1.0, 0.76]
+  Failed regions: []
+  Successful interval: 2-26
+  Keyframes: [0, 2, 18, 26, 30]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 183/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f343-366
+  Subtask: move right
+  Frames: 343 - 366
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.24, 0.53, 0.35, 0.82, 0.94, 1.0, 0.82]
+  Failed regions: [[9, 14]]
+  Successful interval: 10-20
+  Keyframes: [1, 10, 13, 20, 23]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 184/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f367-402
+  Subtask: move backward
+  Frames: 367 - 402
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.33, 0.83, 0.5, 0.42, 1.0, 0.92, 0.5]
+  Failed regions: [[12, 26]]
+  Successful interval: 19-26
+  Keyframes: [0, 19, 22, 26, 35]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 185/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f403-429
+  Subtask: move forward-right
+  Frames: 403 - 429
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.0, 0.18, 0.65, 0.47, 0.59, 0.88, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-26
+  Keyframes: [1, 14, 25, 26]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 186/386 ---
+
+============================================================
+Segment: PatternLock_ep47_f403-441
+  Subtask: move forward-right
+  Frames: 403 - 441
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.0, 0.44, 0.4, 0.72, 0.88, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 16-33
+  Keyframes: [1, 16, 25, 33, 38]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 187/386 ---
+
+============================================================
+Segment: PatternLock_ep48_f70-101
+  Subtask: move backward
+  Frames: 70 - 101
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.08, 0.0, 0.42, 0.33, 0.83, 0.42, 0.83, 1.0]
+  Failed regions: [[11, 19], [19, 27]]
+  Successful interval: 21-31
+  Keyframes: [0, 21, 22, 31]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 188/386 ---
+
+============================================================
+Segment: PatternLock_ep48_f102-130
+  Subtask: move forward-left
+  Frames: 102 - 130
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.32, 0.36, 0.43, 0.75, 0.96, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 22-28
+  Keyframes: [0, 22, 26, 28]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 189/386 ---
+
+============================================================
+Segment: PatternLock_ep48_f102-139
+  Subtask: move forward-left
+  Frames: 102 - 139
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.32, 0.52, 1.0, 0.92, 0.88, 0.96, 0.92]
+  Failed regions: [[18, 32]]
+  Successful interval: 25-32
+  Keyframes: [0, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.47
+
+--- Segment 190/386 ---
+
+============================================================
+Segment: PatternLock_ep49_f63-100
+  Subtask: move backward-left
+  Frames: 63 - 100
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.33, 0.57, 0.62, 0.76, 1.0, 0.38, 0.48]
+  Failed regions: []
+  Successful interval: 2-27
+  Keyframes: [0, 2, 13, 27, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 191/386 ---
+
+============================================================
+Segment: PatternLock_ep49_f101-118
+  Subtask: move left
+  Frames: 101 - 118
+============================================================
+  Loaded 18 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.25, 0.0, 0.35, 0.4, 0.7, 0.6, 1.0, 0.65]
+  Failed regions: [[4, 11], [11, 15]]
+  Successful interval: 11-15
+  Keyframes: [0, 11, 12, 15, 17]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 192/386 ---
+
+============================================================
+Segment: PatternLock_ep49_f101-125
+  Subtask: move left
+  Frames: 101 - 125
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.0, 0.12, 0.12, 0.6, 0.84, 0.8, 1.0]
+  Failed regions: []
+  Successful interval: 19-24
+  Keyframes: [0, 19, 20, 24]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 193/386 ---
+
+============================================================
+Segment: PatternLock_ep50_f100-130
+  Subtask: move forward-right
+  Frames: 100 - 130
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.38, 0.38, 0.85, 0.92, 1.0, 0.69, 0.77]
+  Failed regions: []
+  Successful interval: 9-22
+  Keyframes: [1, 9, 16, 22, 30]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 194/386 ---
+
+============================================================
+Segment: PatternLock_ep50_f131-192
+  Subtask: move backward-right
+  Frames: 131 - 192
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.06, 0.39, 0.41, 0.39, 0.49, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 34-53
+  Keyframes: [1, 34, 47, 53, 61]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 195/386 ---
+
+============================================================
+Segment: PatternLock_ep50_f131-199
+  Subtask: move backward-right
+  Frames: 131 - 199
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.02, 0.44, 0.31, 0.33, 0.69, 1.0, 0.79]
+  Failed regions: [[23, 41]]
+  Successful interval: 29-59
+  Keyframes: [1, 29, 47, 59, 68]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 196/386 ---
+
+============================================================
+Segment: PatternLock_ep51_f159-198
+  Subtask: move forward-right
+  Frames: 159 - 198
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.42, 0.58, 0.75, 0.67, 0.83, 0.75, 1.0]
+  Failed regions: [[19, 29], [29, 39]]
+  Successful interval: 32-39
+  Keyframes: [0, 32, 38, 39]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 197/386 ---
+
+============================================================
+Segment: PatternLock_ep51_f199-224
+  Subtask: move right
+  Frames: 199 - 224
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.31, 0.62, 1.0, 1.0, 0.69, 0.44, 0.0, 0.06]
+  Failed regions: []
+  Successful interval: 2-10
+  Keyframes: [0, 2, 9, 10, 17]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 198/386 ---
+
+============================================================
+Segment: PatternLock_ep51_f225-264
+  Subtask: move backward-left
+  Frames: 225 - 264
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.33, 0.38, 0.62, 0.95, 1.0, 0.38, 0.95]
+  Failed regions: [[29, 39]]
+  Successful interval: 32-39
+  Keyframes: [0, 32, 33, 39]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 199/386 ---
+
+============================================================
+Segment: PatternLock_ep51_f265-305
+  Subtask: move forward-left
+  Frames: 265 - 305
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.21, 0.42, 0.62, 0.79, 0.71, 0.75, 1.0]
+  Failed regions: [[24, 34]]
+  Successful interval: 27-40
+  Keyframes: [3, 27, 28, 40]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 200/386 ---
+
+============================================================
+Segment: PatternLock_ep51_f265-317
+  Subtask: move forward-left
+  Frames: 265 - 317
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.32, 0.45, 0.32, 0.59, 0.86, 1.0, 0.64]
+  Failed regions: [[18, 31]]
+  Successful interval: 23-45
+  Keyframes: [3, 23, 25, 45, 52]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 201/386 ---
+
+============================================================
+Segment: PatternLock_ep52_f59-82
+  Subtask: move right
+  Frames: 59 - 82
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.36, 1.0, 0.86, 0.64, 0.93, 0.5, 0.43]
+  Failed regions: [[9, 17]]
+  Successful interval: 12-17
+  Keyframes: [1, 12, 13, 17, 23]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 202/386 ---
+
+============================================================
+Segment: PatternLock_ep52_f83-109
+  Subtask: move forward
+  Frames: 83 - 109
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.13, 0.2, 0.0, 0.27, 0.6, 1.0, 0.67, 0.67]
+  Failed regions: []
+  Successful interval: 8-19
+  Keyframes: [1, 8, 19, 20, 26]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 203/386 ---
+
+============================================================
+Segment: PatternLock_ep52_f83-117
+  Subtask: move forward
+  Frames: 83 - 117
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.08, 0.0, 0.58, 0.5, 1.0, 1.0, 0.67]
+  Failed regions: [[16, 25]]
+  Successful interval: 19-25
+  Keyframes: [2, 19, 23, 25, 34]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 204/386 ---
+
+============================================================
+Segment: PatternLock_ep53_f33-58
+  Subtask: move backward-right
+  Frames: 33 - 58
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.31, 0.25, 0.25, 0.88, 0.69, 1.0, 0.75]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-22
+  Keyframes: [0, 17, 22, 23, 25]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 205/386 ---
+
+============================================================
+Segment: PatternLock_ep53_f33-65
+  Subtask: move backward-right
+  Frames: 33 - 65
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.06, 0.35, 0.0, 0.88, 0.76, 0.76, 1.0, 0.94]
+  Failed regions: [[8, 16], [16, 24], [16, 28]]
+  Successful interval: 22-28
+  Keyframes: [0, 22, 23, 28, 32]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 206/386 ---
+
+============================================================
+Segment: PatternLock_ep54_f77-118
+  Subtask: move backward
+  Frames: 77 - 118
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.45, 0.73, 0.09, 0.64, 0.45, 0.91, 1.0]
+  Failed regions: [[14, 25], [25, 35]]
+  Successful interval: 28-41
+  Keyframes: [0, 28, 30, 41]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 207/386 ---
+
+============================================================
+Segment: PatternLock_ep54_f119-144
+  Subtask: move forward-left
+  Frames: 119 - 144
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.0, 0.0, 0.67, 0.67, 0.53, 1.0, 0.87, 1.0]
+  Failed regions: [[13, 19], [19, 25]]
+  Successful interval: 20-25
+  Keyframes: [2, 20, 21, 25]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 208/386 ---
+
+============================================================
+Segment: PatternLock_ep54_f119-153
+  Subtask: move forward-left
+  Frames: 119 - 153
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 58.3s
+  Rewards: [0.0, 0.07, 0.53, 0.53, 0.73, 1.0, 0.53, 0.87]
+  Failed regions: [[25, 34]]
+  Successful interval: 27-34
+  Keyframes: [0, 27, 28, 34]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 209/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f227-257
+  Subtask: move forward-left
+  Frames: 227 - 257
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 59.1s
+  Rewards: [0.0, 0.06, 0.32, 0.58, 0.52, 0.77, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 16-30
+  Keyframes: [2, 16, 17, 30]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 210/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f258-280
+  Subtask: move right
+  Frames: 258 - 280
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.17, 0.17, 0.67, 0.33, 1.0, 0.75, 1.0, 0.0]
+  Failed regions: [[9, 14], [14, 19]]
+  Successful interval: 14-19
+  Keyframes: [1, 14, 15, 19, 22]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 211/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f281-361
+  Subtask: move backward-left
+  Frames: 281 - 361
+============================================================
+  Loaded 81 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.23, 0.77, 0.73, 1.0, 0.95, 1.0, 0.91]
+  Failed regions: []
+  Successful interval: 55-69
+  Keyframes: [5, 55, 60, 69, 80]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 212/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f362-392
+  Subtask: move backward-right
+  Frames: 362 - 392
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.07, 0.0, 0.07, 0.21, 0.5, 1.0, 0.57, 0.93]
+  Failed regions: [[22, 30]]
+  Successful interval: 24-30
+  Keyframes: [1, 24, 29, 30]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 213/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f393-419
+  Subtask: move left
+  Frames: 393 - 419
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.3, 0.1, 0.2, 0.4, 0.5, 0.1, 1.0]
+  Failed regions: [[7, 19], [19, 26]]
+  Successful interval: 20-26
+  Keyframes: [0, 20, 21, 26]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 214/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f420-445
+  Subtask: move forward-right
+  Frames: 420 - 445
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.24, 0.1, 0.14, 0.0, 0.57, 0.76, 1.0]
+  Failed regions: []
+  Successful interval: 14-25
+  Keyframes: [0, 14, 22, 25]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 215/386 ---
+
+============================================================
+Segment: PatternLock_ep55_f420-453
+  Subtask: move forward-right
+  Frames: 420 - 453
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.24, 0.0, 0.0, 0.76, 0.94, 1.0, 0.82]
+  Failed regions: []
+  Successful interval: 14-28
+  Keyframes: [0, 14, 22, 28, 33]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 216/386 ---
+
+============================================================
+Segment: PatternLock_ep56_f65-96
+  Subtask: move backward
+  Frames: 65 - 96
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.19, 0.29, 1.0, 0.24, 0.38, 0.29, 0.19]
+  Failed regions: []
+  Successful interval: 2-15
+  Keyframes: [1, 2, 14, 15, 29]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 217/386 ---
+
+============================================================
+Segment: PatternLock_ep56_f97-121
+  Subtask: move forward-right
+  Frames: 97 - 121
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.43, 0.19, 0.43, 0.48, 1.0, 0.95, 0.52]
+  Failed regions: [[6, 12]]
+  Successful interval: 7-18
+  Keyframes: [2, 7, 16, 18, 24]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 218/386 ---
+
+============================================================
+Segment: PatternLock_ep56_f97-129
+  Subtask: move forward-right
+  Frames: 97 - 129
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.33, 0.38, 0.54, 1.0, 0.46, 0.5, 0.38]
+  Failed regions: []
+  Successful interval: 2-20
+  Keyframes: [1, 2, 16, 20, 30]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 219/386 ---
+
+============================================================
+Segment: PatternLock_ep57_f68-100
+  Subtask: move left
+  Frames: 68 - 100
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.13, 0.53, 0.4, 0.93, 1.0, 0.87, 0.67]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-24
+  Keyframes: [3, 14, 16, 24, 32]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 220/386 ---
+
+============================================================
+Segment: PatternLock_ep57_f101-125
+  Subtask: move forward
+  Frames: 101 - 125
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.15, 0.23, 0.0, 0.08, 0.77, 0.69, 1.0, 0.77]
+  Failed regions: []
+  Successful interval: 16-21
+  Keyframes: [3, 16, 20, 21, 24]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 221/386 ---
+
+============================================================
+Segment: PatternLock_ep57_f101-135
+  Subtask: move forward
+  Frames: 101 - 135
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.15, 0.0, 0.08, 0.62, 1.0, 0.92, 0.77, 0.69]
+  Failed regions: []
+  Successful interval: 6-21
+  Keyframes: [3, 6, 14, 21, 31]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 222/386 ---
+
+============================================================
+Segment: PatternLock_ep58_f145-186
+  Subtask: move backward
+  Frames: 145 - 186
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.29, 0.21, 0.43, 0.93, 0.86, 1.0, 0.86]
+  Failed regions: []
+  Successful interval: 28-35
+  Keyframes: [0, 28, 30, 35, 41]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 223/386 ---
+
+============================================================
+Segment: PatternLock_ep58_f187-209
+  Subtask: move right
+  Frames: 187 - 209
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.29, 0.57, 0.38, 0.76, 0.81, 0.95, 1.0]
+  Failed regions: [[9, 14]]
+  Successful interval: 9-22
+  Keyframes: [0, 9, 11, 22]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 224/386 ---
+
+============================================================
+Segment: PatternLock_ep58_f210-249
+  Subtask: move forward-right
+  Frames: 210 - 249
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.29, 0.29, 0.79, 1.0, 1.0, 0.83, 0.75]
+  Failed regions: []
+  Successful interval: 12-24
+  Keyframes: [2, 12, 24, 25, 38]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 225/386 ---
+
+============================================================
+Segment: PatternLock_ep58_f250-276
+  Subtask: move backward-right
+  Frames: 250 - 276
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.24, 0.26, 0.47, 0.68, 1.0, 0.68, 0.58]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [0, 2, 12, 19, 26]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 226/386 ---
+
+============================================================
+Segment: PatternLock_ep58_f250-289
+  Subtask: move backward-right
+  Frames: 250 - 289
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.32, 0.55, 1.0, 0.68, 0.76, 0.61, 0.74]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [0, 2, 12, 19, 33]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 227/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f190-226
+  Subtask: move forward-right
+  Frames: 190 - 226
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.21, 0.18, 0.39, 0.46, 0.82, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 11-36
+  Keyframes: [1, 11, 25, 36]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 228/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f227-261
+  Subtask: move forward
+  Frames: 227 - 261
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.6, 1.0, 1.0, 0.5, 0.9, 0.5]
+  Failed regions: [[21, 29]]
+  Successful interval: 23-29
+  Keyframes: [1, 23, 24, 29, 34]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 229/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f262-285
+  Subtask: move left
+  Frames: 262 - 285
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.31, 0.5, 0.69, 0.69, 0.81, 1.0, 0.0]
+  Failed regions: []
+  Successful interval: 12-20
+  Keyframes: [2, 12, 13, 20, 23]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 230/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f286-331
+  Subtask: move forward-left
+  Frames: 286 - 331
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.26, 0.63, 0.63, 0.74, 1.0, 0.66, 0.91]
+  Failed regions: [[33, 45]]
+  Successful interval: 37-45
+  Keyframes: [1, 37, 38, 45]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 231/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f332-371
+  Subtask: move right
+  Frames: 332 - 371
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.5, 0.77, 1.0, 0.45, 0.73, 0.73, 0.0, 1.0]
+  Failed regions: [[14, 24], [29, 39]]
+  Successful interval: 32-39
+  Keyframes: [0, 32, 36, 39]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 232/386 ---
+
+============================================================
+Segment: PatternLock_ep59_f332-379
+  Subtask: move right
+  Frames: 332 - 379
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.29, 0.53, 0.53, 0.58, 0.45, 0.0, 0.68, 1.0]
+  Failed regions: [[22, 40]]
+  Successful interval: 32-47
+  Keyframes: [0, 32, 36, 47]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 233/386 ---
+
+============================================================
+Segment: PatternLock_ep60_f70-106
+  Subtask: move forward-left
+  Frames: 70 - 106
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.14, 0.75, 0.61, 0.75, 0.68, 1.0, 0.61]
+  Failed regions: [[13, 22]]
+  Successful interval: 24-31
+  Keyframes: [0, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 234/386 ---
+
+============================================================
+Segment: PatternLock_ep60_f107-131
+  Subtask: move forward-right
+  Frames: 107 - 131
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.17, 0.22, 0.22, 0.72, 1.0, 0.89, 0.94]
+  Failed regions: [[18, 24]]
+  Successful interval: 19-24
+  Keyframes: [0, 19, 21, 24]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 235/386 ---
+
+============================================================
+Segment: PatternLock_ep60_f107-139
+  Subtask: move forward-right
+  Frames: 107 - 139
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.29, 0.24, 0.76, 0.65, 1.0, 1.0, 0.35]
+  Failed regions: [[16, 24]]
+  Successful interval: 18-24
+  Keyframes: [0, 18, 21, 24, 32]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 236/386 ---
+
+============================================================
+Segment: PatternLock_ep61_f25-42
+  Subtask: move right
+  Frames: 25 - 42
+============================================================
+  Loaded 18 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.14, 0.0, 0.24, 0.21, 0.21, 0.41, 0.59, 1.0]
+  Failed regions: []
+  Successful interval: 9-17
+  Keyframes: [1, 9, 11, 17]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 237/386 ---
+
+============================================================
+Segment: PatternLock_ep61_f25-49
+  Subtask: move right
+  Frames: 25 - 49
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.15, 0.0, 0.22, 0.33, 0.63, 0.78, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 4-24
+  Keyframes: [0, 4, 11, 24]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 238/386 ---
+
+============================================================
+Segment: PatternLock_ep62_f67-90
+  Subtask: move right
+  Frames: 67 - 90
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.11, 0.22, 0.44, 1.0, 0.83, 1.0, 0.61, 0.0]
+  Failed regions: [[12, 17]]
+  Successful interval: 12-17
+  Keyframes: [0, 12, 13, 17, 23]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 239/386 ---
+
+============================================================
+Segment: PatternLock_ep62_f91-119
+  Subtask: move backward
+  Frames: 91 - 119
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.19, 0.24, 0.24, 0.9, 0.52, 1.0, 0.86]
+  Failed regions: [[17, 24]]
+  Successful interval: 19-24
+  Keyframes: [0, 19, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 240/386 ---
+
+============================================================
+Segment: PatternLock_ep62_f91-133
+  Subtask: move backward
+  Frames: 91 - 133
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.43, 0.24, 0.33, 0.86, 0.57, 1.0, 0.57]
+  Failed regions: [[9, 25], [25, 36]]
+  Successful interval: 29-36
+  Keyframes: [0, 29, 30, 36, 42]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 241/386 ---
+
+============================================================
+Segment: PatternLock_ep63_f132-161
+  Subtask: move right
+  Frames: 132 - 161
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.21, 0.26, 0.21, 0.68, 0.74, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 23-29
+  Keyframes: [2, 23, 28, 29]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 242/386 ---
+
+============================================================
+Segment: PatternLock_ep63_f162-196
+  Subtask: move backward-right
+  Frames: 162 - 196
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.17, 0.39, 0.39, 0.56, 0.61, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 14-34
+  Keyframes: [0, 14, 17, 34]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 243/386 ---
+
+============================================================
+Segment: PatternLock_ep63_f197-232
+  Subtask: move forward
+  Frames: 197 - 232
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.0, 0.42, 0.58, 0.42, 1.0, 0.84, 0.37]
+  Failed regions: [[17, 26]]
+  Successful interval: 19-26
+  Keyframes: [1, 19, 24, 26, 35]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 244/386 ---
+
+============================================================
+Segment: PatternLock_ep63_f233-257
+  Subtask: move backward-left
+  Frames: 233 - 257
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.16, 0.16, 0.0, 0.44, 0.32, 0.56, 0.8, 1.0]
+  Failed regions: [[12, 18]]
+  Successful interval: 13-24
+  Keyframes: [3, 13, 16, 24]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 245/386 ---
+
+============================================================
+Segment: PatternLock_ep63_f233-263
+  Subtask: move backward-left
+  Frames: 233 - 263
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.08, 0.15, 0.0, 0.23, 0.46, 0.85, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 9-26
+  Keyframes: [3, 9, 12, 26, 30]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 246/386 ---
+
+============================================================
+Segment: PatternLock_ep64_f109-146
+  Subtask: move backward-left
+  Frames: 109 - 146
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.33, 0.57, 0.62, 0.76, 1.0, 0.38, 0.48]
+  Failed regions: []
+  Successful interval: 2-27
+  Keyframes: [0, 2, 13, 27, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 247/386 ---
+
+============================================================
+Segment: PatternLock_ep64_f147-184
+  Subtask: move forward-left
+  Frames: 147 - 184
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.3, 0.33, 0.8, 0.87, 1.0, 0.77, 0.97]
+  Failed regions: [[27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 248/386 ---
+
+============================================================
+Segment: PatternLock_ep64_f185-211
+  Subtask: move backward
+  Frames: 185 - 211
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.21, 0.38, 0.34, 0.48, 0.52, 0.76, 1.0]
+  Failed regions: []
+  Successful interval: 11-26
+  Keyframes: [0, 11, 16, 26]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 249/386 ---
+
+============================================================
+Segment: PatternLock_ep64_f185-217
+  Subtask: move backward
+  Frames: 185 - 217
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.15, 0.5, 0.54, 0.5, 0.92, 0.73, 1.0]
+  Failed regions: [[24, 32]]
+  Successful interval: 26-32
+  Keyframes: [0, 26, 27, 32]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 250/386 ---
+
+============================================================
+Segment: PatternLock_ep65_f64-95
+  Subtask: move backward
+  Frames: 64 - 95
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.08, 0.0, 0.42, 0.33, 0.83, 0.42, 0.83, 1.0]
+  Failed regions: [[11, 19], [19, 27]]
+  Successful interval: 21-31
+  Keyframes: [0, 21, 22, 31]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 251/386 ---
+
+============================================================
+Segment: PatternLock_ep65_f96-120
+  Subtask: move backward-left
+  Frames: 96 - 120
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.25, 0.58, 0.71, 0.79, 0.67, 1.0, 0.75]
+  Failed regions: [[15, 21]]
+  Successful interval: 16-21
+  Keyframes: [0, 16, 17, 21, 24]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 252/386 ---
+
+============================================================
+Segment: PatternLock_ep65_f96-127
+  Subtask: move backward-left
+  Frames: 96 - 127
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.31, 0.54, 0.73, 0.65, 0.81, 1.0, 0.73]
+  Failed regions: []
+  Successful interval: 17-27
+  Keyframes: [1, 17, 18, 27, 31]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 253/386 ---
+
+============================================================
+Segment: PatternLock_ep66_f145-167
+  Subtask: move left
+  Frames: 145 - 167
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.08, 0.0, 0.0, 0.46, 1.0, 0.85, 0.38]
+  Failed regions: []
+  Successful interval: 9-16
+  Keyframes: [1, 9, 12, 16, 22]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 254/386 ---
+
+============================================================
+Segment: PatternLock_ep66_f168-206
+  Subtask: move forward-left
+  Frames: 168 - 206
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.21, 0.25, 0.67, 0.96, 0.96, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 26-33
+  Keyframes: [3, 26, 27, 33, 38]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 255/386 ---
+
+============================================================
+Segment: PatternLock_ep66_f207-249
+  Subtask: move backward
+  Frames: 207 - 249
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.0, 0.68, 0.92, 1.0, 0.56, 0.6, 0.68]
+  Failed regions: []
+  Successful interval: 7-25
+  Keyframes: [1, 7, 8, 25, 41]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 256/386 ---
+
+============================================================
+Segment: PatternLock_ep66_f250-276
+  Subtask: move backward-right
+  Frames: 250 - 276
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.24, 0.59, 0.21, 0.48, 0.97, 0.97, 1.0]
+  Failed regions: [[10, 19]]
+  Successful interval: 20-26
+  Keyframes: [3, 20, 21, 26]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 257/386 ---
+
+============================================================
+Segment: PatternLock_ep66_f250-289
+  Subtask: move backward-right
+  Frames: 250 - 289
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.37, 0.47, 0.93, 0.83, 0.73, 0.77, 1.0]
+  Failed regions: [[19, 34]]
+  Successful interval: 27-39
+  Keyframes: [1, 27, 28, 39]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 258/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f250-283
+  Subtask: move forward-right
+  Frames: 250 - 283
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.2, 0.47, 0.33, 0.0, 0.6, 0.53, 1.0, 0.2]
+  Failed regions: [[8, 20]]
+  Successful interval: 22-28
+  Keyframes: [2, 22, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 259/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f284-329
+  Subtask: move forward-left
+  Frames: 284 - 329
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.21, 0.31, 0.5, 0.57, 0.69, 0.43, 1.0]
+  Failed regions: [[33, 45]]
+  Successful interval: 37-45
+  Keyframes: [2, 37, 38, 45]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 260/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f330-355
+  Subtask: move right
+  Frames: 330 - 355
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.08, 0.15, 0.15, 1.0, 0.77, 0.08, 0.0, 0.23]
+  Failed regions: []
+  Successful interval: 8-13
+  Keyframes: [0, 8, 10, 13, 19]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 261/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f356-403
+  Subtask: move backward-left
+  Frames: 356 - 403
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.05, 0.0, 0.23, 1.0, 0.55, 0.55, 0.68, 0.59]
+  Failed regions: []
+  Successful interval: 8-22
+  Keyframes: [0, 8, 20, 22, 36]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 262/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f404-426
+  Subtask: move left
+  Frames: 404 - 426
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.33, 0.2, 0.6, 0.27, 1.0, 1.0, 0.93, 0.0]
+  Failed regions: [[4, 9], [9, 14]]
+  Successful interval: 9-14
+  Keyframes: [0, 9, 11, 14, 22]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 263/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f427-460
+  Subtask: move backward
+  Frames: 427 - 460
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.4, 0.2, 1.0, 0.5, 0.9, 0.0, 0.4, 1.0]
+  Failed regions: [[4, 12], [12, 20], [20, 28]]
+  Successful interval: 22-33
+  Keyframes: [0, 22, 24, 33]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 264/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f461-491
+  Subtask: move backward-right
+  Frames: 461 - 491
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.04, 0.0, 0.0, 0.11, 0.85, 0.63, 1.0, 0.41]
+  Failed regions: [[18, 26]]
+  Successful interval: 20-26
+  Keyframes: [0, 20, 23, 26, 30]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 265/386 ---
+
+============================================================
+Segment: PatternLock_ep67_f461-499
+  Subtask: move backward-right
+  Frames: 461 - 499
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.07, 0.0, 0.22, 0.89, 0.81, 0.81, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 26-38
+  Keyframes: [0, 26, 27, 38]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 266/386 ---
+
+============================================================
+Segment: PatternLock_ep68_f70-106
+  Subtask: move backward-right
+  Frames: 70 - 106
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.18, 0.27, 0.0, 0.68, 0.77, 1.0, 0.55]
+  Failed regions: [[13, 22]]
+  Successful interval: 15-31
+  Keyframes: [2, 15, 20, 31, 36]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 267/386 ---
+
+============================================================
+Segment: PatternLock_ep68_f107-126
+  Subtask: move right
+  Frames: 107 - 126
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.35, 0.18, 0.0, 0.94, 0.65, 0.47, 1.0, 0.71]
+  Failed regions: [[4, 10], [10, 16]]
+  Successful interval: 12-16
+  Keyframes: [0, 12, 13, 16, 19]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 268/386 ---
+
+============================================================
+Segment: PatternLock_ep68_f107-139
+  Subtask: move right
+  Frames: 107 - 139
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.2, 0.0, 0.37, 0.57, 0.6, 1.0, 0.97, 1.0]
+  Failed regions: []
+  Successful interval: 26-32
+  Keyframes: [0, 26, 31, 32]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 269/386 ---
+
+============================================================
+Segment: PatternLock_ep69_f32-57
+  Subtask: move backward
+  Frames: 32 - 57
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.1, 0.0, 0.6, 0.5, 0.6, 1.0, 0.9, 0.7]
+  Failed regions: [[10, 16]]
+  Successful interval: 11-19
+  Keyframes: [0, 11, 13, 19, 25]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 270/386 ---
+
+============================================================
+Segment: PatternLock_ep69_f32-63
+  Subtask: move backward
+  Frames: 32 - 63
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.08, 0.0, 0.42, 0.33, 0.83, 0.42, 0.83, 1.0]
+  Failed regions: [[11, 19], [19, 27]]
+  Successful interval: 21-31
+  Keyframes: [0, 21, 22, 31]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 271/386 ---
+
+============================================================
+Segment: PatternLock_ep70_f128-151
+  Subtask: move left
+  Frames: 128 - 151
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.26, 0.17, 0.78, 0.61, 1.0, 0.83, 0.52]
+  Failed regions: [[6, 12], [12, 17]]
+  Successful interval: 12-17
+  Keyframes: [0, 12, 13, 17, 23]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 272/386 ---
+
+============================================================
+Segment: PatternLock_ep70_f152-189
+  Subtask: move backward-left
+  Frames: 152 - 189
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.07, 0.1, 0.41, 0.45, 0.59, 0.9, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [0, 2, 22, 37]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 273/386 ---
+
+============================================================
+Segment: PatternLock_ep70_f190-222
+  Subtask: move backward
+  Frames: 190 - 222
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.15, 0.41, 0.59, 0.63, 1.0, 0.93, 0.56]
+  Failed regions: []
+  Successful interval: 2-24
+  Keyframes: [0, 2, 10, 24, 32]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 274/386 ---
+
+============================================================
+Segment: PatternLock_ep70_f223-248
+  Subtask: move backward-right
+  Frames: 223 - 248
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.05, 0.0, 0.2, 0.15, 0.3, 0.4, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 11-25
+  Keyframes: [0, 11, 15, 25]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 275/386 ---
+
+============================================================
+Segment: PatternLock_ep70_f223-255
+  Subtask: move backward-right
+  Frames: 223 - 255
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.14, 0.32, 0.18, 0.46, 0.5, 0.86, 1.0]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-32
+  Keyframes: [1, 14, 15, 32]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 276/386 ---
+
+============================================================
+Segment: PatternLock_ep71_f93-123
+  Subtask: move forward-right
+  Frames: 93 - 123
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.16, 0.0, 0.19, 0.34, 0.34, 0.62, 1.0, 0.81]
+  Failed regions: []
+  Successful interval: 16-26
+  Keyframes: [4, 16, 19, 26, 30]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 277/386 ---
+
+============================================================
+Segment: PatternLock_ep71_f124-158
+  Subtask: move backward-right
+  Frames: 124 - 158
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 58.0s
+  Rewards: [0.44, 0.11, 0.33, 0.78, 0.33, 1.0, 0.0, 0.89]
+  Failed regions: [[4, 16], [16, 25], [25, 34]]
+  Successful interval: 27-34
+  Keyframes: [0, 27, 28, 34]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 278/386 ---
+
+============================================================
+Segment: PatternLock_ep71_f159-178
+  Subtask: move left
+  Frames: 159 - 178
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.28, 0.08, 0.24, 0.0, 0.64, 0.64, 1.0, 0.88]
+  Failed regions: [[4, 8]]
+  Successful interval: 12-16
+  Keyframes: [2, 12, 14, 16, 19]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 279/386 ---
+
+============================================================
+Segment: PatternLock_ep71_f159-185
+  Subtask: move left
+  Frames: 159 - 185
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.28, 0.0, 0.0, 0.88, 1.0, 0.88, 0.76, 0.76]
+  Failed regions: [[4, 10], [4, 13]]
+  Successful interval: 8-16
+  Keyframes: [2, 8, 12, 16, 23]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 280/386 ---
+
+============================================================
+Segment: PatternLock_ep72_f33-58
+  Subtask: move backward-right
+  Frames: 33 - 58
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 58.7s
+  Rewards: [0.0, 0.31, 0.25, 0.25, 0.88, 0.69, 1.0, 0.75]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-22
+  Keyframes: [0, 17, 22, 23, 25]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 281/386 ---
+
+============================================================
+Segment: PatternLock_ep72_f33-65
+  Subtask: move backward-right
+  Frames: 33 - 65
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.06, 0.35, 0.0, 0.88, 0.76, 0.76, 1.0, 0.94]
+  Failed regions: [[8, 16], [16, 24], [16, 28]]
+  Successful interval: 22-28
+  Keyframes: [0, 22, 23, 28, 32]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 282/386 ---
+
+============================================================
+Segment: PatternLock_ep73_f37-60
+  Subtask: move backward
+  Frames: 37 - 60
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.13, 0.27, 0.0, 0.27, 0.4, 1.0, 0.07, 0.33]
+  Failed regions: [[6, 12]]
+  Successful interval: 7-17
+  Keyframes: [3, 7, 13, 17, 23]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 283/386 ---
+
+============================================================
+Segment: PatternLock_ep73_f37-73
+  Subtask: move backward
+  Frames: 37 - 73
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.13, 0.13, 0.13, 1.0, 0.53, 0.2, 0.0, 0.4]
+  Failed regions: []
+  Successful interval: 11-17
+  Keyframes: [3, 11, 13, 17, 35]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 284/386 ---
+
+============================================================
+Segment: PatternLock_ep74_f57-90
+  Subtask: move forward
+  Frames: 57 - 90
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.12, 0.24, 0.47, 0.65, 0.82, 0.88, 1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-28
+  Keyframes: [1, 2, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 285/386 ---
+
+============================================================
+Segment: PatternLock_ep74_f91-106
+  Subtask: move right
+  Frames: 91 - 106
+============================================================
+  Loaded 16 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.08, 0.67, 0.0, 0.0, 0.5, 0.33, 0.67, 1.0]
+  Failed regions: [[5, 10], [5, 10], [10, 13]]
+  Successful interval: 9-15
+  Keyframes: [0, 9, 10, 15]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 286/386 ---
+
+============================================================
+Segment: PatternLock_ep74_f91-113
+  Subtask: move right
+  Frames: 91 - 113
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.08, 0.0, 0.08, 0.31, 0.69, 0.62, 1.0, 0.31]
+  Failed regions: []
+  Successful interval: 14-19
+  Keyframes: [0, 14, 15, 19, 22]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 287/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f186-222
+  Subtask: move forward-left
+  Frames: 186 - 222
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.2, 0.52, 0.24, 0.72, 0.88, 1.0, 0.64]
+  Failed regions: [[13, 22]]
+  Successful interval: 15-31
+  Keyframes: [0, 15, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 288/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f223-254
+  Subtask: move backward-left
+  Frames: 223 - 254
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.36, 0.29, 0.64, 0.36, 0.5, 1.0, 0.79]
+  Failed regions: [[15, 23]]
+  Successful interval: 17-27
+  Keyframes: [0, 17, 18, 27, 31]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 289/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f255-284
+  Subtask: move right
+  Frames: 255 - 284
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.15, 0.19, 0.62, 0.54, 0.85, 1.0, 0.85]
+  Failed regions: []
+  Successful interval: 16-25
+  Keyframes: [0, 16, 17, 25, 29]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 290/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f285-315
+  Subtask: move backward-left
+  Frames: 285 - 315
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.15, 0.0, 0.38, 0.31, 0.23, 1.0, 0.69, 0.62]
+  Failed regions: [[11, 22]]
+  Successful interval: 16-22
+  Keyframes: [1, 16, 17, 22, 29]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 291/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f316-364
+  Subtask: move right
+  Frames: 316 - 364
+============================================================
+  Loaded 49 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.05, 0.0, 0.19, 0.57, 0.48, 0.81, 0.76, 1.0]
+  Failed regions: [[22, 35]]
+  Successful interval: 39-48
+  Keyframes: [3, 39, 47, 48]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 292/386 ---
+
+============================================================
+Segment: PatternLock_ep75_f316-371
+  Subtask: move right
+  Frames: 316 - 371
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.16, 0.44, 0.64, 0.72, 0.88, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 3-47
+  Keyframes: [0, 3, 16, 47, 55]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 293/386 ---
+
+============================================================
+Segment: PatternLock_ep76_f104-140
+  Subtask: move backward-left
+  Frames: 104 - 140
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 57.3s
+  Rewards: [0.0, 0.62, 0.86, 1.0, 0.67, 0.81, 0.71, 0.38]
+  Failed regions: [[17, 26]]
+  Successful interval: 20-26
+  Keyframes: [1, 20, 23, 26, 35]
+  Success detected: True
+  Confidence: 0.42
+
+--- Segment 294/386 ---
+
+============================================================
+Segment: PatternLock_ep76_f141-175
+  Subtask: move forward
+  Frames: 141 - 175
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.05, 0.63, 0.47, 0.32, 0.84, 0.95, 1.0]
+  Failed regions: [[12, 25]]
+  Successful interval: 19-34
+  Keyframes: [1, 19, 23, 34]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 295/386 ---
+
+============================================================
+Segment: PatternLock_ep76_f176-200
+  Subtask: move backward-right
+  Frames: 176 - 200
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.16, 0.52, 0.52, 0.48, 0.88, 1.0, 0.72]
+  Failed regions: []
+  Successful interval: 13-21
+  Keyframes: [1, 13, 15, 21, 24]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 296/386 ---
+
+============================================================
+Segment: PatternLock_ep76_f176-207
+  Subtask: move backward-right
+  Frames: 176 - 207
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.17, 0.52, 0.52, 1.0, 0.96, 0.91, 0.78]
+  Failed regions: []
+  Successful interval: 13-19
+  Keyframes: [1, 13, 15, 19, 31]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 297/386 ---
+
+============================================================
+Segment: PatternLock_ep77_f97-130
+  Subtask: move forward-right
+  Frames: 97 - 130
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 57.3s
+  Rewards: [0.0, 0.41, 0.18, 0.12, 1.0, 0.76, 0.94, 0.29]
+  Failed regions: [[8, 20], [20, 28]]
+  Successful interval: 22-28
+  Keyframes: [2, 22, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 298/386 ---
+
+============================================================
+Segment: PatternLock_ep77_f131-155
+  Subtask: move left
+  Frames: 131 - 155
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.18, 0.0, 0.12, 0.71, 0.65, 0.59, 1.0, 0.82]
+  Failed regions: [[12, 21]]
+  Successful interval: 16-21
+  Keyframes: [0, 16, 17, 21, 24]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 299/386 ---
+
+============================================================
+Segment: PatternLock_ep77_f156-185
+  Subtask: move backward-right
+  Frames: 156 - 185
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.1, 0.0, 0.48, 0.38, 0.76, 0.76, 0.76, 1.0]
+  Failed regions: [[11, 18]]
+  Successful interval: 23-29
+  Keyframes: [0, 23, 26, 29]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 300/386 ---
+
+============================================================
+Segment: PatternLock_ep77_f156-193
+  Subtask: move backward-right
+  Frames: 156 - 193
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.0, 0.29, 1.0, 0.5, 0.64, 0.43, 0.93]
+  Failed regions: [[18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 301/386 ---
+
+============================================================
+Segment: PatternLock_ep78_f109-145
+  Subtask: move backward-left
+  Frames: 109 - 145
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.27, 0.0, 0.4, 0.27, 0.87, 0.8, 1.0, 0.8]
+  Failed regions: [[4, 13], [13, 22]]
+  Successful interval: 24-31
+  Keyframes: [0, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 302/386 ---
+
+============================================================
+Segment: PatternLock_ep78_f146-180
+  Subtask: move forward
+  Frames: 146 - 180
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.05, 0.55, 0.77, 0.59, 1.0, 0.77, 0.73]
+  Failed regions: [[16, 25]]
+  Successful interval: 19-25
+  Keyframes: [1, 19, 21, 25, 34]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 303/386 ---
+
+============================================================
+Segment: PatternLock_ep78_f181-206
+  Subtask: move backward-right
+  Frames: 181 - 206
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.2, 0.16, 0.2, 0.2, 0.28, 1.0, 0.8]
+  Failed regions: []
+  Successful interval: 14-22
+  Keyframes: [3, 14, 15, 22, 25]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 304/386 ---
+
+============================================================
+Segment: PatternLock_ep78_f181-217
+  Subtask: move backward-right
+  Frames: 181 - 217
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.4, 0.2, 0.32, 1.0, 0.8, 0.8, 0.76]
+  Failed regions: [[8, 17]]
+  Successful interval: 11-22
+  Keyframes: [3, 11, 13, 22, 36]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 305/386 ---
+
+============================================================
+Segment: PatternLock_ep79_f149-193
+  Subtask: move backward-right
+  Frames: 149 - 193
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.56, 0.31, 0.81, 0.19, 0.62, 1.0, 0.12]
+  Failed regions: [[9, 21], [21, 32]]
+  Successful interval: 24-38
+  Keyframes: [0, 24, 27, 38, 44]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 306/386 ---
+
+============================================================
+Segment: PatternLock_ep79_f194-226
+  Subtask: move backward
+  Frames: 194 - 226
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.04, 0.0, 0.46, 0.43, 0.5, 0.54, 0.86, 1.0]
+  Failed regions: []
+  Successful interval: 14-32
+  Keyframes: [0, 14, 16, 32]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 307/386 ---
+
+============================================================
+Segment: PatternLock_ep79_f227-258
+  Subtask: move backward-right
+  Frames: 227 - 258
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.12, 0.42, 0.54, 0.58, 0.83, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 2-31
+  Keyframes: [0, 2, 15, 31]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 308/386 ---
+
+============================================================
+Segment: PatternLock_ep79_f259-289
+  Subtask: move forward-right
+  Frames: 259 - 289
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.35, 0.4, 0.8, 0.95, 1.0, 0.7, 0.45]
+  Failed regions: []
+  Successful interval: 2-22
+  Keyframes: [1, 2, 15, 22, 30]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 309/386 ---
+
+============================================================
+Segment: PatternLock_ep79_f259-297
+  Subtask: move forward-right
+  Frames: 259 - 297
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.05, 0.0, 0.86, 0.82, 0.82, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 26-33
+  Keyframes: [3, 26, 27, 33, 38]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 310/386 ---
+
+============================================================
+Segment: PatternLock_ep80_f91-122
+  Subtask: move backward
+  Frames: 91 - 122
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.08, 0.0, 0.42, 0.33, 0.83, 0.42, 0.83, 1.0]
+  Failed regions: [[11, 19], [19, 27]]
+  Successful interval: 21-31
+  Keyframes: [0, 21, 22, 31]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 311/386 ---
+
+============================================================
+Segment: PatternLock_ep80_f123-146
+  Subtask: move left
+  Frames: 123 - 146
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.0, 0.3, 0.65, 0.74, 0.74, 1.0, 0.74, 0.91]
+  Failed regions: [[17, 23]]
+  Successful interval: 18-23
+  Keyframes: [3, 18, 19, 23]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 312/386 ---
+
+============================================================
+Segment: PatternLock_ep80_f147-173
+  Subtask: move forward
+  Frames: 147 - 173
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.25, 0.08, 0.17, 0.17, 0.42, 1.0, 0.75]
+  Failed regions: [[7, 13]]
+  Successful interval: 14-22
+  Keyframes: [3, 14, 22, 23, 26]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 313/386 ---
+
+============================================================
+Segment: PatternLock_ep80_f147-181
+  Subtask: move forward
+  Frames: 147 - 181
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.23, 0.08, 0.15, 1.0, 0.77, 0.23, 0.31]
+  Failed regions: []
+  Successful interval: 10-21
+  Keyframes: [2, 10, 21, 22, 34]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 314/386 ---
+
+============================================================
+Segment: PatternLock_ep81_f69-101
+  Subtask: move right
+  Frames: 69 - 101
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.33, 0.0, 0.27, 0.4, 0.87, 1.0, 0.8]
+  Failed regions: [[8, 16]]
+  Successful interval: 10-28
+  Keyframes: [2, 10, 17, 28, 32]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 315/386 ---
+
+============================================================
+Segment: PatternLock_ep81_f102-128
+  Subtask: move forward-left
+  Frames: 102 - 128
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.22, 0.3, 0.11, 0.85, 1.0, 0.85, 0.96]
+  Failed regions: [[10, 19], [19, 26]]
+  Successful interval: 20-26
+  Keyframes: [2, 20, 22, 26]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 316/386 ---
+
+============================================================
+Segment: PatternLock_ep81_f102-137
+  Subtask: move forward-left
+  Frames: 102 - 137
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.42, 0.12, 0.55, 0.88, 0.79, 1.0, 0.39]
+  Failed regions: [[8, 21], [21, 30]]
+  Successful interval: 24-30
+  Keyframes: [2, 24, 25, 30, 35]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 317/386 ---
+
+============================================================
+Segment: PatternLock_ep82_f90-149
+  Subtask: move right
+  Frames: 90 - 149
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.29, 0.71, 0.86, 0.61, 1.0, 0.71, 0.86]
+  Failed regions: [[28, 43], [43, 59]]
+  Successful interval: 48-59
+  Keyframes: [2, 48, 51, 59]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 318/386 ---
+
+============================================================
+Segment: PatternLock_ep82_f150-171
+  Subtask: move forward-left
+  Frames: 150 - 171
+============================================================
+  Loaded 22 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.32, 0.58, 0.53, 0.37, 1.0, 0.89, 0.89]
+  Failed regions: [[8, 16]]
+  Successful interval: 11-16
+  Keyframes: [4, 11, 16, 17, 21]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 319/386 ---
+
+============================================================
+Segment: PatternLock_ep82_f150-179
+  Subtask: move forward-left
+  Frames: 150 - 179
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.18, 0.45, 0.18, 0.77, 0.77, 0.95, 1.0]
+  Failed regions: [[11, 18]]
+  Successful interval: 19-29
+  Keyframes: [4, 19, 20, 29]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 320/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f205-235
+  Subtask: move forward-left
+  Frames: 205 - 235
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.0, 0.22, 0.39, 0.57, 0.74, 0.78, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 2-26
+  Keyframes: [1, 2, 17, 26, 30]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 321/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f236-272
+  Subtask: move backward-left
+  Frames: 236 - 272
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.21, 0.86, 0.93, 0.93, 1.0, 1.0, 0.79]
+  Failed regions: []
+  Successful interval: 20-26
+  Keyframes: [0, 20, 22, 26, 36]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 322/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f273-307
+  Subtask: move forward
+  Frames: 273 - 307
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.2, 0.0, 0.2, 0.15, 0.45, 0.95, 1.0, 0.9]
+  Failed regions: []
+  Successful interval: 14-29
+  Keyframes: [3, 14, 22, 29, 34]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 323/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f308-346
+  Subtask: move forward-left
+  Frames: 308 - 346
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.23, 0.35, 0.73, 1.0, 0.96, 0.96, 0.96]
+  Failed regions: []
+  Successful interval: 2-23
+  Keyframes: [1, 2, 23, 24, 38]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 324/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f347-387
+  Subtask: move forward-right
+  Frames: 347 - 387
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.32, 0.32, 0.55, 1.0, 1.0, 1.0, 0.91]
+  Failed regions: []
+  Successful interval: 12-24
+  Keyframes: [1, 12, 13, 24, 40]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 325/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f388-401
+  Subtask: move right
+  Frames: 388 - 401
+============================================================
+  Loaded 14 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.45, 0.2, 0.1, 0.25, 0.35, 0.4, 1.0]
+  Failed regions: [[5, 9]]
+  Successful interval: 5-13
+  Keyframes: [0, 5, 10, 13]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 326/386 ---
+
+============================================================
+Segment: PatternLock_ep83_f388-409
+  Subtask: move right
+  Frames: 388 - 409
+============================================================
+  Loaded 22 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.17, 0.09, 0.35, 0.87, 1.0, 0.61, 0.74]
+  Failed regions: []
+  Successful interval: 6-16
+  Keyframes: [0, 6, 10, 16, 21]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 327/386 ---
+
+============================================================
+Segment: PatternLock_ep84_f91-121
+  Subtask: move forward-left
+  Frames: 91 - 121
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.15, 0.54, 0.54, 0.62, 1.0, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 24-30
+  Keyframes: [3, 24, 25, 30]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 328/386 ---
+
+============================================================
+Segment: PatternLock_ep84_f122-156
+  Subtask: move forward
+  Frames: 122 - 156
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.29, 0.43, 0.5, 0.71, 1.0, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 2-25
+  Keyframes: [1, 2, 24, 25, 34]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 329/386 ---
+
+============================================================
+Segment: PatternLock_ep84_f157-172
+  Subtask: move right
+  Frames: 157 - 172
+============================================================
+  Loaded 16 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.17, 0.13, 0.0, 0.39, 0.17, 0.3, 0.87, 1.0]
+  Failed regions: [[8, 11]]
+  Successful interval: 8-15
+  Keyframes: [1, 8, 13, 15]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 330/386 ---
+
+============================================================
+Segment: PatternLock_ep84_f157-181
+  Subtask: move right
+  Frames: 157 - 181
+============================================================
+  Loaded 25 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.1, 0.0, 0.0, 0.48, 1.0, 0.81, 0.71, 0.29]
+  Failed regions: []
+  Successful interval: 7-15
+  Keyframes: [1, 7, 13, 15, 24]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 331/386 ---
+
+============================================================
+Segment: PatternLock_ep85_f66-117
+  Subtask: move left
+  Frames: 66 - 117
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.59, 1.0, 0.94, 1.0, 0.82, 0.76, 0.76]
+  Failed regions: []
+  Successful interval: 22-31
+  Keyframes: [0, 22, 23, 31, 51]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 332/386 ---
+
+============================================================
+Segment: PatternLock_ep85_f66-131
+  Subtask: move left
+  Frames: 66 - 131
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.32, 0.64, 0.86, 1.0, 0.59, 0.59, 0.64]
+  Failed regions: []
+  Successful interval: 3-39
+  Keyframes: [2, 3, 16, 39, 58]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 333/386 ---
+
+============================================================
+Segment: PatternLock_ep86_f152-191
+  Subtask: move forward-right
+  Frames: 152 - 191
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.13, 0.35, 0.58, 1.0, 0.97, 0.71, 0.84]
+  Failed regions: [[24, 39]]
+  Successful interval: 32-39
+  Keyframes: [2, 32, 33, 39]
+  Success detected: True
+  Confidence: 0.44
+
+--- Segment 334/386 ---
+
+============================================================
+Segment: PatternLock_ep86_f192-218
+  Subtask: move left
+  Frames: 192 - 218
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.09, 0.27, 0.64, 0.55, 1.0, 0.64, 0.36]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-19
+  Keyframes: [0, 14, 15, 19, 25]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 335/386 ---
+
+============================================================
+Segment: PatternLock_ep86_f219-257
+  Subtask: move backward-right
+  Frames: 219 - 257
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.15, 0.15, 0.33, 0.67, 1.0, 0.89, 0.85]
+  Failed regions: []
+  Successful interval: 11-28
+  Keyframes: [3, 11, 20, 28, 38]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 336/386 ---
+
+============================================================
+Segment: PatternLock_ep86_f258-291
+  Subtask: move forward-right
+  Frames: 258 - 291
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.32, 0.86, 0.86, 0.95, 0.86, 1.0, 0.95]
+  Failed regions: [[20, 28]]
+  Successful interval: 22-28
+  Keyframes: [0, 22, 28, 29, 33]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 337/386 ---
+
+============================================================
+Segment: PatternLock_ep86_f258-303
+  Subtask: move forward-right
+  Frames: 258 - 303
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.25, 0.56, 0.94, 0.72, 0.66, 0.69, 1.0]
+  Failed regions: [[21, 39]]
+  Successful interval: 31-45
+  Keyframes: [2, 31, 32, 45]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 338/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f284-323
+  Subtask: move forward-right
+  Frames: 284 - 323
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.21, 0.18, 0.71, 0.71, 1.0, 0.71, 0.64]
+  Failed regions: []
+  Successful interval: 22-29
+  Keyframes: [1, 22, 27, 29, 39]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 339/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f324-445
+  Subtask: move forward
+  Frames: 324 - 445
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.27, 0.47, 1.0, 0.13, 0.47, 0.0, 0.73, 0.67]
+  Failed regions: []
+  Successful interval: 6-43
+  Keyframes: [2, 6, 22, 43, 115]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 340/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f446-497
+  Subtask: move backward-left
+  Frames: 446 - 497
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.24, 0.71, 1.0, 0.76, 0.71, 0.59, 0.59]
+  Failed regions: []
+  Successful interval: 3-24
+  Keyframes: [0, 3, 24, 25, 51]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 341/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f498-541
+  Subtask: move forward
+  Frames: 498 - 541
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.16, 0.24, 0.56, 0.48, 0.72, 0.68, 1.0]
+  Failed regions: [[20, 31]]
+  Successful interval: 35-43
+  Keyframes: [1, 35, 36, 43]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 342/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f542-555
+  Subtask: move left
+  Frames: 542 - 555
+============================================================
+  Loaded 14 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.18, 0.0, 0.0, 0.47, 0.53, 0.59, 1.0]
+  Failed regions: []
+  Successful interval: 5-13
+  Keyframes: [0, 5, 10, 13]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 343/386 ---
+
+============================================================
+Segment: PatternLock_ep87_f542-567
+  Subtask: move left
+  Frames: 542 - 567
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.53, 1.0, 0.88, 1.0, 0.41, 0.18]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-19
+  Keyframes: [0, 14, 15, 19, 25]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 344/386 ---
+
+============================================================
+Segment: PatternLock_ep88_f32-57
+  Subtask: move backward
+  Frames: 32 - 57
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.21, 0.58, 1.0, 0.63, 0.26, 0.68, 0.68]
+  Failed regions: []
+  Successful interval: 2-13
+  Keyframes: [1, 2, 12, 13, 25]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 345/386 ---
+
+============================================================
+Segment: PatternLock_ep88_f32-63
+  Subtask: move backward
+  Frames: 32 - 63
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.19, 0.29, 1.0, 0.24, 0.38, 0.29, 0.19]
+  Failed regions: []
+  Successful interval: 2-15
+  Keyframes: [1, 2, 14, 15, 29]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 346/386 ---
+
+============================================================
+Segment: PatternLock_ep89_f81-104
+  Subtask: move right
+  Frames: 81 - 104
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.21, 0.25, 0.39, 0.71, 0.75, 1.0, 0.75, 0.0]
+  Failed regions: []
+  Successful interval: 2-17
+  Keyframes: [1, 2, 11, 17, 23]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 347/386 ---
+
+============================================================
+Segment: PatternLock_ep89_f105-137
+  Subtask: move backward
+  Frames: 105 - 137
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.3, 0.25, 0.5, 0.4, 0.6, 1.0, 0.7]
+  Failed regions: [[16, 24]]
+  Successful interval: 18-28
+  Keyframes: [2, 18, 23, 28, 32]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 348/386 ---
+
+============================================================
+Segment: PatternLock_ep89_f138-154
+  Subtask: move right
+  Frames: 138 - 154
+============================================================
+  Loaded 17 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.22, 0.0, 0.22, 0.56, 0.3, 0.63, 0.74, 1.0]
+  Failed regions: [[9, 12]]
+  Successful interval: 8-16
+  Keyframes: [0, 8, 12, 16]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 349/386 ---
+
+============================================================
+Segment: PatternLock_ep89_f138-161
+  Subtask: move right
+  Frames: 138 - 161
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.45, 0.55, 0.7, 1.0, 0.8, 0.5]
+  Failed regions: []
+  Successful interval: 4-17
+  Keyframes: [0, 4, 12, 17, 23]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 350/386 ---
+
+============================================================
+Segment: PatternLock_ep90_f58-86
+  Subtask: move backward
+  Frames: 58 - 86
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.58, 1.0, 0.83, 0.54, 0.38, 0.33, 0.21, 0.0]
+  Failed regions: []
+  Successful interval: 2-7
+  Keyframes: [0, 2, 7, 8, 28]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 351/386 ---
+
+============================================================
+Segment: PatternLock_ep90_f87-107
+  Subtask: move right
+  Frames: 87 - 107
+============================================================
+  Loaded 21 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.05, 0.0, 0.14, 0.71, 0.43, 0.81, 0.76, 1.0]
+  Failed regions: [[10, 15]]
+  Successful interval: 15-20
+  Keyframes: [0, 15, 18, 20]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 352/386 ---
+
+============================================================
+Segment: PatternLock_ep90_f87-115
+  Subtask: move right
+  Frames: 87 - 115
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.41, 0.64, 0.23, 0.68, 0.86, 0.86, 1.0]
+  Failed regions: [[10, 21]]
+  Successful interval: 22-28
+  Keyframes: [1, 22, 23, 28]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 353/386 ---
+
+============================================================
+Segment: PatternLock_ep91_f122-142
+  Subtask: move left
+  Frames: 122 - 142
+============================================================
+  Loaded 21 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.3, 0.15, 0.35, 0.6, 1.0, 0.85, 0.85]
+  Failed regions: [[6, 10]]
+  Successful interval: 6-15
+  Keyframes: [0, 6, 10, 15, 20]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 354/386 ---
+
+============================================================
+Segment: PatternLock_ep91_f143-183
+  Subtask: move forward-left
+  Frames: 143 - 183
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.32, 0.52, 0.84, 0.92, 0.84, 1.0, 0.96]
+  Failed regions: [[24, 34]]
+  Successful interval: 27-34
+  Keyframes: [0, 27, 28, 34, 40]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 355/386 ---
+
+============================================================
+Segment: PatternLock_ep91_f184-205
+  Subtask: move left
+  Frames: 184 - 205
+============================================================
+  Loaded 22 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.09, 0.13, 0.0, 0.3, 1.0, 0.74, 0.78, 0.39]
+  Failed regions: []
+  Successful interval: 6-13
+  Keyframes: [0, 6, 10, 13, 21]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 356/386 ---
+
+============================================================
+Segment: PatternLock_ep91_f206-235
+  Subtask: move backward-left
+  Frames: 206 - 235
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.54, 0.92, 0.38, 1.0, 0.46, 0.69, 0.69]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-18
+  Keyframes: [0, 12, 16, 18, 29]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 357/386 ---
+
+============================================================
+Segment: PatternLock_ep91_f206-243
+  Subtask: move backward-left
+  Frames: 206 - 243
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.86, 0.36, 0.93, 0.93, 0.93, 1.0, 0.64]
+  Failed regions: [[8, 18]]
+  Successful interval: 25-32
+  Keyframes: [0, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 358/386 ---
+
+============================================================
+Segment: PatternLock_ep92_f110-144
+  Subtask: move forward
+  Frames: 110 - 144
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.0, 0.0, 0.17, 0.67, 1.0, 1.0, 0.67]
+  Failed regions: []
+  Successful interval: 10-25
+  Keyframes: [0, 10, 20, 25, 34]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 359/386 ---
+
+============================================================
+Segment: PatternLock_ep92_f145-181
+  Subtask: move backward-left
+  Frames: 145 - 181
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.21, 0.57, 0.5, 0.5, 0.86, 1.0, 0.5]
+  Failed regions: []
+  Successful interval: 20-31
+  Keyframes: [0, 20, 21, 31, 36]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 360/386 ---
+
+============================================================
+Segment: PatternLock_ep92_f182-208
+  Subtask: move forward-left
+  Frames: 182 - 208
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.33, 0.57, 0.52, 0.43, 0.43, 1.0, 1.0]
+  Failed regions: [[10, 19], [10, 22]]
+  Successful interval: 17-22
+  Keyframes: [3, 17, 22, 23, 26]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 361/386 ---
+
+============================================================
+Segment: PatternLock_ep92_f182-219
+  Subtask: move forward-left
+  Frames: 182 - 219
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.21, 0.33, 0.24, 0.64, 0.52, 1.0, 0.94]
+  Failed regions: [[13, 22], [22, 32]]
+  Successful interval: 25-32
+  Keyframes: [0, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 362/386 ---
+
+============================================================
+Segment: PatternLock_ep93_f70-132
+  Subtask: move backward-left
+  Frames: 70 - 132
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.18, 0.68, 1.0, 0.68, 0.55, 0.86, 0.55]
+  Failed regions: [[30, 54]]
+  Successful interval: 43-54
+  Keyframes: [0, 43, 48, 54, 62]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 363/386 ---
+
+============================================================
+Segment: PatternLock_ep93_f70-139
+  Subtask: move backward-left
+  Frames: 70 - 139
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.06, 1.0, 0.72, 0.0, 0.44, 0.89, 0.72, 0.61]
+  Failed regions: [[15, 42]]
+  Successful interval: 30-51
+  Keyframes: [0, 30, 48, 51, 69]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 364/386 ---
+
+============================================================
+Segment: PatternLock_ep94_f62-85
+  Subtask: move left
+  Frames: 62 - 85
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.26, 0.17, 0.78, 0.61, 1.0, 0.83, 0.52]
+  Failed regions: [[6, 12], [12, 17]]
+  Successful interval: 12-17
+  Keyframes: [0, 12, 13, 17, 23]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 365/386 ---
+
+============================================================
+Segment: PatternLock_ep94_f86-116
+  Subtask: move backward-left
+  Frames: 86 - 116
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.09, 0.13, 0.0, 0.3, 0.61, 0.65, 1.0, 0.74]
+  Failed regions: []
+  Successful interval: 9-26
+  Keyframes: [0, 9, 22, 26, 30]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 366/386 ---
+
+============================================================
+Segment: PatternLock_ep94_f86-123
+  Subtask: move backward-left
+  Frames: 86 - 123
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.07, 0.1, 0.41, 0.45, 0.59, 0.9, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [0, 2, 22, 37]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 367/386 ---
+
+============================================================
+Segment: PatternLock_ep95_f161-205
+  Subtask: move backward-left
+  Frames: 161 - 205
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.1, 0.55, 1.0, 0.85, 0.7, 0.5, 0.35]
+  Failed regions: []
+  Successful interval: 2-21
+  Keyframes: [0, 2, 11, 21, 41]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 368/386 ---
+
+============================================================
+Segment: PatternLock_ep95_f206-248
+  Subtask: move forward
+  Frames: 206 - 248
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.13, 0.29, 0.65, 1.0, 0.84, 0.9, 0.87]
+  Failed regions: [[25, 36]]
+  Successful interval: 29-36
+  Keyframes: [0, 29, 30, 36, 42]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 369/386 ---
+
+============================================================
+Segment: PatternLock_ep95_f249-288
+  Subtask: move backward-right
+  Frames: 249 - 288
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.11, 0.11, 0.37, 0.63, 1.0, 0.79, 0.89]
+  Failed regions: [[29, 39]]
+  Successful interval: 32-39
+  Keyframes: [2, 32, 33, 39]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 370/386 ---
+
+============================================================
+Segment: PatternLock_ep95_f289-315
+  Subtask: move backward
+  Frames: 289 - 315
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.04, 0.27, 0.54, 0.69, 0.65, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [4, 17, 18, 22, 26]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 371/386 ---
+
+============================================================
+Segment: PatternLock_ep95_f289-321
+  Subtask: move backward
+  Frames: 289 - 321
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.27, 0.86, 0.82, 0.5, 0.77, 0.77, 1.0]
+  Failed regions: [[12, 24]]
+  Successful interval: 26-32
+  Keyframes: [0, 26, 28, 32]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 372/386 ---
+
+============================================================
+Segment: PatternLock_ep96_f33-52
+  Subtask: move left
+  Frames: 33 - 52
+============================================================
+  Loaded 20 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.16, 0.0, 0.26, 0.37, 0.58, 0.37, 0.47, 1.0]
+  Failed regions: [[12, 16]]
+  Successful interval: 12-19
+  Keyframes: [1, 12, 16, 19]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 373/386 ---
+
+============================================================
+Segment: PatternLock_ep96_f33-65
+  Subtask: move left
+  Frames: 33 - 65
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.13, 0.53, 0.4, 0.93, 1.0, 0.87, 0.67]
+  Failed regions: [[12, 20]]
+  Successful interval: 14-24
+  Keyframes: [3, 14, 16, 24, 32]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 374/386 ---
+
+============================================================
+Segment: PatternLock_ep97_f104-135
+  Subtask: move backward
+  Frames: 104 - 135
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.19, 0.29, 1.0, 0.24, 0.38, 0.29, 0.19]
+  Failed regions: []
+  Successful interval: 2-15
+  Keyframes: [1, 2, 14, 15, 29]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 375/386 ---
+
+============================================================
+Segment: PatternLock_ep97_f136-172
+  Subtask: move backward-right
+  Frames: 136 - 172
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.32, 0.0, 0.63, 0.42, 0.42, 0.47, 1.0, 0.79]
+  Failed regions: [[4, 13], [13, 22], [13, 26]]
+  Successful interval: 20-31
+  Keyframes: [0, 20, 22, 31, 36]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 376/386 ---
+
+============================================================
+Segment: PatternLock_ep97_f173-196
+  Subtask: move forward
+  Frames: 173 - 196
+============================================================
+  Loaded 24 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.06, 0.11, 0.5, 0.72, 0.56, 0.78, 1.0]
+  Failed regions: [[14, 20]]
+  Successful interval: 15-23
+  Keyframes: [1, 15, 23]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 377/386 ---
+
+============================================================
+Segment: PatternLock_ep97_f173-207
+  Subtask: move forward
+  Frames: 173 - 207
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.0, 0.41, 0.5, 0.45, 1.0, 0.86, 0.86]
+  Failed regions: []
+  Successful interval: 19-25
+  Keyframes: [1, 19, 25, 26, 33]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 378/386 ---
+
+============================================================
+Segment: PatternLock_ep98_f132-160
+  Subtask: move backward
+  Frames: 132 - 160
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.58, 1.0, 0.83, 0.54, 0.38, 0.33, 0.21, 0.0]
+  Failed regions: []
+  Successful interval: 2-7
+  Keyframes: [0, 2, 7, 8, 28]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 379/386 ---
+
+============================================================
+Segment: PatternLock_ep98_f161-189
+  Subtask: move right
+  Frames: 161 - 189
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.41, 0.64, 0.23, 0.68, 0.86, 0.86, 1.0]
+  Failed regions: [[10, 21]]
+  Successful interval: 22-28
+  Keyframes: [1, 22, 23, 28]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 380/386 ---
+
+============================================================
+Segment: PatternLock_ep98_f190-254
+  Subtask: move forward-right
+  Frames: 190 - 254
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.0, 0.12, 0.73, 1.0, 0.5, 0.92, 0.65, 0.77]
+  Failed regions: [[30, 47]]
+  Successful interval: 36-47
+  Keyframes: [0, 36, 47, 48, 64]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 381/386 ---
+
+============================================================
+Segment: PatternLock_ep98_f190-263
+  Subtask: move forward-right
+  Frames: 190 - 263
+============================================================
+  Loaded 74 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.0, 0.88, 0.18, 0.76, 0.88, 0.59, 1.0]
+  Failed regions: [[25, 54], [54, 73]]
+  Successful interval: 60-73
+  Keyframes: [0, 60, 62, 73]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 382/386 ---
+
+============================================================
+Segment: PatternLock_ep99_f117-137
+  Subtask: move right
+  Frames: 117 - 137
+============================================================
+  Loaded 21 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.55, 0.0, 0.18, 0.27, 0.82, 1.0, 0.55, 0.73]
+  Failed regions: [[4, 8]]
+  Successful interval: 4-15
+  Keyframes: [0, 4, 10, 15, 20]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 383/386 ---
+
+============================================================
+Segment: PatternLock_ep99_f138-167
+  Subtask: move backward-left
+  Frames: 138 - 167
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.12, 0.38, 0.62, 0.75, 1.0, 0.56, 0.94]
+  Failed regions: [[21, 29]]
+  Successful interval: 23-29
+  Keyframes: [0, 23, 24, 29]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 384/386 ---
+
+============================================================
+Segment: PatternLock_ep99_f168-203
+  Subtask: move backward
+  Frames: 168 - 203
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.08, 0.25, 0.0, 0.17, 0.5, 0.0, 0.67, 1.0]
+  Failed regions: [[8, 21], [21, 30]]
+  Successful interval: 24-35
+  Keyframes: [0, 24, 25, 35]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 385/386 ---
+
+============================================================
+Segment: PatternLock_ep99_f204-222
+  Subtask: move right
+  Frames: 204 - 222
+============================================================
+  Loaded 19 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.14, 0.43, 0.0, 0.57, 1.0, 0.29, 0.71, 0.79]
+  Failed regions: [[6, 10]]
+  Successful interval: 6-12
+  Keyframes: [2, 6, 12, 13, 18]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 386/386 ---
+
+============================================================
+Segment: PatternLock_ep99_f204-233
+  Subtask: move right
+  Frames: 204 - 233
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.0, 0.15, 0.15, 0.69, 0.77, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 12-29
+  Keyframes: [2, 12, 13, 29]
+  Success detected: True
+  Confidence: 0.85
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 386 segments
+  Skipped: 0 segments
+  Environments: {'PatternLock': 386}
+  Mean confidence: 0.725
+  Success detected: 386/386
+  Total failed regions detected: 290
+
+All outputs saved to: data/topreward_full
+Done.

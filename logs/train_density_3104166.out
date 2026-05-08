@@ -1,0 +1,10 @@
+]11;?[cmax_token_len: 64
+max_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using density_sampling type
+
+max_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using density_sampling type
+
+Step 0: grad_norm=1.4549, llm_grad_norm=1.4417, loss=0.0961, mem_enc_norm=0.1254, param_norm=1815.5487

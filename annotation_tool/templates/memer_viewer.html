@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeMER Keyframe Viewer</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/memer_viewer_extra.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <header id="topbar">
+    <div class="topbar-group">
+      <label for="task-select">Task:</label>
+      <select id="task-select"></select>
+    </div>
+    <div class="topbar-group">
+      <label>Episode:</label>
+      <button id="ep-prev">&lsaquo;</button>
+      <span id="ep-label">-</span>
+      <button id="ep-next">&rsaquo;</button>
+    </div>
+    <div class="topbar-group">
+      <span id="keyframe-count">-</span>
+    </div>
+  </header>
+
+  <!-- Main area: video + info side by side -->
+  <main id="main-area">
+    <div id="video-wrapper">
+      <div id="video-border">
+        <video id="video-player" muted></video>
+      </div>
+      <div id="video-info">
+        <span id="frame-counter">Frame 0 / 0</span>
+        <span id="phase-badge">DEMO</span>
+        <span id="subgoal-text">-</span>
+        <span id="grounded-subgoal-text">-</span>
+      </div>
+      <div id="video-controls">
+        <button id="btn-play-pause">Play</button>
+        <button id="btn-reset" title="Reset to start (R)">Reset</button>
+        <label>Speed:</label>
+        <input type="range" id="speed-slider" min="0.1" max="2" step="0.1" value="0.5">
+        <span id="speed-label">0.5x</span>
+      </div>
+    </div>
+
+    <div id="side-panel">
+      <!-- Task goal -->
+      <div id="goal-section">
+        <h3>Task Instruction</h3>
+        <div id="goal-display">-</div>
+      </div>
+
+      <!-- Subgoals list -->
+      <div id="subgoals-section">
+        <h3>Subgoals</h3>
+        <ol id="subgoals-list"></ol>
+      </div>
+
+      <hr class="panel-divider">
+
+      <!-- Keyframe gallery -->
+      <div id="keyframe-section">
+        <h3>MeMER Keyframes</h3>
+        <div id="keyframe-legend">
+          <span class="kf-legend-item"><span class="kf-badge transition">T</span> Transition</span>
+          <span class="kf-legend-item"><span class="kf-badge local_minimum">M</span> Local minimum</span>
+          <span class="kf-legend-item"><span class="kf-badge midpoint">I</span> Midpoint</span>
+          <span class="kf-legend-item"><span class="kf-badge merged">G</span> Merged</span>
+        </div>
+        <div id="keyframe-gallery"></div>
+      </div>
+
+      <hr class="panel-divider">
+
+      <!-- Help -->
+      <details id="help-toggle">
+        <summary>Controls</summary>
+        <ul>
+          <li><kbd>Space</kbd> play/pause, <kbd>R</kbd> reset</li>
+          <li><kbd>&larr;</kbd>/<kbd>&rarr;</kbd> prev/next episode</li>
+          <li>Click timeline to seek</li>
+          <li>Click keyframe thumbnail to seek</li>
+        </ul>
+      </details>
+    </div>
+  </main>
+
+  <!-- Timeline -->
+  <section id="timeline-section">
+    <div id="timeline-header">
+      <span>Timeline</span>
+      <span id="timeline-legend">
+        <span class="legend-demo">Demo</span>
+        <span class="legend-exec">Execution</span>
+        <span class="legend-kf-transition">Transition KF</span>
+        <span class="legend-kf-minimum">Minimum KF</span>
+        <span class="legend-kf-midpoint">Midpoint KF</span>
+        <span class="legend-boundary">Env boundary</span>
+      </span>
+    </div>
+    <div id="timeline-scroll">
+      <canvas id="timeline-canvas"></canvas>
+    </div>
+  </section>
+
+  <script src="/static/memer_viewer.js"></script>
+</body>
+</html>

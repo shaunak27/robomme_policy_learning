@@ -1,0 +1,139 @@
+{
+  "BinFill": {
+    "densities": {
+      "exec::pick up the {N} {color} cube": "equal weight across chosen segments",
+      "exec::press the button": "equal weight across chosen segments",
+      "exec::put it into the bin": "uniform sampling (linspace style) across entire past until this step"
+    },
+    "updated": "2026-05-04T21:47:03.743301+00:00"
+  },
+  "_updated": "2026-05-05T00:17:25.112504+00:00",
+  "ButtonUnmask": {
+    "densities": {
+      "exec::pick up the container that hides the {color} cube": "sample all keyframes from press the button segment. remaining space to be filled with other chosen segments with equal weight among them.",
+      "exec::press the button": "uniform sampling (linspace style) across entire past until this step if any.",
+      "exec::put down the container": "uniform sampling (linspace style) across entire past until this step"
+    },
+    "updated": "2026-05-05T00:17:25.112467+00:00"
+  },
+  "ButtonUnmaskSwap": {
+    "densities": {
+      "exec::press the {N} button": "for press the second button, sample all keyframes from the press the first button segment",
+      "exec::pick up the container that hides the {color} cube": "sample all keyframes from all \"press the {N} button\" segments. Remaining budget fill out with equal weighting between all other chosen subtasks",
+      "exec::put down the container": "sample uniformly (linspace) across all frames that came before it in the demo"
+    },
+    "updated": "2026-05-04T23:15:11.308229+00:00"
+  },
+  "InsertPeg": {
+    "densities": {
+      "exec::pick up the peg by grasping the far end": "all keyframes from corresponding chosen video demo segment. Fill out remaining budget with uniformly sampled past frames (linspace style)",
+      "exec::insert the peg from the right side": "all keyframes from corresponding chosen video demo segment. Fill out remaining budget with uniformly sampled past frames (linspace style)",
+      "exec::insert the peg from the left side": "all keyframes from corresponding chosen video demo segment. Fill out remaining budget with uniformly sampled past frames (linspace style)",
+      "exec::pick up the peg by grasping the near end": "all keyframes from corresponding chosen video demo segment. Fill out remaining budget with uniformly sampled past frames (linspace style)"
+    },
+    "updated": "2026-05-04T23:12:27.011265+00:00"
+  },
+  "MoveCube": {
+    "densities": {
+      "exec::hook the cube to the target with the peg": "use all keyframes from chosen segments",
+      "exec::pick up the peg": "use all keyframes from chosen segments",
+      "exec::close the gripper and push the cube to the target": "use all keyframes from chosen segments",
+      "exec::pick up the cube": "use all keyframes from chosen segments",
+      "exec::place the cube onto the target": "use all keyframes from chosen segments"
+    },
+    "updated": "2026-05-04T23:13:15.523822+00:00"
+  },
+  "PatternLock": {
+    "densities": {
+      "exec::move right": "equal weighting across all chosen segments",
+      "exec::move backward": "equal weighting across all chosen segments",
+      "exec::move backward-right": "equal weighting across all chosen segments",
+      "exec::move backward-left": "equal weighting across all chosen segments",
+      "exec::move left": "equal weighting across all chosen segments",
+      "exec::move forward-left": "equal weighting across all chosen segments",
+      "exec::move forward": "equal weighting across all chosen segments",
+      "exec::move forward-right": "equal weighting across all chosen segments"
+    },
+    "updated": "2026-05-04T23:14:00.306313+00:00"
+  },
+  "PickHighlight": {
+    "densities": {
+      "exec::pick up the {N} highlighted cube, which is {color}": "sample all keyframes from \"press the button\". Fill out remaining budget with equal weighting across remaining chosen segments",
+      "exec::press the button": "sample uniformly past frames (linspace style) if available",
+      "exec::pick up the highlighted cube, which is {color}": "sample all keyframes from \"press the button\". Fill out remaining budget with equal weighting across remaining chosen segments if any.",
+      "exec::place the cube onto the table": "sample uniformly past frames (linspace style)"
+    },
+    "updated": "2026-05-04T23:16:40.833249+00:00"
+  },
+  "PickXtimes": {
+    "densities": {
+      "exec::pick up the {color} cube for the {N} time": "equal weighting across all chosen segments",
+      "exec::place the {color} cube onto the target": "sample uniformly (linspace) across all past frames",
+      "exec::press the button to stop": "equal weighting across all chosen segments"
+    },
+    "updated": "2026-05-04T23:22:48.448405+00:00"
+  },
+  "RouteStick": {
+    "densities": {
+      "exec::move to the nearest left target by circling around the stick clockwise": "there is a corresponding segment to this in the video demo segments with a closely (or rather fully) matching description. Sample all keyframes from this segment. Remaining space should be filled with equal weighting across all other chosen segments.",
+      "exec::move to the nearest right target by circling around the stick clockwise": "there is a corresponding segment to this in the video demo segments with a closely (or rather fully) matching description. Sample all keyframes from this segment. Remaining space should be filled with equal weighting across all other chosen segments.",
+      "exec::move to the nearest right target by circling around the stick counterclockwise": "there is a corresponding segment to this in the video demo segments with a closely (or rather fully) matching description. Sample all keyframes from this segment. Remaining space should be filled with equal weighting across all other chosen segments.",
+      "exec::move to the nearest left target by circling around the stick counterclockwise": "there is a corresponding segment to this in the video demo segments with a closely (or rather fully) matching description. Sample all keyframes from this segment. Remaining space should be filled with equal weighting across all other chosen segments."
+    },
+    "updated": "2026-05-04T23:24:54.800358+00:00"
+  },
+  "StopCube": {
+    "densities": {
+      "exec::move to the top of the button to prepare": "sample uniformly past frames (linspace style)",
+      "exec::press the button to stop the cube on the target": "sample uniformly past frames (linspace style)",
+      "exec::remain static": "sample uniformly past frames (linspace style)"
+    },
+    "updated": "2026-05-04T23:27:59.751626+00:00"
+  },
+  "SwingXtimes": {
+    "densities": {
+      "exec::move to the top of the left-side target for the {N} time": "sample with equal weight across all chosen segments",
+      "exec::move to the top of the right-side target for the {N} time": "sample with equal weight across all chosen segments",
+      "exec::pick up the {color} cube": "sample with equal weight across all chosen segments",
+      "exec::press the button": "sample with equal weight across all chosen segments",
+      "exec::put the {color} cube on the table": "sample with equal weight across all chosen segments"
+    },
+    "updated": "2026-05-04T23:30:38.956538+00:00"
+  },
+  "VideoPlaceButton": {
+    "densities": {
+      "exec::pick up the cube": "sample all keyframes from chosen segment. remaining space to be filled with uniformly sampled (linspace) frames within the chosen segment.",
+      "exec::place the cube onto the correct target": "sample all keyframes from chosen segment. remaining space to be filled with uniformly sampled (linspace) frames within the chosen segment."
+    },
+    "updated": "2026-05-04T23:33:23.780909+00:00"
+  },
+  "VideoPlaceOrder": {
+    "densities": {
+      "exec::pick up the cube": "sample with equal weight across all chosen segments.",
+      "exec::place the cube onto the correct target": "sample with equal weight across all chosen segments."
+    },
+    "updated": "2026-05-04T23:39:52.111211+00:00"
+  },
+  "VideoRepick": {
+    "densities": {
+      "exec::pick up the correct cube for the {N} time": "sample with equal weight across all chosen segments.",
+      "exec::press the button to finish": "sample with equal weight across all chosen exec segments. fill out remaining space with uniformly sampled (linspace) frames across chosen video demo.",
+      "exec::put it down": "sample uniformly (linspace) across all past frames."
+    },
+    "updated": "2026-05-04T23:44:34.468907+00:00"
+  },
+  "VideoUnmask": {
+    "densities": {
+      "exec::pick up the container that hides the {color} cube": "use all keyframes from video demo. fill out remaining space with equal weight across all other chosen segments.",
+      "exec::put down the container": "uniformly sample frame (linspace) across entire past."
+    },
+    "updated": "2026-05-04T23:46:47.880679+00:00"
+  },
+  "VideoUnmaskSwap": {
+    "densities": {
+      "exec::pick up the container that hides the {color} cube": "use all keyframes from video demo. fill out remaining space with equal weight across all other chosen segments.",
+      "exec::put down the container": "uniformly sample frames (linspace) across entire past."
+    },
+    "updated": "2026-05-04T23:48:48.142946+00:00"
+  }
+}

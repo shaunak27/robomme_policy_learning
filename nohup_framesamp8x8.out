@@ -1,0 +1,566 @@
+nohup: ignoring input
+warning: The `tool.uv.dev-dependencies` field (used in `packages/openpi-client/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+INFO:root:Checking history config
+INFO:root:Loading model...
+INFO:2026-04-16 00:35:04,710:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-04-16 00:35:04,710:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f8a400cb650>
+INFO:absl:Restoring checkpoint from /coc/testnvme/shalbe3/robomme_data/runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 718.5 MiB/s (total bytes: 6.4 GiB) (time elapsed: 9 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 9.14 seconds from /coc/testnvme/shalbe3/robomme_data/runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params.
+INFO:root:Norm stats not found in /coc/testnvme/shalbe3/robomme_data/runs/assets/mme_vla_suite/robomme, skipping.
+INFO:root:Loaded norm stats from runs/ckpts/mme_vla_suite/perceptual-framesamp8x8-modul/79999/assets/robomme
+INFO:root:Creating server (host: deebot.cc.gatech.edu, ip: 127.0.1.1)
+INFO:websockets.server:server listening on 0.0.0.0:8023
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45722) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34510) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44776) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37360) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44944) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53068) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54164) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55832) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51172) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46222) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55972) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49426) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52192) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52202) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48242) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39116) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39124) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49486) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45324) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33020) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60754) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48876) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52434) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42646) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60424) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56182) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41022) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57696) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47546) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37104) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40476) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39736) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36292) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38556) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56914) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43384) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50560) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35580) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54736) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33736) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48952) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46712) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40176) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48312) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53124) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46344) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47246) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60130) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44764) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50100) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55310) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59372) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47812) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37170) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54324) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60626) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37534) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44490) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47786) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39908) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59230) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46160) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58686) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43112) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35336) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48174) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35164) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 32904) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44222) opened
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 151, in parse
+    raise ValueError(f"unsupported HTTP method; expected GET; got {d(method)}")
+ValueError: unsupported HTTP method; expected GET; got HEAD
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 356, in conn_handler
+    await connection.handshake(
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 151, in parse
+    raise ValueError(f"unsupported HTTP method; expected GET; got {d(method)}")
+ValueError: unsupported HTTP method; expected GET; got HEAD
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 356, in conn_handler
+    await connection.handshake(
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 151, in parse
+    raise ValueError(f"unsupported HTTP method; expected GET; got {d(method)}")
+ValueError: unsupported HTTP method; expected GET; got HEAD
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 356, in conn_handler
+    await connection.handshake(
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 151, in parse
+    raise ValueError(f"unsupported HTTP method; expected GET; got {d(method)}")
+ValueError: unsupported HTTP method; expected GET; got HEAD
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 356, in conn_handler
+    await connection.handshake(
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58784) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55132) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47964) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47884) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48616) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37458) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49476) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40674) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57352) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51682) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34638) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34514) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43578) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49854) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46482) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48516) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36304) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41086) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57626) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52040) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56564) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44284) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48230) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47282) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49490) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40514) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34548) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38026) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43048) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48536) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41520) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50532) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60948) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43850) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37940) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53952) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60922) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34218) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52272) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36106) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54988) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 32788) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59444) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43228) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51582) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45566) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48170) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37766) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46680) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50684) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41162) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37038) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43946) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52812) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39762) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54950) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60752) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56334) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44866) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53134) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36936) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40982) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38904) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57676) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38810) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53056) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33620) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41510) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38594) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39904) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60280) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37808) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46796) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42388) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40804) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52014) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42198) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60464) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42658) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44384) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52210) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60760) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38758) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39462) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51010) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42224) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44128) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54704) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56218) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35566) opened
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37246) opened
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37246) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35566) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56218) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54704) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44128) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42224) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51010) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39462) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38758) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60760) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52210) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44384) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42658) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60464) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42198) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52014) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40804) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42388) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46796) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37808) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60280) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39904) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38594) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41510) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33620) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53056) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38810) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57676) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38904) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40982) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36936) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53134) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44866) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56334) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60752) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54950) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39762) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52812) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43946) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37038) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41162) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50684) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46680) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37766) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48170) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45566) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51582) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43228) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59444) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 32788) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54988) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36106) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52272) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34218) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60922) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53952) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37940) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43850) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60948) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50532) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41520) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48536) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43048) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38026) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34548) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40514) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49490) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47282) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48230) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44284) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56564) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52040) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57626) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41086) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36304) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48516) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46482) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49854) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43578) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34514) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34638) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51682) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57352) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40674) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49476) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37458) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48616) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47884) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47964) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55132) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58784) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44222) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 32904) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35164) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48174) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35336) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43112) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58686) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46160) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59230) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39908) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47786) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44490) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37534) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60626) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54324) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37170) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47812) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59372) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55310) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50100) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44764) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60130) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47246) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46344) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53124) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48312) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40176) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46712) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48952) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33736) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54736) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35580) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50560) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 43384) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56914) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 38556) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36292) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39736) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40476) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37104) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47546) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 57696) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41022) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56182) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60424) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42646) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52434) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48876) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 60754) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33020) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45324) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49486) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39124) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39116) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 48242) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52202) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52192) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49426) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55972) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 46222) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51172) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55832) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54164) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53068) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44944) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 37360) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 44776) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34510) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45722) closed

@@ -1,0 +1,257 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            gdukdbklhx94twxmrvfp2zveezmihgvo:
+                args:
+                    - --dataset_path
+                    - data/robomme_preprocessed_data
+                    - --topreward_dir
+                    - data/topreward_full
+                    - --batch_size
+                    - "512"
+                    - --lr
+                    - "3e-4"
+                    - --num_train_steps
+                    - "25000"
+                    - --warmup_steps
+                    - "1000"
+                    - --lambda_frame
+                    - "1.0"
+                    - --sigma
+                    - "2.0"
+                    - --hidden_dim
+                    - "256"
+                    - --num_heads
+                    - "4"
+                    - --num_query_layers
+                    - "2"
+                    - --num_selector_layers
+                    - "2"
+                    - --num_recent_frames
+                    - "4"
+                    - --max_candidates
+                    - "512"
+                    - --wandb_enabled
+                    - --wandb_project
+                    - qkfs-selector
+                    - --log_interval
+                    - "50"
+                    - --save_interval
+                    - "5000"
+                    - --num_workers
+                    - "8"
+                codePath: scripts/train_qkfs.py
+                codePathLocal: scripts/train_qkfs.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "233904164864"
+                        used: "100529754112"
+                email: shaunak.halbe@gmail.com
+                executable: /coc/testnvme/shalbe3/miniconda/envs/robomme/bin/python
+                git:
+                    commit: c457ea2f13c8994a308be0c4401c1e7489e3887e
+                    remote: https://github.com/RoboMME/robomme_policy_learning.git
+                gpu: NVIDIA A40
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-4d484799-d1c3-8196-99e0-b75d1e9b00dd
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-9aa8a785-93ae-749d-8d18-6ed8454e271c
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-cc641cb6-a0bd-e787-7813-4936c96d6bd4
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-ace3a767-eca5-bc53-3c9c-365a1541bf34
+                host: qt-1.cc.gatech.edu
+                memory:
+                    total: "540840386560"
+                os: Linux-6.8.0-111-generic-x86_64-with-glibc2.39
+                program: /nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py
+                python: CPython 3.11.15
+                root: /nethome/shalbe3/robomme_policy_learning
+                slurm:
+                    cluster_name: skynet
+                    conf: /opt/slurm/configs/slurm.conf
+                    cpu_bind: quiet,mask_cpu:0x001FEB80000071FF001FEB80000071FF
+                    cpu_bind_list: 0x001FEB80000071FF001FEB80000071FF
+                    cpu_bind_type: 'mask_cpu:'
+                    cpu_bind_verbose: quiet
+                    cpus_on_node: "48"
+                    cpus_per_gpu: "12"
+                    distribution: cyclic
+                    gpus_on_node: "4"
+                    gpus_per_node: a40:4
+                    gtids: "0"
+                    job_account: kira-lab
+                    job_cpus_per_node: "48"
+                    job_end_time: "1778821774"
+                    job_gid: "2626"
+                    job_gpus: 0,1,3,7
+                    job_id: "3111655"
+                    job_name: train_qkfs
+                    job_nodelist: qt-1
+                    job_num_nodes: "1"
+                    job_partition: kira-lab,overcap
+                    job_qos: long
+                    job_start_time: "1778216974"
+                    job_uid: "3173960"
+                    job_user: shalbe3
+                    jobid: "3111655"
+                    launch_node_ipaddr: 127.0.0.1
+                    localid: "0"
+                    mem_per_node: "262144"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: qt-1
+                    nprocs: "1"
+                    ntasks: "1"
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    script_context: prolog_task
+                    srun_comm_host: 127.0.0.1
+                    srun_comm_port: "7774"
+                    step_gpus: 0,1,3,7
+                    step_id: "0"
+                    step_launcher_port: "7774"
+                    step_nodelist: qt-1
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /nethome/shalbe3/robomme_policy_learning
+                    submit_host: sky2.cc.gatech.edu
+                    task_pid: "3141577"
+                    tasks_per_node: "1"
+                    topology_addr: qt-1
+                    topology_addr_pattern: node
+                    umask: "0022"
+                startedAt: "2026-05-08T05:10:13.598628Z"
+                writerId: gdukdbklhx94twxmrvfp2zveezmihgvo
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "2":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "3":
+                - 13
+                - 16
+            "4": 3.11.15
+            "5": 0.25.1
+            "6": 4.57.3
+            "8":
+                - 2
+            "12": 0.25.1
+            "13": linux-x86_64
+alpha:
+    value: 0.3
+batch_size:
+    value: 512
+beta:
+    value: 0.3
+checkpoint_dir:
+    value: runs/ckpts/qkfs
+dataset_path:
+    value: data/robomme_preprocessed_data
+dropout_rate:
+    value: 0.1
+epsilon:
+    value: 1e-06
+exp_name:
+    value: qkfs_v1
+frame_emb_dim:
+    value: 2048
+hidden_dim:
+    value: 256
+instruction_emb_dim:
+    value: 256
+lambda_frame:
+    value: 1
+log_interval:
+    value: 50
+lr:
+    value: 0.000848528137423857
+max_candidates:
+    value: 512
+max_episode_length:
+    value: 1024
+max_grad_norm:
+    value: 1
+max_segments:
+    value: 32
+mlp_dim:
+    value: 512
+num_frames_to_select:
+    value: 32
+num_heads:
+    value: 4
+num_query_layers:
+    value: 2
+num_recent_frames:
+    value: 4
+num_selector_layers:
+    value: 2
+num_train_steps:
+    value: 25000
+num_views:
+    value: 1
+pos_emb_dim:
+    value: 768
+proprio_dim:
+    value: 8
+reserve_recent:
+    value: 4
+save_interval:
+    value: 5000
+sigma:
+    value: 2
+tau:
+    value: 8
+token_budget:
+    value: 512
+token_per_image:
+    value: 16
+topreward_dir:
+    value: data/topreward_full
+use_relative_time:
+    value: true
+wandb_enabled:
+    value: true
+wandb_project:
+    value: qkfs-selector
+warmup_steps:
+    value: 1000
+weight_decay:
+    value: 0.0001

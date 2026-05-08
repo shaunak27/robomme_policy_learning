@@ -1,0 +1,150 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3034035
+SLURM_ARRAY_TASK_ID: 4
+TASK:                MoveCube
+HOSTNAME:            starrysky.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 02:22:53 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: MoveCube, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_MoveCube.h5
+  Sampled episodes: [3, 14, 81]
+  Found 7 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 7 segments
+============================================================
+
+--- Segment 1/7 ---
+
+============================================================
+Segment: MoveCube_ep3_f161-260
+  Subtask: close the gripper and push the cube to the target
+  Frames: 161 - 260
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 38.3s
+  Rewards: [0.09, 0.06, 0.0, 0.55, 0.61, 0.76, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 30-99
+  Keyframes: [0, 30, 84, 99]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 2/7 ---
+
+============================================================
+Segment: MoveCube_ep3_f161-265
+  Subtask: close the gripper and push the cube to the target
+  Frames: 161 - 265
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 37.4s
+  Rewards: [0.03, 0.0, 0.03, 0.55, 0.55, 0.48, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 72-104
+  Keyframes: [0, 72, 84, 104]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 3/7 ---
+
+============================================================
+Segment: MoveCube_ep14_f264-367
+  Subtask: pick up the cube
+  Frames: 264 - 367
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 37.4s
+  Rewards: [0.0, 0.03, 0.55, 0.74, 0.68, 0.68, 0.71, 1.0]
+  Failed regions: []
+  Successful interval: 71-103
+  Keyframes: [0, 71, 95, 103]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 4/7 ---
+
+============================================================
+Segment: MoveCube_ep14_f368-432
+  Subtask: place the cube onto the target
+  Frames: 368 - 432
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 37.4s
+  Rewards: [0.35, 0.61, 0.0, 0.03, 0.45, 0.76, 0.98, 1.0]
+  Failed regions: [[14, 30]]
+  Successful interval: 19-64
+  Keyframes: [0, 19, 33, 64]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 5/7 ---
+
+============================================================
+Segment: MoveCube_ep14_f368-450
+  Subtask: place the cube onto the target
+  Frames: 368 - 450
+============================================================
+  Loaded 83 frames
+  Prefix scoring: 37.4s
+  Rewards: [0.2, 0.04, 0.0, 0.27, 0.87, 1.0, 0.84, 0.87]
+  Failed regions: [[60, 82]]
+  Successful interval: 67-82
+  Keyframes: [0, 67, 68, 82]
+  Success detected: True
+  Confidence: 0.43
+
+--- Segment 6/7 ---
+
+============================================================
+Segment: MoveCube_ep81_f164-261
+  Subtask: close the gripper and push the cube to the target
+  Frames: 164 - 261
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 37.5s
+  Rewards: [0.03, 0.03, 0.0, 0.61, 0.72, 0.69, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 67-84
+  Keyframes: [0, 67, 84, 85, 97]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 7/7 ---
+
+============================================================
+Segment: MoveCube_ep81_f164-266
+  Subtask: close the gripper and push the cube to the target
+  Frames: 164 - 266
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 37.5s
+  Rewards: [0.09, 0.06, 0.0, 0.74, 0.69, 0.77, 0.97, 1.0]
+  Failed regions: []
+  Successful interval: 57-102
+  Keyframes: [0, 57, 85, 102]
+  Success detected: True
+  Confidence: 0.62
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 7 segments
+  Skipped: 0 segments
+  Environments: {'MoveCube': 7}
+  Mean confidence: 0.686
+  Success detected: 7/7
+  Total failed regions detected: 2
+
+All outputs saved to: data/topreward_lastpeak
+Done.

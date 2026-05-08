@@ -1,0 +1,209 @@
+Using port 51241 for task=PatternLock method=rlselector
+Starting policy server on GPU 0 ...
+Waiting for server to start ...
+Server ready after 29s
+Starting eval client on GPU 1 for task=PatternLock ...
+we will resume the evaluation
+
+[robomme] env for task PatternLock episode 0 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 86
+
+[robomme] env for task PatternLock episode 1 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 2 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 123
+
+[robomme] env for task PatternLock episode 3 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 198
+
+[robomme] env for task PatternLock episode 4 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 100
+
+[robomme] env for task PatternLock episode 5 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 6 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 142
+
+[robomme] env for task PatternLock episode 7 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 92
+
+[robomme] env for task PatternLock episode 8 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 9 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 76
+
+[robomme] env for task PatternLock episode 10 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 83
+
+[robomme] env for task PatternLock episode 11 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 103
+
+[robomme] env for task PatternLock episode 12 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 99
+
+[robomme] env for task PatternLock episode 13 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 101
+
+[robomme] env for task PatternLock episode 14 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 86
+
+[robomme] env for task PatternLock episode 15 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 258
+
+[robomme] env for task PatternLock episode 16 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 105
+
+[robomme] env for task PatternLock episode 17 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 69
+
+[robomme] env for task PatternLock episode 18 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 64
+
+[robomme] env for task PatternLock episode 19 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 182
+
+[robomme] env for task PatternLock episode 20 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 21 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 89
+
+[robomme] env for task PatternLock episode 22 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 152
+
+[robomme] env for task PatternLock episode 23 setup finished
+screw plan failed
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 192
+
+[robomme] env for task PatternLock episode 24 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 72
+
+[robomme] env for task PatternLock episode 25 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 25
+
+[robomme] env for task PatternLock episode 26 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 27 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 224
+
+[robomme] env for task PatternLock episode 28 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 29 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 32
+
+[robomme] env for task PatternLock episode 30 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 67
+
+[robomme] env for task PatternLock episode 31 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 131
+
+[robomme] env for task PatternLock episode 32 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 33 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 68
+
+[robomme] env for task PatternLock episode 34 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 94
+
+[robomme] env for task PatternLock episode 35 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 234
+
+[robomme] env for task PatternLock episode 36 setup finished
+screw plan failed
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 80
+
+[robomme] env for task PatternLock episode 37 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 71
+
+[robomme] env for task PatternLock episode 38 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 145
+
+[robomme] env for task PatternLock episode 39 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 148
+
+[robomme] env for task PatternLock episode 40 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 91
+
+[robomme] env for task PatternLock episode 41 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 105
+
+[robomme] env for task PatternLock episode 42 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 141
+
+[robomme] env for task PatternLock episode 43 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 99
+
+[robomme] env for task PatternLock episode 44 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 45 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 103
+
+[robomme] env for task PatternLock episode 46 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 140
+
+[robomme] env for task PatternLock episode 47 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 195
+
+[robomme] env for task PatternLock episode 48 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 49 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 56
+Eval finished with exit code 0

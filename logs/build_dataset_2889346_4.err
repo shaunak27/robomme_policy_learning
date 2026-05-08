@@ -1,0 +1,13 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 56, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 47, in main
+    processor.run()
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/dataset_builder/build_robomme_dataset.py", line 200, in run
+    for fname in os.listdir(self.raw_data_path):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/robomme_preprocessed_data/per_task/MoveCube/_raw_link'
+srun: error: nestor: task 0: Exited with exit code 1
+srun: Terminating StepId=2889351.0

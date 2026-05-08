@@ -1,0 +1,609 @@
+warning: The `tool.uv.dev-dependencies` field (used in `packages/openpi-client/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+INFO:root:Checking history config
+INFO:root:Loading model...
+INFO:2026-04-23 10:57:06,574:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-04-23 10:57:06,575:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x72d0a2ce89d0>
+INFO:absl:Restoring checkpoint from /coc/testnvme/shalbe3/robomme_data/runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 803.2 MiB/s (total bytes: 6.4 GiB) (time elapsed: 8 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 8.18 seconds from /coc/testnvme/shalbe3/robomme_data/runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params.
+INFO:root:Norm stats not found in /coc/testnvme/shalbe3/robomme_data/runs/assets/mme_vla_suite/robomme, skipping.
+INFO:root:Loaded norm stats from runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/assets/robomme
+INFO:root:Loading RL selector from runs/ckpts/rl_selector/final
+INFO:root:Creating server (host: xaea-12.cc.gatech.edu, ip: 127.0.1.1)
+INFO:websockets.server:server listening on 0.0.0.0:51241
+ERROR:websockets.server:opening handshake failed
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 138, in parse
+    request_line = yield from parse_line(read_line)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 309, in parse_line
+    line = yield from read_line(MAX_LINE_LENGTH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/streams.py", line 46, in read_line
+    raise EOFError(f"stream ends after {p} bytes, before end of line")
+EOFError: stream ends after 0 bytes, before end of line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/server.py", line 545, in parse
+    request = yield from Request.parse(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/http11.py", line 140, in parse
+    raise EOFError("connection closed while reading HTTP request line") from exc
+EOFError: connection closed while reading HTTP request line
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 356, in conn_handler
+    await connection.handshake(
+  File "/nethome/shalbe3/robomme_policy_learning/.venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 207, in handshake
+    raise self.protocol.handshake_exc
+websockets.exceptions.InvalidMessage: did not receive a valid HTTP request
+/coc/testnvme/shalbe3/micromamba/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/nethome/shalbe3/robomme_policy_learning/examples/robomme/subgoal_prediction/gemini/api.py:12: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50294) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34896) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35040) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56348) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41102) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39904) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41116) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35148) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55256) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55260) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42672) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35434) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59548) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39174) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41410) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49240) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58268) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33674) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58036) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56700) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53328) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33408) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35514) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47560) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35836) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47370) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41360) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41374) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42428) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42442) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40330) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51164) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36582) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54328) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55528) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45732) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54070) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34116) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52372) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53974) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39176) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33226) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36452) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47130) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40806) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40810) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34072) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47624) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53210) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:websockets.server:connection open
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56284) opened
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+Warning: link 'camera_link' material 'aluminum' undefined.
+         at line 85 in /workspace/urdfdom/urdf_parser/src/model.cpp
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56284) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53210) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47624) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34072) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40810) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40806) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47130) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36452) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33226) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39176) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53974) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 52372) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34116) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54070) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 45732) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55528) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 54328) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 36582) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 51164) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 40330) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42442) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42428) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41374) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41360) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47370) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35836) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 47560) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35514) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33408) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 53328) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56700) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58036) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 33674) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 58268) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 49240) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41410) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39174) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 59548) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35434) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 42672) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55260) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 55256) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35148) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41116) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 39904) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 41102) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 56348) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 35040) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 34896) closed
+INFO:mme_vla_suite.serving.websocket_policy_server:Connection from ('127.0.0.1', 50294) closed

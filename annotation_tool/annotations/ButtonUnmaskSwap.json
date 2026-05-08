@@ -1,0 +1,14 @@
+{
+  "task": "ButtonUnmaskSwap",
+  "updated": "2026-04-28T20:32:01.749213+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 514,
+      "exec_start_idx": 0,
+      "task_goal": "first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-28T20:32:01.749183+00:00"
+    }
+  }
+}

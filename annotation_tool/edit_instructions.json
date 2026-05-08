@@ -1,0 +1,31 @@
+{
+  "BinFill": {
+    "text": "Example episode 2: pick up first red cube should get all pick and place that came before it even tho they are of a diff color. Basically order of instructions matter and are color agnostic in this case. ",
+    "updated": "2026-05-04T05:05:19.910184+00:00"
+  },
+  "_updated": "2026-05-04T06:02:00.046993+00:00",
+  "PatternLock": {
+    "text": "this needs to change. Each subtask in exec needs to sample from corresponding demo subtask and the next immediate demo subtask (\"move right (exec) --> move right (demo) move forward (demo)\"\nAlso all exec subtasks need all previous exec subtasks which you are doing correctly right now",
+    "updated": "2026-05-04T05:19:02.606843+00:00"
+  },
+  "PickXtimes": {
+    "text": "edit: press the button needs all previous pick 1, place 1 .. pick N, place N tuples",
+    "updated": "2026-05-04T05:24:54.502759+00:00"
+  },
+  "VideoPlaceButton": {
+    "text": "rules are wrongly applied. Basically, you need to only extract one segment from the demo for all exec subtasks. This particular segment is the \"drop the cube onto target\" that is either immediately before or after the \"press the button\" subtask in the demo depending on what the instruction says. Instruction would include the keyword before or after.",
+    "updated": "2026-05-04T06:02:00.046968+00:00"
+  },
+  "VideoRepick": {
+    "text": "press the button gets all demo and exec segments till now.",
+    "updated": "2026-05-04T05:44:08.790044+00:00"
+  },
+  "VideoUnmask": {
+    "text": "put down the container needs uniform sampling across demo and past exec segments",
+    "updated": "2026-05-04T05:48:54.578714+00:00"
+  },
+  "VideoUnmaskSwap": {
+    "text": "put down the container needs uniform sampling across demo and past exec segments\nAlso, pick up N should include pick up 1, put down 1 ... pick up N, put down N along with video demo",
+    "updated": "2026-05-04T05:50:45.545175+00:00"
+  }
+}

@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033807
+SLURM_ARRAY_TASK_ID: 7
+TASK:                PickXtimes
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:51 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickXtimes, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickXtimes.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f0-118
+  Subtask: pick up the green cube for the first time
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.03, 0.0, 0.53, 0.61, 0.61, 0.61, 0.69, 1.0]
+  Failed regions: []
+  Successful interval: 82-118
+  Keyframes: [11, 82, 109, 118]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f119-206
+  Subtask: place the green cube onto the target
+  Frames: 119 - 206
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.56, 0.22, 0.94, 0.67, 0.89, 0.39, 1.0]
+  Failed regions: [[19, 41], [41, 64], [64, 87]]
+  Successful interval: 71-87
+  Keyframes: [8, 72, 87]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f207-366
+  Subtask: pick up the green cube for the second time
+  Frames: 207 - 366
+============================================================
+  Loaded 160 frames

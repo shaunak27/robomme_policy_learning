@@ -1,0 +1,107 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033730
+SLURM_ARRAY_TASK_ID: 0
+TASK:                BinFill
+HOSTNAME:            deebot.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:35:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: BinFill, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_BinFill.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: BinFill_ep3_f0-107
+  Subtask: pick up the first green cube
+  Frames: 0 - 107
+  First subtask: True
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 56.2s
+  Rewards (raw): [0.03, 0.0, 0.36, 0.59, 0.51, 0.61, 0.95, 1.0]
+  Rewards (mono): [0.03, 0.03, 0.36, 0.59, 0.59, 0.61, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 0-107
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 31, 'role': 'early_transition'}, {'frame': 37, 'role': 'peak_transition'}, {'frame': 67, 'role': 'late_transition'}, {'frame': 93, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: BinFill_ep3_f108-174
+  Subtask: put it into the bin
+  Frames: 108 - 174
+  First subtask: False
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.4s
+  Rewards (raw): [0.21, 0.0, 0.07, 0.57, 0.5, 0.57, 1.0, 0.64]
+  Rewards (mono): [0.21, 0.21, 0.21, 0.57, 0.57, 0.57, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 37-66
+  Keyframes: [{'frame': 38, 'role': 'early_transition'}, {'frame': 50, 'role': 'peak_transition'}, {'frame': 53, 'role': 'late_transition'}, {'frame': 57, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: BinFill_ep3_f175-278
+  Subtask: pick up the second green cube
+  Frames: 175 - 278
+  First subtask: False
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 54.7s
+  Rewards (raw): [0.0, 0.4, 0.36, 0.51, 0.6, 0.51, 1.0, 0.84]
+  Rewards (mono): [0.0, 0.4, 0.4, 0.51, 0.6, 0.6, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 44-103
+  Keyframes: [{'frame': 44, 'role': 'start'}, {'frame': 58, 'role': 'early_transition'}, {'frame': 89, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: BinFill_ep3_f279-353
+  Subtask: put it into the bin
+  Frames: 279 - 353
+  First subtask: False
+============================================================
+  Loaded 75 frames
+  Prefix scoring: 54.6s
+  Rewards (raw): [0.74, 0.89, 0.05, 0.0, 0.37, 1.0, 0.37, 0.05]
+  Rewards (mono): [0.74, 0.89, 0.89, 0.89, 0.89, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 4-74
+  Keyframes: [{'frame': 4, 'role': 'start'}, {'frame': 8, 'role': 'early_transition'}, {'frame': 12, 'role': 'peak_transition'}, {'frame': 16, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: BinFill_ep3_f354-581
+  Subtask: pick up the third green cube
+  Frames: 354 - 581
+  First subtask: False
+============================================================
+  Loaded 228 frames

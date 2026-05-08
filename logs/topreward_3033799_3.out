@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033803
+SLURM_ARRAY_TASK_ID: 3
+TASK:                InsertPeg
+HOSTNAME:            heistotron.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: InsertPeg, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_InsertPeg.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f217-334
+  Subtask: pick up the peg by grasping the far end
+  Frames: 217 - 334
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.02, 0.0, 0.62, 0.45, 0.62, 0.55, 1.0, 0.74]
+  Failed regions: [[41, 71]]
+  Successful interval: 81-101
+  Keyframes: [11, 81, 97, 117]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-414
+  Subtask: insert the peg from the right side
+  Frames: 335 - 414
+============================================================
+  Loaded 80 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.19, 0.59, 0.37, 0.0, 0.07, 1.0, 0.96, 1.0]
+  Failed regions: [[18, 48]]
+  Successful interval: 34-58
+  Keyframes: [8, 34, 50, 58, 70]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-433
+  Subtask: insert the peg from the right side
+  Frames: 335 - 433
+============================================================
+  Loaded 99 frames

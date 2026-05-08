@@ -1,0 +1,30 @@
+{
+  "task": "BinFill",
+  "updated": "2026-04-30T20:52:03.062542+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 550,
+      "exec_start_idx": 0,
+      "task_goal": "put two red cubes into the bin, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-30T20:52:03.062521+00:00"
+    },
+    "1": {
+      "total_timesteps": 366,
+      "exec_start_idx": 0,
+      "task_goal": "put one red cube into the bin, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-29T18:28:43.340783+00:00"
+    },
+    "2": {
+      "total_timesteps": 883,
+      "exec_start_idx": 0,
+      "task_goal": "put two red cubes and two green cubes into the bin, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-29T18:29:58.254432+00:00"
+    }
+  }
+}

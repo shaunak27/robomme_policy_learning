@@ -1,0 +1,17 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 57, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 48, in main
+    processor.run()
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/dataset_builder/build_robomme_dataset.py", line 215, in run
+    self._process_episode(
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/dataset_builder/build_robomme_dataset.py", line 292, in _process_episode
+    np.save(feat_path, mem_buffer.get_history_feats(step_idx))
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 568, in save
+    file_ctx = open(file, "wb")
+               ^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: 'data/robomme_preprocessed_data/per_task/BinFill/features/episode_59/token_emb_624.npy'
+srun: error: kitt: task 0: Exited with exit code 1
+srun: Terminating StepId=2889469.0

@@ -11,7 +11,46 @@ def even_sampling_indices(step_idx: int, token_budget: int) -> list[int]:
         return list(range(step_idx+1))
     else:
         return np.linspace(0, step_idx, token_budget, dtype=np.int32).tolist()
-    
+
+
+def oracle_keyframe_sampling_indices(
+    step_idx: int, keyframe_idxs: list[int], max_frames: int
+) -> list[int]:
+    """LEGACY — segment-unaware keyframe sampling. Kept for backward compatibility.
+
+    Use sampling_density.compute_frame_indices() for the segment-aware version
+    that respects per-subtask density rules.
+
+    Strategy:
+    - Collect all keyframes at or before step_idx.
+    - If more keyframes than budget: uniformly subsample the keyframes.
+    - If fewer keyframes than budget: include all keyframes, fill remaining
+      slots with uniformly spaced non-keyframe indices from [0, step_idx].
+    """
+    past_keyframes = sorted([k for k in keyframe_idxs if k <= step_idx])
+
+    if len(past_keyframes) == 0:
+        # No keyframes yet — fall back to uniform sampling
+        return even_sampling_indices(step_idx, max_frames)
+
+    if len(past_keyframes) >= max_frames:
+        # More keyframes than budget — uniformly subsample keyframes
+        subsample_idx = np.linspace(0, len(past_keyframes) - 1, max_frames, dtype=np.int32)
+        return [past_keyframes[i] for i in subsample_idx]
+
+    # Fewer keyframes than budget — fill remaining slots with uniform samples
+    remaining = max_frames - len(past_keyframes)
+    keyframe_set = set(past_keyframes)
+    # Generate uniform candidates from the full history, excluding keyframes
+    uniform_pool = [i for i in even_sampling_indices(step_idx, max_frames) if i not in keyframe_set]
+    # Take up to `remaining` from the uniform pool
+    if len(uniform_pool) > remaining:
+        subsample_idx = np.linspace(0, len(uniform_pool) - 1, remaining, dtype=np.int32)
+        filler = [uniform_pool[i] for i in subsample_idx]
+    else:
+        filler = uniform_pool
+    return sorted(set(past_keyframes) | set(filler))
+
 
 
 def right_padding_token_emb(

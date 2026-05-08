@@ -1,0 +1,19 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+23:19:28.309 [I] Running on: megazord.cc.gatech.edu                                               (2076433:train.py:318)
+23:19:28.309 [I] TrainConfig: TrainConfig(name='mme_vla_suite', project_name='openpi', exp_name='perceptual-density-modul', model=HistoryPi0Config(action_dim=32, action_horizon=20, max_token_len=64, dtype='bfloat16', paligemma_variant='gemma_2b', action_expert_variant='gemma_300m', pi05=True, discrete_state_input=False, memory_expert_variant='gemma_150m', use_history=True, history_config='perceptual-density-modul.yaml'), weight_loader=CheckpointWeightLoader(params_path='/coc/testnvme/shalbe3/openpi/openpi-assets/checkpoints/pi05_base/params'), pytorch_weight_path=None, pytorch_training_precision='bfloat16', lr_schedule=CosineDecaySchedule(warmup_steps=10000, peak_lr=5e-05, decay_steps=100000, decay_lr=5e-05), optimizer=AdamW(b1=0.9, b2=0.95, eps=1e-08, weight_decay=1e-10, clip_gradient_norm=1.0), ema_decay=0.999, freeze_filter=PathRegex(pattern=re.compile('.*img.*'), sep='/'), data=RoboMMEDataConfig(repo_id='robomme', assets=AssetsConfig(assets_dir=None, asset_id=None), base_config=DataConfig(repo_id=None, asset_id=None, norm_stats=None, repack_transforms=Group(inputs=(), outputs=()), data_transforms=Group(inputs=(), outputs=()), model_transforms=Group(inputs=(), outputs=()), use_quantile_norm=False, action_sequence_keys=('actions',), prompt_from_task=True, rlds_data_dir=None, action_space=None, filter_dict_path=None)), assets_base_dir='runs/assets', checkpoint_base_dir='runs/ckpts', seed=42, batch_size=64, num_workers=4, num_train_steps=80000, log_interval=100, save_interval=10000, keep_period=10000, overwrite=False, resume=False, wandb_enabled=True, policy_metadata=None, fsdp_devices=8, resum_ckpt_id=None, dataset_path='data/robomme_preprocessed_data') (2076433:train.py:319)
+INFO:2026-05-06 23:19:29,821:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+23:19:29.821 [I] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig' (2076433:xla_bridge.py:925)
+INFO:2026-05-06 23:19:29,824:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+23:19:29.824 [I] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory (2076433:xla_bridge.py:925)
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train.py", line 460, in <module>
+    main(_config.cli(), tentative_run=False)
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train.py", line 341, in main
+    checkpoint_manager, resuming = _checkpoints.initialize_checkpoint_dir(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/training/checkpoints.py", line 33, in initialize_checkpoint_dir
+    raise FileExistsError(
+FileExistsError: Checkpoint directory /coc/testnvme/shalbe3/robomme_data/runs/ckpts/mme_vla_suite/perceptual-density-modul already exists. Use --overwrite or --resume to indicate how to handle it.
+srun: error: megazord: task 0: Exited with exit code 1
+srun: Terminating StepId=3104036.0

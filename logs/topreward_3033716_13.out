@@ -1,0 +1,107 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033755
+SLURM_ARRAY_TASK_ID: 13
+TASK:                VideoRepick
+HOSTNAME:            optimistprime.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoRepick, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoRepick.h5
+  Sampled episodes: [3, 14, 81]
+  Found 22 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 22 segments
+============================================================
+
+--- Segment 1/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f214-355
+  Subtask: pick up the correct cube for the first time
+  Frames: 214 - 355
+  First subtask: True
+============================================================
+  Loaded 142 frames
+  Prefix scoring: 55.6s
+  Rewards (raw): [0.1, 0.0, 0.41, 0.64, 0.79, 0.85, 1.0, 0.95]
+  Rewards (mono): [0.1, 0.1, 0.41, 0.64, 0.79, 0.85, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-141
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 35, 'role': 'early_transition'}, {'frame': 87, 'role': 'late_transition'}, {'frame': 122, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 2/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f356-438
+  Subtask: put it down
+  Frames: 356 - 438
+  First subtask: False
+============================================================
+  Loaded 83 frames
+  Prefix scoring: 54.4s
+  Rewards (raw): [0.0, 0.47, 0.53, 0.67, 0.87, 0.8, 1.0, 0.73]
+  Rewards (mono): [0.0, 0.47, 0.53, 0.67, 0.87, 0.87, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 14-82
+  Keyframes: [{'frame': 14, 'role': 'start'}, {'frame': 18, 'role': 'early_transition'}, {'frame': 26, 'role': 'peak_transition'}, {'frame': 50, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 3/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f439-536
+  Subtask: pick up the correct cube for the second time
+  Frames: 439 - 536
+  First subtask: False
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 54.8s
+  Rewards (raw): [0.0, 0.12, 0.32, 0.36, 0.24, 0.44, 0.84, 1.0]
+  Rewards (mono): [0.0, 0.12, 0.32, 0.36, 0.36, 0.44, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 55-97
+  Keyframes: [{'frame': 55, 'role': 'start'}, {'frame': 69, 'role': 'early_transition'}, {'frame': 79, 'role': 'peak_transition'}, {'frame': 83, 'role': 'late_transition'}, {'frame': 97, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 4/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f537-621
+  Subtask: put it down
+  Frames: 537 - 621
+  First subtask: False
+============================================================
+  Loaded 85 frames
+  Prefix scoring: 54.6s
+  Rewards (raw): [0.0, 0.44, 0.61, 0.5, 1.0, 0.61, 0.94, 0.78]
+  Rewards (mono): [0.0, 0.44, 0.61, 0.61, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 14-84
+  Keyframes: [{'frame': 17, 'role': 'early_transition'}, {'frame': 27, 'role': 'peak_transition'}, {'frame': 51, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 5/22 ---
+
+============================================================
+Segment: VideoRepick_ep3_f622-837
+  Subtask: pick up the correct cube for the third time
+  Frames: 622 - 837
+  First subtask: False
+============================================================
+  Loaded 216 frames

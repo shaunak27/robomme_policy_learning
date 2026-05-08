@@ -1,0 +1,131 @@
+/* MeMER Keyframe Viewer — additional styles */
+
+/* Keyframe legend */
+#keyframe-legend {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 8px; font-size: 11px; color: #aaa;
+}
+.kf-legend-item { display: flex; align-items: center; gap: 4px; }
+
+/* Keyframe badges */
+.kf-badge {
+  display: inline-block;
+  width: 18px; height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.kf-badge.transition    { background: #e07020; }
+.kf-badge.local_minimum { background: #20a0c0; }
+.kf-badge.midpoint      { background: #b030b0; }
+.kf-badge.merged        { background: #608060; }
+
+/* Keyframe gallery */
+#keyframe-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.kf-card {
+  background: #1e1e3a;
+  border: 2px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s;
+}
+.kf-card:hover {
+  border-color: #4ecca3;
+  transform: scale(1.03);
+}
+.kf-card.active {
+  border-color: #4ecca3;
+  box-shadow: 0 0 8px rgba(78, 204, 163, 0.4);
+}
+
+.kf-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #000;
+}
+
+.kf-card-info {
+  padding: 4px 6px;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.kf-card-info .kf-frame-label {
+  color: #ccc;
+  font-weight: 600;
+}
+
+.kf-card-info .kf-subgoal-label {
+  color: #888;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kf-card-info .kf-badges {
+  display: flex; gap: 3px; margin-top: 2px;
+}
+
+/* Timeline legend additions */
+.legend-kf-transition::before,
+.legend-kf-minimum::before,
+.legend-kf-midpoint::before,
+.legend-boundary::before {
+  content: ""; display: inline-block; width: 12px; height: 12px;
+  border-radius: 2px; margin-right: 4px; vertical-align: middle;
+}
+.legend-kf-transition::before { background: #e07020; }
+.legend-kf-minimum::before    { background: #20a0c0; }
+.legend-kf-midpoint::before   { background: #b030b0; }
+.legend-boundary::before      { background: rgba(255, 255, 0, 0.5); }
+
+/* Grounded subgoal in info bar */
+#grounded-subgoal-text {
+  color: #c89040;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+/* Grounded subgoal in subgoal list */
+.subgoal-grounded {
+  display: block;
+  color: #997730;
+  font-size: 11px;
+  font-family: monospace;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.subgoal-item.active .subgoal-grounded {
+  color: #c89040;
+}
+
+/* Grounded subgoal in keyframe card */
+.kf-grounded-label {
+  color: #997730;
+  font-size: 9px;
+  font-family: monospace;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Keyframe section header */
+#keyframe-section { margin-bottom: 4px; }

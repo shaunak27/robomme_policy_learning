@@ -1,0 +1,201 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            u77htaawj13clzepnn7rrexjdb352jzm:
+                args:
+                    - --vla_checkpoint_path
+                    - runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params
+                    - --dataset_path
+                    - data/robomme_preprocessed_data
+                    - --exp_name
+                    - rl_selector_v1
+                    - --wandb_enabled
+                codePath: scripts/train_selector.py
+                codePathLocal: scripts/train_selector.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "249656872960"
+                        used: "53220610048"
+                email: shaunak.halbe@gmail.com
+                executable: /coc/testnvme/shalbe3/miniconda/envs/robomme/bin/python
+                git:
+                    commit: c457ea2f13c8994a308be0c4401c1e7489e3887e
+                    remote: https://github.com/RoboMME/robomme_policy_learning.git
+                gpu: NVIDIA A40
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "48305799168"
+                      name: NVIDIA A40
+                      uuid: GPU-c969b311-c956-fd55-67cf-e00f256db57c
+                host: baymax.cc.gatech.edu
+                memory:
+                    total: "540851740672"
+                os: Linux-6.8.0-107-generic-x86_64-with-glibc2.39
+                program: /nethome/shalbe3/robomme_policy_learning/scripts/train_selector.py
+                python: CPython 3.11.15
+                root: /nethome/shalbe3/robomme_policy_learning
+                slurm:
+                    cluster_name: skynet
+                    conf: /opt/slurm/configs/slurm.conf
+                    cpus_on_node: "16"
+                    cpus_per_task: "16"
+                    gpus_on_node: "1"
+                    gpus_per_node: a40:1
+                    gtids: "0"
+                    job_account: kira-lab
+                    job_cpus_per_node: "16"
+                    job_end_time: "1776642138"
+                    job_gid: "2626"
+                    job_gpus: "1"
+                    job_id: "2894069"
+                    job_name: interactive
+                    job_nodelist: baymax
+                    job_num_nodes: "1"
+                    job_partition: kira-lab
+                    job_qos: debug
+                    job_start_time: "1776627738"
+                    job_uid: "3173960"
+                    job_user: shalbe3
+                    jobid: "2894069"
+                    launch_node_ipaddr: 130.207.124.6
+                    localid: "0"
+                    mpi_type: none
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: baymax
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    pty_port: "7582"
+                    pty_win_col: "171"
+                    pty_win_row: "46"
+                    script_context: prolog_task
+                    srun_comm_host: 130.207.124.6
+                    srun_comm_port: "7583"
+                    step_id: "4294967290"
+                    step_launcher_port: "7583"
+                    step_nodelist: baymax
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "4294967290"
+                    submit_dir: /nethome/shalbe3/robomme_policy_learning
+                    submit_host: sky2.cc.gatech.edu
+                    task_pid: "2365694"
+                    tasks_per_node: "1"
+                    topology_addr: baymax
+                    topology_addr_pattern: node
+                    tres_per_task: cpu=16
+                startedAt: "2026-04-19T20:40:03.448052Z"
+                writerId: u77htaawj13clzepnn7rrexjdb352jzm
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "2":
+                - 1
+                - 11
+                - 12
+                - 41
+                - 45
+                - 49
+                - 71
+                - 105
+            "3":
+                - 13
+                - 16
+            "4": 3.11.15
+            "5": 0.25.1
+            "6": 4.57.3
+            "8":
+                - 2
+            "12": 0.25.1
+            "13": linux-x86_64
+batch_size:
+    value: 32
+candidate_emb_dim:
+    value: 2048
+clip_epsilon:
+    value: 0.2
+dataset_path:
+    value: data/robomme_preprocessed_data
+entropy_coef:
+    value: 0.01
+eval_interval:
+    value: 2000
+exp_name:
+    value: rl_selector_v1
+front_view_emb_dim:
+    value: 2048
+gamma:
+    value: 0
+history_config:
+    value: perceptual-rlselector-modul.yaml
+instruction_emb_dim:
+    value: 256
+log_interval:
+    value: 50
+lr:
+    value: 0.0003
+max_candidates:
+    value: 512
+max_grad_norm:
+    value: 1
+neighbor_suppression_radius:
+    value: 0
+num_frames_to_select:
+    value: 32
+num_train_steps:
+    value: 50000
+num_views:
+    value: 1
+ppo_epochs:
+    value: 4
+ppo_minibatch_size:
+    value: 16
+proprio_dim:
+    value: 8
+query_dim:
+    value: 256
+redundancy_penalty_coef:
+    value: 0.01
+redundancy_time_threshold:
+    value: 2
+save_interval:
+    value: 5000
+scorer_hidden_dim:
+    value: 256
+selector_checkpoint_dir:
+    value: runs/ckpts/rl_selector
+stage2_unfreeze_action_expert_lora:
+    value: false
+stage2_unfreeze_modulation:
+    value: false
+token_budget:
+    value: 512
+token_per_image:
+    value: 16
+use_episode_progress:
+    value: true
+value_loss_coef:
+    value: 0.5
+vla_checkpoint_path:
+    value: runs/ckpts/mme_vla_suite/perceptual-framesamp-modul/79999/params
+wandb_enabled:
+    value: true
+wandb_project:
+    value: rl-frame-selector

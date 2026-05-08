@@ -1,0 +1,278 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033827
+SLURM_ARRAY_TASK_ID: 6
+TASK:                PickHighlight
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 01:02:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickHighlight, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickHighlight.h5
+  Sampled episodes: [3, 14, 81]
+  Found 15 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 15 segments
+============================================================
+
+--- Segment 1/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f0-124
+  Subtask: press the button
+  Frames: 0 - 124
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.83, 0.0, 0.61, 0.61, 0.74, 0.78, 0.65, 1.0]
+  Failed regions: [[12, 44], [92, 124]]
+  Successful interval: 102-124
+  Keyframes: [12, 106, 124]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f125-320
+  Subtask: pick up the first highlighted cube, which is blue
+  Frames: 125 - 320
+============================================================
+  Loaded 196 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.31, 0.16, 0.72, 0.62, 0.5, 0.75, 1.0]
+  Failed regions: [[44, 94], [94, 169]]
+  Successful interval: 135-195
+  Keyframes: [19, 135, 183, 195]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 3/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f321-391
+  Subtask: place the cube onto the table
+  Frames: 321 - 391
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.2, 0.5, 0.5, 0.6, 1.0, 0.6, 0.6]
+  Failed regions: []
+  Successful interval: 31-52
+  Keyframes: [7, 31, 52]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 4/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f392-495
+  Subtask: pick up the second highlighted cube, which is green
+  Frames: 392 - 495
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.17, 0.21, 0.5, 0.58, 0.58, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 71-89
+  Keyframes: [10, 71, 89]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 5/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f496-551
+  Subtask: place the cube onto the table
+  Frames: 496 - 551
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.25, 0.21, 0.21, 0.46, 0.14, 0.0, 0.75, 1.0]
+  Failed regions: [[26, 47]]
+  Successful interval: 38-55
+  Keyframes: [5, 38, 44, 55]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f552-637
+  Subtask: pick up the third highlighted cube, which is blue
+  Frames: 552 - 637
+============================================================
+  Loaded 86 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.09, 0.45, 0.55, 0.76, 0.7, 1.0, 0.91]
+  Failed regions: []
+  Successful interval: 59-74
+  Keyframes: [8, 60, 74]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 7/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f552-651
+  Subtask: pick up the third highlighted cube, which is blue
+  Frames: 552 - 651
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.0, 0.53, 0.44, 0.94, 0.97, 1.0, 1.0]
+  Failed regions: [[35, 60]]
+  Successful interval: 43-86
+  Keyframes: [10, 43, 59, 86]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 8/15 ---
+
+============================================================
+Segment: PickHighlight_ep14_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.35, 0.0, 0.65, 0.88, 0.88, 1.0, 0.85, 0.92]
+  Failed regions: [[11, 56]]
+  Successful interval: 66-86
+  Keyframes: [11, 66, 72, 86]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 9/15 ---
+
+============================================================
+Segment: PickHighlight_ep14_f117-224
+  Subtask: pick up the first highlighted cube, which is blue
+  Frames: 117 - 224
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.42, 0.48, 0.55, 0.6, 0.51, 0.0, 1.0, 0.82]
+  Failed regions: [[51, 93]]
+  Successful interval: 74-93
+  Keyframes: [10, 74, 93]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 10/15 ---
+
+============================================================
+Segment: PickHighlight_ep14_f225-280
+  Subtask: place the cube onto the table
+  Frames: 225 - 280
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.5, 1.0, 0.75, 0.5, 0.56, 0.62, 0.12]
+  Failed regions: []
+  Successful interval: 3-19
+  Keyframes: [2, 12, 19]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 11/15 ---
+
+============================================================
+Segment: PickHighlight_ep14_f281-363
+  Subtask: pick up the second highlighted cube, which is blue
+  Frames: 281 - 363
+============================================================
+  Loaded 83 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.25, 0.21, 0.42, 0.75, 0.5, 0.29, 1.0]
+  Failed regions: [[50, 82]]
+  Successful interval: 67-82
+  Keyframes: [8, 67, 82]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 12/15 ---
+
+============================================================
+Segment: PickHighlight_ep14_f281-375
+  Subtask: pick up the second highlighted cube, which is blue
+  Frames: 281 - 375
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.25, 0.56, 1.0, 0.44, 0.62, 0.81, 1.0]
+  Failed regions: []
+  Successful interval: 5-45
+  Keyframes: [4, 27, 45, 59]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 13/15 ---
+
+============================================================
+Segment: PickHighlight_ep81_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.2, 0.73, 1.0, 0.87, 0.2, 0.73, 1.0]
+  Failed regions: []
+  Successful interval: 6-55
+  Keyframes: [5, 10, 55]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 14/15 ---
+
+============================================================
+Segment: PickHighlight_ep81_f115-210
+  Subtask: pick up the highlighted cube, which is blue
+  Frames: 115 - 210
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.17, 0.25, 0.42, 0.0, 0.17, 0.33, 1.0, 0.5]
+  Failed regions: [[33, 58]]
+  Successful interval: 41-82
+  Keyframes: [9, 41, 71, 82]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 15/15 ---
+
+============================================================
+Segment: PickHighlight_ep81_f115-223
+  Subtask: pick up the highlighted cube, which is blue
+  Frames: 115 - 223
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.29, 0.71, 1.0, 0.0, 0.14, 0.86, 0.57, 1.0]
+  Failed regions: []
+  Successful interval: 5-38
+  Keyframes: [4, 38]
+  Success detected: True
+  Confidence: 0.77
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 15 segments
+  Skipped: 0 segments
+  Environments: {'PickHighlight': 15}
+  Mean confidence: 0.765
+  Success detected: 15/15
+  Total failed regions detected: 10
+
+All outputs saved to: data/topreward_labels
+Done.

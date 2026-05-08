@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033802
+SLURM_ARRAY_TASK_ID: 2
+TASK:                ButtonUnmaskSwap
+HOSTNAME:            heistotron.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: ButtonUnmaskSwap, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_ButtonUnmaskSwap.h5
+  Sampled episodes: [3, 14, 81]
+  Found 14 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 14 segments
+============================================================
+
+--- Segment 1/14 ---
+
+============================================================
+Segment: ButtonUnmaskSwap_ep3_f0-120
+  Subtask: press the first button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.04, 0.54, 1.0, 0.19, 0.31, 0.31, 0.0]
+  Failed regions: []
+  Successful interval: 6-58
+  Keyframes: [5, 32, 58]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 2/14 ---
+
+============================================================
+Segment: ButtonUnmaskSwap_ep3_f121-217
+  Subtask: press the second button
+  Frames: 121 - 217
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.28, 0.0, 0.04, 0.36, 0.88, 0.68, 1.0, 0.32]
+  Failed regions: [[9, 58], [58, 83]]
+  Successful interval: 67-83
+  Keyframes: [9, 67, 81]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 3/14 ---
+
+============================================================
+Segment: ButtonUnmaskSwap_ep3_f218-415
+  Subtask: pick up the container that hides the green cube
+  Frames: 218 - 415
+============================================================
+  Loaded 198 frames

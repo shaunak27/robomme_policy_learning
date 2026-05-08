@@ -1,0 +1,454 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3034039
+SLURM_ARRAY_TASK_ID: 7
+TASK:                PickXtimes
+HOSTNAME:            dendrite.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 02:28:53 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickXtimes, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickXtimes.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f0-118
+  Subtask: pick up the green cube for the first time
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 39.7s
+  Rewards: [0.03, 0.0, 0.53, 0.61, 0.61, 0.61, 0.69, 1.0]
+  Failed regions: []
+  Successful interval: 82-118
+  Keyframes: [7, 82, 109, 118]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f119-206
+  Subtask: place the green cube onto the target
+  Frames: 119 - 206
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 39.1s
+  Rewards: [0.0, 0.56, 0.22, 0.94, 0.67, 0.89, 0.39, 1.0]
+  Failed regions: [[19, 41], [41, 64], [64, 87]]
+  Successful interval: 71-87
+  Keyframes: [0, 71, 72, 87]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f207-366
+  Subtask: pick up the green cube for the second time
+  Frames: 207 - 366
+============================================================
+  Loaded 160 frames
+  Prefix scoring: 38.3s
+  Rewards: [0.0, 0.24, 0.64, 0.52, 0.4, 0.68, 0.72, 1.0]
+  Failed regions: [[56, 118]]
+  Successful interval: 89-159
+  Keyframes: [27, 89, 122, 159]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f367-433
+  Subtask: place the green cube onto the target
+  Frames: 367 - 433
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 37.5s
+  Rewards: [0.54, 0.0, 0.72, 0.08, 0.92, 1.0, 0.56, 0.72]
+  Failed regions: [[6, 23], [23, 40]]
+  Successful interval: 28-48
+  Keyframes: [5, 28, 48, 49, 64]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f434-503
+  Subtask: pick up the green cube for the third time
+  Frames: 434 - 503
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 37.9s
+  Rewards: [0.0, 0.24, 0.36, 0.28, 0.88, 0.64, 1.0, 0.76]
+  Failed regions: [[42, 60]]
+  Successful interval: 48-60
+  Keyframes: [13, 48, 60, 61, 69]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 6/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f504-570
+  Subtask: place the green cube onto the target
+  Frames: 504 - 570
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 37.8s
+  Rewards: [0.32, 0.0, 0.74, 0.39, 0.94, 1.0, 0.77, 0.71]
+  Failed regions: [[6, 23], [23, 40]]
+  Successful interval: 28-48
+  Keyframes: [5, 28, 48, 49, 66]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 7/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f571-639
+  Subtask: pick up the green cube for the fourth time
+  Frames: 571 - 639
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 38.5s
+  Rewards: [0.0, 0.08, 0.23, 0.38, 0.27, 0.46, 1.0, 0.54]
+  Failed regions: [[32, 50]]
+  Successful interval: 38-59
+  Keyframes: [13, 38, 59, 60, 68]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 8/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f640-705
+  Subtask: place the green cube onto the target
+  Frames: 640 - 705
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 38.7s
+  Rewards: [0.3, 0.0, 0.78, 0.78, 1.0, 0.96, 0.96, 0.43]
+  Failed regions: [[6, 22]]
+  Successful interval: 28-39
+  Keyframes: [3, 28, 32, 39, 63]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 9/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f706-769
+  Subtask: press the button to stop
+  Frames: 706 - 769
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 39.0s
+  Rewards: [0.0, 0.36, 1.0, 0.86, 0.94, 0.69, 0.83, 0.44]
+  Failed regions: [[22, 38], [38, 54]]
+  Successful interval: 43-54
+  Keyframes: [2, 43, 54, 55, 63]
+  Success detected: True
+  Confidence: 0.43
+
+--- Segment 10/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f706-813
+  Subtask: press the button to stop
+  Frames: 706 - 813
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 39.4s
+  Rewards: [0.0, 1.0, 1.0, 0.91, 0.78, 0.78, 0.5, 0.28]
+  Failed regions: []
+  Successful interval: 5-23
+  Keyframes: [2, 5, 17, 23, 71]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 11/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f0-117
+  Subtask: pick up the blue cube for the first time
+  Frames: 0 - 117
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 39.2s
+  Rewards: [0.12, 0.0, 0.29, 0.82, 0.94, 0.79, 0.74, 1.0]
+  Failed regions: [[71, 117]]
+  Successful interval: 96-117
+  Keyframes: [1, 96, 107, 117]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 12/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f118-205
+  Subtask: place the blue cube onto the target
+  Frames: 118 - 205
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 38.5s
+  Rewards: [0.0, 0.68, 0.73, 0.41, 0.41, 1.0, 0.91, 0.68]
+  Failed regions: [[30, 53], [30, 64]]
+  Successful interval: 49-64
+  Keyframes: [3, 49, 50, 64, 87]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 13/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f206-277
+  Subtask: pick up the blue cube for the second time
+  Frames: 206 - 277
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 37.4s
+  Rewards: [0.0, 0.08, 0.08, 0.31, 0.77, 1.0, 0.92, 0.69]
+  Failed regions: []
+  Successful interval: 22-52
+  Keyframes: [14, 22, 31, 52, 71]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 14/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f278-330
+  Subtask: place the blue cube onto the target
+  Frames: 278 - 330
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 38.1s
+  Rewards: [0.11, 0.0, 0.21, 1.0, 0.84, 0.95, 1.0, 0.92]
+  Failed regions: [[25, 38]]
+  Successful interval: 29-45
+  Keyframes: [0, 29, 45, 46, 52]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 15/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f331-404
+  Subtask: pick up the blue cube for the third time
+  Frames: 331 - 404
+============================================================
+  Loaded 74 frames
+  Prefix scoring: 38.5s
+  Rewards: [0.0, 0.0, 0.17, 0.09, 0.78, 0.61, 0.87, 1.0]
+  Failed regions: [[44, 63]]
+  Successful interval: 51-73
+  Keyframes: [1, 51, 64, 73]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 16/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f405-459
+  Subtask: place the blue cube onto the target
+  Frames: 405 - 459
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 38.1s
+  Rewards: [0.0, 0.08, 0.22, 0.69, 1.0, 0.97, 1.0, 0.56]
+  Failed regions: []
+  Successful interval: 38-47
+  Keyframes: [5, 38, 47, 48, 54]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 17/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f460-520
+  Subtask: press the button to stop
+  Frames: 460 - 520
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 38.8s
+  Rewards: [0.0, 0.1, 0.51, 0.97, 0.9, 0.97, 1.0, 0.59]
+  Failed regions: []
+  Successful interval: 33-52
+  Keyframes: [0, 33, 52, 53, 60]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 18/26 ---
+
+============================================================
+Segment: PickXtimes_ep14_f460-555
+  Subtask: press the button to stop
+  Frames: 460 - 555
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 39.5s
+  Rewards: [0.0, 0.55, 1.0, 0.98, 0.62, 0.71, 0.64, 0.74]
+  Failed regions: []
+  Successful interval: 5-33
+  Keyframes: [0, 5, 19, 33, 69]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 19/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f0-114
+  Subtask: pick up the blue cube for the first time
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 38.9s
+  Rewards: [0.0, 0.0, 0.36, 0.7, 0.61, 0.73, 0.82, 1.0]
+  Failed regions: [[55, 84]]
+  Successful interval: 64-114
+  Keyframes: [0, 64, 69, 114]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 20/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f115-197
+  Subtask: place the blue cube onto the target
+  Frames: 115 - 197
+============================================================
+  Loaded 83 frames
+  Prefix scoring: 38.3s
+  Rewards: [0.0, 0.61, 0.54, 0.71, 1.0, 0.96, 1.0, 0.57]
+  Failed regions: []
+  Successful interval: 56-71
+  Keyframes: [1, 56, 69, 71, 82]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 21/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f198-267
+  Subtask: pick up the blue cube for the second time
+  Frames: 198 - 267
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 38.4s
+  Rewards: [0.12, 0.0, 0.29, 0.5, 0.92, 0.88, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 48-60
+  Keyframes: [8, 48, 60, 61, 69]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 22/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f268-323
+  Subtask: place the blue cube onto the target
+  Frames: 268 - 323
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 37.0s
+  Rewards: [0.0, 0.48, 0.85, 0.74, 0.89, 0.85, 0.81, 1.0]
+  Failed regions: [[19, 33]]
+  Successful interval: 45-55
+  Keyframes: [11, 45, 46, 55]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 23/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f324-393
+  Subtask: pick up the blue cube for the third time
+  Frames: 324 - 393
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 38.3s
+  Rewards: [0.0, 0.25, 0.1, 0.35, 0.85, 0.95, 1.0, 0.95]
+  Failed regions: [[15, 33]]
+  Successful interval: 21-60
+  Keyframes: [14, 21, 31, 60, 69]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 24/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f394-460
+  Subtask: place the blue cube onto the target
+  Frames: 394 - 460
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 38.4s
+  Rewards: [0.0, 0.15, 0.92, 0.77, 0.88, 0.92, 1.0, 0.88]
+  Failed regions: [[23, 40]]
+  Successful interval: 28-57
+  Keyframes: [5, 28, 53, 57, 66]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 25/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f461-525
+  Subtask: press the button to stop
+  Frames: 461 - 525
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 38.5s
+  Rewards: [0.0, 0.0, 0.75, 0.58, 0.58, 0.75, 0.25, 1.0]
+  Failed regions: [[22, 47], [22, 47], [47, 64]]
+  Successful interval: 52-64
+  Keyframes: [0, 52, 60, 64]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 26/26 ---
+
+============================================================
+Segment: PickXtimes_ep81_f461-563
+  Subtask: press the button to stop
+  Frames: 461 - 563
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 38.4s
+  Rewards: [0.0, 0.8, 0.7, 1.0, 0.6, 0.6, 1.0, 0.9]
+  Failed regions: [[23, 49], [49, 75], [49, 88]]
+  Successful interval: 70-88
+  Keyframes: [0, 70, 88, 89, 102]
+  Success detected: True
+  Confidence: 0.62
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 26 segments
+  Skipped: 0 segments
+  Environments: {'PickXtimes': 26}
+  Mean confidence: 0.665
+  Success detected: 26/26
+  Total failed regions detected: 28
+
+All outputs saved to: data/topreward_lastpeak
+Done.

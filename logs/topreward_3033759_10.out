@@ -1,0 +1,179 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033772
+SLURM_ARRAY_TASK_ID: 10
+TASK:                SwingXtimes
+HOSTNAME:            spd-13.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:42:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f0-178
+  Subtask: pick up the red cube
+  Frames: 0 - 178
+  First subtask: True
+============================================================
+  Loaded 179 frames
+  Prefix scoring: 57.5s
+  Rewards (raw): [0.0, 0.71, 0.77, 0.83, 0.65, 0.88, 0.96, 1.0]
+  Rewards (mono): [0.0, 0.71, 0.77, 0.83, 0.83, 0.88, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 0-178
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 44, 'role': 'early_transition'}, {'frame': 62, 'role': 'peak_transition'}, {'frame': 92, 'role': 'late_transition'}, {'frame': 132, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f179-213
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 179 - 213
+  First subtask: False
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.1s
+  Rewards (raw): [0.25, 0.45, 0.6, 0.75, 0.75, 1.0, 0.75, 0.0]
+  Rewards (mono): [0.25, 0.45, 0.6, 0.75, 0.75, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 10-34
+  Keyframes: [{'frame': 10, 'role': 'start'}, {'frame': 14, 'role': 'early_transition'}, {'frame': 19, 'role': 'peak_transition'}, {'frame': 25, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f214-251
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 214 - 251
+  First subtask: False
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.0s
+  Rewards (raw): [0.0, 0.48, 0.4, 1.0, 0.72, 0.56, 0.48, 0.44]
+  Rewards (mono): [0.0, 0.48, 0.48, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [{'frame': 2, 'role': 'start'}, {'frame': 7, 'role': 'early_transition'}, {'frame': 12, 'role': 'peak_transition'}, {'frame': 17, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f252-289
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 252 - 289
+  First subtask: False
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.9s
+  Rewards (raw): [0.0, 0.36, 0.43, 1.0, 1.0, 0.71, 0.71, 0.57]
+  Rewards (mono): [0.0, 0.36, 0.43, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [{'frame': 2, 'role': 'start'}, {'frame': 7, 'role': 'early_transition'}, {'frame': 12, 'role': 'peak_transition'}, {'frame': 18, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f290-327
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 290 - 327
+  First subtask: False
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.1s
+  Rewards (raw): [0.0, 0.67, 0.33, 0.75, 1.0, 0.83, 0.83, 1.0]
+  Rewards (mono): [0.0, 0.67, 0.67, 0.75, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-37
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 14, 'role': 'early_transition'}, {'frame': 17, 'role': 'peak_transition'}, {'frame': 22, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 6/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f328-365
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 328 - 365
+  First subtask: False
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.4s
+  Rewards (raw): [0.0, 0.13, 0.07, 1.0, 0.6, 0.47, 0.6, 0.6]
+  Rewards (mono): [0.0, 0.13, 0.13, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-37
+  Keyframes: [{'frame': 2, 'role': 'start'}, {'frame': 7, 'role': 'early_transition'}, {'frame': 12, 'role': 'peak_transition'}, {'frame': 18, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 7/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f366-403
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 366 - 403
+  First subtask: False
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.2s
+  Rewards (raw): [0.0, 0.45, 0.73, 0.82, 1.0, 1.0, 0.73, 0.73]
+  Rewards (mono): [0.0, 0.45, 0.73, 0.82, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 6-37
+  Keyframes: [{'frame': 6, 'role': 'start'}, {'frame': 11, 'role': 'early_transition'}, {'frame': 17, 'role': 'late_transition'}, {'frame': 22, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 8/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f404-439
+  Subtask: put the red cube on the table
+  Frames: 404 - 439
+  First subtask: False
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.7s
+  Rewards (raw): [0.0, 0.06, 0.15, 0.3, 0.52, 0.3, 0.55, 1.0]
+  Rewards (mono): [0.0, 0.06, 0.15, 0.3, 0.52, 0.52, 0.55, 1.0]
+  Failed regions: []
+  Successful interval: 24-35
+  Keyframes: [{'frame': 25, 'role': 'early_transition'}, {'frame': 27, 'role': 'peak_transition'}, {'frame': 31, 'role': 'late_transition'}, {'frame': 35, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 9/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f440-498
+  Subtask: press the button
+  Frames: 440 - 498
+  First subtask: False
+============================================================
+  Loaded 59 frames

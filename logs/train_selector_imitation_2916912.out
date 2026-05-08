@@ -1,0 +1,6 @@
+]11;?[cmax_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using rl_selector type
+
+max_token_len: 64
+Step 0: mean_reward=-0.0041, mean_fm_selector=0.0551, mean_fm_uniform=0.0524, mean_entropy=5.5237, policy_loss=0.7072, value_loss=1.2354, approx_kl=-0.0000, grad_norm=45.7874

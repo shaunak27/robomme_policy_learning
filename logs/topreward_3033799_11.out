@@ -1,0 +1,82 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033811
+SLURM_ARRAY_TASK_ID: 11
+TASK:                VideoPlaceButton
+HOSTNAME:            spd-13.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: VideoPlaceButton, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_VideoPlaceButton.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f759-952
+  Subtask: pick up the cube
+  Frames: 759 - 952
+============================================================
+  Loaded 194 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.32, 0.54, 0.32, 0.49, 0.78, 0.76, 1.0]
+  Failed regions: [[68, 143]]
+  Successful interval: 159-193
+  Keyframes: [19, 159, 184, 193]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1022
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1022
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.5, 0.44, 0.0, 0.88, 0.56, 1.0, 0.12, 0.38]
+  Failed regions: [[7, 33], [33, 51]]
+  Successful interval: 39-51
+  Keyframes: [7, 40, 51]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep3_f953-1040
+  Subtask: place the cube onto the correct target
+  Frames: 953 - 1040
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.45, 0.18, 0.0, 1.0, 0.55, 0.18, 0.55, 0.36]
+  Failed regions: [[8, 41]]
+  Successful interval: 26-41
+  Keyframes: [8, 26, 38]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 4/9 ---
+
+============================================================
+Segment: VideoPlaceButton_ep14_f747-865
+  Subtask: pick up the cube
+  Frames: 747 - 865
+============================================================
+  Loaded 119 frames

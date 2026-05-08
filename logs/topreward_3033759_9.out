@@ -1,0 +1,197 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033771
+SLURM_ARRAY_TASK_ID: 9
+TASK:                StopCube
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:42:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: StopCube, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_StopCube.h5
+  Sampled episodes: [3, 14, 81]
+  Found 12 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 12 segments
+============================================================
+
+--- Segment 1/12 ---
+
+============================================================
+Segment: StopCube_ep3_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+  First subtask: True
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.1s
+  Rewards (raw): [0.29, 0.07, 0.14, 0.0, 0.07, 0.36, 1.0, 0.93]
+  Rewards (mono): [0.29, 0.29, 0.29, 0.29, 0.29, 0.36, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-53
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 15, 'role': 'early_transition'}, {'frame': 26, 'role': 'peak_transition'}, {'frame': 40, 'role': 'late_transition'}, {'frame': 46, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 2/12 ---
+
+============================================================
+Segment: StopCube_ep3_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+  First subtask: False
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 58.9s
+  Rewards (raw): [0.0, 0.4, 0.45, 0.9, 0.9, 1.0, 0.95, 0.4]
+  Rewards (mono): [0.0, 0.4, 0.45, 0.9, 0.9, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 17-335
+  Keyframes: [{'frame': 25, 'role': 'early_transition'}, {'frame': 104, 'role': 'peak_transition'}, {'frame': 157, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 3/12 ---
+
+============================================================
+Segment: StopCube_ep3_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+  First subtask: False
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.1s
+  Rewards (raw): [0.0, 0.18, 0.27, 0.36, 0.0, 0.18, 1.0, 1.0]
+  Rewards (mono): [0.0, 0.18, 0.27, 0.36, 0.36, 0.36, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 15-27
+  Keyframes: [{'frame': 15, 'role': 'start'}, {'frame': 17, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 22, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 4/12 ---
+
+============================================================
+Segment: StopCube_ep3_f390-452
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 452
+  First subtask: False
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.3s
+  Rewards (raw): [0.09, 0.0, 0.35, 0.65, 0.35, 1.0, 0.96, 0.74]
+  Rewards (mono): [0.09, 0.09, 0.35, 0.65, 0.65, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 19-62
+  Keyframes: [{'frame': 19, 'role': 'start'}, {'frame': 22, 'role': 'early_transition'}, {'frame': 28, 'role': 'peak_transition'}, {'frame': 46, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 5/12 ---
+
+============================================================
+Segment: StopCube_ep14_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+  First subtask: True
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.2s
+  Rewards (raw): [0.0, 0.14, 0.03, 0.24, 0.24, 0.62, 1.0, 0.97]
+  Rewards (mono): [0.0, 0.14, 0.14, 0.24, 0.24, 0.62, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-52
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 14, 'role': 'early_transition'}, {'frame': 23, 'role': 'peak_transition'}, {'frame': 39, 'role': 'late_transition'}, {'frame': 45, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 6/12 ---
+
+============================================================
+Segment: StopCube_ep14_f53-154
+  Subtask: remain static
+  Frames: 53 - 154
+  First subtask: False
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.67, 1.0, 0.83, 0.83, 0.0, 0.17, 0.83, 0.33]
+  Rewards (mono): [0.67, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 5-101
+  Keyframes: [{'frame': 6, 'role': 'early_transition'}, {'frame': 13, 'role': 'peak_transition'}, {'frame': 21, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 7/12 ---
+
+============================================================
+Segment: StopCube_ep14_f155-181
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 181
+  First subtask: False
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.0, 0.17, 0.13, 0.33, 0.37, 0.37, 0.63, 1.0]
+  Rewards (mono): [0.0, 0.17, 0.17, 0.33, 0.37, 0.37, 0.63, 1.0]
+  Failed regions: []
+  Successful interval: 14-26
+  Keyframes: [{'frame': 14, 'role': 'start'}, {'frame': 18, 'role': 'early_transition'}, {'frame': 21, 'role': 'peak_transition'}, {'frame': 26, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 8/12 ---
+
+============================================================
+Segment: StopCube_ep14_f155-214
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 214
+  First subtask: False
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.0, 0.34, 0.48, 0.45, 0.66, 1.0, 0.83, 0.69]
+  Rewards (mono): [0.0, 0.34, 0.48, 0.48, 0.66, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 25-59
+  Keyframes: [{'frame': 26, 'role': 'early_transition'}, {'frame': 34, 'role': 'peak_transition'}, {'frame': 43, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 9/12 ---
+
+============================================================
+Segment: StopCube_ep81_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+  First subtask: True
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.36, 0.27, 0.18, 0.18, 0.0, 0.23, 0.91, 1.0]
+  Rewards (mono): [0.36, 0.36, 0.36, 0.36, 0.36, 0.36, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 0-55
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 14, 'role': 'early_transition'}, {'frame': 27, 'role': 'peak_transition'}, {'frame': 40, 'role': 'late_transition'}, {'frame': 47, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 10/12 ---
+
+============================================================
+Segment: StopCube_ep81_f56-61
+  Subtask: remain static
+  Frames: 56 - 61
+  First subtask: False
+============================================================
+  Loaded 6 frames

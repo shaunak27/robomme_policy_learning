@@ -1,0 +1,5638 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3035672
+SLURM_ARRAY_TASK_ID: 1
+TASK:                ButtonUnmask
+HOSTNAME:            deebot.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 02:01:37 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: ButtonUnmask, sampling 100 episodes
+  H5: data/robomme_data_h5/record_dataset_ButtonUnmask.h5
+  Sampled episodes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+  Found 350 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 350 segments
+============================================================
+
+--- Segment 1/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep0_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 58.1s
+  Rewards: [0.0, 0.05, 0.22, 0.86, 0.84, 0.68, 0.97, 1.0]
+  Failed regions: [[55, 100]]
+  Successful interval: 80-115
+  Keyframes: [0, 80, 103, 115]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep0_f116-279
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 279
+============================================================
+  Loaded 164 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.0, 0.16, 0.16, 0.32, 0.36, 0.34, 0.59, 1.0]
+  Failed regions: []
+  Successful interval: 113-163
+  Keyframes: [14, 113, 161, 163]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 3/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep0_f116-290
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 290
+============================================================
+  Loaded 175 frames
+  Prefix scoring: 57.8s
+  Rewards: [0.0, 0.07, 0.29, 0.29, 0.26, 0.38, 0.67, 1.0]
+  Failed regions: []
+  Successful interval: 98-174
+  Keyframes: [16, 98, 161, 174]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 4/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep1_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.11, 0.16, 0.78, 0.76, 0.46, 0.0, 1.0, 0.92]
+  Failed regions: [[39, 96]]
+  Successful interval: 77-96
+  Keyframes: [0, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 5/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep1_f112-281
+  Subtask: pick up the container that hides the green cube
+  Frames: 112 - 281
+============================================================
+  Loaded 170 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.37, 0.47, 0.55, 0.26, 0.24, 0.18, 1.0]
+  Failed regions: [[82, 169]]
+  Successful interval: 139-169
+  Keyframes: [8, 139, 169]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 6/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep1_f112-293
+  Subtask: pick up the container that hides the green cube
+  Frames: 112 - 293
+============================================================
+  Loaded 182 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.09, 0.29, 0.17, 0.57, 0.31, 0.0, 0.2, 1.0]
+  Failed regions: [[41, 87], [87, 157]]
+  Successful interval: 125-181
+  Keyframes: [8, 125, 171, 181]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 7/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep2_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.24, 0.21, 0.38, 0.59, 0.41, 0.0, 0.31, 1.0]
+  Failed regions: [[55, 99]]
+  Successful interval: 79-114
+  Keyframes: [0, 79, 100, 114]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 8/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep2_f115-259
+  Subtask: pick up the container that hides the red cube
+  Frames: 115 - 259
+============================================================
+  Loaded 145 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.0, 0.17, 0.36, 0.33, 0.38, 0.29, 0.38, 1.0]
+  Failed regions: [[88, 125]]
+  Successful interval: 99-144
+  Keyframes: [2, 99, 142, 144]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 9/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep2_f115-266
+  Subtask: pick up the container that hides the red cube
+  Frames: 115 - 266
+============================================================
+  Loaded 152 frames
+  Prefix scoring: 58.1s
+  Rewards: [0.0, 0.07, 0.39, 0.32, 0.27, 0.22, 0.34, 1.0]
+  Failed regions: [[53, 131]]
+  Successful interval: 105-151
+  Keyframes: [2, 105, 142, 151]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 10/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.06, 0.0, 0.0, 0.26, 0.03, 0.29, 0.88, 1.0]
+  Failed regions: [[55, 84]]
+  Successful interval: 64-114
+  Keyframes: [2, 64, 73, 114]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 11/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f115-316
+  Subtask: pick up the container that hides the red cube
+  Frames: 115 - 316
+============================================================
+  Loaded 202 frames
+  Prefix scoring: 58.4s
+  Rewards: [0.0, 0.02, 0.18, 0.33, 0.13, 0.27, 0.42, 1.0]
+  Failed regions: [[97, 149]]
+  Successful interval: 113-201
+  Keyframes: [13, 113, 194, 201]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 12/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f317-357
+  Subtask: put down the container
+  Frames: 317 - 357
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.56, 0.11, 0.0, 0.44, 0.78, 1.0, 0.89]
+  Failed regions: [[9, 24]]
+  Successful interval: 17-34
+  Keyframes: [8, 17, 34, 35, 40]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 13/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f358-444
+  Subtask: pick up the container that hides the blue cube
+  Frames: 358 - 444
+============================================================
+  Loaded 87 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.07, 0.02, 0.36, 0.33, 0.12, 0.0, 0.21, 1.0]
+  Failed regions: [[30, 74]]
+  Successful interval: 59-86
+  Keyframes: [6, 59, 85, 86]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 14/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f358-451
+  Subtask: pick up the container that hides the blue cube
+  Frames: 358 - 451
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.06, 0.14, 0.17, 0.25, 0.0, 0.11, 0.32, 1.0]
+  Failed regions: [[45, 69]]
+  Successful interval: 53-93
+  Keyframes: [6, 53, 85, 93]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 15/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep4_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.19, 0.22, 0.56, 0.58, 0.0, 0.36, 0.83, 1.0]
+  Failed regions: [[53, 81]]
+  Successful interval: 62-110
+  Keyframes: [0, 62, 70, 110]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 16/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep4_f111-311
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 311
+============================================================
+  Loaded 201 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.3, 0.46, 0.38, 0.22, 0.84, 0.62, 1.0]
+  Failed regions: [[71, 148], [148, 200]]
+  Successful interval: 164-200
+  Keyframes: [5, 164, 200]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 17/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep4_f111-322
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 322
+============================================================
+  Loaded 212 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.14, 0.24, 0.29, 0.14, 0.4, 0.55, 1.0]
+  Failed regions: [[102, 156]]
+  Successful interval: 119-211
+  Keyframes: [0, 119, 202, 211]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 18/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep5_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.08, 0.04, 0.5, 0.88, 0.33, 0.0, 0.5, 1.0]
+  Failed regions: [[55, 99]]
+  Successful interval: 79-114
+  Keyframes: [0, 79, 99, 114]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 19/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep5_f115-289
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 289
+============================================================
+  Loaded 175 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.0, 0.1, 0.55, 0.68, 0.61, 0.26, 0.74, 1.0]
+  Failed regions: [[84, 151]]
+  Successful interval: 121-174
+  Keyframes: [16, 121, 172, 174]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 20/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep5_f115-298
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 298
+============================================================
+  Loaded 184 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.0, 0.22, 0.2, 0.8, 0.46, 0.12, 0.63, 1.0]
+  Failed regions: [[88, 159]]
+  Successful interval: 126-183
+  Keyframes: [16, 126, 172, 183]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 21/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep6_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.0, 0.0, 0.08, 0.72, 0.52, 0.16, 1.0, 0.52]
+  Failed regions: [[56, 101]]
+  Successful interval: 81-101
+  Keyframes: [0, 81, 101, 102, 116]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 22/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep6_f117-211
+  Subtask: pick up the container that hides the red cube
+  Frames: 117 - 211
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.1, 0.17, 0.2, 0.27, 0.49, 0.32, 1.0]
+  Failed regions: [[69, 94]]
+  Successful interval: 77-94
+  Keyframes: [0, 77, 91, 94]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 23/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep6_f117-219
+  Subtask: pick up the container that hides the red cube
+  Frames: 117 - 219
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.0, 0.16, 0.18, 0.23, 0.39, 1.0, 0.82]
+  Failed regions: []
+  Successful interval: 18-88
+  Keyframes: [14, 18, 63, 88, 102]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 24/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep7_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.07, 0.0, 0.26, 0.63, 0.59, 0.7, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 64-114
+  Keyframes: [2, 64, 74, 114]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 25/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep7_f115-226
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 226
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.1, 0.23, 0.3, 0.3, 0.57, 1.0, 0.85]
+  Failed regions: []
+  Successful interval: 63-96
+  Keyframes: [21, 63, 71, 96, 111]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 26/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep7_f227-276
+  Subtask: put down the container
+  Frames: 227 - 276
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.34, 0.09, 0.19, 0.09, 0.09, 0.0, 1.0, 0.62]
+  Failed regions: [[5, 17]]
+  Successful interval: 34-42
+  Keyframes: [0, 34, 41, 42, 49]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 27/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep7_f277-369
+  Subtask: pick up the container that hides the red cube
+  Frames: 277 - 369
+============================================================
+  Loaded 93 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.03, 0.16, 0.84, 0.44, 0.56, 0.25, 1.0]
+  Failed regions: [[44, 68], [68, 92]]
+  Successful interval: 76-92
+  Keyframes: [18, 76, 91, 92]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 28/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep7_f277-376
+  Subtask: pick up the container that hides the red cube
+  Frames: 277 - 376
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.07, 0.12, 0.19, 0.6, 0.4, 0.12, 0.0, 1.0]
+  Failed regions: [[48, 99]]
+  Successful interval: 81-99
+  Keyframes: [19, 81, 92, 99]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 29/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep8_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.17, 0.0, 0.61, 0.86, 0.81, 0.47, 1.0, 0.67]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [0, 76, 94, 95, 110]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 30/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep8_f111-199
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 199
+============================================================
+  Loaded 89 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.05, 0.24, 0.3, 0.46, 0.49, 0.22, 1.0]
+  Failed regions: [[65, 88]]
+  Successful interval: 72-88
+  Keyframes: [0, 72, 87, 88]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 31/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep8_f111-206
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 206
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.13, 0.03, 0.17, 0.23, 0.37, 0.63, 1.0]
+  Failed regions: []
+  Successful interval: 29-95
+  Keyframes: [0, 29, 87, 95]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 32/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep9_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.03, 0.0, 0.23, 0.53, 0.53, 0.07, 0.8, 1.0]
+  Failed regions: [[68, 96]]
+  Successful interval: 77-111
+  Keyframes: [2, 77, 99, 111]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 33/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep9_f112-212
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 212
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.18, 0.0, 0.47, 0.29, 0.63, 0.5, 1.0]
+  Failed regions: [[48, 74], [74, 100]]
+  Successful interval: 82-100
+  Keyframes: [11, 82, 99, 100]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 34/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep9_f112-218
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 218
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.18, 0.06, 0.39, 0.52, 0.73, 0.48, 1.0]
+  Failed regions: [[78, 106]]
+  Successful interval: 87-106
+  Keyframes: [11, 87, 99, 106]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 35/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep10_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.06, 0.0, 0.83, 0.83, 0.44, 0.83, 1.0, 0.61]
+  Failed regions: [[56, 86]]
+  Successful interval: 66-101
+  Keyframes: [1, 66, 70, 101, 116]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 36/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep10_f117-216
+  Subtask: pick up the container that hides the blue cube
+  Frames: 117 - 216
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.09, 0.29, 0.33, 0.44, 0.42, 0.31, 0.0, 1.0]
+  Failed regions: [[48, 99]]
+  Successful interval: 81-99
+  Keyframes: [10, 81, 99]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 37/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep10_f117-226
+  Subtask: pick up the container that hides the blue cube
+  Frames: 117 - 226
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.26, 0.23, 0.44, 0.31, 0.36, 0.64, 1.0]
+  Failed regions: [[53, 81]]
+  Successful interval: 62-109
+  Keyframes: [0, 62, 100, 109]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 38/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep11_f0-122
+  Subtask: press the button
+  Frames: 0 - 122
+============================================================
+  Loaded 123 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.14, 0.07, 0.25, 0.25, 0.68, 0.18, 1.0, 0.0]
+  Failed regions: [[74, 106]]
+  Successful interval: 84-106
+  Keyframes: [0, 84, 106, 107, 122]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 39/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep11_f123-244
+  Subtask: pick up the container that hides the red cube
+  Frames: 123 - 244
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.25, 0.39, 0.21, 0.07, 0.18, 0.57, 1.0]
+  Failed regions: [[43, 89]]
+  Successful interval: 68-121
+  Keyframes: [0, 68, 115, 121]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 40/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep11_f245-285
+  Subtask: put down the container
+  Frames: 245 - 285
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.4s
+  Rewards: [1.0, 0.6, 0.0, 0.0, 0.4, 0.6, 1.0, 0.4]
+  Failed regions: [[4, 19], [4, 24]]
+  Successful interval: 17-34
+  Keyframes: [1, 17, 34, 35, 40]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 41/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep11_f286-390
+  Subtask: pick up the container that hides the blue cube
+  Frames: 286 - 390
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.1, 0.12, 0.15, 0.29, 0.44, 0.06, 0.0, 1.0]
+  Failed regions: [[63, 104]]
+  Successful interval: 85-104
+  Keyframes: [3, 85, 102, 104]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 42/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep11_f286-397
+  Subtask: pick up the container that hides the blue cube
+  Frames: 286 - 397
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.16, 0.18, 0.18, 0.49, 0.47, 0.0, 0.14, 1.0]
+  Failed regions: [[53, 96]]
+  Successful interval: 77-111
+  Keyframes: [3, 77, 102, 111]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 43/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep12_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.04, 0.0, 0.64, 0.92, 0.6, 0.48, 1.0, 0.64]
+  Failed regions: [[56, 101]]
+  Successful interval: 81-101
+  Keyframes: [0, 81, 101, 102, 116]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 44/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep12_f117-212
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 212
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.11, 0.37, 0.54, 0.23, 0.17, 0.23, 1.0]
+  Failed regions: [[45, 82]]
+  Successful interval: 66-95
+  Keyframes: [3, 66, 95]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 45/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep12_f117-219
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 219
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.14, 0.24, 0.41, 0.24, 0.16, 0.0, 1.0]
+  Failed regions: [[49, 102]]
+  Successful interval: 83-102
+  Keyframes: [3, 83, 94, 102]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 46/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep13_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.38, 0.46, 0.0, 0.21, 0.62, 0.21, 1.0, 0.88]
+  Failed regions: [[27, 74], [74, 105]]
+  Successful interval: 83-105
+  Keyframes: [0, 83, 105, 106, 121]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 47/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep13_f122-234
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 234
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.21, 0.39, 0.54, 0.43, 0.82, 0.79, 1.0]
+  Failed regions: [[54, 83]]
+  Successful interval: 92-112
+  Keyframes: [0, 92, 112]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 48/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep13_f122-240
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 240
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.33, 0.56, 0.74, 0.48, 1.0, 0.85, 0.78]
+  Failed regions: [[56, 87]]
+  Successful interval: 67-87
+  Keyframes: [0, 67, 82, 87, 118]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 49/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep14_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.03, 0.42, 0.45, 0.68, 0.48, 1.0, 1.0]
+  Failed regions: [[67, 95]]
+  Successful interval: 76-95
+  Keyframes: [0, 76, 95, 96, 110]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 50/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep14_f111-213
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 213
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.31, 0.5, 0.34, 0.09, 0.25, 0.09, 1.0]
+  Failed regions: [[36, 75], [75, 102]]
+  Successful interval: 83-102
+  Keyframes: [1, 83, 101, 102]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 51/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep14_f111-223
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 223
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.45, 0.45, 0.31, 0.24, 0.17, 0.03, 1.0]
+  Failed regions: [[39, 112]]
+  Successful interval: 92-112
+  Keyframes: [1, 92, 101, 112]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 52/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep15_f0-112
+  Subtask: press the button
+  Frames: 0 - 112
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.09, 0.06, 0.91, 1.0, 0.55, 0.0, 0.94, 0.48]
+  Failed regions: [[54, 97]]
+  Successful interval: 78-97
+  Keyframes: [0, 78, 97, 98, 112]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 53/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep15_f113-213
+  Subtask: pick up the container that hides the red cube
+  Frames: 113 - 213
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.09, 0.0, 0.31, 0.28, 0.03, 0.16, 1.0]
+  Failed regions: [[48, 87]]
+  Successful interval: 69-100
+  Keyframes: [10, 69, 92, 100]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 54/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep15_f214-263
+  Subtask: put down the container
+  Frames: 214 - 263
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.12, 0.5, 0.12, 0.75, 1.0, 0.5, 0.88]
+  Failed regions: [[17, 36], [36, 49]]
+  Successful interval: 40-49
+  Keyframes: [0, 40, 41, 49]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 55/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep15_f264-354
+  Subtask: pick up the container that hides the blue cube
+  Frames: 264 - 354
+============================================================
+  Loaded 91 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.03, 0.22, 0.0, 0.41, 0.25, 0.28, 0.12, 1.0]
+  Failed regions: [[43, 66], [66, 90]]
+  Successful interval: 74-90
+  Keyframes: [0, 74, 90]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 56/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep15_f264-360
+  Subtask: pick up the container that hides the blue cube
+  Frames: 264 - 360
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.03, 0.3, 0.0, 0.27, 0.24, 0.21, 0.15, 1.0]
+  Failed regions: [[21, 46], [46, 96]]
+  Successful interval: 79-96
+  Keyframes: [0, 79, 91, 96]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 57/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep16_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.03, 0.55, 0.93, 0.31, 0.24, 1.0, 0.76]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [1, 76, 95, 96, 109]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 58/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep16_f110-189
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 189
+============================================================
+  Loaded 80 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.1, 0.1, 0.17, 0.4, 0.33, 0.23, 1.0]
+  Failed regions: [[48, 79]]
+  Successful interval: 64-79
+  Keyframes: [16, 64, 77, 79]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 59/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep16_f110-197
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 197
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.14, 0.2, 0.14, 0.29, 0.23, 1.0, 0.89]
+  Failed regions: []
+  Successful interval: 60-75
+  Keyframes: [17, 60, 75, 76, 87]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 60/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep17_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.06, 0.0, 0.3, 0.85, 1.0, 0.85, 1.0, 0.79]
+  Failed regions: [[68, 96]]
+  Successful interval: 77-96
+  Keyframes: [0, 77, 95, 96, 111]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 61/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep17_f112-202
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 202
+============================================================
+  Loaded 91 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.13, 0.39, 0.39, 0.39, 0.35, 0.45, 1.0]
+  Failed regions: []
+  Successful interval: 62-90
+  Keyframes: [1, 62, 87, 90]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 62/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep17_f112-209
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 209
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.12, 0.21, 0.32, 0.47, 0.32, 0.5, 1.0]
+  Failed regions: [[59, 84]]
+  Successful interval: 67-97
+  Keyframes: [8, 67, 87, 97]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 63/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep18_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.19, 0.78, 0.81, 0.37, 1.0, 0.93]
+  Failed regions: [[67, 95]]
+  Successful interval: 76-95
+  Keyframes: [0, 76, 94, 95, 110]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 64/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep18_f111-217
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 217
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.08, 0.03, 0.19, 0.19, 0.22, 0.19, 1.0]
+  Failed regions: []
+  Successful interval: 87-106
+  Keyframes: [6, 87, 104, 106]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 65/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep18_f111-229
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 229
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.05, 0.1, 0.29, 0.29, 0.24, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 82-102
+  Keyframes: [2, 82, 102, 103, 118]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 66/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep19_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.15, 0.15, 0.05, 0.3, 0.0, 0.3, 0.85, 1.0]
+  Failed regions: [[58, 89]]
+  Successful interval: 67-120
+  Keyframes: [0, 67, 77, 120]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 67/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep19_f121-220
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 220
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.06, 0.0, 0.11, 0.25, 0.33, 1.0, 0.97]
+  Failed regions: []
+  Successful interval: 30-86
+  Keyframes: [0, 30, 59, 86, 99]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 68/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep19_f221-270
+  Subtask: put down the container
+  Frames: 221 - 270
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.25, 0.0, 0.08, 0.0, 0.0, 0.25, 1.0, 0.58]
+  Failed regions: [[5, 17]]
+  Successful interval: 28-42
+  Keyframes: [0, 28, 42, 43, 49]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 69/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep19_f271-368
+  Subtask: pick up the container that hides the red cube
+  Frames: 271 - 368
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.35, 0.15, 0.19, 0.5, 0.23, 0.04, 1.0]
+  Failed regions: [[21, 59], [59, 97]]
+  Successful interval: 80-97
+  Keyframes: [2, 80, 97]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 70/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep19_f271-374
+  Subtask: pick up the container that hides the red cube
+  Frames: 271 - 374
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.03, 0.1, 0.03, 0.17, 0.24, 0.0, 0.03, 1.0]
+  Failed regions: []
+  Successful interval: 71-103
+  Keyframes: [3, 71, 97, 103]
+  Success detected: True
+  Confidence: 0.96
+
+--- Segment 71/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep20_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.02, 0.0, 0.17, 0.17, 0.12, 0.0, 0.68, 1.0]
+  Failed regions: []
+  Successful interval: 76-109
+  Keyframes: [0, 76, 98, 109]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 72/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep20_f110-232
+  Subtask: pick up the container that hides the green cube
+  Frames: 110 - 232
+============================================================
+  Loaded 123 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.12, 0.67, 0.48, 0.3, 0.33, 0.42, 1.0]
+  Failed regions: [[43, 90]]
+  Successful interval: 68-122
+  Keyframes: [0, 68, 84, 122]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 73/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep20_f110-243
+  Subtask: pick up the container that hides the green cube
+  Frames: 110 - 243
+============================================================
+  Loaded 134 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.1, 0.9, 0.72, 0.45, 0.28, 0.66, 0.0, 1.0]
+  Failed regions: [[30, 98], [98, 133]]
+  Successful interval: 109-133
+  Keyframes: [26, 109, 123, 133]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 74/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep21_f0-113
+  Subtask: press the button
+  Frames: 0 - 113
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.09, 0.0, 0.38, 0.76, 0.74, 0.82, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 64-113
+  Keyframes: [0, 64, 72, 113]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 75/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep21_f114-207
+  Subtask: pick up the container that hides the green cube
+  Frames: 114 - 207
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.11, 0.05, 0.34, 0.29, 0.21, 0.0, 1.0]
+  Failed regions: [[45, 93]]
+  Successful interval: 77-93
+  Keyframes: [1, 77, 93]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 76/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep21_f114-214
+  Subtask: pick up the container that hides the green cube
+  Frames: 114 - 214
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.03, 0.15, 0.33, 0.15, 0.24, 0.12, 1.0]
+  Failed regions: [[48, 74]]
+  Successful interval: 82-100
+  Keyframes: [3, 82, 92, 100]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 77/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep22_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.0, 0.57, 0.24, 0.41, 0.05, 1.0, 0.95]
+  Failed regions: [[42, 73], [73, 103]]
+  Successful interval: 82-103
+  Keyframes: [0, 82, 103, 104, 119]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 78/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep22_f120-224
+  Subtask: pick up the container that hides the red cube
+  Frames: 120 - 224
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.08, 0.28, 0.6, 0.16, 0.28, 0.64, 1.0]
+  Failed regions: [[50, 77]]
+  Successful interval: 58-104
+  Keyframes: [8, 58, 102, 104]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 79/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep22_f120-233
+  Subtask: pick up the container that hides the red cube
+  Frames: 120 - 233
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.24, 0.29, 0.24, 0.34, 0.55, 0.5, 1.0]
+  Failed regions: []
+  Successful interval: 93-113
+  Keyframes: [7, 93, 102, 113]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 80/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep23_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.12, 0.0, 0.28, 0.53, 0.59, 0.53, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 81-101
+  Keyframes: [0, 81, 101, 102, 116]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 81/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep23_f117-218
+  Subtask: pick up the container that hides the blue cube
+  Frames: 117 - 218
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.05, 0.18, 0.0, 0.18, 0.16, 0.47, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 57-101
+  Keyframes: [8, 57, 92, 101]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 82/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep23_f219-265
+  Subtask: put down the container
+  Frames: 219 - 265
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.76, 0.62, 0.29, 0.14, 0.1, 0.52, 0.0, 1.0]
+  Failed regions: [[4, 34], [34, 46]]
+  Successful interval: 38-46
+  Keyframes: [0, 38, 39, 46]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 83/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep23_f266-361
+  Subtask: pick up the container that hides the red cube
+  Frames: 266 - 361
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.08, 0.26, 0.5, 0.46, 0.32, 0.5, 1.0]
+  Failed regions: [[45, 82]]
+  Successful interval: 66-95
+  Keyframes: [14, 66, 94, 95]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 84/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep23_f266-372
+  Subtask: pick up the container that hides the red cube
+  Frames: 266 - 372
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.14, 0.14, 0.5, 0.3, 0.16, 0.91, 1.0]
+  Failed regions: [[51, 92]]
+  Successful interval: 73-106
+  Keyframes: [19, 73, 94, 106]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 85/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep24_f0-113
+  Subtask: press the button
+  Frames: 0 - 113
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.28, 0.2, 0.85, 1.0, 0.82, 0.0, 0.68, 0.82]
+  Failed regions: [[54, 98]]
+  Successful interval: 78-113
+  Keyframes: [2, 78, 100, 113]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 86/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep24_f114-216
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 216
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.21, 0.39, 0.55, 0.15, 0.39, 0.36, 1.0]
+  Failed regions: [[49, 75]]
+  Successful interval: 83-102
+  Keyframes: [10, 83, 102]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 87/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep24_f114-227
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 227
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.12, 0.29, 0.54, 0.58, 0.33, 0.46, 0.0, 1.0]
+  Failed regions: [[54, 83], [83, 113]]
+  Successful interval: 93-113
+  Keyframes: [0, 93, 103, 113]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 88/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep25_f0-112
+  Subtask: press the button
+  Frames: 0 - 112
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.06, 0.06, 0.0, 0.52, 0.26, 0.03, 1.0, 0.23]
+  Failed regions: [[54, 97]]
+  Successful interval: 78-97
+  Keyframes: [0, 78, 97, 98, 112]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 89/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep25_f113-211
+  Subtask: pick up the container that hides the red cube
+  Frames: 113 - 211
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.03, 0.09, 0.24, 0.33, 0.3, 0.27, 1.0]
+  Failed regions: []
+  Successful interval: 81-98
+  Keyframes: [1, 81, 96, 98]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 90/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep25_f113-220
+  Subtask: pick up the container that hides the red cube
+  Frames: 113 - 220
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.06, 0.09, 0.2, 0.37, 0.54, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 5-107
+  Keyframes: [3, 5, 96, 107]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 91/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep26_f0-122
+  Subtask: press the button
+  Frames: 0 - 122
+============================================================
+  Loaded 123 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.13, 0.0, 0.48, 0.42, 0.77, 0.35, 1.0, 0.48]
+  Failed regions: [[74, 106]]
+  Successful interval: 84-106
+  Keyframes: [3, 84, 106, 107, 122]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 92/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep26_f123-226
+  Subtask: pick up the container that hides the red cube
+  Frames: 123 - 226
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.11, 0.24, 0.29, 0.13, 0.26, 0.45, 1.0]
+  Failed regions: [[49, 76]]
+  Successful interval: 58-103
+  Keyframes: [0, 58, 103]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 93/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep26_f123-234
+  Subtask: pick up the container that hides the red cube
+  Frames: 123 - 234
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.21, 0.13, 0.31, 0.21, 0.49, 0.36, 1.0]
+  Failed regions: [[53, 82], [82, 111]]
+  Successful interval: 91-111
+  Keyframes: [0, 91, 103, 111]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 94/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep27_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.25, 0.22, 0.0, 0.5, 0.36, 0.56, 0.83, 1.0]
+  Failed regions: [[11, 53], [53, 81]]
+  Successful interval: 62-110
+  Keyframes: [3, 62, 70, 110]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 95/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep27_f111-202
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 202
+============================================================
+  Loaded 92 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.11, 0.26, 0.34, 0.71, 0.31, 1.0, 0.97]
+  Failed regions: [[55, 79]]
+  Successful interval: 63-79
+  Keyframes: [1, 63, 79, 80, 91]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 96/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep27_f203-253
+  Subtask: put down the container
+  Frames: 203 - 253
+============================================================
+  Loaded 51 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.18, 0.64, 0.36, 0.64, 0.27, 0.0, 1.0, 0.09]
+  Failed regions: [[11, 24], [24, 43]]
+  Successful interval: 35-43
+  Keyframes: [0, 35, 43, 44, 50]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 97/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep27_f254-353
+  Subtask: pick up the container that hides the red cube
+  Frames: 254 - 353
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.03, 0.13, 0.03, 0.39, 0.13, 0.13, 0.0, 1.0]
+  Failed regions: [[48, 73]]
+  Successful interval: 81-99
+  Keyframes: [1, 81, 99]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 98/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep27_f254-359
+  Subtask: pick up the container that hides the red cube
+  Frames: 254 - 359
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.23, 0.23, 0.69, 0.38, 0.62, 0.0, 1.0]
+  Failed regions: [[50, 77], [77, 105]]
+  Successful interval: 86-105
+  Keyframes: [1, 86, 99, 105]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 99/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep28_f0-124
+  Subtask: press the button
+  Frames: 0 - 124
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.07, 0.13, 0.47, 0.4, 1.0, 0.13, 0.0, 0.6]
+  Failed regions: []
+  Successful interval: 54-76
+  Keyframes: [0, 54, 75, 76, 122]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 100/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep28_f125-235
+  Subtask: pick up the container that hides the red cube
+  Frames: 125 - 235
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.29, 0.31, 0.57, 0.29, 0.03, 0.11, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-110
+  Keyframes: [0, 76, 82, 110]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 101/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep28_f125-241
+  Subtask: pick up the container that hides the red cube
+  Frames: 125 - 241
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.26, 0.26, 0.41, 0.26, 0.33, 0.22, 1.0]
+  Failed regions: [[56, 86], [86, 116]]
+  Successful interval: 96-116
+  Keyframes: [0, 96, 109, 116]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 102/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep29_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.0, 0.62, 0.38, 0.12, 0.5, 0.35, 1.0]
+  Failed regions: [[41, 86], [86, 116]]
+  Successful interval: 96-116
+  Keyframes: [0, 96, 104, 116]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 103/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep29_f117-198
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 198
+============================================================
+  Loaded 82 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.03, 0.14, 0.11, 0.31, 0.31, 0.11, 1.0]
+  Failed regions: [[60, 81]]
+  Successful interval: 66-81
+  Keyframes: [2, 66, 78, 81]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 104/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep29_f117-206
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 206
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.04, 0.16, 0.27, 0.33, 0.31, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 62-89
+  Keyframes: [2, 62, 77, 89]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 105/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep30_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.0, 0.17, 0.75, 0.58, 1.0, 0.42, 1.0]
+  Failed regions: [[56, 86], [86, 116]]
+  Successful interval: 96-116
+  Keyframes: [0, 96, 103, 116]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 106/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep30_f117-204
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 204
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.08, 0.13, 0.1, 0.15, 0.46, 0.03, 1.0]
+  Failed regions: [[64, 87]]
+  Successful interval: 71-87
+  Keyframes: [0, 71, 84, 87]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 107/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep30_f117-212
+  Subtask: pick up the container that hides the green cube
+  Frames: 117 - 212
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.02, 0.05, 0.0, 0.12, 0.29, 0.27, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 66-95
+  Keyframes: [0, 66, 84, 95]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 108/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep31_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.08, 0.0, 0.19, 0.43, 0.49, 0.62, 1.0, 0.84]
+  Failed regions: []
+  Successful interval: 20-100
+  Keyframes: [1, 20, 32, 100, 115]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 109/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep31_f116-220
+  Subtask: pick up the container that hides the blue cube
+  Frames: 116 - 220
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.05, 0.22, 0.24, 0.43, 0.35, 1.0, 0.95]
+  Failed regions: [[63, 90]]
+  Successful interval: 72-90
+  Keyframes: [0, 72, 90, 91, 104]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 110/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep31_f221-268
+  Subtask: put down the container
+  Frames: 221 - 268
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.36, 0.64, 0.18, 0.27, 0.18, 0.09, 0.0, 1.0]
+  Failed regions: [[10, 22], [22, 47]]
+  Successful interval: 38-47
+  Keyframes: [0, 38, 39, 47]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 111/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep31_f269-345
+  Subtask: pick up the container that hides the red cube
+  Frames: 269 - 345
+============================================================
+  Loaded 77 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.25, 0.53, 0.17, 1.0, 0.58, 0.36, 0.94]
+  Failed regions: [[26, 46], [46, 76]]
+  Successful interval: 63-76
+  Keyframes: [0, 63, 75, 76]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 112/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep31_f269-352
+  Subtask: pick up the container that hides the red cube
+  Frames: 269 - 352
+============================================================
+  Loaded 84 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.06, 0.04, 0.33, 0.58, 0.4, 1.0, 0.73]
+  Failed regions: [[50, 72]]
+  Successful interval: 57-72
+  Keyframes: [2, 57, 72, 73, 83]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 113/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep32_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.0, 0.53, 0.38, 0.88, 0.85, 1.0, 0.95]
+  Failed regions: [[42, 73]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 114/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep32_f121-226
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 226
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.05, 0.28, 0.57, 0.25, 0.25, 0.33, 1.0]
+  Failed regions: [[50, 77], [50, 91]]
+  Successful interval: 72-105
+  Keyframes: [0, 72, 105]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 115/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep32_f121-236
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 236
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.29, 0.36, 0.64, 0.39, 0.46, 0.18, 1.0]
+  Failed regions: [[55, 85], [85, 115]]
+  Successful interval: 95-115
+  Keyframes: [0, 95, 105, 115]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 116/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep33_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.11, 1.0, 0.21, 0.57, 0.14, 0.43, 0.54]
+  Failed regions: []
+  Successful interval: 6-42
+  Keyframes: [0, 6, 32, 42, 83]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 117/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep33_f121-220
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 220
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.31, 0.2, 0.46, 0.6, 0.31, 0.37, 1.0]
+  Failed regions: [[22, 60], [60, 86]]
+  Successful interval: 68-99
+  Keyframes: [0, 68, 98, 99]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 118/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep33_f121-227
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 227
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.28, 0.24, 0.55, 0.52, 0.72, 0.52, 1.0]
+  Failed regions: [[78, 106]]
+  Successful interval: 87-106
+  Keyframes: [0, 87, 98, 106]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 119/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep34_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.06, 0.0, 0.11, 0.53, 0.33, 0.03, 0.89, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-110
+  Keyframes: [0, 76, 99, 110]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 120/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep34_f111-217
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 217
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.31, 0.19, 0.54, 0.5, 0.19, 0.54, 1.0]
+  Failed regions: [[23, 51], [51, 92]]
+  Successful interval: 73-106
+  Keyframes: [0, 73, 105, 106]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 121/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep34_f111-223
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 223
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.15, 0.12, 0.18, 0.18, 0.33, 0.45, 1.0]
+  Failed regions: []
+  Successful interval: 63-112
+  Keyframes: [0, 63, 105, 112]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 122/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep35_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.05, 0.0, 0.11, 0.49, 0.97, 0.54, 1.0, 0.86]
+  Failed regions: [[73, 103]]
+  Successful interval: 82-103
+  Keyframes: [0, 82, 103, 104, 119]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 123/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep35_f120-245
+  Subtask: pick up the container that hides the green cube
+  Frames: 120 - 245
+============================================================
+  Loaded 126 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.02, 0.2, 0.27, 0.32, 0.0, 0.12, 0.0, 1.0]
+  Failed regions: [[60, 92]]
+  Successful interval: 102-125
+  Keyframes: [11, 102, 114, 125]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 124/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep35_f246-293
+  Subtask: put down the container
+  Frames: 246 - 293
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.3s
+  Rewards: [1.0, 0.75, 0.56, 0.19, 0.0, 0.0, 0.31, 0.62]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [0, 2, 4, 5, 22]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 125/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep35_f294-381
+  Subtask: pick up the container that hides the red cube
+  Frames: 294 - 381
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.02, 0.15, 0.21, 0.15, 0.15, 0.13, 1.0]
+  Failed regions: []
+  Successful interval: 71-87
+  Keyframes: [0, 71, 85, 87]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 126/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep35_f294-393
+  Subtask: pick up the container that hides the red cube
+  Frames: 294 - 393
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.15, 0.11, 0.2, 0.3, 0.17, 1.0, 0.89]
+  Failed regions: [[60, 86]]
+  Successful interval: 68-86
+  Keyframes: [0, 68, 85, 86, 99]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 127/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep36_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.21, 0.13, 0.55, 0.42, 0.26, 0.0, 0.74, 1.0]
+  Failed regions: [[39, 95]]
+  Successful interval: 76-110
+  Keyframes: [0, 76, 99, 110]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 128/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep36_f111-214
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 214
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.06, 0.19, 0.16, 0.26, 0.35, 0.52, 1.0]
+  Failed regions: []
+  Successful interval: 44-103
+  Keyframes: [12, 44, 99, 103]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 129/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep36_f111-224
+  Subtask: pick up the container that hides the blue cube
+  Frames: 111 - 224
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.06, 0.03, 0.23, 0.29, 0.69, 1.0, 0.6]
+  Failed regions: []
+  Successful interval: 35-98
+  Keyframes: [22, 35, 98, 99, 113]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 130/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep37_f0-123
+  Subtask: press the button
+  Frames: 0 - 123
+============================================================
+  Loaded 124 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.1, 0.0, 0.62, 0.59, 1.0, 0.79, 0.9, 0.85]
+  Failed regions: [[75, 107]]
+  Successful interval: 85-107
+  Keyframes: [1, 85, 106, 107, 123]
+  Success detected: True
+  Confidence: 0.46
+
+--- Segment 131/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep37_f124-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 124 - 216
+============================================================
+  Loaded 93 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.05, 0.0, 0.32, 0.22, 0.59, 0.41, 0.32, 1.0]
+  Failed regions: [[32, 56], [56, 92]]
+  Successful interval: 76-92
+  Keyframes: [0, 76, 90, 92]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 132/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep37_f124-226
+  Subtask: pick up the container that hides the red cube
+  Frames: 124 - 226
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.0, 0.24, 0.27, 0.54, 0.27, 1.0, 0.95]
+  Failed regions: [[62, 88]]
+  Successful interval: 70-88
+  Keyframes: [0, 70, 88, 89, 102]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 133/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep38_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.62, 0.51, 0.67, 0.67, 0.46, 0.0, 1.0, 0.97]
+  Failed regions: [[11, 39], [53, 96]]
+  Successful interval: 77-96
+  Keyframes: [0, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 134/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep38_f112-225
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 225
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.05, 0.08, 0.3, 0.3, 0.68, 0.54, 1.0]
+  Failed regions: [[83, 113]]
+  Successful interval: 93-113
+  Keyframes: [22, 93, 108, 113]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 135/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep38_f112-236
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 236
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.05, 0.24, 0.22, 0.38, 0.65, 1.0, 0.86]
+  Failed regions: []
+  Successful interval: 54-108
+  Keyframes: [25, 54, 108, 109, 124]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 136/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep39_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.12, 0.0, 0.28, 0.56, 0.09, 0.09, 0.69, 1.0]
+  Failed regions: [[53, 81], [53, 95]]
+  Successful interval: 76-109
+  Keyframes: [0, 76, 98, 109]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 137/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep39_f110-216
+  Subtask: pick up the container that hides the green cube
+  Frames: 110 - 216
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.23, 0.19, 0.26, 0.37, 0.33, 0.98, 1.0]
+  Failed regions: []
+  Successful interval: 73-106
+  Keyframes: [8, 73, 94, 106]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 138/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep39_f217-268
+  Subtask: put down the container
+  Frames: 217 - 268
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.57, 1.0, 0.71, 0.07, 0.71, 0.0, 0.29, 0.57]
+  Failed regions: []
+  Successful interval: 3-11
+  Keyframes: [0, 3, 11, 12, 36]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 139/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep39_f269-355
+  Subtask: pick up the container that hides the blue cube
+  Frames: 269 - 355
+============================================================
+  Loaded 87 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.3, 0.42, 0.39, 0.61, 0.64, 0.18, 1.0]
+  Failed regions: [[63, 86]]
+  Successful interval: 70-86
+  Keyframes: [3, 70, 84, 86]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 140/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep39_f269-367
+  Subtask: pick up the container that hides the blue cube
+  Frames: 269 - 367
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.11, 0.22, 0.57, 0.81, 0.0, 0.95, 1.0]
+  Failed regions: [[59, 85]]
+  Successful interval: 68-98
+  Keyframes: [3, 68, 84, 98]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 141/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep40_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.02, 0.0, 0.53, 0.71, 0.78, 0.58, 1.0, 0.73]
+  Failed regions: [[74, 105]]
+  Successful interval: 83-105
+  Keyframes: [0, 83, 105, 106, 121]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 142/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep40_f122-230
+  Subtask: pick up the container that hides the blue cube
+  Frames: 122 - 230
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.11, 0.17, 0.54, 0.31, 0.49, 0.46, 1.0]
+  Failed regions: [[52, 80]]
+  Successful interval: 89-108
+  Keyframes: [0, 89, 106, 108]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 143/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep40_f122-239
+  Subtask: pick up the container that hides the blue cube
+  Frames: 122 - 239
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.0, 0.15, 0.3, 0.26, 0.48, 0.44, 1.0]
+  Failed regions: []
+  Successful interval: 96-117
+  Keyframes: [0, 96, 107, 117]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 144/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep41_f0-113
+  Subtask: press the button
+  Frames: 0 - 113
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.17, 0.23, 0.4, 1.0, 0.74, 0.0, 0.69, 0.86]
+  Failed regions: [[54, 98]]
+  Successful interval: 78-113
+  Keyframes: [3, 78, 99, 113]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 145/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep41_f114-211
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 211
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.13, 0.39, 0.61, 0.61, 0.04, 0.09, 0.0, 1.0]
+  Failed regions: [[46, 71]]
+  Successful interval: 80-97
+  Keyframes: [10, 80, 97]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 146/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep41_f114-220
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 220
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.23, 0.4, 0.37, 0.07, 0.03, 0.2, 1.0]
+  Failed regions: [[37, 92]]
+  Successful interval: 73-106
+  Keyframes: [10, 73, 97, 106]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 147/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep42_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.17, 0.22, 0.25, 0.33, 0.0, 0.14, 0.94, 1.0]
+  Failed regions: [[53, 82]]
+  Successful interval: 63-111
+  Keyframes: [0, 63, 69, 111]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 148/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep42_f112-205
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 205
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.0, 0.25, 0.25, 0.53, 0.47, 0.58, 1.0]
+  Failed regions: []
+  Successful interval: 65-93
+  Keyframes: [3, 65, 91, 93]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 149/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep42_f112-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 216
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.02, 0.18, 0.25, 0.48, 0.45, 1.0, 0.91]
+  Failed regions: []
+  Successful interval: 72-90
+  Keyframes: [2, 72, 90, 91, 104]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 150/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep43_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.12, 0.16, 0.47, 0.0, 0.31, 0.03, 0.91, 1.0]
+  Failed regions: [[42, 73], [73, 103]]
+  Successful interval: 82-119
+  Keyframes: [0, 82, 106, 119]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 151/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep43_f120-259
+  Subtask: pick up the container that hides the blue cube
+  Frames: 120 - 259
+============================================================
+  Loaded 140 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.16, 0.45, 0.19, 0.06, 0.03, 0.13, 1.0]
+  Failed regions: [[49, 121]]
+  Successful interval: 96-139
+  Keyframes: [0, 96, 129, 139]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 152/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep43_f260-306
+  Subtask: put down the container
+  Frames: 260 - 306
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.86, 1.0, 0.43, 0.0, 0.57, 0.43, 0.43, 0.86]
+  Failed regions: [[10, 28], [28, 40], [28, 46]]
+  Successful interval: 38-46
+  Keyframes: [0, 38, 39, 46]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 153/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep43_f307-416
+  Subtask: pick up the container that hides the red cube
+  Frames: 307 - 416
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.12, 0.19, 0.23, 0.12, 0.58, 0.44, 1.0]
+  Failed regions: [[81, 109]]
+  Successful interval: 90-109
+  Keyframes: [9, 90, 106, 109]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 154/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep43_f307-424
+  Subtask: pick up the container that hides the red cube
+  Frames: 307 - 424
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.11, 0.17, 0.26, 0.04, 0.48, 0.39, 1.0]
+  Failed regions: [[56, 86], [86, 117]]
+  Successful interval: 96-117
+  Keyframes: [9, 96, 106, 117]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 155/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep44_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.61, 0.29, 0.46, 0.5, 1.0, 0.96]
+  Failed regions: [[39, 68]]
+  Successful interval: 48-96
+  Keyframes: [0, 48, 70, 96, 111]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 156/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep44_f112-205
+  Subtask: pick up the container that hides the blue cube
+  Frames: 112 - 205
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.06, 0.19, 0.39, 0.28, 0.0, 0.08, 0.33, 1.0]
+  Failed regions: [[33, 69]]
+  Successful interval: 53-93
+  Keyframes: [0, 53, 93]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 157/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep44_f112-213
+  Subtask: pick up the container that hides the blue cube
+  Frames: 112 - 213
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.09, 0.29, 0.29, 0.26, 0.0, 0.43, 0.97, 1.0]
+  Failed regions: [[36, 75]]
+  Successful interval: 57-101
+  Keyframes: [2, 57, 93, 101]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 158/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep45_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.19, 0.0, 0.28, 0.78, 0.53, 0.22, 0.81, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-110
+  Keyframes: [1, 76, 99, 110]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 159/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep45_f111-214
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 214
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.19, 0.11, 0.39, 0.19, 0.47, 0.47, 1.0]
+  Failed regions: [[49, 76]]
+  Successful interval: 84-103
+  Keyframes: [6, 84, 103]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 160/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep45_f111-223
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 223
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.19, 0.11, 0.19, 0.36, 0.47, 0.39, 1.0]
+  Failed regions: [[83, 112]]
+  Successful interval: 92-112
+  Keyframes: [6, 92, 104, 112]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 161/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep46_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.51, 0.49, 0.76, 0.76, 0.4, 0.0, 0.02, 1.0]
+  Failed regions: [[55, 99]]
+  Successful interval: 79-114
+  Keyframes: [1, 79, 100, 114]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 162/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep46_f115-219
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 219
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.17, 0.46, 0.67, 0.5, 0.0, 0.25, 0.38, 1.0]
+  Failed regions: [[36, 77]]
+  Successful interval: 58-104
+  Keyframes: [0, 58, 104]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 163/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep46_f115-225
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 225
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.48, 0.48, 0.32, 0.08, 0.36, 0.2, 1.0]
+  Failed regions: [[39, 81], [81, 110]]
+  Successful interval: 90-110
+  Keyframes: [0, 90, 104, 110]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 164/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep47_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.09, 0.09, 0.14, 0.0, 1.0, 0.23, 0.77, 0.59]
+  Failed regions: []
+  Successful interval: 52-74
+  Keyframes: [1, 52, 74, 75, 120]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 165/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep47_f122-238
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 238
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.29, 0.42, 0.56, 0.44, 0.36, 0.24, 0.0, 1.0]
+  Failed regions: [[41, 116]]
+  Successful interval: 96-116
+  Keyframes: [0, 96, 110, 116]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 166/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep47_f239-279
+  Subtask: put down the container
+  Frames: 239 - 279
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.82, 1.0, 0.76, 0.53, 0.0, 0.24, 0.59, 0.76]
+  Failed regions: []
+  Successful interval: 2-9
+  Keyframes: [0, 2, 9, 10, 20]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 167/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep47_f280-389
+  Subtask: pick up the container that hides the red cube
+  Frames: 280 - 389
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.09, 0.07, 0.36, 0.33, 0.26, 0.38, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-109
+  Keyframes: [3, 76, 107, 109]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 168/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep47_f280-403
+  Subtask: pick up the container that hides the red cube
+  Frames: 280 - 403
+============================================================
+  Loaded 124 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.09, 0.19, 0.51, 0.64, 0.6, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 85-107
+  Keyframes: [2, 85, 107, 108, 123]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 169/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep48_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.03, 0.69, 0.76, 0.52, 0.45, 1.0, 0.93]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [1, 76, 95, 96, 110]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 170/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep48_f111-212
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 212
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.03, 0.0, 0.5, 0.56, 0.28, 0.12, 0.03, 1.0]
+  Failed regions: [[49, 101]]
+  Successful interval: 83-101
+  Keyframes: [0, 83, 101]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 171/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep48_f111-222
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 222
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.1, 0.17, 0.2, 0.44, 0.12, 0.2, 0.0, 1.0]
+  Failed regions: [[53, 82]]
+  Successful interval: 91-111
+  Keyframes: [0, 91, 102, 111]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 172/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep49_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.03, 0.33, 0.55, 0.52, 0.76, 1.0, 0.79]
+  Failed regions: []
+  Successful interval: 68-105
+  Keyframes: [0, 68, 78, 105, 121]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 173/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep49_f122-218
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 218
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.03, 0.0, 0.23, 0.86, 0.46, 0.23, 0.29, 1.0]
+  Failed regions: [[46, 83]]
+  Successful interval: 67-96
+  Keyframes: [0, 67, 95, 96]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 174/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep49_f122-225
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 225
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.15, 0.36, 0.94, 0.33, 0.18, 0.39, 1.0]
+  Failed regions: [[49, 89]]
+  Successful interval: 71-103
+  Keyframes: [0, 71, 95, 103]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 175/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep50_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.29, 0.04, 0.38, 0.42, 0.54, 0.0, 0.79, 1.0]
+  Failed regions: [[11, 70], [70, 100]]
+  Successful interval: 80-115
+  Keyframes: [0, 80, 103, 115]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 176/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep50_f116-213
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 213
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.03, 0.14, 0.3, 0.35, 0.3, 0.38, 1.0]
+  Failed regions: []
+  Successful interval: 67-97
+  Keyframes: [0, 67, 96, 97]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 177/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep50_f116-220
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 220
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.16, 0.22, 0.3, 0.43, 0.3, 0.32, 1.0]
+  Failed regions: [[63, 90]]
+  Successful interval: 72-104
+  Keyframes: [0, 72, 96, 104]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 178/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep51_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.23, 0.3, 0.47, 0.23, 0.17, 0.0, 1.0, 0.88]
+  Failed regions: [[42, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 179/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep51_f121-224
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 224
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.09, 0.14, 0.19, 0.19, 0.33, 1.0, 0.65]
+  Failed regions: []
+  Successful interval: 58-89
+  Keyframes: [0, 58, 65, 89, 103]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 180/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep51_f225-273
+  Subtask: put down the container
+  Frames: 225 - 273
+============================================================
+  Loaded 49 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.42, 0.63, 0.21, 0.47, 0.95, 0.95, 1.0]
+  Failed regions: [[16, 35]]
+  Successful interval: 39-48
+  Keyframes: [0, 39, 40, 48]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 181/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep51_f274-368
+  Subtask: pick up the container that hides the green cube
+  Frames: 274 - 368
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.11, 0.32, 0.3, 0.16, 0.49, 0.43, 1.0]
+  Failed regions: [[33, 69]]
+  Successful interval: 77-94
+  Keyframes: [1, 77, 92, 94]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 182/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep51_f274-375
+  Subtask: pick up the container that hides the green cube
+  Frames: 274 - 375
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.07, 0.24, 0.21, 0.38, 0.29, 1.0, 0.93]
+  Failed regions: [[62, 88]]
+  Successful interval: 70-88
+  Keyframes: [1, 70, 88, 89, 101]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 183/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep52_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.03, 0.0, 0.47, 0.76, 0.26, 0.12, 0.71, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-109
+  Keyframes: [0, 76, 97, 109]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 184/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep52_f110-201
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 201
+============================================================
+  Loaded 92 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.17, 0.21, 0.38, 0.29, 0.33, 0.04, 1.0]
+  Failed regions: [[44, 67], [67, 91]]
+  Successful interval: 75-91
+  Keyframes: [6, 75, 91]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 185/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep52_f110-208
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 208
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.05, 0.22, 0.22, 0.22, 0.19, 0.41, 0.0, 1.0]
+  Failed regions: [[72, 98]]
+  Successful interval: 81-98
+  Keyframes: [6, 81, 90, 98]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 186/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep53_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.05, 0.23, 0.36, 0.59, 0.05, 1.0, 0.59]
+  Failed regions: [[73, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 187/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep53_f121-214
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 214
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.09, 0.16, 0.14, 0.39, 0.32, 0.3, 1.0]
+  Failed regions: [[57, 93]]
+  Successful interval: 77-93
+  Keyframes: [7, 77, 90, 93]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 188/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep53_f121-223
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 223
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.09, 0.13, 0.11, 0.24, 0.18, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 70-88
+  Keyframes: [8, 70, 88, 89, 102]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 189/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep54_f0-118
+  Subtask: press the button
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.03, 0.33, 0.39, 0.69, 0.08, 1.0, 0.83]
+  Failed regions: [[72, 102]]
+  Successful interval: 82-102
+  Keyframes: [0, 82, 102, 103, 118]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 190/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep54_f119-216
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 216
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.15, 0.18, 0.15, 0.24, 0.27, 0.0, 0.0, 1.0]
+  Failed regions: [[59, 84], [59, 97]]
+  Successful interval: 80-97
+  Keyframes: [3, 80, 97]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 191/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep54_f119-225
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 225
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.1, 0.07, 0.21, 0.21, 0.0, 0.0, 0.4, 1.0]
+  Failed regions: []
+  Successful interval: 73-106
+  Keyframes: [0, 73, 97, 106]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 192/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep55_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.09, 0.11, 0.4, 0.66, 0.23, 0.0, 1.0, 0.91]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [1, 76, 95, 96, 109]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 193/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep55_f110-218
+  Subtask: pick up the container that hides the red cube
+  Frames: 110 - 218
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.3, 0.43, 0.57, 0.33, 0.83, 0.33, 1.0]
+  Failed regions: [[52, 80], [80, 108]]
+  Successful interval: 89-108
+  Keyframes: [0, 89, 102, 108]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 194/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep55_f219-259
+  Subtask: put down the container
+  Frames: 219 - 259
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.0, 0.32, 0.63, 0.95, 0.53, 1.0, 0.42]
+  Failed regions: [[24, 34]]
+  Successful interval: 27-34
+  Keyframes: [2, 27, 34, 35, 40]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 195/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep55_f260-354
+  Subtask: pick up the container that hides the blue cube
+  Frames: 260 - 354
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.22, 0.0, 0.16, 0.46, 0.32, 0.28, 0.18, 1.0]
+  Failed regions: [[45, 94]]
+  Successful interval: 77-94
+  Keyframes: [6, 77, 93, 94]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 196/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep55_f260-362
+  Subtask: pick up the container that hides the blue cube
+  Frames: 260 - 362
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.1, 0.03, 0.15, 0.23, 0.07, 0.0, 0.23, 1.0]
+  Failed regions: []
+  Successful interval: 70-102
+  Keyframes: [6, 70, 93, 102]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 197/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep56_f0-113
+  Subtask: press the button
+  Frames: 0 - 113
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.07, 0.0, 0.61, 0.57, 0.29, 0.5, 0.43, 1.0]
+  Failed regions: [[40, 83]]
+  Successful interval: 93-113
+  Keyframes: [0, 93, 100, 113]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 198/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep56_f114-215
+  Subtask: pick up the container that hides the green cube
+  Frames: 114 - 215
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.21, 0.23, 0.36, 0.31, 0.23, 0.41, 1.0]
+  Failed regions: [[49, 88]]
+  Successful interval: 70-101
+  Keyframes: [10, 70, 101]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 199/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep56_f114-221
+  Subtask: pick up the container that hides the green cube
+  Frames: 114 - 221
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.22, 0.22, 0.3, 0.11, 0.11, 0.43, 1.0]
+  Failed regions: [[51, 79], [51, 93]]
+  Successful interval: 74-107
+  Keyframes: [10, 74, 101, 107]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 200/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep57_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.06, 0.0, 0.55, 0.55, 0.65, 0.71, 1.0, 0.81]
+  Failed regions: []
+  Successful interval: 52-104
+  Keyframes: [0, 52, 78, 104, 120]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 201/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep57_f121-222
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 222
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.22, 0.34, 0.44, 0.03, 0.28, 0.34, 1.0]
+  Failed regions: [[49, 75]]
+  Successful interval: 57-101
+  Keyframes: [0, 57, 98, 101]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 202/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep57_f121-229
+  Subtask: pick up the container that hides the blue cube
+  Frames: 121 - 229
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.21, 0.35, 0.47, 0.29, 0.29, 0.24, 1.0]
+  Failed regions: [[52, 80]]
+  Successful interval: 89-108
+  Keyframes: [0, 89, 98, 108]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 203/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep58_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.39, 0.47, 0.74, 1.0, 0.13, 0.0, 0.53, 0.84]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-110
+  Keyframes: [1, 76, 95, 110]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 204/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep58_f111-200
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 200
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.05, 0.0, 0.08, 0.22, 0.38, 0.08, 1.0]
+  Failed regions: [[66, 89]]
+  Successful interval: 73-89
+  Keyframes: [4, 73, 89]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 205/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep58_f111-207
+  Subtask: pick up the container that hides the green cube
+  Frames: 111 - 207
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.11, 0.21, 0.26, 0.18, 0.24, 0.29, 0.0, 1.0]
+  Failed regions: [[71, 96]]
+  Successful interval: 79-96
+  Keyframes: [4, 79, 88, 96]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 206/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep59_f0-123
+  Subtask: press the button
+  Frames: 0 - 123
+============================================================
+  Loaded 124 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.05, 0.03, 0.13, 0.0, 0.39, 0.55, 1.0, 0.61]
+  Failed regions: []
+  Successful interval: 53-107
+  Keyframes: [1, 53, 80, 107, 123]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 207/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep59_f124-222
+  Subtask: pick up the container that hides the blue cube
+  Frames: 124 - 222
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.08, 0.31, 0.36, 0.22, 0.31, 0.19, 1.0]
+  Failed regions: [[47, 72], [72, 98]]
+  Successful interval: 81-98
+  Keyframes: [0, 81, 90, 98]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 208/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep59_f223-270
+  Subtask: put down the container
+  Frames: 223 - 270
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.09, 0.0, 0.41, 0.12, 0.16, 0.09, 0.22, 1.0]
+  Failed regions: [[16, 28]]
+  Successful interval: 32-47
+  Keyframes: [0, 32, 37, 47]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 209/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep59_f271-368
+  Subtask: pick up the container that hides the red cube
+  Frames: 271 - 368
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.02, 0.18, 0.54, 0.54, 0.54, 0.48, 1.0]
+  Failed regions: []
+  Successful interval: 80-97
+  Keyframes: [15, 80, 96, 97]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 210/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep59_f271-374
+  Subtask: pick up the container that hides the red cube
+  Frames: 271 - 374
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.12, 0.29, 0.41, 0.53, 0.49, 0.43, 1.0]
+  Failed regions: [[63, 103]]
+  Successful interval: 84-103
+  Keyframes: [15, 84, 96, 103]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 211/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep60_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.23, 0.15, 0.77, 0.46, 0.85, 0.0, 1.0, 0.92]
+  Failed regions: [[42, 73], [73, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 212/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep60_f121-211
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 211
+============================================================
+  Loaded 91 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.12, 0.2, 0.17, 0.5, 0.45, 0.2, 1.0]
+  Failed regions: [[55, 90]]
+  Successful interval: 74-90
+  Keyframes: [0, 74, 87, 90]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 213/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep60_f121-219
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 219
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.02, 0.23, 0.21, 0.47, 0.4, 0.65, 1.0]
+  Failed regions: []
+  Successful interval: 68-98
+  Keyframes: [1, 68, 87, 98]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 214/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep61_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.08, 0.35, 0.46, 0.73, 0.46, 1.0, 0.54]
+  Failed regions: [[70, 100]]
+  Successful interval: 80-100
+  Keyframes: [0, 80, 100, 101, 115]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 215/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep61_f116-215
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 215
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.04, 0.12, 0.12, 0.21, 0.71, 0.46, 1.0]
+  Failed regions: [[73, 99]]
+  Successful interval: 81-99
+  Keyframes: [20, 81, 98, 99]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 216/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep61_f116-223
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 223
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.03, 0.03, 0.15, 0.3, 0.39, 1.0, 0.58]
+  Failed regions: []
+  Successful interval: 32-93
+  Keyframes: [21, 32, 67, 93, 107]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 217/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep62_f0-112
+  Subtask: press the button
+  Frames: 0 - 112
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.11, 0.0, 0.54, 0.61, 0.36, 0.21, 1.0, 0.36]
+  Failed regions: [[54, 97]]
+  Successful interval: 78-97
+  Keyframes: [1, 78, 97, 98, 112]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 218/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep62_f113-207
+  Subtask: pick up the container that hides the red cube
+  Frames: 113 - 207
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.1, 0.2, 0.5, 0.53, 0.57, 0.3, 1.0]
+  Failed regions: [[69, 94]]
+  Successful interval: 77-94
+  Keyframes: [0, 77, 94]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 219/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep62_f113-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 113 - 216
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.2, 0.31, 0.57, 0.63, 0.26, 0.6, 1.0]
+  Failed regions: [[63, 89]]
+  Successful interval: 71-103
+  Keyframes: [2, 71, 94, 103]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 220/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep63_f0-123
+  Subtask: press the button
+  Frames: 0 - 123
+============================================================
+  Loaded 124 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.0, 0.21, 0.27, 0.58, 0.45, 1.0, 0.39]
+  Failed regions: [[75, 107]]
+  Successful interval: 85-107
+  Keyframes: [1, 85, 107, 108, 123]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 221/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep63_f124-242
+  Subtask: pick up the container that hides the green cube
+  Frames: 124 - 242
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.13, 0.32, 0.45, 0.26, 0.06, 0.19, 0.0, 1.0]
+  Failed regions: [[41, 87]]
+  Successful interval: 97-118
+  Keyframes: [0, 97, 109, 118]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 222/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep63_f243-289
+  Subtask: put down the container
+  Frames: 243 - 289
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 54.8s
+  Rewards: [1.0, 0.62, 0.29, 0.19, 0.33, 0.0, 0.33, 0.57]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [0, 2, 4, 5, 28]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 223/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep63_f290-371
+  Subtask: pick up the container that hides the blue cube
+  Frames: 290 - 371
+============================================================
+  Loaded 82 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.16, 0.0, 0.2, 0.42, 0.58, 0.53, 0.42, 1.0]
+  Failed regions: [[49, 81]]
+  Successful interval: 66-81
+  Keyframes: [4, 66, 80, 81]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 224/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep63_f290-378
+  Subtask: pick up the container that hides the blue cube
+  Frames: 290 - 378
+============================================================
+  Loaded 89 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.15, 0.0, 0.34, 0.47, 0.62, 0.45, 0.91, 1.0]
+  Failed regions: [[53, 76]]
+  Successful interval: 61-88
+  Keyframes: [4, 61, 80, 88]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 225/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep64_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.07, 0.0, 0.32, 0.61, 0.57, 0.89, 1.0, 0.84]
+  Failed regions: []
+  Successful interval: 64-99
+  Keyframes: [0, 64, 74, 99, 114]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 226/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep64_f115-222
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 222
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.1, 0.55, 0.48, 0.21, 0.38, 0.48, 1.0]
+  Failed regions: [[37, 79]]
+  Successful interval: 60-107
+  Keyframes: [0, 60, 77, 107]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 227/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep64_f115-228
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 228
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.1, 0.24, 0.38, 0.24, 0.45, 0.38, 1.0]
+  Failed regions: [[54, 83]]
+  Successful interval: 93-113
+  Keyframes: [0, 93, 108, 113]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 228/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep65_f0-116
+  Subtask: press the button
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.04, 0.63, 1.0, 0.96, 0.59, 0.81, 0.93]
+  Failed regions: [[56, 101]]
+  Successful interval: 81-116
+  Keyframes: [0, 81, 103, 116]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 229/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep65_f117-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 117 - 216
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.12, 0.21, 0.48, 0.4, 0.26, 0.62, 1.0]
+  Failed regions: [[48, 86]]
+  Successful interval: 68-99
+  Keyframes: [9, 68, 98, 99]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 230/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep65_f117-222
+  Subtask: pick up the container that hides the red cube
+  Frames: 117 - 222
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.18, 0.31, 0.54, 0.26, 0.59, 0.67, 1.0]
+  Failed regions: [[50, 77]]
+  Successful interval: 59-105
+  Keyframes: [9, 59, 98, 105]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 231/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep66_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.15, 0.15, 0.18, 0.21, 0.36, 0.0, 1.0, 0.88]
+  Failed regions: [[73, 103]]
+  Successful interval: 82-103
+  Keyframes: [0, 82, 103, 104, 119]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 232/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep66_f120-226
+  Subtask: pick up the container that hides the blue cube
+  Frames: 120 - 226
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.11, 0.08, 0.32, 0.22, 0.49, 0.59, 1.0]
+  Failed regions: [[51, 78]]
+  Successful interval: 59-106
+  Keyframes: [10, 59, 104, 106]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 233/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep66_f120-234
+  Subtask: pick up the container that hides the blue cube
+  Frames: 120 - 234
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.2, 0.29, 0.43, 0.46, 0.66, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 6-99
+  Keyframes: [0, 6, 73, 99, 114]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 234/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep67_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.11, 0.0, 0.37, 0.89, 0.7, 0.22, 1.0, 0.93]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [0, 76, 95, 96, 109]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 235/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep67_f110-206
+  Subtask: pick up the container that hides the red cube
+  Frames: 110 - 206
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.14, 0.29, 0.43, 0.34, 0.23, 1.0, 0.91]
+  Failed regions: [[46, 83]]
+  Successful interval: 67-83
+  Keyframes: [0, 67, 83, 84, 96]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 236/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep67_f207-258
+  Subtask: put down the container
+  Frames: 207 - 258
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.79, 0.5, 0.71, 0.93, 0.71, 0.0, 0.5, 1.0]
+  Failed regions: [[5, 24], [24, 44]]
+  Successful interval: 35-51
+  Keyframes: [0, 35, 45, 51]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 237/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep67_f259-355
+  Subtask: pick up the container that hides the blue cube
+  Frames: 259 - 355
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.1, 0.2, 0.4, 0.45, 0.38, 0.42, 1.0]
+  Failed regions: []
+  Successful interval: 67-96
+  Keyframes: [2, 67, 94, 96]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 238/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep67_f259-365
+  Subtask: pick up the container that hides the blue cube
+  Frames: 259 - 365
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.16, 0.08, 0.37, 0.32, 0.26, 0.76, 1.0]
+  Failed regions: [[51, 92]]
+  Successful interval: 73-106
+  Keyframes: [18, 73, 94, 106]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 239/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep68_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.03, 0.0, 0.44, 0.62, 0.72, 0.56, 1.0, 0.97]
+  Failed regions: [[68, 96]]
+  Successful interval: 77-96
+  Keyframes: [0, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 240/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep68_f112-211
+  Subtask: pick up the container that hides the blue cube
+  Frames: 112 - 211
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.0, 0.07, 0.07, 0.17, 0.2, 0.15, 1.0]
+  Failed regions: []
+  Successful interval: 81-99
+  Keyframes: [0, 81, 98, 99]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 241/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep68_f112-218
+  Subtask: pick up the container that hides the blue cube
+  Frames: 112 - 218
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.13, 0.1, 0.16, 0.26, 0.39, 0.48, 1.0]
+  Failed regions: []
+  Successful interval: 32-106
+  Keyframes: [0, 32, 97, 106]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 242/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep69_f0-124
+  Subtask: press the button
+  Frames: 0 - 124
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.14, 0.0, 0.18, 0.18, 0.36, 0.54, 0.46, 1.0]
+  Failed regions: []
+  Successful interval: 102-124
+  Keyframes: [0, 102, 106, 124]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 243/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep69_f125-231
+  Subtask: pick up the container that hides the blue cube
+  Frames: 125 - 231
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.25, 0.22, 0.47, 0.28, 0.08, 0.22, 1.0]
+  Failed regions: [[51, 92]]
+  Successful interval: 73-106
+  Keyframes: [1, 73, 77, 106]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 244/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep69_f125-237
+  Subtask: pick up the container that hides the blue cube
+  Frames: 125 - 237
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.53, 0.94, 0.71, 0.65, 0.47, 0.41, 1.0]
+  Failed regions: [[39, 112]]
+  Successful interval: 92-112
+  Keyframes: [1, 92, 106, 112]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 245/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep70_f0-118
+  Subtask: press the button
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.5, 0.44, 0.81, 1.0, 0.75, 0.0, 0.75, 0.69]
+  Failed regions: []
+  Successful interval: 21-56
+  Keyframes: [0, 21, 32, 56, 91]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 246/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep70_f119-216
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 216
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.03, 0.1, 0.23, 0.3, 0.3, 0.45, 1.0]
+  Failed regions: []
+  Successful interval: 67-97
+  Keyframes: [19, 67, 93, 97]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 247/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep70_f119-223
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 223
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.1, 0.17, 0.21, 0.19, 0.45, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 58-90
+  Keyframes: [21, 58, 64, 90, 104]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 248/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep71_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.03, 0.48, 0.36, 0.76, 0.18, 1.0, 0.58]
+  Failed regions: [[42, 73], [73, 104]]
+  Successful interval: 83-104
+  Keyframes: [1, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 249/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep71_f121-220
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 220
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.04, 0.2, 0.18, 0.29, 0.24, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 68-99
+  Keyframes: [0, 68, 90, 99]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 250/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep71_f221-267
+  Subtask: put down the container
+  Frames: 221 - 267
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.23, 0.0, 0.46, 0.62, 0.38, 0.92, 0.54, 1.0]
+  Failed regions: [[22, 34], [34, 46]]
+  Successful interval: 38-46
+  Keyframes: [0, 38, 39, 46]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 251/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep71_f268-366
+  Subtask: pick up the container that hides the red cube
+  Frames: 268 - 366
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.12, 0.26, 0.24, 0.59, 0.21, 0.18, 0.0, 1.0]
+  Failed regions: [[47, 98]]
+  Successful interval: 81-98
+  Keyframes: [7, 81, 98]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 252/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep71_f268-377
+  Subtask: pick up the container that hides the red cube
+  Frames: 268 - 377
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.38, 0.06, 0.03, 0.25, 0.0, 0.09, 1.0]
+  Failed regions: [[25, 67], [67, 95]]
+  Successful interval: 76-109
+  Keyframes: [7, 76, 98, 109]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 253/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep72_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.41, 0.28, 1.0, 0.03, 0.0, 0.06, 0.62, 0.66]
+  Failed regions: [[12, 42]]
+  Successful interval: 21-42
+  Keyframes: [3, 21, 32, 42, 76]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 254/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep72_f120-212
+  Subtask: pick up the container that hides the green cube
+  Frames: 120 - 212
+============================================================
+  Loaded 93 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.02, 0.14, 0.05, 0.25, 0.02, 0.07, 1.0]
+  Failed regions: [[56, 80]]
+  Successful interval: 64-92
+  Keyframes: [0, 64, 89, 92]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 255/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep72_f120-221
+  Subtask: pick up the container that hides the green cube
+  Frames: 120 - 221
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.04, 0.08, 0.1, 0.08, 0.06, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 70-88
+  Keyframes: [0, 70, 88, 89, 101]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 256/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep73_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.09, 0.0, 0.42, 0.42, 0.7, 0.42, 1.0, 0.79]
+  Failed regions: [[73, 103]]
+  Successful interval: 82-103
+  Keyframes: [0, 82, 103, 104, 119]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 257/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep73_f120-233
+  Subtask: pick up the container that hides the red cube
+  Frames: 120 - 233
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.11, 0.22, 0.53, 0.22, 0.61, 0.44, 1.0]
+  Failed regions: [[54, 83], [83, 113]]
+  Successful interval: 93-113
+  Keyframes: [0, 93, 113]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 258/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep73_f120-239
+  Subtask: pick up the container that hides the red cube
+  Frames: 120 - 239
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.21, 0.24, 0.48, 0.15, 0.64, 0.3, 1.0]
+  Failed regions: [[57, 88], [88, 119]]
+  Successful interval: 97-119
+  Keyframes: [0, 97, 114, 119]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 259/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep74_f0-109
+  Subtask: press the button
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.13, 0.1, 0.64, 0.85, 0.28, 0.0, 0.74, 1.0]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-109
+  Keyframes: [1, 76, 97, 109]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 260/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep74_f110-198
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 198
+============================================================
+  Loaded 89 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.13, 0.24, 0.39, 0.42, 0.21, 0.39, 1.0]
+  Failed regions: [[53, 76]]
+  Successful interval: 61-88
+  Keyframes: [0, 61, 87, 88]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 261/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep74_f110-205
+  Subtask: pick up the container that hides the blue cube
+  Frames: 110 - 205
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.03, 0.0, 0.24, 0.43, 0.49, 0.24, 0.54, 1.0]
+  Failed regions: [[58, 82]]
+  Successful interval: 66-95
+  Keyframes: [1, 66, 87, 95]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 262/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep75_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.1, 0.1, 0.19, 0.48, 0.52, 0.0, 1.0, 1.0]
+  Failed regions: [[68, 96]]
+  Successful interval: 77-96
+  Keyframes: [1, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 263/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep75_f112-212
+  Subtask: pick up the container that hides the green cube
+  Frames: 112 - 212
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.18, 0.41, 0.51, 0.44, 0.36, 1.0, 1.0]
+  Failed regions: [[48, 87]]
+  Successful interval: 69-87
+  Keyframes: [6, 69, 87, 88, 100]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 264/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep75_f213-261
+  Subtask: put down the container
+  Frames: 213 - 261
+============================================================
+  Loaded 49 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.23, 0.69, 0.62, 1.0, 0.46, 0.46, 0.77]
+  Failed regions: []
+  Successful interval: 20-29
+  Keyframes: [0, 20, 21, 29, 46]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 265/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep75_f262-343
+  Subtask: pick up the container that hides the red cube
+  Frames: 262 - 343
+============================================================
+  Loaded 82 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.09, 0.0, 0.51, 0.63, 0.7, 0.88, 0.63, 1.0]
+  Failed regions: [[60, 81]]
+  Successful interval: 66-81
+  Keyframes: [10, 66, 79, 81]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 266/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep75_f262-352
+  Subtask: pick up the container that hides the red cube
+  Frames: 262 - 352
+============================================================
+  Loaded 91 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.0, 0.35, 0.63, 0.61, 0.61, 1.0, 0.98]
+  Failed regions: []
+  Successful interval: 62-78
+  Keyframes: [10, 62, 78, 79, 90]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 267/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep76_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.03, 0.0, 0.39, 0.55, 0.92, 0.47, 1.0, 0.53]
+  Failed regions: [[73, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 268/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep76_f121-227
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 227
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.0, 0.13, 0.29, 0.29, 0.24, 0.24, 1.0]
+  Failed regions: []
+  Successful interval: 87-106
+  Keyframes: [0, 87, 106]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 269/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep76_f121-233
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 233
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.23, 0.23, 0.45, 0.23, 0.26, 0.52, 1.0]
+  Failed regions: [[54, 83]]
+  Successful interval: 63-112
+  Keyframes: [4, 63, 106, 112]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 270/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep77_f0-118
+  Subtask: press the button
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.07, 0.0, 0.59, 0.69, 0.97, 0.24, 1.0, 0.76]
+  Failed regions: [[72, 102]]
+  Successful interval: 82-102
+  Keyframes: [1, 82, 102, 103, 118]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 271/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep77_f119-220
+  Subtask: pick up the container that hides the red cube
+  Frames: 119 - 220
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.03, 0.16, 0.19, 0.19, 0.45, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 57-101
+  Keyframes: [7, 57, 98, 101]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 272/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep77_f119-229
+  Subtask: pick up the container that hides the red cube
+  Frames: 119 - 229
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.07, 0.11, 0.0, 0.21, 0.07, 0.64, 0.86, 1.0]
+  Failed regions: []
+  Successful interval: 62-110
+  Keyframes: [11, 62, 98, 110]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 273/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep78_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.14, 0.11, 0.36, 0.61, 0.04, 0.0, 1.0, 0.96]
+  Failed regions: [[53, 96]]
+  Successful interval: 77-96
+  Keyframes: [1, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 274/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep78_f112-203
+  Subtask: pick up the container that hides the green cube
+  Frames: 112 - 203
+============================================================
+  Loaded 92 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.0, 0.04, 0.13, 0.17, 0.25, 0.02, 1.0]
+  Failed regions: [[67, 91]]
+  Successful interval: 75-91
+  Keyframes: [10, 75, 90, 91]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 275/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep78_f112-210
+  Subtask: pick up the container that hides the green cube
+  Frames: 112 - 210
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.02, 0.0, 0.08, 0.19, 0.33, 0.17, 0.75, 1.0]
+  Failed regions: [[59, 85]]
+  Successful interval: 68-98
+  Keyframes: [0, 68, 90, 98]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 276/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep79_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.0, 0.25, 0.43, 0.96, 0.5, 0.71, 1.0]
+  Failed regions: [[69, 99]]
+  Successful interval: 79-114
+  Keyframes: [1, 79, 102, 114]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 277/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep79_f115-216
+  Subtask: pick up the container that hides the green cube
+  Frames: 115 - 216
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.02, 0.05, 0.2, 0.25, 0.25, 1.0, 0.77]
+  Failed regions: []
+  Successful interval: 70-88
+  Keyframes: [7, 70, 88, 89, 101]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 278/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep79_f217-264
+  Subtask: put down the container
+  Frames: 217 - 264
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 54.4s
+  Rewards: [1.0, 0.83, 0.75, 0.5, 0.67, 0.5, 0.0, 0.83]
+  Failed regions: [[4, 28], [28, 47]]
+  Successful interval: 38-47
+  Keyframes: [0, 38, 39, 47]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 279/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep79_f265-359
+  Subtask: pick up the container that hides the red cube
+  Frames: 265 - 359
+============================================================
+  Loaded 95 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.13, 0.11, 0.37, 0.37, 0.11, 0.17, 1.0]
+  Failed regions: [[57, 81]]
+  Successful interval: 65-94
+  Keyframes: [1, 65, 92, 94]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 280/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep79_f265-367
+  Subtask: pick up the container that hides the red cube
+  Frames: 265 - 367
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.02, 0.0, 0.07, 0.36, 0.17, 0.17, 0.43, 1.0]
+  Failed regions: [[49, 75], [49, 88]]
+  Successful interval: 70-102
+  Keyframes: [1, 70, 92, 102]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 281/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep80_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.03, 0.15, 0.0, 0.38, 0.71, 0.56, 1.0, 0.88]
+  Failed regions: [[70, 100]]
+  Successful interval: 80-100
+  Keyframes: [0, 80, 100, 101, 115]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 282/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep80_f116-211
+  Subtask: pick up the container that hides the green cube
+  Frames: 116 - 211
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.21, 0.28, 0.28, 0.34, 0.31, 0.28, 1.0]
+  Failed regions: []
+  Successful interval: 78-95
+  Keyframes: [1, 78, 95]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 283/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep80_f116-218
+  Subtask: pick up the container that hides the green cube
+  Frames: 116 - 218
+============================================================
+  Loaded 103 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.38, 0.38, 0.41, 0.17, 0.38, 0.07, 1.0]
+  Failed regions: [[49, 75], [75, 102]]
+  Successful interval: 83-102
+  Keyframes: [8, 83, 95, 102]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 284/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep81_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.1, 0.0, 0.57, 0.75, 0.42, 0.28, 1.0, 0.97]
+  Failed regions: [[53, 95]]
+  Successful interval: 76-95
+  Keyframes: [1, 76, 95, 96, 110]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 285/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep81_f111-212
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 212
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.11, 0.09, 0.11, 0.4, 0.0, 0.11, 0.06, 1.0]
+  Failed regions: [[49, 75]]
+  Successful interval: 83-101
+  Keyframes: [1, 83, 101]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 286/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep81_f111-222
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 222
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.18, 0.23, 0.3, 0.16, 0.16, 0.14, 0.0, 1.0]
+  Failed regions: [[39, 68]]
+  Successful interval: 91-111
+  Keyframes: [1, 91, 100, 111]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 287/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep82_f0-123
+  Subtask: press the button
+  Frames: 0 - 123
+============================================================
+  Loaded 124 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.07, 0.43, 0.61, 1.0, 0.25, 0.68, 0.57]
+  Failed regions: []
+  Successful interval: 6-75
+  Keyframes: [1, 6, 32, 75, 123]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 288/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep82_f124-230
+  Subtask: pick up the container that hides the red cube
+  Frames: 124 - 230
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.08, 0.25, 0.75, 0.92, 0.5, 0.0, 0.25, 1.0]
+  Failed regions: [[51, 92]]
+  Successful interval: 73-106
+  Keyframes: [6, 73, 77, 106]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 289/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep82_f124-236
+  Subtask: pick up the container that hides the red cube
+  Frames: 124 - 236
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.15, 0.48, 0.85, 0.19, 0.15, 0.15, 1.0]
+  Failed regions: [[54, 97], [54, 112]]
+  Successful interval: 92-112
+  Keyframes: [5, 92, 108, 112]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 290/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep83_f0-111
+  Subtask: press the button
+  Frames: 0 - 111
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.06, 0.09, 0.4, 0.8, 0.49, 0.0, 1.0, 0.97]
+  Failed regions: [[53, 96]]
+  Successful interval: 77-96
+  Keyframes: [0, 77, 96, 97, 111]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 291/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep83_f112-220
+  Subtask: pick up the container that hides the red cube
+  Frames: 112 - 220
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.1, 0.21, 0.36, 0.41, 0.41, 0.44, 0.0, 1.0]
+  Failed regions: [[80, 108]]
+  Successful interval: 89-108
+  Keyframes: [11, 89, 100, 108]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 292/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep83_f221-273
+  Subtask: put down the container
+  Frames: 221 - 273
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.12, 0.0, 0.58, 0.62, 0.79, 0.83, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 9-45
+  Keyframes: [0, 9, 13, 45, 52]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 293/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep83_f274-366
+  Subtask: pick up the container that hides the blue cube
+  Frames: 274 - 366
+============================================================
+  Loaded 93 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.17, 0.13, 0.4, 0.43, 0.23, 0.0, 0.3, 1.0]
+  Failed regions: [[44, 80]]
+  Successful interval: 64-92
+  Keyframes: [6, 64, 92]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 294/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep83_f274-372
+  Subtask: pick up the container that hides the blue cube
+  Frames: 274 - 372
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.13, 0.11, 0.26, 0.39, 0.34, 0.21, 0.0, 1.0]
+  Failed regions: [[47, 98]]
+  Successful interval: 81-98
+  Keyframes: [2, 81, 93, 98]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 295/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep84_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.21, 0.33, 0.08, 0.0, 0.79, 0.12, 1.0, 0.79]
+  Failed regions: [[27, 74], [74, 105]]
+  Successful interval: 83-105
+  Keyframes: [2, 83, 105, 106, 121]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 296/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep84_f122-211
+  Subtask: pick up the container that hides the red cube
+  Frames: 122 - 211
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.08, 0.22, 0.38, 0.41, 0.38, 0.46, 1.0]
+  Failed regions: []
+  Successful interval: 62-89
+  Keyframes: [8, 62, 88, 89]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 297/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep84_f122-218
+  Subtask: pick up the container that hides the red cube
+  Frames: 122 - 218
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.0, 0.26, 0.37, 0.34, 0.39, 0.47, 1.0]
+  Failed regions: []
+  Successful interval: 54-96
+  Keyframes: [8, 54, 88, 96]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 298/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep85_f0-113
+  Subtask: press the button
+  Frames: 0 - 113
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.08, 0.0, 0.24, 0.74, 0.55, 0.53, 1.0, 0.84]
+  Failed regions: [[54, 98]]
+  Successful interval: 78-98
+  Keyframes: [0, 78, 98, 99, 113]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 299/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep85_f114-218
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 218
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.03, 0.1, 0.1, 0.15, 0.0, 0.25, 0.17, 1.0]
+  Failed regions: []
+  Successful interval: 85-104
+  Keyframes: [0, 85, 104]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 300/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep85_f114-225
+  Subtask: pick up the container that hides the blue cube
+  Frames: 114 - 225
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.17, 0.14, 0.06, 0.08, 0.17, 0.28, 1.0]
+  Failed regions: []
+  Successful interval: 48-111
+  Keyframes: [0, 48, 104, 111]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 301/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep86_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.29, 0.19, 0.87, 0.81, 0.74, 0.0, 1.0, 0.48]
+  Failed regions: [[11, 40], [40, 100]]
+  Successful interval: 80-100
+  Keyframes: [0, 80, 99, 100, 115]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 302/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep86_f116-209
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 209
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.04, 0.33, 0.46, 0.29, 0.33, 0.46, 1.0]
+  Failed regions: [[45, 69]]
+  Successful interval: 53-93
+  Keyframes: [5, 53, 92, 93]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 303/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep86_f116-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 216
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.07, 0.07, 0.36, 0.5, 0.39, 0.25, 1.0]
+  Failed regions: [[61, 100]]
+  Successful interval: 82-100
+  Keyframes: [5, 82, 92, 100]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 304/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep87_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.09, 0.0, 0.81, 0.66, 0.88, 0.38, 0.78, 1.0]
+  Failed regions: [[43, 74], [74, 105]]
+  Successful interval: 83-121
+  Keyframes: [0, 83, 106, 121]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 305/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep87_f122-229
+  Subtask: pick up the container that hides the red cube
+  Frames: 122 - 229
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.06, 0.06, 0.03, 0.06, 0.0, 0.14, 0.11, 1.0]
+  Failed regions: []
+  Successful interval: 88-107
+  Keyframes: [6, 88, 99, 107]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 306/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep87_f230-279
+  Subtask: put down the container
+  Frames: 230 - 279
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.57, 0.0, 0.57, 0.81, 0.62, 0.62, 0.57, 1.0]
+  Failed regions: [[5, 23], [23, 36]]
+  Successful interval: 40-49
+  Keyframes: [0, 40, 41, 49]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 307/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep87_f280-365
+  Subtask: pick up the container that hides the blue cube
+  Frames: 280 - 365
+============================================================
+  Loaded 86 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.02, 0.0, 0.17, 0.26, 0.24, 0.39, 0.43, 1.0]
+  Failed regions: []
+  Successful interval: 48-85
+  Keyframes: [8, 48, 82, 85]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 308/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep87_f280-373
+  Subtask: pick up the container that hides the blue cube
+  Frames: 280 - 373
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.02, 0.0, 0.22, 0.15, 0.43, 0.39, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 65-93
+  Keyframes: [10, 65, 82, 93]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 309/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep88_f0-110
+  Subtask: press the button
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.03, 0.0, 0.19, 0.43, 0.16, 0.27, 1.0, 0.76]
+  Failed regions: [[53, 81]]
+  Successful interval: 62-95
+  Keyframes: [0, 62, 70, 95, 110]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 310/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep88_f111-200
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 200
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.03, 0.0, 0.22, 0.27, 0.35, 0.41, 0.22, 1.0]
+  Failed regions: [[66, 89]]
+  Successful interval: 73-89
+  Keyframes: [15, 73, 88, 89]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 311/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep88_f111-210
+  Subtask: pick up the container that hides the red cube
+  Frames: 111 - 210
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.14, 0.22, 0.31, 0.42, 0.47, 1.0, 0.94]
+  Failed regions: []
+  Successful interval: 5-86
+  Keyframes: [0, 5, 86, 87, 99]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 312/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep89_f0-119
+  Subtask: press the button
+  Frames: 0 - 119
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.0, 0.73, 0.27, 0.47, 0.27, 1.0, 0.83]
+  Failed regions: [[42, 73], [73, 103]]
+  Successful interval: 82-103
+  Keyframes: [0, 82, 103, 104, 119]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 313/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep89_f120-217
+  Subtask: pick up the container that hides the green cube
+  Frames: 120 - 217
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.06, 0.19, 0.28, 0.22, 0.28, 0.44, 1.0]
+  Failed regions: []
+  Successful interval: 55-97
+  Keyframes: [0, 55, 96, 97]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 314/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep89_f120-224
+  Subtask: pick up the container that hides the green cube
+  Frames: 120 - 224
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.14, 0.14, 0.32, 0.25, 0.43, 0.64, 1.0]
+  Failed regions: []
+  Successful interval: 58-104
+  Keyframes: [0, 58, 96, 104]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 315/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep90_f0-112
+  Subtask: press the button
+  Frames: 0 - 112
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.06, 0.0, 0.42, 0.72, 0.5, 0.0, 0.92, 1.0]
+  Failed regions: [[54, 97]]
+  Successful interval: 78-112
+  Keyframes: [3, 78, 100, 112]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 316/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep90_f113-211
+  Subtask: pick up the container that hides the blue cube
+  Frames: 113 - 211
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.18, 0.5, 0.57, 0.43, 0.5, 0.25, 1.0]
+  Failed regions: [[47, 72], [72, 98]]
+  Successful interval: 81-98
+  Keyframes: [0, 81, 98]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 317/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep90_f113-221
+  Subtask: pick up the container that hides the blue cube
+  Frames: 113 - 221
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.28, 0.44, 0.52, 0.56, 0.48, 0.24, 1.0]
+  Failed regions: [[66, 108]]
+  Successful interval: 89-108
+  Keyframes: [6, 89, 100, 108]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 318/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep91_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.0, 0.36, 0.27, 0.61, 0.18, 1.0, 0.85]
+  Failed regions: [[42, 73], [73, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 319/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep91_f121-231
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 231
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.27, 0.32, 0.24, 0.56, 0.54, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 76-110
+  Keyframes: [0, 76, 97, 110]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 320/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep91_f232-278
+  Subtask: put down the container
+  Frames: 232 - 278
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.15, 0.29, 0.35, 0.0, 0.15, 0.62, 0.5, 1.0]
+  Failed regions: [[16, 34], [34, 46]]
+  Successful interval: 38-46
+  Keyframes: [0, 38, 39, 46]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 321/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep91_f279-357
+  Subtask: pick up the container that hides the red cube
+  Frames: 279 - 357
+============================================================
+  Loaded 79 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.22, 0.51, 0.43, 0.62, 0.43, 0.27, 1.0]
+  Failed regions: [[27, 47], [47, 78]]
+  Successful interval: 64-78
+  Keyframes: [6, 64, 78]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 322/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep91_f279-368
+  Subtask: pick up the container that hides the red cube
+  Frames: 279 - 368
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.54, 0.71, 0.51, 0.41, 0.32, 1.0, 0.98]
+  Failed regions: [[31, 77]]
+  Successful interval: 62-77
+  Keyframes: [6, 62, 76, 77, 89]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 323/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep92_f0-118
+  Subtask: press the button
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.03, 0.56, 0.62, 1.0, 0.32, 0.91, 0.82]
+  Failed regions: [[72, 102]]
+  Successful interval: 82-102
+  Keyframes: [0, 82, 102, 103, 118]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 324/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep92_f119-220
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 220
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.14, 0.16, 0.32, 0.14, 0.08, 0.05, 1.0]
+  Failed regions: [[49, 101]]
+  Successful interval: 83-101
+  Keyframes: [4, 83, 101]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 325/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep92_f119-231
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 231
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.33, 0.27, 0.37, 0.3, 0.2, 1.0, 1.0]
+  Failed regions: [[54, 97]]
+  Successful interval: 78-97
+  Keyframes: [0, 78, 97, 98, 112]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 326/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep93_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.03, 0.45, 0.23, 0.16, 0.35, 1.0, 0.77]
+  Failed regions: [[42, 89]]
+  Successful interval: 67-104
+  Keyframes: [1, 67, 77, 104, 120]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 327/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep93_f121-227
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 227
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.18, 0.29, 0.45, 0.16, 0.42, 0.37, 1.0]
+  Failed regions: [[51, 78]]
+  Successful interval: 87-106
+  Keyframes: [10, 87, 105, 106]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 328/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep93_f121-239
+  Subtask: pick up the container that hides the red cube
+  Frames: 121 - 239
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.18, 0.45, 0.29, 0.21, 0.39, 0.47, 1.0]
+  Failed regions: [[41, 87]]
+  Successful interval: 67-118
+  Keyframes: [10, 67, 105, 118]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 329/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep94_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.1, 0.07, 0.3, 0.7, 0.83, 0.0, 0.7, 1.0]
+  Failed regions: [[74, 105]]
+  Successful interval: 83-121
+  Keyframes: [0, 83, 106, 121]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 330/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep94_f122-210
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 210
+============================================================
+  Loaded 89 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.08, 0.16, 0.12, 0.26, 0.32, 0.14, 1.0]
+  Failed regions: [[65, 88]]
+  Successful interval: 72-88
+  Keyframes: [0, 72, 85, 88]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 331/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep94_f122-218
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 218
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.09, 0.15, 0.15, 0.26, 0.2, 1.0, 0.87]
+  Failed regions: []
+  Successful interval: 67-83
+  Keyframes: [0, 67, 83, 84, 96]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 332/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep95_f0-118
+  Subtask: press the button
+  Frames: 0 - 118
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.05, 0.0, 0.1, 0.4, 0.57, 0.65, 1.0, 0.82]
+  Failed regions: []
+  Successful interval: 21-102
+  Keyframes: [0, 21, 32, 102, 118]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 333/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep95_f119-236
+  Subtask: pick up the container that hides the green cube
+  Frames: 119 - 236
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.2, 0.24, 0.12, 0.02, 0.05, 0.05, 1.0]
+  Failed regions: []
+  Successful interval: 96-117
+  Keyframes: [5, 96, 106, 117]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 334/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep95_f237-284
+  Subtask: put down the container
+  Frames: 237 - 284
+============================================================
+  Loaded 48 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.36, 0.0, 0.09, 0.09, 0.27, 0.09, 0.09, 1.0]
+  Failed regions: [[4, 16], [28, 40], [28, 47]]
+  Successful interval: 38-47
+  Keyframes: [1, 38, 41, 47]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 335/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep95_f285-366
+  Subtask: pick up the container that hides the blue cube
+  Frames: 285 - 366
+============================================================
+  Loaded 82 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.13, 0.18, 0.16, 0.13, 0.24, 0.22, 1.0]
+  Failed regions: []
+  Successful interval: 66-81
+  Keyframes: [1, 66, 81]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 336/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep95_f285-372
+  Subtask: pick up the container that hides the blue cube
+  Frames: 285 - 372
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.16, 0.24, 0.13, 0.31, 0.24, 0.18, 1.0]
+  Failed regions: [[53, 87]]
+  Successful interval: 71-87
+  Keyframes: [1, 71, 81, 87]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 337/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep96_f0-121
+  Subtask: press the button
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.0, 0.64, 0.73, 0.95, 1.0, 0.41, 0.27]
+  Failed regions: []
+  Successful interval: 21-89
+  Keyframes: [0, 21, 32, 89, 120]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 338/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep96_f122-228
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 228
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.17, 0.14, 0.39, 0.28, 0.0, 0.14, 1.0]
+  Failed regions: [[51, 92]]
+  Successful interval: 73-106
+  Keyframes: [0, 73, 106]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 339/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep96_f122-234
+  Subtask: pick up the container that hides the green cube
+  Frames: 122 - 234
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.16, 0.28, 0.31, 0.31, 0.28, 0.06, 1.0]
+  Failed regions: [[68, 112]]
+  Successful interval: 92-112
+  Keyframes: [0, 92, 106, 112]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 340/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep97_f0-120
+  Subtask: press the button
+  Frames: 0 - 120
+============================================================
+  Loaded 121 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.08, 0.0, 0.66, 0.24, 0.55, 0.34, 1.0, 0.95]
+  Failed regions: [[42, 73], [73, 104]]
+  Successful interval: 83-104
+  Keyframes: [0, 83, 104, 105, 120]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 341/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep97_f121-227
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 227
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.05, 0.21, 0.0, 0.46, 0.13, 0.18, 0.21, 1.0]
+  Failed regions: [[51, 78]]
+  Successful interval: 59-106
+  Keyframes: [1, 59, 105, 106]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 342/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep97_f121-237
+  Subtask: pick up the container that hides the green cube
+  Frames: 121 - 237
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.16, 0.27, 0.24, 0.09, 0.31, 0.24, 1.0]
+  Failed regions: [[41, 86]]
+  Successful interval: 96-116
+  Keyframes: [1, 96, 105, 116]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 343/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep98_f0-115
+  Subtask: press the button
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.03, 0.27, 0.5, 0.57, 0.13, 1.0, 0.6]
+  Failed regions: [[70, 100]]
+  Successful interval: 80-100
+  Keyframes: [0, 80, 100, 101, 115]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 344/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep98_f116-209
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 209
+============================================================
+  Loaded 94 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.09, 0.09, 0.12, 0.03, 0.29, 0.0, 1.0]
+  Failed regions: [[69, 93]]
+  Successful interval: 77-93
+  Keyframes: [0, 77, 93]
+  Success detected: True
+  Confidence: 0.96
+
+--- Segment 345/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep98_f116-216
+  Subtask: pick up the container that hides the red cube
+  Frames: 116 - 216
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.11, 0.2, 0.17, 0.06, 0.06, 0.51, 1.0]
+  Failed regions: []
+  Successful interval: 69-100
+  Keyframes: [0, 69, 93, 100]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 346/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep99_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.0, 0.5, 0.66, 0.09, 0.03, 0.62, 1.0]
+  Failed regions: [[55, 99]]
+  Successful interval: 79-114
+  Keyframes: [0, 79, 100, 114]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 347/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep99_f115-218
+  Subtask: pick up the container that hides the blue cube
+  Frames: 115 - 218
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.27, 0.25, 0.41, 0.25, 0.25, 0.18, 1.0]
+  Failed regions: [[49, 76]]
+  Successful interval: 84-103
+  Keyframes: [9, 84, 97, 103]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 348/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep99_f219-259
+  Subtask: put down the container
+  Frames: 219 - 259
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.55, 1.0, 1.0, 0.45, 0.09, 0.18, 0.0, 0.27]
+  Failed regions: []
+  Successful interval: 2-9
+  Keyframes: [0, 2, 9, 10, 19]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 349/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep99_f260-356
+  Subtask: pick up the container that hides the green cube
+  Frames: 260 - 356
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.09, 0.11, 0.43, 0.26, 0.2, 0.29, 1.0]
+  Failed regions: [[46, 83]]
+  Successful interval: 67-96
+  Keyframes: [7, 67, 96]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 350/350 ---
+
+============================================================
+Segment: ButtonUnmask_ep99_f260-368
+  Subtask: pick up the container that hides the green cube
+  Frames: 260 - 368
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.02, 0.14, 0.0, 0.3, 0.2, 0.23, 0.95, 1.0]
+  Failed regions: [[52, 80]]
+  Successful interval: 61-108
+  Keyframes: [7, 61, 96, 108]
+  Success detected: True
+  Confidence: 0.85
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 350 segments
+  Skipped: 0 segments
+  Environments: {'ButtonUnmask': 350}
+  Mean confidence: 0.830
+  Success detected: 350/350
+  Total failed regions detected: 327
+
+All outputs saved to: data/topreward_full
+Done.

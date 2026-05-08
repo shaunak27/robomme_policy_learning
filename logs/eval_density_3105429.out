@@ -1,0 +1,3213 @@
+Using port 35675 for task=all method=density
+Starting policy server on GPU 0 ...
+Waiting for server to start ...
+Server ready after 51s
+Starting eval client on GPU 1 for task=all ...
+
+[robomme] env for task BinFill episode 0 setup finished
+task_goal: put one red cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 1 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 2 setup finished
+task_goal: put four green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 3 setup finished
+task_goal: put three red cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 4 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 5 setup finished
+task_goal: put two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 6 setup finished
+task_goal: put two blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 7 setup finished
+task_goal: put one blue cube and four green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 8 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 9 setup finished
+task_goal: put two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 10 setup finished
+task_goal: put one red cube and three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 11 setup finished
+task_goal: put two red cubes, one blue cube and two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 12 setup finished
+task_goal: put two blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 13 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 14 setup finished
+task_goal: put three red cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 15 setup finished
+task_goal: put four blue cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 16 setup finished
+task_goal: put one red cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 17 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 18 setup finished
+task_goal: put two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 19 setup finished
+task_goal: put three blue cubes and two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 20 setup finished
+task_goal: put three blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 21 setup finished
+task_goal: put two red cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 22 setup finished
+task_goal: put four blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 23 setup finished
+task_goal: put two blue cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 24 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 25 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 26 setup finished
+task_goal: put four red cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 27 setup finished
+task_goal: put one red cube and two blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 28 setup finished
+task_goal: put one blue cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 29 setup finished
+task_goal: put three red cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 30 setup finished
+task_goal: put three red cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 31 setup finished
+task_goal: put one red cube and two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 32 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 33 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 34 setup finished
+task_goal: put three blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 35 setup finished
+task_goal: put one red cube, two blue cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 36 setup finished
+task_goal: put two blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 37 setup finished
+task_goal: put two blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 38 setup finished
+task_goal: put three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 39 setup finished
+task_goal: put two red cubes and three green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 40 setup finished
+task_goal: put two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 41 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 42 setup finished
+task_goal: put two red cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 43 setup finished
+task_goal: put one red cube, two blue cubes and one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 44 setup finished
+task_goal: put one green cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 45 setup finished
+task_goal: put three blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 46 setup finished
+task_goal: put one blue cube and two green cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 47 setup finished
+task_goal: put five blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 48 setup finished
+task_goal: put one red cube into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task BinFill episode 49 setup finished
+task_goal: put three blue cubes into the bin, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 0 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 1 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 2 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 3 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 4 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 5 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 6 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 7 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 8 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 9 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 10 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 11 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 12 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 13 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 14 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 15 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 16 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 17 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 18 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 19 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 20 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 21 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 22 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 23 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 24 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 25 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 26 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 27 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 28 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 29 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 30 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 31 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 32 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 33 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 34 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 35 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 36 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 37 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 38 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 39 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 40 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 41 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 42 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the third time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 43 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 44 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 45 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 46 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fifth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 47 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 48 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the fourth time
+exec_start_idx: 0
+
+[robomme] env for task StopCube episode 49 setup finished
+task_goal: press the button to stop the cube just as it reaches the target for the second time
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 0 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 1 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 2 setup finished
+task_goal: pick up the blue cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 3 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 4 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 5 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 6 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 7 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 8 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 9 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 10 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 11 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 12 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 13 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 14 setup finished
+task_goal: pick up the blue cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 15 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 16 setup finished
+task_goal: pick up the red cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 17 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 18 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 19 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 20 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 21 setup finished
+task_goal: pick up the red cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 22 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 23 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 24 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 25 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 26 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 27 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 28 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 29 setup finished
+task_goal: pick up the red cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 30 setup finished
+task_goal: pick up the blue cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 31 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 32 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 33 setup finished
+task_goal: pick up the red cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 34 setup finished
+task_goal: pick up the blue cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 35 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 36 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 37 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 38 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 39 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action four times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 40 setup finished
+task_goal: pick up the green cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 41 setup finished
+task_goal: pick up the green cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 42 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 43 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 44 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action two times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 45 setup finished
+task_goal: pick up the blue cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 46 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 47 setup finished
+task_goal: pick up the blue cube and place it on the target, repeating this action five times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 48 setup finished
+task_goal: pick up the red cube and place it on the target, repeating this action three times, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task PickXtimes episode 49 setup finished
+task_goal: pick up the red cube and place it on the target, then press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 0 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 1 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 2 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 3 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 4 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 5 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 6 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 7 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 8 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 9 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 10 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 11 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 12 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 13 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 14 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 15 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 16 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 17 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 18 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 19 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 20 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 21 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 22 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 23 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 24 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 25 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 26 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 27 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 28 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 29 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 30 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 31 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 32 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 33 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 34 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 35 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 36 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 37 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 38 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 39 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 40 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 41 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 42 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion two times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 43 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 44 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 45 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 46 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 47 setup finished
+task_goal: pick up the red cube, move it to the top of the right-side target, then move it to the top of the left-side target, repeating this back-and-forth motion three times, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 48 setup finished
+task_goal: pick up the blue cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task SwingXtimes episode 49 setup finished
+task_goal: pick up the green cube, move it to the top of the right-side target, then put it down on the left-side target, finally press the button to stop
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 0 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 1 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 2 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 3 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 4 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 5 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 6 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 7 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 8 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 9 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 10 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 11 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 12 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 13 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 14 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 15 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 16 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 17 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 18 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 19 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 20 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 21 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 22 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 23 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 24 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 25 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 26 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 27 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 28 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 29 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 30 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 31 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 32 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 33 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 34 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 35 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 36 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 37 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 38 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 39 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 40 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 41 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 42 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 43 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 44 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 45 setup finished
+task_goal: first press the button, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 46 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 47 setup finished
+task_goal: first press the button, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 48 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmask episode 49 setup finished
+task_goal: first press the button, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task VideoUnmask episode 0 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 1 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 2 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 3 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 4 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 5 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 6 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 7 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 8 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 9 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 10 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 11 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 12 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 13 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 14 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 15 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 16 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 17 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 18 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 19 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 20 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 21 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 22 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 23 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 24 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 25 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 26 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 27 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 28 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 29 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 30 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 31 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 32 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 33 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 34 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 35 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 36 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 37 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 38 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 39 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 40 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 41 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 42 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 43 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 44 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 45 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 46 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 47 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 48 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmask episode 49 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 66
+
+[robomme] env for task VideoUnmaskSwap episode 0 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 1 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 2 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 3 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 4 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 5 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 6 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 7 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 8 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 9 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 10 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 11 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 12 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 13 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 14 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 15 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 16 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 17 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 18 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 19 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 20 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 21 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 22 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 23 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 24 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 25 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 26 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 27 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 28 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 29 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 30 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 31 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 32 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 33 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 34 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 35 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 36 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 37 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 38 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 39 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 40 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 41 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 42 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 43 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 44 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 45 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the blue cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 46 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 168
+
+[robomme] env for task VideoUnmaskSwap episode 47 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 216
+
+[robomme] env for task VideoUnmaskSwap episode 48 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube
+exec_start_idx: 114
+
+[robomme] env for task VideoUnmaskSwap episode 49 setup finished
+task_goal: watch the video carefully, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 114
+
+[robomme] env for task ButtonUnmaskSwap episode 0 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 1 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 2 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 3 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 4 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 5 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 6 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 7 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 8 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 9 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 10 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 11 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 12 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 13 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 14 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 15 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 16 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 17 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 18 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 19 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 20 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 21 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 22 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 23 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 24 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 25 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 26 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 27 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 28 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 29 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 30 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 31 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 32 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 33 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 34 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 35 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 36 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 37 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 38 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 39 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 40 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 41 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube, finally pick up another container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 42 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 43 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 44 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 45 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 46 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 47 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the green cube, finally pick up another container hiding the red cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 48 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task ButtonUnmaskSwap episode 49 setup finished
+task_goal: first press both buttons on the table, then pick up the container hiding the red cube, finally pick up another container hiding the blue cube
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 0 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 1 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 2 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 3 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 4 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 5 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 6 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 7 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 8 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 9 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 10 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 11 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 12 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 13 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 14 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 15 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 16 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 17 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 18 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 19 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 20 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 21 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 22 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 23 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 24 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 25 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 26 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 27 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 28 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 29 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 30 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 31 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 32 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 33 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 34 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 35 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 36 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 37 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 38 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 39 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 40 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 41 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 42 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 43 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 44 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 45 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 46 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 47 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 48 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task PickHighlight episode 49 setup finished
+task_goal: first press the button, then pick up all cubes that have been highlighteted with white areas on the table
+exec_start_idx: 0
+
+[robomme] env for task VideoRepick episode 0 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 257
+
+[robomme] env for task VideoRepick episode 1 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 255
+
+[robomme] env for task VideoRepick episode 2 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 371
+
+[robomme] env for task VideoRepick episode 3 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 199
+
+[robomme] env for task VideoRepick episode 4 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 306
+
+[robomme] env for task VideoRepick episode 5 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 271
+
+[robomme] env for task VideoRepick episode 6 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 351
+
+[robomme] env for task VideoRepick episode 7 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 203
+
+[robomme] env for task VideoRepick episode 8 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 271
+
+[robomme] env for task VideoRepick episode 9 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 327
+
+[robomme] env for task VideoRepick episode 10 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 363
+
+[robomme] env for task VideoRepick episode 11 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 155
+
+[robomme] env for task VideoRepick episode 12 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 268
+
+[robomme] env for task VideoRepick episode 13 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 254
+
+[robomme] env for task VideoRepick episode 14 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 372
+
+[robomme] env for task VideoRepick episode 15 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 170
+
+[robomme] env for task VideoRepick episode 16 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 314
+
+[robomme] env for task VideoRepick episode 17 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 255
+
+[robomme] env for task VideoRepick episode 18 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 329
+
+[robomme] env for task VideoRepick episode 19 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 159
+
+[robomme] env for task VideoRepick episode 20 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 314
+
+[robomme] env for task VideoRepick episode 21 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 326
+
+[robomme] env for task VideoRepick episode 22 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 377
+
+[robomme] env for task VideoRepick episode 23 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 177
+
+[robomme] env for task VideoRepick episode 24 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 321
+
+[robomme] env for task VideoRepick episode 25 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 257
+
+[robomme] env for task VideoRepick episode 26 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 367
+
+[robomme] env for task VideoRepick episode 27 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 168
+
+[robomme] env for task VideoRepick episode 28 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 265
+
+[robomme] env for task VideoRepick episode 29 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 284
+
+[robomme] env for task VideoRepick episode 30 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 383
+
+[robomme] env for task VideoRepick episode 31 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 155
+
+[robomme] env for task VideoRepick episode 32 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 326
+
+[robomme] env for task VideoRepick episode 33 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 259
+
+[robomme] env for task VideoRepick episode 34 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 306
+
+[robomme] env for task VideoRepick episode 35 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 169
+
+[robomme] env for task VideoRepick episode 36 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 323
+
+[robomme] env for task VideoRepick episode 37 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 278
+
+[robomme] env for task VideoRepick episode 38 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 308
+
+[robomme] env for task VideoRepick episode 39 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 168
+
+[robomme] env for task VideoRepick episode 40 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 281
+
+[robomme] env for task VideoRepick episode 41 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 309
+
+[robomme] env for task VideoRepick episode 42 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 378
+
+[robomme] env for task VideoRepick episode 43 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 155
+
+[robomme] env for task VideoRepick episode 44 setup finished
+task_goal: watch the video carefully, then pick up the same block that was previously picked up again, finally put it down and press the button to stop
+exec_start_idx: 317
+
+[robomme] env for task VideoRepick episode 45 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 262
+
+[robomme] env for task VideoRepick episode 46 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for three times, finally put it down and press the button to stop
+exec_start_idx: 373
+
+[robomme] env for task VideoRepick episode 47 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 161
+
+[robomme] env for task VideoRepick episode 48 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 318
+
+[robomme] env for task VideoRepick episode 49 setup finished
+task_goal: watch the video carefully, then repeatedly pick up and put down the same block that was previously picked up for two times, finally put it down and press the button to stop
+exec_start_idx: 317
+
+[robomme] env for task VideoPlaceButton episode 0 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 748
+
+[robomme] env for task VideoPlaceButton episode 1 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 786
+
+[robomme] env for task VideoPlaceButton episode 2 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 723
+
+[robomme] env for task VideoPlaceButton episode 3 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right before the button was pressed
+exec_start_idx: 757
+
+[robomme] env for task VideoPlaceButton episode 4 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 812
+
+[robomme] env for task VideoPlaceButton episode 5 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 760
+
+[robomme] env for task VideoPlaceButton episode 6 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 779
+
+[robomme] env for task VideoPlaceButton episode 7 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 750
+
+[robomme] env for task VideoPlaceButton episode 8 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 746
+
+[robomme] env for task VideoPlaceButton episode 9 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 789
+
+[robomme] env for task VideoPlaceButton episode 10 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 827
+
+[robomme] env for task VideoPlaceButton episode 11 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 735
+
+[robomme] env for task VideoPlaceButton episode 12 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right before the button was pressed
+exec_start_idx: 710
+
+[robomme] env for task VideoPlaceButton episode 13 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 833
+
+[robomme] env for task VideoPlaceButton episode 14 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 748
+
+[robomme] env for task VideoPlaceButton episode 15 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 754
+
+[robomme] env for task VideoPlaceButton episode 16 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 773
+
+[robomme] env for task VideoPlaceButton episode 17 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 782
+
+[robomme] env for task VideoPlaceButton episode 18 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 771
+
+[robomme] env for task VideoPlaceButton episode 19 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 747
+
+[robomme] env for task VideoPlaceButton episode 20 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 765
+
+[robomme] env for task VideoPlaceButton episode 21 setup finished
+screw plan failed
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 746
+
+[robomme] env for task VideoPlaceButton episode 22 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right before the button was pressed
+exec_start_idx: 775
+
+[robomme] env for task VideoPlaceButton episode 23 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 721
+
+[robomme] env for task VideoPlaceButton episode 24 setup finished
+screw plan failed
+task_goal: watch the video carefully, then place the green cube on the target right before the button was pressed
+exec_start_idx: 700
+
+[robomme] env for task VideoPlaceButton episode 25 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 770
+
+[robomme] env for task VideoPlaceButton episode 26 setup finished
+screw plan failed
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 745
+
+[robomme] env for task VideoPlaceButton episode 27 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 808
+
+[robomme] env for task VideoPlaceButton episode 28 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 792
+
+[robomme] env for task VideoPlaceButton episode 29 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 751
+
+[robomme] env for task VideoPlaceButton episode 30 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 814
+
+[robomme] env for task VideoPlaceButton episode 31 setup finished
+screw plan failed
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 834
+
+[robomme] env for task VideoPlaceButton episode 32 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 730
+
+[robomme] env for task VideoPlaceButton episode 33 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 725
+
+[robomme] env for task VideoPlaceButton episode 34 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 788
+
+[robomme] env for task VideoPlaceButton episode 35 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right after the button was pressed
+exec_start_idx: 732
+
+[robomme] env for task VideoPlaceButton episode 36 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right before the button was pressed
+exec_start_idx: 778
+
+[robomme] env for task VideoPlaceButton episode 37 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 781
+
+[robomme] env for task VideoPlaceButton episode 38 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right before the button was pressed
+exec_start_idx: 797
+
+[robomme] env for task VideoPlaceButton episode 39 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 754
+
+[robomme] env for task VideoPlaceButton episode 40 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right before the button was pressed
+exec_start_idx: 777
+
+[robomme] env for task VideoPlaceButton episode 41 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 768
+
+[robomme] env for task VideoPlaceButton episode 42 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 802
+
+[robomme] env for task VideoPlaceButton episode 43 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right before the button was pressed
+exec_start_idx: 748
+
+[robomme] env for task VideoPlaceButton episode 44 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 754
+
+[robomme] env for task VideoPlaceButton episode 45 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right before the button was pressed
+exec_start_idx: 767
+
+[robomme] env for task VideoPlaceButton episode 46 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 734
+
+[robomme] env for task VideoPlaceButton episode 47 setup finished
+task_goal: watch the video carefully, then place the red cube on the target right before the button was pressed
+exec_start_idx: 766
+
+[robomme] env for task VideoPlaceButton episode 48 setup finished
+task_goal: watch the video carefully, then place the green cube on the target right after the button was pressed
+exec_start_idx: 734
+
+[robomme] env for task VideoPlaceButton episode 49 setup finished
+task_goal: watch the video carefully, then place the blue cube on the target right after the button was pressed
+exec_start_idx: 748
+
+[robomme] env for task VideoPlaceOrder episode 0 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 1077
+
+[robomme] env for task VideoPlaceOrder episode 1 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 894
+
+[robomme] env for task VideoPlaceOrder episode 2 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 934
+
+[robomme] env for task VideoPlaceOrder episode 3 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 778
+
+[robomme] env for task VideoPlaceOrder episode 4 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 875
+
+[robomme] env for task VideoPlaceOrder episode 5 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 772
+
+[robomme] env for task VideoPlaceOrder episode 6 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 994
+
+[robomme] env for task VideoPlaceOrder episode 7 setup finished
+task_goal: watch the video carefully, then place the green cube on the third target it was previously placed on
+exec_start_idx: 928
+
+[robomme] env for task VideoPlaceOrder episode 8 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 935
+
+[robomme] env for task VideoPlaceOrder episode 9 setup finished
+task_goal: watch the video carefully, then place the green cube on the first target it was previously placed on
+exec_start_idx: 895
+
+[robomme] env for task VideoPlaceOrder episode 10 setup finished
+task_goal: watch the video carefully, then place the green cube on the third target it was previously placed on
+exec_start_idx: 897
+
+[robomme] env for task VideoPlaceOrder episode 11 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 794
+
+[robomme] env for task VideoPlaceOrder episode 12 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 738
+
+[robomme] env for task VideoPlaceOrder episode 13 setup finished
+task_goal: watch the video carefully, then place the red cube on the second target it was previously placed on
+exec_start_idx: 956
+
+[robomme] env for task VideoPlaceOrder episode 14 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 761
+
+[robomme] env for task VideoPlaceOrder episode 15 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 894
+
+[robomme] env for task VideoPlaceOrder episode 16 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 735
+
+[robomme] env for task VideoPlaceOrder episode 17 setup finished
+task_goal: watch the video carefully, then place the blue cube on the third target it was previously placed on
+exec_start_idx: 880
+
+[robomme] env for task VideoPlaceOrder episode 18 setup finished
+task_goal: watch the video carefully, then place the red cube on the fourth target it was previously placed on
+exec_start_idx: 1139
+
+[robomme] env for task VideoPlaceOrder episode 19 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 940
+
+[robomme] env for task VideoPlaceOrder episode 20 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 867
+
+[robomme] env for task VideoPlaceOrder episode 21 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 754
+
+[robomme] env for task VideoPlaceOrder episode 22 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 923
+
+[robomme] env for task VideoPlaceOrder episode 23 setup finished
+task_goal: watch the video carefully, then place the green cube on the third target it was previously placed on
+exec_start_idx: 936
+
+[robomme] env for task VideoPlaceOrder episode 24 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 733
+
+[robomme] env for task VideoPlaceOrder episode 25 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 1058
+
+[robomme] env for task VideoPlaceOrder episode 26 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 1082
+
+[robomme] env for task VideoPlaceOrder episode 27 setup finished
+task_goal: watch the video carefully, then place the red cube on the fourth target it was previously placed on
+exec_start_idx: 1116
+
+[robomme] env for task VideoPlaceOrder episode 28 setup finished
+task_goal: watch the video carefully, then place the red cube on the third target it was previously placed on
+exec_start_idx: 961
+
+[robomme] env for task VideoPlaceOrder episode 29 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 749
+
+[robomme] env for task VideoPlaceOrder episode 30 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 761
+
+[robomme] env for task VideoPlaceOrder episode 31 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 750
+
+[robomme] env for task VideoPlaceOrder episode 32 setup finished
+task_goal: watch the video carefully, then place the blue cube on the second target it was previously placed on
+exec_start_idx: 1043
+
+[robomme] env for task VideoPlaceOrder episode 33 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 774
+
+[robomme] env for task VideoPlaceOrder episode 34 setup finished
+task_goal: watch the video carefully, then place the green cube on the fourth target it was previously placed on
+exec_start_idx: 1104
+
+[robomme] env for task VideoPlaceOrder episode 35 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 922
+
+[robomme] env for task VideoPlaceOrder episode 36 setup finished
+task_goal: watch the video carefully, then place the red cube on the second target it was previously placed on
+exec_start_idx: 755
+
+[robomme] env for task VideoPlaceOrder episode 37 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 771
+
+[robomme] env for task VideoPlaceOrder episode 38 setup finished
+task_goal: watch the video carefully, then place the red cube on the second target it was previously placed on
+exec_start_idx: 927
+
+[robomme] env for task VideoPlaceOrder episode 39 setup finished
+screw plan failed
+task_goal: watch the video carefully, then place the red cube on the third target it was previously placed on
+exec_start_idx: 925
+
+[robomme] env for task VideoPlaceOrder episode 40 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 734
+
+[robomme] env for task VideoPlaceOrder episode 41 setup finished
+task_goal: watch the video carefully, then place the blue cube on the first target it was previously placed on
+exec_start_idx: 889
+
+[robomme] env for task VideoPlaceOrder episode 42 setup finished
+task_goal: watch the video carefully, then place the red cube on the third target it was previously placed on
+exec_start_idx: 1071
+
+[robomme] env for task VideoPlaceOrder episode 43 setup finished
+task_goal: watch the video carefully, then place the red cube on the third target it was previously placed on
+exec_start_idx: 1105
+
+[robomme] env for task VideoPlaceOrder episode 44 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 946
+
+[robomme] env for task VideoPlaceOrder episode 45 setup finished
+task_goal: watch the video carefully, then place the green cube on the second target it was previously placed on
+exec_start_idx: 773
+
+[robomme] env for task VideoPlaceOrder episode 46 setup finished
+task_goal: watch the video carefully, then place the red cube on the second target it was previously placed on
+exec_start_idx: 1126
+
+[robomme] env for task VideoPlaceOrder episode 47 setup finished
+task_goal: watch the video carefully, then place the red cube on the second target it was previously placed on
+exec_start_idx: 749
+
+[robomme] env for task VideoPlaceOrder episode 48 setup finished
+task_goal: watch the video carefully, then place the green cube on the first target it was previously placed on
+exec_start_idx: 762
+
+[robomme] env for task VideoPlaceOrder episode 49 setup finished
+task_goal: watch the video carefully, then place the red cube on the first target it was previously placed on
+exec_start_idx: 1054
+
+[robomme] env for task MoveCube episode 0 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 246
+
+[robomme] env for task MoveCube episode 1 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 226
+
+[robomme] env for task MoveCube episode 2 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 246
+
+[robomme] env for task MoveCube episode 3 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 283
+
+[robomme] env for task MoveCube episode 4 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 258
+
+[robomme] env for task MoveCube episode 5 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 247
+
+[robomme] env for task MoveCube episode 6 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 246
+
+[robomme] env for task MoveCube episode 7 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 169
+
+[robomme] env for task MoveCube episode 8 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 279
+
+[robomme] env for task MoveCube episode 9 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 265
+
+[robomme] env for task MoveCube episode 10 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 248
+
+[robomme] env for task MoveCube episode 11 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 242
+
+[robomme] env for task MoveCube episode 12 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 178
+
+[robomme] env for task MoveCube episode 13 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 163
+
+[robomme] env for task MoveCube episode 14 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 164
+
+[robomme] env for task MoveCube episode 15 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 267
+
+[robomme] env for task MoveCube episode 16 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 166
+
+[robomme] env for task MoveCube episode 17 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 254
+
+[robomme] env for task MoveCube episode 18 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 246
+
+[robomme] env for task MoveCube episode 19 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 249
+
+[robomme] env for task MoveCube episode 20 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 157
+
+[robomme] env for task MoveCube episode 21 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 269
+
+[robomme] env for task MoveCube episode 22 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 165
+
+[robomme] env for task MoveCube episode 23 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 163
+
+[robomme] env for task MoveCube episode 24 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 150
+
+[robomme] env for task MoveCube episode 25 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 223
+
+[robomme] env for task MoveCube episode 26 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 171
+
+[robomme] env for task MoveCube episode 27 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 246
+
+[robomme] env for task MoveCube episode 28 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 252
+
+[robomme] env for task MoveCube episode 29 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 162
+
+[robomme] env for task MoveCube episode 30 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 258
+
+[robomme] env for task MoveCube episode 31 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 281
+
+[robomme] env for task MoveCube episode 32 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 244
+
+[robomme] env for task MoveCube episode 33 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 245
+
+[robomme] env for task MoveCube episode 34 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 260
+
+[robomme] env for task MoveCube episode 35 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 239
+
+[robomme] env for task MoveCube episode 36 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 252
+
+[robomme] env for task MoveCube episode 37 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 161
+
+[robomme] env for task MoveCube episode 38 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 158
+
+[robomme] env for task MoveCube episode 39 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 166
+
+[robomme] env for task MoveCube episode 40 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 250
+
+[robomme] env for task MoveCube episode 41 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 164
+
+[robomme] env for task MoveCube episode 42 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 238
+
+[robomme] env for task MoveCube episode 43 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 275
+
+[robomme] env for task MoveCube episode 44 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 232
+
+[robomme] env for task MoveCube episode 45 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 242
+
+[robomme] env for task MoveCube episode 46 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 163
+
+[robomme] env for task MoveCube episode 47 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 222
+
+[robomme] env for task MoveCube episode 48 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 235
+
+[robomme] env for task MoveCube episode 49 setup finished
+task_goal: watch the video carefully, then move the cube to the target in the same manner as before
+exec_start_idx: 181
+
+[robomme] env for task InsertPeg episode 0 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 267
+
+[robomme] env for task InsertPeg episode 1 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 216
+
+[robomme] env for task InsertPeg episode 2 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 265
+
+[robomme] env for task InsertPeg episode 3 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 225
+
+[robomme] env for task InsertPeg episode 4 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 251
+
+[robomme] env for task InsertPeg episode 5 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 237
+
+[robomme] env for task InsertPeg episode 6 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 7 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 237
+
+[robomme] env for task InsertPeg episode 8 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 9 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 273
+
+[robomme] env for task InsertPeg episode 10 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 211
+
+[robomme] env for task InsertPeg episode 11 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 244
+
+[robomme] env for task InsertPeg episode 12 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 236
+
+[robomme] env for task InsertPeg episode 13 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 284
+
+[robomme] env for task InsertPeg episode 14 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 377
+
+[robomme] env for task InsertPeg episode 15 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 217
+
+[robomme] env for task InsertPeg episode 16 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 257
+
+[robomme] env for task InsertPeg episode 17 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 222
+
+[robomme] env for task InsertPeg episode 18 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 243
+
+[robomme] env for task InsertPeg episode 19 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 201
+
+[robomme] env for task InsertPeg episode 20 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 240
+
+[robomme] env for task InsertPeg episode 21 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 214
+
+[robomme] env for task InsertPeg episode 22 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 203
+
+[robomme] env for task InsertPeg episode 23 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 231
+
+[robomme] env for task InsertPeg episode 24 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 241
+
+[robomme] env for task InsertPeg episode 25 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 216
+
+[robomme] env for task InsertPeg episode 26 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 241
+
+[robomme] env for task InsertPeg episode 27 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 242
+
+[robomme] env for task InsertPeg episode 28 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 29 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 258
+
+[robomme] env for task InsertPeg episode 30 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 227
+
+[robomme] env for task InsertPeg episode 31 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 250
+
+[robomme] env for task InsertPeg episode 32 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 209
+
+[robomme] env for task InsertPeg episode 33 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 235
+
+[robomme] env for task InsertPeg episode 34 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 216
+
+[robomme] env for task InsertPeg episode 35 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 250
+
+[robomme] env for task InsertPeg episode 36 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 251
+
+[robomme] env for task InsertPeg episode 37 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 231
+
+[robomme] env for task InsertPeg episode 38 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 230
+
+[robomme] env for task InsertPeg episode 39 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 40 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 41 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 214
+
+[robomme] env for task InsertPeg episode 42 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 219
+
+[robomme] env for task InsertPeg episode 43 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 254
+
+[robomme] env for task InsertPeg episode 44 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 247
+
+[robomme] env for task InsertPeg episode 45 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 238
+
+[robomme] env for task InsertPeg episode 46 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 255
+
+[robomme] env for task InsertPeg episode 47 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 271
+
+[robomme] env for task InsertPeg episode 48 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 251
+
+[robomme] env for task InsertPeg episode 49 setup finished
+task_goal: watch the video carefully, then grasp the same end of the same peg you've picked before and insert it into the same side of the box
+exec_start_idx: 247
+
+[robomme] env for task PatternLock episode 0 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 86
+
+[robomme] env for task PatternLock episode 1 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 2 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 123
+
+[robomme] env for task PatternLock episode 3 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 198
+
+[robomme] env for task PatternLock episode 4 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 100
+
+[robomme] env for task PatternLock episode 5 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 6 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 142
+
+[robomme] env for task PatternLock episode 7 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 92
+
+[robomme] env for task PatternLock episode 8 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 9 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 76
+
+[robomme] env for task PatternLock episode 10 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 83
+
+[robomme] env for task PatternLock episode 11 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 103
+
+[robomme] env for task PatternLock episode 12 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 99
+
+[robomme] env for task PatternLock episode 13 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 101
+
+[robomme] env for task PatternLock episode 14 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 86
+
+[robomme] env for task PatternLock episode 15 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 258
+
+[robomme] env for task PatternLock episode 16 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 105
+
+[robomme] env for task PatternLock episode 17 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 69
+
+[robomme] env for task PatternLock episode 18 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 64
+
+[robomme] env for task PatternLock episode 19 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 182
+
+[robomme] env for task PatternLock episode 20 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 21 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 89
+
+[robomme] env for task PatternLock episode 22 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 152
+
+[robomme] env for task PatternLock episode 23 setup finished
+screw plan failed
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 192
+
+[robomme] env for task PatternLock episode 24 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 72
+
+[robomme] env for task PatternLock episode 25 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 25
+
+[robomme] env for task PatternLock episode 26 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 96
+
+[robomme] env for task PatternLock episode 27 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 224
+
+[robomme] env for task PatternLock episode 28 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 29 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 32
+
+[robomme] env for task PatternLock episode 30 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 67
+
+[robomme] env for task PatternLock episode 31 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 131
+
+[robomme] env for task PatternLock episode 32 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 37
+
+[robomme] env for task PatternLock episode 33 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 68
+
+[robomme] env for task PatternLock episode 34 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 94
+
+[robomme] env for task PatternLock episode 35 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 234
+
+[robomme] env for task PatternLock episode 36 setup finished
+screw plan failed
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 80
+
+[robomme] env for task PatternLock episode 37 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 71
+
+[robomme] env for task PatternLock episode 38 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 145
+
+[robomme] env for task PatternLock episode 39 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 148
+
+[robomme] env for task PatternLock episode 40 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 91
+
+[robomme] env for task PatternLock episode 41 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 105
+
+[robomme] env for task PatternLock episode 42 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 141
+
+[robomme] env for task PatternLock episode 43 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 99
+
+[robomme] env for task PatternLock episode 44 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 45 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 103
+
+[robomme] env for task PatternLock episode 46 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 140
+
+[robomme] env for task PatternLock episode 47 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 195
+
+[robomme] env for task PatternLock episode 48 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 33
+
+[robomme] env for task PatternLock episode 49 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 56
+
+[robomme] env for task RouteStick episode 0 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 1 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 2 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 3 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 4 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 5 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 6 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 7 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 8 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 9 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 10 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 11 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 12 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 13 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 14 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 15 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 16 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 17 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 18 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 19 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 20 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 21 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 22 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 23 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 24 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 25 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 26 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 27 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 28 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 29 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 30 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 31 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 32 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 33 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 34 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 35 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 36 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 37 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 38 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 39 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 300
+
+[robomme] env for task RouteStick episode 40 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 41 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 42 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 43 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 300
+
+[robomme] env for task RouteStick episode 44 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 45 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 46 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 47 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 48 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 49 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+Eval finished with exit code 0

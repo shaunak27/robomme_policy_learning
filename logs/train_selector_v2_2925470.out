@@ -1,0 +1,16 @@
+]11;?[cmax_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using rl_selector type
+
+max_token_len: 64
+Step 0: mean_reward=-0.0024, mean_fm_selector=0.0531, mean_fm_uniform=0.0532, mean_entropy=4.6820, policy_loss=0.6868, value_loss=0.7884, approx_kl=-0.0000, grad_norm=33.6710
+Step 10: mean_reward=0.0008, mean_fm_selector=0.0552, mean_fm_uniform=0.0585, mean_entropy=4.7035, policy_loss=0.0440, value_loss=0.0011, approx_kl=-0.0000, grad_norm=0.5914
+Step 20: mean_reward=-0.0013, mean_fm_selector=0.0408, mean_fm_uniform=0.0420, mean_entropy=4.6828, policy_loss=-0.0044, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.1256
+Step 30: mean_reward=0.0003, mean_fm_selector=0.0371, mean_fm_uniform=0.0400, mean_entropy=4.6936, policy_loss=0.0036, value_loss=0.0004, approx_kl=-0.0000, grad_norm=0.2242
+Step 40: mean_reward=0.0008, mean_fm_selector=0.0501, mean_fm_uniform=0.0536, mean_entropy=4.6145, policy_loss=-0.0082, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.1168
+Step 50: mean_reward=0.0004, mean_fm_selector=0.0466, mean_fm_uniform=0.0493, mean_entropy=4.6949, policy_loss=-0.0022, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.1102
+Step 60: mean_reward=0.0004, mean_fm_selector=0.0416, mean_fm_uniform=0.0444, mean_entropy=4.7079, policy_loss=0.0042, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.0480
+Step 70: mean_reward=-0.0035, mean_fm_selector=0.0543, mean_fm_uniform=0.0533, mean_entropy=4.6807, policy_loss=-0.0049, value_loss=0.0005, approx_kl=-0.0000, grad_norm=0.0749
+Step 80: mean_reward=0.0016, mean_fm_selector=0.0453, mean_fm_uniform=0.0498, mean_entropy=4.5829, policy_loss=-0.0045, value_loss=0.0001, approx_kl=-0.0135, grad_norm=0.0494
+Step 90: mean_reward=-0.0012, mean_fm_selector=0.0459, mean_fm_uniform=0.0473, mean_entropy=4.6703, policy_loss=0.0012, value_loss=0.0001, approx_kl=-0.0000, grad_norm=0.0403
+Step 100: mean_reward=0.0006, mean_fm_selector=0.0463, mean_fm_uniform=0.0497, mean_entropy=4.6425, policy_loss=-0.0001, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.0368

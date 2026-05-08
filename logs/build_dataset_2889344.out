@@ -1,0 +1,12 @@
+Processing file: record_dataset_PickXtimes.h5
+Episode 0: timesteps=529, exec_start=0, kept_indices=528, task_goal='pick up the red cube and place it on the target, repeating this action two times, then press the button to stop'
+Episode 1: timesteps=628, exec_start=0, kept_indices=825, task_goal='pick up the blue cube and place it on the target, repeating this action three times, then press the button to stop'
+Episode 2: timesteps=478, exec_start=0, kept_indices=700, task_goal='pick up the red cube and place it on the target, repeating this action two times, then press the button to stop'
+Episode 3: timesteps=814, exec_start=0, kept_indices=1029, task_goal='pick up the green cube and place it on the target, repeating this action four times, then press the button to stop'
+Episode 4: timesteps=645, exec_start=0, kept_indices=946, task_goal='pick up the blue cube and place it on the target, repeating this action three times, then press the button to stop'
+Episode 5: timesteps=576, exec_start=0, kept_indices=389, task_goal='pick up the red cube and place it on the target, repeating this action two times, then press the button to stop'
+Episode 6: timesteps=470, exec_start=0, kept_indices=488, task_goal='pick up the green cube and place it on the target, repeating this action two times, then press the button to stop'
+Episode 7: timesteps=897, exec_start=0, kept_indices=773, task_goal='pick up the green cube and place it on the target, repeating this action five times, then press the button to stop'
+Episode 8: timesteps=332, exec_start=0, kept_indices=303, task_goal='pick up the red cube and place it on the target, then press the button to stop'
+Episode 9: timesteps=574, exec_start=0, kept_indices=696, task_goal='pick up the green cube and place it on the target, repeating this action three times, then press the button to stop'
+Episode 10: timesteps=447, exec_start=0, kept_indices=403, task_goal='pick up the red cube and place it on the target, repeating this action two times, then press the button to stop'

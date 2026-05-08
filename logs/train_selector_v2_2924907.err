@@ -1,0 +1,24 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run fzjc3rjg
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260422_201655-fzjc3rjg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rl_selector_v2
+wandb: ⭐️ View project at https://wandb.ai/shalbe/rl-frame-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/rl-frame-selector/runs/fzjc3rjg
+  0%|          | 0/3024 [00:00<?, ?it/s]E0422 20:25:37.891497  109540 pjrt_stream_executor_client.cc:3077] Execution of replica 0 failed: INTERNAL: Failed to allocate 2415919104 bytes for new constant
+  0%|          | 0/3024 [07:35<?, ?it/s]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 643, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 595, in main
+    selector_state, opt_state, rng, metrics = train_step(
+                                              ^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: INTERNAL: Failed to allocate 2415919104 bytes for new constant
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+srun: error: cyborg: task 0: Exited with exit code 1
+srun: Terminating StepId=2924907.0

@@ -1,0 +1,123 @@
+{
+  "os": "Linux-6.8.0-111-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-05-07T02:57:15.516167Z",
+  "args": [
+    "mme_vla_suite",
+    "--model.history_config",
+    "perceptual-density-modul.yaml",
+    "--dataset_path",
+    "data/robomme_preprocessed_data",
+    "--exp_name",
+    "perceptual-density-modul",
+    "--overwrite"
+  ],
+  "program": "/nethome/shalbe3/robomme_policy_learning/scripts/train.py",
+  "codePath": "scripts/train.py",
+  "git": {
+    "remote": "https://github.com/RoboMME/robomme_policy_learning.git",
+    "commit": "c457ea2f13c8994a308be0c4401c1e7489e3887e"
+  },
+  "email": "shaunak.halbe@gmail.com",
+  "root": "/nethome/shalbe3/robomme_policy_learning",
+  "host": "clippy.cc.gatech.edu",
+  "executable": "/nethome/shalbe3/robomme_policy_learning/.venv/bin/python3",
+  "codePathLocal": "scripts/train.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA A40",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "942725181440",
+      "used": "616918941696"
+    }
+  },
+  "memory": {
+    "total": "540840390656"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 10752,
+      "architecture": "Ampere"
+    }
+  ],
+  "slurm": {
+    "cluster_name": "skynet",
+    "conf": "/opt/slurm/configs/slurm.conf",
+    "cpus_on_node": "16",
+    "cpus_per_task": "16",
+    "gpus_on_node": "4",
+    "gpus_per_node": "a40:4",
+    "gtids": "0",
+    "job_account": "kira-lab",
+    "job_cpus_per_node": "16",
+    "job_end_time": "1778136746",
+    "job_gid": "2626",
+    "job_gpus": "4,5,6,7",
+    "job_id": "3103931",
+    "job_name": "interactive",
+    "job_nodelist": "clippy",
+    "job_num_nodes": "1",
+    "job_partition": "kira-lab",
+    "job_qos": "debug",
+    "job_start_time": "1778122346",
+    "job_uid": "3173960",
+    "job_user": "shalbe3",
+    "jobid": "3103931",
+    "launch_node_ipaddr": "130.207.124.6",
+    "localid": "0",
+    "mpi_type": "none",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "clippy",
+    "oom_kill_step": "0",
+    "prio_process": "0",
+    "procid": "0",
+    "pty_port": "7267",
+    "pty_win_col": "119",
+    "pty_win_row": "34",
+    "script_context": "prolog_task",
+    "srun_comm_host": "130.207.124.6",
+    "srun_comm_port": "7268",
+    "step_id": "4294967290",
+    "step_launcher_port": "7268",
+    "step_nodelist": "clippy",
+    "step_num_nodes": "1",
+    "step_num_tasks": "1",
+    "step_tasks_per_node": "1",
+    "stepid": "4294967290",
+    "submit_dir": "/nethome/shalbe3/robomme_policy_learning",
+    "submit_host": "sky2.cc.gatech.edu",
+    "task_pid": "3999736",
+    "tasks_per_node": "1",
+    "topology_addr": "clippy",
+    "topology_addr_pattern": "node",
+    "tres_per_task": "cpu=16"
+  },
+  "cudaVersion": "13.2"
+}

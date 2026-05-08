@@ -1,0 +1,27 @@
+Using port 40315 for task=PatternLock method=rlselector
+Starting policy server on GPU 0 ...
+Waiting for server to start ...
+Server ready after 49s
+Starting eval client on GPU 1 for task=PatternLock ...
+
+[robomme] env for task PatternLock episode 0 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to retrace the same pattern
+exec_start_idx: 86
+Error evaluating episode 0 for task PatternLock: Error in inference server:
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/serving/websocket_policy_server.py", line 72, in _handler
+    outputs = self._policy.infer(obs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/policies/policy.py", line 95, in infer
+    inputs = self._prepare_history(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/policies/policy.py", line 166, in _prepare_history
+    return self._prepare_history_with_selector(inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/policies/policy.py", line 248, in _prepare_history_with_selector
+    proprio = self._normalize_state(inputs["state"])
+                                    ~~~~~~^^^^^^^^^
+KeyError: 'state'
+
+API calling error, aborting...
+Eval finished with exit code 0

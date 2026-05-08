@@ -11,7 +11,22 @@ import re
 from openpi.training import config as _config
 from openpi.training.data_loader import Dataset
 from mme_vla_suite.shared.mem_buffer import MemoryBuffer, MemoryBufferRecurrent
+from mme_vla_suite.shared.sampling_density import compute_frame_indices, DEFAULT_MAX_FRAMES
+from mme_vla_suite.shared.sampling_rules import get_sampling_sources
 import pickle
+
+# Global episode index -> task name mapping (alphabetical, 100 episodes each)
+_TASK_ORDER = [
+    "BinFill", "ButtonUnmask", "ButtonUnmaskSwap", "InsertPeg",
+    "MoveCube", "PatternLock", "PickHighlight", "PickXtimes",
+    "RouteStick", "StopCube", "SwingXtimes", "VideoPlaceButton",
+    "VideoPlaceOrder", "VideoRepick", "VideoUnmask", "VideoUnmaskSwap",
+]
+
+def _episode_to_task(global_ep_idx: int) -> str:
+    """Map global episode index to task name."""
+    task_idx = global_ep_idx // 100
+    return _TASK_ORDER[task_idx]
 
 random.seed(0)
 logger = logging.getLogger(__name__)
@@ -92,6 +107,11 @@ class RoboMMEDataset(Dataset):
             self.state_norm_stats = data_config.norm_stats['state']
             self.use_quantiles = data_config.use_quantile_norm
         
+    def _load_keyframe_idxs(self, epis_idx: int) -> list[int]:
+        path = os.path.join(self.feature_dir, f"episode_{epis_idx}", "keyframe_idxs.json")
+        with open(path) as f:
+            return json.load(f)
+
     def _gather_history_feat(self, indices_to_load: list[int], epis_idx: int):
         history_feats = {}
         history_paths = []
@@ -134,11 +154,60 @@ class RoboMMEDataset(Dataset):
         token_budget = self.history_config.budget
 
         return self.mem_buffer.prepare_frame_sampling(
-            step_idx, token_budget, token_per_image, self._gather_history_feat, 
+            step_idx, token_budget, token_per_image, self._gather_history_feat,
             epis_idx=epis_idx)
 
+    def prepare_oracle_keyframe_sampling(self, epis_idx, step_idx):
+        token_per_image = self.history_config.token_per_image
+        token_budget = self.history_config.budget
+        keyframe_idxs = self._load_keyframe_idxs(epis_idx)
 
-    
+        return self.mem_buffer.prepare_oracle_keyframe_sampling(
+            step_idx, token_budget, token_per_image, keyframe_idxs,
+            self._gather_history_feat, epis_idx=epis_idx)
+
+    def _load_density_metadata(self, epis_idx: int) -> tuple[list[dict], dict[int, list[int]]]:
+        """Load precomputed segments and density keyframes for an episode."""
+        ep_dir = os.path.join(self.feature_dir, f"episode_{epis_idx}")
+        with open(os.path.join(ep_dir, "segments.json")) as f:
+            segments = json.load(f)
+        with open(os.path.join(ep_dir, "density_keyframes.json")) as f:
+            raw = json.load(f)
+        keyframes_by_seg = {int(k): v for k, v in raw.items()}
+        return segments, keyframes_by_seg
+
+    def prepare_density_sampling(self, epis_idx, step_idx, task_goal):
+        token_per_image = self.history_config.token_per_image
+        token_budget = self.history_config.budget
+        max_frames = token_budget // (token_per_image * self.num_views)
+
+        task_name = _episode_to_task(epis_idx)
+        segments, keyframes_by_seg = self._load_density_metadata(epis_idx)
+        source_map = get_sampling_sources(task_name, segments, task_goal=task_goal)
+
+        # Find current exec segment to get source_seg_indices
+        current_seg_idx = None
+        for seg in segments:
+            if seg["start_frame"] <= step_idx <= seg["end_frame"]:
+                current_seg_idx = seg["idx"]
+                break
+        source_seg_indices = source_map.get(current_seg_idx, []) if current_seg_idx is not None else []
+
+        indices = compute_frame_indices(
+            task_name=task_name,
+            step_idx=step_idx,
+            segments=segments,
+            source_seg_indices=source_seg_indices,
+            keyframes_by_seg=keyframes_by_seg,
+            task_goal=task_goal,
+            max_frames=max_frames,
+        )
+
+        return self.mem_buffer.prepare_frame_sampling_with_indices(
+            indices, token_budget, token_per_image,
+            self._gather_history_feat, epis_idx=epis_idx,
+        )
+
     def prepare_token_recurrent(self, epis_idx, step_idx, exec_start_idx):      
         self.mem_buffer.exec_start_idx = exec_start_idx
         
@@ -223,6 +292,20 @@ class RoboMMEDataset(Dataset):
                         static_state_emb,
                         static_mask, # >=64
                     ) = self.prepare_token_drop(epis_idx, step_idx)
+                elif self.history_config.perceptual_memory.type == "oracle_keyframe_sampling":
+                    (
+                        static_img_emb,
+                        static_pos_emb,
+                        static_state_emb,
+                        static_mask,
+                    ) = self.prepare_oracle_keyframe_sampling(epis_idx, step_idx)
+                elif self.history_config.perceptual_memory.type == "density_sampling":
+                    (
+                        static_img_emb,
+                        static_pos_emb,
+                        static_state_emb,
+                        static_mask,
+                    ) = self.prepare_density_sampling(epis_idx, step_idx, data["prompt"])
                 else:
                     (
                         static_img_emb,

@@ -1,0 +1,97 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033745
+SLURM_ARRAY_TASK_ID: 3
+TASK:                InsertPeg
+HOSTNAME:            chappie.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: InsertPeg, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_InsertPeg.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f217-334
+  Subtask: pick up the peg by grasping the far end
+  Frames: 217 - 334
+  First subtask: True
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 56.2s
+  Rewards (raw): [0.02, 0.0, 0.62, 0.45, 0.62, 0.55, 1.0, 0.74]
+  Rewards (mono): [0.02, 0.02, 0.62, 0.62, 0.62, 0.62, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-117
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 33, 'role': 'early_transition'}, {'frame': 39, 'role': 'peak_transition'}, {'frame': 97, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-414
+  Subtask: insert the peg from the right side
+  Frames: 335 - 414
+  First subtask: False
+============================================================
+  Loaded 80 frames
+  Prefix scoring: 55.0s
+  Rewards (raw): [0.19, 0.59, 0.37, 0.0, 0.07, 1.0, 0.96, 1.0]
+  Rewards (mono): [0.19, 0.59, 0.59, 0.59, 0.59, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 34-79
+  Keyframes: [{'frame': 35, 'role': 'early_transition'}, {'frame': 50, 'role': 'peak_transition'}, {'frame': 58, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-433
+  Subtask: insert the peg from the right side
+  Frames: 335 - 433
+  First subtask: False
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 55.0s
+  Rewards (raw): [0.25, 0.47, 0.0, 0.0, 0.81, 0.88, 1.0, 0.94]
+  Rewards (mono): [0.25, 0.47, 0.47, 0.47, 0.81, 0.88, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 30-98
+  Keyframes: [{'frame': 31, 'role': 'early_transition'}, {'frame': 50, 'role': 'peak_transition'}, {'frame': 67, 'role': 'late_transition'}, {'frame': 72, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 4/9 ---
+
+============================================================
+Segment: InsertPeg_ep14_f222-327
+  Subtask: pick up the peg by grasping the near end
+  Frames: 222 - 327
+  First subtask: True
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 55.3s
+  Rewards (raw): [0.0, 0.0, 0.51, 0.41, 0.45, 0.24, 0.27, 1.0]
+  Rewards (mono): [0.0, 0.0, 0.51, 0.51, 0.51, 0.51, 0.51, 1.0]
+  Failed regions: [[23, 37, 50]]
+  Successful interval: 0-105
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 34, 'role': 'early_transition'}, {'frame': 55, 'role': 'peak_transition'}, {'frame': 91, 'role': 'late_transition'}, {'frame': 105, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.83

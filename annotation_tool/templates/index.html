@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frame Importance Annotator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <header id="topbar">
+    <div class="topbar-group">
+      <label for="task-select">Task:</label>
+      <select id="task-select"></select>
+    </div>
+    <div class="topbar-group">
+      <label>Episode:</label>
+      <button id="ep-prev">&lsaquo;</button>
+      <span id="ep-label">-</span>
+      <button id="ep-next">&rsaquo;</button>
+    </div>
+    <div class="topbar-group">
+      <span id="progress-label">-</span>
+    </div>
+    <div class="topbar-group" style="margin-left:auto;">
+      <button id="btn-skip">Skip to next unannotated &raquo;</button>
+    </div>
+  </header>
+
+  <!-- Main area: video + info side by side -->
+  <main id="main-area">
+    <div id="video-wrapper">
+      <div id="video-border">
+        <video id="video-player" muted></video>
+      </div>
+      <div id="video-info">
+        <span id="frame-counter">Frame 0 / 0</span>
+        <span id="phase-badge">DEMO</span>
+        <span id="subgoal-text">-</span>
+      </div>
+      <div id="video-controls">
+        <button id="btn-play-pause">Play</button>
+        <button id="btn-reset" title="Reset to start (R)">Reset</button>
+        <label>Speed:</label>
+        <input type="range" id="speed-slider" min="0.1" max="2" step="0.1" value="0.5">
+        <span id="speed-label">0.5x</span>
+      </div>
+    </div>
+
+    <div id="side-panel">
+      <!-- Task goal -->
+      <div id="goal-section">
+        <h3>Task Instruction</h3>
+        <div id="goal-display">-</div>
+      </div>
+
+      <!-- Subgoals list -->
+      <div id="subgoals-section">
+        <h3>Subgoals</h3>
+        <ol id="subgoals-list"></ol>
+      </div>
+
+      <hr class="panel-divider">
+
+      <!-- Segments -->
+      <h3>Selected Segments</h3>
+      <div id="segments-list">
+        <span class="muted">None yet</span>
+      </div>
+      <div style="margin-top:8px;">
+        <button id="btn-clear-all">Clear all</button>
+        <button id="btn-save" style="margin-left:8px;">Save</button>
+      </div>
+
+      <hr class="panel-divider">
+
+      <!-- Help -->
+      <details id="help-toggle">
+        <summary>Controls</summary>
+        <ul>
+          <li><strong>Drag</strong> timeline to select ranges</li>
+          <li><strong>Click</strong> segment chip to remove</li>
+          <li><kbd>Space</kbd> play/pause, <kbd>R</kbd> reset, <kbd>S</kbd> save</li>
+          <li><kbd>&larr;</kbd>/<kbd>&rarr;</kbd> prev/next episode</li>
+        </ul>
+      </details>
+    </div>
+  </main>
+
+  <!-- Timeline -->
+  <section id="timeline-section">
+    <div id="timeline-header">
+      <span>Timeline</span>
+      <span id="timeline-legend">
+        <span class="legend-demo">Demo</span>
+        <span class="legend-exec">Execution</span>
+        <span class="legend-selected">Selected</span>
+      </span>
+    </div>
+    <div id="timeline-scroll">
+      <canvas id="timeline-canvas"></canvas>
+    </div>
+  </section>
+
+  <script src="/static/annotator.js"></script>
+</body>
+</html>

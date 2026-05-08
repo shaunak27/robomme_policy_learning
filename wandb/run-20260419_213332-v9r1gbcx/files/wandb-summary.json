@@ -1,0 +1,1 @@
+{"mean_entropy":0,"value_loss":NaN,"grad_norm":NaN,"_wandb":{"runtime":2003},"_runtime":2003.058278746,"mean_fm_uniform":0.030594918876886368,"policy_loss":NaN,"avg_selected_age":15.5,"mean_reward":-0.01978147029876709,"_timestamp":1.7766506978791451e+09,"mean_fm_selector":0.0406888872385025,"_step":150,"approx_kl":NaN,"temporal_diversity":9.233092656309694}

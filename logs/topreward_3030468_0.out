@@ -1,0 +1,454 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3030478
+SLURM_ARRAY_TASK_ID: 0
+TASK:                BinFill
+HOSTNAME:            heistotron.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Wed Apr 29 03:19:07 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: BinFill, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_BinFill.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: BinFill_ep3_f0-107
+  Subtask: pick up the first green cube
+  Frames: 0 - 107
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.03, 0.0, 0.36, 0.59, 0.51, 0.61, 0.95, 1.0]
+  Failed regions: [[51, 79]]
+  Successful interval: 60-107
+  Keyframes: [60, 96, 107]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: BinFill_ep3_f108-174
+  Subtask: put it into the bin
+  Frames: 108 - 174
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.21, 0.0, 0.07, 0.57, 0.5, 0.57, 1.0, 0.64]
+  Failed regions: [[6, 31]]
+  Successful interval: 37-57
+  Keyframes: [37, 53, 57]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: BinFill_ep3_f175-278
+  Subtask: pick up the second green cube
+  Frames: 175 - 278
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.4, 0.36, 0.51, 0.6, 0.51, 1.0, 0.84]
+  Failed regions: [[63, 89]]
+  Successful interval: 71-89
+  Keyframes: [71, 89]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: BinFill_ep3_f279-353
+  Subtask: put it into the bin
+  Frames: 279 - 353
+============================================================
+  Loaded 75 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.74, 0.89, 0.05, 0.0, 0.37, 1.0, 0.37, 0.05]
+  Failed regions: [[16, 45]]
+  Successful interval: 32-54
+  Keyframes: [33, 54]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: BinFill_ep3_f354-581
+  Subtask: pick up the third green cube
+  Frames: 354 - 581
+============================================================
+  Loaded 228 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.24, 0.0, 0.33, 0.21, 0.4, 0.45, 0.64, 1.0]
+  Failed regions: [[22, 80], [80, 139]]
+  Successful interval: 98-227
+  Keyframes: [105, 227]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 6/26 ---
+
+============================================================
+Segment: BinFill_ep3_f582-668
+  Subtask: put it into the bin
+  Frames: 582 - 668
+============================================================
+  Loaded 87 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.26, 0.65, 0.48, 0.84, 0.58, 0.71, 1.0]
+  Failed regions: [[30, 52], [52, 74]]
+  Successful interval: 59-86
+  Keyframes: [59, 73, 86]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 7/26 ---
+
+============================================================
+Segment: BinFill_ep3_f669-769
+  Subtask: pick up the first blue cube
+  Frames: 669 - 769
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.26, 0.43, 0.49, 1.0, 0.66, 0.77, 1.0]
+  Failed regions: []
+  Successful interval: 5-61
+  Keyframes: [5, 25, 61]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 8/26 ---
+
+============================================================
+Segment: BinFill_ep3_f770-835
+  Subtask: put it into the bin
+  Frames: 770 - 835
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.0, 0.23, 0.62, 1.0, 0.69, 0.92, 0.31]
+  Failed regions: []
+  Successful interval: 11-39
+  Keyframes: [11, 17, 39]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 9/26 ---
+
+============================================================
+Segment: BinFill_ep3_f836-904
+  Subtask: press the button
+  Frames: 836 - 904
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.07, 0.25, 0.43, 0.5, 0.75, 1.0, 0.75]
+  Failed regions: []
+  Successful interval: 3-59
+  Keyframes: [3, 18, 59]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 10/26 ---
+
+============================================================
+Segment: BinFill_ep3_f836-939
+  Subtask: press the button
+  Frames: 836 - 939
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.22, 0.59, 0.59, 0.81, 0.81, 1.0, 0.66]
+  Failed regions: []
+  Successful interval: 71-89
+  Keyframes: [71, 89]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 11/26 ---
+
+============================================================
+Segment: BinFill_ep14_f0-110
+  Subtask: pick up the first red cube
+  Frames: 0 - 110
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.12, 0.0, 0.47, 1.0, 0.72, 0.79, 0.88, 0.98]
+  Failed regions: [[11, 39]]
+  Successful interval: 20-53
+  Keyframes: [20, 41, 53]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 12/26 ---
+
+============================================================
+Segment: BinFill_ep14_f111-178
+  Subtask: put it into the bin
+  Frames: 111 - 178
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.25, 0.25, 0.83, 1.0, 0.42, 0.71, 0.17]
+  Failed regions: []
+  Successful interval: 20-40
+  Keyframes: [21, 40]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 13/26 ---
+
+============================================================
+Segment: BinFill_ep14_f179-286
+  Subtask: pick up the second red cube
+  Frames: 179 - 286
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.38, 0.24, 0.52, 0.55, 0.83, 0.83, 1.0]
+  Failed regions: [[23, 79]]
+  Successful interval: 88-107
+  Keyframes: [88, 94, 107]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 14/26 ---
+
+============================================================
+Segment: BinFill_ep14_f287-368
+  Subtask: put it into the bin
+  Frames: 287 - 368
+============================================================
+  Loaded 82 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.1, 0.23, 0.1, 0.71, 1.0, 0.26, 0.35]
+  Failed regions: [[28, 49]]
+  Successful interval: 35-60
+  Keyframes: [36, 60]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 15/26 ---
+
+============================================================
+Segment: BinFill_ep14_f369-468
+  Subtask: pick up the third red cube
+  Frames: 369 - 468
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.42, 0.49, 0.56, 0.82, 1.0, 0.93, 0.67]
+  Failed regions: []
+  Successful interval: 5-73
+  Keyframes: [5, 24, 73]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 16/26 ---
+
+============================================================
+Segment: BinFill_ep14_f469-540
+  Subtask: put it into the bin
+  Frames: 469 - 540
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.11, 0.03, 0.59, 0.95, 0.78, 1.0, 0.19]
+  Failed regions: [[16, 43], [43, 61]]
+  Successful interval: 49-61
+  Keyframes: [49, 60]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 17/26 ---
+
+============================================================
+Segment: BinFill_ep14_f541-606
+  Subtask: press the button
+  Frames: 541 - 606
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.44, 0.67, 0.75, 0.61, 0.86, 1.0, 0.78]
+  Failed regions: [[31, 48]]
+  Successful interval: 36-56
+  Keyframes: [36, 56]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 18/26 ---
+
+============================================================
+Segment: BinFill_ep14_f541-644
+  Subtask: press the button
+  Frames: 541 - 644
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.63, 0.81, 0.93, 1.0, 0.63, 1.0, 0.89]
+  Failed regions: []
+  Successful interval: 5-63
+  Keyframes: [5, 61]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 19/26 ---
+
+============================================================
+Segment: BinFill_ep81_f0-104
+  Subtask: pick up the first red cube
+  Frames: 0 - 104
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.05, 0.0, 0.4, 0.68, 0.57, 0.65, 1.0, 0.93]
+  Failed regions: [[50, 77]]
+  Successful interval: 58-90
+  Keyframes: [58, 63, 90]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 20/26 ---
+
+============================================================
+Segment: BinFill_ep81_f105-154
+  Subtask: put it into the bin
+  Frames: 105 - 154
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.33, 0.52, 0.33, 0.71, 0.95, 1.0, 0.52]
+  Failed regions: [[17, 30]]
+  Successful interval: 21-42
+  Keyframes: [21, 37, 42]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 21/26 ---
+
+============================================================
+Segment: BinFill_ep81_f155-254
+  Subtask: pick up the second red cube
+  Frames: 155 - 254
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.36, 0.28, 0.53, 0.56, 0.67, 0.72, 1.0]
+  Failed regions: [[22, 48]]
+  Successful interval: 30-99
+  Keyframes: [30, 88, 99]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 22/26 ---
+
+============================================================
+Segment: BinFill_ep81_f255-324
+  Subtask: put it into the bin
+  Frames: 255 - 324
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.55, 0.57, 0.64, 0.67, 0.9, 1.0, 0.48]
+  Failed regions: []
+  Successful interval: 4-60
+  Keyframes: [4, 20, 60]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 23/26 ---
+
+============================================================
+Segment: BinFill_ep81_f325-430
+  Subtask: pick up the third red cube
+  Frames: 325 - 430
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.25, 0.17, 0.79, 0.79, 0.54, 1.0, 0.96]
+  Failed regions: [[23, 50], [64, 91]]
+  Successful interval: 72-91
+  Keyframes: [73, 91]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 24/26 ---
+
+============================================================
+Segment: BinFill_ep81_f431-489
+  Subtask: put it into the bin
+  Frames: 431 - 489
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.0, 0.15, 0.08, 1.0, 0.15, 0.38, 0.62, 0.46]
+  Failed regions: []
+  Successful interval: 18-27
+  Keyframes: [19, 27]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 25/26 ---
+
+============================================================
+Segment: BinFill_ep81_f490-550
+  Subtask: press the button
+  Frames: 490 - 550
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.08, 0.35, 0.38, 0.38, 0.62, 0.73, 1.0]
+  Failed regions: []
+  Successful interval: 33-60
+  Keyframes: [33, 56, 60]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 26/26 ---
+
+============================================================
+Segment: BinFill_ep81_f490-588
+  Subtask: press the button
+  Frames: 490 - 588
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.17, 0.17, 0.39, 1.0, 0.78, 0.87, 0.43]
+  Failed regions: []
+  Successful interval: 30-59
+  Keyframes: [30, 56]
+  Success detected: True
+  Confidence: 0.83
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 26 segments
+  Skipped: 0 segments
+  Environments: {'BinFill': 26}
+  Mean confidence: 0.773
+  Success detected: 26/26
+  Total failed regions detected: 19
+
+All outputs saved to: data/topreward_labels
+Done.

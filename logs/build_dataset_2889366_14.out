@@ -1,0 +1,5 @@
+Job 14: processing VideoUnmask
+  h5_file:    data/robomme_data_h5/record_dataset_VideoUnmask.h5
+  output_dir: data/robomme_preprocessed_data/per_task/VideoUnmask
+  hostname:   perseverance
+  started:    Fri 17 Apr 2026 05:07:09 PM EDT

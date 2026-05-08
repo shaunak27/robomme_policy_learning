@@ -1,0 +1,62 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run czh3uemp
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260508_011013-czh3uemp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qkfs_v1
+wandb: ⭐️ View project at https://wandb.ai/shalbe/qkfs-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/qkfs-selector/runs/czh3uemp
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+  0%|          | 0/25000 [00:00<?, ?it/s]  0%|          | 0/25000 [00:55<?, ?it/s]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 467, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 409, in main
+    opt_state, loss, info = train_step(
+                            ^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/graph.py", line 1081, in update_context_manager_wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/transforms/compilation.py", line 345, in jit_wrapper
+    pure_args_out, pure_kwargs_out, pure_out = jitted_fn(
+                                               ^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/transforms/compilation.py", line 112, in __call__
+    out = self.f(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 235, in train_step
+    (loss, info), grads = nnx.value_and_grad(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/graph.py", line 1081, in update_context_manager_wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/transforms/autodiff.py", line 164, in grad_wrapper
+    fn_out = gradded_fn(*pure_args)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/transforms/autodiff.py", line 86, in __call__
+    out = self.f(*args)
+          ^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 233, in loss_wrapper
+    return _loss_fn(model, batch, num_segments, epsilon, lambda_frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 198, in _loss_fn
+    loss, info = compute_qkfs_loss_jax(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/qkfs/targets.py", line 422, in compute_qkfs_loss_jax
+    seg_one_hot = jax.nn.one_hot(target_seg_assignment, S)  # (B, N, S)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/nn/functions.py", line 704, in one_hot
+    num_classes = core.concrete_dim_or_error(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.ConcretizationTypeError: Abstract tracer value encountered where concrete value is expected: traced array with shape int32[]
+The error arose in jax.nn.one_hot argument `num_classes`.
+The error occurred while tracing the function train_step at /nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py:226 for jit. This concrete value was not available in Python because it depends on the value of the argument lambda_frame.
+
+See https://jax.readthedocs.io/en/latest/errors.html#jax.errors.ConcretizationTypeError
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+srun: error: qt-1: task 0: Exited with exit code 1
+srun: Terminating StepId=3111655.0

@@ -1,0 +1,86 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+E0417 17:07:13.276939  508653 platform_util.cc:250] Failed to create stream executor for device CUDA:0: CUDA error: : CUDA_ERROR_INVALID_VALUE: invalid argument
+Traceback (most recent call last):
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 824, in backends
+    backend = _init_backend(platform)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 908, in _init_backend
+    backend = registration.factory()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 553, in make_pjrt_c_api_client
+    return xla_client.make_c_api_client(plugin_name, updated_options, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jaxlib/xla_client.py", line 161, in make_c_api_client
+    return _xla.get_c_api_client(
+           ^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.JaxRuntimeError: INTERNAL: no supported devices found for platform CUDA
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 57, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/build_dataset_single_task.py", line 48, in main
+    processor.run()
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/dataset_builder/build_robomme_dataset.py", line 191, in run
+    mem_buffer = MemoryBuffer(
+                 ^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/shared/mem_buffer.py", line 60, in __init__
+    from mme_vla_suite.shared.siglip_tokenizer import SigLipTokenizer
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/shared/siglip_tokenizer.py", line 13, in <module>
+    class SigLipTokenizer:
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/shared/siglip_tokenizer.py", line 14, in SigLipTokenizer
+    def __init__(self, rngs: nnx.Rngs = nnx.Rngs(2), inference_batch_size: int = 64):
+                                        ^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/object.py", line 79, in __call__
+    return _graph_node_meta_call(cls, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/object.py", line 88, in _graph_node_meta_call
+    cls._object_meta_construct(node, *args, **kwargs)
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/object.py", line 82, in _object_meta_construct
+    self.__init__(*args, **kwargs)
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flax/nnx/rnglib.py", line 186, in __init__
+    key = jax.random.key(value)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/random.py", line 220, in key
+    return _key('key', seed, impl)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/random.py", line 200, in _key
+    return prng.random_seed(seed, impl=impl)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/prng.py", line 554, in random_seed
+    seeds_arr = jnp.asarray(np.int64(seeds))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/numpy/array_constructors.py", line 401, in asarray
+    return array(a, dtype=dtype, copy=bool(copy), order=order, device=device,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/numpy/array_constructors.py", line 286, in array
+    out_array: Array = lax._convert_element_type(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/lax/lax.py", line 1689, in _convert_element_type
+    return convert_element_type_p.bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/core.py", line 632, in bind
+    return self._true_bind(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/core.py", line 648, in _true_bind
+    return self.bind_with_trace(prev_trace, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/lax/lax.py", line 5012, in _convert_element_type_bind_with_trace
+    operand = core.Primitive.bind_with_trace(convert_element_type_p, trace, args, params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/core.py", line 660, in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/core.py", line 1205, in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jax/_src/dispatch.py", line 91, in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+RuntimeError: Unable to initialize backend 'cuda': INTERNAL: no supported devices found for platform CUDA (you may need to uninstall the failing plugin package, or set JAX_PLATFORMS=cpu to skip this backend.)
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+srun: error: perseverance: task 0: Exited with exit code 1
+srun: Terminating StepId=2889366.0

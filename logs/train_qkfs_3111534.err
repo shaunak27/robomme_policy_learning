@@ -1,0 +1,16 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 7vb8nr3m
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260508_004301-7vb8nr3m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qkfs_v1
+wandb: ⭐️ View project at https://wandb.ai/shalbe/qkfs-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/qkfs-selector/runs/7vb8nr3m
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+  0%|          | 0/50000 [00:00<?, ?it/s]                                           0%|          | 0/50000 [01:51<?, ?it/s]  0%|          | 1/50000 [01:51<1554:34:14, 111.93s/it]  0%|          | 2/50000 [01:53<651:31:20, 46.91s/it]    0%|          | 3/50000 [02:12<474:53:35, 34.19s/it]  0%|          | 4/50000 [02:13<293:29:01, 21.13s/it]  0%|          | 5/50000 [02:20<224:20:13, 16.15s/it]  0%|          | 6/50000 [02:21<153:14:54, 11.04s/it]  0%|          | 7/50000 [02:29<136:13:27,  9.81s/it]  0%|          | 8/50000 [02:30<97:45:11,  7.04s/it]   0%|          | 9/50000 [02:49<148:52:17, 10.72s/it]  0%|          | 10/50000 [02:50<107:43:07,  7.76s/it]  0%|          | 11/50000 [03:08<154:02:03, 11.09s/it]  0%|          | 12/50000 [03:10<113:49:19,  8.20s/it]  0%|          | 13/50000 [03:17<109:23:52,  7.88s/it]  0%|          | 14/50000 [03:19<83:00:31,  5.98s/it]   0%|          | 15/50000 [03:26<88:15:55,  6.36s/it]  0%|          | 16/50000 [03:28<69:26:06,  5.00s/it]  0%|          | 17/50000 [03:47<127:15:21,  9.17s/it]  0%|          | 18/50000 [03:48<96:30:27,  6.95s/it]   0%|          | 19/50000 [04:07<145:37:15, 10.49s/it]  0%|          | 20/50000 [04:08<106:57:24,  7.70s/it]  0%|          | 21/50000 [04:16<105:12:58,  7.58s/it]  0%|          | 22/50000 [04:18<82:18:40,  5.93s/it]   0%|          | 23/50000 [04:25<87:24:24,  6.30s/it]  0%|          | 24/50000 [04:27<68:06:24,  4.91s/it]  0%|          | 25/50000 [04:46<127:21:28,  9.17s/it]  0%|          | 26/50000 [04:47<93:53:00,  6.76s/it]   0%|          | 27/50000 [05:06<143:55:10, 10.37s/it]  0%|          | 28/50000 [05:07<105:49:43,  7.62s/it]  0%|          | 29/50000 [05:14<103:20:36,  7.45s/it]srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** STEP 3111534.0 ON samantha CANCELLED AT 2026-05-08T00:48:26 ***
+slurmstepd: error: *** JOB 3111534 ON samantha CANCELLED AT 2026-05-08T00:48:26 ***

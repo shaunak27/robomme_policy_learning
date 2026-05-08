@@ -284,6 +284,10 @@ class MemoryBuffer:
     def get_frame_sampling_indices(self, step_idx, token_budget, token_per_image):
         max_size = token_budget // (token_per_image * self.num_views)
         return even_sampling_indices(step_idx, max_size)
+
+    def get_oracle_keyframe_indices(self, step_idx, token_budget, token_per_image, keyframe_idxs):
+        max_size = token_budget // (token_per_image * self.num_views)
+        return oracle_keyframe_sampling_indices(step_idx, keyframe_idxs, max_size)
     
     
     def _prepare_frame_sampling(self, history_feats, indices_to_load, token_budget, token_per_image):
@@ -319,6 +323,36 @@ class MemoryBuffer:
         history_feats = history_feats_gather_fn(indices_to_load, *args, **kwargs)
         return self._prepare_frame_sampling(history_feats, indices_to_load, token_budget, token_per_image)
 
+    def prepare_oracle_keyframe_sampling(self, step_idx, token_budget, token_per_image, keyframe_idxs, history_feats_gather_fn, *args, **kwargs):
+        indices_to_load = self.get_oracle_keyframe_indices(step_idx, token_budget, token_per_image, keyframe_idxs)
+        history_feats = history_feats_gather_fn(indices_to_load, *args, **kwargs)
+        return self._prepare_frame_sampling(history_feats, indices_to_load, token_budget, token_per_image)
+
+    def prepare_frame_sampling_with_indices(self, indices_to_load, token_budget, token_per_image, history_feats_gather_fn, *args, **kwargs):
+        """Frame sampling using externally provided indices (e.g. from RL selector)."""
+        history_feats = history_feats_gather_fn(indices_to_load, *args, **kwargs)
+        return self._prepare_frame_sampling(history_feats, indices_to_load, token_budget, token_per_image)
+
+    def get_candidate_global_embeddings(self, step_idx, pool_size=64):
+        """Get mean-pooled global embedding for each candidate frame 0..step_idx.
+
+        Uses the 8x8 cached grid (64 tokens) by default — the highest
+        resolution stored by build_robomme_dataset.
+
+        Returns (num_frames, emb_dim) numpy array.
+        """
+        spatial_size = str(int(math.sqrt(pool_size)))
+        spatial_key = f"{spatial_size}x{spatial_size}"
+        embs = []
+        for t in range(step_idx + 1):
+            if t in self._history_feats:
+                img = self._history_feats[t][f"image_emb_{spatial_key}"]  # (v, p, d)
+                embs.append(img.mean(axis=(0, 1)))  # (d,)
+            else:
+                break
+        if embs:
+            return np.stack(embs, axis=0)
+        return np.zeros((0, self.img_emb_dim), dtype=np.float32)
 
     def _visualize_frame_sampling(self, indices_to_load, step_idx):
         images = [self._history_feats[idx]["image_pixels"][0] for idx in indices_to_load]

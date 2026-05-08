@@ -398,14 +398,14 @@ class HistoryPi0(BaseModel):
                 obs.static_image_emb, obs.static_pos_emb, obs.static_state_emb
             )
             input_mask = obs.static_mask
-            ar_mask = [False] * tokens.shape[1]
-            na_mask = [False] * tokens.shape[1]
+            ar_mask = jnp.zeros(tokens.shape[1], dtype=jnp.bool_)
+            na_mask = jnp.zeros(tokens.shape[1], dtype=jnp.bool_)
         elif self.representation_type == "recurrent":
             (tokens, input_mask), _, stats = self.mem_encoder(
                 obs.recur_image_emb, obs.recur_mask, obs.recur_pos_emb, obs.recur_state_emb
             )
-            ar_mask = [False] * tokens.shape[1]
-            na_mask = [False] * tokens.shape[1]
+            ar_mask = jnp.zeros(tokens.shape[1], dtype=jnp.bool_)
+            na_mask = jnp.zeros(tokens.shape[1], dtype=jnp.bool_)
         else:
             tokens = None
             input_mask = None

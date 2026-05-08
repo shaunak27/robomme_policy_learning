@@ -1,0 +1,43 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260421_152933-8qqkjhl4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rl_selector_v1
+wandb: ⭐️ View project at https://wandb.ai/shalbe/rl-frame-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/rl-frame-selector/runs/8qqkjhl4
+  0%|          | 0/3024 [00:00<?, ?it/s]2026-04-21 15:31:33.063301: E external/xla/xla/service/slow_operation_alarm.cc:73] Constant folding an instruction is taking > 1s:
+
+  %reduce-window.4 = s32[32,596]{1,0} reduce-window(%broadcast.310, %constant.56), window={size=1x596 pad=0_0x595_0}, to_apply=%region_20.965, metadata={op_name="jit(fun)/jit(main)/jit(cumsum)/reduce_window_sum" source_file="/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/models/integration/history_pi0.py" source_line=58}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+2026-04-21 15:31:35.500006: E external/xla/xla/service/slow_operation_alarm.cc:140] The operation took 3.436814796s
+Constant folding an instruction is taking > 1s:
+
+  %reduce-window.4 = s32[32,596]{1,0} reduce-window(%broadcast.310, %constant.56), window={size=1x596 pad=0_0x595_0}, to_apply=%region_20.965, metadata={op_name="jit(fun)/jit(main)/jit(cumsum)/reduce_window_sum" source_file="/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/models/integration/history_pi0.py" source_line=58}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+2026-04-21 15:31:37.500729: E external/xla/xla/service/slow_operation_alarm.cc:73] Constant folding an instruction is taking > 2s:
+
+  %reduce-window.5 = s32[32,596]{1,0} reduce-window(%broadcast.319, %constant.57), window={size=1x596 pad=0_0x595_0}, to_apply=%region_20.924, metadata={op_name="jit(fun)/jit(main)/jit(cumsum)/reduce_window_sum" source_file="/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/models/integration/history_pi0.py" source_line=58}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+2026-04-21 15:31:38.670491: E external/xla/xla/service/slow_operation_alarm.cc:140] The operation took 3.170159963s
+Constant folding an instruction is taking > 2s:
+
+  %reduce-window.5 = s32[32,596]{1,0} reduce-window(%broadcast.319, %constant.57), window={size=1x596 pad=0_0x595_0}, to_apply=%region_20.924, metadata={op_name="jit(fun)/jit(main)/jit(cumsum)/reduce_window_sum" source_file="/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/models/integration/history_pi0.py" source_line=58}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+                                          0%|          | 0/3024 [02:01<?, ?it/s]  0%|          | 1/3024 [02:01<101:58:59, 121.45s/it]  0%|          | 2/3024 [02:35<58:37:13, 69.83s/it]    0%|          | 3/3024 [03:03<42:36:29, 50.77s/it]  0%|          | 4/3024 [03:50<41:31:18, 49.50s/it]  0%|          | 5/3024 [04:11<32:54:17, 39.24s/it]  0%|          | 6/3024 [04:35<28:32:13, 34.04s/it]  0%|          | 7/3024 [05:03<26:48:48, 31.99s/it]  0%|          | 8/3024 [05:27<24:34:19, 29.33s/it]srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** JOB 2916912 ON baymax CANCELLED AT 2026-04-21T15:36:19 ***
+slurmstepd: error: *** STEP 2916912.0 ON baymax CANCELLED AT 2026-04-21T15:36:19 ***

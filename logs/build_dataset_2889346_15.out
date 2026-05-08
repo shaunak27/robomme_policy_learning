@@ -1,0 +1,5 @@
+Job 15: processing VideoUnmaskSwap
+  h5_file:    data/robomme_data_h5/record_dataset_VideoUnmaskSwap.h5
+  output_dir: data/robomme_preprocessed_data/per_task/VideoUnmaskSwap
+  hostname:   perseverance
+  started:    Fri 17 Apr 2026 05:04:53 PM EDT

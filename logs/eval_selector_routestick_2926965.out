@@ -1,0 +1,207 @@
+Using port 44621 for task=RouteStick method=rlselector
+Starting policy server on GPU 0 ...
+Waiting for server to start ...
+Server ready after 55s
+Starting eval client on GPU 1 for task=RouteStick ...
+we will resume the evaluation
+
+[robomme] env for task RouteStick episode 0 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 1 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 2 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 3 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 4 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 5 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 6 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 7 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 8 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 9 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 10 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 11 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 12 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 13 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 14 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 15 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 16 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 17 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 18 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 19 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 20 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 21 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 22 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 23 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 24 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 25 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 26 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 27 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 28 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 29 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 30 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 31 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 32 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 33 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 34 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 35 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 350
+
+[robomme] env for task RouteStick episode 36 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 37 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 38 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 39 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 300
+
+[robomme] env for task RouteStick episode 40 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 41 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 42 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 43 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 300
+
+[robomme] env for task RouteStick episode 44 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 45 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 150
+
+[robomme] env for task RouteStick episode 46 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 200
+
+[robomme] env for task RouteStick episode 47 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 250
+
+[robomme] env for task RouteStick episode 48 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+
+[robomme] env for task RouteStick episode 49 setup finished
+task_goal: watch the video carefully, then use the stick attached to the robot to navigate around the sticks on the table, following the same path
+exec_start_idx: 100
+Eval finished with exit code 0

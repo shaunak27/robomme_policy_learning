@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033805
+SLURM_ARRAY_TASK_ID: 5
+TASK:                PatternLock
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:51 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PatternLock, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PatternLock.h5
+  Sampled episodes: [3, 14, 81]
+  Found 13 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 13 segments
+============================================================
+
+--- Segment 1/13 ---
+
+============================================================
+Segment: PatternLock_ep3_f153-193
+  Subtask: move forward-left
+  Frames: 153 - 193
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.21, 0.71, 1.0, 0.88, 0.88, 0.79, 0.88]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [1, 18, 25]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 2/13 ---
+
+============================================================
+Segment: PatternLock_ep3_f194-220
+  Subtask: move right
+  Frames: 194 - 220
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.0, 0.11, 0.82, 1.0, 0.82, 0.82, 0.75]
+  Failed regions: []
+  Successful interval: 5-16
+  Keyframes: [2, 5, 11, 16]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/13 ---
+
+============================================================
+Segment: PatternLock_ep3_f221-265
+  Subtask: move backward-left
+  Frames: 221 - 265
+============================================================
+  Loaded 45 frames

@@ -1,0 +1,47 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+`torch_dtype` is deprecated! Use `dtype` instead!
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+2026-04-30 00:36:21,731 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer WARNING: flash_attention_2 unavailable (/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so: undefined symbol: _ZNK3c106SymInt6sym_neERKS0_), using default attention
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:13<00:41, 13.80s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:27<00:27, 13.71s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:41<00:13, 13.98s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:49<00:00, 11.45s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:49<00:00, 12.33s/it]
+Asked to sample `fps` frames per second but no video metadata was provided which is required when sampling with `fps`. Defaulting to `fps=24`. Please provide `video_metadata` for more accurate results.
+2026-04-30 00:37:21,335 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 1/8 (end=10, n_frames=4/11): reward=-18.7500 (mean, 1 tok)
+2026-04-30 00:37:28,255 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 2/8 (end=23, n_frames=5/24): reward=-19.0000 (mean, 1 tok)
+2026-04-30 00:37:35,110 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 3/8 (end=37, n_frames=8/38): reward=-16.2500 (mean, 1 tok)
+2026-04-30 00:37:42,000 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 4/8 (end=51, n_frames=10/52): reward=-14.5000 (mean, 1 tok)
+2026-04-30 00:37:48,884 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 5/8 (end=65, n_frames=13/66): reward=-15.1250 (mean, 1 tok)
+2026-04-30 00:37:55,811 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 6/8 (end=79, n_frames=16/80): reward=-14.3750 (mean, 1 tok)
+2026-04-30 00:38:02,739 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 7/8 (end=93, n_frames=19/94): reward=-11.7500 (mean, 1 tok)
+2026-04-30 00:38:09,689 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 8/8 (end=107, n_frames=22/108): reward=-11.3750 (mean, 1 tok)
+2026-04-30 00:38:17,352 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 1/8 (end=6, n_frames=4/7): reward=-18.2500 (mean, 1 tok)
+2026-04-30 00:38:24,132 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 2/8 (end=14, n_frames=4/15): reward=-18.6250 (mean, 1 tok)
+2026-04-30 00:38:30,901 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 3/8 (end=23, n_frames=5/24): reward=-18.5000 (mean, 1 tok)
+2026-04-30 00:38:37,704 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 4/8 (end=31, n_frames=6/32): reward=-17.6250 (mean, 1 tok)
+2026-04-30 00:38:44,507 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 5/8 (end=40, n_frames=8/41): reward=-17.7500 (mean, 1 tok)
+2026-04-30 00:38:51,324 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 6/8 (end=48, n_frames=10/49): reward=-17.6250 (mean, 1 tok)
+2026-04-30 00:38:58,111 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 7/8 (end=57, n_frames=12/58): reward=-16.8750 (mean, 1 tok)
+2026-04-30 00:39:04,882 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 8/8 (end=66, n_frames=13/67): reward=-17.5000 (mean, 1 tok)
+2026-04-30 00:39:12,383 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 1/8 (end=10, n_frames=4/11): reward=-19.2500 (mean, 1 tok)
+2026-04-30 00:39:19,167 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 2/8 (end=23, n_frames=5/24): reward=-17.0000 (mean, 1 tok)
+2026-04-30 00:39:25,962 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 3/8 (end=36, n_frames=7/37): reward=-17.2500 (mean, 1 tok)
+2026-04-30 00:39:32,881 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 4/8 (end=49, n_frames=10/50): reward=-16.3750 (mean, 1 tok)
+2026-04-30 00:39:39,712 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 5/8 (end=63, n_frames=13/64): reward=-15.8750 (mean, 1 tok)
+2026-04-30 00:39:46,549 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 6/8 (end=76, n_frames=15/77): reward=-16.3750 (mean, 1 tok)
+2026-04-30 00:39:53,396 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 7/8 (end=89, n_frames=18/90): reward=-13.6250 (mean, 1 tok)
+2026-04-30 00:40:00,292 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 8/8 (end=103, n_frames=21/104): reward=-14.5000 (mean, 1 tok)
+2026-04-30 00:40:07,888 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 1/8 (end=7, n_frames=4/8): reward=-17.2500 (mean, 1 tok)
+2026-04-30 00:40:14,681 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 2/8 (end=16, n_frames=4/17): reward=-16.8750 (mean, 1 tok)
+2026-04-30 00:40:21,474 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 3/8 (end=26, n_frames=5/27): reward=-18.8750 (mean, 1 tok)
+2026-04-30 00:40:28,275 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 4/8 (end=35, n_frames=7/36): reward=-19.0000 (mean, 1 tok)
+2026-04-30 00:40:35,086 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 5/8 (end=45, n_frames=9/46): reward=-18.1250 (mean, 1 tok)
+2026-04-30 00:40:41,884 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 6/8 (end=54, n_frames=11/55): reward=-16.6250 (mean, 1 tok)
+2026-04-30 00:40:48,709 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 7/8 (end=64, n_frames=13/65): reward=-18.1250 (mean, 1 tok)
+2026-04-30 00:40:55,528 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 8/8 (end=74, n_frames=15/75): reward=-18.8750 (mean, 1 tok)
+2026-04-30 00:41:06,530 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 1/8 (end=22, n_frames=5/23): reward=-18.0000 (mean, 1 tok)
+2026-04-30 00:41:13,306 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 2/8 (end=51, n_frames=10/52): reward=-19.2500 (mean, 1 tok)
+2026-04-30 00:41:20,112 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 3/8 (end=80, n_frames=16/81): reward=-17.5000 (mean, 1 tok)
+2026-04-30 00:41:26,994 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 4/8 (end=109, n_frames=22/110): reward=-18.1250 (mean, 1 tok)
+2026-04-30 00:41:33,946 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 5/8 (end=139, n_frames=28/140): reward=-17.1250 (mean, 1 tok)
+2026-04-30 00:41:40,961 mme_vla_suite.pseudo_labeling.topreward_qwen_scorer INFO: Prefix 6/8 (end=168, n_frames=34/169): reward=-16.8750 (mean, 1 tok)
+slurmstepd: error: *** JOB 3033730 ON deebot CANCELLED AT 2026-04-30T00:41:45 ***
+slurmstepd: error: *** STEP 3033730.0 ON deebot CANCELLED AT 2026-04-30T00:41:45 ***

@@ -1,0 +1,82 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033809
+SLURM_ARRAY_TASK_ID: 9
+TASK:                StopCube
+HOSTNAME:            spd-13.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: StopCube, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_StopCube.h5
+  Sampled episodes: [3, 14, 81]
+  Found 12 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 12 segments
+============================================================
+
+--- Segment 1/12 ---
+
+============================================================
+Segment: StopCube_ep3_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.29, 0.07, 0.14, 0.0, 0.07, 0.36, 1.0, 0.93]
+  Failed regions: [[5, 18]]
+  Successful interval: 23-46
+  Keyframes: [5, 23, 42, 46]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 2/12 ---
+
+============================================================
+Segment: StopCube_ep3_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 60.4s
+  Rewards: [0.0, 0.4, 0.45, 0.9, 0.9, 1.0, 0.95, 0.4]
+  Failed regions: []
+  Successful interval: 189-248
+  Keyframes: [33, 189, 229, 248]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 3/12 ---
+
+============================================================
+Segment: StopCube_ep3_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.18, 0.27, 0.36, 0.0, 0.18, 1.0, 1.0]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-23
+  Keyframes: [2, 15, 22]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 4/12 ---
+
+============================================================
+Segment: StopCube_ep3_f390-452
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 452
+============================================================
+  Loaded 63 frames

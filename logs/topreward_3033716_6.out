@@ -1,0 +1,89 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033748
+SLURM_ARRAY_TASK_ID: 6
+TASK:                PickHighlight
+HOSTNAME:            cyborg.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickHighlight, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickHighlight.h5
+  Sampled episodes: [3, 14, 81]
+  Found 15 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 15 segments
+============================================================
+
+--- Segment 1/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f0-124
+  Subtask: press the button
+  Frames: 0 - 124
+  First subtask: True
+============================================================
+  Loaded 125 frames
+  Prefix scoring: 56.6s
+  Rewards (raw): [0.83, 0.0, 0.61, 0.61, 0.74, 0.78, 0.65, 1.0]
+  Rewards (mono): [0.83, 0.83, 0.83, 0.83, 0.83, 0.83, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 0-124
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 10, 'role': 'early_transition'}, {'frame': 75, 'role': 'peak_transition'}, {'frame': 101, 'role': 'late_transition'}, {'frame': 124, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f125-320
+  Subtask: pick up the first highlighted cube, which is blue
+  Frames: 125 - 320
+  First subtask: False
+============================================================
+  Loaded 196 frames
+  Prefix scoring: 57.4s
+  Rewards (raw): [0.0, 0.31, 0.16, 0.72, 0.62, 0.5, 0.75, 1.0]
+  Rewards (mono): [0.0, 0.31, 0.31, 0.72, 0.72, 0.72, 0.75, 1.0]
+  Failed regions: [[69, 94, 119]]
+  Successful interval: 135-195
+  Keyframes: [{'frame': 135, 'role': 'start'}, {'frame': 151, 'role': 'early_transition'}, {'frame': 183, 'role': 'late_transition'}, {'frame': 195, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 3/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f321-391
+  Subtask: place the cube onto the table
+  Frames: 321 - 391
+  First subtask: False
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 55.9s
+  Rewards (raw): [0.0, 0.2, 0.5, 0.5, 0.6, 1.0, 0.6, 0.6]
+  Rewards (mono): [0.0, 0.2, 0.5, 0.5, 0.6, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 22-70
+  Keyframes: [{'frame': 23, 'role': 'early_transition'}, {'frame': 34, 'role': 'peak_transition'}, {'frame': 52, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 4/15 ---
+
+============================================================
+Segment: PickHighlight_ep3_f392-495
+  Subtask: pick up the second highlighted cube, which is green
+  Frames: 392 - 495
+  First subtask: False
+============================================================
+  Loaded 104 frames

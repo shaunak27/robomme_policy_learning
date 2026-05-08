@@ -56,6 +56,9 @@ class Args:
     # Specifies how to load the policy. If not provided, the default policy for the environment will be used.
     policy: Checkpoint | Default = dataclasses.field(default_factory=Default)
 
+    # Optional: path to a trained RL frame selector checkpoint directory.
+    selector_checkpoint: str | None = None
+
 
 # Default checkpoints that should be used for each environment.
 DEFAULT_CHECKPOINT: dict[EnvMode, Checkpoint] = {
@@ -89,6 +92,11 @@ def create_policy(args: Args) -> _policy.MME_VLA_Policy:
 
 def main(args: Args) -> None:
     policy = create_policy(args)
+
+    if args.selector_checkpoint:
+        logging.info("Loading RL selector from %s", args.selector_checkpoint)
+        policy.load_selector(args.selector_checkpoint)
+
     policy_metadata = policy.metadata
 
     hostname = socket.gethostname()

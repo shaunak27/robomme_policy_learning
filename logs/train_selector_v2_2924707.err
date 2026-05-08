@@ -1,0 +1,510 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run gxhj12ae
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260422_185437-gxhj12ae
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rl_selector_v2
+wandb: ⭐️ View project at https://wandb.ai/shalbe/rl-frame-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/rl-frame-selector/runs/gxhj12ae
+  0%|          | 0/1512 [00:00<?, ?it/s]  0%|          | 0/1512 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 446, in wrapped_fn_impl
+    param_fn(*args, **kwargs)
+  File "<@beartype(mme_vla_suite.models.integration.history_observation.HistAugObservation) at 0x7a9b5421bc40>", line 93, in HistAugObservation
+beartype.roar.BeartypeCallHintParamViolation: Method[1m[35m mme_vla_suite.models.integration.history_observation.HistAugObservation()[0m parameter [1m[34mimage_masks[0m=[1m[31m{'base_0_rgb': [Traced<ShapedArray(bool[])>with<DynamicJaxprTrace>, Traced<ShapedArray(boo...>]}[0m violates type hint [1m[32mdict[str, typing.Union[jaxtyping.Bool[Array, '*b'], jaxtyping.Bool[Tensor, '*b'], jaxtyping.Bool[ndarray, '*b']]][0m, as [1m[33mdict [0mkey [1m[33mstr [0m[1m[31m'base_0_rgb'[0m value [1m[33mlist [0m[1m[31m[Traced<ShapedArray(bool[])>with<DynamicJaxprTrace>, Traced<ShapedArray(bool[])>with<Dynami...>][0m not [1m[32m<protocol "jaxtyping.Bool[Array, '*b']">, <protocol "jaxtyping.Bool[Tensor, '*b']">, or <protocol "jaxtyping.Bool[ndarray, '*b']">[0m.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 811, in _get_problem_arg
+    fn(*args, **kwargs)
+  File "<@beartype(mme_vla_suite.models.integration.history_observation.check_single_arg) at 0x7a9b542400e0>", line 44, in check_single_arg
+beartype.roar.BeartypeCallHintParamViolation: Method[1m[35m mme_vla_suite.models.integration.history_observation.check_single_arg()[0m parameter [1m[34mimage_masks[0m=[1m[31m{'base_0_rgb': [Traced<ShapedArray(bool[])>with<DynamicJaxprTrace>, Traced<ShapedArray(boo...>]}[0m violates type hint [1m[32mdict[str, typing.Union[jaxtyping.Bool[Array, '*b'], jaxtyping.Bool[Tensor, '*b'], jaxtyping.Bool[ndarray, '*b']]][0m, as [1m[33mdict [0mkey [1m[33mstr [0m[1m[31m'base_0_rgb'[0m value [1m[33mlist [0m[1m[31m[Traced<ShapedArray(bool[])>with<DynamicJaxprTrace>, Traced<ShapedArray(bool[])>with<Dynami...>][0m not [1m[32m<protocol "jaxtyping.Bool[Array, '*b']">, <protocol "jaxtyping.Bool[Tensor, '*b']">, or <protocol "jaxtyping.Bool[ndarray, '*b']">[0m.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 451, in wrapped_fn_impl
+    argmsg = _get_problem_arg(
+             ^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 814, in _get_problem_arg
+    raise TypeCheckError(
+jaxtyping.TypeCheckError: 
+The problem arose whilst typechecking parameter 'image_masks'.
+Actual value: {
+  'base_0_rgb':
+  [
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[]
+  ],
+  'left_wrist_0_rgb':
+  [
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[]
+  ]
+}
+Expected type: dict[str, Union[Bool[Array, '*b'], Bool[Tensor, '*b'], Bool[ndarray, '*b']]].
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 637, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 589, in main
+    selector_state, opt_state, rng, metrics = train_step(
+                                              ^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 428, in train_step
+    fm_loss_sel = jit_fm_loss(
+                  ^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/shared/nnx_utils.py", line 41, in wrapper
+    return jitted_fn(state, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/shared/nnx_utils.py", line 35, in fun
+    return meth.__func__(module, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 316, in _fm_loss_with_memory
+    observation = HistAugObservation.from_dict(obs_dict)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/models/integration/history_observation.py", line 39, in from_dict
+    parent_obs = super().from_dict(data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/models/model.py", line 121, in from_dict
+    return cls(
+           ^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/openpi/shared/array_typing.py", line 39, in _check_dataclass_annotations
+    return _original_check_dataclass_annotations(self, typechecker)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jaxtyping.TypeCheckError: Type-check error whilst checking the parameters of mme_vla_suite.models.integration.history_observation.HistAugObservation.
+The problem arose whilst typechecking parameter 'image_masks'.
+Actual value: {
+  'base_0_rgb':
+  [
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[]
+  ],
+  'left_wrist_0_rgb':
+  [
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[],
+    bool[]
+  ]
+}
+Expected type: dict[str, Union[Bool[Array, '*b'], Bool[Tensor, '*b'], Bool[ndarray, '*b']]].
+----------------------
+Called with parameters: {
+  'self': HistAugObservation(...),
+  'images':
+  {'base_0_rgb': f32[64,224,224,3], 'left_wrist_0_rgb': f32[64,224,224,3]},
+  'image_masks':
+  {
+    'base_0_rgb':
+    [
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[]
+    ],
+    'left_wrist_0_rgb':
+    [
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[],
+      bool[]
+    ]
+  },
+  'state': f32[64,32],
+  'tokenized_prompt': i32[64,64],
+  'tokenized_prompt_mask': bool[64,64],
+  'token_ar_mask': None,
+  'token_loss_mask': None,
+  'static_image_emb': None,
+  'static_mask': None,
+  'static_pos_emb': None,
+  'static_state_emb': None,
+  'recur_image_emb': None,
+  'recur_mask': None,
+  'recur_pos_emb': None,
+  'recur_state_emb': None,
+  'symbolic_tokenized_prompt': None,
+  'symbolic_tokenized_prompt_mask': None
+}
+Parameter annotations: (self: Any, images: dict[str, Union[Float[Array, '*b h w c'], Float[Tensor, '*b h w c'], Float[ndarray, '*b h w c']]], image_masks: dict[str, Union[Bool[Array, '*b'], Bool[Tensor, '*b'], Bool[ndarray, '*b']]], state: Union[Float[Array, '*b s'], Float[Tensor, '*b s'], Float[ndarray, '*b s']], tokenized_prompt: Union[Int[Array, '*b l'], Int[Tensor, '*b l'], Int[ndarray, '*b l'], NoneType], tokenized_prompt_mask: Union[Bool[Array, '*b l'], Bool[Tensor, '*b l'], Bool[ndarray, '*b l'], NoneType], token_ar_mask: Union[Int[Array, '*b l'], Int[Tensor, '*b l'], Int[ndarray, '*b l'], NoneType], token_loss_mask: Union[Bool[Array, '*b l'], Bool[Tensor, '*b l'], Bool[ndarray, '*b l'], NoneType], static_image_emb: Union[Float[Array, 'b l1 d1'], Float[Tensor, 'b l1 d1'], NoneType], static_mask: Union[Bool[Array, 'b l1'], Bool[Tensor, 'b l1'], NoneType], static_pos_emb: Union[Float[Array, 'b l1 d2'], Float[Tensor, 'b l1 d2'], NoneType], static_state_emb: Union[Float[Array, 'b l1 d3'], Float[Tensor, 'b l1 d3'], NoneType], recur_image_emb: Union[Float[Array, 'b t v p d1'], Float[Tensor, 'b t v p d1'], NoneType], recur_mask: Union[Bool[Array, 'b t'], Bool[Tensor, 'b t'], NoneType], recur_pos_emb: Union[Float[Array, 'b t v p d2'], Float[Tensor, 'b t v p d2'], NoneType], recur_state_emb: Union[Float[Array, 'b t d3'], Float[Tensor, 'b t d3'], NoneType], symbolic_tokenized_prompt: Union[Int[Array, 'b l2'], Int[Tensor, 'b l2'], NoneType], symbolic_tokenized_prompt_mask: Union[Bool[Array, 'b l2'], Bool[Tensor, 'b l2'], NoneType]) -> Any.
+The current values for each jaxtyping axis annotation are as follows.
+h=224
+w=224
+c=3
+b=(64,)
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+srun: error: chappie: task 0: Exited with exit code 1
+srun: Terminating StepId=2924707.0

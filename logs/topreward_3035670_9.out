@@ -1,0 +1,6406 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3035680
+SLURM_ARRAY_TASK_ID: 9
+TASK:                StopCube
+HOSTNAME:            megazord.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 02:01:37 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: StopCube, sampling 100 episodes
+  H5: data/robomme_data_h5/record_dataset_StopCube.h5
+  Sampled episodes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+  Found 398 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 398 segments
+============================================================
+
+--- Segment 1/398 ---
+
+============================================================
+Segment: StopCube_ep0_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.2, 0.27, 0.2, 0.4, 0.0, 0.53, 0.93, 1.0]
+  Failed regions: [[26, 40]]
+  Successful interval: 31-55
+  Keyframes: [8, 31, 50, 55]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 2/398 ---
+
+============================================================
+Segment: StopCube_ep0_f56-391
+  Subtask: remain static
+  Frames: 56 - 391
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.1s
+  Rewards: [0.3, 0.65, 0.15, 0.25, 0.2, 1.0, 0.6, 0.0]
+  Failed regions: [[76, 162]]
+  Successful interval: 189-248
+  Keyframes: [62, 189, 246, 248, 332]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 3/398 ---
+
+============================================================
+Segment: StopCube_ep0_f392-421
+  Subtask: press the button to stop the cube on the target
+  Frames: 392 - 421
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.22, 0.0, 0.33, 0.17, 0.22, 0.61, 0.67, 1.0]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-29
+  Keyframes: [4, 12, 25, 29]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 4/398 ---
+
+============================================================
+Segment: StopCube_ep0_f392-458
+  Subtask: press the button to stop the cube on the target
+  Frames: 392 - 458
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.07, 0.0, 0.34, 0.55, 1.0, 1.0, 0.72, 0.97]
+  Failed regions: [[48, 66]]
+  Successful interval: 54-66
+  Keyframes: [2, 54, 55, 66]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 5/398 ---
+
+============================================================
+Segment: StopCube_ep1_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.21, 0.41, 0.28, 0.1, 0.0, 0.59, 0.76, 1.0]
+  Failed regions: [[12, 41]]
+  Successful interval: 32-56
+  Keyframes: [11, 32, 40, 56]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/398 ---
+
+============================================================
+Segment: StopCube_ep1_f57-122
+  Subtask: remain static
+  Frames: 57 - 122
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.29, 0.14, 0.14, 0.71, 0.14, 0.43, 1.0, 0.0]
+  Failed regions: [[6, 31], [6, 31], [31, 48]]
+  Successful interval: 36-56
+  Keyframes: [3, 36, 43, 56, 65]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 7/398 ---
+
+============================================================
+Segment: StopCube_ep1_f123-149
+  Subtask: press the button to stop the cube on the target
+  Frames: 123 - 149
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.08, 0.12, 0.08, 0.0, 0.21, 0.33, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-22
+  Keyframes: [5, 11, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 8/398 ---
+
+============================================================
+Segment: StopCube_ep1_f123-185
+  Subtask: press the button to stop the cube on the target
+  Frames: 123 - 185
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.16, 0.71, 0.42, 0.66, 1.0, 0.92, 0.79]
+  Failed regions: [[22, 38]]
+  Successful interval: 27-46
+  Keyframes: [8, 27, 46, 47, 62]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 9/398 ---
+
+============================================================
+Segment: StopCube_ep2_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.25, 0.12, 0.31, 0.0, 0.69, 0.94, 1.0]
+  Failed regions: [[12, 26], [26, 40]]
+  Successful interval: 31-54
+  Keyframes: [1, 31, 49, 54]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 10/398 ---
+
+============================================================
+Segment: StopCube_ep2_f55-174
+  Subtask: remain static
+  Frames: 55 - 174
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.82, 0.91, 1.0, 0.91, 0.55, 0.55, 0.0, 0.45]
+  Failed regions: []
+  Successful interval: 6-42
+  Keyframes: [0, 6, 7, 42, 104]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 11/398 ---
+
+============================================================
+Segment: StopCube_ep2_f175-202
+  Subtask: press the button to stop the cube on the target
+  Frames: 175 - 202
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.05, 0.3, 0.4, 0.6, 0.45, 1.0, 0.8]
+  Failed regions: [[17, 23]]
+  Successful interval: 18-23
+  Keyframes: [1, 18, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 12/398 ---
+
+============================================================
+Segment: StopCube_ep2_f175-242
+  Subtask: press the button to stop the cube on the target
+  Frames: 175 - 242
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.21, 0.89, 1.0, 0.79, 1.0, 0.79, 0.68]
+  Failed regions: [[32, 49]]
+  Successful interval: 37-49
+  Keyframes: [1, 37, 49, 50, 67]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 13/398 ---
+
+============================================================
+Segment: StopCube_ep3_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.29, 0.07, 0.14, 0.0, 0.07, 0.36, 1.0, 0.93]
+  Failed regions: [[5, 18]]
+  Successful interval: 23-46
+  Keyframes: [0, 23, 42, 46, 53]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 14/398 ---
+
+============================================================
+Segment: StopCube_ep3_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.4s
+  Rewards: [0.0, 0.4, 0.45, 0.9, 0.9, 1.0, 0.95, 0.4]
+  Failed regions: []
+  Successful interval: 189-248
+  Keyframes: [46, 189, 229, 248, 332]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 15/398 ---
+
+============================================================
+Segment: StopCube_ep3_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.18, 0.27, 0.36, 0.0, 0.18, 1.0, 1.0]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-23
+  Keyframes: [0, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 16/398 ---
+
+============================================================
+Segment: StopCube_ep3_f390-452
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 452
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.09, 0.0, 0.35, 0.65, 0.35, 1.0, 0.96, 0.74]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-46
+  Keyframes: [8, 35, 46, 47, 62]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 17/398 ---
+
+============================================================
+Segment: StopCube_ep4_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.1, 0.14, 0.0, 0.24, 0.05, 0.95, 1.0, 0.62]
+  Failed regions: []
+  Successful interval: 30-46
+  Keyframes: [10, 30, 40, 46, 53]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 18/398 ---
+
+============================================================
+Segment: StopCube_ep4_f54-149
+  Subtask: remain static
+  Frames: 54 - 149
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 53.8s
+  Rewards: [1.0, 0.77, 0.77, 0.0, 0.85, 0.38, 0.38, 0.62]
+  Failed regions: [[9, 33], [33, 58]]
+  Successful interval: 41-58
+  Keyframes: [8, 41, 43, 58, 93]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 19/398 ---
+
+============================================================
+Segment: StopCube_ep4_f150-177
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 177
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.21, 0.0, 0.07, 0.36, 0.14, 0.5, 0.93, 1.0]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-27
+  Keyframes: [4, 15, 21, 27]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 20/398 ---
+
+============================================================
+Segment: StopCube_ep4_f150-210
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 210
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.28, 0.6, 0.48, 0.6, 0.76, 1.0, 0.96]
+  Failed regions: [[21, 36]]
+  Successful interval: 26-52
+  Keyframes: [6, 26, 49, 52, 60]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 21/398 ---
+
+============================================================
+Segment: StopCube_ep5_f0-60
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 60
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.5, 0.0, 0.1, 0.2, 0.2, 0.4, 1.0, 0.6]
+  Failed regions: [[6, 29]]
+  Successful interval: 33-52
+  Keyframes: [12, 33, 38, 52, 60]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 22/398 ---
+
+============================================================
+Segment: StopCube_ep5_f61-89
+  Subtask: press the button to stop the cube on the target
+  Frames: 61 - 89
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.38, 0.15, 0.08, 0.0, 0.08, 0.46, 1.0, 0.77]
+  Failed regions: [[4, 17]]
+  Successful interval: 12-24
+  Keyframes: [1, 12, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 23/398 ---
+
+============================================================
+Segment: StopCube_ep5_f61-130
+  Subtask: press the button to stop the cube on the target
+  Frames: 61 - 130
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.04, 0.0, 0.48, 0.48, 0.72, 1.0, 0.96, 1.0]
+  Failed regions: []
+  Successful interval: 57-69
+  Keyframes: [14, 57, 58, 69]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 24/398 ---
+
+============================================================
+Segment: StopCube_ep6_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.46, 0.08, 0.15, 0.0, 0.46, 0.0, 1.0, 0.62]
+  Failed regions: [[5, 18], [31, 45]]
+  Successful interval: 36-45
+  Keyframes: [10, 36, 38, 45, 52]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 25/398 ---
+
+============================================================
+Segment: StopCube_ep6_f53-184
+  Subtask: remain static
+  Frames: 53 - 184
+============================================================
+  Loaded 132 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.89, 0.78, 0.89, 0.0, 0.56, 1.0, 0.33, 0.56]
+  Failed regions: [[13, 46], [46, 80]]
+  Successful interval: 57-97
+  Keyframes: [6, 57, 97, 98, 130]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 26/398 ---
+
+============================================================
+Segment: StopCube_ep6_f185-211
+  Subtask: press the button to stop the cube on the target
+  Frames: 185 - 211
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.07, 0.0, 0.13, 0.07, 0.2, 0.2, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [3, 17, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 27/398 ---
+
+============================================================
+Segment: StopCube_ep6_f185-246
+  Subtask: press the button to stop the cube on the target
+  Frames: 185 - 246
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.09, 0.0, 0.13, 0.57, 0.43, 1.0, 0.7, 0.78]
+  Failed regions: [[29, 45]]
+  Successful interval: 34-45
+  Keyframes: [3, 34, 45, 46, 61]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 28/398 ---
+
+============================================================
+Segment: StopCube_ep7_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.22, 0.35, 0.17, 0.3, 0.0, 0.61, 0.91, 1.0]
+  Failed regions: [[12, 26], [26, 41]]
+  Successful interval: 32-56
+  Keyframes: [1, 32, 51, 56]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 29/398 ---
+
+============================================================
+Segment: StopCube_ep7_f57-332
+  Subtask: remain static
+  Frames: 57 - 332
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.21, 0.42, 0.21, 0.0, 0.53, 0.74, 1.0, 1.0]
+  Failed regions: [[62, 168]]
+  Successful interval: 120-239
+  Keyframes: [21, 120, 136, 239, 275]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 30/398 ---
+
+============================================================
+Segment: StopCube_ep7_f333-362
+  Subtask: press the button to stop the cube on the target
+  Frames: 333 - 362
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.11, 0.42, 0.47, 0.58, 0.89, 1.0, 0.95]
+  Failed regions: []
+  Successful interval: 2-25
+  Keyframes: [0, 2, 25, 26, 29]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 31/398 ---
+
+============================================================
+Segment: StopCube_ep7_f333-405
+  Subtask: press the button to stop the cube on the target
+  Frames: 333 - 405
+============================================================
+  Loaded 73 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.26, 0.63, 0.63, 0.89, 1.0, 0.93, 1.0]
+  Failed regions: []
+  Successful interval: 59-72
+  Keyframes: [0, 59, 61, 72]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 32/398 ---
+
+============================================================
+Segment: StopCube_ep8_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.29, 0.29, 0.29, 0.0, 0.06, 0.71, 1.0, 0.76]
+  Failed regions: [[18, 32]]
+  Successful interval: 23-46
+  Keyframes: [10, 23, 37, 46, 53]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 33/398 ---
+
+============================================================
+Segment: StopCube_ep8_f54-509
+  Subtask: remain static
+  Frames: 54 - 509
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.0s
+  Rewards: [0.09, 0.18, 0.45, 1.0, 1.0, 0.0, 0.18, 0.27]
+  Failed regions: []
+  Successful interval: 23-220
+  Keyframes: [6, 23, 132, 220, 334]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 34/398 ---
+
+============================================================
+Segment: StopCube_ep8_f510-536
+  Subtask: press the button to stop the cube on the target
+  Frames: 510 - 536
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.32, 0.16, 0.21, 0.26, 0.37, 0.74, 1.0]
+  Failed regions: [[7, 13]]
+  Successful interval: 8-26
+  Keyframes: [0, 8, 21, 26]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 35/398 ---
+
+============================================================
+Segment: StopCube_ep8_f510-573
+  Subtask: press the button to stop the cube on the target
+  Frames: 510 - 573
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.3, 0.48, 0.52, 0.37, 1.0, 0.93, 1.0]
+  Failed regions: [[30, 46]]
+  Successful interval: 51-63
+  Keyframes: [0, 51, 52, 63]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 36/398 ---
+
+============================================================
+Segment: StopCube_ep9_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.25, 0.38, 0.12, 0.0, 0.08, 0.88, 0.79, 1.0]
+  Failed regions: [[13, 43], [43, 59]]
+  Successful interval: 48-59
+  Keyframes: [2, 48, 54, 59]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 37/398 ---
+
+============================================================
+Segment: StopCube_ep9_f60-149
+  Subtask: remain static
+  Frames: 60 - 149
+============================================================
+  Loaded 90 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.82, 0.0, 1.0, 0.18, 0.82, 0.91, 0.91, 0.82]
+  Failed regions: [[9, 31], [31, 54]]
+  Successful interval: 39-66
+  Keyframes: [0, 39, 41, 66, 88]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 38/398 ---
+
+============================================================
+Segment: StopCube_ep9_f150-177
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 177
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.4, 0.0, 0.07, 0.07, 0.2, 0.33, 1.0, 0.87]
+  Failed regions: [[4, 10]]
+  Successful interval: 11-23
+  Keyframes: [3, 11, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 39/398 ---
+
+============================================================
+Segment: StopCube_ep9_f150-211
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 211
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.07, 0.0, 0.11, 0.43, 0.5, 1.0, 0.82, 0.82]
+  Failed regions: []
+  Successful interval: 10-45
+  Keyframes: [7, 10, 21, 45, 61]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 40/398 ---
+
+============================================================
+Segment: StopCube_ep10_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.46, 0.33, 0.29, 0.12, 0.0, 0.62, 0.67, 1.0]
+  Failed regions: [[5, 38]]
+  Successful interval: 29-52
+  Keyframes: [9, 29, 47, 52]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 41/398 ---
+
+============================================================
+Segment: StopCube_ep10_f53-172
+  Subtask: remain static
+  Frames: 53 - 172
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.47, 0.8, 1.0, 0.87, 0.73, 0.93, 0.0, 0.07]
+  Failed regions: [[42, 88]]
+  Successful interval: 67-88
+  Keyframes: [20, 67, 68, 88, 118]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 42/398 ---
+
+============================================================
+Segment: StopCube_ep10_f173-199
+  Subtask: press the button to stop the cube on the target
+  Frames: 173 - 199
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.06, 0.0, 0.18, 0.24, 0.24, 0.29, 0.76, 1.0]
+  Failed regions: []
+  Successful interval: 14-26
+  Keyframes: [0, 14, 21, 26]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 43/398 ---
+
+============================================================
+Segment: StopCube_ep10_f173-233
+  Subtask: press the button to stop the cube on the target
+  Frames: 173 - 233
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.16, 0.42, 0.58, 0.79, 1.0, 0.89, 0.84]
+  Failed regions: []
+  Successful interval: 3-44
+  Keyframes: [0, 3, 21, 44, 60]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 44/398 ---
+
+============================================================
+Segment: StopCube_ep11_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.1, 0.0, 0.15, 0.05, 0.05, 0.45, 1.0, 0.55]
+  Failed regions: []
+  Successful interval: 30-46
+  Keyframes: [2, 30, 37, 46, 53]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 45/398 ---
+
+============================================================
+Segment: StopCube_ep11_f54-269
+  Subtask: remain static
+  Frames: 54 - 269
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.46, 0.69, 0.69, 0.31, 0.31, 1.0, 0.0]
+  Failed regions: [[104, 159], [104, 187]]
+  Successful interval: 149-187
+  Keyframes: [43, 149, 161, 187, 215]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 46/398 ---
+
+============================================================
+Segment: StopCube_ep11_f270-296
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 296
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.27, 0.0, 0.36, 0.36, 0.91, 0.73, 1.0, 1.0]
+  Failed regions: [[4, 10], [16, 22]]
+  Successful interval: 17-22
+  Keyframes: [0, 17, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 47/398 ---
+
+============================================================
+Segment: StopCube_ep11_f270-330
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 330
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.12, 0.24, 0.45, 0.79, 1.0, 0.85, 0.88]
+  Failed regions: [[44, 60]]
+  Successful interval: 49-60
+  Keyframes: [7, 49, 50, 60]
+  Success detected: True
+  Confidence: 0.43
+
+--- Segment 48/398 ---
+
+============================================================
+Segment: StopCube_ep12_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.08, 0.0, 0.08, 0.25, 0.08, 0.5, 0.33, 1.0]
+  Failed regions: [[26, 40], [40, 55]]
+  Successful interval: 45-55
+  Keyframes: [8, 45, 50, 55]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 49/398 ---
+
+============================================================
+Segment: StopCube_ep12_f56-253
+  Subtask: remain static
+  Frames: 56 - 253
+============================================================
+  Loaded 198 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.75, 0.75, 0.67, 0.42, 0.0, 1.0, 0.5, 0.92]
+  Failed regions: [[44, 146], [146, 197]]
+  Successful interval: 162-197
+  Keyframes: [0, 162, 164, 197]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 50/398 ---
+
+============================================================
+Segment: StopCube_ep12_f254-282
+  Subtask: press the button to stop the cube on the target
+  Frames: 254 - 282
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.27, 0.27, 0.0, 0.27, 0.36, 0.45, 0.86, 1.0]
+  Failed regions: [[7, 14]]
+  Successful interval: 8-28
+  Keyframes: [5, 8, 23, 28]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 51/398 ---
+
+============================================================
+Segment: StopCube_ep12_f254-319
+  Subtask: press the button to stop the cube on the target
+  Frames: 254 - 319
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.0, 0.54, 0.58, 1.0, 0.71, 1.0, 0.92]
+  Failed regions: [[39, 56]]
+  Successful interval: 45-56
+  Keyframes: [6, 45, 52, 56, 65]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 52/398 ---
+
+============================================================
+Segment: StopCube_ep13_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.32, 0.41, 0.32, 0.0, 0.14, 0.45, 1.0, 0.23]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-47
+  Keyframes: [1, 24, 39, 47, 55]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 53/398 ---
+
+============================================================
+Segment: StopCube_ep13_f56-511
+  Subtask: remain static
+  Frames: 56 - 511
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.2s
+  Rewards: [0.0, 0.0, 1.0, 0.73, 0.82, 0.36, 0.64, 0.45]
+  Failed regions: [[162, 279]]
+  Successful interval: 198-279
+  Keyframes: [3, 198, 244, 279, 423]
+  Success detected: True
+  Confidence: 0.43
+
+--- Segment 54/398 ---
+
+============================================================
+Segment: StopCube_ep13_f512-540
+  Subtask: press the button to stop the cube on the target
+  Frames: 512 - 540
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.11, 0.44, 0.56, 0.72, 0.56, 1.0, 0.83]
+  Failed regions: [[17, 24]]
+  Successful interval: 19-24
+  Keyframes: [0, 19, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 55/398 ---
+
+============================================================
+Segment: StopCube_ep13_f512-578
+  Subtask: press the button to stop the cube on the target
+  Frames: 512 - 578
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.24, 0.38, 0.66, 0.62, 1.0, 0.72, 0.76]
+  Failed regions: []
+  Successful interval: 37-48
+  Keyframes: [0, 37, 48, 49, 64]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 56/398 ---
+
+============================================================
+Segment: StopCube_ep14_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.14, 0.03, 0.24, 0.24, 0.62, 1.0, 0.97]
+  Failed regions: []
+  Successful interval: 29-45
+  Keyframes: [8, 29, 39, 45, 52]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 57/398 ---
+
+============================================================
+Segment: StopCube_ep14_f53-154
+  Subtask: remain static
+  Frames: 53 - 154
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.67, 1.0, 0.83, 0.83, 0.0, 0.17, 0.83, 0.33]
+  Failed regions: [[23, 49], [49, 75]]
+  Successful interval: 57-88
+  Keyframes: [7, 57, 87, 88, 101]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 58/398 ---
+
+============================================================
+Segment: StopCube_ep14_f155-181
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 181
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.17, 0.13, 0.33, 0.37, 0.37, 0.63, 1.0]
+  Failed regions: []
+  Successful interval: 17-26
+  Keyframes: [1, 17, 21, 26]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 59/398 ---
+
+============================================================
+Segment: StopCube_ep14_f155-214
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 214
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.34, 0.48, 0.45, 0.66, 1.0, 0.83, 0.69]
+  Failed regions: []
+  Successful interval: 25-43
+  Keyframes: [7, 25, 26, 43, 59]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 60/398 ---
+
+============================================================
+Segment: StopCube_ep15_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.27, 0.18, 0.09, 0.0, 0.0, 0.45, 1.0, 0.73]
+  Failed regions: [[5, 34], [5, 42]]
+  Successful interval: 32-49
+  Keyframes: [10, 32, 43, 49, 57]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 61/398 ---
+
+============================================================
+Segment: StopCube_ep15_f58-153
+  Subtask: remain static
+  Frames: 58 - 153
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.1s
+  Rewards: [1.0, 1.0, 0.7, 0.3, 0.2, 0.0, 0.4, 0.7]
+  Failed regions: []
+  Successful interval: 5-9
+  Keyframes: [2, 5, 7, 9, 62]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 62/398 ---
+
+============================================================
+Segment: StopCube_ep15_f154-183
+  Subtask: press the button to stop the cube on the target
+  Frames: 154 - 183
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.12, 0.29, 0.12, 0.47, 0.47, 1.0, 0.71]
+  Failed regions: [[11, 18]]
+  Successful interval: 19-25
+  Keyframes: [0, 19, 23, 25, 29]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 63/398 ---
+
+============================================================
+Segment: StopCube_ep15_f154-226
+  Subtask: press the button to stop the cube on the target
+  Frames: 154 - 226
+============================================================
+  Loaded 73 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.07, 0.52, 0.62, 0.83, 1.0, 0.79, 0.69]
+  Failed regions: []
+  Successful interval: 4-53
+  Keyframes: [0, 4, 23, 53, 72]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 64/398 ---
+
+============================================================
+Segment: StopCube_ep16_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.23, 0.04, 0.08, 0.0, 0.04, 0.27, 0.81, 1.0]
+  Failed regions: []
+  Successful interval: 23-52
+  Keyframes: [2, 23, 47, 52]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 65/398 ---
+
+============================================================
+Segment: StopCube_ep16_f53-172
+  Subtask: remain static
+  Frames: 53 - 172
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.2s
+  Rewards: [1.0, 0.33, 1.0, 0.5, 0.67, 0.17, 0.5, 0.0]
+  Failed regions: [[12, 42]]
+  Successful interval: 21-42
+  Keyframes: [0, 21, 41, 42, 99]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 66/398 ---
+
+============================================================
+Segment: StopCube_ep16_f173-199
+  Subtask: press the button to stop the cube on the target
+  Frames: 173 - 199
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.05, 0.16, 0.42, 0.26, 0.47, 1.0, 0.89]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-22
+  Keyframes: [0, 14, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 67/398 ---
+
+============================================================
+Segment: StopCube_ep16_f173-232
+  Subtask: press the button to stop the cube on the target
+  Frames: 173 - 232
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.22, 0.39, 0.35, 0.65, 1.0, 0.74, 0.78]
+  Failed regions: []
+  Successful interval: 25-43
+  Keyframes: [0, 25, 26, 43, 59]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 68/398 ---
+
+============================================================
+Segment: StopCube_ep17_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.45, 0.91, 1.0, 0.0, 0.09, 0.45, 0.55, 0.82]
+  Failed regions: [[19, 33]]
+  Successful interval: 24-54
+  Keyframes: [4, 24, 49, 54]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 69/398 ---
+
+============================================================
+Segment: StopCube_ep17_f55-330
+  Subtask: remain static
+  Frames: 55 - 330
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.43, 0.57, 0.29, 0.0, 0.14, 0.93, 1.0, 0.93]
+  Failed regions: [[62, 168]]
+  Successful interval: 120-239
+  Keyframes: [21, 120, 153, 239, 275]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 70/398 ---
+
+============================================================
+Segment: StopCube_ep17_f331-358
+  Subtask: press the button to stop the cube on the target
+  Frames: 331 - 358
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.4, 0.3, 0.4, 0.0, 0.5, 1.0, 0.5, 0.6]
+  Failed regions: [[4, 10], [10, 17]]
+  Successful interval: 11-20
+  Keyframes: [0, 11, 20, 21, 27]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 71/398 ---
+
+============================================================
+Segment: StopCube_ep17_f331-392
+  Subtask: press the button to stop the cube on the target
+  Frames: 331 - 392
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.14, 0.0, 0.36, 0.21, 0.68, 1.0, 0.89, 0.82]
+  Failed regions: [[21, 37]]
+  Successful interval: 26-45
+  Keyframes: [0, 26, 27, 45, 61]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 72/398 ---
+
+============================================================
+Segment: StopCube_ep18_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.41, 0.35, 0.35, 0.06, 0.0, 1.0, 0.41, 0.71]
+  Failed regions: [[19, 42]]
+  Successful interval: 32-42
+  Keyframes: [11, 32, 40, 42, 57]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 73/398 ---
+
+============================================================
+Segment: StopCube_ep18_f58-513
+  Subtask: remain static
+  Frames: 58 - 513
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.2s
+  Rewards: [1.0, 0.77, 0.23, 0.18, 0.55, 0.5, 0.27, 0.0]
+  Failed regions: []
+  Successful interval: 23-45
+  Keyframes: [2, 23, 26, 45, 160]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 74/398 ---
+
+============================================================
+Segment: StopCube_ep18_f514-543
+  Subtask: press the button to stop the cube on the target
+  Frames: 514 - 543
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.6s
+  Rewards: [0.24, 0.18, 0.0, 0.12, 0.41, 0.47, 0.82, 1.0]
+  Failed regions: []
+  Successful interval: 9-29
+  Keyframes: [0, 9, 24, 29]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 75/398 ---
+
+============================================================
+Segment: StopCube_ep18_f514-581
+  Subtask: press the button to stop the cube on the target
+  Frames: 514 - 581
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.04, 0.0, 0.61, 0.78, 0.96, 1.0, 0.7, 0.78]
+  Failed regions: []
+  Successful interval: 11-49
+  Keyframes: [0, 11, 24, 49, 67]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 76/398 ---
+
+============================================================
+Segment: StopCube_ep19_f0-51
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 51
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.33, 0.27, 0.0, 0.13, 0.07, 0.33, 0.8, 1.0]
+  Failed regions: [[5, 24]]
+  Successful interval: 29-51
+  Keyframes: [2, 29, 46, 51]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 77/398 ---
+
+============================================================
+Segment: StopCube_ep19_f52-333
+  Subtask: remain static
+  Frames: 52 - 333
+============================================================
+  Loaded 282 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.5, 0.25, 0.88, 0.0, 0.88, 1.0, 1.0, 0.75]
+  Failed regions: [[28, 100], [100, 172]]
+  Successful interval: 122-208
+  Keyframes: [0, 122, 141, 208, 278]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 78/398 ---
+
+============================================================
+Segment: StopCube_ep19_f334-360
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 360
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.1, 0.2, 0.05, 0.0, 0.05, 0.15, 1.0, 0.85]
+  Failed regions: []
+  Successful interval: 11-22
+  Keyframes: [0, 11, 20, 22, 26]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 79/398 ---
+
+============================================================
+Segment: StopCube_ep19_f334-397
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 397
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.08, 0.0, 0.81, 0.62, 0.54, 0.92, 1.0, 0.92]
+  Failed regions: [[22, 46]]
+  Successful interval: 35-54
+  Keyframes: [3, 35, 49, 54, 63]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 80/398 ---
+
+============================================================
+Segment: StopCube_ep20_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.12, 0.04, 0.2, 0.0, 0.04, 0.04, 1.0, 0.68]
+  Failed regions: []
+  Successful interval: 37-46
+  Keyframes: [2, 37, 38, 46, 53]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 81/398 ---
+
+============================================================
+Segment: StopCube_ep20_f54-179
+  Subtask: remain static
+  Frames: 54 - 179
+============================================================
+  Loaded 126 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.25, 0.42, 0.33, 0.58, 0.42, 1.0, 0.67, 0.0]
+  Failed regions: [[28, 60], [60, 92]]
+  Successful interval: 70-92
+  Keyframes: [14, 70, 92, 93, 124]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 82/398 ---
+
+============================================================
+Segment: StopCube_ep20_f180-207
+  Subtask: press the button to stop the cube on the target
+  Frames: 180 - 207
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.17, 0.0, 0.22, 0.33, 0.56, 0.5, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 18-23
+  Keyframes: [1, 18, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 83/398 ---
+
+============================================================
+Segment: StopCube_ep20_f180-240
+  Subtask: press the button to stop the cube on the target
+  Frames: 180 - 240
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.19, 0.54, 0.46, 0.5, 1.0, 0.92, 0.88]
+  Failed regions: []
+  Successful interval: 26-44
+  Keyframes: [8, 26, 27, 44, 60]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 84/398 ---
+
+============================================================
+Segment: StopCube_ep21_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.56, 0.41, 0.52, 0.48, 0.0, 0.74, 0.81, 1.0]
+  Failed regions: [[6, 21], [21, 43]]
+  Successful interval: 33-59
+  Keyframes: [12, 33, 54, 59]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 85/398 ---
+
+============================================================
+Segment: StopCube_ep21_f60-329
+  Subtask: remain static
+  Frames: 60 - 329
+============================================================
+  Loaded 270 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.68, 0.76, 0.52, 0.0, 0.88, 0.8, 1.0, 1.0]
+  Failed regions: [[61, 165]]
+  Successful interval: 186-234
+  Keyframes: [16, 186, 225, 234, 269]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 86/398 ---
+
+============================================================
+Segment: StopCube_ep21_f330-358
+  Subtask: press the button to stop the cube on the target
+  Frames: 330 - 358
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.15, 0.0, 0.2, 0.35, 0.65, 0.4, 1.0, 0.75]
+  Failed regions: [[17, 24]]
+  Successful interval: 19-24
+  Keyframes: [0, 19, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 87/398 ---
+
+============================================================
+Segment: StopCube_ep21_f330-397
+  Subtask: press the button to stop the cube on the target
+  Frames: 330 - 397
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.14, 0.5, 1.0, 0.71, 0.93, 0.82, 0.71]
+  Failed regions: [[32, 49]]
+  Successful interval: 37-49
+  Keyframes: [0, 37, 49, 50, 66]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 88/398 ---
+
+============================================================
+Segment: StopCube_ep22_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.26, 0.26, 0.11, 0.05, 0.0, 0.68, 1.0, 0.95]
+  Failed regions: [[11, 39]]
+  Successful interval: 30-46
+  Keyframes: [1, 30, 43, 46, 53]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 89/398 ---
+
+============================================================
+Segment: StopCube_ep22_f54-149
+  Subtask: remain static
+  Frames: 54 - 149
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.0s
+  Rewards: [1.0, 0.07, 0.0, 0.43, 0.64, 0.07, 0.0, 0.43]
+  Failed regions: []
+  Successful interval: 5-9
+  Keyframes: [0, 5, 6, 9, 63]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 90/398 ---
+
+============================================================
+Segment: StopCube_ep22_f150-177
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 177
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.15, 0.1, 0.3, 0.25, 0.4, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 15-27
+  Keyframes: [0, 15, 22, 27]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 91/398 ---
+
+============================================================
+Segment: StopCube_ep22_f150-213
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 213
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.06, 0.39, 0.67, 0.42, 0.75, 1.0, 0.72]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-54
+  Keyframes: [7, 35, 52, 54, 63]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 92/398 ---
+
+============================================================
+Segment: StopCube_ep23_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.75, 0.25, 0.3, 0.0, 0.15, 0.35, 0.8, 1.0]
+  Failed regions: [[5, 19], [19, 34]]
+  Successful interval: 24-56
+  Keyframes: [9, 24, 51, 56]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 93/398 ---
+
+============================================================
+Segment: StopCube_ep23_f57-242
+  Subtask: remain static
+  Frames: 57 - 242
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.5s
+  Rewards: [1.0, 0.4, 0.1, 0.0, 0.1, 0.4, 0.8, 1.0]
+  Failed regions: [[18, 113]]
+  Successful interval: 80-185
+  Keyframes: [0, 80, 83, 185]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 94/398 ---
+
+============================================================
+Segment: StopCube_ep23_f243-272
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 272
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.0, 0.0, 0.19, 0.06, 0.31, 1.0, 0.56]
+  Failed regions: []
+  Successful interval: 16-25
+  Keyframes: [3, 16, 24, 25, 29]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 95/398 ---
+
+============================================================
+Segment: StopCube_ep23_f243-310
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 310
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.16, 0.32, 0.72, 0.6, 1.0, 0.52, 0.32]
+  Failed regions: [[32, 49]]
+  Successful interval: 37-49
+  Keyframes: [3, 37, 49, 50, 67]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 96/398 ---
+
+============================================================
+Segment: StopCube_ep24_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.24, 0.14, 0.24, 0.19, 0.1, 0.0, 0.24, 1.0]
+  Failed regions: []
+  Successful interval: 37-53
+  Keyframes: [7, 37, 38, 53]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 97/398 ---
+
+============================================================
+Segment: StopCube_ep24_f54-329
+  Subtask: remain static
+  Frames: 54 - 329
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.32, 0.14, 0.09, 0.0, 0.23, 1.0, 0.82, 0.5]
+  Failed regions: [[27, 168]]
+  Successful interval: 120-204
+  Keyframes: [55, 120, 147, 204, 273]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 98/398 ---
+
+============================================================
+Segment: StopCube_ep24_f330-357
+  Subtask: press the button to stop the cube on the target
+  Frames: 330 - 357
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.31, 0.0, 0.62, 0.46, 0.62, 0.69, 1.0, 1.0]
+  Failed regions: [[4, 10], [10, 17]]
+  Successful interval: 11-23
+  Keyframes: [1, 11, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 99/398 ---
+
+============================================================
+Segment: StopCube_ep24_f330-392
+  Subtask: press the button to stop the cube on the target
+  Frames: 330 - 392
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.11, 0.58, 0.37, 0.84, 1.0, 0.53, 0.63]
+  Failed regions: [[22, 38]]
+  Successful interval: 27-46
+  Keyframes: [1, 27, 28, 46, 61]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 100/398 ---
+
+============================================================
+Segment: StopCube_ep25_f0-51
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 51
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.19, 0.0, 0.19, 0.1, 0.29, 0.67, 1.0, 0.76]
+  Failed regions: []
+  Successful interval: 22-44
+  Keyframes: [10, 22, 40, 44, 51]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 101/398 ---
+
+============================================================
+Segment: StopCube_ep25_f52-273
+  Subtask: remain static
+  Frames: 52 - 273
+============================================================
+  Loaded 222 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.52, 0.0, 0.52, 0.43, 0.62, 0.81, 0.95, 1.0]
+  Failed regions: [[22, 78], [78, 135]]
+  Successful interval: 96-221
+  Keyframes: [44, 96, 104, 221]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 102/398 ---
+
+============================================================
+Segment: StopCube_ep25_f274-300
+  Subtask: press the button to stop the cube on the target
+  Frames: 274 - 300
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.2, 0.35, 0.35, 0.35, 0.75, 0.9, 1.0]
+  Failed regions: []
+  Successful interval: 14-26
+  Keyframes: [0, 14, 20, 26]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 103/398 ---
+
+============================================================
+Segment: StopCube_ep25_f274-338
+  Subtask: press the button to stop the cube on the target
+  Frames: 274 - 338
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.24, 0.71, 0.57, 0.81, 1.0, 1.0, 0.9]
+  Failed regions: [[22, 39]]
+  Successful interval: 27-47
+  Keyframes: [0, 27, 47, 48, 64]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 104/398 ---
+
+============================================================
+Segment: StopCube_ep26_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.55, 0.42, 0.26, 0.03, 0.0, 0.39, 1.0, 0.94]
+  Failed regions: [[5, 39]]
+  Successful interval: 30-46
+  Keyframes: [8, 30, 37, 46, 53]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 105/398 ---
+
+============================================================
+Segment: StopCube_ep26_f54-59
+  Subtask: remain static
+  Frames: 54 - 59
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.4s
+  Rewards: [0.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-5
+  Keyframes: [0, 2, 3, 5]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 106/398 ---
+
+============================================================
+Segment: StopCube_ep26_f60-87
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 87
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.32, 0.0, 0.21, 0.47, 0.42, 0.53, 1.0, 0.68]
+  Failed regions: [[4, 13]]
+  Successful interval: 15-23
+  Keyframes: [5, 15, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 107/398 ---
+
+============================================================
+Segment: StopCube_ep26_f60-120
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 120
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.17, 0.35, 0.43, 0.61, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 3-44
+  Keyframes: [0, 3, 21, 44, 60]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 108/398 ---
+
+============================================================
+Segment: StopCube_ep27_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.28, 0.2, 0.08, 0.0, 0.04, 0.24, 0.84, 1.0]
+  Failed regions: [[5, 34]]
+  Successful interval: 24-56
+  Keyframes: [1, 24, 51, 56]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 109/398 ---
+
+============================================================
+Segment: StopCube_ep27_f57-182
+  Subtask: remain static
+  Frames: 57 - 182
+============================================================
+  Loaded 126 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.86, 1.0, 0.57, 0.71, 0.14, 0.57, 0.43, 0.0]
+  Failed regions: []
+  Successful interval: 6-28
+  Keyframes: [2, 6, 23, 28, 62]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 110/398 ---
+
+============================================================
+Segment: StopCube_ep27_f183-209
+  Subtask: press the button to stop the cube on the target
+  Frames: 183 - 209
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.11, 0.0, 0.22, 0.11, 0.3, 0.41, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 11-26
+  Keyframes: [1, 11, 21, 26]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 111/398 ---
+
+============================================================
+Segment: StopCube_ep27_f183-241
+  Subtask: press the button to stop the cube on the target
+  Frames: 183 - 241
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.12, 0.3, 0.55, 0.94, 0.97, 1.0, 0.94]
+  Failed regions: []
+  Successful interval: 3-50
+  Keyframes: [0, 3, 21, 50, 58]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 112/398 ---
+
+============================================================
+Segment: StopCube_ep28_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.5, 0.44, 0.25, 0.25, 0.0, 0.5, 0.81, 1.0]
+  Failed regions: [[6, 28], [28, 43]]
+  Successful interval: 33-59
+  Keyframes: [10, 33, 54, 59]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 113/398 ---
+
+============================================================
+Segment: StopCube_ep28_f60-509
+  Subtask: remain static
+  Frames: 60 - 509
+============================================================
+  Loaded 450 frames
+  Prefix scoring: 70.4s
+  Rewards: [0.9, 0.7, 1.0, 1.0, 0.9, 0.7, 0.0, 0.1]
+  Failed regions: [[45, 160]]
+  Successful interval: 80-160
+  Keyframes: [56, 80, 143, 160, 296]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 114/398 ---
+
+============================================================
+Segment: StopCube_ep28_f510-538
+  Subtask: press the button to stop the cube on the target
+  Frames: 510 - 538
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.05, 0.05, 0.05, 0.24, 0.48, 1.0, 0.81]
+  Failed regions: []
+  Successful interval: 12-24
+  Keyframes: [0, 12, 24, 25, 28]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 115/398 ---
+
+============================================================
+Segment: StopCube_ep28_f510-580
+  Subtask: press the button to stop the cube on the target
+  Frames: 510 - 580
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.11, 0.67, 0.89, 1.0, 0.89, 0.96, 0.74]
+  Failed regions: [[43, 61]]
+  Successful interval: 49-61
+  Keyframes: [0, 49, 52, 61, 70]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 116/398 ---
+
+============================================================
+Segment: StopCube_ep29_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.78, 0.57, 0.57, 0.09, 0.0, 0.57, 1.0, 0.91]
+  Failed regions: [[5, 19], [19, 41]]
+  Successful interval: 32-48
+  Keyframes: [5, 32, 42, 48, 56]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 117/398 ---
+
+============================================================
+Segment: StopCube_ep29_f57-242
+  Subtask: remain static
+  Frames: 57 - 242
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.8s
+  Rewards: [1.0, 0.67, 0.47, 0.0, 0.4, 0.53, 1.0, 0.8]
+  Failed regions: [[18, 113]]
+  Successful interval: 80-161
+  Keyframes: [33, 80, 81, 161, 185]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 118/398 ---
+
+============================================================
+Segment: StopCube_ep29_f243-272
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 272
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.13, 0.33, 0.2, 0.53, 0.47, 1.0, 0.67]
+  Failed regions: [[11, 18]]
+  Successful interval: 19-25
+  Keyframes: [2, 19, 24, 25, 29]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 119/398 ---
+
+============================================================
+Segment: StopCube_ep29_f243-310
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 310
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.15, 0.62, 0.58, 0.62, 1.0, 0.85, 0.92]
+  Failed regions: [[49, 67]]
+  Successful interval: 55-67
+  Keyframes: [2, 55, 56, 67]
+  Success detected: True
+  Confidence: 0.47
+
+--- Segment 120/398 ---
+
+============================================================
+Segment: StopCube_ep30_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.12, 0.08, 0.19, 0.15, 0.46, 1.0, 0.73]
+  Failed regions: []
+  Successful interval: 30-46
+  Keyframes: [10, 30, 43, 46, 53]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 121/398 ---
+
+============================================================
+Segment: StopCube_ep30_f54-269
+  Subtask: remain static
+  Frames: 54 - 269
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.22, 0.22, 0.44, 0.44, 0.67, 1.0, 0.44]
+  Failed regions: []
+  Successful interval: 121-187
+  Keyframes: [43, 121, 139, 187, 215]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 122/398 ---
+
+============================================================
+Segment: StopCube_ep30_f270-297
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 297
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.47, 0.21, 0.42, 0.0, 0.21, 0.42, 1.0, 0.84]
+  Failed regions: [[4, 10], [10, 17]]
+  Successful interval: 11-23
+  Keyframes: [0, 11, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 123/398 ---
+
+============================================================
+Segment: StopCube_ep30_f270-331
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 331
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.32, 0.0, 0.44, 0.72, 0.84, 1.0, 1.0, 0.96]
+  Failed regions: [[6, 21]]
+  Successful interval: 10-45
+  Keyframes: [0, 10, 21, 45, 61]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 124/398 ---
+
+============================================================
+Segment: StopCube_ep31_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.33, 0.42, 0.17, 0.17, 0.0, 1.0, 0.75, 0.96]
+  Failed regions: [[12, 27], [42, 57]]
+  Successful interval: 47-57
+  Keyframes: [11, 47, 52, 57]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 125/398 ---
+
+============================================================
+Segment: StopCube_ep31_f58-249
+  Subtask: remain static
+  Frames: 58 - 249
+============================================================
+  Loaded 192 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.6, 0.3, 1.0, 0.6, 0.0, 0.3, 0.7, 0.1]
+  Failed regions: [[19, 68]]
+  Successful interval: 34-68
+  Keyframes: [18, 34, 52, 68, 178]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 126/398 ---
+
+============================================================
+Segment: StopCube_ep31_f250-276
+  Subtask: press the button to stop the cube on the target
+  Frames: 250 - 276
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.27, 0.38, 0.38, 0.0, 0.04, 0.27, 1.0, 0.58]
+  Failed regions: [[10, 16]]
+  Successful interval: 11-22
+  Keyframes: [0, 11, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 127/398 ---
+
+============================================================
+Segment: StopCube_ep31_f250-308
+  Subtask: press the button to stop the cube on the target
+  Frames: 250 - 308
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.1, 0.0, 0.07, 0.43, 0.83, 0.93, 0.87, 1.0]
+  Failed regions: []
+  Successful interval: 48-58
+  Keyframes: [0, 48, 49, 58]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 128/398 ---
+
+============================================================
+Segment: StopCube_ep32_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.62, 0.38, 0.25, 0.0, 0.29, 0.71, 0.96, 1.0]
+  Failed regions: [[5, 33]]
+  Successful interval: 24-55
+  Keyframes: [4, 24, 50, 55]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 129/398 ---
+
+============================================================
+Segment: StopCube_ep32_f56-241
+  Subtask: remain static
+  Frames: 56 - 241
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.5s
+  Rewards: [1.0, 0.56, 0.0, 0.22, 0.11, 0.0, 0.22, 0.11]
+  Failed regions: []
+  Successful interval: 9-18
+  Keyframes: [2, 9, 18, 19, 68]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 130/398 ---
+
+============================================================
+Segment: StopCube_ep32_f242-270
+  Subtask: press the button to stop the cube on the target
+  Frames: 242 - 270
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.07, 0.43, 0.0, 0.5, 0.64, 0.07, 1.0, 0.79]
+  Failed regions: [[7, 17], [17, 24]]
+  Successful interval: 19-24
+  Keyframes: [2, 19, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 131/398 ---
+
+============================================================
+Segment: StopCube_ep32_f242-314
+  Subtask: press the button to stop the cube on the target
+  Frames: 242 - 314
+============================================================
+  Loaded 73 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.22, 0.0, 0.67, 0.89, 1.0, 0.89, 0.89, 0.72]
+  Failed regions: []
+  Successful interval: 13-44
+  Keyframes: [3, 13, 23, 44, 68]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 132/398 ---
+
+============================================================
+Segment: StopCube_ep33_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.07, 0.21, 0.0, 0.21, 0.07, 0.29, 1.0, 0.86]
+  Failed regions: []
+  Successful interval: 32-49
+  Keyframes: [10, 32, 39, 49, 57]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 133/398 ---
+
+============================================================
+Segment: StopCube_ep33_f58-249
+  Subtask: remain static
+  Frames: 58 - 249
+============================================================
+  Loaded 192 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.85, 1.0, 0.92, 0.46, 0.0, 0.54, 0.46, 0.69]
+  Failed regions: []
+  Successful interval: 10-43
+  Keyframes: [9, 10, 42, 43, 92]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 134/398 ---
+
+============================================================
+Segment: StopCube_ep33_f250-277
+  Subtask: press the button to stop the cube on the target
+  Frames: 250 - 277
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.06, 0.0, 0.06, 0.56, 0.06, 0.5, 1.0, 0.67]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-23
+  Keyframes: [5, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 135/398 ---
+
+============================================================
+Segment: StopCube_ep33_f250-313
+  Subtask: press the button to stop the cube on the target
+  Frames: 250 - 313
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.1, 0.48, 0.62, 0.41, 0.66, 0.93, 1.0]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-63
+  Keyframes: [2, 35, 51, 63]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 136/398 ---
+
+============================================================
+Segment: StopCube_ep34_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.31, 0.42, 0.23, 0.08, 0.0, 0.65, 0.65, 1.0]
+  Failed regions: [[12, 42]]
+  Successful interval: 47-57
+  Keyframes: [3, 47, 52, 57]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 137/398 ---
+
+============================================================
+Segment: StopCube_ep34_f58-333
+  Subtask: remain static
+  Frames: 58 - 333
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.44, 0.22, 0.17, 0.0, 0.33, 0.78, 0.89, 1.0]
+  Failed regions: [[27, 168]]
+  Successful interval: 120-275
+  Keyframes: [12, 120, 130, 275]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 138/398 ---
+
+============================================================
+Segment: StopCube_ep34_f334-361
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 361
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.05, 0.14, 0.29, 0.24, 0.57, 1.0, 0.9]
+  Failed regions: []
+  Successful interval: 15-23
+  Keyframes: [1, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 139/398 ---
+
+============================================================
+Segment: StopCube_ep34_f334-400
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 400
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.29, 0.79, 0.86, 0.71, 1.0, 1.0, 0.96]
+  Failed regions: [[31, 48]]
+  Successful interval: 37-48
+  Keyframes: [1, 37, 48, 49, 64]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 140/398 ---
+
+============================================================
+Segment: StopCube_ep35_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.53, 0.44, 0.28, 0.22, 0.0, 0.25, 0.69, 1.0]
+  Failed regions: [[5, 41]]
+  Successful interval: 32-56
+  Keyframes: [9, 32, 51, 56]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 141/398 ---
+
+============================================================
+Segment: StopCube_ep35_f57-122
+  Subtask: remain static
+  Frames: 57 - 122
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.71, 0.0, 1.0, 0.71, 0.86, 0.71, 0.14, 0.29]
+  Failed regions: [[6, 22], [22, 39]]
+  Successful interval: 28-39
+  Keyframes: [3, 28, 29, 39, 55]
+  Success detected: True
+  Confidence: 0.46
+
+--- Segment 142/398 ---
+
+============================================================
+Segment: StopCube_ep35_f123-152
+  Subtask: press the button to stop the cube on the target
+  Frames: 123 - 152
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.35, 0.15, 0.2, 0.25, 0.3, 1.0, 0.75]
+  Failed regions: [[7, 14]]
+  Successful interval: 9-25
+  Keyframes: [6, 9, 25, 26, 29]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 143/398 ---
+
+============================================================
+Segment: StopCube_ep35_f123-190
+  Subtask: press the button to stop the cube on the target
+  Frames: 123 - 190
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.31, 0.0, 0.15, 0.46, 0.46, 1.0, 0.69, 0.88]
+  Failed regions: [[6, 32], [49, 67]]
+  Successful interval: 55-67
+  Keyframes: [8, 55, 56, 67]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 144/398 ---
+
+============================================================
+Segment: StopCube_ep36_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 53.9s
+  Rewards: [1.0, 0.76, 0.43, 0.33, 0.0, 0.67, 0.71, 0.81]
+  Failed regions: [[5, 42]]
+  Successful interval: 33-58
+  Keyframes: [1, 33, 53, 58]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 145/398 ---
+
+============================================================
+Segment: StopCube_ep36_f59-250
+  Subtask: remain static
+  Frames: 59 - 250
+============================================================
+  Loaded 192 frames
+  Prefix scoring: 54.5s
+  Rewards: [1.0, 1.0, 0.8, 0.0, 0.0, 0.6, 0.0, 0.4]
+  Failed regions: []
+  Successful interval: 10-19
+  Keyframes: [1, 10, 13, 19, 99]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 146/398 ---
+
+============================================================
+Segment: StopCube_ep36_f251-280
+  Subtask: press the button to stop the cube on the target
+  Frames: 251 - 280
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.14, 0.14, 0.0, 0.0, 0.07, 0.43, 0.79, 1.0]
+  Failed regions: []
+  Successful interval: 12-29
+  Keyframes: [1, 12, 24, 29]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 147/398 ---
+
+============================================================
+Segment: StopCube_ep36_f251-322
+  Subtask: press the button to stop the cube on the target
+  Frames: 251 - 322
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.09, 0.0, 0.36, 0.55, 0.7, 1.0, 0.88, 0.73]
+  Failed regions: []
+  Successful interval: 13-52
+  Keyframes: [8, 13, 24, 52, 71]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 148/398 ---
+
+============================================================
+Segment: StopCube_ep37_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.57, 0.57, 0.38, 0.19, 0.0, 0.65, 1.0, 1.0]
+  Failed regions: [[11, 39]]
+  Successful interval: 30-46
+  Keyframes: [0, 30, 40, 46, 53]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 149/398 ---
+
+============================================================
+Segment: StopCube_ep37_f54-239
+  Subtask: remain static
+  Frames: 54 - 239
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.73, 0.36, 0.0, 0.27, 0.09, 0.91, 0.64, 1.0]
+  Failed regions: [[18, 89], [89, 137], [137, 185]]
+  Successful interval: 152-185
+  Keyframes: [3, 152, 157, 185]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 150/398 ---
+
+============================================================
+Segment: StopCube_ep37_f240-267
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 267
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.23, 0.23, 0.0, 0.31, 0.46, 0.23, 1.0, 0.69]
+  Failed regions: [[17, 23]]
+  Successful interval: 18-23
+  Keyframes: [5, 18, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 151/398 ---
+
+============================================================
+Segment: StopCube_ep37_f240-300
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 300
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.08, 0.0, 0.25, 0.21, 0.54, 0.67, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 26-52
+  Keyframes: [0, 26, 49, 52, 60]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 152/398 ---
+
+============================================================
+Segment: StopCube_ep38_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.09, 0.12, 0.18, 0.0, 0.06, 0.12, 0.7, 1.0]
+  Failed regions: []
+  Successful interval: 23-52
+  Keyframes: [4, 23, 47, 52]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 153/398 ---
+
+============================================================
+Segment: StopCube_ep38_f53-64
+  Subtask: remain static
+  Frames: 53 - 64
+============================================================
+  Loaded 12 frames
+  Prefix scoring: 53.9s
+  Rewards: [1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5, 0.5]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [0, 2, 3, 4, 11]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 154/398 ---
+
+============================================================
+Segment: StopCube_ep38_f65-91
+  Subtask: press the button to stop the cube on the target
+  Frames: 65 - 91
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.07, 0.0, 0.18, 0.21, 0.5, 0.25, 1.0, 0.39]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-22
+  Keyframes: [1, 17, 22, 23, 26]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 155/398 ---
+
+============================================================
+Segment: StopCube_ep38_f65-128
+  Subtask: press the button to stop the cube on the target
+  Frames: 65 - 128
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.03, 0.93, 0.27, 0.63, 1.0, 0.77, 0.9]
+  Failed regions: [[22, 46], [46, 63]]
+  Successful interval: 51-63
+  Keyframes: [8, 51, 52, 63]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 156/398 ---
+
+============================================================
+Segment: StopCube_ep39_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.17, 0.28, 0.11, 0.0, 0.22, 0.28, 1.0, 1.0]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-47
+  Keyframes: [8, 24, 41, 47, 54]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 157/398 ---
+
+============================================================
+Segment: StopCube_ep39_f55-270
+  Subtask: remain static
+  Frames: 55 - 270
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.4, 0.2, 0.5, 0.0, 0.4, 0.9, 1.0, 0.8]
+  Failed regions: [[21, 76], [76, 131]]
+  Successful interval: 94-187
+  Keyframes: [43, 94, 128, 187, 215]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 158/398 ---
+
+============================================================
+Segment: StopCube_ep39_f271-298
+  Subtask: press the button to stop the cube on the target
+  Frames: 271 - 298
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.24, 0.06, 0.0, 0.12, 0.29, 0.88, 0.76, 1.0]
+  Failed regions: [[20, 27]]
+  Successful interval: 21-27
+  Keyframes: [0, 21, 22, 27]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 159/398 ---
+
+============================================================
+Segment: StopCube_ep39_f271-337
+  Subtask: press the button to stop the cube on the target
+  Frames: 271 - 337
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.04, 0.5, 0.38, 0.5, 1.0, 0.83, 0.79]
+  Failed regions: [[23, 40]]
+  Successful interval: 28-48
+  Keyframes: [0, 28, 48, 49, 66]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 160/398 ---
+
+============================================================
+Segment: StopCube_ep40_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.29, 0.36, 0.29, 0.43, 0.0, 0.07, 1.0, 0.71]
+  Failed regions: [[26, 40]]
+  Successful interval: 31-47
+  Keyframes: [4, 31, 36, 47, 54]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 161/398 ---
+
+============================================================
+Segment: StopCube_ep40_f55-270
+  Subtask: remain static
+  Frames: 55 - 270
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.06, 0.31, 0.06, 0.19, 0.44, 0.81, 1.0]
+  Failed regions: [[76, 131]]
+  Successful interval: 94-215
+  Keyframes: [42, 94, 114, 215]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 162/398 ---
+
+============================================================
+Segment: StopCube_ep40_f271-297
+  Subtask: press the button to stop the cube on the target
+  Frames: 271 - 297
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.26, 0.21, 0.21, 0.32, 0.47, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 11-26
+  Keyframes: [2, 11, 20, 26]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 163/398 ---
+
+============================================================
+Segment: StopCube_ep40_f271-335
+  Subtask: press the button to stop the cube on the target
+  Frames: 271 - 335
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.03, 0.0, 0.48, 0.52, 0.66, 0.9, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-55
+  Keyframes: [8, 11, 20, 55, 64]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 164/398 ---
+
+============================================================
+Segment: StopCube_ep41_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.39, 0.33, 0.28, 0.0, 0.5, 0.67, 1.0, 0.72]
+  Failed regions: [[5, 33]]
+  Successful interval: 24-47
+  Keyframes: [0, 24, 39, 47, 54]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 165/398 ---
+
+============================================================
+Segment: StopCube_ep41_f55-390
+  Subtask: remain static
+  Frames: 55 - 390
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.4s
+  Rewards: [0.19, 0.31, 0.0, 0.5, 0.5, 0.56, 1.0, 0.19]
+  Failed regions: [[76, 162]]
+  Successful interval: 189-291
+  Keyframes: [5, 189, 252, 291, 335]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 166/398 ---
+
+============================================================
+Segment: StopCube_ep41_f391-418
+  Subtask: press the button to stop the cube on the target
+  Frames: 391 - 418
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.06, 0.0, 0.12, 0.29, 0.59, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 8-23
+  Keyframes: [5, 8, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 167/398 ---
+
+============================================================
+Segment: StopCube_ep41_f391-454
+  Subtask: press the button to stop the cube on the target
+  Frames: 391 - 454
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.35, 0.74, 0.61, 0.68, 1.0, 0.71, 0.71]
+  Failed regions: [[22, 38]]
+  Successful interval: 27-46
+  Keyframes: [6, 27, 28, 46, 63]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 168/398 ---
+
+============================================================
+Segment: StopCube_ep42_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.11, 0.11, 0.32, 0.0, 0.21, 0.63, 1.0, 0.89]
+  Failed regions: [[19, 33]]
+  Successful interval: 24-47
+  Keyframes: [10, 24, 41, 47, 54]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 169/398 ---
+
+============================================================
+Segment: StopCube_ep42_f55-510
+  Subtask: remain static
+  Frames: 55 - 510
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.1s
+  Rewards: [0.67, 0.75, 0.5, 0.92, 0.83, 1.0, 0.08, 0.0]
+  Failed regions: [[103, 220], [220, 337]]
+  Successful interval: 257-337
+  Keyframes: [6, 257, 260, 337, 452]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 170/398 ---
+
+============================================================
+Segment: StopCube_ep42_f511-538
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 538
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.08, 0.17, 0.0, 0.08, 0.33, 0.5, 1.0, 0.92]
+  Failed regions: []
+  Successful interval: 8-23
+  Keyframes: [1, 8, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 171/398 ---
+
+============================================================
+Segment: StopCube_ep42_f511-575
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 575
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.17, 0.5, 0.28, 0.83, 1.0, 0.78, 0.83]
+  Failed regions: [[22, 47], [47, 64]]
+  Successful interval: 52-64
+  Keyframes: [9, 52, 53, 64]
+  Success detected: True
+  Confidence: 0.41
+
+--- Segment 172/398 ---
+
+============================================================
+Segment: StopCube_ep43_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.33, 0.17, 0.08, 0.0, 0.42, 0.42, 1.0, 0.33]
+  Failed regions: [[5, 32]]
+  Successful interval: 37-46
+  Keyframes: [8, 37, 39, 46, 53]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 173/398 ---
+
+============================================================
+Segment: StopCube_ep43_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.4s
+  Rewards: [0.0, 0.53, 0.29, 0.12, 0.76, 1.0, 0.88, 0.41]
+  Failed regions: [[76, 205]]
+  Successful interval: 146-248
+  Keyframes: [55, 146, 216, 248, 333]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 174/398 ---
+
+============================================================
+Segment: StopCube_ep43_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.33, 0.56, 0.44, 0.22, 0.0, 0.11, 1.0, 0.67]
+  Failed regions: [[7, 20]]
+  Successful interval: 15-23
+  Keyframes: [4, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 175/398 ---
+
+============================================================
+Segment: StopCube_ep43_f390-455
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 455
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.1, 0.0, 0.2, 0.3, 0.4, 0.8, 0.8, 1.0]
+  Failed regions: []
+  Successful interval: 53-65
+  Keyframes: [7, 53, 54, 65]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 176/398 ---
+
+============================================================
+Segment: StopCube_ep44_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.19, 0.3, 0.26, 0.0, 0.07, 0.37, 0.44, 1.0]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-54
+  Keyframes: [11, 24, 49, 54]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 177/398 ---
+
+============================================================
+Segment: StopCube_ep44_f55-330
+  Subtask: remain static
+  Frames: 55 - 330
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.47, 0.47, 0.53, 0.0, 0.27, 0.6, 1.0, 0.93]
+  Failed regions: [[97, 168]]
+  Successful interval: 120-239
+  Keyframes: [20, 120, 211, 239, 275]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 178/398 ---
+
+============================================================
+Segment: StopCube_ep44_f331-358
+  Subtask: press the button to stop the cube on the target
+  Frames: 331 - 358
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.08, 0.25, 0.33, 0.5, 0.67, 1.0, 0.83]
+  Failed regions: []
+  Successful interval: 2-23
+  Keyframes: [0, 2, 23, 24, 27]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 179/398 ---
+
+============================================================
+Segment: StopCube_ep44_f331-394
+  Subtask: press the button to stop the cube on the target
+  Frames: 331 - 394
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.35, 0.38, 0.54, 0.58, 0.77, 1.0, 0.73]
+  Failed regions: []
+  Successful interval: 3-54
+  Keyframes: [0, 3, 23, 54, 63]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 180/398 ---
+
+============================================================
+Segment: StopCube_ep45_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.12, 0.32, 0.32, 0.48, 0.8, 1.0, 0.84]
+  Failed regions: []
+  Successful interval: 24-48
+  Keyframes: [8, 24, 40, 48, 56]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 181/398 ---
+
+============================================================
+Segment: StopCube_ep45_f57-272
+  Subtask: remain static
+  Frames: 57 - 272
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.6, 0.27, 0.53, 0.0, 0.2, 0.2, 0.67, 1.0]
+  Failed regions: [[21, 76], [76, 131]]
+  Successful interval: 149-215
+  Keyframes: [43, 149, 150, 215]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 182/398 ---
+
+============================================================
+Segment: StopCube_ep45_f273-299
+  Subtask: press the button to stop the cube on the target
+  Frames: 273 - 299
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.07, 0.13, 0.0, 0.33, 0.2, 0.4, 0.93, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-26
+  Keyframes: [0, 14, 21, 26]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 183/398 ---
+
+============================================================
+Segment: StopCube_ep45_f273-335
+  Subtask: press the button to stop the cube on the target
+  Frames: 273 - 335
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.07, 0.48, 0.3, 0.56, 1.0, 0.93, 0.7]
+  Failed regions: [[22, 38]]
+  Successful interval: 27-46
+  Keyframes: [0, 27, 46, 47, 62]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 184/398 ---
+
+============================================================
+Segment: StopCube_ep46_f0-51
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 51
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.11, 0.07, 0.04, 0.0, 0.29, 0.5, 0.82, 1.0]
+  Failed regions: []
+  Successful interval: 22-51
+  Keyframes: [2, 22, 38, 51]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 185/398 ---
+
+============================================================
+Segment: StopCube_ep46_f52-153
+  Subtask: remain static
+  Frames: 52 - 153
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.0s
+  Rewards: [1.0, 0.75, 1.0, 1.0, 1.0, 0.0, 0.75, 0.25]
+  Failed regions: [[10, 36]]
+  Successful interval: 18-36
+  Keyframes: [9, 18, 19, 36, 61]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 186/398 ---
+
+============================================================
+Segment: StopCube_ep46_f154-179
+  Subtask: press the button to stop the cube on the target
+  Frames: 154 - 179
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.08, 0.04, 0.0, 0.29, 0.29, 0.5, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 14-22
+  Keyframes: [5, 14, 21, 22, 25]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 187/398 ---
+
+============================================================
+Segment: StopCube_ep46_f154-216
+  Subtask: press the button to stop the cube on the target
+  Frames: 154 - 216
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.23, 0.74, 0.65, 0.45, 1.0, 0.74, 0.77]
+  Failed regions: [[22, 46]]
+  Successful interval: 35-46
+  Keyframes: [8, 35, 46, 47, 61]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 188/398 ---
+
+============================================================
+Segment: StopCube_ep47_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.08, 0.46, 0.29, 0.08, 0.0, 0.33, 0.67, 1.0]
+  Failed regions: [[12, 40]]
+  Successful interval: 31-54
+  Keyframes: [4, 31, 49, 54]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 189/398 ---
+
+============================================================
+Segment: StopCube_ep47_f55-60
+  Subtask: remain static
+  Frames: 55 - 60
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.4s
+  Rewards: [1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [0, 2, 3, 4, 5]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 190/398 ---
+
+============================================================
+Segment: StopCube_ep47_f61-89
+  Subtask: press the button to stop the cube on the target
+  Frames: 61 - 89
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.19, 0.07, 0.0, 0.26, 0.41, 0.48, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 8-28
+  Keyframes: [2, 8, 23, 28]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 191/398 ---
+
+============================================================
+Segment: StopCube_ep47_f61-129
+  Subtask: press the button to stop the cube on the target
+  Frames: 61 - 129
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.06, 0.42, 0.67, 0.88, 1.0, 0.97, 0.85]
+  Failed regions: []
+  Successful interval: 3-50
+  Keyframes: [2, 3, 23, 50, 67]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 192/398 ---
+
+============================================================
+Segment: StopCube_ep48_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.23, 0.23, 0.2, 0.0, 0.3, 0.6, 0.73, 1.0]
+  Failed regions: []
+  Successful interval: 25-58
+  Keyframes: [10, 25, 53, 58]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 193/398 ---
+
+============================================================
+Segment: StopCube_ep48_f59-274
+  Subtask: remain static
+  Frames: 59 - 274
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.48, 0.39, 0.17, 0.35, 0.39, 0.43, 1.0]
+  Failed regions: [[48, 131]]
+  Successful interval: 94-215
+  Keyframes: [40, 94, 150, 215]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 194/398 ---
+
+============================================================
+Segment: StopCube_ep48_f275-302
+  Subtask: press the button to stop the cube on the target
+  Frames: 275 - 302
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.12, 0.12, 0.0, 0.38, 0.19, 0.62, 1.0, 0.94]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-23
+  Keyframes: [2, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 195/398 ---
+
+============================================================
+Segment: StopCube_ep48_f275-336
+  Subtask: press the button to stop the cube on the target
+  Frames: 275 - 336
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.17, 0.48, 0.87, 0.78, 0.87, 1.0, 0.74]
+  Failed regions: [[29, 45]]
+  Successful interval: 34-53
+  Keyframes: [7, 34, 49, 53, 61]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 196/398 ---
+
+============================================================
+Segment: StopCube_ep49_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.52, 0.41, 0.3, 0.26, 0.0, 0.74, 0.59, 1.0]
+  Failed regions: [[5, 40], [40, 54]]
+  Successful interval: 45-54
+  Keyframes: [11, 45, 49, 54]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 197/398 ---
+
+============================================================
+Segment: StopCube_ep49_f55-174
+  Subtask: remain static
+  Frames: 55 - 174
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.93, 0.64, 0.57, 1.0, 0.57, 0.64, 0.43, 0.0]
+  Failed regions: [[12, 57]]
+  Successful interval: 36-57
+  Keyframes: [24, 36, 55, 57, 90]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 198/398 ---
+
+============================================================
+Segment: StopCube_ep49_f175-200
+  Subtask: press the button to stop the cube on the target
+  Frames: 175 - 200
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.23, 0.0, 0.12, 0.27, 0.46, 0.62, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 5-25
+  Keyframes: [0, 5, 21, 25]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 199/398 ---
+
+============================================================
+Segment: StopCube_ep49_f175-236
+  Subtask: press the button to stop the cube on the target
+  Frames: 175 - 236
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.16, 0.92, 0.36, 1.0, 1.0, 0.88, 1.0]
+  Failed regions: [[21, 37], [45, 61]]
+  Successful interval: 50-61
+  Keyframes: [5, 50, 51, 61]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 200/398 ---
+
+============================================================
+Segment: StopCube_ep50_f0-60
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 60
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.0, 0.21, 0.43, 0.43, 0.43, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 41-52
+  Keyframes: [11, 41, 42, 52, 60]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 201/398 ---
+
+============================================================
+Segment: StopCube_ep50_f61-510
+  Subtask: remain static
+  Frames: 61 - 510
+============================================================
+  Loaded 450 frames
+  Prefix scoring: 69.8s
+  Rewards: [0.71, 0.65, 0.42, 1.0, 1.0, 0.45, 0.0, 0.23]
+  Failed regions: [[45, 218]]
+  Successful interval: 138-218
+  Keyframes: [58, 138, 153, 218, 358]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 202/398 ---
+
+============================================================
+Segment: StopCube_ep50_f511-540
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 540
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.25, 0.17, 0.08, 0.0, 0.17, 0.17, 0.75, 1.0]
+  Failed regions: [[4, 18]]
+  Successful interval: 19-29
+  Keyframes: [2, 19, 24, 29]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 203/398 ---
+
+============================================================
+Segment: StopCube_ep50_f511-577
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 577
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.08, 0.0, 0.29, 0.62, 0.79, 0.83, 1.0, 0.62]
+  Failed regions: []
+  Successful interval: 11-57
+  Keyframes: [0, 11, 24, 57, 66]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 204/398 ---
+
+============================================================
+Segment: StopCube_ep51_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.05, 0.05, 0.14, 0.0, 0.18, 0.41, 0.68, 1.0]
+  Failed regions: []
+  Successful interval: 23-52
+  Keyframes: [4, 23, 40, 52]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 205/398 ---
+
+============================================================
+Segment: StopCube_ep51_f53-94
+  Subtask: remain static
+  Frames: 53 - 94
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.0, 0.0, 0.0, 1.0, 0.5, 0.5, 1.0]
+  Failed regions: [[25, 35], [25, 41]]
+  Successful interval: 33-41
+  Keyframes: [0, 33, 40, 41]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 206/398 ---
+
+============================================================
+Segment: StopCube_ep51_f95-121
+  Subtask: press the button to stop the cube on the target
+  Frames: 95 - 121
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.0, 0.19, 0.34, 0.41, 0.38, 0.69, 1.0]
+  Failed regions: []
+  Successful interval: 17-26
+  Keyframes: [5, 17, 21, 26]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 207/398 ---
+
+============================================================
+Segment: StopCube_ep51_f95-157
+  Subtask: press the button to stop the cube on the target
+  Frames: 95 - 157
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.22, 0.58, 0.83, 0.61, 1.0, 1.0, 0.97]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-46
+  Keyframes: [7, 35, 46, 47, 61]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 208/398 ---
+
+============================================================
+Segment: StopCube_ep52_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.45, 0.41, 0.27, 0.0, 0.18, 1.0, 0.86, 0.86]
+  Failed regions: [[5, 33]]
+  Successful interval: 24-40
+  Keyframes: [11, 24, 39, 40, 54]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 209/398 ---
+
+============================================================
+Segment: StopCube_ep52_f55-150
+  Subtask: remain static
+  Frames: 55 - 150
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 53.9s
+  Rewards: [1.0, 0.24, 0.0, 0.65, 0.65, 0.47, 0.18, 0.94]
+  Failed regions: [[9, 45], [58, 95]]
+  Successful interval: 78-95
+  Keyframes: [5, 78, 93, 95]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 210/398 ---
+
+============================================================
+Segment: StopCube_ep52_f151-178
+  Subtask: press the button to stop the cube on the target
+  Frames: 151 - 178
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.05, 0.0, 0.05, 0.15, 0.4, 0.55, 1.0, 0.7]
+  Failed regions: []
+  Successful interval: 5-23
+  Keyframes: [4, 5, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 211/398 ---
+
+============================================================
+Segment: StopCube_ep52_f151-220
+  Subtask: press the button to stop the cube on the target
+  Frames: 151 - 220
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.18, 0.36, 0.73, 1.0, 0.93, 0.86, 0.84]
+  Failed regions: []
+  Successful interval: 4-42
+  Keyframes: [0, 4, 22, 42, 65]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 212/398 ---
+
+============================================================
+Segment: StopCube_ep53_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.22, 0.26, 0.22, 0.0, 0.22, 0.43, 1.0, 1.0]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-47
+  Keyframes: [0, 24, 40, 47, 55]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 213/398 ---
+
+============================================================
+Segment: StopCube_ep53_f56-391
+  Subtask: remain static
+  Frames: 56 - 391
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.29, 0.0, 0.06, 0.59, 0.24, 0.53, 1.0, 0.35]
+  Failed regions: [[33, 162], [162, 248]]
+  Successful interval: 189-291
+  Keyframes: [4, 189, 260, 291, 335]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 214/398 ---
+
+============================================================
+Segment: StopCube_ep53_f392-420
+  Subtask: press the button to stop the cube on the target
+  Frames: 392 - 420
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.09, 0.05, 0.0, 0.23, 0.18, 0.41, 1.0, 0.64]
+  Failed regions: []
+  Successful interval: 15-24
+  Keyframes: [0, 15, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 215/398 ---
+
+============================================================
+Segment: StopCube_ep53_f392-456
+  Subtask: press the button to stop the cube on the target
+  Frames: 392 - 456
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.14, 0.61, 0.57, 0.82, 1.0, 1.0, 0.86]
+  Failed regions: []
+  Successful interval: 27-47
+  Keyframes: [0, 27, 28, 47, 64]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 216/398 ---
+
+============================================================
+Segment: StopCube_ep54_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.43, 0.43, 0.17, 0.0, 0.22, 0.39, 1.0, 0.61]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-47
+  Keyframes: [7, 24, 40, 47, 55]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 217/398 ---
+
+============================================================
+Segment: StopCube_ep54_f56-61
+  Subtask: remain static
+  Frames: 56 - 61
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.6s
+  Rewards: [0.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-5
+  Keyframes: [0, 2, 3, 5]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 218/398 ---
+
+============================================================
+Segment: StopCube_ep54_f62-90
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 90
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.13, 0.07, 0.2, 0.0, 0.33, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 15-24
+  Keyframes: [5, 15, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 219/398 ---
+
+============================================================
+Segment: StopCube_ep54_f62-133
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 133
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.03, 0.0, 0.43, 0.5, 0.7, 1.0, 0.93, 0.9]
+  Failed regions: []
+  Successful interval: 13-52
+  Keyframes: [8, 13, 23, 52, 71]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 220/398 ---
+
+============================================================
+Segment: StopCube_ep55_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.47, 0.41, 0.26, 0.15, 0.0, 0.15, 0.88, 1.0]
+  Failed regions: [[5, 39]]
+  Successful interval: 30-53
+  Keyframes: [7, 30, 48, 53]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 221/398 ---
+
+============================================================
+Segment: StopCube_ep55_f54-59
+  Subtask: remain static
+  Frames: 54 - 59
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.6s
+  Rewards: [1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [1, 2, 3, 4, 5]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 222/398 ---
+
+============================================================
+Segment: StopCube_ep55_f60-87
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 87
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.41, 0.24, 0.18, 0.06, 0.0, 0.18, 1.0, 0.88]
+  Failed regions: [[4, 20]]
+  Successful interval: 15-23
+  Keyframes: [3, 15, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 223/398 ---
+
+============================================================
+Segment: StopCube_ep55_f60-121
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 121
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.06, 0.0, 0.19, 0.47, 0.47, 0.78, 1.0, 0.78]
+  Failed regions: []
+  Successful interval: 34-53
+  Keyframes: [1, 34, 50, 53, 61]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 224/398 ---
+
+============================================================
+Segment: StopCube_ep56_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.54, 0.12, 0.46, 0.0, 0.12, 0.5, 1.0, 0.92]
+  Failed regions: [[5, 19], [19, 33]]
+  Successful interval: 24-47
+  Keyframes: [11, 24, 35, 47, 55]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 225/398 ---
+
+============================================================
+Segment: StopCube_ep56_f56-61
+  Subtask: remain static
+  Frames: 56 - 61
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.5s
+  Rewards: [0.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-5
+  Keyframes: [0, 2, 3, 5]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 226/398 ---
+
+============================================================
+Segment: StopCube_ep56_f62-90
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 90
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.18, 0.06, 0.18, 0.06, 0.0, 0.29, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 15-24
+  Keyframes: [0, 15, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 227/398 ---
+
+============================================================
+Segment: StopCube_ep56_f62-131
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 131
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.0, 0.47, 0.53, 0.59, 0.82, 1.0, 0.97]
+  Failed regions: []
+  Successful interval: 12-60
+  Keyframes: [7, 12, 23, 60, 69]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 228/398 ---
+
+============================================================
+Segment: StopCube_ep57_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.0, 0.15, 0.08, 0.15, 0.69, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 24-55
+  Keyframes: [3, 24, 50, 55]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 229/398 ---
+
+============================================================
+Segment: StopCube_ep57_f56-511
+  Subtask: remain static
+  Frames: 56 - 511
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.5s
+  Rewards: [0.47, 0.67, 0.4, 1.0, 0.6, 0.73, 0.27, 0.0]
+  Failed regions: [[103, 220]]
+  Successful interval: 140-220
+  Keyframes: [57, 140, 144, 220, 363]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 230/398 ---
+
+============================================================
+Segment: StopCube_ep57_f512-539
+  Subtask: press the button to stop the cube on the target
+  Frames: 512 - 539
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.18, 0.09, 0.27, 0.32, 0.68, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 8-27
+  Keyframes: [0, 8, 22, 27]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 231/398 ---
+
+============================================================
+Segment: StopCube_ep57_f512-580
+  Subtask: press the button to stop the cube on the target
+  Frames: 512 - 580
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.06, 0.0, 1.0, 1.0, 1.0, 0.76, 0.65, 0.65]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [0, 11, 22, 23, 67]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 232/398 ---
+
+============================================================
+Segment: StopCube_ep58_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.88, 0.65, 0.41, 0.29, 0.0, 0.82, 0.88, 1.0]
+  Failed regions: [[5, 42]]
+  Successful interval: 32-57
+  Keyframes: [6, 32, 52, 57]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 233/398 ---
+
+============================================================
+Segment: StopCube_ep58_f58-333
+  Subtask: remain static
+  Frames: 58 - 333
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.79, 0.82, 0.68, 0.0, 0.36, 1.0, 0.93, 0.79]
+  Failed regions: [[62, 168]]
+  Successful interval: 120-204
+  Keyframes: [21, 120, 140, 204, 273]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 234/398 ---
+
+============================================================
+Segment: StopCube_ep58_f334-363
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 363
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.07, 0.0, 0.0, 0.2, 0.53, 0.4, 1.0, 0.87]
+  Failed regions: [[18, 25]]
+  Successful interval: 19-25
+  Keyframes: [1, 19, 25, 26, 29]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 235/398 ---
+
+============================================================
+Segment: StopCube_ep58_f334-401
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 401
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.04, 0.38, 0.62, 0.62, 1.0, 0.83, 0.5]
+  Failed regions: []
+  Successful interval: 37-49
+  Keyframes: [0, 37, 49, 50, 67]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 236/398 ---
+
+============================================================
+Segment: StopCube_ep59_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.17, 0.07, 0.0, 0.07, 0.03, 0.17, 0.47, 1.0]
+  Failed regions: []
+  Successful interval: 33-59
+  Keyframes: [10, 33, 54, 59]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 237/398 ---
+
+============================================================
+Segment: StopCube_ep59_f60-173
+  Subtask: remain static
+  Frames: 60 - 173
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 54.0s
+  Rewards: [1.0, 0.67, 0.89, 0.44, 0.89, 0.56, 0.0, 0.56]
+  Failed regions: [[11, 40], [40, 69]]
+  Successful interval: 49-69
+  Keyframes: [20, 49, 69, 70, 113]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 238/398 ---
+
+============================================================
+Segment: StopCube_ep59_f174-201
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 201
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.18, 0.0, 0.0, 0.47, 0.59, 0.88, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 8-23
+  Keyframes: [4, 8, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 239/398 ---
+
+============================================================
+Segment: StopCube_ep59_f174-234
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 234
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.23, 0.39, 0.55, 0.71, 0.87, 1.0, 0.9]
+  Failed regions: []
+  Successful interval: 3-52
+  Keyframes: [2, 3, 22, 52, 60]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 240/398 ---
+
+============================================================
+Segment: StopCube_ep60_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.52, 0.29, 0.0, 0.1, 0.14, 0.38, 0.57, 1.0]
+  Failed regions: [[5, 27]]
+  Successful interval: 17-57
+  Keyframes: [6, 17, 52, 57]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 241/398 ---
+
+============================================================
+Segment: StopCube_ep60_f58-93
+  Subtask: remain static
+  Frames: 58 - 93
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.0, 1.0, 0.67, 0.33, 1.0, 0.33, 0.33]
+  Failed regions: [[12, 26]]
+  Successful interval: 19-26
+  Keyframes: [1, 19, 21, 26, 35]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 242/398 ---
+
+============================================================
+Segment: StopCube_ep60_f94-121
+  Subtask: press the button to stop the cube on the target
+  Frames: 94 - 121
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.11, 0.11, 0.06, 0.0, 0.06, 0.5, 1.0, 0.94]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [0, 11, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 243/398 ---
+
+============================================================
+Segment: StopCube_ep60_f94-159
+  Subtask: press the button to stop the cube on the target
+  Frames: 94 - 159
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.18, 0.0, 0.73, 0.77, 0.64, 1.0, 0.95, 0.73]
+  Failed regions: [[31, 48]]
+  Successful interval: 36-48
+  Keyframes: [1, 36, 48, 49, 64]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 244/398 ---
+
+============================================================
+Segment: StopCube_ep61_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.06, 0.19, 0.12, 0.0, 0.0, 0.38, 0.94, 1.0]
+  Failed regions: []
+  Successful interval: 29-52
+  Keyframes: [6, 29, 39, 52]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 245/398 ---
+
+============================================================
+Segment: StopCube_ep61_f53-94
+  Subtask: remain static
+  Frames: 53 - 94
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.6, 1.0, 1.0, 0.0, 1.0, 0.6, 1.0, 0.0]
+  Failed regions: [[14, 25], [25, 35]]
+  Successful interval: 28-35
+  Keyframes: [0, 28, 33, 35, 41]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 246/398 ---
+
+============================================================
+Segment: StopCube_ep61_f95-121
+  Subtask: press the button to stop the cube on the target
+  Frames: 95 - 121
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.2, 0.15, 0.1, 0.25, 0.1, 0.7, 1.0]
+  Failed regions: [[16, 22]]
+  Successful interval: 17-26
+  Keyframes: [4, 17, 21, 26]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 247/398 ---
+
+============================================================
+Segment: StopCube_ep61_f95-154
+  Subtask: press the button to stop the cube on the target
+  Frames: 95 - 154
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.07, 0.15, 0.26, 0.67, 0.7, 1.0, 0.89]
+  Failed regions: []
+  Successful interval: 3-51
+  Keyframes: [1, 3, 21, 51, 59]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 248/398 ---
+
+============================================================
+Segment: StopCube_ep62_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.15, 0.15, 0.12, 0.0, 0.38, 0.19, 0.73, 1.0]
+  Failed regions: [[34, 48]]
+  Successful interval: 39-56
+  Keyframes: [9, 39, 40, 56]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 249/398 ---
+
+============================================================
+Segment: StopCube_ep62_f57-512
+  Subtask: remain static
+  Frames: 57 - 512
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 69.9s
+  Rewards: [0.64, 0.45, 0.09, 0.82, 1.0, 0.64, 0.0, 0.36]
+  Failed regions: [[45, 220]]
+  Successful interval: 140-279
+  Keyframes: [3, 140, 236, 279, 423]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 250/398 ---
+
+============================================================
+Segment: StopCube_ep62_f513-539
+  Subtask: press the button to stop the cube on the target
+  Frames: 513 - 539
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.08, 0.15, 0.15, 0.0, 0.0, 0.31, 0.46, 1.0]
+  Failed regions: []
+  Successful interval: 14-26
+  Keyframes: [0, 14, 22, 26]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 251/398 ---
+
+============================================================
+Segment: StopCube_ep62_f513-576
+  Subtask: press the button to stop the cube on the target
+  Frames: 513 - 576
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.08, 0.0, 0.32, 0.2, 0.48, 1.0, 0.76, 0.8]
+  Failed regions: [[22, 46], [46, 63]]
+  Successful interval: 51-63
+  Keyframes: [0, 51, 52, 63]
+  Success detected: True
+  Confidence: 0.41
+
+--- Segment 252/398 ---
+
+============================================================
+Segment: StopCube_ep63_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.43, 0.3, 0.17, 0.09, 0.0, 0.3, 0.7, 1.0]
+  Failed regions: [[5, 40]]
+  Successful interval: 31-55
+  Keyframes: [2, 31, 50, 55]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 253/398 ---
+
+============================================================
+Segment: StopCube_ep63_f56-241
+  Subtask: remain static
+  Frames: 56 - 241
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.77, 0.0, 0.31, 0.15, 0.38, 0.31, 1.0, 0.85]
+  Failed regions: [[18, 65], [65, 113]]
+  Successful interval: 128-161
+  Keyframes: [3, 128, 154, 161, 185]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 254/398 ---
+
+============================================================
+Segment: StopCube_ep63_f242-269
+  Subtask: press the button to stop the cube on the target
+  Frames: 242 - 269
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.38, 0.19, 0.12, 0.0, 0.06, 0.06, 0.5, 1.0]
+  Failed regions: [[4, 17]]
+  Successful interval: 18-27
+  Keyframes: [0, 18, 23, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 255/398 ---
+
+============================================================
+Segment: StopCube_ep63_f242-309
+  Subtask: press the button to stop the cube on the target
+  Frames: 242 - 309
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.07, 0.0, 0.3, 0.74, 0.85, 0.93, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-58
+  Keyframes: [0, 11, 23, 58, 67]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 256/398 ---
+
+============================================================
+Segment: StopCube_ep64_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.18, 0.27, 0.09, 0.36, 0.0, 0.64, 1.0, 0.91]
+  Failed regions: [[11, 25], [25, 39]]
+  Successful interval: 30-46
+  Keyframes: [7, 30, 38, 46, 53]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 257/398 ---
+
+============================================================
+Segment: StopCube_ep64_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.0, 0.0, 0.33, 0.83, 0.72, 1.0, 1.0, 0.44]
+  Failed regions: [[162, 248]]
+  Successful interval: 189-248
+  Keyframes: [63, 189, 246, 248, 335]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 258/398 ---
+
+============================================================
+Segment: StopCube_ep64_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.12, 0.06, 0.0, 0.41, 0.24, 0.71, 1.0, 0.82]
+  Failed regions: [[13, 20]]
+  Successful interval: 15-23
+  Keyframes: [0, 15, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 259/398 ---
+
+============================================================
+Segment: StopCube_ep64_f390-450
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 450
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.17, 0.52, 0.3, 0.7, 1.0, 1.0, 0.91]
+  Failed regions: [[21, 36]]
+  Successful interval: 26-44
+  Keyframes: [0, 26, 27, 44, 60]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 260/398 ---
+
+============================================================
+Segment: StopCube_ep65_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.3, 0.0, 0.25, 0.3, 0.2, 0.65, 0.75, 1.0]
+  Failed regions: [[5, 26], [26, 40]]
+  Successful interval: 31-55
+  Keyframes: [11, 31, 39, 55]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 261/398 ---
+
+============================================================
+Segment: StopCube_ep65_f56-169
+  Subtask: remain static
+  Frames: 56 - 169
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 54.3s
+  Rewards: [1.0, 0.43, 0.29, 0.0, 0.43, 0.14, 0.71, 0.86]
+  Failed regions: [[11, 69], [69, 98]]
+  Successful interval: 78-113
+  Keyframes: [22, 78, 79, 113]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 262/398 ---
+
+============================================================
+Segment: StopCube_ep65_f170-196
+  Subtask: press the button to stop the cube on the target
+  Frames: 170 - 196
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.19, 0.07, 0.37, 0.33, 0.33, 1.0, 0.44]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [3, 17, 21, 22, 26]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 263/398 ---
+
+============================================================
+Segment: StopCube_ep65_f170-235
+  Subtask: press the button to stop the cube on the target
+  Frames: 170 - 235
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.23, 0.72, 0.31, 0.54, 1.0, 0.67, 0.59]
+  Failed regions: [[22, 39]]
+  Successful interval: 28-48
+  Keyframes: [3, 28, 48, 49, 65]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 264/398 ---
+
+============================================================
+Segment: StopCube_ep66_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.33, 0.2, 0.33, 0.0, 0.13, 0.47, 0.27, 1.0]
+  Failed regions: [[5, 20], [20, 42], [42, 58]]
+  Successful interval: 48-58
+  Keyframes: [4, 48, 53, 58]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 265/398 ---
+
+============================================================
+Segment: StopCube_ep66_f59-154
+  Subtask: remain static
+  Frames: 59 - 154
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.85, 0.0, 0.85, 0.77, 1.0, 1.0, 0.92, 0.92]
+  Failed regions: [[9, 33]]
+  Successful interval: 41-58
+  Keyframes: [0, 41, 45, 58, 92]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 266/398 ---
+
+============================================================
+Segment: StopCube_ep66_f155-182
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 182
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.6s
+  Rewards: [0.18, 0.06, 0.0, 0.06, 0.12, 0.41, 1.0, 0.65]
+  Failed regions: []
+  Successful interval: 8-23
+  Keyframes: [5, 8, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 267/398 ---
+
+============================================================
+Segment: StopCube_ep66_f155-217
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 217
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.1, 0.0, 0.3, 0.6, 0.4, 1.0, 0.85, 0.8]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-46
+  Keyframes: [7, 35, 46, 47, 62]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 268/398 ---
+
+============================================================
+Segment: StopCube_ep67_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.38, 0.1, 0.0, 0.21, 0.24, 0.17, 0.69, 1.0]
+  Failed regions: [[5, 33]]
+  Successful interval: 38-55
+  Keyframes: [0, 38, 50, 55]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 269/398 ---
+
+============================================================
+Segment: StopCube_ep67_f56-253
+  Subtask: remain static
+  Frames: 56 - 253
+============================================================
+  Loaded 198 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.44, 0.67, 0.33, 0.0, 0.22, 0.56, 0.44, 1.0]
+  Failed regions: [[44, 146], [146, 197]]
+  Successful interval: 162-197
+  Keyframes: [0, 162, 163, 197]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 270/398 ---
+
+============================================================
+Segment: StopCube_ep67_f254-281
+  Subtask: press the button to stop the cube on the target
+  Frames: 254 - 281
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.16, 0.05, 0.16, 0.0, 0.11, 0.21, 1.0, 0.89]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [1, 11, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 271/398 ---
+
+============================================================
+Segment: StopCube_ep67_f254-317
+  Subtask: press the button to stop the cube on the target
+  Frames: 254 - 317
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.11, 0.0, 0.63, 0.84, 0.84, 1.0, 0.89, 1.0]
+  Failed regions: [[46, 63]]
+  Successful interval: 51-63
+  Keyframes: [8, 51, 52, 63]
+  Success detected: True
+  Confidence: 0.51
+
+--- Segment 272/398 ---
+
+============================================================
+Segment: StopCube_ep68_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.1, 0.0, 0.1, 0.05, 0.1, 0.57, 0.81, 1.0]
+  Failed regions: []
+  Successful interval: 24-54
+  Keyframes: [10, 24, 39, 54]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 273/398 ---
+
+============================================================
+Segment: StopCube_ep68_f55-252
+  Subtask: remain static
+  Frames: 55 - 252
+============================================================
+  Loaded 198 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.33, 0.6, 0.33, 0.27, 0.0, 0.6, 0.73, 1.0]
+  Failed regions: [[44, 146]]
+  Successful interval: 111-197
+  Keyframes: [1, 111, 154, 197]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 274/398 ---
+
+============================================================
+Segment: StopCube_ep68_f253-278
+  Subtask: press the button to stop the cube on the target
+  Frames: 253 - 278
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.12, 0.41, 0.35, 0.59, 0.59, 1.0, 0.88]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [1, 17, 20, 22, 25]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 275/398 ---
+
+============================================================
+Segment: StopCube_ep68_f253-309
+  Subtask: press the button to stop the cube on the target
+  Frames: 253 - 309
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.57, 0.52, 0.83, 0.91, 1.0, 1.0, 0.87]
+  Failed regions: []
+  Successful interval: 17-41
+  Keyframes: [9, 17, 20, 41, 56]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 276/398 ---
+
+============================================================
+Segment: StopCube_ep69_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.22, 0.0, 0.35, 0.17, 0.17, 0.39, 0.83, 1.0]
+  Failed regions: [[18, 32], [18, 39]]
+  Successful interval: 30-53
+  Keyframes: [7, 30, 48, 53]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 277/398 ---
+
+============================================================
+Segment: StopCube_ep69_f54-239
+  Subtask: remain static
+  Frames: 54 - 239
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.44, 0.89, 0.78, 0.22, 0.11, 0.0, 1.0, 0.78]
+  Failed regions: [[41, 161]]
+  Successful interval: 128-161
+  Keyframes: [37, 128, 157, 161, 185]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 278/398 ---
+
+============================================================
+Segment: StopCube_ep69_f240-267
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 267
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.1, 0.1, 0.0, 0.24, 0.14, 0.52, 1.0, 0.57]
+  Failed regions: []
+  Successful interval: 15-23
+  Keyframes: [1, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 279/398 ---
+
+============================================================
+Segment: StopCube_ep69_f240-300
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 300
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.13, 0.47, 0.33, 0.43, 0.93, 0.87, 1.0]
+  Failed regions: [[21, 44]]
+  Successful interval: 49-60
+  Keyframes: [7, 49, 50, 60]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 280/398 ---
+
+============================================================
+Segment: StopCube_ep70_f0-54
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 54
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.06, 0.24, 0.18, 0.0, 0.53, 0.41, 1.0, 0.53]
+  Failed regions: [[33, 47]]
+  Successful interval: 38-47
+  Keyframes: [9, 38, 39, 47, 54]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 281/398 ---
+
+============================================================
+Segment: StopCube_ep70_f55-510
+  Subtask: remain static
+  Frames: 55 - 510
+============================================================
+  Loaded 456 frames
+  Prefix scoring: 70.0s
+  Rewards: [0.5, 0.36, 0.32, 1.0, 0.64, 0.23, 0.0, 0.36]
+  Failed regions: [[45, 220]]
+  Successful interval: 140-220
+  Keyframes: [65, 140, 147, 220, 334]
+  Success detected: True
+  Confidence: 0.79
+
+--- Segment 282/398 ---
+
+============================================================
+Segment: StopCube_ep70_f511-537
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 537
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.2, 0.05, 0.3, 0.25, 0.25, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 17-26
+  Keyframes: [0, 17, 21, 26]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 283/398 ---
+
+============================================================
+Segment: StopCube_ep70_f511-577
+  Subtask: press the button to stop the cube on the target
+  Frames: 511 - 577
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.26, 0.63, 0.48, 0.74, 0.89, 0.96, 1.0]
+  Failed regions: [[23, 40]]
+  Successful interval: 28-66
+  Keyframes: [8, 28, 54, 66]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 284/398 ---
+
+============================================================
+Segment: StopCube_ep71_f0-60
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 60
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.35, 0.47, 0.06, 0.0, 0.0, 0.47, 0.24, 1.0]
+  Failed regions: [[13, 44], [13, 44], [44, 60]]
+  Successful interval: 49-60
+  Keyframes: [11, 49, 55, 60]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 285/398 ---
+
+============================================================
+Segment: StopCube_ep71_f61-390
+  Subtask: remain static
+  Frames: 61 - 390
+============================================================
+  Loaded 330 frames
+  Prefix scoring: 59.0s
+  Rewards: [1.0, 0.67, 0.48, 0.05, 0.9, 1.0, 1.0, 0.0]
+  Failed regions: [[33, 202]]
+  Successful interval: 143-244
+  Keyframes: [55, 143, 238, 244, 326]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 286/398 ---
+
+============================================================
+Segment: StopCube_ep71_f391-420
+  Subtask: press the button to stop the cube on the target
+  Frames: 391 - 420
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.36, 0.0, 0.09, 0.0, 0.18, 0.36, 1.0, 0.82]
+  Failed regions: [[4, 11]]
+  Successful interval: 12-25
+  Keyframes: [0, 12, 23, 25, 29]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 287/398 ---
+
+============================================================
+Segment: StopCube_ep71_f391-458
+  Subtask: press the button to stop the cube on the target
+  Frames: 391 - 458
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.0, 0.5, 0.5, 0.67, 0.92, 1.0, 0.79]
+  Failed regions: []
+  Successful interval: 29-58
+  Keyframes: [1, 29, 53, 58, 67]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 288/398 ---
+
+============================================================
+Segment: StopCube_ep72_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.25, 0.0, 0.19, 0.12, 0.19, 0.66, 0.78, 1.0]
+  Failed regions: [[6, 21]]
+  Successful interval: 25-59
+  Keyframes: [4, 25, 54, 59]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 289/398 ---
+
+============================================================
+Segment: StopCube_ep72_f60-239
+  Subtask: remain static
+  Frames: 60 - 239
+============================================================
+  Loaded 180 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.47, 0.33, 0.33, 0.0, 0.6, 0.47, 1.0, 0.87]
+  Failed regions: [[18, 64], [64, 110], [110, 156]]
+  Successful interval: 124-156
+  Keyframes: [30, 124, 154, 156, 179]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 290/398 ---
+
+============================================================
+Segment: StopCube_ep72_f240-267
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 267
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.07, 0.07, 0.0, 0.18, 0.46, 0.39, 1.0, 0.57]
+  Failed regions: []
+  Successful interval: 18-23
+  Keyframes: [0, 18, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 291/398 ---
+
+============================================================
+Segment: StopCube_ep72_f240-301
+  Subtask: press the button to stop the cube on the target
+  Frames: 240 - 301
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.17, 0.5, 0.6, 0.47, 1.0, 0.88, 0.8]
+  Failed regions: [[29, 45]]
+  Successful interval: 34-45
+  Keyframes: [3, 34, 45, 46, 61]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 292/398 ---
+
+============================================================
+Segment: StopCube_ep73_f0-60
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 60
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.58, 0.39, 0.52, 0.16, 0.0, 0.81, 0.87, 1.0]
+  Failed regions: [[6, 21], [21, 44]]
+  Successful interval: 33-60
+  Keyframes: [11, 33, 55, 60]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 293/398 ---
+
+============================================================
+Segment: StopCube_ep73_f61-252
+  Subtask: remain static
+  Frames: 61 - 252
+============================================================
+  Loaded 192 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.5, 1.0, 0.67, 0.0, 0.33, 0.33, 0.33, 0.5]
+  Failed regions: []
+  Successful interval: 10-43
+  Keyframes: [7, 10, 41, 43, 110]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 294/398 ---
+
+============================================================
+Segment: StopCube_ep73_f253-281
+  Subtask: press the button to stop the cube on the target
+  Frames: 253 - 281
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.31, 0.15, 0.08, 0.08, 0.31, 0.0, 0.85, 1.0]
+  Failed regions: [[4, 17], [4, 17], [17, 24]]
+  Successful interval: 19-28
+  Keyframes: [4, 19, 24, 28]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 295/398 ---
+
+============================================================
+Segment: StopCube_ep73_f253-324
+  Subtask: press the button to stop the cube on the target
+  Frames: 253 - 324
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.09, 0.0, 0.36, 0.79, 0.91, 1.0, 0.85, 0.79]
+  Failed regions: []
+  Successful interval: 13-52
+  Keyframes: [8, 13, 24, 52, 70]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 296/398 ---
+
+============================================================
+Segment: StopCube_ep74_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.27, 0.82, 0.0, 0.55, 0.45, 0.45, 0.45, 1.0]
+  Failed regions: [[11, 25], [25, 39], [25, 46]]
+  Successful interval: 44-53
+  Keyframes: [9, 44, 45, 53]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 297/398 ---
+
+============================================================
+Segment: StopCube_ep74_f54-173
+  Subtask: remain static
+  Frames: 54 - 173
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.79, 0.93, 0.64, 1.0, 0.71, 0.43, 0.0, 0.0]
+  Failed regions: [[27, 57]]
+  Successful interval: 36-57
+  Keyframes: [21, 36, 52, 57, 94]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 298/398 ---
+
+============================================================
+Segment: StopCube_ep74_f174-201
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 201
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.17, 0.0, 0.25, 0.0, 0.67, 0.92, 1.0, 0.92]
+  Failed regions: [[10, 17]]
+  Successful interval: 11-23
+  Keyframes: [0, 11, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 299/398 ---
+
+============================================================
+Segment: StopCube_ep74_f174-236
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 236
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.14, 0.36, 0.39, 0.39, 0.75, 1.0, 0.39]
+  Failed regions: []
+  Successful interval: 35-54
+  Keyframes: [0, 35, 51, 54, 62]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 300/398 ---
+
+============================================================
+Segment: StopCube_ep75_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.28, 0.39, 0.22, 0.0, 0.22, 0.67, 1.0, 0.94]
+  Failed regions: [[11, 31]]
+  Successful interval: 23-45
+  Keyframes: [5, 23, 39, 45, 52]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 301/398 ---
+
+============================================================
+Segment: StopCube_ep75_f53-154
+  Subtask: remain static
+  Frames: 53 - 154
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 54.0s
+  Rewards: [1.0, 0.5, 0.5, 0.12, 0.0, 0.75, 0.75, 0.88]
+  Failed regions: [[10, 36], [36, 75]]
+  Successful interval: 83-101
+  Keyframes: [7, 83, 100, 101]
+  Success detected: True
+  Confidence: 0.46
+
+--- Segment 302/398 ---
+
+============================================================
+Segment: StopCube_ep75_f155-181
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 181
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.28, 0.17, 0.14, 0.28, 0.34, 0.69, 1.0]
+  Failed regions: [[7, 16]]
+  Successful interval: 11-26
+  Keyframes: [1, 11, 21, 26]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 303/398 ---
+
+============================================================
+Segment: StopCube_ep75_f155-216
+  Subtask: press the button to stop the cube on the target
+  Frames: 155 - 216
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.07, 0.41, 0.44, 0.63, 1.0, 0.89, 0.78]
+  Failed regions: []
+  Successful interval: 3-45
+  Keyframes: [1, 3, 21, 45, 61]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 304/398 ---
+
+============================================================
+Segment: StopCube_ep76_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.15, 0.12, 0.15, 0.15, 0.77, 0.81, 1.0]
+  Failed regions: []
+  Successful interval: 33-58
+  Keyframes: [0, 33, 53, 58]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 305/398 ---
+
+============================================================
+Segment: StopCube_ep76_f59-394
+  Subtask: remain static
+  Frames: 59 - 394
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.0, 0.0, 0.37, 0.68, 0.84, 1.0, 0.63, 0.16]
+  Failed regions: []
+  Successful interval: 60-248
+  Keyframes: [56, 60, 109, 248, 333]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 306/398 ---
+
+============================================================
+Segment: StopCube_ep76_f395-421
+  Subtask: press the button to stop the cube on the target
+  Frames: 395 - 421
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.0, 0.25, 0.25, 0.38, 0.5, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 11-26
+  Keyframes: [5, 11, 21, 26]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 307/398 ---
+
+============================================================
+Segment: StopCube_ep76_f395-454
+  Subtask: press the button to stop the cube on the target
+  Frames: 395 - 454
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.17, 0.5, 0.37, 0.67, 0.83, 1.0, 0.87]
+  Failed regions: [[21, 36]]
+  Successful interval: 25-51
+  Keyframes: [3, 25, 47, 51, 59]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 308/398 ---
+
+============================================================
+Segment: StopCube_ep77_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.05, 0.1, 0.2, 0.1, 0.65, 1.0, 0.55]
+  Failed regions: []
+  Successful interval: 29-45
+  Keyframes: [9, 29, 39, 45, 52]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 309/398 ---
+
+============================================================
+Segment: StopCube_ep77_f53-514
+  Subtask: remain static
+  Frames: 53 - 514
+============================================================
+  Loaded 462 frames
+  Prefix scoring: 70.3s
+  Rewards: [0.12, 0.35, 0.35, 1.0, 1.0, 0.12, 0.0, 0.24]
+  Failed regions: []
+  Successful interval: 141-223
+  Keyframes: [61, 141, 160, 223, 338]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 310/398 ---
+
+============================================================
+Segment: StopCube_ep77_f515-541
+  Subtask: press the button to stop the cube on the target
+  Frames: 515 - 541
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.24, 0.18, 0.29, 0.18, 0.24, 0.88, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 14-26
+  Keyframes: [2, 14, 21, 26]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 311/398 ---
+
+============================================================
+Segment: StopCube_ep77_f515-579
+  Subtask: press the button to stop the cube on the target
+  Frames: 515 - 579
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.05, 0.0, 0.52, 0.48, 0.62, 0.48, 0.95, 1.0]
+  Failed regions: [[39, 55]]
+  Successful interval: 44-64
+  Keyframes: [0, 44, 48, 64]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 312/398 ---
+
+============================================================
+Segment: StopCube_ep78_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.12, 0.16, 0.08, 0.28, 0.56, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 24-48
+  Keyframes: [6, 24, 39, 48, 56]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 313/398 ---
+
+============================================================
+Segment: StopCube_ep78_f57-242
+  Subtask: remain static
+  Frames: 57 - 242
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.18, 0.0, 0.45, 0.36, 0.55, 0.27, 1.0, 0.73]
+  Failed regions: [[65, 113], [113, 161]]
+  Successful interval: 128-161
+  Keyframes: [3, 128, 144, 161, 185]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 314/398 ---
+
+============================================================
+Segment: StopCube_ep78_f243-268
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 268
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.48, 0.24, 0.0, 0.29, 0.05, 0.38, 0.81, 1.0]
+  Failed regions: [[4, 13], [13, 19]]
+  Successful interval: 14-25
+  Keyframes: [1, 14, 21, 25]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 315/398 ---
+
+============================================================
+Segment: StopCube_ep78_f243-304
+  Subtask: press the button to stop the cube on the target
+  Frames: 243 - 304
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.11, 0.0, 0.61, 0.11, 0.56, 1.0, 0.39, 0.72]
+  Failed regions: [[21, 37]]
+  Successful interval: 26-45
+  Keyframes: [5, 26, 45, 46, 61]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 316/398 ---
+
+============================================================
+Segment: StopCube_ep79_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.32, 0.14, 0.43, 0.0, 0.14, 0.71, 1.0, 0.71]
+  Failed regions: [[5, 19], [19, 34]]
+  Successful interval: 25-49
+  Keyframes: [9, 25, 39, 49, 57]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 317/398 ---
+
+============================================================
+Segment: StopCube_ep79_f58-333
+  Subtask: remain static
+  Frames: 58 - 333
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.43, 0.74, 0.43, 0.0, 0.65, 1.0, 0.83, 0.87]
+  Failed regions: [[62, 204], [204, 275]]
+  Successful interval: 226-275
+  Keyframes: [17, 226, 231, 275]
+  Success detected: True
+  Confidence: 0.42
+
+--- Segment 318/398 ---
+
+============================================================
+Segment: StopCube_ep79_f334-363
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 363
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.05, 0.0, 0.33, 0.1, 0.43, 0.62, 0.9, 1.0]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-29
+  Keyframes: [0, 12, 24, 29]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 319/398 ---
+
+============================================================
+Segment: StopCube_ep79_f334-406
+  Subtask: press the button to stop the cube on the target
+  Frames: 334 - 406
+============================================================
+  Loaded 73 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.23, 0.61, 0.71, 0.68, 1.0, 0.35, 0.68]
+  Failed regions: []
+  Successful interval: 41-53
+  Keyframes: [0, 41, 53, 54, 72]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 320/398 ---
+
+============================================================
+Segment: StopCube_ep80_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.38, 0.23, 0.62, 0.0, 0.08, 0.92, 0.46, 1.0]
+  Failed regions: [[5, 20], [20, 42], [42, 58]]
+  Successful interval: 48-58
+  Keyframes: [6, 48, 53, 58]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 321/398 ---
+
+============================================================
+Segment: StopCube_ep80_f59-334
+  Subtask: remain static
+  Frames: 59 - 334
+============================================================
+  Loaded 276 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.64, 0.5, 0.32, 0.0, 0.36, 0.86, 1.0, 0.79]
+  Failed regions: [[27, 168]]
+  Successful interval: 120-239
+  Keyframes: [21, 120, 142, 239, 275]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 322/398 ---
+
+============================================================
+Segment: StopCube_ep80_f335-361
+  Subtask: press the button to stop the cube on the target
+  Frames: 335 - 361
+============================================================
+  Loaded 27 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.29, 0.17, 0.0, 0.29, 0.17, 0.54, 0.5, 1.0]
+  Failed regions: [[4, 13], [13, 19]]
+  Successful interval: 20-26
+  Keyframes: [2, 20, 21, 26]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 323/398 ---
+
+============================================================
+Segment: StopCube_ep80_f335-394
+  Subtask: press the button to stop the cube on the target
+  Frames: 335 - 394
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.07, 0.17, 0.45, 0.79, 1.0, 0.86, 0.9]
+  Failed regions: [[43, 59]]
+  Successful interval: 48-59
+  Keyframes: [7, 48, 49, 59]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 324/398 ---
+
+============================================================
+Segment: StopCube_ep81_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.36, 0.27, 0.18, 0.18, 0.0, 0.23, 0.91, 1.0]
+  Failed regions: [[5, 26]]
+  Successful interval: 31-55
+  Keyframes: [2, 31, 50, 55]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 325/398 ---
+
+============================================================
+Segment: StopCube_ep81_f56-61
+  Subtask: remain static
+  Frames: 56 - 61
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.6s
+  Rewards: [1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [0, 2, 3, 4, 5]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 326/398 ---
+
+============================================================
+Segment: StopCube_ep81_f62-90
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 90
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.29, 0.0, 0.24, 0.1, 0.19, 0.43, 1.0, 0.95]
+  Failed regions: [[4, 10]]
+  Successful interval: 12-24
+  Keyframes: [5, 12, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 327/398 ---
+
+============================================================
+Segment: StopCube_ep81_f62-135
+  Subtask: press the button to stop the cube on the target
+  Frames: 62 - 135
+============================================================
+  Loaded 74 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.11, 0.61, 0.72, 0.94, 1.0, 0.86, 0.81]
+  Failed regions: []
+  Successful interval: 4-54
+  Keyframes: [0, 4, 22, 54, 72]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 328/398 ---
+
+============================================================
+Segment: StopCube_ep82_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.13, 0.4, 0.2, 0.27, 0.0, 0.2, 0.67, 1.0]
+  Failed regions: [[12, 26], [26, 41]]
+  Successful interval: 32-56
+  Keyframes: [6, 32, 51, 56]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 329/398 ---
+
+============================================================
+Segment: StopCube_ep82_f57-392
+  Subtask: remain static
+  Frames: 57 - 392
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.67, 0.25, 0.0, 0.25, 0.25, 1.0, 0.33, 0.17]
+  Failed regions: [[33, 162]]
+  Successful interval: 189-248
+  Keyframes: [63, 189, 244, 248, 332]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 330/398 ---
+
+============================================================
+Segment: StopCube_ep82_f393-422
+  Subtask: press the button to stop the cube on the target
+  Frames: 393 - 422
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.5, 0.32, 0.0, 0.45, 0.59, 0.64, 1.0, 0.73]
+  Failed regions: [[4, 14]]
+  Successful interval: 9-25
+  Keyframes: [1, 9, 25, 26, 29]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 331/398 ---
+
+============================================================
+Segment: StopCube_ep82_f393-459
+  Subtask: press the button to stop the cube on the target
+  Frames: 393 - 459
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.09, 0.35, 0.3, 1.0, 0.83, 0.74, 0.7]
+  Failed regions: []
+  Successful interval: 28-40
+  Keyframes: [9, 28, 29, 40, 66]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 332/398 ---
+
+============================================================
+Segment: StopCube_ep83_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.32, 0.29, 0.29, 0.18, 0.0, 0.61, 0.64, 1.0]
+  Failed regions: [[21, 43]]
+  Successful interval: 33-59
+  Keyframes: [0, 33, 54, 59]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 333/398 ---
+
+============================================================
+Segment: StopCube_ep83_f60-173
+  Subtask: remain static
+  Frames: 60 - 173
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.92, 0.77, 1.0, 0.69, 0.92, 0.85, 0.54, 0.0]
+  Failed regions: [[11, 40], [40, 69]]
+  Successful interval: 49-69
+  Keyframes: [2, 49, 61, 69, 100]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 334/398 ---
+
+============================================================
+Segment: StopCube_ep83_f174-202
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 202
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.12, 0.17, 0.04, 0.42, 0.0, 0.62, 1.0, 0.83]
+  Failed regions: [[14, 21]]
+  Successful interval: 15-24
+  Keyframes: [0, 15, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 335/398 ---
+
+============================================================
+Segment: StopCube_ep83_f174-240
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 240
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.22, 0.34, 0.62, 0.59, 0.91, 1.0, 0.75]
+  Failed regions: []
+  Successful interval: 37-57
+  Keyframes: [0, 37, 51, 57, 66]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 336/398 ---
+
+============================================================
+Segment: StopCube_ep84_f0-52
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 52
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.2, 0.24, 0.12, 0.04, 0.0, 0.24, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 29-52
+  Keyframes: [10, 29, 39, 52]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 337/398 ---
+
+============================================================
+Segment: StopCube_ep84_f53-334
+  Subtask: remain static
+  Frames: 53 - 334
+============================================================
+  Loaded 282 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.53, 0.32, 0.32, 0.0, 0.37, 0.74, 1.0, 0.63]
+  Failed regions: [[28, 100], [100, 172]]
+  Successful interval: 122-244
+  Keyframes: [26, 122, 146, 244, 281]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 338/398 ---
+
+============================================================
+Segment: StopCube_ep84_f335-360
+  Subtask: press the button to stop the cube on the target
+  Frames: 335 - 360
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.22, 0.0, 0.28, 0.33, 0.0, 0.44, 0.39, 1.0]
+  Failed regions: [[13, 19]]
+  Successful interval: 20-25
+  Keyframes: [0, 20, 21, 25]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 339/398 ---
+
+============================================================
+Segment: StopCube_ep84_f335-398
+  Subtask: press the button to stop the cube on the target
+  Frames: 335 - 398
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.42, 0.42, 0.75, 0.67, 1.0, 0.75, 1.0]
+  Failed regions: [[30, 46], [46, 63]]
+  Successful interval: 51-63
+  Keyframes: [0, 51, 52, 63]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 340/398 ---
+
+============================================================
+Segment: StopCube_ep85_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.14, 0.05, 0.23, 0.18, 0.68, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 30-53
+  Keyframes: [8, 30, 48, 53]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 341/398 ---
+
+============================================================
+Segment: StopCube_ep85_f54-389
+  Subtask: remain static
+  Frames: 54 - 389
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.0s
+  Rewards: [0.0, 0.36, 0.27, 0.59, 0.27, 1.0, 0.77, 0.36]
+  Failed regions: [[76, 162], [162, 248]]
+  Successful interval: 189-248
+  Keyframes: [59, 189, 247, 248, 332]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 342/398 ---
+
+============================================================
+Segment: StopCube_ep85_f390-417
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 417
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.11, 0.06, 0.39, 0.5, 0.33, 0.89, 1.0]
+  Failed regions: [[17, 23]]
+  Successful interval: 18-27
+  Keyframes: [3, 18, 21, 27]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 343/398 ---
+
+============================================================
+Segment: StopCube_ep85_f390-453
+  Subtask: press the button to stop the cube on the target
+  Frames: 390 - 453
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.07, 0.57, 0.5, 0.57, 0.89, 1.0, 0.75]
+  Failed regions: []
+  Successful interval: 27-54
+  Keyframes: [9, 27, 52, 54, 63]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 344/398 ---
+
+============================================================
+Segment: StopCube_ep86_f0-60
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 60
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.53, 0.35, 0.0, 0.12, 0.29, 0.71, 0.94, 1.0]
+  Failed regions: [[6, 29]]
+  Successful interval: 18-60
+  Keyframes: [12, 18, 55, 60]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 345/398 ---
+
+============================================================
+Segment: StopCube_ep86_f61-180
+  Subtask: remain static
+  Frames: 61 - 180
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.9, 1.0, 0.6, 0.4, 0.0, 0.3, 0.5, 0.4]
+  Failed regions: []
+  Successful interval: 6-27
+  Keyframes: [4, 6, 23, 27, 68]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 346/398 ---
+
+============================================================
+Segment: StopCube_ep86_f181-209
+  Subtask: press the button to stop the cube on the target
+  Frames: 181 - 209
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.0, 0.0, 0.0, 0.21, 0.43, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 12-24
+  Keyframes: [2, 12, 23, 24, 28]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 347/398 ---
+
+============================================================
+Segment: StopCube_ep86_f181-248
+  Subtask: press the button to stop the cube on the target
+  Frames: 181 - 248
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.04, 0.58, 0.54, 0.54, 0.83, 1.0, 0.96]
+  Failed regions: []
+  Successful interval: 37-58
+  Keyframes: [3, 37, 52, 58, 67]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 348/398 ---
+
+============================================================
+Segment: StopCube_ep87_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.1, 0.05, 0.25, 0.1, 0.0, 0.4, 0.8, 1.0]
+  Failed regions: [[18, 39]]
+  Successful interval: 30-53
+  Keyframes: [1, 30, 48, 53]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 349/398 ---
+
+============================================================
+Segment: StopCube_ep87_f54-173
+  Subtask: remain static
+  Frames: 54 - 173
+============================================================
+  Loaded 120 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.58, 0.5, 0.92, 0.58, 0.5, 1.0, 0.0, 0.25]
+  Failed regions: [[12, 42], [42, 88]]
+  Successful interval: 67-88
+  Keyframes: [22, 67, 69, 88, 118]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 350/398 ---
+
+============================================================
+Segment: StopCube_ep87_f174-201
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 201
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.25, 0.08, 0.08, 0.0, 0.42, 0.5, 1.0, 0.58]
+  Failed regions: [[4, 10]]
+  Successful interval: 11-23
+  Keyframes: [0, 11, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 351/398 ---
+
+============================================================
+Segment: StopCube_ep87_f174-236
+  Subtask: press the button to stop the cube on the target
+  Frames: 174 - 236
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.12, 0.44, 0.75, 0.62, 0.94, 1.0, 0.75]
+  Failed regions: [[30, 46]]
+  Successful interval: 35-54
+  Keyframes: [0, 35, 50, 54, 62]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 352/398 ---
+
+============================================================
+Segment: StopCube_ep88_f0-56
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 56
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.64, 0.82, 1.0, 0.09, 0.27, 0.0, 0.45, 0.27]
+  Failed regions: []
+  Successful interval: 3-19
+  Keyframes: [0, 3, 18, 19, 56]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 353/398 ---
+
+============================================================
+Segment: StopCube_ep88_f57-392
+  Subtask: remain static
+  Frames: 57 - 392
+============================================================
+  Loaded 336 frames
+  Prefix scoring: 59.2s
+  Rewards: [0.0, 0.29, 0.29, 0.29, 0.5, 0.68, 1.0, 0.25]
+  Failed regions: []
+  Successful interval: 146-291
+  Keyframes: [4, 146, 241, 291, 335]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 354/398 ---
+
+============================================================
+Segment: StopCube_ep88_f393-423
+  Subtask: press the button to stop the cube on the target
+  Frames: 393 - 423
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.23, 0.0, 0.15, 0.31, 0.38, 0.69, 1.0, 0.85]
+  Failed regions: []
+  Successful interval: 5-26
+  Keyframes: [4, 5, 26, 27, 30]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 355/398 ---
+
+============================================================
+Segment: StopCube_ep88_f393-468
+  Subtask: press the button to stop the cube on the target
+  Frames: 393 - 468
+============================================================
+  Loaded 76 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.38, 0.45, 0.83, 0.97, 1.0, 0.97, 0.76]
+  Failed regions: []
+  Successful interval: 4-55
+  Keyframes: [0, 4, 26, 55, 74]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 356/398 ---
+
+============================================================
+Segment: StopCube_ep89_f0-58
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 58
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.21, 0.18, 0.11, 0.0, 0.14, 0.75, 0.71, 1.0]
+  Failed regions: []
+  Successful interval: 48-58
+  Keyframes: [4, 48, 53, 58]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 357/398 ---
+
+============================================================
+Segment: StopCube_ep89_f59-244
+  Subtask: remain static
+  Frames: 59 - 244
+============================================================
+  Loaded 186 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.18, 0.55, 0.55, 0.0, 0.18, 0.55, 1.0, 0.55]
+  Failed regions: [[65, 113]]
+  Successful interval: 80-161
+  Keyframes: [32, 80, 150, 161, 185]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 358/398 ---
+
+============================================================
+Segment: StopCube_ep89_f245-272
+  Subtask: press the button to stop the cube on the target
+  Frames: 245 - 272
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.1, 0.27, 0.0, 0.1, 0.2, 0.27, 1.0, 0.6]
+  Failed regions: [[7, 13]]
+  Successful interval: 8-23
+  Keyframes: [0, 8, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 359/398 ---
+
+============================================================
+Segment: StopCube_ep89_f245-311
+  Subtask: press the button to stop the cube on the target
+  Frames: 245 - 311
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.0, 0.88, 0.81, 0.62, 1.0, 0.78, 0.66]
+  Failed regions: [[23, 48]]
+  Successful interval: 37-48
+  Keyframes: [0, 37, 48, 49, 64]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 360/398 ---
+
+============================================================
+Segment: StopCube_ep90_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.35, 0.5, 0.25, 0.1, 0.0, 0.7, 1.0, 0.95]
+  Failed regions: [[13, 43]]
+  Successful interval: 33-51
+  Keyframes: [0, 33, 40, 51, 59]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 361/398 ---
+
+============================================================
+Segment: StopCube_ep90_f60-251
+  Subtask: remain static
+  Frames: 60 - 251
+============================================================
+  Loaded 192 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.5, 0.33, 0.17, 0.42, 0.0, 0.08, 0.5, 1.0]
+  Failed regions: [[19, 92], [92, 141]]
+  Successful interval: 108-191
+  Keyframes: [0, 108, 151, 191]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 362/398 ---
+
+============================================================
+Segment: StopCube_ep90_f252-280
+  Subtask: press the button to stop the cube on the target
+  Frames: 252 - 280
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.06, 0.0, 0.47, 0.59, 0.65, 0.82, 1.0, 0.59]
+  Failed regions: []
+  Successful interval: 5-24
+  Keyframes: [0, 5, 22, 24, 28]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 363/398 ---
+
+============================================================
+Segment: StopCube_ep90_f252-314
+  Subtask: press the button to stop the cube on the target
+  Frames: 252 - 314
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.22, 0.39, 0.35, 0.57, 0.96, 0.7, 1.0]
+  Failed regions: [[46, 62]]
+  Successful interval: 51-62
+  Keyframes: [4, 51, 52, 62]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 364/398 ---
+
+============================================================
+Segment: StopCube_ep91_f0-57
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 57
+============================================================
+  Loaded 58 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.13, 0.17, 0.0, 0.0, 0.74, 0.7, 1.0]
+  Failed regions: []
+  Successful interval: 47-57
+  Keyframes: [10, 47, 52, 57]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 365/398 ---
+
+============================================================
+Segment: StopCube_ep91_f58-63
+  Subtask: remain static
+  Frames: 58 - 63
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.4s
+  Rewards: [1.0, 0.0]
+  Failed regions: []
+  Successful interval: 2-4
+  Keyframes: [1, 2, 4, 5]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 366/398 ---
+
+============================================================
+Segment: StopCube_ep91_f64-91
+  Subtask: press the button to stop the cube on the target
+  Frames: 64 - 91
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.29, 0.0, 0.14, 0.24, 0.33, 0.52, 1.0, 0.81]
+  Failed regions: [[4, 10]]
+  Successful interval: 5-23
+  Keyframes: [0, 5, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 367/398 ---
+
+============================================================
+Segment: StopCube_ep91_f64-125
+  Subtask: press the button to stop the cube on the target
+  Frames: 64 - 125
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.12, 0.3, 0.45, 0.58, 0.97, 1.0, 0.94]
+  Failed regions: []
+  Successful interval: 3-53
+  Keyframes: [0, 3, 21, 53, 61]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 368/398 ---
+
+============================================================
+Segment: StopCube_ep92_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.61, 0.71, 0.57, 0.29, 0.0, 0.29, 0.71, 1.0]
+  Failed regions: [[12, 40]]
+  Successful interval: 31-55
+  Keyframes: [11, 31, 50, 55]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 369/398 ---
+
+============================================================
+Segment: StopCube_ep92_f56-91
+  Subtask: remain static
+  Frames: 56 - 91
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.8, 0.0, 0.8, 0.6, 0.2, 1.0, 0.0, 0.6]
+  Failed regions: [[4, 12], [12, 26]]
+  Successful interval: 19-26
+  Keyframes: [0, 19, 21, 26, 35]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 370/398 ---
+
+============================================================
+Segment: StopCube_ep92_f92-120
+  Subtask: press the button to stop the cube on the target
+  Frames: 92 - 120
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.0, 0.42, 0.17, 0.25, 0.17, 1.0, 0.58, 0.75]
+  Failed regions: [[7, 14], [14, 21]]
+  Successful interval: 15-21
+  Keyframes: [1, 15, 21, 22, 28]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 371/398 ---
+
+============================================================
+Segment: StopCube_ep92_f92-156
+  Subtask: press the button to stop the cube on the target
+  Frames: 92 - 156
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.09, 0.15, 0.33, 0.61, 0.7, 1.0, 0.85]
+  Failed regions: []
+  Successful interval: 3-55
+  Keyframes: [1, 3, 23, 55, 64]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 372/398 ---
+
+============================================================
+Segment: StopCube_ep93_f0-59
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 59
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.54, 0.5, 0.29, 0.0, 0.46, 0.5, 0.79, 1.0]
+  Failed regions: [[6, 36]]
+  Successful interval: 25-59
+  Keyframes: [4, 25, 54, 59]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 373/398 ---
+
+============================================================
+Segment: StopCube_ep93_f60-89
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 89
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 53.7s
+  Rewards: [0.17, 0.0, 0.5, 0.67, 0.0, 0.0, 0.33, 1.0]
+  Failed regions: [[14, 21], [14, 25]]
+  Successful interval: 19-29
+  Keyframes: [3, 19, 24, 29]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 374/398 ---
+
+============================================================
+Segment: StopCube_ep93_f60-126
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 126
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.18, 0.27, 0.05, 0.41, 1.0, 0.77, 0.68]
+  Failed regions: [[23, 40]]
+  Successful interval: 28-48
+  Keyframes: [9, 28, 29, 48, 66]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 375/398 ---
+
+============================================================
+Segment: StopCube_ep94_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.17, 0.21, 0.33, 0.08, 0.0, 0.38, 1.0, 0.71]
+  Failed regions: [[18, 39]]
+  Successful interval: 30-46
+  Keyframes: [0, 30, 34, 46, 53]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 376/398 ---
+
+============================================================
+Segment: StopCube_ep94_f54-269
+  Subtask: remain static
+  Frames: 54 - 269
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.29, 0.0, 0.33, 0.52, 0.24, 0.86, 0.76, 1.0]
+  Failed regions: [[21, 104], [104, 159], [159, 215]]
+  Successful interval: 177-215
+  Keyframes: [34, 177, 215]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 377/398 ---
+
+============================================================
+Segment: StopCube_ep94_f270-297
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 297
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.0, 0.14, 0.1, 0.24, 0.19, 0.43, 1.0, 0.57]
+  Failed regions: []
+  Successful interval: 15-23
+  Keyframes: [0, 15, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 378/398 ---
+
+============================================================
+Segment: StopCube_ep94_f270-332
+  Subtask: press the button to stop the cube on the target
+  Frames: 270 - 332
+============================================================
+  Loaded 63 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.32, 0.68, 0.84, 0.79, 1.0, 0.84, 0.95]
+  Failed regions: [[46, 62]]
+  Successful interval: 51-62
+  Keyframes: [0, 51, 52, 62]
+  Success detected: True
+  Confidence: 0.47
+
+--- Segment 379/398 ---
+
+============================================================
+Segment: StopCube_ep95_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.28, 0.39, 0.28, 0.0, 0.06, 0.17, 0.83, 1.0]
+  Failed regions: [[12, 33]]
+  Successful interval: 24-55
+  Keyframes: [11, 24, 50, 55]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 380/398 ---
+
+============================================================
+Segment: StopCube_ep95_f56-271
+  Subtask: remain static
+  Frames: 56 - 271
+============================================================
+  Loaded 216 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.8, 0.0, 1.0, 0.6, 0.0, 0.0, 0.6, 0.8]
+  Failed regions: [[21, 76], [76, 159], [76, 187]]
+  Successful interval: 149-215
+  Keyframes: [42, 149, 153, 215]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 381/398 ---
+
+============================================================
+Segment: StopCube_ep95_f272-299
+  Subtask: press the button to stop the cube on the target
+  Frames: 272 - 299
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.14, 0.0, 0.21, 0.21, 0.36, 0.5, 1.0, 0.86]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [1, 11, 23, 24, 27]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 382/398 ---
+
+============================================================
+Segment: StopCube_ep95_f272-335
+  Subtask: press the button to stop the cube on the target
+  Frames: 272 - 335
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.05, 0.41, 0.55, 0.5, 0.86, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 35-63
+  Keyframes: [1, 35, 50, 63]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 383/398 ---
+
+============================================================
+Segment: StopCube_ep96_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.13, 0.33, 0.33, 0.13, 0.0, 0.4, 1.0, 1.0]
+  Failed regions: [[18, 39]]
+  Successful interval: 30-46
+  Keyframes: [7, 30, 40, 46, 53]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 384/398 ---
+
+============================================================
+Segment: StopCube_ep96_f54-119
+  Subtask: remain static
+  Frames: 54 - 119
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 53.9s
+  Rewards: [1.0, 0.89, 0.89, 0.89, 0.44, 0.56, 0.22, 0.0]
+  Failed regions: []
+  Successful interval: 3-6
+  Keyframes: [0, 3, 4, 6, 65]
+  Success detected: True
+  Confidence: 0.48
+
+--- Segment 385/398 ---
+
+============================================================
+Segment: StopCube_ep96_f120-147
+  Subtask: press the button to stop the cube on the target
+  Frames: 120 - 147
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.15, 0.08, 0.08, 0.0, 0.31, 0.46, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-23
+  Keyframes: [1, 11, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 386/398 ---
+
+============================================================
+Segment: StopCube_ep96_f120-180
+  Subtask: press the button to stop the cube on the target
+  Frames: 120 - 180
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.07, 0.0, 0.36, 0.32, 0.57, 1.0, 0.89, 0.89]
+  Failed regions: []
+  Successful interval: 26-44
+  Keyframes: [1, 26, 27, 44, 60]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 387/398 ---
+
+============================================================
+Segment: StopCube_ep97_f0-55
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 55
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 53.8s
+  Rewards: [0.61, 0.56, 0.33, 0.11, 0.0, 0.44, 0.56, 1.0]
+  Failed regions: [[5, 40]]
+  Successful interval: 31-55
+  Keyframes: [4, 31, 50, 55]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 388/398 ---
+
+============================================================
+Segment: StopCube_ep97_f56-151
+  Subtask: remain static
+  Frames: 56 - 151
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.56, 0.44, 0.33, 0.44, 0.78, 1.0, 0.22, 0.0]
+  Failed regions: [[9, 45]]
+  Successful interval: 29-70
+  Keyframes: [4, 29, 31, 70, 95]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 389/398 ---
+
+============================================================
+Segment: StopCube_ep97_f152-180
+  Subtask: press the button to stop the cube on the target
+  Frames: 152 - 180
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.17, 0.0, 0.06, 0.17, 0.06, 0.22, 0.94, 1.0]
+  Failed regions: []
+  Successful interval: 15-28
+  Keyframes: [4, 15, 22, 28]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 390/398 ---
+
+============================================================
+Segment: StopCube_ep97_f152-220
+  Subtask: press the button to stop the cube on the target
+  Frames: 152 - 220
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.08, 0.31, 0.85, 0.58, 0.92, 1.0, 0.96]
+  Failed regions: [[32, 50]]
+  Successful interval: 38-59
+  Keyframes: [2, 38, 54, 59, 68]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 391/398 ---
+
+============================================================
+Segment: StopCube_ep98_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.11, 0.14, 0.0, 0.18, 0.39, 0.89, 1.0]
+  Failed regions: []
+  Successful interval: 23-53
+  Keyframes: [5, 23, 48, 53]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 392/398 ---
+
+============================================================
+Segment: StopCube_ep98_f54-59
+  Subtask: remain static
+  Frames: 54 - 59
+============================================================
+  Loaded 6 frames
+  Prefix scoring: 13.5s
+  Rewards: [0.0, 1.0]
+  Failed regions: []
+  Successful interval: 2-5
+  Keyframes: [0, 2, 3, 5]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 393/398 ---
+
+============================================================
+Segment: StopCube_ep98_f60-87
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 87
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.22, 0.26, 0.0, 0.13, 0.22, 1.0, 0.78]
+  Failed regions: [[10, 17]]
+  Successful interval: 11-23
+  Keyframes: [4, 11, 21, 23, 27]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 394/398 ---
+
+============================================================
+Segment: StopCube_ep98_f60-120
+  Subtask: press the button to stop the cube on the target
+  Frames: 60 - 120
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.04, 0.0, 0.25, 0.25, 0.79, 1.0, 0.93, 0.89]
+  Failed regions: []
+  Successful interval: 26-44
+  Keyframes: [4, 26, 27, 44, 60]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 395/398 ---
+
+============================================================
+Segment: StopCube_ep99_f0-53
+  Subtask: move to the top of the button to prepare
+  Frames: 0 - 53
+============================================================
+  Loaded 54 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.11, 0.05, 0.0, 0.42, 0.21, 0.53, 1.0, 0.74]
+  Failed regions: [[25, 39]]
+  Successful interval: 30-46
+  Keyframes: [7, 30, 42, 46, 53]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 396/398 ---
+
+============================================================
+Segment: StopCube_ep99_f54-149
+  Subtask: remain static
+  Frames: 54 - 149
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.57, 1.0, 0.57, 0.14, 0.43, 0.57, 0.14, 0.0]
+  Failed regions: []
+  Successful interval: 5-21
+  Keyframes: [4, 5, 6, 21, 55]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 397/398 ---
+
+============================================================
+Segment: StopCube_ep99_f150-177
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 177
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 53.9s
+  Rewards: [0.0, 0.15, 0.38, 0.23, 0.92, 0.38, 1.0, 0.46]
+  Failed regions: [[10, 17], [17, 23]]
+  Successful interval: 18-23
+  Keyframes: [1, 18, 22, 23, 27]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 398/398 ---
+
+============================================================
+Segment: StopCube_ep99_f150-210
+  Subtask: press the button to stop the cube on the target
+  Frames: 150 - 210
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.0s
+  Rewards: [0.0, 0.0, 0.73, 1.0, 0.55, 1.0, 0.64, 0.82]
+  Failed regions: [[29, 44], [44, 60]]
+  Successful interval: 49-60
+  Keyframes: [7, 49, 50, 60]
+  Success detected: True
+  Confidence: 0.45
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 398 segments
+  Skipped: 0 segments
+  Environments: {'StopCube': 398}
+  Mean confidence: 0.788
+  Success detected: 398/398
+  Total failed regions detected: 335
+
+All outputs saved to: data/topreward_full
+Done.

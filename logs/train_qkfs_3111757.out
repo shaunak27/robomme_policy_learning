@@ -1,0 +1,200 @@
+Job started at Fri May  8 01:27:48 AM EDT 2026
+Running on node: optimistprime.cc.gatech.edu
+GPUs allocated: 0,1,2,3,4,5,6,7
+Fri May  8 01:27:48 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.58.03              Driver Version: 595.58.03      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     On  |   00000000:01:00.0 Off |                    0 |
+|  0%   31C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A40                     On  |   00000000:25:00.0 Off |                    0 |
+|  0%   27C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A40                     On  |   00000000:41:00.0 Off |                    0 |
+|  0%   26C    P8             20W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A40                     On  |   00000000:61:00.0 Off |                    0 |
+|  0%   25C    P8             28W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA A40                     On  |   00000000:81:00.0 Off |                    0 |
+|  0%   25C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA A40                     On  |   00000000:A1:00.0 Off |                    0 |
+|  0%   25C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA A40                     On  |   00000000:C1:00.0 Off |                    0 |
+|  0%   26C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA A40                     On  |   00000000:E1:00.0 Off |                    0 |
+|  0%   24C    P8             21W /  300W |       0MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+]11;?[cStep 0: loss=0.9615, L_src=0.3499, L_frame=0.3074, grad=4.012, lr=0.0e+00, ep=0.0, valid=68%
+Step 50: loss=0.8043, L_src=0.2952, L_frame=0.2577, grad=0.687, lr=4.2e-05, ep=0.1, valid=69%
+Step 100: loss=0.7578, L_src=0.2954, L_frame=0.2226, grad=0.813, lr=8.5e-05, ep=0.1, valid=68%
+Step 150: loss=0.7610, L_src=0.2656, L_frame=0.2516, grad=1.627, lr=1.3e-04, ep=0.2, valid=68%
+Step 200: loss=0.7570, L_src=0.2426, L_frame=0.2645, grad=1.482, lr=1.7e-04, ep=0.2, valid=67%
+Step 250: loss=0.7048, L_src=0.2325, L_frame=0.2534, grad=2.222, lr=2.1e-04, ep=0.3, valid=69%
+Step 300: loss=0.6421, L_src=0.2066, L_frame=0.2248, grad=2.064, lr=2.5e-04, ep=0.3, valid=67%
+Step 350: loss=0.6628, L_src=0.2185, L_frame=0.2293, grad=2.425, lr=3.0e-04, ep=0.4, valid=68%
+Step 400: loss=0.6413, L_src=0.1918, L_frame=0.2517, grad=2.727, lr=3.4e-04, ep=0.4, valid=69%
+Step 450: loss=0.6637, L_src=0.1999, L_frame=0.2473, grad=1.953, lr=3.8e-04, ep=0.5, valid=67%
+Step 500: loss=0.6573, L_src=0.1935, L_frame=0.2609, grad=2.528, lr=4.2e-04, ep=0.5, valid=69%
+Step 550: loss=0.6255, L_src=0.1673, L_frame=0.2469, grad=1.365, lr=4.7e-04, ep=0.6, valid=66%
+Step 600: loss=0.6123, L_src=0.1842, L_frame=0.2428, grad=2.486, lr=5.1e-04, ep=0.6, valid=70%
+Step 650: loss=0.6115, L_src=0.1668, L_frame=0.2416, grad=0.955, lr=5.5e-04, ep=0.7, valid=67%
+Step 700: loss=0.5616, L_src=0.1657, L_frame=0.2171, grad=1.030, lr=5.9e-04, ep=0.8, valid=68%
+Step 750: loss=0.6166, L_src=0.1640, L_frame=0.2490, grad=1.525, lr=6.4e-04, ep=0.8, valid=67%
+Step 800: loss=0.5600, L_src=0.1357, L_frame=0.2460, grad=1.430, lr=6.8e-04, ep=0.9, valid=68%
+Step 850: loss=0.5248, L_src=0.1430, L_frame=0.2260, grad=1.627, lr=7.2e-04, ep=0.9, valid=70%
+Step 900: loss=0.5311, L_src=0.1397, L_frame=0.2098, grad=0.930, lr=7.6e-04, ep=1.0, valid=66%
+Step 950: loss=0.5074, L_src=0.1304, L_frame=0.2225, grad=1.958, lr=8.1e-04, ep=2.0, valid=70%
+Step 1000: loss=0.5304, L_src=0.1186, L_frame=0.2357, grad=1.911, lr=8.5e-04, ep=2.1, valid=67%
+Step 1050: loss=0.5075, L_src=0.1057, L_frame=0.2492, grad=0.612, lr=8.5e-04, ep=2.1, valid=70%
+Step 1100: loss=0.5069, L_src=0.1314, L_frame=0.2101, grad=0.713, lr=8.5e-04, ep=2.2, valid=67%
+Step 1150: loss=0.4888, L_src=0.1067, L_frame=0.2331, grad=2.481, lr=8.5e-04, ep=2.2, valid=70%
+Step 1200: loss=0.4743, L_src=0.1113, L_frame=0.2166, grad=1.009, lr=8.5e-04, ep=2.3, valid=69%
+Step 1250: loss=0.5247, L_src=0.1198, L_frame=0.2297, grad=6.338, lr=8.5e-04, ep=2.3, valid=67%
+Step 1300: loss=0.4990, L_src=0.1155, L_frame=0.2266, grad=1.291, lr=8.5e-04, ep=2.4, valid=69%
+Step 1350: loss=0.4535, L_src=0.0943, L_frame=0.1918, grad=1.125, lr=8.5e-04, ep=2.5, valid=63%
+Step 1400: loss=0.4636, L_src=0.0957, L_frame=0.2258, grad=1.557, lr=8.5e-04, ep=2.5, valid=69%
+Step 1450: loss=0.4387, L_src=0.0882, L_frame=0.1826, grad=0.884, lr=8.5e-04, ep=2.6, valid=62%
+Step 1500: loss=0.4277, L_src=0.0894, L_frame=0.2013, grad=1.462, lr=8.5e-04, ep=2.6, valid=68%
+Step 1550: loss=0.4335, L_src=0.0770, L_frame=0.2329, grad=0.591, lr=8.5e-04, ep=2.7, valid=71%
+Step 1600: loss=0.3939, L_src=0.0780, L_frame=0.1882, grad=0.832, lr=8.5e-04, ep=2.7, valid=68%
+Step 1650: loss=0.4163, L_src=0.0743, L_frame=0.2144, grad=1.062, lr=8.5e-04, ep=2.8, valid=69%
+Step 1700: loss=0.4207, L_src=0.0901, L_frame=0.1893, grad=0.857, lr=8.5e-04, ep=2.8, valid=66%
+Step 1750: loss=0.4219, L_src=0.0836, L_frame=0.2131, grad=0.898, lr=8.5e-04, ep=2.9, valid=70%
+Step 1800: loss=0.3799, L_src=0.0732, L_frame=0.1887, grad=1.441, lr=8.5e-04, ep=2.9, valid=69%
+Step 1850: loss=0.4237, L_src=0.0875, L_frame=0.2104, grad=3.205, lr=8.5e-04, ep=3.0, valid=70%
+Step 1900: loss=0.3853, L_src=0.0736, L_frame=0.1928, grad=1.646, lr=8.5e-04, ep=4.0, valid=69%
+Step 1950: loss=0.3563, L_src=0.0671, L_frame=0.1820, grad=0.576, lr=8.5e-04, ep=4.1, valid=70%
+Step 2000: loss=0.3832, L_src=0.0648, L_frame=0.1867, grad=0.882, lr=8.4e-04, ep=4.1, valid=66%
+Step 2050: loss=0.3685, L_src=0.0630, L_frame=0.1774, grad=1.453, lr=8.4e-04, ep=4.2, valid=65%
+Step 2100: loss=0.3471, L_src=0.0610, L_frame=0.1668, grad=0.564, lr=8.4e-04, ep=4.3, valid=66%
+Step 2150: loss=0.3358, L_src=0.0561, L_frame=0.1603, grad=0.630, lr=8.4e-04, ep=4.3, valid=64%
+Step 2200: loss=0.3269, L_src=0.0550, L_frame=0.1519, grad=0.715, lr=8.4e-04, ep=4.4, valid=63%
+Step 2250: loss=0.3324, L_src=0.0548, L_frame=0.1620, grad=0.696, lr=8.4e-04, ep=4.4, valid=65%
+Step 2300: loss=0.3049, L_src=0.0539, L_frame=0.1545, grad=0.728, lr=8.4e-04, ep=4.5, valid=68%
+Step 2350: loss=0.3185, L_src=0.0560, L_frame=0.1623, grad=0.461, lr=8.4e-04, ep=4.5, valid=69%
+Step 2400: loss=0.2839, L_src=0.0555, L_frame=0.1380, grad=0.765, lr=8.4e-04, ep=4.6, valid=68%
+Step 2450: loss=0.3228, L_src=0.0547, L_frame=0.1635, grad=1.045, lr=8.4e-04, ep=4.6, valid=68%
+Step 2500: loss=0.3082, L_src=0.0632, L_frame=0.1602, grad=0.844, lr=8.4e-04, ep=4.7, valid=72%
+Step 2550: loss=0.3227, L_src=0.0569, L_frame=0.1668, grad=0.823, lr=8.4e-04, ep=4.7, valid=69%
+Step 2600: loss=0.2891, L_src=0.0488, L_frame=0.1432, grad=0.851, lr=8.4e-04, ep=4.8, valid=66%
+Step 2650: loss=0.3300, L_src=0.0704, L_frame=0.1597, grad=0.884, lr=8.4e-04, ep=4.8, valid=70%
+Step 2700: loss=0.2394, L_src=0.0465, L_frame=0.1219, grad=0.857, lr=8.4e-04, ep=4.9, valid=70%
+Step 2750: loss=0.2656, L_src=0.0509, L_frame=0.1307, grad=1.243, lr=8.4e-04, ep=5.0, valid=68%
+Step 2800: loss=0.2554, L_src=0.0455, L_frame=0.1236, grad=0.610, lr=8.4e-04, ep=6.0, valid=66%
+Step 2850: loss=0.2845, L_src=0.0509, L_frame=0.1414, grad=0.949, lr=8.4e-04, ep=6.1, valid=68%
+Step 2900: loss=0.2863, L_src=0.0481, L_frame=0.1292, grad=1.690, lr=8.4e-04, ep=6.1, valid=62%
+Step 2950: loss=0.2449, L_src=0.0453, L_frame=0.1264, grad=0.805, lr=8.3e-04, ep=6.2, valid=70%
+Step 3000: loss=0.2475, L_src=0.0423, L_frame=0.1177, grad=0.708, lr=8.3e-04, ep=6.2, valid=65%
+Step 3050: loss=0.2605, L_src=0.0443, L_frame=0.1261, grad=0.790, lr=8.3e-04, ep=6.3, valid=65%
+Step 3100: loss=0.2698, L_src=0.0433, L_frame=0.1369, grad=0.785, lr=8.3e-04, ep=6.3, valid=67%
+Step 3150: loss=0.2774, L_src=0.0614, L_frame=0.1374, grad=0.863, lr=8.3e-04, ep=6.4, valid=72%
+Step 3200: loss=0.2317, L_src=0.0445, L_frame=0.1108, grad=0.772, lr=8.3e-04, ep=6.4, valid=67%
+Step 3250: loss=0.2381, L_src=0.0409, L_frame=0.1181, grad=0.755, lr=8.3e-04, ep=6.5, valid=67%
+Step 3300: loss=0.2236, L_src=0.0413, L_frame=0.1010, grad=1.098, lr=8.3e-04, ep=6.5, valid=64%
+Step 3350: loss=0.2395, L_src=0.0449, L_frame=0.1226, grad=0.696, lr=8.3e-04, ep=6.6, valid=70%
+Step 3400: loss=0.2338, L_src=0.0482, L_frame=0.1080, grad=0.716, lr=8.3e-04, ep=6.7, valid=67%
+Step 3450: loss=0.2249, L_src=0.0528, L_frame=0.0996, grad=0.878, lr=8.3e-04, ep=6.7, valid=68%
+Step 3500: loss=0.2099, L_src=0.0396, L_frame=0.1052, grad=0.625, lr=8.3e-04, ep=6.8, valid=69%
+Step 3550: loss=0.2244, L_src=0.0452, L_frame=0.1073, grad=1.549, lr=8.3e-04, ep=6.8, valid=68%
+Step 3600: loss=0.2034, L_src=0.0423, L_frame=0.0960, grad=0.703, lr=8.2e-04, ep=6.9, valid=68%
+Step 3650: loss=0.2221, L_src=0.0445, L_frame=0.0991, grad=1.063, lr=8.2e-04, ep=6.9, valid=65%
+Step 3700: loss=0.1978, L_src=0.0415, L_frame=0.0848, grad=0.524, lr=8.2e-04, ep=7.0, valid=64%
+Step 3750: loss=0.2054, L_src=0.0440, L_frame=0.0956, grad=1.029, lr=8.2e-04, ep=8.0, valid=68%
+Step 3800: loss=0.2132, L_src=0.0450, L_frame=0.1012, grad=0.837, lr=8.2e-04, ep=8.1, valid=69%
+Step 3850: loss=0.1886, L_src=0.0403, L_frame=0.0868, grad=0.614, lr=8.2e-04, ep=8.1, valid=67%
+Step 3900: loss=0.2076, L_src=0.0438, L_frame=0.0953, grad=0.951, lr=8.2e-04, ep=8.2, valid=67%
+Step 3950: loss=0.1834, L_src=0.0384, L_frame=0.0880, grad=0.735, lr=8.2e-04, ep=8.2, valid=69%
+Step 4000: loss=0.1898, L_src=0.0366, L_frame=0.0898, grad=0.609, lr=8.2e-04, ep=8.3, valid=67%
+Step 4050: loss=0.1875, L_src=0.0365, L_frame=0.0943, grad=0.648, lr=8.2e-04, ep=8.3, valid=70%
+Step 4100: loss=0.2278, L_src=0.0461, L_frame=0.1110, grad=1.006, lr=8.1e-04, ep=8.4, valid=69%
+Step 4150: loss=0.1804, L_src=0.0372, L_frame=0.0841, grad=0.435, lr=8.1e-04, ep=8.5, valid=67%
+Step 4200: loss=0.1772, L_src=0.0362, L_frame=0.0794, grad=0.536, lr=8.1e-04, ep=8.5, valid=65%
+Step 4250: loss=0.1664, L_src=0.0286, L_frame=0.0789, grad=0.449, lr=8.1e-04, ep=8.6, valid=65%
+Step 4300: loss=0.1755, L_src=0.0357, L_frame=0.0866, grad=0.625, lr=8.1e-04, ep=8.6, valid=70%
+Step 4350: loss=0.1858, L_src=0.0388, L_frame=0.0857, grad=0.979, lr=8.1e-04, ep=8.7, valid=67%
+Step 4400: loss=0.1792, L_src=0.0387, L_frame=0.0803, grad=1.403, lr=8.1e-04, ep=8.7, valid=66%
+Step 4450: loss=0.1703, L_src=0.0401, L_frame=0.0721, grad=0.511, lr=8.1e-04, ep=8.8, valid=66%
+Step 4500: loss=0.1772, L_src=0.0437, L_frame=0.0833, grad=0.543, lr=8.1e-04, ep=8.8, valid=72%
+Step 4550: loss=0.1763, L_src=0.0406, L_frame=0.0864, grad=0.706, lr=8.0e-04, ep=8.9, valid=72%
+Step 4600: loss=0.1638, L_src=0.0401, L_frame=0.0754, grad=0.619, lr=8.0e-04, ep=8.9, valid=71%
+Step 4650: loss=0.1639, L_src=0.0355, L_frame=0.0743, grad=0.788, lr=8.0e-04, ep=9.0, valid=67%
+Step 4700: loss=0.1524, L_src=0.0330, L_frame=0.0650, grad=0.496, lr=8.0e-04, ep=10.0, valid=64%
+Step 4750: loss=0.1577, L_src=0.0353, L_frame=0.0752, grad=0.414, lr=8.0e-04, ep=10.1, valid=70%
+Step 4800: loss=0.1626, L_src=0.0361, L_frame=0.0770, grad=0.783, lr=8.0e-04, ep=10.2, valid=70%
+Step 4850: loss=0.1475, L_src=0.0288, L_frame=0.0703, grad=0.649, lr=8.0e-04, ep=10.2, valid=67%
+Step 4900: loss=0.1526, L_src=0.0347, L_frame=0.0663, grad=0.671, lr=7.9e-04, ep=10.3, valid=66%
+Step 4950: loss=0.1609, L_src=0.0347, L_frame=0.0712, grad=0.856, lr=7.9e-04, ep=10.3, valid=66%
+Step 5000: loss=0.1601, L_src=0.0342, L_frame=0.0744, grad=0.639, lr=7.9e-04, ep=10.4, valid=68%
+Step 5050: loss=0.1384, L_src=0.0296, L_frame=0.0626, grad=0.612, lr=7.9e-04, ep=10.4, valid=67%
+Step 5100: loss=0.1498, L_src=0.0360, L_frame=0.0684, grad=0.417, lr=7.9e-04, ep=10.5, valid=70%
+Step 5150: loss=0.1454, L_src=0.0302, L_frame=0.0680, grad=0.469, lr=7.9e-04, ep=10.5, valid=68%
+Step 5200: loss=0.1316, L_src=0.0256, L_frame=0.0628, grad=0.352, lr=7.9e-04, ep=10.6, valid=67%
+Step 5250: loss=0.1514, L_src=0.0348, L_frame=0.0705, grad=0.646, lr=7.9e-04, ep=10.6, valid=70%
+Step 5300: loss=0.1373, L_src=0.0317, L_frame=0.0643, grad=0.460, lr=7.8e-04, ep=10.7, valid=70%
+Step 5350: loss=0.1564, L_src=0.0316, L_frame=0.0686, grad=0.620, lr=7.8e-04, ep=10.7, valid=64%
+Step 5400: loss=0.1463, L_src=0.0331, L_frame=0.0666, grad=0.447, lr=7.8e-04, ep=10.8, valid=68%
+Step 5450: loss=0.1262, L_src=0.0245, L_frame=0.0571, grad=0.471, lr=7.8e-04, ep=10.9, valid=65%
+Step 5500: loss=0.1411, L_src=0.0322, L_frame=0.0610, grad=0.534, lr=7.8e-04, ep=10.9, valid=66%
+Step 5550: loss=0.1190, L_src=0.0247, L_frame=0.0525, grad=0.593, lr=7.8e-04, ep=11.0, valid=65%
+Step 5600: loss=0.1237, L_src=0.0244, L_frame=0.0575, grad=0.807, lr=7.7e-04, ep=12.0, valid=66%
+Step 5650: loss=0.1303, L_src=0.0254, L_frame=0.0616, grad=0.547, lr=7.7e-04, ep=12.1, valid=67%
+Step 5700: loss=0.1221, L_src=0.0257, L_frame=0.0518, grad=0.647, lr=7.7e-04, ep=12.1, valid=63%
+Step 5750: loss=0.1378, L_src=0.0300, L_frame=0.0653, grad=0.583, lr=7.7e-04, ep=12.2, valid=69%
+Step 5800: loss=0.1370, L_src=0.0308, L_frame=0.0610, grad=0.337, lr=7.7e-04, ep=12.2, valid=67%
+Step 5850: loss=0.1420, L_src=0.0331, L_frame=0.0634, grad=0.883, lr=7.7e-04, ep=12.3, valid=68%
+Step 5900: loss=0.1358, L_src=0.0292, L_frame=0.0594, grad=0.432, lr=7.7e-04, ep=12.3, valid=65%
+Step 5950: loss=0.1190, L_src=0.0244, L_frame=0.0567, grad=0.462, lr=7.6e-04, ep=12.4, valid=68%
+Step 6000: loss=0.1389, L_src=0.0286, L_frame=0.0620, grad=1.170, lr=7.6e-04, ep=12.4, valid=65%
+Step 6050: loss=0.1271, L_src=0.0271, L_frame=0.0594, grad=0.332, lr=7.6e-04, ep=12.5, valid=68%
+Step 6100: loss=0.1184, L_src=0.0255, L_frame=0.0538, grad=0.424, lr=7.6e-04, ep=12.6, valid=67%
+Step 6150: loss=0.1343, L_src=0.0346, L_frame=0.0594, grad=0.528, lr=7.6e-04, ep=12.6, valid=70%
+Step 6200: loss=0.1108, L_src=0.0238, L_frame=0.0552, grad=0.664, lr=7.5e-04, ep=12.7, valid=71%
+Step 6250: loss=0.1237, L_src=0.0313, L_frame=0.0571, grad=0.737, lr=7.5e-04, ep=12.7, valid=71%
+Step 6300: loss=0.1263, L_src=0.0297, L_frame=0.0551, grad=0.439, lr=7.5e-04, ep=12.8, valid=67%
+Step 6350: loss=0.1171, L_src=0.0266, L_frame=0.0549, grad=0.418, lr=7.5e-04, ep=12.8, valid=70%
+Step 6400: loss=0.1213, L_src=0.0271, L_frame=0.0570, grad=0.456, lr=7.5e-04, ep=12.9, valid=69%
+Step 6450: loss=0.1042, L_src=0.0237, L_frame=0.0494, grad=0.351, lr=7.5e-04, ep=12.9, valid=70%
+Step 6500: loss=0.1226, L_src=0.0247, L_frame=0.0563, grad=0.930, lr=7.4e-04, ep=13.0, valid=66%
+Step 6550: loss=0.1287, L_src=0.0262, L_frame=0.0595, grad=0.926, lr=7.4e-04, ep=14.0, valid=67%
+Step 6600: loss=0.1355, L_src=0.0297, L_frame=0.0600, grad=0.790, lr=7.4e-04, ep=14.1, valid=66%
+Step 6650: loss=0.1212, L_src=0.0287, L_frame=0.0509, grad=0.350, lr=7.4e-04, ep=14.1, valid=66%
+Step 6700: loss=0.1242, L_src=0.0294, L_frame=0.0533, grad=0.605, lr=7.4e-04, ep=14.2, valid=67%
+Step 6750: loss=0.1118, L_src=0.0261, L_frame=0.0525, grad=0.375, lr=7.4e-04, ep=14.2, valid=70%
+Step 6800: loss=0.1173, L_src=0.0285, L_frame=0.0492, grad=0.440, lr=7.3e-04, ep=14.3, valid=66%
+Step 6850: loss=0.1156, L_src=0.0265, L_frame=0.0523, grad=0.561, lr=7.3e-04, ep=14.4, valid=68%
+Step 6900: loss=0.1174, L_src=0.0227, L_frame=0.0554, grad=0.415, lr=7.3e-04, ep=14.4, valid=67%
+Step 6950: loss=0.1127, L_src=0.0242, L_frame=0.0538, grad=0.286, lr=7.3e-04, ep=14.5, valid=69%
+Step 7000: loss=0.1152, L_src=0.0260, L_frame=0.0498, grad=0.430, lr=7.3e-04, ep=14.5, valid=66%
+Step 7050: loss=0.1215, L_src=0.0303, L_frame=0.0528, grad=0.480, lr=7.2e-04, ep=14.6, valid=68%
+Step 7100: loss=0.1050, L_src=0.0224, L_frame=0.0482, grad=0.522, lr=7.2e-04, ep=14.6, valid=67%
+Step 7150: loss=0.1112, L_src=0.0256, L_frame=0.0473, grad=0.390, lr=7.2e-04, ep=14.7, valid=66%
+Step 7200: loss=0.1082, L_src=0.0238, L_frame=0.0527, grad=0.379, lr=7.2e-04, ep=14.7, valid=71%
+Step 7250: loss=0.1083, L_src=0.0246, L_frame=0.0490, grad=0.444, lr=7.2e-04, ep=14.8, valid=68%
+Step 7300: loss=0.1036, L_src=0.0236, L_frame=0.0491, grad=0.299, lr=7.1e-04, ep=14.8, valid=70%
+Step 7350: loss=0.1074, L_src=0.0261, L_frame=0.0475, grad=0.401, lr=7.1e-04, ep=14.9, valid=69%
+Step 7400: loss=0.0958, L_src=0.0191, L_frame=0.0438, grad=0.323, lr=7.1e-04, ep=14.9, valid=66%

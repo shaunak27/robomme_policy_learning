@@ -1,0 +1,49 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260508_005508-cihoqyzi
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qkfs_v1
+wandb: ⭐️ View project at https://wandb.ai/shalbe/qkfs-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/qkfs-selector/runs/cihoqyzi
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+  0%|          | 0/25000 [00:00<?, ?it/s]  0%|          | 0/25000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 466, in <module>
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_qkfs.py", line 393, in main
+    t_data = time.time()
+                ^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 732, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1506, in _next_data
+    return self._process_data(data, worker_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1541, in _process_data
+    data.reraise()
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/_utils.py", line 769, in reraise
+    raise exception
+NameError: Caught NameError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/qkfs/dataset.py", line 287, in __getitem__
+    return self.datasets[i][local_idx]
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/qkfs/dataset.py", line 258, in __getitem__
+    "num_segments": np.array(max_segments, dtype=np.int32),
+                             ^^^^^^^^^^^^
+NameError: name 'max_segments' is not defined
+
+srun: error: heistotron: task 0: Exited with exit code 1
+srun: Terminating StepId=3111592.0

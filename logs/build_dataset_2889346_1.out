@@ -1,0 +1,5 @@
+Job 1: processing ButtonUnmask
+  h5_file:    data/robomme_data_h5/record_dataset_ButtonUnmask.h5
+  output_dir: data/robomme_preprocessed_data/per_task/ButtonUnmask
+  hostname:   cyborg.cc.gatech.edu
+  started:    Fri Apr 17 05:04:52 PM EDT 2026

@@ -1,0 +1,66 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033800
+SLURM_ARRAY_TASK_ID: 0
+TASK:                BinFill
+HOSTNAME:            baymax.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: BinFill, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_BinFill.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: BinFill_ep3_f0-107
+  Subtask: pick up the first green cube
+  Frames: 0 - 107
+============================================================
+  Loaded 108 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.03, 0.0, 0.36, 0.59, 0.51, 0.61, 0.95, 1.0]
+  Failed regions: [[51, 79]]
+  Successful interval: 60-107
+  Keyframes: [10, 60, 96, 107]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: BinFill_ep3_f108-174
+  Subtask: put it into the bin
+  Frames: 108 - 174
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.21, 0.0, 0.07, 0.57, 0.5, 0.57, 1.0, 0.64]
+  Failed regions: []
+  Successful interval: 37-57
+  Keyframes: [6, 37, 53, 57]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: BinFill_ep3_f175-278
+  Subtask: pick up the second green cube
+  Frames: 175 - 278
+============================================================
+  Loaded 104 frames

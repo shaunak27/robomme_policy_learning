@@ -1,0 +1,5 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+slurmstepd: error: *** STEP 2889344.0 ON crushinator CANCELLED AT 2026-04-17T17:04:46 ***
+slurmstepd: error: *** JOB 2889344 ON crushinator CANCELLED AT 2026-04-17T17:04:46 ***
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.

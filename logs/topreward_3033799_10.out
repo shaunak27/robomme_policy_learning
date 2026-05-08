@@ -1,0 +1,82 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033810
+SLURM_ARRAY_TASK_ID: 10
+TASK:                SwingXtimes
+HOSTNAME:            spd-13.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:58:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f0-178
+  Subtask: pick up the red cube
+  Frames: 0 - 178
+============================================================
+  Loaded 179 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.71, 0.77, 0.83, 0.65, 0.88, 0.96, 1.0]
+  Failed regions: [[86, 132]]
+  Successful interval: 101-178
+  Keyframes: [17, 101, 140, 178]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f179-213
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 179 - 213
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.25, 0.45, 0.6, 0.75, 0.75, 1.0, 0.75, 0.0]
+  Failed regions: []
+  Successful interval: 19-25
+  Keyframes: [3, 20, 25]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f214-251
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 214 - 251
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.48, 0.4, 1.0, 0.72, 0.56, 0.48, 0.44]
+  Failed regions: []
+  Successful interval: 11-18
+  Keyframes: [3, 11, 17, 23]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: SwingXtimes_ep3_f252-289
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 252 - 289
+============================================================
+  Loaded 38 frames

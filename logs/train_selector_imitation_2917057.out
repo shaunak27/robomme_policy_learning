@@ -1,0 +1,20 @@
+]11;?[cmax_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using rl_selector type
+
+max_token_len: 64
+Step 0: mean_reward=-0.0014, mean_fm_selector=0.0538, mean_fm_uniform=0.0540, mean_entropy=5.4098, policy_loss=0.6993, value_loss=1.3075, approx_kl=-0.0000, grad_norm=48.3852
+Step 10: mean_reward=-0.0013, mean_fm_selector=0.0604, mean_fm_uniform=0.0604, mean_entropy=5.4631, policy_loss=-0.0330, value_loss=0.0172, approx_kl=-0.0000, grad_norm=3.8206
+Step 20: mean_reward=-0.0016, mean_fm_selector=0.0344, mean_fm_uniform=0.0341, mean_entropy=5.3801, policy_loss=-0.1429, value_loss=0.0118, approx_kl=-0.0000, grad_norm=2.2980
+Step 30: mean_reward=-0.0033, mean_fm_selector=0.0421, mean_fm_uniform=0.0405, mean_entropy=5.3501, policy_loss=-0.0093, value_loss=0.0003, approx_kl=-0.0000, grad_norm=0.2442
+Step 40: mean_reward=-0.0021, mean_fm_selector=0.0366, mean_fm_uniform=0.0362, mean_entropy=5.3094, policy_loss=-0.0183, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.2315
+Step 50: mean_reward=-0.0019, mean_fm_selector=0.0544, mean_fm_uniform=0.0540, mean_entropy=5.2418, policy_loss=0.0163, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.2146
+Step 60: mean_reward=-0.0009, mean_fm_selector=0.0348, mean_fm_uniform=0.0356, mean_entropy=5.2608, policy_loss=-0.0113, value_loss=0.0001, approx_kl=-0.0000, grad_norm=0.1380
+Step 70: mean_reward=-0.0018, mean_fm_selector=0.0405, mean_fm_uniform=0.0404, mean_entropy=5.3664, policy_loss=0.0113, value_loss=0.0001, approx_kl=-0.0000, grad_norm=0.0950
+Step 80: mean_reward=0.0002, mean_fm_selector=0.0374, mean_fm_uniform=0.0390, mean_entropy=5.3993, policy_loss=0.0006, value_loss=0.0001, approx_kl=-0.0000, grad_norm=0.1017
+Step 90: mean_reward=0.0001, mean_fm_selector=0.0457, mean_fm_uniform=0.0471, mean_entropy=5.4778, policy_loss=-0.0062, value_loss=0.0003, approx_kl=-0.0000, grad_norm=0.1459
+Step 100: mean_reward=-0.0019, mean_fm_selector=0.0715, mean_fm_uniform=0.0707, mean_entropy=5.5727, policy_loss=-0.0055, value_loss=0.0001, approx_kl=-0.0000, grad_norm=0.0483
+Step 110: mean_reward=-0.0004, mean_fm_selector=0.0469, mean_fm_uniform=0.0482, mean_entropy=5.2829, policy_loss=-0.0148, value_loss=0.0003, approx_kl=-0.0000, grad_norm=0.1902
+Step 120: mean_reward=0.0019, mean_fm_selector=0.0731, mean_fm_uniform=0.0766, mean_entropy=5.3604, policy_loss=-0.0057, value_loss=0.0002, approx_kl=-0.0000, grad_norm=0.0736
+Step 130: mean_reward=-0.0035, mean_fm_selector=0.0294, mean_fm_uniform=0.0277, mean_entropy=5.2503, policy_loss=0.0035, value_loss=0.0034, approx_kl=-0.0000, grad_norm=0.9346
+Step 140: mean_reward=-0.0018, mean_fm_selector=0.0373, mean_fm_uniform=0.0372, mean_entropy=5.2896, policy_loss=-0.0071, value_loss=0.0023, approx_kl=-0.0218, grad_norm=0.5007

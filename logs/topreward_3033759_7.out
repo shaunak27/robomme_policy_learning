@@ -1,0 +1,197 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033769
+SLURM_ARRAY_TASK_ID: 7
+TASK:                PickXtimes
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:42:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: PickXtimes, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_PickXtimes.h5
+  Sampled episodes: [3, 14, 81]
+  Found 26 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 26 segments
+============================================================
+
+--- Segment 1/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f0-118
+  Subtask: pick up the green cube for the first time
+  Frames: 0 - 118
+  First subtask: True
+============================================================
+  Loaded 119 frames
+  Prefix scoring: 54.5s
+  Rewards (raw): [0.03, 0.0, 0.53, 0.61, 0.61, 0.61, 0.69, 1.0]
+  Rewards (mono): [0.03, 0.03, 0.53, 0.61, 0.61, 0.61, 0.69, 1.0]
+  Failed regions: []
+  Successful interval: 0-118
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 39, 'role': 'early_transition'}, {'frame': 71, 'role': 'peak_transition'}, {'frame': 109, 'role': 'late_transition'}, {'frame': 118, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 2/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f119-206
+  Subtask: place the green cube onto the target
+  Frames: 119 - 206
+  First subtask: False
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 53.6s
+  Rewards (raw): [0.0, 0.56, 0.22, 0.94, 0.67, 0.89, 0.39, 1.0]
+  Rewards (mono): [0.0, 0.56, 0.56, 0.94, 0.94, 0.94, 0.94, 1.0]
+  Failed regions: []
+  Successful interval: 4-87
+  Keyframes: [{'frame': 4, 'role': 'start'}, {'frame': 15, 'role': 'early_transition'}, {'frame': 38, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 3/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f207-366
+  Subtask: pick up the green cube for the second time
+  Frames: 207 - 366
+  First subtask: False
+============================================================
+  Loaded 160 frames
+  Prefix scoring: 54.0s
+  Rewards (raw): [0.0, 0.24, 0.64, 0.52, 0.4, 0.68, 0.72, 1.0]
+  Rewards (mono): [0.0, 0.24, 0.64, 0.64, 0.64, 0.68, 0.72, 1.0]
+  Failed regions: []
+  Successful interval: 89-159
+  Keyframes: [{'frame': 93, 'role': 'early_transition'}, {'frame': 122, 'role': 'peak_transition'}, {'frame': 151, 'role': 'late_transition'}, {'frame': 159, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 4/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f367-433
+  Subtask: place the green cube onto the target
+  Frames: 367 - 433
+  First subtask: False
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.54, 0.0, 0.72, 0.08, 0.92, 1.0, 0.56, 0.72]
+  Rewards (mono): [0.54, 0.54, 0.72, 0.72, 0.92, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-66
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 16, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 33, 'role': 'late_transition'}, {'frame': 40, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 5/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f434-503
+  Subtask: pick up the green cube for the third time
+  Frames: 434 - 503
+  First subtask: False
+============================================================
+  Loaded 70 frames
+  Prefix scoring: 53.3s
+  Rewards (raw): [0.0, 0.24, 0.36, 0.28, 0.88, 0.64, 1.0, 0.76]
+  Rewards (mono): [0.0, 0.24, 0.36, 0.36, 0.88, 0.88, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 12-69
+  Keyframes: [{'frame': 13, 'role': 'early_transition'}, {'frame': 32, 'role': 'peak_transition'}, {'frame': 42, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 6/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f504-570
+  Subtask: place the green cube onto the target
+  Frames: 504 - 570
+  First subtask: False
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 53.3s
+  Rewards (raw): [0.32, 0.0, 0.74, 0.39, 0.94, 1.0, 0.77, 0.71]
+  Rewards (mono): [0.32, 0.32, 0.74, 0.74, 0.94, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-66
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 16, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 33, 'role': 'late_transition'}, {'frame': 40, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 7/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f571-639
+  Subtask: pick up the green cube for the fourth time
+  Frames: 571 - 639
+  First subtask: False
+============================================================
+  Loaded 69 frames
+  Prefix scoring: 53.5s
+  Rewards (raw): [0.0, 0.08, 0.23, 0.38, 0.27, 0.46, 1.0, 0.54]
+  Rewards (mono): [0.0, 0.08, 0.23, 0.38, 0.38, 0.46, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 38-68
+  Keyframes: [{'frame': 38, 'role': 'start'}, {'frame': 41, 'role': 'early_transition'}, {'frame': 52, 'role': 'peak_transition'}, {'frame': 59, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 8/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f640-705
+  Subtask: place the green cube onto the target
+  Frames: 640 - 705
+  First subtask: False
+============================================================
+  Loaded 66 frames
+  Prefix scoring: 53.2s
+  Rewards (raw): [0.3, 0.0, 0.78, 0.78, 1.0, 0.96, 0.96, 0.43]
+  Rewards (mono): [0.3, 0.3, 0.78, 0.78, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 11-65
+  Keyframes: [{'frame': 11, 'role': 'start'}, {'frame': 15, 'role': 'early_transition'}, {'frame': 20, 'role': 'peak_transition'}, {'frame': 32, 'role': 'late_transition'}, {'frame': 39, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 9/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f706-769
+  Subtask: press the button to stop
+  Frames: 706 - 769
+  First subtask: False
+============================================================
+  Loaded 64 frames
+  Prefix scoring: 53.4s
+  Rewards (raw): [0.0, 0.36, 1.0, 0.86, 0.94, 0.69, 0.83, 0.44]
+  Rewards (mono): [0.0, 0.36, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 3-63
+  Keyframes: [{'frame': 3, 'role': 'start'}, {'frame': 9, 'role': 'early_transition'}, {'frame': 14, 'role': 'peak_transition'}, {'frame': 17, 'role': 'late_transition'}, {'frame': 22, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.87
+
+--- Segment 10/26 ---
+
+============================================================
+Segment: PickXtimes_ep3_f706-813
+  Subtask: press the button to stop
+  Frames: 706 - 813
+  First subtask: False
+============================================================
+  Loaded 108 frames

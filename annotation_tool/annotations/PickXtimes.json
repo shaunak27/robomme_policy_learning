@@ -1,0 +1,86 @@
+{
+  "task": "PickXtimes",
+  "updated": "2026-05-04T01:27:48.136046+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 529,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the red cube and place it on the target, repeating this action two times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:19.455255+00:00"
+    },
+    "1": {
+      "total_timesteps": 628,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the blue cube and place it on the target, repeating this action three times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:23.898892+00:00"
+    },
+    "2": {
+      "total_timesteps": 478,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the red cube and place it on the target, repeating this action two times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:26.804633+00:00"
+    },
+    "3": {
+      "total_timesteps": 814,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the green cube and place it on the target, repeating this action four times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:29.205256+00:00"
+    },
+    "4": {
+      "total_timesteps": 645,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the blue cube and place it on the target, repeating this action three times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:30.633055+00:00"
+    },
+    "5": {
+      "total_timesteps": 576,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the red cube and place it on the target, repeating this action two times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:31.685795+00:00"
+    },
+    "6": {
+      "total_timesteps": 470,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the green cube and place it on the target, repeating this action two times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:32.489071+00:00"
+    },
+    "7": {
+      "total_timesteps": 897,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the green cube and place it on the target, repeating this action five times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:36.841347+00:00"
+    },
+    "11": {
+      "total_timesteps": 822,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the green cube and place it on the target, repeating this action five times, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:40.672921+00:00"
+    },
+    "12": {
+      "total_timesteps": 323,
+      "exec_start_idx": 0,
+      "task_goal": "pick up the green cube and place it on the target, then press the button to stop",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-05-04T01:27:48.136018+00:00"
+    }
+  }
+}

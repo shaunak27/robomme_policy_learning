@@ -1,0 +1,107 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033731
+SLURM_ARRAY_TASK_ID: 1
+TASK:                ButtonUnmask
+HOSTNAME:            deebot.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:35:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: ButtonUnmask, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_ButtonUnmask.h5
+  Sampled episodes: [3, 14, 81]
+  Found 11 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 11 segments
+============================================================
+
+--- Segment 1/11 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f0-114
+  Subtask: press the button
+  Frames: 0 - 114
+  First subtask: True
+============================================================
+  Loaded 115 frames
+  Prefix scoring: 57.3s
+  Rewards (raw): [0.06, 0.0, 0.0, 0.26, 0.03, 0.29, 0.88, 1.0]
+  Rewards (mono): [0.06, 0.06, 0.06, 0.26, 0.26, 0.29, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 0-114
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 32, 'role': 'early_transition'}, {'frame': 73, 'role': 'late_transition'}, {'frame': 99, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 2/11 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f115-316
+  Subtask: pick up the container that hides the red cube
+  Frames: 115 - 316
+  First subtask: False
+============================================================
+  Loaded 202 frames
+  Prefix scoring: 57.9s
+  Rewards (raw): [0.0, 0.02, 0.18, 0.33, 0.13, 0.27, 0.42, 1.0]
+  Rewards (mono): [0.0, 0.02, 0.18, 0.33, 0.33, 0.33, 0.42, 1.0]
+  Failed regions: []
+  Successful interval: 113-201
+  Keyframes: [{'frame': 113, 'role': 'start'}, {'frame': 138, 'role': 'early_transition'}, {'frame': 167, 'role': 'peak_transition'}, {'frame': 194, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/11 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f317-357
+  Subtask: put down the container
+  Frames: 317 - 357
+  First subtask: False
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 57.7s
+  Rewards (raw): [0.0, 0.56, 0.11, 0.0, 0.44, 0.78, 1.0, 0.89]
+  Rewards (mono): [0.0, 0.56, 0.56, 0.56, 0.56, 0.78, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 17-40
+  Keyframes: [{'frame': 18, 'role': 'early_transition'}, {'frame': 22, 'role': 'peak_transition'}, {'frame': 34, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 4/11 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f358-444
+  Subtask: pick up the container that hides the blue cube
+  Frames: 358 - 444
+  First subtask: False
+============================================================
+  Loaded 87 frames
+  Prefix scoring: 58.2s
+  Rewards (raw): [0.07, 0.02, 0.36, 0.33, 0.12, 0.0, 0.21, 1.0]
+  Rewards (mono): [0.07, 0.07, 0.36, 0.36, 0.36, 0.36, 0.36, 1.0]
+  Failed regions: []
+  Successful interval: 59-86
+  Keyframes: [{'frame': 60, 'role': 'early_transition'}, {'frame': 77, 'role': 'peak_transition'}, {'frame': 85, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 5/11 ---
+
+============================================================
+Segment: ButtonUnmask_ep3_f358-451
+  Subtask: pick up the container that hides the blue cube
+  Frames: 358 - 451
+  First subtask: False
+============================================================
+  Loaded 94 frames

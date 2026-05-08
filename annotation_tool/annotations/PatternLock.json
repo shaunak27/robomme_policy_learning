@@ -1,0 +1,22 @@
+{
+  "task": "PatternLock",
+  "updated": "2026-04-27T20:00:43.590170+00:00",
+  "episodes": {
+    "0": {
+      "total_timesteps": 96,
+      "exec_start_idx": 48,
+      "task_goal": "Watch the video carefully, then use the stick attached to the robot to retrace the same pattern",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-27T20:00:42.070998+00:00"
+    },
+    "1": {
+      "total_timesteps": 126,
+      "exec_start_idx": 63,
+      "task_goal": "Watch the video carefully, then use the stick attached to the robot to retrace the same pattern",
+      "selected_segments": [],
+      "selected_frames": [],
+      "timestamp": "2026-04-27T20:00:43.590132+00:00"
+    }
+  }
+}

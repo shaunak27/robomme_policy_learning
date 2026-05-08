@@ -1,0 +1,97 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033746
+SLURM_ARRAY_TASK_ID: 4
+TASK:                MoveCube
+HOSTNAME:            omgwth.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: MoveCube, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_MoveCube.h5
+  Sampled episodes: [3, 14, 81]
+  Found 7 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 7 segments
+============================================================
+
+--- Segment 1/7 ---
+
+============================================================
+Segment: MoveCube_ep3_f161-260
+  Subtask: close the gripper and push the cube to the target
+  Frames: 161 - 260
+  First subtask: True
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 54.3s
+  Rewards (raw): [0.09, 0.06, 0.0, 0.55, 0.61, 0.76, 0.91, 1.0]
+  Rewards (mono): [0.09, 0.09, 0.09, 0.55, 0.61, 0.76, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 0-99
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 28, 'role': 'early_transition'}, {'frame': 47, 'role': 'peak_transition'}, {'frame': 84, 'role': 'late_transition'}]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 2/7 ---
+
+============================================================
+Segment: MoveCube_ep3_f161-265
+  Subtask: close the gripper and push the cube to the target
+  Frames: 161 - 265
+  First subtask: False
+============================================================
+  Loaded 105 frames
+  Prefix scoring: 53.7s
+  Rewards (raw): [0.03, 0.0, 0.03, 0.55, 0.55, 0.48, 0.88, 1.0]
+  Rewards (mono): [0.03, 0.03, 0.03, 0.55, 0.55, 0.55, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 72-104
+  Keyframes: [{'frame': 72, 'role': 'start'}, {'frame': 78, 'role': 'early_transition'}, {'frame': 84, 'role': 'peak_transition'}, {'frame': 90, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 3/7 ---
+
+============================================================
+Segment: MoveCube_ep14_f264-367
+  Subtask: pick up the cube
+  Frames: 264 - 367
+  First subtask: True
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 53.7s
+  Rewards (raw): [0.0, 0.03, 0.55, 0.74, 0.68, 0.68, 0.71, 1.0]
+  Rewards (mono): [0.0, 0.03, 0.55, 0.74, 0.74, 0.74, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 0-103
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 34, 'role': 'early_transition'}, {'frame': 65, 'role': 'peak_transition'}, {'frame': 96, 'role': 'late_transition'}, {'frame': 103, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 4/7 ---
+
+============================================================
+Segment: MoveCube_ep14_f368-432
+  Subtask: place the cube onto the target
+  Frames: 368 - 432
+  First subtask: False
+============================================================
+  Loaded 65 frames
+  Prefix scoring: 53.6s
+  Rewards (raw): [0.35, 0.61, 0.0, 0.03, 0.45, 0.76, 0.98, 1.0]
+  Rewards (mono): [0.35, 0.61, 0.61, 0.61, 0.61, 0.76, 0.98, 1.0]
+  Failed regions: []
+  Successful interval: 27-64
+  Keyframes: [{'frame': 27, 'role': 'start'}, {'frame': 33, 'role': 'early_transition'}, {'frame': 36, 'role': 'peak_transition'}, {'frame': 49, 'role': 'late_transition'}, {'frame': 55, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.87

@@ -1,0 +1,246 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3030486
+SLURM_ARRAY_TASK_ID: 8
+TASK:                RouteStick
+HOSTNAME:            deebot.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Wed Apr 29 03:19:07 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: RouteStick, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_RouteStick.h5
+  Sampled episodes: [3, 14, 81]
+  Found 13 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 13 segments
+============================================================
+
+--- Segment 1/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f250-299
+  Subtask: move to the nearest left target by circling around the stick counterclockwise
+  Frames: 250 - 299
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.59, 0.94, 0.47, 0.24, 0.29, 1.0, 0.88]
+  Failed regions: [[17, 36]]
+  Successful interval: 28-42
+  Keyframes: [28, 42]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 2/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f300-349
+  Subtask: move to the nearest left target by circling around the stick clockwise
+  Frames: 300 - 349
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.67, 0.5, 1.0, 1.0, 0.5, 1.0, 1.0]
+  Failed regions: [[11, 23]]
+  Successful interval: 15-23
+  Keyframes: [16, 23]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 3/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f350-399
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 350 - 399
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.73, 0.73, 1.0, 0.87, 0.8, 0.93, 0.87]
+  Failed regions: []
+  Successful interval: 15-23
+  Keyframes: [16, 23]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 4/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f400-449
+  Subtask: move to the nearest left target by circling around the stick clockwise
+  Frames: 400 - 449
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.86, 0.86, 0.29, 0.29, 1.0, 0.71, 0.0, 1.0]
+  Failed regions: [[11, 23], [11, 30]]
+  Successful interval: 21-30
+  Keyframes: [21, 30]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 5/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f450-492
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 450 - 492
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.79, 0.89, 0.68, 1.0, 1.0, 1.0, 0.95]
+  Failed regions: [[14, 25]]
+  Successful interval: 18-25
+  Keyframes: [19, 25]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 6/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f450-499
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 450 - 499
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.61, 0.72, 1.0, 0.78, 0.89, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 3-23
+  Keyframes: [3, 8, 23]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 7/13 ---
+
+============================================================
+Segment: RouteStick_ep14_f250-299
+  Subtask: move to the nearest right target by circling around the stick counterclockwise
+  Frames: 250 - 299
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.7s
+  Rewards: [0.0, 0.4, 1.0, 0.5, 0.7, 0.3, 0.2, 0.6]
+  Failed regions: []
+  Successful interval: 3-17
+  Keyframes: [4, 17]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 8/13 ---
+
+============================================================
+Segment: RouteStick_ep14_f300-349
+  Subtask: move to the nearest left target by circling around the stick counterclockwise
+  Frames: 300 - 349
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.35, 0.75, 1.0, 0.85, 0.9, 0.95, 1.0]
+  Failed regions: []
+  Successful interval: 3-23
+  Keyframes: [3, 7, 23]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 9/13 ---
+
+============================================================
+Segment: RouteStick_ep14_f350-449
+  Subtask: move to the nearest left target by circling around the stick clockwise
+  Frames: 350 - 449
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.94, 1.0, 0.72, 0.61, 0.89, 0.0, 0.11, 0.56]
+  Failed regions: []
+  Successful interval: 5-22
+  Keyframes: [6, 22]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 10/13 ---
+
+============================================================
+Segment: RouteStick_ep14_f450-492
+  Subtask: move to the nearest left target by circling around the stick counterclockwise
+  Frames: 450 - 492
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.76, 0.76, 1.0, 0.71, 0.43, 0.48, 0.0, 0.19]
+  Failed regions: []
+  Successful interval: 7-14
+  Keyframes: [7, 9, 14]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 11/13 ---
+
+============================================================
+Segment: RouteStick_ep14_f450-499
+  Subtask: move to the nearest left target by circling around the stick counterclockwise
+  Frames: 450 - 499
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.76, 1.0, 1.0, 0.59, 0.76, 0.0, 0.24, 0.76]
+  Failed regions: []
+  Successful interval: 3-11
+  Keyframes: [3, 9, 11]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 12/13 ---
+
+============================================================
+Segment: RouteStick_ep81_f100-192
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 100 - 192
+============================================================
+  Loaded 93 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.36, 0.45, 0.64, 0.0, 0.82, 0.18, 0.64, 1.0]
+  Failed regions: [[32, 56], [56, 80]]
+  Successful interval: 64-92
+  Keyframes: [64, 92]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 13/13 ---
+
+============================================================
+Segment: RouteStick_ep81_f100-199
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 100 - 199
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.42, 1.0, 0.5, 0.25, 0.0, 0.75, 0.75, 0.58]
+  Failed regions: []
+  Successful interval: 5-22
+  Keyframes: [7, 22]
+  Success detected: True
+  Confidence: 0.73
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 13 segments
+  Skipped: 0 segments
+  Environments: {'RouteStick': 13}
+  Mean confidence: 0.705
+  Success detected: 13/13
+  Total failed regions detected: 7
+
+All outputs saved to: data/topreward_labels
+Done.

@@ -1,0 +1,3804 @@
+===== TOPReward Resume =====
+SLURM_JOB_ID:       3064054
+TASK:                SwingXtimes
+START_EP:            78
+HOSTNAME:            baymax.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Mon May  4 09:02:14 PM EDT 2026
+==============================
+--- Processing SwingXtimes episode 78 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 78
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 6 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 6 segments
+============================================================
+
+--- Segment 1/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f0-101
+  Subtask: pick up the blue cube
+  Frames: 0 - 101
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.1, 0.0, 0.8, 0.73, 0.73, 0.68, 0.92, 1.0]
+  Failed regions: []
+  Successful interval: 70-101
+  Keyframes: [0, 70, 92, 101]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f102-145
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 102 - 145
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.2, 0.55, 0.5, 1.0, 1.0, 0.55, 0.65]
+  Failed regions: []
+  Successful interval: 18-26
+  Keyframes: [0, 18, 19, 26, 43]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 3/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f146-188
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 146 - 188
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.35, 0.7, 0.95, 0.7, 1.0, 0.5, 0.1]
+  Failed regions: [[20, 31]]
+  Successful interval: 23-31
+  Keyframes: [1, 23, 24, 31, 42]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 4/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f189-227
+  Subtask: put the blue cube on the table
+  Frames: 189 - 227
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.23, 0.0, 0.12, 0.23, 0.46, 0.23, 1.0, 0.85]
+  Failed regions: [[23, 33]]
+  Successful interval: 26-33
+  Keyframes: [7, 26, 31, 33, 38]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 5/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f228-287
+  Subtask: press the button
+  Frames: 228 - 287
+============================================================
+  Loaded 60 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.3, 0.0, 0.35, 0.3, 0.15, 0.3, 0.8, 1.0]
+  Failed regions: [[6, 21], [21, 43]]
+  Successful interval: 33-59
+  Keyframes: [1, 33, 56, 59]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 6/6 ---
+
+============================================================
+Segment: SwingXtimes_ep78_f228-327
+  Subtask: press the button
+  Frames: 228 - 327
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.2, 0.0, 0.2, 0.3, 0.6, 0.9, 1.0, 0.7]
+  Failed regions: []
+  Successful interval: 17-86
+  Keyframes: [2, 17, 56, 86, 99]
+  Success detected: True
+  Confidence: 0.90
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 6 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 6}
+  Mean confidence: 0.750
+  Success detected: 6/6
+  Total failed regions detected: 4
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 79 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 79
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f0-106
+  Subtask: pick up the red cube
+  Frames: 0 - 106
+============================================================
+  Loaded 107 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.07, 0.0, 0.81, 0.77, 0.7, 0.7, 0.86, 1.0]
+  Failed regions: [[37, 78], [37, 92]]
+  Successful interval: 73-106
+  Keyframes: [0, 73, 98, 106]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f107-129
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 107 - 129
+============================================================
+  Loaded 23 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.06, 0.0, 0.06, 0.59, 0.29, 1.0, 0.76, 0.47]
+  Failed regions: [[11, 16]]
+  Successful interval: 12-16
+  Keyframes: [0, 12, 13, 16, 22]
+  Success detected: True
+  Confidence: 0.80
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f130-169
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 130 - 169
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.63, 1.0, 0.67, 0.19, 0.63, 0.22, 0.37]
+  Failed regions: []
+  Successful interval: 2-14
+  Keyframes: [1, 2, 14, 15, 37]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f170-207
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 170 - 207
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.31, 0.31, 0.81, 0.81, 0.5, 1.0, 0.94]
+  Failed regions: [[22, 32]]
+  Successful interval: 25-32
+  Keyframes: [1, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f208-245
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 208 - 245
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 59.6s
+  Rewards: [0.0, 0.55, 0.73, 1.0, 0.82, 0.73, 0.45, 0.91]
+  Failed regions: [[18, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f246-283
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 246 - 283
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 58.2s
+  Rewards: [0.0, 0.5, 0.4, 0.5, 0.8, 0.7, 1.0, 0.7]
+  Failed regions: [[8, 22], [22, 32]]
+  Successful interval: 25-32
+  Keyframes: [0, 25, 26, 32, 37]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f284-321
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 284 - 321
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.6s
+  Rewards: [0.0, 0.73, 0.55, 1.0, 0.45, 0.82, 0.55, 0.09]
+  Failed regions: [[8, 18], [18, 27]]
+  Successful interval: 20-27
+  Keyframes: [0, 20, 21, 27, 37]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f322-361
+  Subtask: put the red cube on the table
+  Frames: 322 - 361
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.21, 0.29, 0.93, 0.79, 0.64, 1.0, 0.86]
+  Failed regions: [[19, 34]]
+  Successful interval: 27-34
+  Keyframes: [8, 27, 31, 34, 39]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f362-423
+  Subtask: press the button
+  Frames: 362 - 423
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 58.2s
+  Rewards: [0.0, 0.28, 0.72, 0.56, 0.61, 0.78, 0.78, 1.0]
+  Failed regions: [[21, 45]]
+  Successful interval: 50-61
+  Keyframes: [2, 50, 57, 61]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep79_f362-463
+  Subtask: press the button
+  Frames: 362 - 463
+============================================================
+  Loaded 102 frames
+  Prefix scoring: 59.0s
+  Rewards: [0.0, 0.44, 0.2, 0.36, 0.48, 0.8, 1.0, 0.88]
+  Failed regions: [[23, 49]]
+  Successful interval: 31-88
+  Keyframes: [0, 31, 57, 88, 101]
+  Success detected: True
+  Confidence: 0.82
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.674
+  Success detected: 10/10
+  Total failed regions detected: 12
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 80 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 80
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f0-121
+  Subtask: pick up the red cube
+  Frames: 0 - 121
+============================================================
+  Loaded 122 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.13, 0.0, 0.79, 0.84, 0.83, 0.9, 0.84, 1.0]
+  Failed regions: []
+  Successful interval: 99-121
+  Keyframes: [0, 99, 110, 121]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f122-164
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 122 - 164
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.46, 0.71, 0.71, 1.0, 0.79, 0.42, 0.0, 0.27]
+  Failed regions: []
+  Successful interval: 12-20
+  Keyframes: [0, 12, 20, 21, 40]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f165-208
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 165 - 208
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.33, 0.78, 1.0, 0.67, 0.7, 0.89, 0.85]
+  Failed regions: [[20, 31]]
+  Successful interval: 24-37
+  Keyframes: [1, 24, 25, 37, 43]
+  Success detected: True
+  Confidence: 0.49
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f209-253
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 209 - 253
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.45, 0.73, 1.0, 0.64, 0.5, 0.68, 0.77]
+  Failed regions: []
+  Successful interval: 2-21
+  Keyframes: [0, 2, 21, 22, 43]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f254-298
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 254 - 298
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.32, 0.68, 0.64, 0.56, 0.72, 1.0, 0.48]
+  Failed regions: [[15, 32]]
+  Successful interval: 24-38
+  Keyframes: [0, 24, 25, 38, 44]
+  Success detected: True
+  Confidence: 0.67
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f299-343
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 299 - 343
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.41, 0.77, 1.0, 0.59, 0.5, 0.5, 0.55]
+  Failed regions: []
+  Successful interval: 2-21
+  Keyframes: [0, 2, 21, 22, 43]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f344-388
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 344 - 388
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.27, 0.93, 1.0, 0.73, 0.67, 1.0, 0.93]
+  Failed regions: [[21, 38]]
+  Successful interval: 30-38
+  Keyframes: [0, 30, 31, 38, 44]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f389-422
+  Subtask: put the red cube on the table
+  Frames: 389 - 422
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.11, 0.24, 0.41, 0.48, 0.2, 0.39, 1.0]
+  Failed regions: [[20, 28]]
+  Successful interval: 22-33
+  Keyframes: [5, 22, 26, 33]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f423-484
+  Subtask: press the button
+  Frames: 423 - 484
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.0, 0.22, 0.33, 0.0, 0.44, 1.0, 0.11]
+  Failed regions: [[29, 45]]
+  Successful interval: 34-53
+  Keyframes: [0, 34, 53, 54, 61]
+  Success detected: True
+  Confidence: 0.95
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep80_f423-522
+  Subtask: press the button
+  Frames: 423 - 522
+============================================================
+  Loaded 100 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.56, 0.0, 0.67, 0.44, 0.67, 0.89, 0.56, 1.0]
+  Failed regions: [[10, 35], [35, 73], [73, 99]]
+  Successful interval: 81-99
+  Keyframes: [0, 81, 84, 99]
+  Success detected: True
+  Confidence: 0.66
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.712
+  Success detected: 10/10
+  Total failed regions detected: 8
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 81 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 81
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f0-117
+  Subtask: pick up the green cube
+  Frames: 0 - 117
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.05, 0.0, 0.71, 0.84, 0.87, 1.0, 0.91, 0.95]
+  Failed regions: [[86, 117]]
+  Successful interval: 96-117
+  Keyframes: [0, 96, 109, 117]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f118-157
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 118 - 157
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.57, 0.71, 1.0, 0.86, 0.86, 0.36, 0.07]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [1, 2, 19, 20, 39]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f158-195
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 158 - 195
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.17, 0.17, 0.61, 0.56, 1.0, 0.5, 0.28]
+  Failed regions: []
+  Successful interval: 20-27
+  Keyframes: [1, 20, 24, 27, 37]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f196-232
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 196 - 232
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.0, 0.5, 0.36, 1.0, 1.0, 0.43, 0.93, 0.93]
+  Failed regions: [[8, 17], [22, 31]]
+  Successful interval: 24-31
+  Keyframes: [0, 24, 25, 31, 36]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f233-270
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 233 - 270
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.43, 1.0, 0.86, 0.86, 0.71, 1.0, 0.14, 0.0]
+  Failed regions: [[8, 18], [18, 27]]
+  Successful interval: 20-27
+  Keyframes: [0, 20, 25, 27, 37]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f271-304
+  Subtask: put the green cube on the table
+  Frames: 271 - 304
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.1s
+  Rewards: [0.1, 0.4, 0.0, 0.33, 0.07, 0.4, 0.4, 1.0]
+  Failed regions: [[8, 16], [16, 24]]
+  Successful interval: 26-33
+  Keyframes: [4, 26, 27, 33]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f305-357
+  Subtask: press the button
+  Frames: 305 - 357
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.0, 0.31, 0.69, 0.92, 0.62, 1.0, 0.85]
+  Failed regions: [[31, 45]]
+  Successful interval: 36-45
+  Keyframes: [0, 36, 45, 46, 52]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep81_f305-396
+  Subtask: press the button
+  Frames: 305 - 396
+============================================================
+  Loaded 92 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.14, 0.71, 1.0, 0.71, 0.57, 1.0, 0.29]
+  Failed regions: [[44, 79]]
+  Successful interval: 63-79
+  Keyframes: [0, 63, 79, 80, 91]
+  Success detected: True
+  Confidence: 0.66
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.666
+  Success detected: 8/8
+  Total failed regions detected: 9
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 82 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 82
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f0-100
+  Subtask: pick up the blue cube
+  Frames: 0 - 100
+============================================================
+  Loaded 101 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.07, 0.0, 0.71, 1.0, 0.76, 0.69, 0.78, 0.96]
+  Failed regions: [[48, 87]]
+  Successful interval: 69-100
+  Keyframes: [0, 69, 92, 100]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f101-119
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 101 - 119
+============================================================
+  Loaded 19 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.73, 1.0, 0.0, 0.73, 0.46, 0.38, 0.65, 0.54]
+  Failed regions: []
+  Successful interval: 2-6
+  Keyframes: [0, 2, 6, 7, 18]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f120-158
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 120 - 158
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.38, 0.43, 0.9, 1.0, 0.62, 0.38, 0.67]
+  Failed regions: []
+  Successful interval: 2-23
+  Keyframes: [0, 2, 23, 24, 38]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f159-197
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 159 - 197
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.29, 0.53, 1.0, 0.94, 0.88, 0.94, 0.65]
+  Failed regions: [[18, 33]]
+  Successful interval: 26-33
+  Keyframes: [0, 26, 30, 33, 38]
+  Success detected: True
+  Confidence: 0.46
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f198-236
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 198 - 236
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.29, 0.35, 0.53, 1.0, 0.65, 0.12, 0.41]
+  Failed regions: []
+  Successful interval: 2-23
+  Keyframes: [0, 2, 22, 23, 38]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f237-271
+  Subtask: put the blue cube on the table
+  Frames: 237 - 271
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.24, 0.0, 0.24, 0.14, 1.0, 0.76, 0.67, 0.62]
+  Failed regions: []
+  Successful interval: 14-21
+  Keyframes: [0, 14, 21, 22, 34]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f272-344
+  Subtask: press the button
+  Frames: 272 - 344
+============================================================
+  Loaded 73 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.29, 0.57, 0.1, 0.0, 0.24, 0.52, 0.95, 1.0]
+  Failed regions: [[16, 44]]
+  Successful interval: 31-72
+  Keyframes: [0, 31, 69, 72]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep82_f272-385
+  Subtask: press the button
+  Frames: 272 - 385
+============================================================
+  Loaded 114 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.2, 0.0, 0.0, 0.24, 1.0, 0.96, 0.84, 0.92]
+  Failed regions: [[69, 113]]
+  Successful interval: 93-113
+  Keyframes: [0, 93, 97, 113]
+  Success detected: True
+  Confidence: 0.48
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.707
+  Success detected: 8/8
+  Total failed regions detected: 4
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 83 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 83
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f0-148
+  Subtask: pick up the green cube
+  Frames: 0 - 148
+============================================================
+  Loaded 149 frames
+  Prefix scoring: 58.3s
+  Rewards: [0.05, 0.0, 0.52, 0.54, 0.68, 0.73, 0.73, 1.0]
+  Failed regions: []
+  Successful interval: 121-148
+  Keyframes: [0, 121, 126, 148]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f149-184
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 149 - 184
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.0, 0.45, 0.35, 0.5, 0.65, 1.0, 0.8]
+  Failed regions: [[12, 21]]
+  Successful interval: 15-30
+  Keyframes: [3, 15, 21, 30, 35]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f185-229
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 185 - 229
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.61, 1.0, 0.78, 0.78, 0.65, 0.43, 0.17]
+  Failed regions: []
+  Successful interval: 2-15
+  Keyframes: [0, 2, 15, 16, 41]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f230-272
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 230 - 272
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.35, 0.35, 0.47, 0.65, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 12-31
+  Keyframes: [1, 12, 25, 31, 42]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f273-315
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 273 - 315
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.19, 0.33, 0.52, 0.63, 1.0, 0.56, 0.59]
+  Failed regions: []
+  Successful interval: 2-31
+  Keyframes: [0, 2, 20, 31, 42]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f316-358
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 316 - 358
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.1, 0.1, 0.4, 0.5, 1.0, 0.7, 0.6]
+  Failed regions: []
+  Successful interval: 12-31
+  Keyframes: [2, 12, 25, 31, 42]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f359-401
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 359 - 401
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.26, 0.26, 0.48, 0.57, 1.0, 0.48, 0.43]
+  Failed regions: []
+  Successful interval: 12-31
+  Keyframes: [1, 12, 20, 31, 41]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f402-441
+  Subtask: put the green cube on the table
+  Frames: 402 - 441
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.0, 0.24, 0.29, 0.47, 1.0, 0.65, 0.59]
+  Failed regions: []
+  Successful interval: 7-29
+  Keyframes: [0, 7, 29, 30, 39]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f442-502
+  Subtask: press the button
+  Frames: 442 - 502
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.0, 0.42, 0.92, 1.0, 0.83, 0.33, 1.0]
+  Failed regions: [[36, 60]]
+  Successful interval: 49-60
+  Keyframes: [2, 49, 54, 60]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep83_f442-554
+  Subtask: press the button
+  Frames: 442 - 554
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.65, 1.0, 0.76, 0.88, 0.82, 0.82, 0.35]
+  Failed regions: [[39, 68]]
+  Successful interval: 49-68
+  Keyframes: [1, 49, 54, 68, 112]
+  Success detected: True
+  Confidence: 0.44
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.770
+  Success detected: 10/10
+  Total failed regions detected: 3
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 84 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 84
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f0-157
+  Subtask: pick up the green cube
+  Frames: 0 - 157
+============================================================
+  Loaded 158 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.17, 0.0, 0.17, 0.35, 0.69, 0.71, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 28-157
+  Keyframes: [0, 28, 89, 157]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f158-197
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 158 - 197
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.11, 0.26, 0.53, 0.63, 0.42, 1.0, 0.42, 0.0]
+  Failed regions: [[19, 29]]
+  Successful interval: 22-29
+  Keyframes: [8, 22, 23, 29, 39]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f198-235
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 198 - 235
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.57, 0.57, 0.81, 1.0, 0.81, 0.14, 0.38]
+  Failed regions: []
+  Successful interval: 11-22
+  Keyframes: [0, 11, 22, 23, 37]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f236-273
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 236 - 273
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.8s
+  Rewards: [0.0, 0.42, 0.75, 1.0, 0.75, 1.0, 1.0, 0.83]
+  Failed regions: [[18, 27]]
+  Successful interval: 20-27
+  Keyframes: [1, 20, 21, 27, 37]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f274-311
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 274 - 311
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.9s
+  Rewards: [0.18, 0.27, 0.68, 0.77, 1.0, 0.77, 0.0, 0.45]
+  Failed regions: []
+  Successful interval: 2-22
+  Keyframes: [1, 2, 22, 23, 37]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f312-345
+  Subtask: put the green cube on the table
+  Frames: 312 - 345
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.09, 0.15, 0.18, 0.0, 0.42, 0.3, 0.58, 1.0]
+  Failed regions: [[20, 28]]
+  Successful interval: 22-33
+  Keyframes: [5, 22, 25, 33]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f346-417
+  Subtask: press the button
+  Frames: 346 - 417
+============================================================
+  Loaded 72 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.17, 0.25, 0.92, 0.75, 0.75, 0.17, 1.0]
+  Failed regions: [[34, 52], [52, 71]]
+  Successful interval: 58-71
+  Keyframes: [1, 58, 68, 71]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep84_f346-455
+  Subtask: press the button
+  Frames: 346 - 455
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.0s
+  Rewards: [0.0, 0.15, 0.77, 0.46, 0.92, 1.0, 0.85, 1.0]
+  Failed regions: [[39, 81], [81, 109]]
+  Successful interval: 90-109
+  Keyframes: [1, 90, 98, 109]
+  Success detected: True
+  Confidence: 0.53
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.734
+  Success detected: 8/8
+  Total failed regions detected: 7
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 85 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 85
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 6 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 6 segments
+============================================================
+
+--- Segment 1/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f0-116
+  Subtask: pick up the red cube
+  Frames: 0 - 116
+============================================================
+  Loaded 117 frames
+  Prefix scoring: 58.0s
+  Rewards: [0.1, 0.0, 0.76, 0.84, 0.76, 0.84, 0.96, 1.0]
+  Failed regions: [[56, 86]]
+  Successful interval: 66-116
+  Keyframes: [0, 66, 102, 116]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 2/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f117-146
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 117 - 146
+============================================================
+  Loaded 30 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.1, 0.0, 0.62, 0.43, 1.0, 0.81, 0.43, 0.71]
+  Failed regions: [[11, 18]]
+  Successful interval: 12-18
+  Keyframes: [1, 12, 14, 18, 29]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 3/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f147-187
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 147 - 187
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 58.1s
+  Rewards: [0.06, 0.0, 0.17, 0.61, 0.44, 0.72, 1.0, 0.56]
+  Failed regions: [[19, 29]]
+  Successful interval: 22-34
+  Keyframes: [1, 22, 25, 34, 40]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 4/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f188-222
+  Subtask: put the red cube on the table
+  Frames: 188 - 222
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.17, 0.33, 0.28, 0.0, 0.5, 0.0, 0.28, 1.0]
+  Failed regions: [[8, 21], [21, 29]]
+  Successful interval: 23-34
+  Keyframes: [6, 23, 25, 34]
+  Success detected: True
+  Confidence: 0.94
+
+--- Segment 5/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f223-293
+  Subtask: press the button
+  Frames: 223 - 293
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.0, 0.33, 0.0, 1.0, 0.83, 0.67, 0.5]
+  Failed regions: [[25, 43]]
+  Successful interval: 31-43
+  Keyframes: [1, 31, 32, 43, 70]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/6 ---
+
+============================================================
+Segment: SwingXtimes_ep85_f223-334
+  Subtask: press the button
+  Frames: 223 - 334
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.45, 0.36, 0.73, 1.0, 0.36, 0.82, 0.64]
+  Failed regions: [[25, 68], [68, 96]]
+  Successful interval: 77-96
+  Keyframes: [1, 77, 93, 96, 111]
+  Success detected: True
+  Confidence: 0.56
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 6 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 6}
+  Mean confidence: 0.740
+  Success detected: 6/6
+  Total failed regions detected: 8
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 86 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 86
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f0-144
+  Subtask: pick up the green cube
+  Frames: 0 - 144
+============================================================
+  Loaded 145 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.08, 0.0, 0.49, 0.55, 0.75, 0.63, 0.75, 1.0]
+  Failed regions: [[88, 125]]
+  Successful interval: 99-144
+  Keyframes: [0, 99, 122, 144]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f145-190
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 145 - 190
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.0, 0.6, 0.6, 1.0, 0.0, 0.5, 0.4]
+  Failed regions: []
+  Successful interval: 19-27
+  Keyframes: [1, 19, 25, 27, 42]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f191-231
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 191 - 231
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.17, 0.58, 0.58, 0.92, 1.0, 0.42, 0.58]
+  Failed regions: []
+  Successful interval: 17-29
+  Keyframes: [1, 17, 19, 29, 40]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f232-275
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 232 - 275
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.3, 0.9, 0.5, 0.9, 0.75, 0.55, 1.0]
+  Failed regions: [[15, 26], [26, 43]]
+  Successful interval: 35-43
+  Keyframes: [2, 35, 36, 43]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f276-318
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 276 - 318
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.38, 0.77, 1.0, 0.77, 1.0, 0.92, 0.46]
+  Failed regions: [[20, 31]]
+  Successful interval: 23-31
+  Keyframes: [0, 23, 24, 31, 42]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f319-352
+  Subtask: put the green cube on the table
+  Frames: 319 - 352
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.05, 0.14, 0.48, 0.0, 0.29, 0.86, 0.24, 1.0]
+  Failed regions: [[12, 24], [24, 33]]
+  Successful interval: 26-33
+  Keyframes: [6, 26, 27, 33]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f353-404
+  Subtask: press the button
+  Frames: 353 - 404
+============================================================
+  Loaded 52 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.11, 0.33, 0.41, 0.33, 0.22, 1.0, 0.89]
+  Failed regions: [[24, 44]]
+  Successful interval: 35-44
+  Keyframes: [0, 35, 44, 45, 51]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep86_f353-438
+  Subtask: press the button
+  Frames: 353 - 438
+============================================================
+  Loaded 86 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.19, 0.0, 0.05, 0.48, 0.48, 0.67, 1.0, 0.57]
+  Failed regions: []
+  Successful interval: 48-74
+  Keyframes: [0, 48, 74, 75, 85]
+  Success detected: True
+  Confidence: 0.72
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.698
+  Success detected: 8/8
+  Total failed regions detected: 7
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 87 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 87
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f0-127
+  Subtask: pick up the red cube
+  Frames: 0 - 127
+============================================================
+  Loaded 128 frames
+  Prefix scoring: 57.3s
+  Rewards: [0.01, 0.0, 0.13, 0.49, 0.82, 0.85, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 22-127
+  Keyframes: [1, 22, 114, 127]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f128-159
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 128 - 159
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.14, 0.19, 0.57, 0.67, 1.0, 0.81, 0.95]
+  Failed regions: [[23, 31]]
+  Successful interval: 25-31
+  Keyframes: [0, 25, 26, 31]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f160-193
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 160 - 193
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.25, 0.62, 1.0, 0.81, 0.44, 0.62, 0.44]
+  Failed regions: []
+  Successful interval: 2-16
+  Keyframes: [0, 2, 16, 17, 33]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f194-227
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 194 - 227
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.15, 0.92, 0.38, 0.85, 0.69, 1.0, 1.0]
+  Failed regions: [[12, 20], [20, 28]]
+  Successful interval: 22-28
+  Keyframes: [2, 22, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f228-261
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 228 - 261
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.15, 0.23, 0.0, 0.62, 1.0, 0.62, 0.69, 0.46]
+  Failed regions: []
+  Successful interval: 10-20
+  Keyframes: [2, 10, 18, 20, 33]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f262-295
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 262 - 295
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.55, 0.82, 0.45, 0.64, 0.45, 0.91, 1.0]
+  Failed regions: [[12, 20], [20, 28]]
+  Successful interval: 22-33
+  Keyframes: [2, 22, 23, 33]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f296-329
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 296 - 329
+============================================================
+  Loaded 34 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.36, 0.36, 0.57, 1.0, 0.57, 0.86, 0.29]
+  Failed regions: [[20, 28]]
+  Successful interval: 22-28
+  Keyframes: [1, 22, 23, 28, 33]
+  Success detected: True
+  Confidence: 0.53
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f330-364
+  Subtask: put the red cube on the table
+  Frames: 330 - 364
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.12, 0.21, 0.25, 0.62, 0.92, 0.38, 1.0]
+  Failed regions: [[25, 34]]
+  Successful interval: 27-34
+  Keyframes: [4, 27, 28, 34]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f365-423
+  Subtask: press the button
+  Frames: 365 - 423
+============================================================
+  Loaded 59 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.18, 0.29, 0.29, 0.76, 0.76, 0.76, 1.0]
+  Failed regions: []
+  Successful interval: 48-58
+  Keyframes: [2, 48, 54, 58]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep87_f365-461
+  Subtask: press the button
+  Frames: 365 - 461
+============================================================
+  Loaded 97 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.28, 0.0, 0.56, 0.92, 0.88, 0.68, 1.0, 0.64]
+  Failed regions: [[9, 46], [46, 83]]
+  Successful interval: 67-83
+  Keyframes: [2, 67, 82, 83, 96]
+  Success detected: True
+  Confidence: 0.60
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.700
+  Success detected: 10/10
+  Total failed regions detected: 9
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 88 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 88
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f0-115
+  Subtask: pick up the blue cube
+  Frames: 0 - 115
+============================================================
+  Loaded 116 frames
+  Prefix scoring: 58.1s
+  Rewards: [0.06, 0.0, 0.71, 0.81, 0.73, 0.75, 0.79, 1.0]
+  Failed regions: []
+  Successful interval: 65-115
+  Keyframes: [0, 65, 70, 115]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f116-141
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 116 - 141
+============================================================
+  Loaded 26 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.25, 0.33, 0.33, 0.83, 0.83, 1.0, 0.5]
+  Failed regions: []
+  Successful interval: 17-22
+  Keyframes: [2, 17, 18, 22, 25]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f142-177
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 142 - 177
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.43, 0.21, 1.0, 0.43, 0.71, 0.36, 0.36]
+  Failed regions: [[8, 17]]
+  Successful interval: 10-17
+  Keyframes: [0, 10, 17, 18, 35]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f178-213
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 178 - 213
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.5, 0.5, 0.67, 0.61, 0.67, 0.78, 1.0]
+  Failed regions: []
+  Successful interval: 19-35
+  Keyframes: [2, 19, 20, 35]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f214-249
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 214 - 249
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.9s
+  Rewards: [0.0, 0.18, 0.91, 0.64, 1.0, 0.73, 0.55, 0.18]
+  Failed regions: [[12, 21]]
+  Successful interval: 15-21
+  Keyframes: [0, 15, 18, 21, 35]
+  Success detected: True
+  Confidence: 0.64
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f250-285
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 250 - 285
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.0, 0.55, 0.36, 0.55, 1.0, 0.82, 0.64, 1.0]
+  Failed regions: [[8, 21], [21, 35]]
+  Successful interval: 28-35
+  Keyframes: [0, 28, 29, 35]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f286-321
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 286 - 321
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.14, 0.86, 0.71, 1.0, 0.71, 0.29, 0.0, 0.43]
+  Failed regions: [[8, 17]]
+  Successful interval: 10-17
+  Keyframes: [0, 10, 17, 18, 35]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f322-356
+  Subtask: put the blue cube on the table
+  Frames: 322 - 356
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.14, 0.52, 0.29, 0.38, 0.0, 0.19, 0.24, 1.0]
+  Failed regions: [[8, 16], [16, 25]]
+  Successful interval: 19-34
+  Keyframes: [2, 19, 26, 34]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f357-409
+  Subtask: press the button
+  Frames: 357 - 409
+============================================================
+  Loaded 53 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.0, 0.3, 0.43, 0.65, 0.65, 0.78, 0.78, 1.0]
+  Failed regions: []
+  Successful interval: 43-52
+  Keyframes: [0, 43, 48, 52]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep88_f357-444
+  Subtask: press the button
+  Frames: 357 - 444
+============================================================
+  Loaded 88 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.27, 0.0, 0.4, 0.8, 1.0, 0.87, 0.93, 0.73]
+  Failed regions: [[8, 53], [53, 75]]
+  Successful interval: 60-75
+  Keyframes: [0, 60, 75, 76, 87]
+  Success detected: True
+  Confidence: 0.46
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.645
+  Success detected: 10/10
+  Total failed regions detected: 9
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 89 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 89
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f0-139
+  Subtask: pick up the red cube
+  Frames: 0 - 139
+============================================================
+  Loaded 140 frames
+  Prefix scoring: 57.1s
+  Rewards: [0.1, 0.0, 0.26, 0.1, 0.87, 1.0, 0.77, 0.97]
+  Failed regions: [[49, 103], [103, 139]]
+  Successful interval: 114-139
+  Keyframes: [0, 114, 123, 139]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f140-182
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 140 - 182
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.06, 0.0, 0.24, 0.71, 0.71, 1.0, 0.53, 0.18]
+  Failed regions: []
+  Successful interval: 23-31
+  Keyframes: [2, 23, 24, 31, 41]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f183-221
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 183 - 221
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.27, 0.46, 1.0, 0.85, 0.62, 0.69, 1.0]
+  Failed regions: [[18, 33]]
+  Successful interval: 26-38
+  Keyframes: [0, 26, 27, 38]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f222-260
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 222 - 260
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.29, 0.64, 1.0, 0.79, 0.86, 0.79, 1.0]
+  Failed regions: [[18, 28]]
+  Successful interval: 31-38
+  Keyframes: [0, 31, 32, 38]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f261-299
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 261 - 299
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.32, 0.6, 0.8, 0.6, 0.52, 0.48, 1.0]
+  Failed regions: [[18, 38]]
+  Successful interval: 31-38
+  Keyframes: [0, 31, 32, 38]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f300-338
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 300 - 338
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.2, 0.6, 0.93, 0.73, 0.93, 1.0, 0.87]
+  Failed regions: [[18, 28]]
+  Successful interval: 21-33
+  Keyframes: [0, 21, 22, 33, 38]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f339-377
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 339 - 377
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.25, 0.69, 0.94, 0.56, 0.75, 0.56, 1.0]
+  Failed regions: [[18, 28], [28, 38]]
+  Successful interval: 31-38
+  Keyframes: [0, 31, 32, 38]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f378-413
+  Subtask: put the red cube on the table
+  Frames: 378 - 413
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.1, 0.25, 0.0, 0.4, 0.4, 0.6, 0.5, 1.0]
+  Failed regions: [[8, 17], [26, 35]]
+  Successful interval: 28-35
+  Keyframes: [4, 28, 29, 35]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f414-468
+  Subtask: press the button
+  Frames: 414 - 468
+============================================================
+  Loaded 55 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.27, 0.36, 0.45, 0.64, 0.73, 1.0, 0.73]
+  Failed regions: []
+  Successful interval: 3-47
+  Keyframes: [0, 3, 14, 47, 54]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep89_f414-505
+  Subtask: press the button
+  Frames: 414 - 505
+============================================================
+  Loaded 92 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.2, 0.2, 1.0, 0.7, 0.8, 0.0, 1.0, 0.4]
+  Failed regions: [[32, 55], [55, 79]]
+  Successful interval: 63-79
+  Keyframes: [0, 63, 78, 79, 91]
+  Success detected: True
+  Confidence: 0.89
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.681
+  Success detected: 10/10
+  Total failed regions detected: 12
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 90 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 90
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f0-139
+  Subtask: pick up the red cube
+  Frames: 0 - 139
+============================================================
+  Loaded 140 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.05, 0.0, 0.17, 0.36, 0.83, 1.0, 0.88, 0.98]
+  Failed regions: [[103, 139]]
+  Successful interval: 114-139
+  Keyframes: [1, 114, 123, 139]
+  Success detected: True
+  Confidence: 0.52
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f140-171
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 140 - 171
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 56.8s
+  Rewards: [0.0, 0.33, 0.67, 0.5, 1.0, 0.83, 0.58, 0.67]
+  Failed regions: [[11, 19]]
+  Successful interval: 13-19
+  Keyframes: [3, 13, 19, 20, 31]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f172-216
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 172 - 216
+============================================================
+  Loaded 45 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.47, 0.33, 0.87, 0.33, 1.0, 0.73, 0.27]
+  Failed regions: [[9, 21], [21, 32]]
+  Successful interval: 24-32
+  Keyframes: [1, 24, 28, 32, 43]
+  Success detected: True
+  Confidence: 0.77
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f217-263
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 217 - 263
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.53, 0.8, 0.8, 1.0, 0.47, 0.6, 0.73]
+  Failed regions: []
+  Successful interval: 20-28
+  Keyframes: [0, 20, 21, 28, 43]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f264-310
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 264 - 310
+============================================================
+  Loaded 47 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.22, 0.33, 0.67, 0.89, 1.0, 0.89, 0.44]
+  Failed regions: []
+  Successful interval: 2-34
+  Keyframes: [1, 2, 29, 34, 45]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f311-346
+  Subtask: put the red cube on the table
+  Frames: 311 - 346
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.0, 0.2, 0.07, 0.87, 0.67, 0.53, 0.13, 1.0]
+  Failed regions: [[17, 35]]
+  Successful interval: 28-35
+  Keyframes: [6, 28, 29, 35]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f347-402
+  Subtask: press the button
+  Frames: 347 - 402
+============================================================
+  Loaded 56 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.53, 0.67, 0.67, 0.93, 0.73, 1.0, 1.0]
+  Failed regions: [[33, 47]]
+  Successful interval: 38-47
+  Keyframes: [0, 38, 47, 48, 55]
+  Success detected: True
+  Confidence: 0.57
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep90_f347-437
+  Subtask: press the button
+  Frames: 347 - 437
+============================================================
+  Loaded 91 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.2, 0.0, 0.72, 0.6, 0.6, 0.68, 1.0, 0.56]
+  Failed regions: [[32, 55], [32, 66]]
+  Successful interval: 51-78
+  Keyframes: [1, 51, 52, 78, 90]
+  Success detected: True
+  Confidence: 0.65
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.687
+  Success detected: 8/8
+  Total failed regions detected: 8
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 91 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 91
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f0-108
+  Subtask: pick up the red cube
+  Frames: 0 - 108
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.05, 0.0, 0.81, 0.78, 0.7, 0.62, 0.81, 1.0]
+  Failed regions: [[38, 94]]
+  Successful interval: 75-108
+  Keyframes: [1, 75, 100, 108]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f109-137
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 109 - 137
+============================================================
+  Loaded 29 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.0, 0.18, 0.64, 0.91, 1.0, 0.55, 0.09, 0.36]
+  Failed regions: []
+  Successful interval: 2-17
+  Keyframes: [0, 2, 14, 17, 28]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f138-174
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 138 - 174
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.0, 0.7, 0.6, 0.7, 0.4, 0.9, 1.0, 0.1]
+  Failed regions: [[8, 17], [17, 26]]
+  Successful interval: 20-31
+  Keyframes: [0, 20, 24, 31, 36]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f175-212
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 175 - 212
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.0, 0.21, 0.42, 0.67, 0.83, 1.0, 0.33, 0.58]
+  Failed regions: []
+  Successful interval: 2-27
+  Keyframes: [0, 2, 17, 27, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f213-250
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 213 - 250
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.33, 0.33, 0.67, 0.25, 1.0, 0.08, 1.0]
+  Failed regions: [[18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [1, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f251-288
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 251 - 288
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 56.6s
+  Rewards: [0.0, 0.21, 0.47, 0.63, 0.84, 1.0, 0.58, 0.84]
+  Failed regions: [[27, 37]]
+  Successful interval: 30-37
+  Keyframes: [1, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f289-326
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 289 - 326
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.15, 0.69, 0.54, 0.69, 0.23, 0.62, 0.0, 1.0]
+  Failed regions: [[8, 18], [18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f327-362
+  Subtask: put the red cube on the table
+  Frames: 327 - 362
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.23, 0.18, 0.45, 0.86, 0.77, 1.0, 1.0]
+  Failed regions: [[21, 30]]
+  Successful interval: 24-30
+  Keyframes: [4, 24, 25, 30, 35]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f363-424
+  Subtask: press the button
+  Frames: 363 - 424
+============================================================
+  Loaded 62 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.11, 0.33, 0.39, 0.67, 0.94, 1.0, 0.78]
+  Failed regions: []
+  Successful interval: 3-53
+  Keyframes: [0, 3, 53, 54, 61]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep91_f363-458
+  Subtask: press the button
+  Frames: 363 - 458
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.21, 0.71, 1.0, 0.93, 0.86, 0.93, 0.79]
+  Failed regions: [[45, 82]]
+  Successful interval: 66-82
+  Keyframes: [0, 66, 82, 83, 95]
+  Success detected: True
+  Confidence: 0.45
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.736
+  Success detected: 10/10
+  Total failed regions detected: 11
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 92 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 92
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f0-109
+  Subtask: pick up the green cube
+  Frames: 0 - 109
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 57.0s
+  Rewards: [0.12, 0.0, 0.64, 0.82, 0.7, 0.7, 0.97, 1.0]
+  Failed regions: [[53, 81], [53, 95]]
+  Successful interval: 76-109
+  Keyframes: [0, 76, 102, 109]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f110-127
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 110 - 127
+============================================================
+  Loaded 18 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.5, 0.58, 1.0, 0.0, 0.92, 0.92, 0.83, 0.67]
+  Failed regions: [[7, 11]]
+  Successful interval: 7-11
+  Keyframes: [1, 7, 10, 11, 17]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f128-167
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 128 - 167
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.14, 0.29, 0.48, 1.0, 0.71, 0.62, 0.0, 0.14]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [0, 2, 17, 19, 39]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f168-211
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 168 - 211
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.13, 0.6, 0.67, 0.73, 1.0, 0.33, 0.53]
+  Failed regions: []
+  Successful interval: 2-31
+  Keyframes: [0, 2, 25, 31, 42]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f212-254
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 212 - 254
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 56.5s
+  Rewards: [0.0, 0.65, 0.47, 1.0, 0.65, 0.82, 0.53, 0.47]
+  Failed regions: [[9, 20], [20, 31]]
+  Successful interval: 23-31
+  Keyframes: [1, 23, 24, 31, 41]
+  Success detected: True
+  Confidence: 0.45
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f255-298
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 255 - 298
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.42, 0.58, 0.58, 0.58, 1.0, 0.5, 0.67]
+  Failed regions: []
+  Successful interval: 24-31
+  Keyframes: [0, 24, 25, 31, 42]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f299-342
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 299 - 342
+============================================================
+  Loaded 44 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.5, 0.44, 1.0, 0.62, 0.69, 0.38, 0.38]
+  Failed regions: []
+  Successful interval: 13-20
+  Keyframes: [0, 13, 18, 20, 42]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f343-379
+  Subtask: put the green cube on the table
+  Frames: 343 - 379
+============================================================
+  Loaded 37 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.0, 0.23, 0.1, 0.03, 0.26, 0.58, 0.74, 1.0]
+  Failed regions: []
+  Successful interval: 15-36
+  Keyframes: [7, 15, 27, 36]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f380-440
+  Subtask: press the button
+  Frames: 380 - 440
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.22, 0.26, 0.0, 0.22, 0.35, 0.57, 0.78, 1.0]
+  Failed regions: [[13, 29]]
+  Successful interval: 18-60
+  Keyframes: [0, 18, 19, 60]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep92_f380-475
+  Subtask: press the button
+  Frames: 380 - 475
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 56.2s
+  Rewards: [0.21, 0.0, 0.17, 0.54, 0.79, 0.33, 1.0, 0.79]
+  Failed regions: [[58, 82]]
+  Successful interval: 66-82
+  Keyframes: [0, 66, 82, 83, 95]
+  Success detected: True
+  Confidence: 0.77
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.757
+  Success detected: 10/10
+  Total failed regions detected: 7
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 93 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 93
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f0-103
+  Subtask: pick up the blue cube
+  Frames: 0 - 103
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 58.9s
+  Rewards: [0.04, 0.0, 0.73, 0.79, 0.67, 0.74, 1.0, 0.89]
+  Failed regions: [[49, 76]]
+  Successful interval: 58-89
+  Keyframes: [0, 58, 72, 89, 103]
+  Success detected: True
+  Confidence: 0.61
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f104-149
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 104 - 149
+============================================================
+  Loaded 46 frames
+  Prefix scoring: 57.9s
+  Rewards: [0.04, 0.0, 0.0, 0.25, 0.75, 0.96, 1.0, 0.32]
+  Failed regions: []
+  Successful interval: 13-39
+  Keyframes: [9, 13, 26, 39, 45]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f150-187
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 150 - 187
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.4s
+  Rewards: [0.13, 0.57, 0.52, 1.0, 0.57, 0.7, 0.0, 0.22]
+  Failed regions: []
+  Successful interval: 11-18
+  Keyframes: [0, 11, 18, 19, 37]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f188-225
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 188 - 225
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.7s
+  Rewards: [0.0, 0.33, 0.47, 0.73, 0.07, 0.4, 0.8, 1.0]
+  Failed regions: [[18, 27]]
+  Successful interval: 20-37
+  Keyframes: [3, 20, 21, 37]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f226-263
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 226 - 263
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.8s
+  Rewards: [0.0, 0.33, 0.4, 1.0, 0.73, 0.67, 0.13, 0.07]
+  Failed regions: []
+  Successful interval: 2-18
+  Keyframes: [1, 2, 18, 19, 37]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f264-301
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 264 - 301
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.8s
+  Rewards: [0.12, 0.62, 0.75, 1.0, 0.0, 0.88, 0.62, 1.0]
+  Failed regions: [[18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f302-339
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 302 - 339
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 57.3s
+  Rewards: [0.39, 0.5, 0.5, 1.0, 0.33, 0.5, 0.17, 0.0]
+  Failed regions: []
+  Successful interval: 11-18
+  Keyframes: [1, 11, 18, 19, 37]
+  Success detected: True
+  Confidence: 0.72
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f340-379
+  Subtask: put the blue cube on the table
+  Frames: 340 - 379
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 57.5s
+  Rewards: [0.07, 0.0, 0.22, 0.41, 0.37, 0.78, 1.0, 0.93]
+  Failed regions: []
+  Successful interval: 22-34
+  Keyframes: [8, 22, 31, 34, 39]
+  Success detected: True
+  Confidence: 0.76
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f380-447
+  Subtask: press the button
+  Frames: 380 - 447
+============================================================
+  Loaded 68 frames
+  Prefix scoring: 58.5s
+  Rewards: [0.25, 0.31, 0.0, 0.12, 0.19, 0.75, 0.75, 1.0]
+  Failed regions: [[14, 49]]
+  Successful interval: 55-67
+  Keyframes: [1, 55, 63, 67]
+  Success detected: True
+  Confidence: 0.62
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep93_f380-490
+  Subtask: press the button
+  Frames: 380 - 490
+============================================================
+  Loaded 111 frames
+  Prefix scoring: 58.2s
+  Rewards: [0.0, 0.18, 0.12, 0.41, 1.0, 0.53, 0.76, 0.53]
+  Failed regions: []
+  Successful interval: 34-67
+  Keyframes: [1, 34, 63, 67, 110]
+  Success detected: True
+  Confidence: 0.86
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.760
+  Success detected: 10/10
+  Total failed regions detected: 5
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 94 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 94
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 8 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 8 segments
+============================================================
+
+--- Segment 1/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f0-108
+  Subtask: pick up the green cube
+  Frames: 0 - 108
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.02, 0.0, 0.68, 0.66, 0.58, 0.58, 0.7, 1.0]
+  Failed regions: [[38, 80], [38, 94]]
+  Successful interval: 75-108
+  Keyframes: [0, 75, 94, 108]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 2/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f109-140
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 109 - 140
+============================================================
+  Loaded 32 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.56, 0.44, 0.5, 0.0, 0.31, 0.88, 1.0, 0.69]
+  Failed regions: [[4, 11], [11, 19]]
+  Successful interval: 13-27
+  Keyframes: [2, 13, 16, 27, 31]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f141-181
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 141 - 181
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.27, 0.53, 0.93, 1.0, 0.8, 0.33, 0.73]
+  Failed regions: []
+  Successful interval: 2-24
+  Keyframes: [0, 2, 24, 25, 40]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f182-222
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 182 - 222
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.2, 0.2, 0.8, 1.0, 0.8, 1.0, 0.8]
+  Failed regions: [[24, 34]]
+  Successful interval: 27-34
+  Keyframes: [2, 27, 30, 34, 40]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 5/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f223-263
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 223 - 263
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.1s
+  Rewards: [0.0, 0.21, 0.36, 1.0, 0.93, 0.93, 0.21, 0.79]
+  Failed regions: []
+  Successful interval: 2-19
+  Keyframes: [0, 2, 16, 19, 40]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 6/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f264-298
+  Subtask: put the green cube on the table
+  Frames: 264 - 298
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.03, 0.03, 0.23, 0.0, 0.3, 0.05, 0.35, 1.0]
+  Failed regions: [[21, 29]]
+  Successful interval: 23-34
+  Keyframes: [7, 23, 26, 34]
+  Success detected: True
+  Confidence: 0.93
+
+--- Segment 7/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f299-365
+  Subtask: press the button
+  Frames: 299 - 365
+============================================================
+  Loaded 67 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.0, 0.15, 0.3, 0.45, 0.58, 0.67, 0.88, 1.0]
+  Failed regions: []
+  Successful interval: 3-66
+  Keyframes: [1, 3, 62, 66]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 8/8 ---
+
+============================================================
+Segment: SwingXtimes_ep94_f299-402
+  Subtask: press the button
+  Frames: 299 - 402
+============================================================
+  Loaded 104 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.0, 0.21, 0.62, 0.72, 0.97, 0.62, 1.0, 0.72]
+  Failed regions: [[63, 89]]
+  Successful interval: 71-89
+  Keyframes: [1, 71, 89, 90, 103]
+  Success detected: True
+  Confidence: 0.63
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 8 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 8}
+  Mean confidence: 0.793
+  Success detected: 8/8
+  Total failed regions detected: 7
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 95 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 95
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f0-117
+  Subtask: pick up the blue cube
+  Frames: 0 - 117
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.13, 0.0, 0.79, 0.83, 0.88, 0.92, 0.94, 1.0]
+  Failed regions: []
+  Successful interval: 21-117
+  Keyframes: [0, 21, 69, 117]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f118-145
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 118 - 145
+============================================================
+  Loaded 28 frames
+  Prefix scoring: 54.2s
+  Rewards: [0.0, 0.46, 0.62, 0.62, 0.62, 0.69, 0.77, 1.0]
+  Failed regions: []
+  Successful interval: 15-27
+  Keyframes: [1, 15, 16, 27]
+  Success detected: True
+  Confidence: 0.63
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f146-184
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 146 - 184
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.37, 0.63, 1.0, 1.0, 0.58, 0.58, 0.95]
+  Failed regions: [[23, 33], [23, 38]]
+  Successful interval: 31-38
+  Keyframes: [0, 31, 32, 38]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f185-223
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 185 - 223
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.21, 0.79, 1.0, 0.89, 0.84, 0.79, 0.84]
+  Failed regions: [[18, 38]]
+  Successful interval: 31-38
+  Keyframes: [0, 31, 32, 38]
+  Success detected: True
+  Confidence: 0.39
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f224-262
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 224 - 262
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.14, 0.21, 1.0, 0.57, 0.43, 0.21, 0.79]
+  Failed regions: []
+  Successful interval: 2-18
+  Keyframes: [0, 2, 18, 19, 38]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f263-301
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 263 - 301
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.07, 0.0, 0.64, 0.86, 1.0, 0.79, 0.57, 0.5]
+  Failed regions: []
+  Successful interval: 6-23
+  Keyframes: [0, 6, 23, 24, 38]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f302-340
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 302 - 340
+============================================================
+  Loaded 39 frames
+  Prefix scoring: 54.6s
+  Rewards: [0.0, 0.25, 0.42, 1.0, 0.67, 0.33, 0.08, 0.58]
+  Failed regions: []
+  Successful interval: 2-18
+  Keyframes: [1, 2, 18, 19, 37]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f341-376
+  Subtask: put the blue cube on the table
+  Frames: 341 - 376
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.21, 0.0, 0.18, 0.46, 0.21, 0.32, 0.43, 1.0]
+  Failed regions: [[17, 26]]
+  Successful interval: 19-35
+  Keyframes: [7, 19, 26, 35]
+  Success detected: True
+  Confidence: 0.84
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f377-437
+  Subtask: press the button
+  Frames: 377 - 437
+============================================================
+  Loaded 61 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.32, 0.29, 0.65, 0.59, 0.68, 0.91, 1.0]
+  Failed regions: []
+  Successful interval: 33-60
+  Keyframes: [3, 33, 56, 60]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep95_f377-472
+  Subtask: press the button
+  Frames: 377 - 472
+============================================================
+  Loaded 96 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.19, 0.56, 0.47, 0.81, 0.75, 1.0, 0.91]
+  Failed regions: [[33, 58]]
+  Successful interval: 66-82
+  Keyframes: [1, 66, 82, 83, 95]
+  Success detected: True
+  Confidence: 0.58
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.728
+  Success detected: 10/10
+  Total failed regions detected: 5
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 96 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 96
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f0-126
+  Subtask: pick up the blue cube
+  Frames: 0 - 126
+============================================================
+  Loaded 127 frames
+  Prefix scoring: 56.7s
+  Rewards: [0.07, 0.0, 0.86, 0.84, 0.81, 0.78, 0.86, 1.0]
+  Failed regions: [[44, 109]]
+  Successful interval: 87-126
+  Keyframes: [0, 87, 111, 126]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f127-161
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 127 - 161
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.09, 0.91, 0.27, 0.55, 1.0, 0.09, 0.36, 0.0]
+  Failed regions: [[8, 16]]
+  Successful interval: 10-21
+  Keyframes: [1, 10, 18, 21, 34]
+  Success detected: True
+  Confidence: 0.81
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f162-204
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 162 - 204
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.25, 0.54, 1.0, 0.83, 1.0, 0.58, 0.71]
+  Failed regions: [[20, 31]]
+  Successful interval: 23-31
+  Keyframes: [1, 23, 31, 32, 42]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f205-247
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 205 - 247
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.44, 0.72, 0.56, 0.67, 1.0, 0.11, 0.44]
+  Failed regions: [[14, 25]]
+  Successful interval: 18-31
+  Keyframes: [1, 18, 19, 31, 42]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f248-290
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 248 - 290
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.2s
+  Rewards: [0.0, 0.17, 0.17, 1.0, 1.0, 0.72, 0.5, 0.5]
+  Failed regions: []
+  Successful interval: 12-20
+  Keyframes: [0, 12, 18, 20, 42]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f291-333
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 291 - 333
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.38, 0.62, 1.0, 0.75, 1.0, 0.5, 0.0]
+  Failed regions: [[20, 31]]
+  Successful interval: 23-31
+  Keyframes: [2, 23, 31, 32, 42]
+  Success detected: True
+  Confidence: 0.59
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f334-376
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 334 - 376
+============================================================
+  Loaded 43 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.58, 0.21, 1.0, 0.89, 0.74, 0.11, 0.32]
+  Failed regions: [[9, 20]]
+  Successful interval: 12-20
+  Keyframes: [0, 12, 18, 20, 42]
+  Success detected: True
+  Confidence: 0.82
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f377-411
+  Subtask: put the blue cube on the table
+  Frames: 377 - 411
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.2, 0.2, 0.0, 0.07, 0.61, 0.46, 0.46, 1.0]
+  Failed regions: [[21, 29], [21, 34]]
+  Successful interval: 27-34
+  Keyframes: [7, 27, 28, 34]
+  Success detected: True
+  Confidence: 0.74
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f412-486
+  Subtask: press the button
+  Frames: 412 - 486
+============================================================
+  Loaded 75 frames
+  Prefix scoring: 55.6s
+  Rewards: [0.0, 0.06, 0.56, 0.56, 0.81, 0.5, 0.75, 1.0]
+  Failed regions: [[45, 64]]
+  Successful interval: 51-74
+  Keyframes: [0, 51, 69, 74]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep96_f412-521
+  Subtask: press the button
+  Frames: 412 - 521
+============================================================
+  Loaded 110 frames
+  Prefix scoring: 55.7s
+  Rewards: [0.0, 0.35, 0.38, 0.54, 0.73, 0.69, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 76-95
+  Keyframes: [2, 76, 95, 96, 109]
+  Success detected: True
+  Confidence: 0.61
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.688
+  Success detected: 10/10
+  Total failed regions detected: 9
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 97 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 97
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f0-159
+  Subtask: pick up the green cube
+  Frames: 0 - 159
+============================================================
+  Loaded 160 frames
+  Prefix scoring: 57.2s
+  Rewards: [0.07, 0.0, 0.39, 0.39, 0.76, 0.74, 0.85, 1.0]
+  Failed regions: []
+  Successful interval: 110-159
+  Keyframes: [0, 110, 133, 159]
+  Success detected: True
+  Confidence: 0.60
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f160-195
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 160 - 195
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.12, 0.75, 0.88, 0.5, 1.0, 0.38, 0.75]
+  Failed regions: [[17, 26]]
+  Successful interval: 19-26
+  Keyframes: [0, 19, 20, 26, 35]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f196-236
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 196 - 236
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.5, 0.19, 0.88, 0.88, 1.0, 0.19, 0.5]
+  Failed regions: [[9, 19]]
+  Successful interval: 22-29
+  Keyframes: [0, 22, 23, 29, 40]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f237-278
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 237 - 278
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 55.8s
+  Rewards: [0.0, 0.29, 0.79, 0.57, 0.36, 1.0, 0.57, 1.0]
+  Failed regions: [[14, 30], [30, 41]]
+  Successful interval: 33-41
+  Keyframes: [0, 33, 34, 41]
+  Success detected: True
+  Confidence: 0.66
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f279-319
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 279 - 319
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.45, 1.0, 0.36, 1.0, 0.73, 0.73, 0.0, 0.55]
+  Failed regions: [[9, 19]]
+  Successful interval: 12-19
+  Keyframes: [2, 12, 19, 20, 40]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f320-361
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 320 - 361
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 56.0s
+  Rewards: [0.0, 0.3, 1.0, 0.8, 0.4, 0.7, 0.5, 0.9]
+  Failed regions: [[14, 30], [30, 41]]
+  Successful interval: 33-41
+  Keyframes: [1, 33, 34, 41]
+  Success detected: True
+  Confidence: 0.58
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f362-402
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 362 - 402
+============================================================
+  Loaded 41 frames
+  Prefix scoring: 56.3s
+  Rewards: [0.76, 1.0, 0.76, 0.94, 0.59, 0.71, 0.0, 0.53]
+  Failed regions: [[9, 19]]
+  Successful interval: 12-19
+  Keyframes: [1, 12, 19, 20, 40]
+  Success detected: True
+  Confidence: 0.50
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f403-435
+  Subtask: put the green cube on the table
+  Frames: 403 - 435
+============================================================
+  Loaded 33 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.38, 0.19, 0.57, 0.43, 0.48, 0.1, 0.0, 1.0]
+  Failed regions: [[4, 12], [12, 20], [20, 32]]
+  Successful interval: 26-32
+  Keyframes: [6, 26, 27, 32]
+  Success detected: True
+  Confidence: 0.92
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f436-506
+  Subtask: press the button
+  Frames: 436 - 506
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 55.9s
+  Rewards: [0.07, 0.0, 0.71, 0.64, 0.5, 0.57, 1.0, 1.0]
+  Failed regions: [[25, 52]]
+  Successful interval: 40-61
+  Keyframes: [2, 40, 60, 61, 70]
+  Success detected: True
+  Confidence: 0.69
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep97_f436-561
+  Subtask: press the button
+  Frames: 436 - 561
+============================================================
+  Loaded 126 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.27, 0.0, 0.45, 0.91, 1.0, 0.82, 1.0, 0.82]
+  Failed regions: [[12, 76], [76, 108]]
+  Successful interval: 86-108
+  Keyframes: [2, 86, 102, 108, 125]
+  Success detected: True
+  Confidence: 0.54
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.647
+  Success detected: 10/10
+  Total failed regions detected: 14
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 98 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 98
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 6 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 6 segments
+============================================================
+
+--- Segment 1/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f0-142
+  Subtask: pick up the green cube
+  Frames: 0 - 142
+============================================================
+  Loaded 143 frames
+  Prefix scoring: 56.4s
+  Rewards: [0.05, 0.0, 0.29, 0.57, 0.81, 0.89, 0.83, 1.0]
+  Failed regions: []
+  Successful interval: 116-142
+  Keyframes: [0, 116, 126, 142]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 2/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f143-184
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 143 - 184
+============================================================
+  Loaded 42 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.32, 0.47, 0.63, 0.89, 1.0, 0.37, 0.74]
+  Failed regions: []
+  Successful interval: 2-30
+  Keyframes: [1, 2, 25, 30, 41]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 3/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f185-220
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 185 - 220
+============================================================
+  Loaded 36 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.0, 0.73, 0.6, 1.0, 1.0, 0.47, 0.87, 0.53]
+  Failed regions: [[8, 17], [21, 30]]
+  Successful interval: 24-30
+  Keyframes: [0, 24, 25, 30, 35]
+  Success detected: True
+  Confidence: 0.55
+
+--- Segment 4/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f221-255
+  Subtask: put the green cube on the table
+  Frames: 221 - 255
+============================================================
+  Loaded 35 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.16, 0.0, 0.03, 0.16, 0.73, 0.46, 0.95, 1.0]
+  Failed regions: [[21, 29]]
+  Successful interval: 23-34
+  Keyframes: [3, 23, 25, 34]
+  Success detected: True
+  Confidence: 0.73
+
+--- Segment 5/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f256-326
+  Subtask: press the button
+  Frames: 256 - 326
+============================================================
+  Loaded 71 frames
+  Prefix scoring: 55.5s
+  Rewards: [0.0, 0.3, 0.43, 0.3, 0.48, 0.35, 0.57, 1.0]
+  Failed regions: [[25, 43], [43, 61]]
+  Successful interval: 49-70
+  Keyframes: [1, 49, 66, 70]
+  Success detected: True
+  Confidence: 0.78
+
+--- Segment 6/6 ---
+
+============================================================
+Segment: SwingXtimes_ep98_f256-364
+  Subtask: press the button
+  Frames: 256 - 364
+============================================================
+  Loaded 109 frames
+  Prefix scoring: 55.4s
+  Rewards: [0.0, 0.3, 0.52, 0.33, 1.0, 0.67, 0.48, 0.7]
+  Failed regions: [[38, 66]]
+  Successful interval: 47-66
+  Keyframes: [1, 47, 66, 67, 107]
+  Success detected: True
+  Confidence: 0.77
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 6 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 6}
+  Mean confidence: 0.712
+  Success detected: 6/6
+  Total failed regions detected: 6
+
+All outputs saved to: data/topreward_full
+Done.
+--- Processing SwingXtimes episode 99 ---
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: SwingXtimes, Episode: 99
+  H5: data/robomme_data_h5/record_dataset_SwingXtimes.h5
+  Found 10 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 10 segments
+============================================================
+
+--- Segment 1/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f0-112
+  Subtask: pick up the red cube
+  Frames: 0 - 112
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 55.3s
+  Rewards: [0.08, 0.0, 0.69, 0.92, 0.78, 0.82, 0.78, 1.0]
+  Failed regions: [[54, 83]]
+  Successful interval: 92-112
+  Keyframes: [0, 92, 101, 112]
+  Success detected: True
+  Confidence: 0.56
+
+--- Segment 2/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f113-143
+  Subtask: move to the top of the right-side target for the first time
+  Frames: 113 - 143
+============================================================
+  Loaded 31 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.53, 0.87, 1.0, 1.0, 0.8, 1.0, 0.53]
+  Failed regions: [[18, 26]]
+  Successful interval: 20-26
+  Keyframes: [2, 20, 21, 26, 30]
+  Success detected: True
+  Confidence: 0.54
+
+--- Segment 3/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f144-181
+  Subtask: move to the top of the left-side target for the first time
+  Frames: 144 - 181
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.42, 0.42, 1.0, 0.67, 0.5, 0.42, 0.08]
+  Failed regions: []
+  Successful interval: 11-18
+  Keyframes: [0, 11, 17, 18, 36]
+  Success detected: True
+  Confidence: 0.75
+
+--- Segment 4/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f182-219
+  Subtask: move to the top of the right-side target for the second time
+  Frames: 182 - 219
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.0, 0.55, 0.4, 0.7, 0.95, 1.0, 0.65, 0.8]
+  Failed regions: [[8, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [3, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.41
+
+--- Segment 5/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f220-257
+  Subtask: move to the top of the left-side target for the second time
+  Frames: 220 - 257
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.09, 0.0, 0.18, 1.0, 0.45, 0.73, 0.09, 0.82]
+  Failed regions: [[18, 27], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [0, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 6/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f258-295
+  Subtask: move to the top of the right-side target for the third time
+  Frames: 258 - 295
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.82, 0.64, 0.91, 1.0, 1.0, 0.73, 0.82]
+  Failed regions: [[8, 22], [27, 37]]
+  Successful interval: 30-37
+  Keyframes: [3, 30, 31, 37]
+  Success detected: True
+  Confidence: 0.38
+
+--- Segment 7/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f296-333
+  Subtask: move to the top of the left-side target for the third time
+  Frames: 296 - 333
+============================================================
+  Loaded 38 frames
+  Prefix scoring: 54.3s
+  Rewards: [0.12, 0.0, 0.12, 0.75, 1.0, 1.0, 0.5, 0.5]
+  Failed regions: []
+  Successful interval: 6-22
+  Keyframes: [0, 6, 19, 22, 37]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 8/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f334-373
+  Subtask: put the red cube on the table
+  Frames: 334 - 373
+============================================================
+  Loaded 40 frames
+  Prefix scoring: 54.1s
+  Rewards: [0.0, 0.15, 0.0, 0.15, 0.69, 0.77, 1.0, 0.69]
+  Failed regions: []
+  Successful interval: 12-34
+  Keyframes: [8, 12, 31, 34, 39]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 9/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f374-430
+  Subtask: press the button
+  Frames: 374 - 430
+============================================================
+  Loaded 57 frames
+  Prefix scoring: 54.5s
+  Rewards: [0.0, 0.45, 0.64, 0.73, 0.55, 1.0, 1.0, 0.82]
+  Failed regions: [[26, 41]]
+  Successful interval: 32-41
+  Keyframes: [0, 32, 41, 42, 56]
+  Success detected: True
+  Confidence: 0.65
+
+--- Segment 10/10 ---
+
+============================================================
+Segment: SwingXtimes_ep99_f374-471
+  Subtask: press the button
+  Frames: 374 - 471
+============================================================
+  Loaded 98 frames
+  Prefix scoring: 54.4s
+  Rewards: [0.0, 0.59, 0.29, 0.76, 0.82, 0.82, 1.0, 0.71]
+  Failed regions: [[21, 59]]
+  Successful interval: 67-84
+  Keyframes: [1, 67, 82, 84, 97]
+  Success detected: True
+  Confidence: 0.55
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 10 segments
+  Skipped: 0 segments
+  Environments: {'SwingXtimes': 10}
+  Mean confidence: 0.635
+  Success detected: 10/10
+  Total failed regions detected: 10
+
+All outputs saved to: data/topreward_full
+Done.

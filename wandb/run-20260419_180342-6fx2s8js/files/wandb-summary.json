@@ -1,0 +1,1 @@
+{"temporal_diversity":81.98877930548994,"_timestamp":1.776636456334731e+09,"_step":0,"_wandb":{"runtime":772},"approx_kl":2.5608253479003906,"policy_loss":0.5716012120246887,"mean_reward":0.002536758780479431,"grad_norm":46.04657745361328,"mean_entropy":5.277162551879883,"avg_selected_age":134.681640625,"_runtime":772.050615932,"value_loss":0.9924572706222534}

@@ -1,0 +1,62 @@
+]11;?[cmax_token_len: 64
+max_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using frame_sampling type
+
+max_token_len:  64
+====== Using History, Representation Type: perceptual , Integration Type: modulation ======
+Perceptual Memory using frame_sampling type
+
+Step 0: grad_norm=1.3801, llm_grad_norm=1.3680, loss=0.0896, mem_enc_norm=0.1175, param_norm=1815.5465
+Step 100: grad_norm=0.6418, llm_grad_norm=0.6348, loss=0.0645, mem_enc_norm=0.0538, param_norm=1815.5463
+Step 200: grad_norm=0.1316, llm_grad_norm=0.1289, loss=0.0333, mem_enc_norm=0.0097, param_norm=1815.5463
+Step 300: grad_norm=0.1427, llm_grad_norm=0.1409, loss=0.0253, mem_enc_norm=0.0090, param_norm=1815.5463
+Step 400: grad_norm=0.1594, llm_grad_norm=0.1579, loss=0.0213, mem_enc_norm=0.0090, param_norm=1815.5465
+Step 500: grad_norm=0.1643, llm_grad_norm=0.1628, loss=0.0194, mem_enc_norm=0.0094, param_norm=1815.5465
+Step 600: grad_norm=0.1654, llm_grad_norm=0.1639, loss=0.0175, mem_enc_norm=0.0096, param_norm=1815.5471
+Step 700: grad_norm=0.1648, llm_grad_norm=0.1633, loss=0.0161, mem_enc_norm=0.0100, param_norm=1815.5475
+Step 800: grad_norm=0.1555, llm_grad_norm=0.1540, loss=0.0149, mem_enc_norm=0.0096, param_norm=1815.5481
+Step 900: grad_norm=0.1500, llm_grad_norm=0.1484, loss=0.0142, mem_enc_norm=0.0100, param_norm=1815.5487
+Step 1000: grad_norm=0.1477, llm_grad_norm=0.1461, loss=0.0135, mem_enc_norm=0.0100, param_norm=1815.5499
+Step 1100: grad_norm=0.1404, llm_grad_norm=0.1388, loss=0.0126, mem_enc_norm=0.0097, param_norm=1815.5510
+Step 1200: grad_norm=0.1386, llm_grad_norm=0.1369, loss=0.0120, mem_enc_norm=0.0103, param_norm=1815.5525
+Step 1300: grad_norm=0.1348, llm_grad_norm=0.1331, loss=0.0115, mem_enc_norm=0.0101, param_norm=1815.5543
+Step 1400: grad_norm=0.1240, llm_grad_norm=0.1222, loss=0.0113, mem_enc_norm=0.0095, param_norm=1815.5562
+Step 1500: grad_norm=0.1197, llm_grad_norm=0.1179, loss=0.0109, mem_enc_norm=0.0097, param_norm=1815.5586
+Step 1600: grad_norm=0.1189, llm_grad_norm=0.1170, loss=0.0106, mem_enc_norm=0.0103, param_norm=1815.5612
+Step 1700: grad_norm=0.1119, llm_grad_norm=0.1099, loss=0.0102, mem_enc_norm=0.0105, param_norm=1815.5643
+Step 1800: grad_norm=0.1046, llm_grad_norm=0.1026, loss=0.0101, mem_enc_norm=0.0103, param_norm=1815.5681
+Step 1900: grad_norm=0.1085, llm_grad_norm=0.1061, loss=0.0099, mem_enc_norm=0.0125, param_norm=1815.5728
+Step 2000: grad_norm=0.0988, llm_grad_norm=0.0955, loss=0.0092, mem_enc_norm=0.0164, param_norm=1815.5778
+Step 2100: grad_norm=0.0970, llm_grad_norm=0.0923, loss=0.0088, mem_enc_norm=0.0219, param_norm=1815.5831
+Step 2200: grad_norm=0.0930, llm_grad_norm=0.0863, loss=0.0085, mem_enc_norm=0.0272, param_norm=1815.5884
+Step 2300: grad_norm=0.0916, llm_grad_norm=0.0849, loss=0.0082, mem_enc_norm=0.0263, param_norm=1815.5944
+Step 2400: grad_norm=0.0823, llm_grad_norm=0.0768, loss=0.0078, mem_enc_norm=0.0222, param_norm=1815.6006
+Step 2500: grad_norm=0.0825, llm_grad_norm=0.0752, loss=0.0075, mem_enc_norm=0.0259, param_norm=1815.6077
+Step 2600: grad_norm=0.0802, llm_grad_norm=0.0734, loss=0.0074, mem_enc_norm=0.0248, param_norm=1815.6155
+Step 2700: grad_norm=0.0723, llm_grad_norm=0.0665, loss=0.0072, mem_enc_norm=0.0213, param_norm=1815.6234
+Step 2800: grad_norm=0.0751, llm_grad_norm=0.0684, loss=0.0072, mem_enc_norm=0.0238, param_norm=1815.6322
+Step 2900: grad_norm=0.0757, llm_grad_norm=0.0676, loss=0.0070, mem_enc_norm=0.0264, param_norm=1815.6414
+Step 3000: grad_norm=0.0671, llm_grad_norm=0.0607, loss=0.0069, mem_enc_norm=0.0214, param_norm=1815.6512
+Step 3100: grad_norm=0.0643, llm_grad_norm=0.0565, loss=0.0067, mem_enc_norm=0.0238, param_norm=1815.6619
+Step 3200: grad_norm=0.0640, llm_grad_norm=0.0569, loss=0.0066, mem_enc_norm=0.0233, param_norm=1815.6726
+Step 3300: grad_norm=0.0612, llm_grad_norm=0.0551, loss=0.0063, mem_enc_norm=0.0200, param_norm=1815.6841
+Step 3400: grad_norm=0.0616, llm_grad_norm=0.0551, loss=0.0064, mem_enc_norm=0.0211, param_norm=1815.6967
+Step 3500: grad_norm=0.0647, llm_grad_norm=0.0575, loss=0.0062, mem_enc_norm=0.0231, param_norm=1815.7103
+Step 3600: grad_norm=0.0638, llm_grad_norm=0.0551, loss=0.0061, mem_enc_norm=0.0253, param_norm=1815.7239
+Step 3700: grad_norm=0.0605, llm_grad_norm=0.0532, loss=0.0058, mem_enc_norm=0.0228, param_norm=1815.7390
+Step 3800: grad_norm=0.0609, llm_grad_norm=0.0541, loss=0.0058, mem_enc_norm=0.0222, param_norm=1815.7540
+Step 3900: grad_norm=0.0624, llm_grad_norm=0.0539, loss=0.0057, mem_enc_norm=0.0248, param_norm=1815.7703
+Step 4000: grad_norm=0.0561, llm_grad_norm=0.0479, loss=0.0055, mem_enc_norm=0.0233, param_norm=1815.7869
+Step 4100: grad_norm=0.0556, llm_grad_norm=0.0490, loss=0.0055, mem_enc_norm=0.0203, param_norm=1815.8038
+Step 4200: grad_norm=0.0576, llm_grad_norm=0.0499, loss=0.0055, mem_enc_norm=0.0232, param_norm=1815.8214
+Step 4300: grad_norm=0.0583, llm_grad_norm=0.0504, loss=0.0055, mem_enc_norm=0.0232, param_norm=1815.8412
+Step 4400: grad_norm=0.0548, llm_grad_norm=0.0476, loss=0.0053, mem_enc_norm=0.0217, param_norm=1815.8616
+Step 4500: grad_norm=0.0582, llm_grad_norm=0.0471, loss=0.0053, mem_enc_norm=0.0276, param_norm=1815.8822
+Step 4600: grad_norm=0.0530, llm_grad_norm=0.0449, loss=0.0051, mem_enc_norm=0.0231, param_norm=1815.9034
+Step 4700: grad_norm=0.0539, llm_grad_norm=0.0452, loss=0.0052, mem_enc_norm=0.0242, param_norm=1815.9255
+Step 4800: grad_norm=0.0569, llm_grad_norm=0.0482, loss=0.0050, mem_enc_norm=0.0250, param_norm=1815.9487
+Step 4900: grad_norm=0.0547, llm_grad_norm=0.0470, loss=0.0051, mem_enc_norm=0.0226, param_norm=1815.9722
+Step 5000: grad_norm=0.0612, llm_grad_norm=0.0512, loss=0.0052, mem_enc_norm=0.0282, param_norm=1815.9968
+Step 5100: grad_norm=0.0506, llm_grad_norm=0.0421, loss=0.0048, mem_enc_norm=0.0234, param_norm=1816.0226
+Step 5200: grad_norm=0.0511, llm_grad_norm=0.0428, loss=0.0049, mem_enc_norm=0.0228, param_norm=1816.0477

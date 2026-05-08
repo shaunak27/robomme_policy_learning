@@ -1,0 +1,182 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033300
+SLURM_ARRAY_TASK_ID: 3
+TASK:                InsertPeg
+HOSTNAME:            trublu.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Wed Apr 29 11:20:15 PM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: InsertPeg, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_InsertPeg.h5
+  Sampled episodes: [3, 14, 81]
+  Found 9 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 9 segments
+============================================================
+
+--- Segment 1/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f217-334
+  Subtask: pick up the peg by grasping the far end
+  Frames: 217 - 334
+============================================================
+  Loaded 118 frames
+  Prefix scoring: 34.6s
+  Rewards: [0.02, 0.0, 0.62, 0.45, 0.62, 0.55, 1.0, 0.74]
+  Failed regions: [[41, 71]]
+  Successful interval: 81-101
+  Keyframes: [81, 97]
+  Success detected: True
+  Confidence: 0.68
+
+--- Segment 2/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-414
+  Subtask: insert the peg from the right side
+  Frames: 335 - 414
+============================================================
+  Loaded 80 frames
+  Prefix scoring: 33.7s
+  Rewards: [0.19, 0.59, 0.37, 0.0, 0.07, 1.0, 0.96, 1.0]
+  Failed regions: [[18, 48]]
+  Successful interval: 34-58
+  Keyframes: [34, 50, 58]
+  Success detected: True
+  Confidence: 0.90
+
+--- Segment 3/9 ---
+
+============================================================
+Segment: InsertPeg_ep3_f335-433
+  Subtask: insert the peg from the right side
+  Frames: 335 - 433
+============================================================
+  Loaded 99 frames
+  Prefix scoring: 33.9s
+  Rewards: [0.25, 0.47, 0.0, 0.0, 0.81, 0.88, 1.0, 0.94]
+  Failed regions: [[21, 47], [21, 59]]
+  Successful interval: 43-85
+  Keyframes: [43, 83]
+  Success detected: True
+  Confidence: 0.89
+
+--- Segment 4/9 ---
+
+============================================================
+Segment: InsertPeg_ep14_f222-327
+  Subtask: pick up the peg by grasping the near end
+  Frames: 222 - 327
+============================================================
+  Loaded 106 frames
+  Prefix scoring: 33.9s
+  Rewards: [0.0, 0.0, 0.51, 0.41, 0.45, 0.24, 0.27, 1.0]
+  Failed regions: [[37, 64], [64, 91]]
+  Successful interval: 72-105
+  Keyframes: [72, 91, 105]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 5/9 ---
+
+============================================================
+Segment: InsertPeg_ep14_f328-439
+  Subtask: insert the peg from the right side
+  Frames: 328 - 439
+============================================================
+  Loaded 112 frames
+  Prefix scoring: 33.8s
+  Rewards: [0.47, 1.0, 0.95, 0.79, 0.21, 0.37, 0.53, 0.0]
+  Failed regions: []
+  Successful interval: 6-25
+  Keyframes: [6, 23]
+  Success detected: True
+  Confidence: 0.70
+
+--- Segment 6/9 ---
+
+============================================================
+Segment: InsertPeg_ep14_f328-440
+  Subtask: insert the peg from the right side
+  Frames: 328 - 440
+============================================================
+  Loaded 113 frames
+  Prefix scoring: 34.2s
+  Rewards: [0.44, 1.0, 0.94, 0.78, 0.17, 0.39, 0.78, 0.0]
+  Failed regions: []
+  Successful interval: 6-25
+  Keyframes: [6, 23]
+  Success detected: True
+  Confidence: 0.71
+
+--- Segment 7/9 ---
+
+============================================================
+Segment: InsertPeg_ep81_f293-422
+  Subtask: pick up the peg by grasping the near end
+  Frames: 293 - 422
+============================================================
+  Loaded 130 frames
+  Prefix scoring: 33.6s
+  Rewards: [0.0, 0.03, 0.22, 0.06, 0.84, 1.0, 0.72, 0.97]
+  Failed regions: [[46, 79]]
+  Successful interval: 56-95
+  Keyframes: [56, 77, 95]
+  Success detected: True
+  Confidence: 0.88
+
+--- Segment 8/9 ---
+
+============================================================
+Segment: InsertPeg_ep81_f423-581
+  Subtask: insert the peg from the right side
+  Frames: 423 - 581
+============================================================
+  Loaded 159 frames
+  Prefix scoring: 34.3s
+  Rewards: [0.36, 0.82, 0.59, 0.0, 0.14, 0.23, 0.45, 1.0]
+  Failed regions: [[35, 96]]
+  Successful interval: 69-158
+  Keyframes: [69, 153]
+  Success detected: True
+  Confidence: 0.91
+
+--- Segment 9/9 ---
+
+============================================================
+Segment: InsertPeg_ep81_f423-585
+  Subtask: insert the peg from the right side
+  Frames: 423 - 585
+============================================================
+  Loaded 163 frames
+  Prefix scoring: 34.0s
+  Rewards: [0.05, 0.73, 0.45, 0.0, 0.32, 0.23, 0.09, 1.0]
+  Failed regions: [[36, 99], [99, 162]]
+  Successful interval: 133-162
+  Keyframes: [133, 150, 162]
+  Success detected: True
+  Confidence: 0.89
+
+============================================================
+Step 4: Summary
+============================================================
+  Processed: 9 segments
+  Skipped: 0 segments
+  Environments: {'InsertPeg': 9}
+  Mean confidence: 0.821
+  Success detected: 9/9
+  Total failed regions detected: 10
+
+All outputs saved to: data/topreward_labels
+Done.

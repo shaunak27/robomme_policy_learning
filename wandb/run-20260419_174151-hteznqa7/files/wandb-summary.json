@@ -1,0 +1,1 @@
+{"avg_selected_age":127.662109375,"mean_reward":-0.004422199446707964,"temporal_diversity":77.41178118974666,"value_loss":1.0712299346923828,"mean_entropy":5.166127681732178,"approx_kl":3.530163288116455,"_step":0,"grad_norm":56.76062774658203,"_wandb":{"runtime":1280},"_runtime":1280.945280305,"_timestamp":1.776635809192999e+09,"policy_loss":0.5933901071548462}

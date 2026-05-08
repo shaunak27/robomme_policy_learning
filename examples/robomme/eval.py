@@ -58,6 +58,7 @@ class Args:
     qwenvl_simpleSG_adapter_path: str = "runs/ckpts/vlm_subgoal_predictor/qwenvl/simple_subgoal/checkpoint-1400"
     qwenvl_groundSG_adapter_path: str = "runs/ckpts/vlm_subgoal_predictor/qwenvl/grounded_subgoal/checkpoint-1200"
     memer_adapter_path: str = "runs/ckpts/vlm_subgoal_predictor/memer/grounded_subgoal/checkpoint-1300"
+    episode_fraction: float = 1.0 # fraction of episodes per task to evaluate (e.g. 0.2 for 20%)
     subgoal_keep_period: int = 1 # ever subgoal should be kept for this many steps
     # this can accelerate the evaluation process for symbolic memory
     # In our experiments, we just set this to 1
@@ -110,8 +111,9 @@ class EpisodeEvaluator:
                     break
 
                 action_chunk = self.get_action_chunk(
-                    client, epstate, img, wrist_img, robot_state, prompt, subgoal, 
-                    exec_horizon=self.args.obs_horizon
+                    client, epstate, img, wrist_img, robot_state, prompt, subgoal,
+                    exec_horizon=self.args.obs_horizon,
+                    task_name=env_runner.env_id,
                 )
 
                 epstate.action_plan.extend(action_chunk)
@@ -129,7 +131,15 @@ class EpisodeEvaluator:
 
             img, wrist_img, robot_state = obs
 
-            epstate.add_observation(img, wrist_img, robot_state)
+            # Detect subgoal boundary for oracle keyframe sampling
+            current_subgoal = env_runner.simple_subgoal_oracle
+            is_boundary = (epstate.last_subgoal is not None
+                           and current_subgoal != epstate.last_subgoal)
+            epstate.last_subgoal = current_subgoal
+
+            epstate.add_observation(img, wrist_img, robot_state,
+                                    is_subgoal_boundary=is_boundary,
+                                    subgoal_label=current_subgoal)
             recorder.record(
                 image=img.copy(),
                 wrist_image=wrist_img.copy(),
@@ -167,6 +177,16 @@ class EpisodeEvaluator:
         epstate.image_buffer.extend(pre_traj["images"])
         epstate.wrist_image_buffer.extend(pre_traj["wrist_images"])
         epstate.state_buffer.extend(pre_traj["states"])
+        # Pre-trajectory frames have no subgoal boundaries
+        n_pretraj = len(pre_traj["images"])
+        epstate.boundary_buffer.extend([False] * n_pretraj)
+        # Label demo frames for density sampling segment tracking
+        if env_runner.env_id in TASK_WITH_VIDEO_DEMO:
+            # Last pre-traj frame is the first exec observation, rest are demo
+            epstate.subgoal_label_buffer.extend(["video_demo"] * (n_pretraj - 1))
+            epstate.subgoal_label_buffer.append("")  # first exec frame, label not yet known
+        else:
+            epstate.subgoal_label_buffer.extend([""] * n_pretraj)
 
         for i in range(len(pre_traj["images"])):
             recorder.record(
@@ -201,12 +221,16 @@ class EpisodeEvaluator:
         prompt: str,
         subgoal: Optional[str],
         exec_horizon: int,
+        task_name: Optional[str] = None,
     ) -> list:
         if self.args.use_history:
             resp = client.add_buffer(pack_buffer(
                 state.image_buffer,
                 state.state_buffer,
                 state.exec_start_idx,
+                boundary_buffer=state.boundary_buffer,
+                subgoal_label_buffer=state.subgoal_label_buffer,
+                task_name=task_name,
             ))
             while not resp.get("add_buffer_finished", False):
                 time.sleep(0.1)
@@ -317,7 +341,7 @@ def evaluate(args: Args):
                 log_dict[task_name] = {}
 
             env_runner = EnvRunner(task_name, video_save_dir, max_steps=args.max_steps)
-            num_episodes = env_runner.num_episodes
+            num_episodes = max(1, int(env_runner.num_episodes * args.episode_fraction))
 
             success_flag = "unknown"
 

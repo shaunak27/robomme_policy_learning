@@ -1,0 +1,123 @@
+{
+  "BinFill": {
+    "rules": [
+      "\"pick up the first X cube\", where X = color needs no memory.",
+      "\"put in into the bin\" needs no memory",
+      "pick up the Nth X cube where N = (second, third, fourth, fifth...) needs all tuples before it of (pick up first cube, put into bin ....)",
+      "press the button needs all tuples before it of (pick up first cube, put into bin ....)"
+    ],
+    "updated": "2026-05-03T21:56:32.726366+00:00"
+  },
+  "_updated": "2026-05-04T04:22:28.751013+00:00",
+  "ButtonUnmask": {
+    "rules": [
+      "press the button needs no memory",
+      "put down the container does not need any memory",
+      "pick up the container needs all of the past, especially initial segment where unmasked state is present"
+    ],
+    "updated": "2026-05-03T22:00:14.116887+00:00"
+  },
+  "ButtonUnmaskSwap": {
+    "rules": [
+      "press the first button needs no memory",
+      "press the second button needs press the first button",
+      "put down the contain does not need any memory",
+      "pick up instructions needs all of the past, especially initial segments (where unmasking and swapping happen)"
+    ],
+    "updated": "2026-05-03T22:01:58.971572+00:00"
+  },
+  "InsertPeg": {
+    "rules": [
+      "Note: Rules only apply to exec subtasks",
+      "pick up the peg by grasping the far end needs corresponding video segment",
+      "insert the peg needs corresponding video segment"
+    ],
+    "updated": "2026-05-03T22:22:05.251939+00:00"
+  },
+  "MoveCube": {
+    "rules": [
+      "all need corresponding video segment succeeding video segment",
+      "no need of previous exec segments"
+    ],
+    "updated": "2026-05-04T00:54:48.924916+00:00"
+  },
+  "PatternLock": {
+    "rules": [
+      "need corresponding video segment",
+      "needs all previous exec segments"
+    ],
+    "updated": "2026-05-04T00:56:46.364597+00:00"
+  },
+  "PickHighlight": {
+    "rules": [
+      "all pick up subtasks need \"press the button\" subtask",
+      "place the cube onto the table needs no past segments",
+      "pick up the Nth highlighted cube, which is X needs pick up the first which is Y, second ... pick up the N-1th cube which is Z"
+    ],
+    "updated": "2026-05-04T01:15:08.376726+00:00"
+  },
+  "PickXtimes": {
+    "rules": [
+      "all pick cube for Nth time subtasks need (pick 1, place 1 ... pick N-1, place N-1) as memory",
+      "place tasks do not need memory"
+    ],
+    "updated": "2026-05-04T01:30:15.813465+00:00"
+  },
+  "RouteStick": {
+    "rules": [
+      "all subtasks need the whole video demo",
+      "maybe sample corresponding segment from video more densely",
+      "add a few uniformly sampled frames from past execution"
+    ],
+    "updated": "2026-05-04T02:14:55.762000+00:00"
+  },
+  "StopCube": {
+    "rules": [
+      "sample uniformly (keyframes) at every step"
+    ],
+    "updated": "2026-05-04T02:17:26.894800+00:00"
+  },
+  "SwingXtimes": {
+    "rules": [
+      "all subtasks need all of the past (uniform)"
+    ],
+    "updated": "2026-05-04T02:20:28.179008+00:00"
+  },
+  "VideoPlaceButton": {
+    "rules": [
+      "choose only corresponding segment in the video (based on before/after button was pressed)"
+    ],
+    "updated": "2026-05-04T02:38:47.343836+00:00"
+  },
+  "VideoPlaceOrder": {
+    "rules": [
+      "all exec subtasks should look at all video demo subtasks with labels \"drop the cube onto target\", \"press the button\" and \"static\" and \"drop the cube onto table\""
+    ],
+    "updated": "2026-05-04T02:44:24.752593+00:00"
+  },
+  "VideoRepick": {
+    "rules": [
+      "all pick up tasks need to look at entire video",
+      "pick up the Nth X cube where N = (second, third, fourth, fifth...) needs all tuples before it of (pick up first cube, put into down ....)",
+      "put it down needs uniform memory across everything",
+      "press the button gets all pick and place ones till now from exec and a short glimpse of the video"
+    ],
+    "updated": "2026-05-04T04:22:28.750984+00:00"
+  },
+  "VideoUnmask": {
+    "rules": [
+      "all pick up container tasks need keyframes from video demo",
+      "all put down tasks might need uniformly sampled frames throughout the demo",
+      "all pick up container tasks need all previous \"pick up the container, put down the container\" tuples from the exec part as well"
+    ],
+    "updated": "2026-05-04T02:50:03.771171+00:00"
+  },
+  "VideoUnmaskSwap": {
+    "rules": [
+      "all pick up container tasks need keyframes from video demo",
+      "put down the contain can use uniformly sampled frames across the whole demo",
+      "pick up the container can use previous pick up the container segments in the exec part of the demo as well"
+    ],
+    "updated": "2026-05-04T03:04:36.576655+00:00"
+  }
+}

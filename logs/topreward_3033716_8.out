@@ -1,0 +1,89 @@
+===== TOPReward Labeling =====
+SLURM_JOB_ID:       3033750
+SLURM_ARRAY_TASK_ID: 8
+TASK:                RouteStick
+HOSTNAME:            dave.cc.gatech.edu
+GPU:                 NVIDIA A40
+STARTED:             Thu Apr 30 12:36:50 AM EDT 2026
+==============================
+============================================================
+Step 1: Sampling episodes
+============================================================
+  Task: RouteStick, sampling 3 episodes
+  H5: data/robomme_data_h5/record_dataset_RouteStick.h5
+  Sampled episodes: [3, 14, 81]
+  Found 13 subtask segments
+
+============================================================
+Step 2: Loading Qwen VL model
+============================================================
+  Model: Qwen/Qwen3-VL-8B-Instruct
+  Device: cuda, dtype: auto
+
+============================================================
+Step 3: Processing 13 segments
+============================================================
+
+--- Segment 1/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f250-299
+  Subtask: move to the nearest left target by circling around the stick counterclockwise
+  Frames: 250 - 299
+  First subtask: True
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 55.4s
+  Rewards (raw): [0.0, 0.59, 0.94, 0.47, 0.24, 0.29, 1.0, 0.88]
+  Rewards (mono): [0.0, 0.59, 0.94, 0.94, 0.94, 0.94, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 0-49
+  Keyframes: [{'frame': 0, 'role': 'start'}, {'frame': 5, 'role': 'early_transition'}, {'frame': 7, 'role': 'peak_transition'}, {'frame': 11, 'role': 'late_transition'}, {'frame': 17, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.83
+
+--- Segment 2/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f300-349
+  Subtask: move to the nearest left target by circling around the stick clockwise
+  Frames: 300 - 349
+  First subtask: False
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.4s
+  Rewards (raw): [0.0, 0.67, 0.5, 1.0, 1.0, 0.5, 1.0, 1.0]
+  Rewards (mono): [0.0, 0.67, 0.67, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 3-49
+  Keyframes: [{'frame': 3, 'role': 'start'}, {'frame': 5, 'role': 'early_transition'}, {'frame': 9, 'role': 'peak_transition'}, {'frame': 16, 'role': 'late_transition'}, {'frame': 23, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.86
+
+--- Segment 3/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f350-399
+  Subtask: move to the nearest right target by circling around the stick clockwise
+  Frames: 350 - 399
+  First subtask: False
+============================================================
+  Loaded 50 frames
+  Prefix scoring: 54.4s
+  Rewards (raw): [0.0, 0.73, 0.73, 1.0, 0.87, 0.8, 0.93, 0.87]
+  Rewards (mono): [0.0, 0.73, 0.73, 1.0, 1.0, 1.0, 1.0, 1.0]
+  Failed regions: []
+  Successful interval: 3-49
+  Keyframes: [{'frame': 3, 'role': 'start'}, {'frame': 8, 'role': 'early_transition'}, {'frame': 16, 'role': 'late_transition'}, {'frame': 23, 'role': 'completion'}]
+  Success detected: True
+  Confidence: 0.85
+
+--- Segment 4/13 ---
+
+============================================================
+Segment: RouteStick_ep3_f400-449
+  Subtask: move to the nearest left target by circling around the stick clockwise
+  Frames: 400 - 449
+  First subtask: False
+============================================================
+  Loaded 50 frames

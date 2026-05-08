@@ -1,0 +1,46 @@
+/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /nethome/shalbe3/.netrc.
+wandb: Currently logged in as: shaunak-halbe (shalbe) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 9og89bxh
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /nethome/shalbe3/robomme_policy_learning/wandb/run-20260421_174338-9og89bxh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rl_selector_v2
+wandb: ⭐️ View project at https://wandb.ai/shalbe/rl-frame-selector
+wandb: 🚀 View run at https://wandb.ai/shalbe/rl-frame-selector/runs/9og89bxh
+  0%|          | 0/1512 [00:00<?, ?it/s]  0%|          | 0/1512 [00:00<?, ?it/s]
+ValueError: could not convert string to float: b'\x9e@'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 637, in <module>
+    main()
+  File "/nethome/shalbe3/robomme_policy_learning/scripts/train_selector_v2.py", line 543, in main
+    raw_batch = next(data_iter)
+                ^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 732, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 788, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/coc/testnvme/shalbe3/miniconda/envs/robomme/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/selector/dataset_v2.py", line 318, in __getitem__
+    return self._datasets[i][local]
+           ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/selector/dataset_v2.py", line 234, in __getitem__
+    cand = self._build_candidate_tensors(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/shalbe3/robomme_policy_learning/src/mme_vla_suite/selector/dataset_v2.py", line 198, in _build_candidate_tensors
+    cand_detail_img[:n] = raw_img[:n].astype(np.float32)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence.
+srun: error: dave: task 0: Exited with exit code 1
+srun: Terminating StepId=2920026.0
