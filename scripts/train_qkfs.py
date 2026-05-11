@@ -101,6 +101,8 @@ def parse_args() -> tuple[QKFSConfig, list[str] | None, int]:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--tasks", type=str, nargs="*", default=None,
                         help="Task(s) to train on. Default: all tasks.")
+    parser.add_argument("--episode_range", type=str, default=None,
+                        help="Episode range to use, e.g. '0-79' for train split. Default: all episodes.")
     args = parser.parse_args()
 
     num_train_steps = args.num_train_steps
@@ -151,7 +153,7 @@ def parse_args() -> tuple[QKFSConfig, list[str] | None, int]:
         wandb_project=args.wandb_project,
         log_interval=args.log_interval,
         save_interval=save_interval,
-    ), args.tasks, args.num_workers
+    ), args.tasks, args.num_workers, args.episode_range
 
 
 # ---------------------------------------------------------------------------
@@ -269,7 +271,14 @@ def main():
             process_id=int(os.environ.get("SLURM_PROCID", 0)),
         )
 
-    config, tasks, num_workers = parse_args()
+    config, tasks, num_workers, episode_range = parse_args()
+
+    # Parse episode range (e.g. "0-79" -> {0,1,...,79})
+    episode_ids = None
+    if episode_range is not None:
+        start, end = episode_range.split("-")
+        episode_ids = set(range(int(start), int(end) + 1))
+        logger.info("Episode filter: %d episodes (%s)", len(episode_ids), episode_range)
     num_devices = jax.device_count()
     local_devices = jax.local_device_count()
     process_id = jax.process_index()
@@ -317,6 +326,7 @@ def main():
             task_name=t,
             config=config,
             topreward_dir=config.topreward_dir,
+            episode_ids=episode_ids,
         )
         logger.info("Task %s: %d samples", t, len(ds))
         datasets.append(ds)
@@ -378,7 +388,9 @@ def main():
     )
 
     # ---- Training loop ----
-    os.makedirs(config.checkpoint_dir, exist_ok=True)
+    # Use exp_name to separate checkpoint directories
+    ckpt_dir = os.path.join(config.checkpoint_dir, config.exp_name)
+    os.makedirs(ckpt_dir, exist_ok=True)
     pbar = tqdm.tqdm(range(config.num_train_steps), dynamic_ncols=True)
 
     samples_per_epoch = len(dataset)
@@ -452,7 +464,7 @@ def main():
 
 
 def _save_checkpoint(model: QKFS, config: QKFSConfig, step):
-    ckpt_path = os.path.join(config.checkpoint_dir, f"step_{step}")
+    ckpt_path = os.path.join(config.checkpoint_dir, config.exp_name, f"step_{step}")
     os.makedirs(ckpt_path, exist_ok=True)
     params = jax.device_get(nnx.state(model))
     with open(os.path.join(ckpt_path, "qkfs_params.pkl"), "wb") as f:

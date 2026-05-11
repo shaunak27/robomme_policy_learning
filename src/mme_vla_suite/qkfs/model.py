@@ -117,7 +117,7 @@ class QueryEncoder(nnx.Module):
         d = config.hidden_dim
 
         # Input projections
-        self.instruction_proj = nnx.Linear(config.frame_emb_dim, d, rngs=rngs)
+        self.instruction_proj = nnx.Linear(config.instruction_emb_dim, d, rngs=rngs)
         self.obs_proj = nnx.Linear(config.frame_emb_dim, d, rngs=rngs)
         self.recent_proj = nnx.Linear(config.frame_emb_dim, d, rngs=rngs)
         self.proprio_proj = nnx.Linear(config.proprio_dim, d, rngs=rngs)
@@ -138,7 +138,7 @@ class QueryEncoder(nnx.Module):
 
     def __call__(
         self,
-        instruction_emb: jnp.ndarray,   # (B, frame_emb_dim)
+        instruction_emb: jnp.ndarray,   # (B, instruction_emb_dim)
         current_obs_emb: jnp.ndarray,   # (B, frame_emb_dim)
         recent_embs: jnp.ndarray,       # (B, R, frame_emb_dim)
         recent_mask: jnp.ndarray,       # (B, R) bool
@@ -268,7 +268,7 @@ class QKFS(nnx.Module):
 
     def encode_query(
         self,
-        instruction_emb: jnp.ndarray,   # (B, frame_emb_dim)
+        instruction_emb: jnp.ndarray,   # (B, instruction_emb_dim)
         current_obs_emb: jnp.ndarray,   # (B, frame_emb_dim)
         recent_embs: jnp.ndarray,       # (B, R, frame_emb_dim)
         recent_mask: jnp.ndarray,       # (B, R) bool
@@ -323,7 +323,7 @@ class QKFS(nnx.Module):
 
     def forward(
         self,
-        instruction_emb: jnp.ndarray,   # (B, frame_emb_dim)
+        instruction_emb: jnp.ndarray,   # (B, instruction_emb_dim)
         current_obs_emb: jnp.ndarray,   # (B, frame_emb_dim)
         recent_embs: jnp.ndarray,       # (B, R, frame_emb_dim)
         recent_mask: jnp.ndarray,       # (B, R) bool

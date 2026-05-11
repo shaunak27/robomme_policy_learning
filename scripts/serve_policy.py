@@ -59,6 +59,9 @@ class Args:
     # Optional: path to a trained RL frame selector checkpoint directory.
     selector_checkpoint: str | None = None
 
+    # Optional: path to a trained QKFS selector checkpoint directory.
+    qkfs_checkpoint: str | None = None
+
 
 # Default checkpoints that should be used for each environment.
 DEFAULT_CHECKPOINT: dict[EnvMode, Checkpoint] = {
@@ -96,6 +99,10 @@ def main(args: Args) -> None:
     if args.selector_checkpoint:
         logging.info("Loading RL selector from %s", args.selector_checkpoint)
         policy.load_selector(args.selector_checkpoint)
+
+    if args.qkfs_checkpoint:
+        logging.info("Loading QKFS selector from %s", args.qkfs_checkpoint)
+        policy.load_qkfs_selector(args.qkfs_checkpoint)
 
     policy_metadata = policy.metadata
 

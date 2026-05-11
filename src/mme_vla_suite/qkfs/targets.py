@@ -212,22 +212,65 @@ def build_target_distributions(
     ]
 
     if not source_seg_indices:
-        return None
+        # No specific sources — VLA falls back to uniform over all past frames.
+        # Build a uniform target across all past segments.
+        all_past = [
+            s["idx"] for s in segments
+            if s["start_frame"] < step_idx and not _is_completed(s.get("label", ""))
+        ]
+        if not all_past:
+            return None
+        source_seg_indices = all_past
+        # Flag this as a uniform fallback (no keyframe weighting)
+        uniform_fallback = True
+    else:
+        uniform_fallback = False
 
-    # Build P_target: equal weight across relevant source subtasks
+    # Build P_target
+    seg_lookup = {s["idx"]: s for s in segments}
     n_sources = len(source_seg_indices)
-    w_j = 1.0 / n_sources
-    P_target = {idx: w_j for idx in source_seg_indices}
 
-    # Allocate frame budgets per subtask (equal by default)
-    per_seg_budget = max_frames // n_sources
-    remainder = max_frames % n_sources
+    if uniform_fallback:
+        # VLA does np.linspace(0, step_idx, max_frames) — uniform over ALL
+        # past frames, ignoring segment boundaries.  Weight each segment
+        # proportionally to its number of past frames so the combined
+        # distribution P_target[j] * T_j(i) is truly uniform.
+        seg_past_frames = {}
+        total_past = 0
+        for idx in source_seg_indices:
+            seg = seg_lookup[idx]
+            n_past = min(seg["end_frame"], step_idx - 1) - seg["start_frame"] + 1
+            n_past = max(n_past, 0)
+            seg_past_frames[idx] = n_past
+            total_past += n_past
+        if total_past == 0:
+            return None
+        P_target = {idx: seg_past_frames[idx] / total_past for idx in source_seg_indices}
+    else:
+        # Equal weight across relevant source subtasks
+        w_j = 1.0 / n_sources
+        P_target = {idx: w_j for idx in source_seg_indices}
+
+    # Allocate frame budgets per subtask proportional to weight
     seg_budgets = {}
-    for i, idx in enumerate(source_seg_indices):
-        seg_budgets[idx] = per_seg_budget + (1 if i < remainder else 0)
+    if uniform_fallback:
+        # Proportional to past frame count
+        allocated = 0
+        for i, idx in enumerate(source_seg_indices):
+            b = int(round(P_target[idx] * max_frames))
+            seg_budgets[idx] = max(b, 1) if P_target[idx] > 0 else 0
+            allocated += seg_budgets[idx]
+        # Adjust for rounding
+        diff = max_frames - allocated
+        if diff != 0 and source_seg_indices:
+            seg_budgets[source_seg_indices[0]] += diff
+    else:
+        per_seg_budget = max_frames // n_sources
+        remainder = max_frames % n_sources
+        for i, idx in enumerate(source_seg_indices):
+            seg_budgets[idx] = per_seg_budget + (1 if i < remainder else 0)
 
     # Build T_j for each relevant source subtask
-    seg_lookup = {s["idx"]: s for s in segments}
     T_j_map = {}
 
     for seg_idx in source_seg_indices:
@@ -240,30 +283,38 @@ def build_target_distributions(
             T_j_map[seg_idx] = np.zeros(0)
             continue
 
-        # Get keyframes for this segment
-        raw_kfs = density_keyframes.get(str(seg_idx), density_keyframes.get(seg_idx, []))
-        # density_keyframes are relative to segment start
-        abs_keyframes = [seg["start_frame"] + k for k in raw_kfs]
-        # Filter to only past keyframes
-        abs_keyframes = [k for k in abs_keyframes if k <= seg_end]
+        num_frames = seg_end - seg_start + 1
 
-        # Get TOPReward window
-        topreward_window = None
-        tr_info = topreward_intervals.get(seg_idx)
-        if tr_info is not None and tr_info.get("success", False):
-            tr_start = seg["start_frame"] + tr_info["start"]
-            tr_end = seg["start_frame"] + tr_info["end"]
-            # Clamp to past
-            tr_end = min(tr_end, seg_end)
-            if tr_start <= tr_end:
-                topreward_window = (tr_start, tr_end)
+        if uniform_fallback:
+            # VLA uses uniform_linspace for subtasks with no assigned sources:
+            # pure uniform distribution over all past frames, no keyframe weighting.
+            T_j = np.ones(num_frames, dtype=np.float64) / num_frames
+        else:
+            # Get keyframes for this segment
+            raw_kfs = density_keyframes.get(str(seg_idx), density_keyframes.get(seg_idx, []))
+            # density_keyframes are relative to segment start
+            abs_keyframes = [seg["start_frame"] + k for k in raw_kfs]
+            # Filter to only past keyframes
+            abs_keyframes = [k for k in abs_keyframes if k <= seg_end]
 
-        B_j = seg_budgets[seg_idx]
-        M_j = len(abs_keyframes)
+            # Get TOPReward window
+            topreward_window = None
+            tr_info = topreward_intervals.get(seg_idx)
+            if tr_info is not None and tr_info.get("success", False):
+                tr_start = seg["start_frame"] + tr_info["start"]
+                tr_end = seg["start_frame"] + tr_info["end"]
+                # Clamp to past
+                tr_end = min(tr_end, seg_end)
+                if tr_start <= tr_end:
+                    topreward_window = (tr_start, tr_end)
 
-        T_j = build_within_subtask_target(
-            seg_start, seg_end, abs_keyframes, sigma, B_j, M_j, topreward_window
-        )
+            B_j = seg_budgets[seg_idx]
+            M_j = len(abs_keyframes)
+
+            T_j = build_within_subtask_target(
+                seg_start, seg_end, abs_keyframes, sigma, B_j, M_j, topreward_window
+            )
+
         T_j_map[seg_idx] = T_j
 
     return {

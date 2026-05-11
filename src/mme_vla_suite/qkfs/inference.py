@@ -140,7 +140,7 @@ def diversity_aware_topk(
 def select_frames_qkfs(
     model: QKFS,
     config: QKFSConfig,
-    instruction_emb: np.ndarray,   # (frame_emb_dim,) — pooled instruction embedding
+    instruction_emb: np.ndarray,   # (instruction_emb_dim,) — SigLIP text embedding
     current_obs_emb: np.ndarray,   # (frame_emb_dim,)
     all_past_embs: np.ndarray,     # (T, frame_emb_dim) — all past global embeddings
     all_past_proprios: np.ndarray,  # (T, proprio_dim)
@@ -171,11 +171,19 @@ def select_frames_qkfs(
     N = config.max_candidates
     R = config.num_recent_frames
 
+    # Exclude the most recent R frames from candidates — they are already
+    # encoded by the query encoder.  Including them would let the model
+    # take a dot-product shortcut instead of learning keyframe relevance.
+    cand_end = max(0, T - R)
+    if cand_end == 0:
+        # All frames are "recent", nothing to score
+        return np.arange(T, dtype=np.int32)
+
     # Subsample if more past frames than max candidates
-    if T > N:
-        cand_indices_abs = np.linspace(0, T - 1, N, dtype=np.int64)
+    if cand_end > N:
+        cand_indices_abs = np.linspace(0, cand_end - 1, N, dtype=np.int64)
     else:
-        cand_indices_abs = np.arange(T)
+        cand_indices_abs = np.arange(cand_end)
 
     n_cands = len(cand_indices_abs)
 

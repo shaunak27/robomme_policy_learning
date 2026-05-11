@@ -2,7 +2,7 @@
 #SBATCH -Jtrain_qkfs
 #SBATCH --output=logs/train_qkfs_%j.out
 #SBATCH --error=logs/train_qkfs_%j.err
-#SBATCH --partition="kira-lab"
+#SBATCH --partition="kira-lab,overcap"
 #SBATCH --account="kira-lab"
 #SBATCH --gpus-per-node="a40:8"
 #SBATCH --nodes=1
@@ -11,9 +11,9 @@
 #SBATCH --qos="long"
 #SBATCH --exclude="conroy"
 
-# Train QKFS selector (multi-GPU)
+# Train QKFS selector on ALL episodes (multi-GPU)
 # Usage:
-#   sbatch slurm_train_qkfs.sh                        # all tasks
+#   sbatch slurm_train_qkfs.sh                        # all tasks, all episodes
 #   sbatch slurm_train_qkfs.sh BinFill PatternLock     # specific tasks
 
 mkdir -p logs
@@ -33,10 +33,11 @@ srun -u /coc/testnvme/shalbe3/miniconda/envs/robomme/bin/python \
     scripts/train_qkfs.py \
     --dataset_path data/robomme_preprocessed_data \
     --topreward_dir data/topreward_full \
+    --exp_name qkfs_all_v2 \
     --batch_size 512 \
-    --lr 3e-4 \
-    --num_train_steps 25000 \
-    --warmup_steps 1000 \
+    --lr 2e-4 \
+    --num_train_steps 10000 \
+    --warmup_steps 400 \
     --lambda_frame 1.0 \
     --sigma 2.0 \
     --hidden_dim 256 \
@@ -48,6 +49,6 @@ srun -u /coc/testnvme/shalbe3/miniconda/envs/robomme/bin/python \
     --wandb_enabled \
     --wandb_project qkfs-selector \
     --log_interval 50 \
-    --save_interval 5000 \
+    --save_interval 2000 \
     --num_workers 8 \
     $TASK_ARGS

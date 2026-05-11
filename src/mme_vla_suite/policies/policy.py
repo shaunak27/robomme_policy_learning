@@ -34,6 +34,31 @@ try:
 except ImportError:
     _QKFS_AVAILABLE = False
 
+# Optional: SigLIP text encoder for QKFS instruction embeddings
+_SIGLIP_TEXT_MODEL = None
+_SIGLIP_TEXT_PROCESSOR = None
+
+def _encode_instruction_siglip(text: str) -> np.ndarray:
+    """Encode instruction text using SigLIP text encoder. Cached per session."""
+    global _SIGLIP_TEXT_MODEL, _SIGLIP_TEXT_PROCESSOR
+    if _SIGLIP_TEXT_MODEL is None:
+        import logging
+        logging.getLogger(__name__).info("Loading SigLIP text encoder...")
+        from transformers import AutoTokenizer, AutoModel
+        _SIGLIP_TEXT_PROCESSOR = AutoTokenizer.from_pretrained(
+            "google/siglip-so400m-patch14-384")
+        _SIGLIP_TEXT_MODEL = AutoModel.from_pretrained(
+            "google/siglip-so400m-patch14-384").text_model.eval()
+        import torch
+        _SIGLIP_TEXT_MODEL = _SIGLIP_TEXT_MODEL.to(torch.float32)
+    import torch
+    inputs = _SIGLIP_TEXT_PROCESSOR(text, return_tensors="pt",
+                                     padding=True, truncation=True)
+    with torch.no_grad():
+        out = _SIGLIP_TEXT_MODEL(**inputs)
+        emb = out.pooler_output[0].cpu().numpy().astype(np.float32)
+    return emb
+
 class MME_VLA_Policy:
     def __init__(
         self,
@@ -139,6 +164,9 @@ class MME_VLA_Policy:
         self._density_task_goal = None
         self._density_segments = []
         self._density_current_label = None  # (phase, label) tuple
+        # QKFS cached instruction embedding
+        self._qkfs_instruction_emb = None
+        self._qkfs_instruction_text = None
             
     
     def add_buffer(self, obs: dict) -> None:
@@ -423,8 +451,16 @@ class MME_VLA_Policy:
         # Current observation embedding
         current_obs_emb = all_past_embs[min(self.step_idx, num_past - 1)]
 
-        # Instruction embedding (use current obs as proxy)
-        instruction_emb = all_past_embs[0]
+        # Instruction embedding — SigLIP text encoding of the episode prompt
+        prompt = inputs.get("prompt", "")
+        if prompt and prompt != self._qkfs_instruction_text:
+            self._qkfs_instruction_emb = _encode_instruction_siglip(prompt)
+            self._qkfs_instruction_text = prompt
+        if self._qkfs_instruction_emb is not None:
+            instruction_emb = self._qkfs_instruction_emb
+        else:
+            # Fallback: zero vector (should not happen with valid prompts)
+            instruction_emb = np.zeros(self._qkfs_config.instruction_emb_dim, dtype=np.float32)
 
         # Current proprio
         raw_state = inputs.get("state", inputs.get("observation/state"))

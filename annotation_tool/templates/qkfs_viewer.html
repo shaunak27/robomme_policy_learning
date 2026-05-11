@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QKFS Eval Viewer</title>
+  <link rel="stylesheet" href="/static/qkfs_viewer.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header id="topbar">
+    <div class="topbar-group">
+      <span class="topbar-title">QKFS Eval Viewer</span>
+    </div>
+    <div class="topbar-group">
+      <label>Task:</label>
+      <select id="task-select"></select>
+    </div>
+    <div class="topbar-group">
+      <label>Episode:</label>
+      <select id="episode-select"></select>
+    </div>
+    <div class="topbar-group">
+      <button id="btn-prev-ep">&lsaquo; Prev</button>
+      <button id="btn-next-ep">Next &rsaquo;</button>
+    </div>
+    <div class="topbar-group" style="margin-left:auto;">
+      <span id="status-badge" class="badge">Ready</span>
+    </div>
+  </header>
+
+  <!-- Main layout -->
+  <div id="main-area">
+
+    <!-- Left: summary metrics -->
+    <div id="left-panel">
+      <h3>Overall Metrics</h3>
+      <table id="overall-table">
+        <thead>
+          <tr><th>Method</th><th>Prec</th><th>Recall</th><th>Corr</th><th>Spread</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Per-Task: <span id="task-label">-</span></h3>
+      <table id="task-table">
+        <thead>
+          <tr><th>Method</th><th>Prec</th><th>Recall</th><th>Corr</th><th>Spread</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div id="legend-panel">
+        <h3>Legend</h3>
+        <div class="legend-row"><span class="legend-swatch" style="background:#2196F3;"></span> QKFS selections</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#999;"></span> Uniform baseline</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#FF9800;"></span> Recency baseline</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:rgba(0,0,0,0); border: 2px dashed red;"></span> Current timestep</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#4CAF50;"></span> Target frames (training signal)</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:rgba(0,0,0,0); border: 2px solid #FFD700;"></span> TOPReward keyframe</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:rgba(0,0,0,0); border: 2px solid #00E5FF;"></span> Density keyframe</div>
+        <div class="legend-row"><span class="legend-swatch bright-seg"></span> Source subtask (bright)</div>
+        <div class="legend-row"><span class="legend-swatch faded-seg"></span> Non-source subtask (faded)</div>
+      </div>
+    </div>
+
+    <!-- Right: interactive timeline -->
+    <div id="right-panel">
+
+      <!-- Segment bar -->
+      <div id="segment-bar-container">
+        <h3>Episode Timeline <span id="ep-info-label"></span></h3>
+        <div id="segment-bar"></div>
+        <div id="segment-labels"></div>
+      </div>
+
+      <!-- Step slider -->
+      <div id="step-control">
+        <label>Eval timestep: <strong id="step-value">-</strong></label>
+        <input type="range" id="step-slider" min="0" max="100" value="50">
+        <div id="step-metrics"></div>
+      </div>
+
+      <!-- Timeline canvas -->
+      <div id="timeline-container">
+        <canvas id="timeline-canvas"></canvas>
+      </div>
+
+      <!-- Current observation -->
+      <div id="current-obs-container">
+        <h3>Current Observation (t=<span id="current-t-label">-</span>)</h3>
+        <div id="current-obs-frame"></div>
+      </div>
+
+      <!-- Target frames (training signal) -->
+      <div id="target-strip-container" class="frame-strip-section">
+        <h3>Target Frames (Training Signal) <span id="target-strip-info" class="strip-info"></span></h3>
+        <div class="strip-playback-controls">
+          <button class="play-btn" data-strip="target-strip">&#9654; Play</button>
+          <label>Speed: <select class="speed-select" data-strip="target-strip">
+            <option value="2000">0.5x</option><option value="1000">1x</option>
+            <option value="500" selected>2x</option><option value="250">4x</option><option value="125">8x</option>
+          </select></label>
+        </div>
+        <div id="target-strip" class="frame-strip"></div>
+      </div>
+
+      <!-- QKFS selected frames -->
+      <div id="qkfs-strip-container" class="frame-strip-section">
+        <h3>QKFS Selected Frames <span id="qkfs-strip-info" class="strip-info"></span></h3>
+        <div class="strip-playback-controls">
+          <button class="play-btn" data-strip="qkfs-strip">&#9654; Play</button>
+          <label>Speed: <select class="speed-select" data-strip="qkfs-strip">
+            <option value="2000">0.5x</option><option value="1000">1x</option>
+            <option value="500" selected>2x</option><option value="250">4x</option><option value="125">8x</option>
+          </select></label>
+        </div>
+        <div id="qkfs-strip" class="frame-strip"></div>
+      </div>
+
+      <!-- Uniform baseline frames -->
+      <div id="uniform-strip-container" class="frame-strip-section collapsed">
+        <h3 class="collapsible" data-target="uniform-strip">Uniform Baseline <span id="uniform-strip-info" class="strip-info"></span></h3>
+        <div class="strip-playback-controls">
+          <button class="play-btn" data-strip="uniform-strip">&#9654; Play</button>
+          <label>Speed: <select class="speed-select" data-strip="uniform-strip">
+            <option value="2000">0.5x</option><option value="1000">1x</option>
+            <option value="500" selected>2x</option><option value="250">4x</option><option value="125">8x</option>
+          </select></label>
+        </div>
+        <div id="uniform-strip" class="frame-strip"></div>
+      </div>
+
+      <!-- Recency baseline frames -->
+      <div id="recency-strip-container" class="frame-strip-section collapsed">
+        <h3 class="collapsible" data-target="recency-strip">Recency Baseline <span id="recency-strip-info" class="strip-info"></span></h3>
+        <div class="strip-playback-controls">
+          <button class="play-btn" data-strip="recency-strip">&#9654; Play</button>
+          <label>Speed: <select class="speed-select" data-strip="recency-strip">
+            <option value="2000">0.5x</option><option value="1000">1x</option>
+            <option value="500" selected>2x</option><option value="250">4x</option><option value="125">8x</option>
+          </select></label>
+        </div>
+        <div id="recency-strip" class="frame-strip"></div>
+      </div>
+
+      <!-- Per-step metrics -->
+      <div id="step-detail">
+        <table id="step-metrics-table">
+          <thead>
+            <tr><th>Method</th><th>Precision</th><th>Recall</th><th># in source</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="source-info"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Video playback overlay -->
+  <div id="playback-overlay">
+    <img id="playback-img" src="">
+    <div class="playback-label" id="playback-label"></div>
+    <div style="color:#888; font-size:12px;">Press ESC or click to close</div>
+  </div>
+
+  <script src="/static/qkfs_viewer.js"></script>
+</body>
+</html>

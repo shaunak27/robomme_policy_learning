@@ -8,9 +8,9 @@ class QKFSConfig:
     # ---- Architecture ----
     # Embedding dimensions (must match SigLIP outputs)
     frame_emb_dim: int = 2048       # SigLIP global embedding dim
+    instruction_emb_dim: int = 1152 # SigLIP text encoder output dim
     pos_emb_dim: int = 768          # positional embedding dim
     proprio_dim: int = 8            # proprioceptive state dim
-    instruction_emb_dim: int = 256  # projected instruction embedding dim
 
     # Transformer dimensions
     hidden_dim: int = 256           # internal transformer dimension

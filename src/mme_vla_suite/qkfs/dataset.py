@@ -39,28 +39,59 @@ class QKFSDataset(Dataset):
         task_name: str,
         config: QKFSConfig,
         topreward_dir: str = "",
+        episode_ids: set[int] | None = None,
     ):
         self.config = config
         self.dataset_path = dataset_path
         self.task_name = task_name
         self.feature_dir = Path(dataset_path) / "features"
         self.topreward_dir = topreward_dir
+        self.episode_ids = episode_ids  # None = all episodes
 
         stats_path = os.path.join(dataset_path, "meta", "stats.json")
         self.stats = json.load(open(stats_path))
 
+        # Build index: map virtual idx -> pkl file idx
+        if episode_ids is not None:
+            self._build_filtered_index(episode_ids)
+        else:
+            total = self.stats.get("execution_samples", self.stats["total_samples"])
+            self._valid_indices = list(range(total))
+
         # Caches
         self._global_embs: dict[int, np.ndarray] = {}
         self._states: dict[int, np.ndarray] = {}
+        self._instruction_embs: dict[int, np.ndarray] = {}
         self._segments: dict[int, list[dict]] = {}
         self._density_kfs: dict[int, dict] = {}
         self._topreward: dict[int, dict] = {}
         self._episode_lengths: dict[int, int] = {}
 
+    def _build_filtered_index(self, episode_ids: set[int]):
+        """Scan pkl files to find samples belonging to the given episodes.
+
+        Uses partial unpickling to only read epis_idx, avoiding loading
+        full image data for each sample.
+        """
+        data_dir = os.path.join(self.dataset_path, "data")
+        total = self.stats.get("execution_samples", self.stats["total_samples"])
+        self._valid_indices = []
+        for idx in range(total):
+            pkl_path = os.path.join(data_dir, f"{idx}.pkl")
+            if not os.path.exists(pkl_path):
+                continue
+            with open(pkl_path, "rb") as f:
+                data = pickle.load(f)
+            ep = int(data["epis_idx"][0]) if hasattr(data["epis_idx"], "__len__") else int(data["epis_idx"])
+            if ep in episode_ids:
+                self._valid_indices.append(idx)
+        logger.info(
+            "Task %s: filtered to %d/%d samples (%d episodes)",
+            self.task_name, len(self._valid_indices), total, len(episode_ids),
+        )
+
     def __len__(self):
-        if "execution_samples" in self.stats:
-            return self.stats["execution_samples"]
-        return self.stats["total_samples"]
+        return len(self._valid_indices)
 
     def _get_episode_data(self, epis_idx: int):
         """Load and cache per-episode arrays."""
@@ -89,6 +120,15 @@ class QKFSDataset(Dataset):
 
             self._episode_lengths[epis_idx] = self._global_embs[epis_idx].shape[0]
 
+            # Instruction embedding (precomputed SigLIP text)
+            instr_path = ep_dir / "instruction_emb.npy"
+            if instr_path.exists():
+                self._instruction_embs[epis_idx] = np.load(instr_path).astype(np.float32)
+            else:
+                self._instruction_embs[epis_idx] = np.zeros(
+                    self.config.instruction_emb_dim, dtype=np.float32
+                )
+
             # Segments
             seg_path = ep_dir / "segments.json"
             if seg_path.exists():
@@ -113,8 +153,11 @@ class QKFSDataset(Dataset):
                 self._topreward[epis_idx] = {}
 
     def __getitem__(self, idx: int) -> dict:
+        # Map virtual index to actual pkl file index
+        real_idx = self._valid_indices[idx]
+
         # Load base sample
-        with open(os.path.join(self.dataset_path, "data", f"{idx}.pkl"), "rb") as f:
+        with open(os.path.join(self.dataset_path, "data", f"{real_idx}.pkl"), "rb") as f:
             data = pickle.load(f)
 
         epis_idx = int(data["epis_idx"].item()) if hasattr(data["epis_idx"], "item") else int(data["epis_idx"])
@@ -138,10 +181,8 @@ class QKFSDataset(Dataset):
         # ---- Current observation embedding ----
         current_obs_emb = global_embs[min(step_idx, len(global_embs) - 1)]  # (2048,)
 
-        # ---- Instruction embedding (use current obs as proxy; real one from VLA at train time) ----
-        # We'll use the global_emb of the first frame as instruction proxy
-        # The real instruction embedding will be computed by the VLA's LLM
-        instruction_emb = global_embs[0]  # (2048,) — placeholder, overridden in training
+        # ---- Instruction embedding (precomputed SigLIP text encoding) ----
+        instruction_emb = self._instruction_embs[epis_idx]  # (1152,)
 
         # ---- Recent R frames ----
         recent_embs = np.zeros((R, emb_dim), dtype=np.float32)
@@ -155,8 +196,13 @@ class QKFSDataset(Dataset):
         # ---- Proprio ----
         proprio = data["state"].astype(np.float32)
 
-        # ---- Candidate history frames (all past frames) ----
-        num_past = step_idx  # frames 0..step_idx-1
+        # ---- Candidate history frames (past frames, excluding recent R) ----
+        # Exclude the most recent R frames from candidates since they are
+        # already encoded by the query encoder.  This prevents the model
+        # from learning a trivial shortcut (dot-product matching the same
+        # embeddings it already sees in the query).
+        cand_end = max(0, step_idx - R)  # candidates are frames 0..step_idx-R-1
+        num_past = cand_end
         cand_embs = np.zeros((N, emb_dim), dtype=np.float32)
         cand_proprios = np.zeros((N, proprio_dim), dtype=np.float32)
         cand_times = np.zeros(N, dtype=np.int32)
